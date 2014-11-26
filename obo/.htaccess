@@ -1,0 +1,4 @@
+RewriteEngine on
+
+# Redirect OBI terms to Ontobee
+RewriteRule ^OBI_(.*)$ http://www.ontobee.org/browser/rdf.php?o=OBI&iri=http://purl.obolibrary.org/obo/OBI_$1

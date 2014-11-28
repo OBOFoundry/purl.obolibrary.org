@@ -4,9 +4,6 @@ RewriteEngine on
 # Example: http://demo.temp.org/obo/obi/2014-08-18/obi.owl
 RewriteRule ^2014-08-18/(.*) http://svn.code.sf.net/p/obi/code/releases/2014-08-18/$1
 
-# Redirect OBI "assay" to Wikipedia "assay"
-RewriteRule ^OBI_0000070$ https://en.wikipedia.org/wiki/Assay
-
 # Other Stuff
 RewriteRule ^wiki http://obi-ontology.org
 RewriteRule ^wiki/(.*) http://obi-ontology.org/page/$1

@@ -1,0 +1,207 @@
+- from: /branches/
+  to: http://obi.svn.sourceforge.net/svnroot/obi/trunk/src/ontology/branches/
+  type: prefix
+
+- from: /repository/
+  to: http://obi.svn.sourceforge.net/svnroot/obi/
+  type: prefix
+
+- from: /project
+  to: http://sw.neurocommons.org/obi-303/project.rdf
+
+- from: /protege/
+  to: http://obi.svn.sourceforge.net/svnroot/obi/releases/2008-11-28/merged/protege/
+  type: prefix
+
+- from: /wiki/
+  to: http://obi-ontology.org/page/
+  type: prefix
+
+- from: /wiki
+  to: http://obi-ontology.org
+
+- from: /calendar
+  to: http://www.google.com/calendar/embed?src=p8auq0a930und9nugj44p988e4%40group.calendar.google.com&amp;ctz=America/New_York
+
+- from: /jowl
+  to: http://jowl.ontologyonline.org/obi.html
+
+- from: /doc/
+  to: http://obi.svn.sourceforge.net/svnroot/obi/trunk/docs/
+  type: prefix
+
+- from: /wiki/MinimalMetadata
+  to: http://obi-ontology.org/page/OBI_Minimal_metadata
+
+- from: /tracker
+  to: http://sourceforge.net/tracker/?group_id=177891&amp;atid=886178
+
+- from: /policy/metadata
+  to: http://obi-ontology.org/page/OBI_Minimal_metadata
+
+- from: /2009-11-02/obi.owl
+  to: http://obi.svn.sourceforge.net/svnroot/obi/releases/2009-11-02/merged/merged-obi.owl
+
+- from: /2009-11-06/obi.owl
+  to: http://obi.svn.sourceforge.net/svnroot/obi/releases/2009-11-06/merged/merged-obi.owl
+
+- from: /Technical_Reports
+  to: http://obi-ontology.org/page/Technical_Reports
+
+- from: /2009-11-06/obi.obo
+  to: http://obi.svn.sourceforge.net/svnroot/obi/releases/2009-11-06/merged/obi.obo
+
+- from: /supplementary/protege-qtt-2009.zip
+  to: http://www.stanford.edu/~sunid/OBI/Protege_3.4.2.zip
+
+- from: /2009-11-06/IEDB-use-case.owl
+  to: http://obi.svn.sourceforge.net/svnroot/obi/releases/2009-11-06/branches/IEDB-use-case.owl
+
+- from: /2009-11-06/investigation-use-case.owl
+  to: http://obi.svn.sourceforge.net/svnroot/obi/releases/2009-11-06/branches/investigation-use-case.owl
+
+- from: /2010-10-26/obi.owl
+  to: http://obi.svn.sourceforge.net/svnroot/obi/releases/2010-10-26/merged/merged-obi.owl
+
+- from: /homepage
+  to: http://obi-ontology.org/
+
+- from: /report.html
+  to: http://obi.svn.sourceforge.net/svnroot/obi/releases/2010-10-26/merged/newClasses.html
+
+- from: /protege/obi.pprj
+  to: http://obi.svn.sourceforge.net/svnroot/obi/releases/obsolete-protege-message.html
+
+- from: /protege/obi.owl
+  to: http://obi.svn.sourceforge.net/svnroot/obi/releases/obsolete-protege-message.html
+
+- from: /owldoc
+  to: http://owl.cs.manchester.ac.uk/browser/classes/830966544/?session=12cbe539878-8862-12cbe54e7be
+
+- from: /2011-04-20/obi.owl
+  to: http://obi.svn.sourceforge.net/svnroot/obi/releases/2011-04-20/merged/merged-obi-comments.owl
+
+- from: /2011-07-20/obi.owl
+  to: http://obi.svn.sourceforge.net/svnroot/obi/releases/2011-07-20/merged/merged-obi-comments.owl
+
+- from: /2011-12-13/obi.owl
+  to: http://obi.svn.sourceforge.net/svnroot/obi/releases/2012-01-18/merged/obi_woIEDB_comments.owl
+
+- from: /2011-12-13/obi_IEDBview.owl
+  to: http://obi.svn.sourceforge.net/svnroot/obi/releases/2012-01-18/merged/obi_IEDBview.owl
+
+- from: /2012-03-29/obi.owl
+  to: http://obi.svn.sourceforge.net/svnroot/obi/releases/2012-03-29/merged/merged-obi-comments.owl
+
+- from: /2012-03-29/obi_IEDBview.owl
+  to: http://obi.svn.sourceforge.net/svnroot/obi/releases/2012-03-29/merged/obi_IEDBview.owl
+
+- from: /2012-03-29/obi.obo
+  to: http://obi.svn.sourceforge.net/svnroot/obi/releases/2012-03-29/merged/merged-all_mod.obo
+
+- from: /2012-07-01/obi.owl
+  to: http://obi.svn.sourceforge.net/svnroot/obi/releases/2012-07-01/merged/merged-obi-comments.owl
+
+- from: /2012-07-01/obi.obo
+  to: http://obi.svn.sourceforge.net/svnroot/obi/releases/2012-07-01/merged/obi_cleaned_merged_inferred.obo
+
+- from: /obi.obo
+  to: http://obi.svn.sourceforge.net/svnroot/obi/releases/2012-07-01/merged/obi_cleaned_merged_inferred.obo
+
+- from: /page/
+  to: http://www.ontobee.org/browser/rdf.php?o=OBI&amp;iri=
+  type: prefix
+
+- from: /repository
+  to: http://sourceforge.net/p/obi/code/HEAD/tree/
+
+- from: /2013-10-25/obi_core.owl
+  to: http://svn.code.sf.net/p/obi/code/releases/2013-10-25/obi_core.owl
+
+- from: /2013-10-25/obi.owl
+  to: http://svn.code.sf.net/p/obi/code/releases/2013-10-25/obi.owl
+
+- from: /obi_FGED.owl
+  to: http://svn.code.sf.net/p/obi/code/releases/2013-10-25/obi_FGED.owl
+
+- from: /2014-03-29/obi.owl
+  to: http://svn.code.sf.net/p/obi/code/releases/2014-03-29/obi.owl
+
+- from: /2014-03-29/obi_core.owl
+  to: http://svn.code.sf.net/p/obi/code/releases/2014-03-29/obi_core.owl
+
+- from: /browse
+  to: http://www.ontobee.org/browser/index.php?o=OBI
+
+- from: /2014-08-18/obi.owl
+  to: http://svn.code.sf.net/p/obi/code/releases/2014-08-18/obi.owl
+
+- from: /2014-08-18/obi_core.owl
+  to: http://svn.code.sf.net/p/obi/code/releases/2014-08-18/obi_core.owl
+
+- from: /about/
+  to: http://www.ontobee.org/browser/rdf.php?o=OBI&amp;iri=http://purl.obolibrary.org/obo/
+  type: prefix
+
+- from: /
+  to: http://obi.svn.sourceforge.net/svnroot/obi/trunk/src/ontology/branches/
+  type: prefix
+
+- from: /2014-12-03/obi.owl
+  to: http://svn.code.sf.net/p/obi/code/releases/2014-12-03/obi.owl
+
+- from: /2014-12-03/obi_core.owl
+  to: http://svn.code.sf.net/p/obi/code/releases/2014-12-03/obi_core.owl
+
+- from: /20140106/NIAID-GSC-BRC.owl
+  to: http://svn.code.sf.net/p/obi/code/releases/NIAID-GSCID-BRC-view/20140105/NIAID-GSC-BRC.owl
+
+- from: /2015-03-17/obi.owl
+  to: http://svn.code.sf.net/p/obi/code/releases/2015-03-17/obi.owl
+
+- from: /2015-03-17/obi_core.owl
+  to: http://svn.code.sf.net/p/obi/code/releases/2015-03-17/obi_core.owl
+
+- from: /dev/import/
+  to: http://svn.code.sf.net/p/obi/code/trunk/src/ontology/branches/OntoFox_outputs/
+  type: prefix
+
+- from: /2015-04-13/obi.owl
+  to: http://svn.code.sf.net/p/obi/code/releases/2015-04-13/obi.owl
+
+- from: /2015-04-13/obi_core.owl
+  to: http://svn.code.sf.net/p/obi/code/releases/2015-04-13/obi_core.owl
+
+- from: /NIAID-GSC-BRC.owl
+  to: http://svn.code.sf.net/p/obi/code/releases/NIAID-GSCID-BRC-view/20150413/NIAID-GSC-BRC.owl
+
+- from: /20150413/NIAID-GSC-BRC.owl
+  to: http://svn.code.sf.net/p/obi/code/releases/NIAID-GSCID-BRC-view/20150413/NIAID-GSC-BRC.owl
+
+- from: /webService.owl
+  to: https://raw.githubusercontent.com/obi-webservice/OBIws/master/ontology/release/v1.1/webService.owl
+
+- from: /v1.1/webService.owl
+  to: https://raw.githubusercontent.com/obi-webservice/OBIws/master/ontology/release/v1.1/webService.owl
+
+- from: /v1.0/webService.owl
+  to: https://raw.githubusercontent.com/obi-webservice/OBIws/master/ontology/release/v1.0/webService.owl
+
+- from: /v0.9/webService.owl
+  to: https://raw.githubusercontent.com/obi-webservice/OBIws/master/ontology/release/v0.9/webService.owl
+
+- from: /2015-09-15/obi.owl
+  to: http://svn.code.sf.net/p/obi/code/releases/2015-09-15/obi.owl
+
+- from: /2015-09-15/obi_core.owl
+  to: http://svn.code.sf.net/p/obi/code/releases/2015-09-15/obi_core.owl
+
+- from: /obi_core.owl
+  to: http://svn.code.sf.net/p/obi/code/releases/2015-09-15/obi_core.owl
+
+- from: /obi_IEDBview.owl
+  to: http://svn.code.sf.net/p/obi/code/releases/2015-09-15/obi_iedb.owl
+
+- from: /release-notes.html
+  to: http://obi-ontology.org/page/Releases/2015-09-15
+

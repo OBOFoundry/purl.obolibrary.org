@@ -16,7 +16,7 @@
 ### Configuration
 
 # Run operations on these ontologies.
-ONTOLOGY_IDS := bfo iao obi
+ONTOLOGY_IDS := obi
 
 # Use awk with tabs
 AWK := awk -F "	" -v "OFS=	"
@@ -76,15 +76,15 @@ config/%.yml: migrate/%.xml config
 #
 # Convert the YAML configuration files
 # to Apache .htaccess files with RewriteRules.
-www/obo/%/.htaccess: config/%.yml
-	mkdir -p www/obo/$*
+obo/%/.htaccess: config/%.yml
+	mkdir -p obo/$*
 	./translate.py < $< > $@
 
 
 ### Other
 
-all: clean $(foreach o,$(ONTOLOGY_IDS),www/obo/$o/.htaccess)
+all: clean $(foreach o,$(ONTOLOGY_IDS),obo/$o/.htaccess)
 
 clean:
-	rm -rf json www/obo/*
+	rm -rf obo/obi
 

@@ -25,7 +25,7 @@ AWK := awk -F "	" -v "OFS=	"
 .SECONDARY:
 
 # These goals do not correspond to files.
-.PHONY: usage migrate-all all
+.PHONY: usage migrate-all all clean
 
 usage:
 	@echo 'Usage: make all'
@@ -57,54 +57,28 @@ config:
 	mkdir -p $@
 
 # Use xmlstarlet to convert XML to YAML format.
-# For 'partial' rules, append '(.*)' to the 'from' field
-# and append '$1' to the 'to' field.
 config/%.yml: migrate/%.xml config
 	xmlstarlet sel \
 	--template \
 	--match '//purl' \
-	--value-of 'type' --output '	' \
-	--value-of 'id' --output '	' \
-	--value-of 'target/url' --nl \
+	--output '- from: ' --value-of 'id' --nl \
+	--output '  to: '   --value-of 'target/url' --nl \
+	--output '  type: ' --value-of 'type' --nl \
+	--nl \
 	$< \
-	| sed 's!	/obo/$*/!	!' \
-	| $(AWK) '$$1=="partial" {print $$1, $$2 "(.*)", $$3 "$$1"} \
-	$$1!="partial" {print $$0}' \
-	| $(AWK) '{print "- type: " $$1 "\n  from: " $$2 "\n  to: " $$3 "\n"}' \
+	| sed 's!^\- from: /obo/$*!- from: !' \
+	| sed '/^  type: 302$$/d' \
+	| sed 's/^  type: partial$$/  type: prefix/' \
 	> $@
-
-
-### Conversions
-#
-# Convert YAML to JSON for use with jq.
-json:
-	mkdir -p $@
-
-json/%.json: config/%.yml json
-	yaml2json < $< > $@
 
 
 ### Apache Config
 #
 # Convert the YAML configuration files
 # to Apache .htaccess files with RewriteRules.
-
-# Generate an .htaccess file from the configuration for an ontology.
-# Use jq to grab `type`, `from`, and `to` fields
-# and generate a Redirect or RedirectMatch rule.
-# Redirect is for simple string matches.
-# RedirectMatch uses regular expressions.
-# See https://httpd.apache.org/docs/2.4/mod/mod_alias.html
-www/obo/%/.htaccess: json/%.json
+www/obo/%/.htaccess: config/%.yml
 	mkdir -p www/obo/$*
-	< $< \
-	jq -r '.[] | \
-	if (.type) == "partial" \
-	then ["RedirectMatch ^", .from, "$$ ", .to] \
-	else ["Redirect ", .type, " ", .from, " ", .to] \
-	end \
-	| map(tostring) | join("")' \
-	> $@
+	./translate.py < $< > $@
 
 
 ### Other

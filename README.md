@@ -37,7 +37,7 @@ In the most common case, your PURL should match a unique URL and redirect to a u
 
 This entry will match exactly the URL `http://purl.obolibrary.org/obo/obi/obi.owl`, and it will redirect to exactly `http://svn.code.sf.net/p/obi/code/releases/2015-10-20/obi.owl`. The matched domain name is fixed `http://purl.obolibrary.org`; the next part is project-specific `/obo/obi/`; the final part is taken from the entry `/obi.owl`. The replacement can be any valid URL.
 
-Behind the scenes, the entry is translated into an Apache RedirectMatch directive in `obo/obi/.htaccess` by escaping special characters and anchoring" with initial `^` and final `$`:
+Behind the scenes, the entry is translated into an Apache RedirectMatch directive in `obo/obi/.htaccess` by escaping special characters and "anchoring" with initial `^` and final `$`:
 
     RedirectMatch temp "^/2015\-09\-15/obi\.owl$" "http://svn.code.sf.net/p/obi/code/releases/2015-09-15/obi.owl"
 
@@ -65,12 +65,12 @@ For the regular expression type, the value of the `regex:` and `replacement:` ke
 
 ### Temporary and Permanent
 
-Every entry can have a `status:` keyword. By default, every entry uses "temporary" (HTTP 302) status. If you *really* know what you're doing, you can set the status to "permanent" (HTTP 301).
+Any entry can have a `status:` keyword. By default, every entry uses "temporary" (HTTP 302) status. If you *really* know what you're doing, you can set the status to "permanent" (HTTP 301).
 
 
 ### Order of Entries
 
-Apache RedirectMatch directives are processed in the [order that they appear](https://httpd.apache.org/docs/2.4/mod/mod_alias.html#order) in the configuration file. Be careful that your `prefix` and `regex` entries do not conflict with your other entries. The YAML to Apache translation preserves the order of entries, so you can control the order of processing, but it's best to avoid conflicts.
+Apache RedirectMatch directives are processed in the [order that they appear](https://httpd.apache.org/docs/2.4/mod/mod_alias.html#order) in the configuration file. Be careful that your `prefix` and `regex` entries do not conflict with your other entries. The YAML-to-Apache translation preserves the order of entries, so you can control the order of processing, but it's best to avoid conflicts.
 
 
 ## Migrating Configuration

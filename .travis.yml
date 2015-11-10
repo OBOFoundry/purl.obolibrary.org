@@ -1,0 +1,16 @@
+language: ruby
+rvm: "1.9.3"
+# before_install:
+#   - sudo apt-get update -qq
+#   - sudo apt-get install -qq kwalify
+## Possible other way.
+install:
+  - gem install kwalify
+script:
+  ## Quick user data check.
+  - kwalify -f config.schema.yaml config/*.yml | grep INVALID; test $? -ne 0
+notifications:
+  email:
+    - james@overton.ca
+    - cjmungall@lbl.gov
+    - sjcarbon@lbl.gov

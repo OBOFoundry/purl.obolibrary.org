@@ -30,21 +30,21 @@ The `#` character indicates a comment, which is not considered part of the confi
 
 ### Exact
 
-In the most common case, your PURL should match a unique URL and redirect to a unique URL. Here's an example:
+In the most common case, your PURL should match a unique URL and redirect to a unique URL. Here's an example from the `config/obi.yml` file:
 
     - exact: /obi.owl
       replacement: http://svn.code.sf.net/p/obi/code/releases/2015-10-20/obi.owl
 
-This entry will match exactly the URL `http://purl.obolibrary.org/obo/obi/obi.owl`, and it will redirect to exactly `http://svn.code.sf.net/p/obi/code/releases/2015-10-20/obi.owl`.
+This entry will match exactly the URL `http://purl.obolibrary.org/obo/obi/obi.owl`, and it will redirect to exactly `http://svn.code.sf.net/p/obi/code/releases/2015-10-20/obi.owl`. The matched domain name is fixed `http://purl.obolibrary.org`; the next part is project-specific `/obo/obi/`; the final part is taken from the entry `/obi.owl`. The replacement can be any valid URL.
 
-Behind the scenes, the entry is translated into an Apache RedirectMatch directive by escaping special characters and anchoring" with initial `^` and final `$`:
+Behind the scenes, the entry is translated into an Apache RedirectMatch directive in `obo/obi/.htaccess` by escaping special characters and anchoring" with initial `^` and final `$`:
 
     RedirectMatch temp "^/2015\-09\-15/obi\.owl$" "http://svn.code.sf.net/p/obi/code/releases/2015-09-15/obi.owl"
 
 
 ### Prefix
 
-You can also match and replace just the first part of a URL, leaving the rest unchanged. This allow you to define one entry that redirects many URLs matching a common prefix. For example:
+You can also match and replace just the first part of a URL, leaving the rest unchanged. This allows you to define one entry that redirects many URLs matching a common prefix. Another example from `config/obi.yml`:
 
     - prefix: /branches/
       replacement: http://obi.svn.sourceforge.net/svnroot/obi/trunk/src/ontology/branches/

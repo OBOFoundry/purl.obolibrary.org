@@ -1,38 +1,23 @@
-# PURL configuration for http://purl.obolibrary.org/obo/obi/
+# PURL configuration for http://purl.obolibrary.org/obo/obi
 
 entries:
-- prefix: /branches/
-  replacement: http://obi.svn.sourceforge.net/svnroot/obi/trunk/src/ontology/branches/
-
-- prefix: /repository/
-  replacement: http://obi.svn.sourceforge.net/svnroot/obi/
-
 - exact: /project
   replacement: http://sw.neurocommons.org/obi-303/project.rdf
-
-- prefix: /protege/
-  replacement: http://obi.svn.sourceforge.net/svnroot/obi/releases/2008-11-28/merged/protege/
-
-- prefix: /wiki/
-  replacement: http://obi-ontology.org/page/
 
 - exact: /wiki
   replacement: http://obi-ontology.org
 
 - exact: /calendar
-  replacement: http://www.google.com/calendar/embed?src=p8auq0a930und9nugj44p988e4%40group.calendar.google.com&amp;ctz=America/New_York
+  replacement: http://www.google.com/calendar/embed?src=p8auq0a930und9nugj44p988e4%40group.calendar.google.com&ctz=America/New_York
 
 - exact: /jowl
   replacement: http://jowl.ontologyonline.org/obi.html
-
-- prefix: /doc/
-  replacement: http://obi.svn.sourceforge.net/svnroot/obi/trunk/docs/
 
 - exact: /wiki/MinimalMetadata
   replacement: http://obi-ontology.org/page/OBI_Minimal_metadata
 
 - exact: /tracker
-  replacement: http://sourceforge.net/tracker/?group_id=177891&amp;atid=886178
+  replacement: http://sourceforge.net/tracker/?group_id=177891&atid=886178
 
 - exact: /policy/metadata
   replacement: http://obi-ontology.org/page/OBI_Minimal_metadata
@@ -106,9 +91,6 @@ entries:
 - exact: /obi.obo
   replacement: http://obi.svn.sourceforge.net/svnroot/obi/releases/2012-07-01/merged/obi_cleaned_merged_inferred.obo
 
-- prefix: /page/
-  replacement: http://www.ontobee.org/browser/rdf.php?o=OBI&amp;iri=
-
 - exact: /repository
   replacement: http://sourceforge.net/p/obi/code/HEAD/tree/
 
@@ -136,12 +118,6 @@ entries:
 - exact: /2014-08-18/obi_core.owl
   replacement: http://svn.code.sf.net/p/obi/code/releases/2014-08-18/obi_core.owl
 
-- prefix: /about/
-  replacement: http://www.ontobee.org/browser/rdf.php?o=OBI&amp;iri=http://purl.obolibrary.org/obo/
-
-- prefix: /
-  replacement: http://obi.svn.sourceforge.net/svnroot/obi/trunk/src/ontology/branches/
-
 - exact: /2014-12-03/obi.owl
   replacement: http://svn.code.sf.net/p/obi/code/releases/2014-12-03/obi.owl
 
@@ -156,9 +132,6 @@ entries:
 
 - exact: /2015-03-17/obi_core.owl
   replacement: http://svn.code.sf.net/p/obi/code/releases/2015-03-17/obi_core.owl
-
-- prefix: /dev/import/
-  replacement: http://svn.code.sf.net/p/obi/code/trunk/src/ontology/branches/OntoFox_outputs/
 
 - exact: /2015-04-13/obi.owl
   replacement: http://svn.code.sf.net/p/obi/code/releases/2015-04-13/obi.owl
@@ -198,4 +171,31 @@ entries:
 
 - exact: /release-notes.html
   replacement: http://obi-ontology.org/page/Releases/2015-09-15
+
+- prefix: /repository/
+  replacement: http://obi.svn.sourceforge.net/svnroot/obi/
+
+- prefix: /dev/import/
+  replacement: http://svn.code.sf.net/p/obi/code/trunk/src/ontology/branches/OntoFox_outputs/
+
+- prefix: /branches/
+  replacement: http://obi.svn.sourceforge.net/svnroot/obi/trunk/src/ontology/branches/
+
+- prefix: /protege/
+  replacement: http://obi.svn.sourceforge.net/svnroot/obi/releases/2008-11-28/merged/protege/
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/browser/rdf.php?o=OBI&iri=http://purl.obolibrary.org/obo/
+
+- prefix: /wiki/
+  replacement: http://obi-ontology.org/page/
+
+- prefix: /page/
+  replacement: http://www.ontobee.org/browser/rdf.php?o=OBI&iri=
+
+- prefix: /doc/
+  replacement: http://obi.svn.sourceforge.net/svnroot/obi/trunk/docs/
+
+- prefix: /
+  replacement: http://obi.svn.sourceforge.net/svnroot/obi/trunk/src/ontology/branches/
 

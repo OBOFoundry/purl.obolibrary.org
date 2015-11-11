@@ -77,4 +77,6 @@ Apache RedirectMatch directives are processed in the [order that they appear](ht
 
 OBO projects currently use OCLC for managing PURLs. This project aims to replace OCLC in a straightforward way.
 
-The `Makefile` contains some code for fetching the PURL records for a given ontology ID from OCLC in XML format, and converting the XML to YAML. This should be a one-time migration. Going forward, the YAML configuration should be edited directly. The entries migrated from OCLC *should* maintain entries the order of their creation.
+The `Makefile` contains some code for fetching the PURL records for a given ontology ID from OCLC in XML format, and converting the XML to YAML. This should be a one-time migration. Going forward, the YAML configuration should be edited directly.
+
+The order of the migrated entries is: `exact` first (*should* be in the order they were created), followed by `prefix` entries from longest `prefix` to shortest. This order avoids nasty conflicts and has been tested to preserve the OCLC behaviour.

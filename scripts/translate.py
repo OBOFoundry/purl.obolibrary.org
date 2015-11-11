@@ -50,6 +50,8 @@
 
 import sys, yaml, re, urllib.parse
 
+base = sys.argv[1]
+
 def clean_source(s):
   """Given a URL string,
   return an escaped regular expression for matching that string.
@@ -93,11 +95,11 @@ for entry in document['entries']:
   # Determine the type for this entry.
   types = []
   if 'exact' in entry:
-    source = '^%s$' % clean_source(entry['exact'])
+    source = '^%s%s$' % (base, clean_source(entry['exact']))
     replacement = clean_replacement(entry['replacement'])
     types.append('exact')
   if 'prefix' in entry:
-    source = '^%s(.*)$' % clean_source(entry['prefix'])
+    source = '^%s%s(.*)$' % (base, clean_source(entry['prefix']))
     replacement = clean_replacement(entry['replacement']) + '$1'
     types.append('prefix')
   if 'regex' in entry:

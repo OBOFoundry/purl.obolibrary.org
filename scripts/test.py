@@ -10,10 +10,10 @@ if not 'entries' in document \
     or type(document['entries']) is not list:
   raise ValueError('Document must contain "entries" list')
 
-base = sys.argv[1]
-delay = 0.01
-#conn = http.client.HTTPConnection('purl.obolibrary.org', timeout = 10)
-conn = http.client.HTTPConnection('172.16.100.10', timeout = 10)
+domain = sys.argv[1]
+base   = sys.argv[2]
+delay  = float(sys.argv[3])
+conn = http.client.HTTPConnection(domain, timeout=10)
 
 print('\t'.join([
   'Result', 'Source URL',
@@ -39,17 +39,6 @@ for entry in document['entries']:
       or entry['replacement'].strip() == '':
     raise ValueError('Missing "replacement" field for entry %d' % i)
 
-  # Determine the type for this entry.
-  types = []
-  if 'exact' in entry:
-    test['source'] = base + entry['exact']
-    test['replacement'] = entry['replacement']
-  elif 'prefix' in entry:
-    test['source'] = base + entry['prefix']
-    test['replacement'] = entry['replacement']
-  else:
-    continue
-
   # Validate status code
   status = '302'
   if 'status' in entry:
@@ -61,7 +50,16 @@ for entry in document['entries']:
       raise ValueError('Invalid status "%s" for entry %d' % (entry['status'], i))
   test['status'] = status
 
-  tests.append(test)
+  # Determine the type for this entry.
+  types = []
+  if 'exact' in entry:
+    test['source'] = base + entry['exact']
+    test['replacement'] = entry['replacement']
+    tests.append(test)
+  elif 'prefix' in entry:
+    test['source'] = base + entry['prefix']
+    test['replacement'] = entry['replacement']
+    tests.append(test)
 
   if 'tests' in entry:
     t = 0

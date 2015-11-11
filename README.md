@@ -100,7 +100,7 @@ Test your changes in your browser using URLs starting with `http://172.16.100.10
 
     make all test
 
-Failures will be listed in `tests/failed.tsv` with their expected and actual values.
+Failures will be listed in `tests/development/failed.tsv` with their expected and actual values.
 
 When you are done with the VM, log out with `exit`. Then you can choose to suspend the VM with
 
@@ -109,3 +109,5 @@ When you are done with the VM, log out with `exit`. Then you can choose to suspe
 or delete the VM with
 
     vagrant destroy
+
+You can test against the production PURL server using `make test-production`. We only make one request per second, to avoid abusing the server, so this can take along time.

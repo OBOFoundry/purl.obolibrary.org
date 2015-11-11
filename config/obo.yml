@@ -1,0 +1,8 @@
+# PURL configuration for http://purl.obolibrary.org/obo/
+
+entries:
+
+# Redirect term identifiers
+- regex: ^/OBI_(\d+)$
+  replacement: http://www.ontobee.org/browser/rdf.php?o=OBI&iri=http://purl.obolibrary.org/obo/OBI_$1
+

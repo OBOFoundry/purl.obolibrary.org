@@ -1,4 +1,4 @@
-# PURL configuration for "obi"
+# PURL configuration for http://purl.obolibrary.org/obo/obi/
 
 entries:
 - prefix: /branches/

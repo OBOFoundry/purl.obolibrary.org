@@ -1,7 +1,7 @@
 ####
 #### Use kwalify and this schema to validate the config files.
 #### Example:
-####    kwalify -E -m ./metadata/db-xrefs.schema.yaml
+####    kwalify -E -m cofig.schema.yaml
 ####    kwalify -E -f ./metadata/db-xrefs.schema.yaml ./metadata/db-xrefs.yaml
 ####
 type: map
@@ -11,6 +11,7 @@ mapping:
     required: false
   "entries":
     type: seq
+    required: true
     sequence:
       - type: map
         mapping:
@@ -22,6 +23,10 @@ mapping:
           "prefix":
             type: str
             pattern: /^\//
+            required: false
+            unique: true
+          "regex":
+            type: str
             required: false
             unique: true
           "replacement":

@@ -189,6 +189,9 @@ entries:
 
 - prefix: /wiki/
   replacement: http://obi-ontology.org/page/
+  tests:
+  - from: /wiki/Releases
+    to: http://obi-ontology.org/page/Releases
 
 - prefix: /page/
   replacement: http://www.ontobee.org/browser/rdf.php?o=OBI&iri=

@@ -80,3 +80,32 @@ OBO projects currently use OCLC for managing PURLs. This project aims to replace
 The `Makefile` contains some code for fetching the PURL records for a given ontology ID from OCLC in XML format, and converting the XML to YAML. This should be a one-time migration. Going forward, the YAML configuration should be edited directly.
 
 The order of the migrated entries is: `exact` first (*should* be in the order they were created), followed by `prefix` entries from longest `prefix` to shortest. This order avoids nasty conflicts and has been tested to preserve the OCLC behaviour.
+
+
+## Development and Testing
+
+Developers can test their changes using a local virtual machine. First install [VirtualBox](https://www.virtualbox.org) and [Vagrant](https://www.vagrantup.com). Then check out a copy of this repository and start a virtual machine like so:
+
+    git clone https://github.com/jamesaoverton/obo-purls.git
+    cd obo-purls/deploy
+    vagrant up
+
+This will download a Debian Linux virtual machine, start it, and configure it as a web server. The `/var/www/obo-purls` directory of the VM is synced with your local `obo-purls` directory. You can then log in and rebuild the `.htaccess` files:
+
+    vagrant ssh
+    cd /var/www/obo-purls
+    make
+
+Test your changes in your browser using URLs starting with `http://172.16.100.10/obo/`, such as [`http://172.16.100.10/obo/OBI_0000070`](http://172.16.100.10/obo/OBI_0000070). You can also run an automated test of all the configured URLs like so:
+
+    make all test
+
+Failures will be listed in `tests/failed.tsv` with their expected and actual values.
+
+When you are done with the VM, log out with `exit`. Then you can choose to suspend the VM with
+
+    vagrant suspend
+
+or delete the VM with
+
+    vagrant destroy

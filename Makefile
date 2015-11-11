@@ -82,6 +82,34 @@ www/obo/.htaccess: config/obo.yml
 www/obo: www/obo/.htaccess $(foreach o,$(ONTOLOGY_IDS),www/obo/$o/.htaccess)
 
 
+### Test Apache Config
+#
+# Make HTTP HEAD requests against a test server
+# to ensure that redirects are working properly.
+tests:
+	mkdir -p $@
+
+# Run tests for a single YAML configuration file.
+tests/%.tsv: config/%.yml tests
+	< $< \
+	scripts/test.py /obo/$* \
+	> $@
+
+# Run tests for all ontologies in ONTOLOGY_IDS and write a report.
+tests/failed.tsv: tests/obo.tsv $(foreach o,$(ONTOLOGY_IDS),tests/$o.tsv)
+	< $< \
+	head -n1 \
+	| sed 's/^Result/File	Result/' \
+	> $@
+	@grep '^FAIL' tests/* \
+	| sed 's/:/	/' \
+	>> $@
+
+# If there is more than one line in failed.tsv, then there were errors.
+test: tests/failed.tsv
+	@test $$(wc -l < $<) -eq 1 || (echo 'Errors found; see $<'; exit 1)
+
+
 ### Fetch from OCLC
 #
 # Fetch records from OCLC in XML format.

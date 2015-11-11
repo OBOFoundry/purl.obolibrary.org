@@ -34,3 +34,18 @@ mapping:
             pattern: /^https?\:\/\/.+/
             required: true
             unique: false
+          "tests":
+            type: seq
+            required: false
+            sequence:
+              - type: map
+                mapping:
+                  "from":
+                    type: str
+                    pattern: /^\//
+                    required: true
+                  "to":
+                    type: str
+                    pattern: /^https?\:\/\/.+/
+                    required: true
+

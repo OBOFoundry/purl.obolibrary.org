@@ -45,8 +45,8 @@ validation:
 	mkdir -p $@
 
 # Validate a single YAML configuration file.
-validation/%.txt: config/%.yml config/config.schema.yaml validation
-	kwalify -f config/config.schema.yaml $< > $@
+validation/%.txt: config/%.yml config/config.schema.yml validation
+	kwalify -f config/config.schema.yml $< > $@
 	@cat $@
 
 # Validate configuration for all ontologies in ONTOLOGY_IDS.

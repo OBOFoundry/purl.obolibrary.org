@@ -71,8 +71,6 @@ www/obo: www/obo/.htaccess $(foreach o,$(ONTOLOGY_IDS),www/obo/$o/.htaccess)
 #
 # Make HTTP HEAD requests against a local development server
 # to ensure that redirects are working properly.
-DEVELOPMENT := 172.16.100.10
-
 tests/development:
 	mkdir -p $@
 
@@ -80,36 +78,18 @@ tests/development:
 # against the developmentelopment server,
 # making requests every 0.01 seconds.
 tests/development/%.tsv: config/%.yml tests/development
-	< $< \
-	tools/test.py $(DEVELOPMENT) /obo/$* 0.01 \
-	> $@
+	tools/test.py --delay=0.01 172.16.100.10 $< $@
 
-tests/development/obo.tsv: config/obo.yml tests/development
-	< $< \
-	tools/test.py $(DEVELOPMENT) /obo 0.01 \
-	> $@
-
-# Run tests for all ontologies in ONTOLOGY_IDS and write a report.
-tests/development/failed.tsv: tests/development/obo.tsv $(foreach o,$(ONTOLOGY_IDS),tests/development/$o.tsv)
-	< $< \
-	head -n1 \
-	| sed 's/^Result/File	Result/' \
-	> $@
-	@grep '^FAIL' tests/development/* \
-	| sed 's/:/	/' \
-	>> $@
-
-# If there is more than one line in failed.tsv, then there were errors.
-test: tests/development/failed.tsv
-	@test $$(wc -l < $<) -eq 1 || (echo 'Errors found; see $<'; exit 1)
+# Run all tests against development and fail if any FAIL line is found.
+test: $(patsubst config/%.yml,tests/development/%.tsv,$(wildcard config/*.yml))
+	@cat tests/development/*.tsv \
+	| awk '/^FAIL/ {status=1; print} END {exit $$status}'
 
 
 ### Test Production Apache Config
 #
 # Make HTTP HEAD requests against the production server
 # to ensure that redirects are working properly.
-PRODUCTION := purl.obolibrary.org
-
 tests/production:
 	mkdir -p $@
 
@@ -117,23 +97,12 @@ tests/production:
 # against the production server,
 # making requests every 1 second.
 tests/production/%.tsv: config/%.yml tests/production
-	< $< \
-	tools/test.py $(PRODUCTION) /obo/$* 1 \
-	> $@
+	tools/test.py --delay=1 purl.obolibrary.org $< $@
 
-# Run tests for all ontologies in ONTOLOGY_IDS and write a report.
-tests/production/failed.tsv: tests/production/obo.tsv $(foreach o,$(ONTOLOGY_IDS),tests/production/$o.tsv)
-	< $< \
-	head -n1 \
-	| sed 's/^Result/File	Result/' \
-	> $@
-	@grep '^FAIL' tests/production/* \
-	| sed 's/:/	/' \
-	>> $@
-
-# If there is more than one line in failed.tsv, then there were errors.
-test-production: tests/production/failed.tsv
-	@test $$(wc -l < $<) -eq 1 || (echo 'Errors found; see $<'; exit 1)
+# Run all tests against production and fail if any FAIL line is found.
+test-production: $(patsubst config/%.yml,tests/production/%.tsv,$(wildcard config/*.yml))
+	@cat tests/production/*.tsv \
+	| awk '/^FAIL/ {status=1; print} END {exit $$status}'
 
 
 ### Fetch from OCLC

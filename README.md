@@ -107,7 +107,7 @@ Test your changes in your browser using URLs starting with `http://172.16.100.10
 
     make all test
 
-Failures will be listed in `tests/development/failed.tsv` with their expected and actual values.
+Test results will be listed in `tests/development/*.tsv` with their expected and actual values.
 
 When you are done with the VM, log out with `exit`. Then you can choose to suspend the VM with
 

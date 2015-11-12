@@ -62,7 +62,7 @@ def main():
     'Result', 'Source URL',
     'Expected Status', 'Expected URL',
     'Actual Status', 'Actual URL'
-  ]))
+  ]) + '\n')
 
   # Run the tests and add results to the report table.
   conn = http.client.HTTPConnection(args.domain, timeout=args.timeout)

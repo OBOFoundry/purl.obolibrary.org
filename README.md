@@ -35,7 +35,7 @@ In the most common case, your PURL should match a unique URL and redirect to a u
     - exact: /obi.owl
       replacement: http://svn.code.sf.net/p/obi/code/releases/2015-10-20/obi.owl
 
-This entry will match exactly the URL `http://purl.obolibrary.org/obo/obi/obi.owl`, and it will redirect to exactly `http://svn.code.sf.net/p/obi/code/releases/2015-10-20/obi.owl`. The matched domain name is fixed `http://purl.obolibrary.org`; the next part is project-specific `/obo/obi/`; the final part is taken from the entry `/obi.owl`. The replacement can be any valid URL.
+This entry will match exactly the URL `http://purl.obolibrary.org/obo/obi/obi.owl`, and it will redirect to exactly `http://svn.code.sf.net/p/obi/code/releases/2015-10-20/obi.owl`. The matched domain name is fixed `http://purl.obolibrary.org`; the next part is project-specific `/obo/obi/`; the final part is taken from the entry `/obi.owl`. The replacement is expected to be a valid, absolute URL, starting with `http`.
 
 Behind the scenes, the entry is translated into an Apache RedirectMatch directive in `obo/obi/.htaccess` by escaping special characters and "anchoring" with initial `^` and final `$`:
 
@@ -81,12 +81,13 @@ The `Makefile` contains some code for fetching the PURL records for a given onto
 
 The order of the migrated entries is: `exact` first (*should* be in the order they were created), followed by `prefix` entries from longest `prefix` to shortest. This order avoids nasty conflicts and has been tested to preserve the OCLC behaviour.
 
-You can run migration for a single ontology, or all the ontologies in `ONTOLOG_IDS`.
+You can run migration for a single ontology at a time, by its ID (usually lower case):
 
     make migrate-obi
-    make migrate
 
-The tool will refuse to overwrite existing YAML configuration files.
+The tool will refuse to overwrite existing YAML configuration files. If you are running a test server (see next section) you can test the configuration as you are migrating:
+
+    make migrate-obi && make all test
 
 
 ## Development and Testing

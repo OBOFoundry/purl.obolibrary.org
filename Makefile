@@ -17,27 +17,26 @@
 # - [PyYAML](http://pyyaml.org/wiki/PyYAML) for translation to Apache
 
 
-### Configuration
+### Basic Operations
 
-# Run operations on these ontologies.
-ONTOLOGY_IDS := obi
-
-# Default goal: Generate an .htaccess file for each id in ONTOLOGY_IDS.
+# Default goal: Remove generated files, validate config, and regenerate.
 all: clean validate build
 
-build: www/obo
-
+# Remove directories with generated files.
 clean:
 	rm -rf tests www/obo
 
-# Use awk with tabs
-AWK := awk -F "	" -v "OFS=	"
+# Generate .htaccess files for all YAML configuration files.
+build: www/obo
+
+
+### Configuration
 
 # Do not automatically delete intermediate files.
 .SECONDARY:
 
 # These goals do not correspond to files.
-.PHONY: all clean validate test test-production fetch migrate migrate-%
+.PHONY: all clean validate test test-production migrate-%
 
 
 ### Validate YAML Config
@@ -58,13 +57,11 @@ www/obo/%/.htaccess: config/%.yml
 	mkdir -p www/obo/$*
 	tools/translate.py $< $@
 
-# Convert the special global OBO configuration file.
-www/obo/.htaccess: config/obo.yml
-	mkdir -p www/obo
-	tools/translate.py $< $@
-
-# Convert configuration for all ontologies in ONTOLOGY_IDS.
-www/obo: www/obo/.htaccess $(foreach o,$(ONTOLOGY_IDS),www/obo/$o/.htaccess)
+# Convert all YAML configuration files to .htaccess
+# and move the special `obo` .htaccess file.
+www/obo: $(patsubst config/%.yml,www/obo/%/.htaccess,$(wildcard config/*.yml))
+	mv www/obo/obo/.htaccess www/obo/.htaccess
+	rm -rf www/obo/obo
 
 
 ### Test Development Apache Config
@@ -75,7 +72,7 @@ tests/development:
 	mkdir -p $@
 
 # Run tests for a single YAML configuration file.
-# against the developmentelopment server,
+# against the development server,
 # making requests every 0.01 seconds.
 tests/development/%.tsv: config/%.yml tests/development
 	tools/test.py --delay=0.01 172.16.100.10 $< $@
@@ -105,38 +102,20 @@ test-production: $(patsubst config/%.yml,tests/production/%.tsv,$(wildcard confi
 	| awk '/^FAIL/ {status=1; print} END {exit $$status}'
 
 
-### Fetch from OCLC
+### Migrate Configuration from PURL.org
 #
-# Fetch records from OCLC in XML format.
-migrations:
-	mkdir -p $@
-
-OCLC_XML = https://purl.org/admin/purl/?target=&seealso=&maintainers=&explicitmaintainers=&tombstone=false&p_id=
-
-# Fetch first 100 PURLs for a given path from OCLC in XML format.
-migrations/%.xml: migrations
-	sleep 5
-	curl -o $@ "$(OCLC_XML)/obo/$*/*"
-
-# Fetch XML for all ontologies in the ONTOLOGY_IDS list.
-fetch: $(foreach o,$(ONTOLOGY_IDS),migrations/$o.xml)
-
-
-### Migrate Configuration from OCLC
-#
-# Translate OCLC XML files into YAML files.
+# Given an ontology ID (usually lower-case),
+# fetch and translate a PURL.org XML file
+# into a YAML configuration file.
 # This should be a one-time migration.
-# WARN: Don't overwrite newer configuration files!
-config:
-	mkdir -p $@
-
-# Convert XML to YAML format.
 # Do not overwrite existing config file.
-migrate-%: migrations/%.xml config
+PURL_XML = https://purl.org/admin/purl/?target=&seealso=&maintainers=&explicitmaintainers=&tombstone=false&p_id=
+
+migrate-%:
 	@test ! -s config/$*.yml \
-	|| (echo 'Refusing to overwrite config/$*.yml') \
-	&& tools/migrate.py /obo/$* migrations/$*.xml config/$*.yml
-
-# Migrate XML to YAML for all ontologies in the ONTOLOGY_IDS list.
-migrate: $(foreach o,$(ONTOLOGY_IDS),migrate-$o)
-
+	|| (echo 'Refusing to overwrite config/$*.yml'; exit 1)
+	mkdir -p migrations
+	test -s migrations/$*.xml \
+	|| curl --fail -o migrations/$*.xml "$(PURL_XML)/obo/$*/*"
+	mkdir -p config
+	tools/migrate.py /obo/$* migrations/$*.xml config/$*.yml

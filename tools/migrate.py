@@ -126,6 +126,10 @@ class OCLCHandler(xml.sax.ContentHandler):
 
       if not 'url' in self.entry:
         raise ValueError('No <url> for <purl> %d' % self.count)
+      if not self.entry['url'].startswith('http'):
+        raise ValueError(
+          'In <purl> %d the <url> "%s" does not begin with "http"'
+          % (self.count, self.entry['url']))
 
       if not 'type' in self.entry:
         raise ValueError('No <type> for <purl> %d' % self.count)

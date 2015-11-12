@@ -108,7 +108,9 @@ Test your changes in your browser using URLs starting with `http://172.16.100.10
 
     make all test
 
-Test results will be listed in `tests/development/*.tsv` with their expected and actual values.
+Test results will be listed in `tests/development/*.tsv` with their expected and actual values. If you are making changes to the project tools, you can test them against the `tools/examples/` files with:
+
+    make clean test-examples
 
 When you are done with the VM, log out with `exit`. Then you can choose to suspend the VM with
 

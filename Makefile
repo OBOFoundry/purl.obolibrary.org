@@ -102,6 +102,23 @@ test-production: $(patsubst config/%.yml,tests/production/%.tsv,$(wildcard confi
 	| awk '/^FAIL/ {status=1; print} END {exit $$status}'
 
 
+### Test Tools
+#
+# Test our tools on files in examples/ directory.
+tests/examples:
+	mkdir -p $@
+
+tests/examples/%.yml: tools/examples/%.xml tools/examples/%.yml tests/examples
+	tools/migrate.py /obo/$* $< $@
+	diff tools/examples/$*.yml $@
+
+tests/examples/%.htaccess: tools/examples/%.yml tools/examples/%.htaccess tests/examples
+	tools/translate.py $< $@
+	diff tools/examples/$*.htaccess $@
+
+test-examples: tests/examples/test1.yml tests/examples/test1.htaccess tests/examples/test2.htaccess
+
+
 ### Migrate Configuration from PURL.org
 #
 # Given an ontology ID (usually lower-case),

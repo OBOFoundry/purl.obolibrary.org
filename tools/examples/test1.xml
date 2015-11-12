@@ -1,0 +1,22 @@
+<results>
+  <purl status="1">
+    <id>/obo/test1/branches/</id>
+    <type>partial</type>
+    <maintainers>
+      <uid>TEST</uid>
+    </maintainers>
+    <target>
+      <url>http://example.org/branches/</url>
+    </target>
+  </purl>
+  <purl status="1">
+    <id>/obo/test1/project</id>
+    <type>302</type>
+    <maintainers>
+      <uid>TEST</uid>
+    </maintainers>
+    <target>
+      <url>http://example.org/project.html</url>
+    </target>
+  </purl>
+</results>

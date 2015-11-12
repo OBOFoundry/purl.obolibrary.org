@@ -5,6 +5,15 @@ This is a quick demonstration of an alternative way to manage OBO Foundry PURLs.
 Unlike w3id.org, we do not edit the Apache configuration files by hand. Instead we have a simple YAML configuration format, and scripts to translate the YAML configuration into Apache configuration. The YAML files are easier to read and write, and allow us to validate and test PURLs automatically.
 
 
+## Examples
+
+The following examples are *NOT permanent URLs* -- they are running on a little server that might disappear at any time. But they show how things work:
+
+- http://url.ontodev.org/obo/OBI_0000070 (and other OBI term IDs) redirect to Ontobee pages: http://www.ontobee.org/browser/rdf.php?o=OBI&iri=http://purl.obolibrary.org/obo/OBI_0000070
+- http://url.ontodev.org/obo/obi/2014-08-18/obi_core.owl redirects to a specific version of the OBI Core OWL file on SourceForge: http://svn.code.sf.net/p/obi/code/releases/2014-08-18/obi_core.owl
+- http://url.ontodev.org/obo/obi/wiki redirects to the OBI wiki: http://obi-ontology.org
+
+
 ## Adding and Updating PURLs
 
 TODO: Explain the update process from the perspective of an ontology developer using this system.
@@ -121,3 +130,20 @@ or delete the VM with
     vagrant destroy
 
 You can test against the production PURL server using `make test-production`. We only make one request per second, to avoid abusing the server, so this can take along time.
+
+
+## Deployment
+
+Deployment is automated using [Ansible](http://ansible.com), and targets a stock Debian 8 Linux server. You should install on a **fresh** server, not one that's running other applications, unless you **really** know what you're doing.
+
+Install Ansible on your local machine, add the IP address or hostname of your target server to `tools/hosts`, then run:
+
+    cd tools
+    ansible-playbook -i hosts site.yml
+
+Ansible uses SSH to connect to the server an execute the tasks in [`tools/site.yml`](tools/site.yml). If you have trouble connecting, you may have to adjust your SSH configuration to be more automatic, say by editing your `.ssh/config`.
+
+You can re-run Ansible as you make changes. Once the system is running, it will fetch changes from the master Git repository every 10 minutes. You can use the `tools/test.py` script to check your work, e.g.:
+
+    tools/test.py url.ontodev.org config/obi.yml
+

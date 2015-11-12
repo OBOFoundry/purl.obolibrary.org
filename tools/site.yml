@@ -19,8 +19,8 @@
       service: name=apache2 state=restarted
 
   tasks:
-    - name: Update all installed system packages
-      apt: upgrade=dist
+    - name: Update apt-get cache
+      apt: update_cache=yes
 
     - name: Install system-wide packages
       apt: pkg={{ item }} state=installed
@@ -45,6 +45,14 @@
 
     - name: Make www/repo directory
       file: path={{ repo_dir }} state=directory owner=www-data group=www-data
+
+    - name: Clone the Git repo
+      when: test is undefined
+      git: repo={{ repo_url }} dest={{ repo_dir }}
+
+    - name: Set cron to update PURLs every 10 minutes
+      when: test is undefined
+      cron: name="update PURLs" minute="*/10" job="cd {{ repo_dir }} && git pull && make"
 
     - name: Disable default Apache site
       command: a2dissite 000-default removes=/etc/apache2/sites-enabled/000-default.conf

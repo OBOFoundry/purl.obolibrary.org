@@ -3,4 +3,5 @@ junk/
 migrations/
 tests/
 tools/.vagrant/
+tools/hosts
 www/obo

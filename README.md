@@ -72,6 +72,17 @@ Regular expression entries should only be needed very rarely, and should always 
 For the regular expression type, the value of the `regex:` and `replacement:` keywords should contain regular expressions in exactly the format expected by Apache [RedirectMatch](https://httpd.apache.org/docs/2.4/mod/mod_alias.html#redirectmatch). The values will be quoted, but no other changes will be made to them.
 
 
+### Tests
+
+Every `prefix` or `regex` entry should also have a `tests:` keyword, with a list of additional URLs to check. Each test requires a `from:` value (like `exact:`) and a `to:` value (like `replacement:`). Here's an example:
+
+    - prefix: /branches/
+      replacement: http://obi.svn.sourceforge.net/svnroot/obi/trunk/src/ontology/branches/
+      tests:
+      - from: /branches/obi.owl
+        to: http://obi.svn.sourceforge.net/svnroot/obi/trunk/src/ontology/branches/obi.owl
+
+
 ### Temporary and Permanent
 
 Any entry can have a `status:` keyword. By default, every entry uses "temporary" (HTTP 302) status. If you *really* know what you're doing, you can set the status to "permanent" (HTTP 301).

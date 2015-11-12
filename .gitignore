@@ -1,6 +1,6 @@
 .DS_Store
-deploy/.vagrant/
 junk/
 migrations/
 tests/
+tools/.vagrant/
 validations/

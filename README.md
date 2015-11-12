@@ -87,7 +87,7 @@ The order of the migrated entries is: `exact` first (*should* be in the order th
 Developers can test their changes using a local virtual machine. First install [VirtualBox](https://www.virtualbox.org) and [Vagrant](https://www.vagrantup.com). Then check out a copy of this repository and start a virtual machine like so:
 
     git clone https://github.com/jamesaoverton/obo-purls.git
-    cd obo-purls/deploy
+    cd obo-purls/tools
     vagrant up
 
 This will download a Debian Linux virtual machine, start it, and configure it as a web server. The `/var/www/obo-purls` directory of the VM is synced with your local `obo-purls` directory. You can then log in and rebuild the `.htaccess` files:

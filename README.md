@@ -81,6 +81,13 @@ The `Makefile` contains some code for fetching the PURL records for a given onto
 
 The order of the migrated entries is: `exact` first (*should* be in the order they were created), followed by `prefix` entries from longest `prefix` to shortest. This order avoids nasty conflicts and has been tested to preserve the OCLC behaviour.
 
+You can run migration for a single ontology, or all the ontologies in `ONTOLOG_IDS`.
+
+    make migrate-obi
+    make migrate
+
+The tool will refuse to overwrite existing YAML configuration files.
+
 
 ## Development and Testing
 

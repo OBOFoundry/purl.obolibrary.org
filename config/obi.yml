@@ -1,5 +1,7 @@
 # PURL configuration for http://purl.obolibrary.org/obo/obi
 
+base_url: /obo/obi
+
 entries:
 - exact: /project
   replacement: http://sw.neurocommons.org/obi-303/project.rdf
@@ -189,9 +191,6 @@ entries:
 
 - prefix: /wiki/
   replacement: http://obi-ontology.org/page/
-  tests:
-  - from: /wiki/Releases
-    to: http://obi-ontology.org/page/Releases
 
 - prefix: /page/
   replacement: http://www.ontobee.org/browser/rdf.php?o=OBI&iri=

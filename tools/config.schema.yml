@@ -6,9 +6,10 @@
 ####
 type: map
 mapping:
-  "description":
+  "base_url":
     type: str
-    required: false
+    pattern: /^\/obo/
+    required: true
   "entries":
     type: seq
     required: true

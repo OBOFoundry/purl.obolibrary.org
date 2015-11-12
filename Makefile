@@ -37,7 +37,7 @@ AWK := awk -F "	" -v "OFS=	"
 .SECONDARY:
 
 # These goals do not correspond to files.
-.PHONY: all clean validate test test-production fetch migrate
+.PHONY: all clean validate test test-production fetch migrate migrate-%
 
 
 ### Validate YAML Config
@@ -167,15 +167,13 @@ fetch: $(foreach o,$(ONTOLOGY_IDS),migrations/$o.xml)
 config:
 	mkdir -p $@
 
-# Use xmlstarlet to convert XML to YAML format,
-# then tweak the results with sed.
-# Require XML file to be fetched manually.
+# Convert XML to YAML format.
 # Do not overwrite existing config file.
-config/%.yml:
-	@test -s migrations/$*.xml || (echo 'Run "make migrations/$*.xml" first'; exit 1)
-	@test ! -s $@ || (echo 'Refusing to overwrite $@'; exit 1)
-	tools/migrate.py /obo/$* < migrations/$*.xml > $@
+migrate-%: migrations/%.xml config
+	@test ! -s config/$*.yml \
+	|| (echo 'Refusing to overwrite config/$*.yml') \
+	&& tools/migrate.py /obo/$* migrations/$*.xml config/$*.yml
 
 # Migrate XML to YAML for all ontologies in the ONTOLOGY_IDS list.
-migrate: $(foreach o,$(ONTOLOGY_IDS),config/$o.yml)
+migrate: $(foreach o,$(ONTOLOGY_IDS),migrate-$o)
 

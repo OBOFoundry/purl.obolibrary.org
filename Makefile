@@ -28,7 +28,7 @@ all: clean validate build
 build: www/obo
 
 clean:
-	rm -rf tests validations www/obo
+	rm -rf tests www/obo
 
 # Use awk with tabs
 AWK := awk -F "	" -v "OFS=	"
@@ -43,20 +43,11 @@ AWK := awk -F "	" -v "OFS=	"
 ### Validate YAML Config
 #
 # Use kwalify and the tools/config.schema.yml
-# to validate YAML configuration file format.
-validations:
-	mkdir -p $@
-
-# Validate a single YAML configuration file.
-validations/%.txt: config/%.yml tools/config.schema.yml validations
-	kwalify -f tools/config.schema.yml $< > $@
-	@cat $@
-
-# Validate configuration for all ontologies in ONTOLOGY_IDS.
-# If any INVALID results are found, print them and exit with an error.
-validate: validations/obo.txt $(foreach o,$(ONTOLOGY_IDS),validations/$o.txt)
-	@grep -v 'valid.$$' validations/* && exit 1 || exit 0
-	@grep 'INVALID' validations/* && exit 1 || exit 0
+# to validate all YAML configuration files.
+# If any INVALID results are found, exit with an error.
+validate:
+	kwalify -f tools/config.schema.yml config/*.yml \
+	| awk '{print} /INVALID/ {status=1} END {exit $$status}'
 
 
 ### Generate Apache Config

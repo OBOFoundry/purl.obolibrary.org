@@ -1,5 +1,7 @@
 # obo-purls
 
+[![Build Status](https://travis-ci.org/jamesaoverton/obo-purls.svg)](https://travis-ci.org/jamesaoverton/obo-purls)
+
 This repository presents an alternative way to manage OBO Foundry PURLs. Like <https://github.com/perma-id/w3id.org> we use per-directory Apache configuration files (`.htaccess` files), each of which uses `RedirectMatch` directives to redirect PURL requests to their proper targets. Unlike w3id.org, we do not edit the Apache configuration files by hand. Instead we have a simple YAML configuration format, and scripts to translate the YAML configuration into Apache configuration. The YAML files are easier to read and write, and allow us to validate and test PURLs automatically.
 
 
@@ -158,3 +160,4 @@ You can re-run Ansible as you make changes. Once the system is running, it will 
 
     export PRODUCTION=url.ontodev.org; make clean test-production
 
+The `make safe-update` task will check [Travis-CI](https://travis-ci.org/jamesaoverton/obo-purls) to ensure that the latest build on the master branch passed all automated tests, and that it is newer than the last time `safe-update` completed. Then it will pull from the Git repository and rebuild the site. This *should* be safe for a `cron` task to synchronize PURLs with the repository.

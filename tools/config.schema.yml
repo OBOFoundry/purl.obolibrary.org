@@ -1,0 +1,52 @@
+####
+#### Use kwalify and this schema to validate the config files.
+#### Example:
+####    kwalify -E -m cofig.schema.yaml
+####    kwalify -E -f ./metadata/db-xrefs.schema.yaml ./metadata/db-xrefs.yaml
+####
+type: map
+mapping:
+  "base_url":
+    type: str
+    pattern: /^\/obo/
+    required: true
+  "entries":
+    type: seq
+    required: true
+    sequence:
+      - type: map
+        mapping:
+          "exact":
+            type: str
+            pattern: /^\//
+            required: false
+            unique: true
+          "prefix":
+            type: str
+            pattern: /^\//
+            required: false
+            unique: true
+          "regex":
+            type: str
+            required: false
+            unique: true
+          "replacement":
+            type: str
+            pattern: /^https?\:\/\/.+/
+            required: true
+            unique: false
+          "tests":
+            type: seq
+            required: false
+            sequence:
+              - type: map
+                mapping:
+                  "from":
+                    type: str
+                    pattern: /^\//
+                    required: true
+                  "to":
+                    type: str
+                    pattern: /^https?\:\/\/.+/
+                    required: true
+

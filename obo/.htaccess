@@ -1,7 +1,0 @@
-RewriteEngine on
-
-# Redirect OBI "assay" to Wikipedia "assay"
-RewriteRule ^OBI_0000070$ https://en.wikipedia.org/wiki/Assay
-
-# Redirect OBI terms to Ontobee
-RewriteRule ^OBI_(.*)$ http://www.ontobee.org/browser/rdf.php?o=OBI&iri=http://purl.obolibrary.org/obo/OBI_$1

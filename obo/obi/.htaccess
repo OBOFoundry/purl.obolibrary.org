@@ -1,9 +1,0 @@
-RewriteEngine on
-
-# Dated Releases
-# Example: http://demo.temp.org/obo/obi/2014-08-18/obi.owl
-RewriteRule ^2014-08-18/(.*) http://svn.code.sf.net/p/obi/code/releases/2014-08-18/$1
-
-# Other Stuff
-RewriteRule ^wiki http://obi-ontology.org
-RewriteRule ^wiki/(.*) http://obi-ontology.org/page/$1

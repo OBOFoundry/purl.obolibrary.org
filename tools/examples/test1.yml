@@ -1,0 +1,11 @@
+# PURL configuration for http://purl.obolibrary.org/obo/test1
+
+base_url: /obo/test1
+
+entries:
+- exact: /project
+  replacement: http://example.org/project.html
+
+- prefix: /branches/
+  replacement: http://example.org/branches/
+

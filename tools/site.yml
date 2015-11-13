@@ -1,0 +1,64 @@
+---
+# This is an Ansible playbook specifying the instructions for deploying the obo-purls site.
+
+- hosts: all
+  user: admin
+  sudo: True
+  gather_facts: True
+
+  vars:
+    mode:      production
+    domain:    purl.obolibrary.org
+    owner:     jamesaoverton
+    repo:      obo-purls
+    repo_dir:  "/var/www/{{ repo }}"
+    repo_url:  "https://github.com/{{ owner }}/{{ repo }}.git"
+
+  handlers:
+    - name: restart apache
+      service: name=apache2 state=restarted
+
+  tasks:
+    - name: Update apt-get cache
+      apt: update_cache=yes
+
+    - name: Install system-wide packages
+      apt: pkg={{ item }} state=installed
+      with_items:
+        - ntp
+        - apache2
+        - git
+        - ruby
+        - python3
+        - python3-pip
+
+    - name: Install Ruby packages
+      command: gem install {{ item }}
+      with_items:
+        - kwalify
+
+    - name: Install Python packages
+      pip: name={{ item }} state=present executable=pip3
+      with_items:
+        - PyYAML
+
+    - name: Clone the Git repo
+      when: mode == "production"
+      git: repo={{ repo_url }} dest={{ repo_dir }}
+
+    - name: Set cron to update PURLs every 10 minutes
+      when: mode == "production"
+      cron: name="update PURLs" minute="*/10" job="cd {{ repo_dir }} && git pull && make"
+
+    - name: Disable default Apache site
+      command: a2dissite 000-default removes=/etc/apache2/sites-enabled/000-default.conf
+      notify: restart apache
+
+    - name: Make the PURL site available
+      template: src=etc_apache2_sites-available_site.j2 dest="/etc/apache2/sites-available/{{ repo }}.conf" group=root owner=root force=yes
+      notify: restart apache
+
+    - name: Enable the PURL site
+      command: "a2ensite {{ repo }}.conf creates=/etc/apache2/sites-enabled/{{ repo }}.conf"
+      notify: restart apache
+

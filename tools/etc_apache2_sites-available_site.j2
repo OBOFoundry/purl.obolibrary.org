@@ -1,0 +1,18 @@
+<VirtualHost *:80>
+    ServerName {{ domain }}
+
+    # Root directory:
+    # the only Option is FollowSymLinks (not ExecCGI, Includes, Indexes)
+    # the only AllowOverride is FileInfo (not Options)
+    # see https://httpd.apache.org/docs/current/mod/core.html#allowoverride
+    DocumentRoot {{ repo_dir }}/www
+    <Directory {{ repo_dir }}/www>
+      AllowOverride FileInfo
+      Options FollowSymLinks
+      Order allow,deny
+      Allow from all
+    </Directory>
+
+    CustomLog /var/log/apache2/obo_purls_access.log combined
+    ErrorLog /var/log/apache2/obo_purls_error.log
+</VirtualHost>

@@ -1,0 +1,7 @@
+.DS_Store
+junk/
+migrations/
+tests/
+tools/.vagrant/
+tools/hosts
+www/obo

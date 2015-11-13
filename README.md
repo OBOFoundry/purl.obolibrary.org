@@ -16,8 +16,15 @@ The following examples are *NOT permanent URLs* -- they are running on a little 
 
 ## Adding and Updating PURLs
 
-TODO: Explain the update process from the perspective of an ontology developer using this system.
+Please use one of these four options to make changes to the PURLs:
 
+1. [Create a new issue](https://github.com/jamesaoverton/obo-purls/issues/new) describing the change you require.
+
+2. [Browse to the configuration file you want to change](https://github.com/jamesaoverton/obo-purls/tree/master/config) and click the "pencil" icon to edit it.
+
+3. [Add a new configuration file](https://github.com/jamesaoverton/obo-purls/new/master/config).
+
+4. [Fork this repository](https://help.github.com/articles/fork-a-repo/) and [make a pull request](https://help.github.com/articles/using-pull-requests/).
 
 
 ## Configuration Format

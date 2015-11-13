@@ -1,4 +1,6 @@
 .DS_Store
+.current_build
+.travis_build
 junk/
 migrations/
 tests/

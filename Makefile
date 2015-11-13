@@ -15,6 +15,7 @@
 # - [kwalify](http://www.kuwata-lab.com/kwalify/) for YAML validation
 # - [Python 3](https://www.python.org/downloads/) to run scripts
 # - [PyYAML](http://pyyaml.org/wiki/PyYAML) for translation to Apache
+# - [travis.rb](https://github.com/travis-ci/travis.rb) for Travis-CI
 
 
 ### Basic Operations
@@ -135,28 +136,22 @@ test-examples: tests/examples/test1.yml tests/examples/test1.htaccess tests/exam
 
 ### Update Repository
 #
-# Check Travis for a green build,
-# then update and rebuild:
-#
-#     make safe-update
-#
-
-# Check Travis-CI for last_build_status,
-# and fail if it is not 0.
-status:
-	curl --fail https://api.travis-ci.org/repos/$(PROJECT) \
-	| jq .
-
-
-
-# Update this repository and regenerate.
-update:
-	git pull
-	make
-
-# Update and rebuild only if Travis build is green.
-safe-update: status update
-
+# Check Travis-CI for the last build.
+# If it did not pass, then fail.
+# If it is the same as .current_build, then fail.
+# Otherwise replace .current_build,
+# pull from git, and run a new `make`.
+safe-update:
+	travis history --no-interactive \
+	--repo $(PROJECT) --branch master --limit 1 \
+	> .travis_build
+	@grep ' passed:   ' .travis_build
+	@echo 'Last build is green, but might not be new'
+	@diff .current_build .travis_build && exit 1 || exit 0
+	@echo 'New green build available'
+	@mv .travis_build .current_build
+	echo git pull
+	echo make
 
 
 ### Migrate Configuration from PURL.org

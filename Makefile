@@ -91,7 +91,7 @@ tests/development/%.tsv: config/%.yml tests/development
 # Run all tests against development and fail if any FAIL line is found.
 test: $(patsubst config/%.yml,tests/development/%.tsv,$(wildcard config/*.yml))
 	@cat tests/development/*.tsv \
-	| awk '/^FAIL/ {status=1; print} END {exit $$status}'
+	| awk '/^FAIL/ {x=1; print} END {exit x}'
 
 
 ### Test Production Apache Config

@@ -42,9 +42,6 @@
       with_items:
         - PyYAML
 
-    - name: Make www/repo directory
-      file: path={{ repo_dir }} state=directory owner=www-data group=www-data
-
     - name: Clone the Git repo
       when: mode == "production"
       git: repo={{ repo_url }} dest={{ repo_dir }}

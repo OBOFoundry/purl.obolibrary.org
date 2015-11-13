@@ -5,8 +5,11 @@ python: "3.5"
 install:
   - "sudo pip install ansible"
 script:
-  - "echo 'localhost' > tools/hosts"
-  - "cd tools && ansible-playbook -i hosts -e 'mode=travis' --connection=local site.yml"
+  - "sudo ln -s `pwd` /var/www/obo-purls"
+  - "cd tools"
+  - "echo 'localhost' > hosts"
+  - "ansible-playbook -i hosts -e 'mode=travis' --connection=local site.yml"
+  - "cd .."
   - "make all test"
 notifications:
   email:

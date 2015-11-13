@@ -11,7 +11,7 @@ script:
   - "echo 'localhost' > hosts"
   - "ansible-playbook -i hosts -e 'mode=travis' --connection=local site.yml"
   - "cd .."
-  - "make all test"
+  - "sudo make all test"
 notifications:
   email:
     - james@overton.ca

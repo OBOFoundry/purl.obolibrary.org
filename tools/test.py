@@ -69,7 +69,7 @@ def main():
   for test in tests:
     results = run_test(conn, test)
     args.report_file.write('\t'.join(results) + '\n')
-    sys.stdout.flush()
+    args.report_file.flush()
     time.sleep(args.delay)
 
 

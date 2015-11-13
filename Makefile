@@ -31,6 +31,17 @@ build: www/obo
 
 
 ### Configuration
+#
+# You can override these defaults with environment variables:
+#
+#     export DEVELOPMENT=172.16.100.10; make all test
+#
+
+# Local development server.
+DEVELOPMENT ?= localhost
+
+# Production server.
+PRODUCTION ?= purl.obolibrary.org
 
 # Do not automatically delete intermediate files.
 .SECONDARY:
@@ -66,16 +77,16 @@ www/obo: $(patsubst config/%.yml,www/obo/%/.htaccess,$(wildcard config/*.yml))
 
 ### Test Development Apache Config
 #
-# Make HTTP HEAD requests against a local development server
+# Make HTTP HEAD requests quickly against the DEVELOPMENT server
 # to ensure that redirects are working properly.
 tests/development:
 	mkdir -p $@
 
 # Run tests for a single YAML configuration file.
-# against the development server,
+# against the DEVELOPMENT server,
 # making requests every 0.01 seconds.
 tests/development/%.tsv: config/%.yml tests/development
-	tools/test.py --delay=0.01 172.16.100.10 $< $@
+	tools/test.py --delay=0.01 $(DEVELOPMENT) $< $@
 
 # Run all tests against development and fail if any FAIL line is found.
 test: $(patsubst config/%.yml,tests/development/%.tsv,$(wildcard config/*.yml))
@@ -85,16 +96,16 @@ test: $(patsubst config/%.yml,tests/development/%.tsv,$(wildcard config/*.yml))
 
 ### Test Production Apache Config
 #
-# Make HTTP HEAD requests against the production server
+# Make HTTP HEAD requests slowly against the PRODUCTION server
 # to ensure that redirects are working properly.
 tests/production:
 	mkdir -p $@
 
 # Run tests for a single YAML configuration file
-# against the production server,
+# against the PRODUCTION server,
 # making requests every 1 second.
 tests/production/%.tsv: config/%.yml tests/production
-	tools/test.py --delay=1 purl.obolibrary.org $< $@
+	tools/test.py --delay=1 $(PRODUCTION) $< $@
 
 # Run all tests against production and fail if any FAIL line is found.
 test-production: $(patsubst config/%.yml,tests/production/%.tsv,$(wildcard config/*.yml))

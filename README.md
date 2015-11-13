@@ -154,7 +154,7 @@ Install Ansible on your local machine, add the IP address or hostname of your ta
 
 Ansible uses SSH to connect to the server an execute the tasks in [`tools/site.yml`](tools/site.yml). If you have trouble connecting, you may have to adjust your SSH configuration to be more automatic, say by editing your `.ssh/config`.
 
-You can re-run Ansible as you make changes. Once the system is running, it will fetch changes from the master Git repository every 10 minutes. You can use the `tools/test.py` script to check your work, e.g.:
+You can re-run Ansible as you make changes. Once the system is running, it will fetch changes from the master Git repository every 10 minutes. From your local machine, you can test all URLs against any target server, e.g.:
 
-    tools/test.py url.ontodev.org config/obi.yml
+    export PRODUCTION=url.ontodev.org; make clean test-production
 

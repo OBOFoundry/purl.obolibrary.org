@@ -5,6 +5,7 @@ python: "3.5"
 install:
   - "sudo pip install ansible"
 script:
+  - "sudo mkdir -p /var/www"
   - "sudo ln -s `pwd` /var/www/obo-purls"
   - "cd tools"
   - "echo 'localhost' > hosts"

@@ -2,17 +2,16 @@ sudo: required
 dist: trusty
 language: python
 python: "3.5"
+install:
+  - "sudo pip install ansible"
 script:
-  - "sudo pip install pyyaml"
-  - "sudo gem install kwalify"
-  - "sudo make"
   - "cd tools"
   - "echo 'localhost' > hosts"
-  - "sudo pip install ansible"
   - "ansible-playbook -i hosts -e 'mode=travis' --connection=local site.yml"
   - "cd .."
   - "sudo cp -r `pwd` /var/www/obo-purls"
-  - "sudo make test"
+  - "cd /var/www/obo-purls"
+  - "sudo make all test"
 notifications:
   email:
     - james@overton.ca

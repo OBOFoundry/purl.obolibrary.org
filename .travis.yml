@@ -3,7 +3,9 @@ dist: trusty
 language: python
 python: "3.5"
 script:
-  - "sudo make all"
+  - "sudo pip install pyyaml"
+  - "sudo gem install kwalify"
+  - "sudo make"
   - "cd tools"
   - "echo 'localhost' > hosts"
   - "sudo pip install ansible"

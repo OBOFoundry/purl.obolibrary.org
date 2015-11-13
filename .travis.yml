@@ -2,16 +2,15 @@ sudo: required
 dist: trusty
 language: python
 python: "3.5"
-install:
-  - "sudo pip install ansible"
 script:
+  - "sudo make all"
   - "cd tools"
   - "echo 'localhost' > hosts"
+  - "sudo pip install ansible"
   - "ansible-playbook -i hosts -e 'mode=travis' --connection=local site.yml"
   - "cd .."
   - "sudo cp -r `pwd` /var/www/obo-purls"
-  - "cd /var/www/obo-purls"
-  - "sudo make all test"
+  - "sudo make test"
 notifications:
   email:
     - james@overton.ca

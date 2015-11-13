@@ -37,6 +37,9 @@ build: www/obo
 #     export DEVELOPMENT=172.16.100.10; make all test
 #
 
+# The GitHub owner/project
+PROJECT ?= jamesaoverton/obo-purls
+
 # Local development server.
 DEVELOPMENT ?= localhost
 
@@ -57,7 +60,7 @@ PRODUCTION ?= purl.obolibrary.org
 # If any INVALID results are found, exit with an error.
 validate:
 	kwalify -f tools/config.schema.yml config/*.yml \
-	| awk '{print} /INVALID/ {status=1} END {exit $$status}'
+	| awk '{print} /INVALID/ {status=1} END {exit status}'
 
 
 ### Generate Apache Config
@@ -91,7 +94,7 @@ tests/development/%.tsv: config/%.yml tests/development
 # Run all tests against development and fail if any FAIL line is found.
 test: $(patsubst config/%.yml,tests/development/%.tsv,$(wildcard config/*.yml))
 	@cat tests/development/*.tsv \
-	| awk '/^FAIL/ {x=1; print} END {exit x}'
+	| awk '/^FAIL/ {status=1; print} END {exit status}'
 
 
 ### Test Production Apache Config
@@ -110,7 +113,7 @@ tests/production/%.tsv: config/%.yml tests/production
 # Run all tests against production and fail if any FAIL line is found.
 test-production: $(patsubst config/%.yml,tests/production/%.tsv,$(wildcard config/*.yml))
 	@cat tests/production/*.tsv \
-	| awk '/^FAIL/ {status=1; print} END {exit $$status}'
+	| awk '/^FAIL/ {status=1; print} END {exit status}'
 
 
 ### Test Tools
@@ -128,6 +131,32 @@ tests/examples/%.htaccess: tools/examples/%.yml tools/examples/%.htaccess tests/
 	diff tools/examples/$*.htaccess $@
 
 test-examples: tests/examples/test1.yml tests/examples/test1.htaccess tests/examples/test2.htaccess
+
+
+### Update Repository
+#
+# Check Travis for a green build,
+# then update and rebuild:
+#
+#     make safe-update
+#
+
+# Check Travis-CI for last_build_status,
+# and fail if it is not 0.
+status:
+	curl --fail https://api.travis-ci.org/repos/$(PROJECT) \
+	| jq .
+
+
+
+# Update this repository and regenerate.
+update:
+	git pull
+	make
+
+# Update and rebuild only if Travis build is green.
+safe-update: status update
+
 
 
 ### Migrate Configuration from PURL.org

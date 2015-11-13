@@ -1,16 +1,15 @@
-language: ruby
-rvm: "1.9.3"
-# before_install:
-#   - sudo apt-get update -qq
-#   - sudo apt-get install -qq kwalify
-## Possible other way.
+sudo: required
+dist: trusty
+language: python
+python: "3.5"
 install:
-  - gem install kwalify
+  - pip install ansible
 script:
-  ## Quick user data check.
-  - kwalify -f config.schema.yaml config/*.yml | grep INVALID; test $? -ne 0
+  - "echo 'localhost' > tools/hosts"
+  - "cd tools && ansible-playbook -i hosts -e 'mode=travis' --connection=local site.yml"
+  - "make all test"
 notifications:
   email:
     - james@overton.ca
-    - cjmungall@lbl.gov
-    - sjcarbon@lbl.gov
+#   - cjmungall@lbl.gov
+#   - sjcarbon@lbl.gov

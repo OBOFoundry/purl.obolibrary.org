@@ -7,10 +7,10 @@
   gather_facts: True
 
   vars:
+    mode:      production
     domain:    purl.obolibrary.org
     owner:     jamesaoverton
     repo:      obo-purls
-    git_path:  /usr/bin/git
     repo_dir:  "/var/www/{{ repo }}"
     repo_url:  "https://github.com/{{ owner }}/{{ repo }}.git"
 
@@ -31,7 +31,6 @@
         - ruby
         - python3
         - python3-pip
-        - xmlstarlet
 
     - name: Install Ruby packages
       command: gem install {{ item }}
@@ -47,11 +46,11 @@
       file: path={{ repo_dir }} state=directory owner=www-data group=www-data
 
     - name: Clone the Git repo
-      when: test is undefined
+      when: mode == "production"
       git: repo={{ repo_url }} dest={{ repo_dir }}
 
     - name: Set cron to update PURLs every 10 minutes
-      when: test is undefined
+      when: mode == "production"
       cron: name="update PURLs" minute="*/10" job="cd {{ repo_dir }} && git pull && make"
 
     - name: Disable default Apache site

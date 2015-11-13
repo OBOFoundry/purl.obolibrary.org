@@ -1,8 +1,7 @@
 # Use Vagrant to run a virtual machine for development and testing.
 Vagrant.configure(2) do |config|
-  # Use stock Debian Linux
-  config.vm.box = "debian/jessie64"
-  config.vm.hostname = "sovereign.local"
+  # Use stock Ubuntu 14.04 Trusty, to match Travis Beta
+  config.vm.box = "ubuntu/trusty64"
   config.vm.network "private_network", ip: "172.16.100.10"
 
   # Disable the default shared folder, use /var/www/obo-purls instead
@@ -13,6 +12,6 @@ Vagrant.configure(2) do |config|
   config.vm.provision :ansible do |ansible|
     ansible.playbook = "site.yml"
     ansible.host_key_checking = false
-    ansible.extra_vars = { ansible_ssh_user: "vagrant", testing: true }
+    ansible.extra_vars = { ansible_ssh_user: "vagrant", mode: "vagrant" }
   end
 end

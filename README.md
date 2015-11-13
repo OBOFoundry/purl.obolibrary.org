@@ -118,7 +118,7 @@ Developers can test their changes using a local virtual machine. First install [
     cd obo-purls/tools
     vagrant up
 
-This will download a Debian Linux virtual machine, start it, and configure it as a web server. The `/var/www/obo-purls` directory of the VM is synced with your local `obo-purls` directory. You can then log in and rebuild the `.htaccess` files:
+This will download a Ubuntu Linux virtual machine, start it, and configure it as a web server. The `/var/www/obo-purls` directory of the VM is synced with your local `obo-purls` directory. You can then log in and rebuild the `.htaccess` files:
 
     vagrant ssh
     cd /var/www/obo-purls
@@ -145,7 +145,7 @@ You can test against the production PURL server using `make test-production`. We
 
 ## Deployment
 
-Deployment is automated using [Ansible](http://ansible.com), and targets a stock Debian 8 Linux server. You should install on a **fresh** server, not one that's running other applications, unless you **really** know what you're doing.
+Deployment is automated using [Ansible](http://ansible.com), and targets a stock Ubuntu Linux server. You should install on a **fresh** server, not one that's running other applications, unless you **really** know what you're doing.
 
 Install Ansible on your local machine, add the IP address or hostname of your target server to `tools/hosts`, then run:
 

@@ -10,7 +10,7 @@ script:
   - "ansible-playbook -i hosts -e 'mode=travis' --connection=local site.yml"
   - "cd .."
   - "sudo cp -r `pwd` /var/www/obo-purls"
-  - "sudo cd /var/www/obo-purls"
+  - "cd /var/www/obo-purls"
   - "sudo make all test"
 notifications:
   email:

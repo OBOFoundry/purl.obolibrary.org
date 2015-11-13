@@ -23,21 +23,29 @@
       apt: update_cache=yes
 
     - name: Install system-wide packages
+      when: mode != "travis"
       apt: pkg={{ item }} state=installed
       with_items:
         - ntp
-        - apache2
         - git
         - ruby
         - ruby-dev
         - python3
         - python3-pip
 
+    - name: Install Apache
+      apt: pkg={{ item }} state=installed
+      with_items:
+        - apache2
+
+    - name: Install Travis command-line
+      when: mode != "travis"
+      command: gem install travis -v 1.8.0 --no-rdoc --no-ri
+
     - name: Install Ruby packages
       command: gem install {{ item }}
       with_items:
         - kwalify
-        - travis
 
     - name: Install Python packages
       pip: name={{ item }} state=present executable=pip3

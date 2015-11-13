@@ -10,6 +10,15 @@ script:
   - "ansible-playbook -i hosts -e 'mode=travis' --connection=local site.yml"
   - "cd .."
   - "sudo ln -s `pwd` /var/www/obo-purls"
+  - "sudo ls -la /var"
+  - "sudo ls -la /var/www"
+  - "sudo ls -la /var/www/obo-purls"
+  - "sudo ls -la /var/www/obo-purls/www"
+  - "sudo ls -la /var/www/obo-purls/www/obo"
+  - "sudo ls -la /var/www/obo-purls/www/obo/obi"
+  - "sudo ls -la /etc/apache2/sites-enabled"
+  - "sudo cat /etc/apache2/sites-enabled/*"
+  - "sudo apachectl configtest"
   - "sudo make all test"
 notifications:
   email:

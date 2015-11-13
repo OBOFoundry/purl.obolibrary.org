@@ -150,8 +150,8 @@ safe-update:
 	@diff .current_build .travis_build && exit 1 || exit 0
 	@echo 'New green build available'
 	@mv .travis_build .current_build
-	echo git pull
-	echo make
+	git pull
+	make
 
 
 ### Migrate Configuration from PURL.org

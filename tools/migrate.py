@@ -74,6 +74,8 @@ def main():
   args.yaml_file.write(header_template % (args.base_url, args.base_url))
 
   entries = exact + sorted(prefix, key=lambda k: len(k['id']), reverse=True)
+  if len(entries) == 0:
+    raise ValueError('No entries found')
   for entry in entries:
     args.yaml_file.write(entry_template %
         (entry['rule'], entry['id'], entry['url']))
@@ -126,9 +128,9 @@ class OCLCHandler(xml.sax.ContentHandler):
 
       if not 'url' in self.entry:
         raise ValueError('No <url> for <purl> %d' % self.count)
-      if not self.entry['url'].startswith('http'):
+      if not re.match(r'^(https?|ftp)\:\/\/.+', self.entry['url']):
         raise ValueError(
-          'In <purl> %d the <url> "%s" does not begin with "http"'
+          'In <purl> %d the <url> "%s" is not an absolute HTTP or FTP URL'
           % (self.count, self.entry['url']))
 
       if not 'type' in self.entry:

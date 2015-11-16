@@ -32,7 +32,7 @@ mapping:
             unique: true
           "replacement":
             type: str
-            pattern: /^https?\:\/\/.+/
+            pattern: /^(https?|ftp)\:\/\/.+/
             required: true
             unique: false
           "tests":
@@ -47,6 +47,6 @@ mapping:
                     required: true
                   "to":
                     type: str
-                    pattern: /^https?\:\/\/.+/
+                    pattern: /^(https?|ftp)\:\/\/.+/
                     required: true
 

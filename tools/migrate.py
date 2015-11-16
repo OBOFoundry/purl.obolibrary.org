@@ -74,8 +74,6 @@ def main():
   args.yaml_file.write(header_template % (args.base_url, args.base_url))
 
   entries = exact + sorted(prefix, key=lambda k: len(k['id']), reverse=True)
-  if len(entries) == 0:
-    raise ValueError('No entries found')
 
   # Check for an /about/ prefix for all ontologies except the root
   has_about = False

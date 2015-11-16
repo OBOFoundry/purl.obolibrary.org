@@ -90,7 +90,8 @@ def main():
   # Still throws an error: the user should check the /about/ entry!
   if not has_about:
     guess_id = args.base_url.replace('/obo/', '').upper()
-    args.yaml_file.write("""- prefix: /about/
+    args.yaml_file.write("""# WARNING: Check this entry manually!
+- prefix: /about/
   replacement: http://www.ontobee.org/ontology/%s?iri=http://purl.obolibrary.org/obo/
   tests:
   - from: /about/%s_0000000

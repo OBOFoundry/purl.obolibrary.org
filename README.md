@@ -131,6 +131,8 @@ The tool will refuse to overwrite existing YAML configuration files. If you are 
 
     make migrate-obi && make all test
 
+If no `prefix: /about/` is found, the tool will add an example entry pointing to Ontobee and exit with a warning. Check the example manually!
+
 
 ## Development and Testing
 

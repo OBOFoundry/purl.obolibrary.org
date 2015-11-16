@@ -18,25 +18,16 @@
 # - [travis.rb](https://github.com/travis-ci/travis.rb) for Travis-CI
 
 
-### Basic Operations
-
-# Default goal: Remove generated files, validate config, and regenerate.
-all: clean validate build
-
-# Remove directories with generated files.
-clean:
-	rm -rf tests www/obo
-
-# Generate .htaccess files for all YAML configuration files.
-build: www/obo
-
-
 ### Configuration
 #
 # You can override these defaults with environment variables:
 #
 #     export DEVELOPMENT=172.16.100.10; make all test
 #
+
+# List of ontology IDs to work with, as file names (lowercase).
+# Defaults to the list of config/*.yml files.
+ONTOLOGY_IDS ?= $(patsubst config/%.yml,%,$(wildcard config/*.yml))
 
 # The GitHub owner/project
 PROJECT ?= jamesaoverton/obo-purls
@@ -47,11 +38,33 @@ DEVELOPMENT ?= localhost
 # Production server.
 PRODUCTION ?= purl.obolibrary.org
 
-# Do not automatically delete intermediate files.
-.SECONDARY:
 
-# These goals do not correspond to files.
-.PHONY: all clean validate test test-production migrate-%
+### Boilerplate
+#
+# Recommended defaults: http://clarkgrubb.com/makefile-style-guide
+
+MAKEFLAGS += --warn-undefined-variables
+SHELL := bash
+.SHELLFLAGS := -eu -o pipefail -c
+.DEFAULT_GOAL := all
+.DELETE_ON_ERROR:
+.SUFFIXES:
+
+
+### Basic Operations
+
+# Default goal: Remove generated files, validate config, and regenerate.
+.PHONY: all
+all: clean validate build
+
+# Remove directories with generated files.
+.PHONY: clean
+clean:
+	rm -rf tests www/obo
+
+# Generate .htaccess files for all YAML configuration files.
+.PHONY: build
+build: www/obo
 
 
 ### Validate YAML Config
@@ -59,6 +72,7 @@ PRODUCTION ?= purl.obolibrary.org
 # Use kwalify and the tools/config.schema.yml
 # to validate all YAML configuration files.
 # If any INVALID results are found, exit with an error.
+.PHONY: validate
 validate:
 	kwalify -f tools/config.schema.yml config/*.yml \
 	| awk '{print} /INVALID/ {status=1} END {exit status}'
@@ -74,7 +88,7 @@ www/obo/%/.htaccess: config/%.yml
 
 # Convert all YAML configuration files to .htaccess
 # and move the special `obo` .htaccess file.
-www/obo: $(patsubst config/%.yml,www/obo/%/.htaccess,$(wildcard config/*.yml))
+www/obo: $(foreach o,$(ONTOLOGY_IDS),www/obo/$o/.htaccess)
 	mv www/obo/obo/.htaccess www/obo/.htaccess
 	rm -rf www/obo/obo
 
@@ -93,7 +107,8 @@ tests/development/%.tsv: config/%.yml tests/development
 	tools/test.py --delay=0.01 $(DEVELOPMENT) $< $@
 
 # Run all tests against development and fail if any FAIL line is found.
-test: $(patsubst config/%.yml,tests/development/%.tsv,$(wildcard config/*.yml))
+.PHONY: test
+test: $(foreach o,$(ONTOLOGY_IDS),tests/development/$o.tsv)
 	@cat tests/development/*.tsv \
 	| awk '/^FAIL/ {status=1; print} END {exit status}'
 
@@ -112,7 +127,8 @@ tests/production/%.tsv: config/%.yml tests/production
 	tools/test.py --delay=1 $(PRODUCTION) $< $@
 
 # Run all tests against production and fail if any FAIL line is found.
-test-production: $(patsubst config/%.yml,tests/production/%.tsv,$(wildcard config/*.yml))
+.PHONY: test-production
+test-production: $(foreach o,$(ONTOLOGY_IDS),tests/production/$o.tsv)
 	@cat tests/production/*.tsv \
 	| awk '/^FAIL/ {status=1; print} END {exit status}'
 
@@ -131,6 +147,7 @@ tests/examples/%.htaccess: tools/examples/%.yml tools/examples/%.htaccess tests/
 	tools/translate.py $< $@
 	diff tools/examples/$*.htaccess $@
 
+.PHONY: test-examples
 test-examples: tests/examples/test1.yml tests/examples/test1.htaccess tests/examples/test2.htaccess
 
 
@@ -163,6 +180,7 @@ safe-update:
 # Do not overwrite existing config file.
 PURL_XML = https://purl.org/admin/purl/?target=&seealso=&maintainers=&explicitmaintainers=&tombstone=false&p_id=
 
+.PHONY: migrate-%
 migrate-%:
 	@test ! -s config/$*.yml \
 	|| (echo 'Refusing to overwrite config/$*.yml'; exit 1)

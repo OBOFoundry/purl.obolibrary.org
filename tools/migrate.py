@@ -139,7 +139,7 @@ class OCLCHandler(xml.sax.ContentHandler):
       # but we remove this prefix from the YAML output.
       if not 'id' in self.entry:
         raise ValueError('No <id> for <purl> %d' % self.count)
-      id_re = re.compile('^' + self.args.base_url)
+      id_re = re.compile('^' + self.args.base_url, re.IGNORECASE)
       if not id_re.match(self.entry['id']):
         raise ValueError(
           'In <purl> %d the <id> "%s" does not begin with base_url "%s"'

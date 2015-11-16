@@ -102,6 +102,19 @@ Any entry can have a `status:` keyword. By default, every entry uses "temporary"
 Apache RedirectMatch directives are processed in the [order that they appear](https://httpd.apache.org/docs/2.4/mod/mod_alias.html#order) in the configuration file. Be careful that your `prefix` and `regex` entries do not conflict with your other entries. The YAML-to-Apache translation preserves the order of entries, so you can control the order of processing, but it's best to avoid conflicts.
 
 
+### `/about/` Terms
+
+Every YAML configuration should have a `prefix: /about/` entry pointing to the project's preferred ontology term browser, e.g. [Ontobee](http://www.ontobee.org), [Bioportal](http://bioportal.bioontology.org/), or [OLS](http://www.ebi.ac.uk/ontology-lookup/). For example:
+
+    - prefix: /about/
+      replacement: http://www.ontobee.org/ontology/OBI?iri=http://purl.obolibrary.org/obo/
+      tests:
+      - from: /about/OBI_0000070
+        to: http://www.ontobee.org/ontology/OBI?iri=http://purl.obolibrary.org/obo/OBI_0000070
+
+If this entry is missing, the tools will raise an error.
+
+
 ## Migrating Configuration
 
 OBO projects currently use OCLC for managing PURLs. This project aims to replace OCLC in a straightforward way.

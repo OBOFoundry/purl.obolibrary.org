@@ -1,5 +1,5 @@
 ---
-# This is an Ansible playbook specifying the instructions for deploying the obo-purls site.
+# This is an Ansible playbook specifying the instructions for deploying the purl.obolibrary.org site.
 
 - hosts: all
   user: admin
@@ -9,8 +9,8 @@
   vars:
     mode:      production
     domain:    purl.obolibrary.org
-    owner:     jamesaoverton
-    repo:      obo-purls
+    owner:     OBOFoundry
+    repo:      purl.obolibrary.org
     repo_dir:  "/var/www/{{ repo }}"
     repo_url:  "https://github.com/{{ owner }}/{{ repo }}.git"
 

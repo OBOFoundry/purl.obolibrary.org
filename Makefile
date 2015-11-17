@@ -30,7 +30,7 @@
 ONTOLOGY_IDS ?= $(patsubst config/%.yml,%,$(wildcard config/*.yml))
 
 # The GitHub owner/project
-PROJECT ?= jamesaoverton/obo-purls
+PROJECT ?= OBOFoundry/purl.obolibrary.org
 
 # Local development server.
 DEVELOPMENT ?= localhost

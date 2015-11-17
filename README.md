@@ -1,8 +1,10 @@
-# obo-purls
+# OBO PURLs
 
-[![Build Status](https://travis-ci.org/jamesaoverton/obo-purls.svg)](https://travis-ci.org/jamesaoverton/obo-purls)
+[![Build Status](https://travis-ci.org/OBOFoundry/purl.obolibrary.org.svg)](https://travis-ci.org/OBOFoundry/purl.obolibrary.org)
 
-This repository presents an alternative way to manage OBO Foundry PURLs. Like <https://github.com/perma-id/w3id.org> we use per-directory Apache configuration files (`.htaccess` files), each of which uses `RedirectMatch` directives to redirect PURL requests to their proper targets. Unlike w3id.org, we do not edit the Apache configuration files by hand. Instead we have a simple YAML configuration format, and scripts to translate the YAML configuration into Apache configuration. The YAML files are easier to read and write, and allow us to validate and test PURLs automatically.
+The OBO community is transitioning away from [PURL.org](http://purl.org) for managing Persistent URLs.
+
+This repository provides a new way to manage OBO Foundry PURLs. Like <https://github.com/perma-id/w3id.org> we use per-directory Apache configuration files (`.htaccess` files), each of which uses `RedirectMatch` directives to redirect PURL requests to their proper targets. Unlike w3id.org, we do not edit the Apache configuration files by hand. Instead we have a simple YAML configuration format, and scripts to translate the YAML configuration into Apache configuration. The YAML files are easier to read and write, and allow us to validate and test PURLs automatically.
 
 
 ## Examples
@@ -18,11 +20,11 @@ The following examples are *NOT permanent URLs* -- they are running on a little 
 
 Please use one of these four options to make changes to the PURLs:
 
-1. [Create a new issue](https://github.com/jamesaoverton/obo-purls/issues/new) describing the change you require.
+1. [Create a new issue](https://github.com/OBOFoundry/purl.obolibrary.org/issues/new) describing the change you require.
 
-2. [Browse to the configuration file you want to change](https://github.com/jamesaoverton/obo-purls/tree/master/config) and click the "pencil" icon to edit it.
+2. [Browse to the configuration file you want to change](https://github.com/OBOFoundry/purl.obolibrary.org/tree/master/config) and click the "pencil" icon to edit it.
 
-3. [Add a new configuration file](https://github.com/jamesaoverton/obo-purls/new/master/config).
+3. [Add a new configuration file](https://github.com/OBOFoundry/purl.obolibrary.org/new/master/config).
 
 4. [Fork this repository](https://help.github.com/articles/fork-a-repo/) and [make a pull request](https://help.github.com/articles/using-pull-requests/).
 
@@ -138,14 +140,14 @@ If no `prefix: /about/` is found, the tool will add an example entry pointing to
 
 Developers can test their changes using a local virtual machine. First install [VirtualBox](https://www.virtualbox.org) and [Vagrant](https://www.vagrantup.com). Then check out a copy of this repository and start a virtual machine like so:
 
-    git clone https://github.com/jamesaoverton/obo-purls.git
-    cd obo-purls/tools
+    git clone https://github.com/OBOFoundry/purl.obolibrary.org.git
+    cd purl.obolibrary.org/tools
     vagrant up
 
-This will download a Ubuntu Linux virtual machine, start it, and configure it as a web server. The `/var/www/obo-purls` directory of the VM is synced with your local `obo-purls` directory. You can then log in and rebuild the `.htaccess` files:
+This will download a Ubuntu Linux virtual machine, start it, and configure it as a web server. The `/var/www/purl.obolibrary.org` directory of the VM is synced with your local `purl.obolibrary.org` directory. You can then log in and rebuild the `.htaccess` files:
 
     vagrant ssh
-    cd /var/www/obo-purls
+    cd /var/www/purl.obolibrary.org
     make
 
 Test your changes in your browser using URLs starting with `http://172.16.100.10/obo/`, such as [`http://172.16.100.10/obo/OBI_0000070`](http://172.16.100.10/obo/OBI_0000070). You can also run an automated test of all the configured URLs like so:
@@ -182,4 +184,4 @@ You can re-run Ansible as you make changes. Once the system is running, it will 
 
     export PRODUCTION=url.ontodev.org; make clean test-production
 
-The `make safe-update` task will check [Travis-CI](https://travis-ci.org/jamesaoverton/obo-purls) to ensure that the latest build on the master branch passed all automated tests, and that it is newer than the last time `safe-update` completed. Then it will pull from the Git repository and rebuild the site. This *should* be safe for a `cron` task to synchronize PURLs with the repository.
+The `make safe-update` task will check [Travis-CI](https://travis-ci.org/OBOFoundry/purl.obolibrary.org) to ensure that the latest build on the master branch passed all automated tests, and that it is newer than the last time `safe-update` completed. Then it will pull from the Git repository and rebuild the site. This *should* be safe for a `cron` task to synchronize PURLs with the repository.

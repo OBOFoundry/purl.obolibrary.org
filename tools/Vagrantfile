@@ -4,9 +4,9 @@ Vagrant.configure(2) do |config|
   config.vm.box = "ubuntu/trusty64"
   config.vm.network "private_network", ip: "172.16.100.10"
 
-  # Disable the default shared folder, use /var/www/obo-purls instead
+  # Disable the default shared folder, use /var/www/purl.obolibrary.org instead
   config.vm.synced_folder ".", "/vagrant", disabled: true
-  config.vm.synced_folder "..", "/var/www/obo-purls"
+  config.vm.synced_folder "..", "/var/www/purl.obolibrary.org"
 
   # Run Ansible to provision this VM
   config.vm.provision :ansible do |ansible|

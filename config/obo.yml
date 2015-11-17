@@ -6,6 +6,7 @@ entries:
 
 # Redirect term identifiers
 - regex: ^/obo/OBI_(\d+)$
+  error: deliberately broken
   replacement: http://www.ontobee.org/browser/rdf.php?o=OBI&iri=http://purl.obolibrary.org/obo/OBI_$1
   tests:
   - from: /OBI_0000070

@@ -71,33 +71,14 @@ def main():
   sax.setContentHandler(OCLCHandler(args))
   sax.parse(args.xml_file)
 
-  args.yaml_file.write(header_template % (args.base_url, args.base_url))
-
   entries = exact + sorted(prefix, key=lambda k: len(k['id']), reverse=True)
+  if len(entries) == 0:
+    raise ValueError('No entries to migrate')
 
-  # Check for an /about/ prefix for all ontologies except the root
-  has_about = False
-  if args.base_url == '/obo':
-    has_about = True
-
+  args.yaml_file.write(header_template % (args.base_url, args.base_url))
   for entry in entries:
     args.yaml_file.write(entry_template %
         (entry['rule'], entry['id'], entry['url']))
-    if entry['rule'] == 'prefix' and entry['id'] == '/about/':
-      has_about = True
-
-  # If there is not /about/ entry, add a 'best guess' Ontobee redirect.
-  # Still throws an error: the user should check the /about/ entry!
-  if not has_about:
-    guess_id = args.base_url.replace('/obo/', '').upper()
-    args.yaml_file.write("""# WARNING: Check this entry manually!
-- prefix: /about/
-  replacement: http://www.ontobee.org/ontology/%s?iri=http://purl.obolibrary.org/obo/
-  tests:
-  - from: /about/%s_0000000
-    to: http://www.ontobee.org/ontology/%s?iri=http://purl.obolibrary.org/obo/%s_0000000"""
-      % (guess_id, guess_id, guess_id, guess_id))
-    raise ValueError('No "/about/" prefix found in configuration; example entry added. Check it manually!')
 
 
 # Define a SAX ContentHandler class to match the XML format,

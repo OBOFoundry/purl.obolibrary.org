@@ -92,20 +92,10 @@ def main():
 
   args.htaccess_file.write(header_template % args.yaml_file.name)
 
-  # Check for an /about/ prefix for all ontologies except the root
-  has_about = False
-  if base_url == '/obo':
-    has_about = True
-
   i = 0
   for entry in document['entries']:
     i += 1
-    if 'prefix' in entry and entry['prefix'] == '/about/':
-      has_about = True
     args.htaccess_file.write(process_entry(base_url, i, entry) + '\n')
-
-  if not has_about:
-    raise ValueError('No "/about/" prefix found in configuration')
 
 
 def clean_source(s):

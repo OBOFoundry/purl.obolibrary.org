@@ -104,17 +104,18 @@ Any entry can have a `status:` keyword. By default, every entry uses "temporary"
 Apache RedirectMatch directives are processed in the [order that they appear](https://httpd.apache.org/docs/2.4/mod/mod_alias.html#order) in the configuration file. Be careful that your `prefix` and `regex` entries do not conflict with your other entries. The YAML-to-Apache translation preserves the order of entries, so you can control the order of processing, but it's best to avoid conflicts.
 
 
-### `/about/` Terms
+## Redirecting Terms
 
-Every YAML configuration should have a `prefix: /about/` entry pointing to the project's preferred ontology term browser, e.g. [Ontobee](http://www.ontobee.org), [Bioportal](http://bioportal.bioontology.org/), or [OLS](http://www.ebi.ac.uk/ontology-lookup/). For example:
+The [`obo.yml`](config/obo.yml) configuration file is special, and contains (among other things) the entries for redirecting each OBO term to the term browser for its ontology. For example, `http://purl.obolibrary.org/obo/OBI_0000070` is redirected to Ontobee for browsing OBI:
 
-    - prefix: /about/
-      replacement: http://www.ontobee.org/ontology/OBI?iri=http://purl.obolibrary.org/obo/
+    # Terms for OBI
+    - regex: ^/obo/OBI_(\d+)$
+      replacement: http://www.ontobee.org/browser/rdf.php?o=OBI&iri=http://purl.obolibrary.org/obo/OBI_$1
       tests:
-      - from: /about/OBI_0000070
-        to: http://www.ontobee.org/ontology/OBI?iri=http://purl.obolibrary.org/obo/OBI_0000070
+      - from: /OBI_0000070
+        to: http://www.ontobee.org/browser/rdf.php?o=OBI&iri=http://purl.obolibrary.org/obo/OBI_0000070
 
-If this entry is missing, the tools will raise an error.
+Since these are `regex` entries, and could affect multiple projects, we prefer that OBO admins are the only ones to edit `obo.yml`. If you need a change to the term redirect entry for your project, please [create a new issue](https://github.com/OBOFoundry/purl.obolibrary.org/issues/new).
 
 
 ## Migrating Configuration
@@ -132,8 +133,6 @@ You can run migration for a single ontology at a time, by its ID (usually lower 
 The tool will refuse to overwrite existing YAML configuration files. If you are running a test server (see next section) you can test the configuration as you are migrating:
 
     make migrate-obi && make all test
-
-If no `prefix: /about/` is found, the tool will add an example entry pointing to Ontobee and exit with a warning. Check the example manually!
 
 
 ## Development and Testing

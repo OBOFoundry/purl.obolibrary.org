@@ -60,11 +60,7 @@ all: clean validate build
 # Remove directories with generated files.
 .PHONY: clean
 clean:
-	rm -rf temp tests www/obo
-
-# Generate .htaccess files for all YAML configuration files.
-.PHONY: build
-build: www/obo
+	rm -rf temp tests
 
 
 ### Validate YAML Config
@@ -83,7 +79,7 @@ validate:
 # Convert the YAML configuration files
 # to Apache .htaccess files with RedirectMatch directives.
 # There are three types:
-# 
+#
 # - base_redirects: when the project's base_url points to something
 # - product: for a project's main OWL file
 # - term: for a project's terms
@@ -91,7 +87,11 @@ validate:
 #
 # The first three are inserted into www/obo/.htaccess
 # while the last is in the project's www/obo/project/.htaccess
-temp/base_redirects temp/products temp/terms:
+#
+# These files are built in the `temp/` directory
+# then `temp/obo` replaces `www/obo` as the very last step
+# to keep Apache downtime to an absolute minimum.
+temp/obo temp/base_redirects temp/products temp/terms:
 	mkdir -p $@
 
 temp/base_redirects/%.htaccess: config/%.yml temp/base_redirects
@@ -103,24 +103,28 @@ temp/products/%.htaccess: config/%.yml temp/products
 temp/terms/%.htaccess: config/%.yml temp/terms
 	tools/translate-terms.py $< $@
 
-www/obo/%/.htaccess: config/%.yml
-	mkdir -p www/obo/$*
+temp/obo/%/.htaccess: config/%.yml
+	mkdir -p temp/obo/$*
 	tools/translate-entries.py $< $@
 
 # Convert all YAML configuration files to .htaccess
 # and move the special `obo` .htaccess file.
-www/obo: $(foreach o,$(ONTOLOGY_IDS),www/obo/$o/.htaccess)
-www/obo: $(foreach o,$(ONTOLOGY_IDS),temp/base_redirects/$o.htaccess)
-www/obo: $(foreach o,$(ONTOLOGY_IDS),temp/products/$o.htaccess)
-www/obo: $(foreach o,$(ONTOLOGY_IDS),temp/terms/$o.htaccess)
-	cat www/obo/obo/.htaccess > www/obo/.htaccess
-	echo '' >> www/obo/.htaccess
-	echo '### Generated from project configuration files' >> www/obo/.htaccess
-	echo '' >> www/obo/.htaccess
-	cat temp/base_redirects/*.htaccess >> www/obo/.htaccess
-	cat temp/products/*.htaccess >> www/obo/.htaccess
-	cat temp/terms/*.htaccess >> www/obo/.htaccess
-	rm -rf www/obo/obo
+# Generate .htaccess files for all YAML configuration files.
+.PHONY: build
+build: $(foreach o,$(ONTOLOGY_IDS),temp/obo/$o/.htaccess)
+build: $(foreach o,$(ONTOLOGY_IDS),temp/base_redirects/$o.htaccess)
+build: $(foreach o,$(ONTOLOGY_IDS),temp/products/$o.htaccess)
+build: $(foreach o,$(ONTOLOGY_IDS),temp/terms/$o.htaccess)
+	cat temp/obo/obo/.htaccess > temp/obo/.htaccess
+	echo '' >> temp/obo/.htaccess
+	echo '### Generated from project configuration files' >> temp/obo/.htaccess
+	echo '' >> temp/obo/.htaccess
+	cat temp/base_redirects/*.htaccess >> temp/obo/.htaccess
+	cat temp/products/*.htaccess >> temp/obo/.htaccess
+	cat temp/terms/*.htaccess >> temp/obo/.htaccess
+	rm -rf temp/obo/obo
+	rm -rf www/obo
+	mv temp/obo www/obo
 
 
 ### Test Development Apache Config

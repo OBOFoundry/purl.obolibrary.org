@@ -12,6 +12,9 @@ example_terms:
 - OMP_0000000
 
 entries:
+- exact: /devel/omp-term-request
+  replacement: https://github.com/microbialphenotypes/OMP-ontology/issues
+
 - prefix: /devel/
   replacement: https://github.com/microbialphenotypes
 

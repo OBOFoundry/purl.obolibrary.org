@@ -1,0 +1,24 @@
+# PURL configuration for http://purl.obolibrary.org/obo/vsao
+
+id: VSAO
+base_url: /obo/vsao
+
+products:
+- vsao.owl: http://svn.code.sf.net/p/phenoscape/code/tags/vocab-releases/VSAO/vsao.owl
+- vsao.obo: http://svn.code.sf.net/p/phenoscape/code/tags/vocab-releases/VSAO/vsao.obo
+
+term_browser: ontobee
+
+entries:
+- exact: /2012-08-03/vsao.obo
+  replacement: http://phenoscape.svn.sourceforge.net/viewvc/phenoscape/tags/vocab/VSAO/VSAO-2012-08-03/vsao.obo
+
+- exact: /2012-08-03/vsao.owl
+  replacement: http://phenoscape.svn.sourceforge.net/svnroot/phenoscape/tags/vocab/VSAO/VSAO-2012-08-03/vsao.owl
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/browser/rdf.php?o=VSAO&iri=http://purl.obolibrary.org/obo/
+
+- prefix: /
+  replacement: http://svn.code.sf.net/p/phenoscape/code/tags/vocab-releases/VSAO/
+

@@ -1,0 +1,149 @@
+# PURL configuration for http://purl.obolibrary.org/obo/bfo
+
+id: BFO
+base_url: /obo/bfo
+
+products:
+- bfo.owl: https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl
+- bfo.obo: https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.obo
+
+term_browser: ontobee
+example_terms:
+- BFO_0000001
+
+entries:
+- exact: /classes.owl
+  replacement: http://bfo.googlecode.com/svn/trunk/src/ontology/owl-ruttenberg/bfo2-classes.owl
+
+- exact: /core-relations.owl
+  replacement: http://bfo.googlecode.com/svn/trunk/src/ontology/owl-ruttenberg/bfo2-relations.owl
+
+- exact: /core-classes.owl
+  replacement: http://bfo.googlecode.com/svn/trunk/src/ontology/owl-ruttenberg/bfo2-classes.owl
+
+- exact: /relations.owl
+  replacement: http://bfo.googlecode.com/svn/trunk/src/ontology/owl-ruttenberg/bfo2-relations.owl
+
+- exact: /bfo+granularity.owl
+  replacement: http://bfo.googlecode.com/svn/trunk/src/ontology/owl-ruttenberg/bfo2_granularity.owl
+
+- exact: /all.owl
+  replacement: http://bfo.googlecode.com/svn/trunk/src/ontology/owl-ruttenberg/bfo2_all.owl
+
+- exact: /granularity-classes.owl
+  replacement: http://bfo.googlecode.com/svn/trunk/src/ontology/owl-ruttenberg/bfo2-granularity.owl
+
+- exact: /region-classes.owl
+  replacement: http://bfo.googlecode.com/svn/trunk/src/ontology/owl-ruttenberg/bfo2-regions.owl
+
+- exact: /bfo+region.owl
+  replacement: http://bfo.googlecode.com/svn/trunk/src/ontology/owl-ruttenberg/bfo2_regions.owl
+
+- exact: /2012-07/ReleaseNotes
+  replacement: https://docs.google.com/document/d/1_lKE8kAmFfi12_TBrDs1COMDPXDQGByKJZAaBwW5xVM/edit
+
+- exact: /ReleaseNotes
+  replacement: https://docs.google.com/document/d/1_lKE8kAmFfi12_TBrDs1COMDPXDQGByKJZAaBwW5xVM/edit
+
+- exact: /2012-07-20/ReleaseNotes
+  replacement: https://docs.google.com/document/d/1_lKE8kAmFfi12_TBrDs1COMDPXDQGByKJZAaBwW5xVM/edit
+
+- exact: /about/BFO_0000063
+  replacement: http://www.ontobee.org/browser/rdf.php?o=RO&iri=http://purl.obolibrary.org/obo/BFO_0000063
+
+- exact: /dev/owl
+  replacement: https://docs.google.com/document/d/17QoVoEqhPc2xBrrlR0_f3-j0wiSKZbF4pRzjNa-3TEY/edit?usp=sharing
+
+- exact: /dev/bfo.owl
+  replacement: https://github.com/BFO-ontology/BFO/raw/master/src/ontology/owl-group/bfo.owl
+
+- exact: /dev/bfo.clif
+  replacement: https://github.com/BFO-ontology/BFO/raw/master/src/ontology/fol-ressler/BFO-FOL-alpha-2012-05-21.clif
+
+- exact: /dev/bfo.docx
+  replacement: https://github.com/BFO-ontology/BFO/raw/master/docs/bfo2-reference/BFO2-Reference.docx
+
+- exact: /dev/bfo2-reference.docx
+  replacement: https://github.com/BFO-ontology/BFO/raw/master/docs/bfo2-reference/BFO2-Reference.docx
+
+- exact: /repository
+  replacement: https://github.com/BFO-ontology/BFO
+
+- exact: /wiki
+  replacement: https://github.com/BFO-ontology/BFO/wiki
+
+- exact: /tracker
+  replacement: https://github.com/BFO-ontology/BFO/issues
+
+- exact: /Reference
+  replacement: https://github.com/BFO-ontology/BFO/raw/master/releases/2.0/BFO2-Reference.docx
+
+- exact: /2012-07-20/bfo.owl
+  replacement: https://github.com/BFO-ontology/BFO/raw/releases/2012-07-20-graz/owl-group/bfo.owl
+
+- exact: /2012-07-20/Reference
+  replacement: https://github.com/BFO-ontology/BFO/raw/releases/2012-07-20-graz/BFO2-Reference.docx
+
+- exact: /2012-07-20-graz/Reference.htm
+  replacement: https://github.com/BFO-ontology/BFO/raw/releases/2012-07-20-graz/BFO2-Reference-for-html.htm
+
+- exact: /2012-07-20/Reference.htm
+  replacement: https://github.com/BFO-ontology/BFO/raw/releases/2012-07-20-graz/BFO2-Reference-for-html.htm
+
+- exact: /2012-07-20/fol.pdf
+  replacement: https://github.com/BFO-ontology/BFO/raw/releases/2012-07-20-graz/2012-07-20/BFO-FOL-alpha-2012-07-20.pdf
+
+- exact: /browse
+  replacement: http://www.ontobee.org/browser/index.php?o=BFO
+
+- exact: /draft/reference
+  replacement: https://github.com/BFO-ontology/BFO/raw/master/docs/bfo2-reference/BFO2-Reference.docx
+
+- exact: /editor/reference
+  replacement: https://github.com/BFO-ontology/BFO/raw/master/docs/bfo2-reference/BFO2-Reference-editing-version.docx
+
+- exact: /2010-05-25/ruttenberg-bfo.owl
+  replacement: https://github.com/BFO-ontology/BFO/raw/releases/owl-ruttenberg-2010-05-25/ruttenberg-bfo2.owl
+
+- exact: /2012-11-15-bugfix/bfo.owl
+  replacement: https://github.com/BFO-ontology/BFO/raw/releases/2012-11-15-bugfix/owl-group/bfo.owl
+
+- exact: /2012-11-15/bfo.owl
+  replacement: https://github.com/BFO-ontology/BFO/raw/releases/2012-11-15-bugfix/owl-group/bfo.owl
+
+- exact: /2014-05-03/ReleaseNotes
+  replacement: https://github.com/BFO-ontology/BFO/raw/releases/2014-05-03/owl-group/ReleaseNotes.txt
+
+- exact: /classes-only.owl
+  replacement: https://github.com/BFO-ontology/BFO/raw/releases/bfo_classes_only_latest.owl
+
+- exact: /2014-05-03/classes-only.owl
+  replacement: https://github.com/BFO-ontology/BFO/raw/releases/bfo_classes_only_latest.owl
+
+- exact: /2.0/bfo.owl
+  replacement: https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl
+
+- exact: /2.0/BFO2-Reference.docx
+  replacement: https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/BFO2-Reference.docx
+
+- exact: /2.0/BFO1.1.1To2.0_mapping.xlsx
+  replacement: https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/BFO1.1.1To2.0_mapping.xlsx
+
+- exact: /2014-05-03/bfo.owl
+  replacement: https://github.com/BFO-ontology/BFO/raw/releases/2014-05-03/owl-group/bfo.owl
+
+- exact: /2015-8-29/bfo.owl
+  replacement: https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl
+
+- prefix: /2010-05-25/
+  replacement: https://github.com/BFO-ontology/BFO/tree/releases/owl-ruttenberg-2010-05-25
+
+- prefix: /axiom/
+  replacement: https://github.com/BFO-ontology/BFO/master/src/ontology/owl-group/axiom.html#
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/browser/rdf.php?o=BFO&iri=http://purl.obolibrary.org/obo/
+  tests:
+  - from: /about/BFO_0000001
+    to: http://www.ontobee.org/browser/rdf.php?o=BFO&iri=http://purl.obolibrary.org/obo/BFO_0000001
+

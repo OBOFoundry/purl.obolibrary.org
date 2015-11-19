@@ -1,0 +1,9 @@
+# PURL configuration for http://purl.obolibrary.org/obo/mirnao
+
+id: miRNAO
+base_url: /obo/mirnao
+
+products:
+- miRNAO.owl: http://mirna-ontology.googlecode.com/svn/trunk/src/ontology/mirnao.owl
+
+term_browser: ontobee

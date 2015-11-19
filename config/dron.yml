@@ -1,0 +1,57 @@
+# PURL configuration for http://purl.obolibrary.org/obo/dron
+
+id: DRON
+base_url: /obo/dron
+
+products:
+- dron.owl: https://bitbucket.org/uamsdbmi/dron/raw/master/dron-full.owl
+
+term_browser: ontobee
+example_terms:
+- DRON_00010000
+
+entries:
+- exact: /dev/dron-rxnorm.owl
+  replacement: http://s3.amazonaws.com/UAMS/dev/dron-rxnorm.owl
+
+- exact: /dev/dron-ndc.owl
+  replacement: http://s3.amazonaws.com/UAMS/dev/dron-ndc.owl
+
+- exact: /dron-ndc.owl
+  replacement: http://s3.amazonaws.com/UAMS/dron-ndc.owl
+
+- exact: /dron-rxnorm.owl
+  replacement: http://s3.amazonaws.com/UAMS/dron-rxnorm.owl
+
+- exact: /dron-ingredient.owl
+  replacement: http://s3.amazonaws.com/UAMS/dron-ingredient.owl
+
+- exact: /dev/dron-ingredient.owl
+  replacement: http://s3.amazonaws.com/UAMS/dev/dron-ingredient.owl
+
+- exact: /dev/dron.owl
+  replacement: https://bitbucket.org/uamsdbmi/dron/raw/development/dron-full.owl
+
+- exact: /dev/dron-pro.owl
+  replacement: https://bitbucket.org/uamsdbmi/dron/raw/development/dron-pro.owl
+
+- exact: /dev/dron-upper.owl
+  replacement: https://bitbucket.org/uamsdbmi/dron/raw/development/dron-upper.owl
+
+- exact: /dev/dron-chebi.owl
+  replacement: https://bitbucket.org/uamsdbmi/dron/raw/development/dron-chebi.owl
+
+- exact: /dron-upper.owl
+  replacement: https://bitbucket.org/uamsdbmi/dron/raw/master/dron-upper.owl
+
+- exact: /dron-lite.owl
+  replacement: https://bitbucket.org/uamsdbmi/dron/raw/master/dron-lite.owl
+
+- exact: /dron-pro.owl
+  replacement: https://bitbucket.org/uamsdbmi/dron/raw/master/dron-pro.owl
+
+- exact: /dron-chebi.owl
+  replacement: https://bitbucket.org/uamsdbmi/dron/raw/master/dron-chebi.owl
+
+- exact: /dev/dron-lite.owl
+  replacement: https://bitbucket.org/uamsdbmi/dron/raw/development/dron-lite.owl

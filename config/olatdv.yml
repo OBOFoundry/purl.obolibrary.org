@@ -1,0 +1,12 @@
+# PURL configuration for http://purl.obolibrary.org/obo/olatdv
+
+id: OlatDv
+base_url: /obo/olatdv
+
+products:
+- olatdv.owl: http://www.berkeleybop.org/ontologies/olatdv.owl
+- olatdv.obo: http://www.berkeleybop.org/ontologies/olatdv.obo
+
+term_browser: ontobee
+example_terms:
+- OlatDv_0000020

@@ -1,0 +1,11 @@
+# PURL configuration for http://purl.obolibrary.org/obo/ogi
+
+id: OGI
+base_url: /obo/ogi
+
+products:
+- ogi.owl: https://ontology-for-genetic-interval.googlecode.com/svn/trunk/src/OGI.owl
+
+term_browser: ontobee
+example_terms:
+- OGI_0000002

@@ -1,0 +1,12 @@
+# PURL configuration for http://purl.obolibrary.org/obo/ehda
+
+id: EHDA
+base_url: /obo/ehda
+
+products:
+- ehda.owl: http://www.berkeleybop.org/ontologies/ehda.owl
+- ehda.obo: http://www.berkeleybop.org/ontologies/ehda.obo
+
+term_browser: ontobee
+example_terms:
+- EHDA_1

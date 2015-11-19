@@ -1,0 +1,40 @@
+# PURL configuration for http://purl.obolibrary.org/obo/bcgo
+
+id: BCGO
+base_url: /obo/bcgo
+
+products:
+- bcgo.owl: https://raw.githubusercontent.com/obi-bcgo/bcgo/master/release/20150708/bcgo_merged_inferred.owl
+
+term_browser: ontobee
+
+entries:
+- exact: /2013-04-24/bcgo.owl
+  replacement: https://raw.githubusercontent.com/obi-bcgo/bcgo/master/release/v0.1/bcgo.owl
+
+- exact: /2013-06-28/bcgo.owl
+  replacement: https://raw.githubusercontent.com/obi-bcgo/bcgo/master/release/v0.2/bcgo_merged_inferred.owl
+
+- exact: /2013-09-03/bcgo.owl
+  replacement: https://raw.githubusercontent.com/obi-bcgo/bcgo/master/release/20130903/bcgo_merged_inferred.owl
+
+- exact: /2015-07-08/bcgo.owl
+  replacement: https://raw.githubusercontent.com/obi-bcgo/bcgo/master/release/20150708/bcgo_merged_inferred.owl
+
+- exact: /2013-10-01/bcgo.owl
+  replacement: https://raw.githubusercontent.com/obi-bcgo/bcgo/master/release/20131001/bcgo_merged_inferred.owl
+
+- exact: /2013-09-12/bcgo.owl
+  replacement: https://raw.githubusercontent.com/obi-bcgo/bcgo/master/release/20130912/bcgo_merged_inferred.owl
+
+- exact: /2013-11-27/bcgo.owl
+  replacement: https://raw.githubusercontent.com/obi-bcgo/bcgo/master/release/20131127/bcgo_merged_inferred.owl
+
+- exact: /2014-01-13/bcgo.owl
+  replacement: https://raw.githubusercontent.com/obi-bcgo/bcgo/master/release/20140113/bcgo_merged_inferred.owl
+
+- exact: /2014-12-05/bcgo.owl
+  replacement: https://raw.githubusercontent.com/obi-bcgo/bcgo/master/release/20141205/bcgo_merged_inferred.owl
+
+- exact: /2015-04-08/bcgo.owl
+  replacement: https://raw.githubusercontent.com/obi-bcgo/bcgo/master/release/20150408/bcgo_merged_inferred.owl

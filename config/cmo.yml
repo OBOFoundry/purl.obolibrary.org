@@ -1,0 +1,12 @@
+# PURL configuration for http://purl.obolibrary.org/obo/cmo
+
+id: CMO
+base_url: /obo/cmo
+
+products:
+- cmo.owl: http://www.berkeleybop.org/ontologies/cmo.owl
+- cmo.obo: http://www.berkeleybop.org/ontologies/cmo.obo
+
+term_browser: ontobee
+example_terms:
+- CMO_0000000

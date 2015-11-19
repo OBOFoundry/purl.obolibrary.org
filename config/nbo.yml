@@ -1,0 +1,11 @@
+# PURL configuration for http://purl.obolibrary.org/obo/nbo
+
+id: NBO
+base_url: /obo/nbo
+
+products:
+- nbo.owl: http://www.berkeleybop.org/ontologies/nbo.owl
+
+term_browser: ontobee
+example_terms:
+- NBO_0000607

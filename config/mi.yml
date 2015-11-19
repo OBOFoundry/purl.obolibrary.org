@@ -1,0 +1,12 @@
+# PURL configuration for http://purl.obolibrary.org/obo/mi
+
+id: MI
+base_url: /obo/mi
+
+products:
+- mi.owl: http://www.berkeleybop.org/ontologies/mi.owl
+- mi.obo: http://www.berkeleybop.org/ontologies/mi.obo
+
+term_browser: ontobee
+example_terms:
+- MI_0346

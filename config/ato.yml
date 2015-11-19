@@ -1,0 +1,12 @@
+# PURL configuration for http://purl.obolibrary.org/obo/ato
+
+id: ATO
+base_url: /obo/ato
+
+products:
+- ato.owl: http://www.berkeleybop.org/ontologies/ato.owl
+- ato.obo: http://www.berkeleybop.org/ontologies/ato.obo
+
+term_browser: ontobee
+example_terms:
+- ATO_0000000

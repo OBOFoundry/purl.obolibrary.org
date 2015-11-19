@@ -1,0 +1,11 @@
+# PURL configuration for http://purl.obolibrary.org/obo/ogsf
+
+id: OGSF
+base_url: /obo/ogsf
+
+products:
+- ogsf.owl: https://ogsf.googlecode.com/svn/trunk/src/ogsf.owl
+
+term_browser: ontobee
+example_terms:
+- OGSF_0000000

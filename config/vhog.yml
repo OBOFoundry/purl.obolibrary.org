@@ -1,0 +1,12 @@
+# PURL configuration for http://purl.obolibrary.org/obo/vhog
+
+id: VHOG
+base_url: /obo/vhog
+
+products:
+- vhog.owl: http://www.berkeleybop.org/ontologies/vhog.owl
+- vhog.obo: http://www.berkeleybop.org/ontologies/vhog.obo
+
+term_browser: ontobee
+example_terms:
+- VHOG_0001533

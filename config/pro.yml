@@ -1,0 +1,18 @@
+# PURL configuration for http://purl.obolibrary.org/obo/pro
+# Warning: the Protein Ontology also uses /obo/pr
+
+id: PRO
+base_url: /obo/pro
+
+products:
+- pro.owl: http://www.berkeleybop.org/ontologies/pro.owl
+- pro.obo: http://www.berkeleybop.org/ontologies/pro.obo
+
+term_browser: custom
+
+entries:
+- prefix: /about/
+  replacement: http://pir.georgetown.edu/cgi-bin/pro/entry_pro?id=
+  tests:
+  - from: /about/PRO_000000001
+    to: http://pir.georgetown.edu/cgi-bin/pro/entry_pro?id=PRO_000000001

@@ -1,0 +1,21 @@
+# PURL configuration for http://purl.obolibrary.org/obo/obib
+
+id: OBIB
+base_url: /obo/obib
+
+products:
+- obib.owl: https://raw.githubusercontent.com/biobanking/biobanking/master/release/20140922/obib_merged_inferred.owl
+
+term_browser: ontobee
+example_terms:
+- OBIB_0000037
+
+entries:
+- exact: /dev/import_OBI_subset.owl
+  replacement: https://raw.githubusercontent.com/biobanking/biobanking/master/ontology/import_OBI_subset.owl
+
+- exact: /dev/import_OBO.owl
+  replacement: https://raw.githubusercontent.com/biobanking/biobanking/master/ontology/import_OBO.owl
+
+- exact: /dev/externalByhand.owl
+  replacement: https://raw.githubusercontent.com/biobanking/biobanking/master/ontology/externalByhand.owl

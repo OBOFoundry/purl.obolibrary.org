@@ -1,0 +1,12 @@
+# PURL configuration for http://purl.obolibrary.org/obo/xco
+
+id: XCO
+base_url: /obo/xco
+
+products:
+- xco.owl: http://www.berkeleybop.org/ontologies/xco.owl
+- xco.obo: http://www.berkeleybop.org/ontologies/xco.obo
+
+term_browser: ontobee
+example_terms:
+- XCO_0000000

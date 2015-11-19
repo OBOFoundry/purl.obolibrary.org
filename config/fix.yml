@@ -1,0 +1,11 @@
+# PURL configuration for http://purl.obolibrary.org/obo/fix
+
+id: FIX
+base_url: /obo/fix
+
+products:
+- fix.owl: http://www.berkeleybop.org/ontologies/fix.owl
+
+term_browser: ontobee
+example_terms:
+- FIX_0000000

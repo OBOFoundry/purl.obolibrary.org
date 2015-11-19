@@ -1,0 +1,12 @@
+# PURL configuration for http://purl.obolibrary.org/obo/ma
+
+id: MA
+base_url: /obo/ma
+
+products:
+- ma.owl: http://www.berkeleybop.org/ontologies/ma.owl
+- ma.obo: http://www.berkeleybop.org/ontologies/ma.obo
+
+term_browser: ontobee
+example_terms:
+- MA_0000001

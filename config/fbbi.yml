@@ -1,0 +1,11 @@
+# PURL configuration for http://purl.obolibrary.org/obo/fbbi
+
+id: FBbi
+base_url: /obo/fbbi
+
+products:
+- fbbi.owl: http://www.berkeleybop.org/ontologies/fbbi.owl
+
+term_browser: ontobee
+example_terms:
+- FBbi_0000001

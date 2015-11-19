@@ -1,0 +1,33 @@
+# PURL configuration for http://purl.obolibrary.org/obo/flu
+
+id: FLU
+base_url: /obo/flu
+
+base_redirect: http://influenzaontologywiki.igs.umaryland.edu/wiki/index.php/Main_Page
+
+products:
+- flu.owl: http://svn.code.sf.net/p/influenzo/code/trunk/ontology/owlsrc/flu.owl
+- flu.obo: https://svn.code.sf.net/p/influenzo/code/trunk/ontology/InfluenzO.obo
+
+term_browser: ontobee
+example_terms:
+- FLU_0000404
+
+entries:
+- exact: /tracker
+  replacement: https://sourceforge.net/tracker/?group_id=233412&atid=1089708
+
+- exact: /dev/flu.owl
+  replacement: http://influenzo.svn.sourceforge.net/viewvc/influenzo/trunk/ontology/owlsrc/flu.owl
+
+- exact: /
+  replacement: http://influenzaontologywiki.igs.umaryland.edu/
+
+- exact: /dev/external-byhand.owl
+  replacement: http://svn.code.sf.net/p/influenzo/code/trunk/ontology/owlsrc/external-byhand.owl
+
+- exact: /dev/external.owl
+  replacement: http://svn.code.sf.net/p/influenzo/code/trunk/ontology/owlsrc/external.owl
+
+- exact: /dev/externalDerived.owl
+  replacement: http://svn.code.sf.net/p/influenzo/code/trunk/ontology/owlsrc/externalDerived.owl

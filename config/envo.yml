@@ -1,0 +1,31 @@
+# PURL configuration for http://purl.obolibrary.org/obo/envo
+
+id: ENVO
+base_url: /obo/envo
+
+products:
+- envo.owl: https://raw.githubusercontent.com/EnvironmentOntology/envo/master/envo.owl
+- envo.obo: https://raw.githubusercontent.com/EnvironmentOntology/envo/master/envo.obo
+
+term_browser: ontobee
+example_terms:
+- ENVO_00003096
+
+entries:
+- exact: /mappings/spire-mapping.ttxt
+  replacement: http://purl.obolibrary.org/obo/envo/mappings/spire-mapping.tsv
+
+- exact: /mappings/spire-mapping.txt
+  replacement: http://purl.obolibrary.org/obo/envo/mappings/spire-mapping.tsv
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/EnvironmentOntology/envo/master/releases/
+
+- prefix: /mappings/
+  replacement: https://raw.githubusercontent.com/EnvironmentOntology/envo/master/mappings/
+
+- prefix: /subsets/
+  replacement: https://raw.githubusercontent.com/EnvironmentOntology/envo/master/subsets/
+
+- prefix: /imports/
+  replacement: https://raw.githubusercontent.com/EnvironmentOntology/envo/master/src/envo/imports/

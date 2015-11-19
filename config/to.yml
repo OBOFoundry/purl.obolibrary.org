@@ -1,0 +1,26 @@
+# PURL configuration for http://purl.obolibrary.org/obo/to
+
+id: TO
+base_url: /obo/to
+
+products:
+- to.owl: http://www.berkeleybop.org/ontologies/to.owl
+- to.obo: http://www.berkeleybop.org/ontologies/to.obo
+
+term_browser: ontobee
+example_terms:
+- TO_0000001
+
+entries:
+- exact: /termgenie
+  replacement: http://oven.lbl.gov:8080/batto-termgenie
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/browser/rdf.php?o=TO&iri=http://purl.obolibrary.org/obo/
+  tests:
+  - from: /about/TO_0000001
+    to: http://www.ontobee.org/browser/rdf.php?o=TO&iri=http://purl.obolibrary.org/obo/TO_0000001
+
+- prefix: /
+  replacement: http://github.com/cmungall/phenotype_ontologies/raw/master/to/
+

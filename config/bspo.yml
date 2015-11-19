@@ -1,0 +1,15 @@
+# PURL configuration for http://purl.obolibrary.org/obo/bspo
+
+id: BSPO
+base_url: /obo/bspo
+
+products:
+- bspo.owl: http://www.berkeleybop.org/ontologies/bspo.owl
+
+term_browser: ontobee
+example_terms:
+- BSPO_0000000
+
+entries:
+- prefix: /releases/
+  replacement: https://biological-spatial-ontology.googlecode.com/svn/releases/

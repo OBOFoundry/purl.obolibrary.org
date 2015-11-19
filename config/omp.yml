@@ -1,0 +1,19 @@
+# PURL configuration for http://purl.obolibrary.org/obo/omp
+
+id: OMP
+base_url: /obo/omp
+
+products:
+- omp.owl: http://www.berkeleybop.org/ontologies/omp.owl
+- omp.obo: http://www.berkeleybop.org/ontologies/omp.obo
+
+term_browser: ontobee
+example_terms:
+- OMP_0000000
+
+entries:
+- prefix: /devel/
+  replacement: https://github.com/microbialphenotypes
+
+- prefix: /
+  replacement: https://raw.githubusercontent.com/microbialphenotypes/OMP-ontology-files/master/

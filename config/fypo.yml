@@ -1,0 +1,11 @@
+# PURL configuration for http://purl.obolibrary.org/obo/fypo
+
+id: FYPO
+base_url: /obo/fypo
+
+products:
+- fypo.owl: http://www.berkeleybop.org/ontologies/fypo.owl
+
+term_browser: ontobee
+example_terms:
+- FYPO_0000001

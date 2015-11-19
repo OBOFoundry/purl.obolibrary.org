@@ -1,0 +1,49 @@
+# PURL configuration for http://purl.obolibrary.org/obo/uberon
+
+id: UBERON
+base_url: /obo/uberon
+
+base_redirect: http://uberon.github.io/
+
+products:
+- uberon.owl: http://berkeleybop.org/ontologies/uberon.owl
+- uberon.obo: http://berkeleybop.org/ontologies/uberon.obo
+
+term_browser: ontobee
+example_terms:
+- UBERON_0000000
+
+entries:
+- exact: /phenoscape-ext-simple.obo
+  replacement: http://build.berkeleybop.org/job/build-phenoscape/lastStableBuild/artifact/main/uberon/phenoscape-ext-simple.obo
+
+- exact: /phenoscape-ext.owl
+  replacement: http://phenoscape.svn.sourceforge.net/svnroot/phenoscape/trunk/vocab/edit/phenoscape-ext.owl
+
+- exact: /experimental/ceph.owl
+  replacement: https://github.com/cmungall/uberon/raw/master/experimental/ceph.owl
+
+- prefix: /references/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/trunk/reference/
+
+- prefix: /homology/
+  replacement: https://phenoscape.svn.sourceforge.net/svnroot/phenoscape/trunk/vocab/homology/
+
+- prefix: /releases/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/
+
+- prefix: /tracker
+  replacement: https://github.com/cmungall/uberon/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/browser/rdf.php?o=UBERON&iri=http://purl.obolibrary.org/obo/
+  tests:
+  - from: /about/UBERON_0000000
+    to: http://www.ontobee.org/browser/rdf.php?o=UBERON&iri=http://purl.obolibrary.org/obo/UBERON_0000000
+
+- prefix: /docs
+  replacement: https://github.com/obophenotype/uberon/wiki
+
+- prefix: /
+  replacement: http://berkeleybop.org/ontologies/uberon/
+

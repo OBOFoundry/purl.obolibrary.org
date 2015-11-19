@@ -1,0 +1,11 @@
+# PURL configuration for http://purl.obolibrary.org/obo/idomal
+
+id: IDOMAL
+base_url: /obo/idomal
+
+products:
+- idomal.owl: http://www.berkeleybop.org/ontologies/idomal.owl
+
+term_browser: ontobee
+example_terms:
+- IDOMAL_0000000

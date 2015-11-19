@@ -1,0 +1,12 @@
+# PURL configuration for http://purl.obolibrary.org/obo/mpath
+
+id: MPATH
+base_url: /obo/mpath
+
+products:
+- mpath.owl: http://www.berkeleybop.org/ontologies/mpath.owl
+- mpath.obo: http://www.berkeleybop.org/ontologies/mpath.obo
+
+term_browser: ontobee
+example_terms:
+- MPATH_1

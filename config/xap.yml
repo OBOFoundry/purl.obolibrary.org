@@ -1,0 +1,12 @@
+# PURL configuration for http://purl.obolibrary.org/obo/xap
+
+id: XAP
+base_url: /obo/xap
+
+products:
+- xap.owl: http://www.berkeleybop.org/ontologies/xap.owl
+- xap.obo: http://www.berkeleybop.org/ontologies/xap.obo
+
+term_browser: ontobee
+example_terms:
+

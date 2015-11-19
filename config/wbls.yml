@@ -1,0 +1,12 @@
+# PURL configuration for http://purl.obolibrary.org/obo/wbls
+
+id: WBls
+base_url: /obo/wbls
+
+products:
+- wbls.owl: http://www.berkeleybop.org/ontologies/wbls.owl
+- wbls.obo: http://www.berkeleybop.org/ontologies/wbls.obo
+
+term_browser: ontobee
+example_terms:
+- WBls_0000075

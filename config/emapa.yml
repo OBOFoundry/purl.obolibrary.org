@@ -1,0 +1,11 @@
+# PURL configuration for http://purl.obolibrary.org/obo/emapa
+
+id: EMAPA
+base_url: /obo/emapa
+
+products:
+- emapa.owl: http://www.berkeleybop.org/ontologies/emapa.owl
+
+term_browser: ontobee
+example_terms:
+- EMAPA_36040

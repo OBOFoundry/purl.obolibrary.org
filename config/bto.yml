@@ -1,0 +1,11 @@
+# PURL configuration for http://purl.obolibrary.org/obo/bto
+
+id: BTO
+base_url: /obo/bto
+
+products:
+- bto.owl: http://www.berkeleybop.org/ontologies/bto.owl
+
+term_browser: ontobee
+example_terms:
+- BTO_0000000

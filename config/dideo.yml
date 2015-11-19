@@ -1,0 +1,15 @@
+# PURL configuration for http://purl.obolibrary.org/obo/dideo
+
+id: DIDEO
+base_url: /obo/dideo
+
+products:
+- dideo.owl: https://raw.githubusercontent.com/DIDEO/DIDEO/master/dideo.owl
+
+term_browser: ontobee
+example_terms:
+- DIDEO_00000001
+
+entries:
+- exact: /iswcTest/dideo.owl
+  replacement: https://raw.githubusercontent.com/DIDEO/DIDEO/master/Dideo_ISWC_Test.owl

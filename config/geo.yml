@@ -1,0 +1,48 @@
+# PURL configuration for http://purl.obolibrary.org/obo/geo
+
+id: GEO
+base_url: /obo/geo
+
+products:
+- geo.owl: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/geo.owl
+
+term_browser: ontobee
+example_terms:
+- GEO_000000102
+
+entries:
+- exact: /dev/geo.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/geo.owl
+
+- exact: /dev/nation-geography.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/nation-geography.owl
+
+- exact: /dev/basic-geography.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/basic-geography.owl
+
+- exact: /dev/us-integral-geography.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-integral-geography.owl
+
+- exact: /dev/us-geography.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-geography.owl
+
+- exact: /dev/us-all-geography.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-all-geography.owl
+
+- exact: /dev/nation-instances.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/nation-instances.owl
+
+- exact: /dev/geo-all.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/geo-all.owl
+
+- exact: /dev/us-mas-dependencies.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-mas-dependencies.owl
+
+- exact: /dev/nation-and-dependency-instances.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/nation-and-dependency-instances.owl
+
+- exact: /dev/nation-and-dependency-geography.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/nation-and-dependency-geography.owl
+
+- exact: /bfo2/geo.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/bfo2/geo.owl

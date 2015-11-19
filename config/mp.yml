@@ -1,0 +1,23 @@
+# PURL configuration for http://purl.obolibrary.org/obo/mp
+
+id: MP
+base_url: /obo/mp
+
+products:
+- mp.owl: ftp://ftp.informatics.jax.org/pub/reports/mp.owl
+- mp.obo: http://www.berkeleybop.org/ontologies/mp.obo
+
+term_browser: ontobee
+example_terms:
+- MP_0000001
+
+entries:
+- prefix: /about/
+  replacement: http://www.ebi.ac.uk/ontology-lookup/browse.do?ontName=MP&termId=http://purl.obolibrary.org/obo/
+  tests:
+  - from: /about/MP_0000001
+    to: http://www.ebi.ac.uk/ontology-lookup/browse.do?ontName=MP&termId=http://purl.obolibrary.org/obo/MP_0000001
+
+- prefix: /
+  replacement: https://raw.githubusercontent.com/obophenotype/mammalian-phenotype-ontology/master/src/ontology/
+

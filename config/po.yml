@@ -1,0 +1,12 @@
+# PURL configuration for http://purl.obolibrary.org/obo/po
+
+id: PO
+base_url: /obo/po
+
+products:
+- po.owl: http://www.berkeleybop.org/ontologies/po.owl
+- po.obo: http://www.berkeleybop.org/ontologies/po.obo
+
+term_browser: ontobee
+example_terms:
+- PO_0009012

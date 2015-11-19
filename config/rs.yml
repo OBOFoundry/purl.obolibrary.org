@@ -1,0 +1,12 @@
+# PURL configuration for http://purl.obolibrary.org/obo/rs
+
+id: RS
+base_url: /obo/rs
+
+products:
+- rs.owl: http://www.berkeleybop.org/ontologies/rs.owl
+- rs.obo: ftp://rgd.mcw.edu/pub/ontology/rat_strain/rat_strain_20121106_v4.6.obo
+
+term_browser: ontobee
+example_terms:
+- RS_0000457

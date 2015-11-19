@@ -1,0 +1,12 @@
+# PURL configuration for http://purl.obolibrary.org/obo/symp
+
+id: SYMP
+base_url: /obo/symp
+
+products:
+- symp.owl: http://www.berkeleybop.org/ontologies/symp.owl
+- symp.obo: http://www.berkeleybop.org/ontologies/symp.obo
+
+term_browser: ontobee
+example_terms:
+- SYMP_0000000

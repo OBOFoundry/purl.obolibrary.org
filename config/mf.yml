@@ -1,0 +1,36 @@
+# PURL configuration for http://purl.obolibrary.org/obo/mf
+
+id: MF
+base_url: /obo/mf
+
+products:
+- mf.owl: http://mental-functioning-ontology.googlecode.com/svn/trunk/ontology/MF.owl
+
+term_browser: ontobee
+example_terms:
+- MF_0000000
+
+entries:
+- exact: /external/GO_import.owl
+  replacement: http://mental-functioning-ontology.googlecode.com/svn/trunk/ontology/external/GO_import.owl
+
+- exact: /internal/MF-core.owl
+  replacement: http://mental-functioning-ontology.googlecode.com/svn/trunk/ontology/internal/MF-core.owl
+
+- exact: /internal/MD-core.owl
+  replacement: http://mental-functioning-ontology.googlecode.com/svn/trunk/ontology/internal/MD-core.owl
+
+- exact: /external/ontology-metadata-slim.owl
+  replacement: http://mental-functioning-ontology.googlecode.com/svn/trunk/ontology/external/ontology-metadata-slim.owl
+
+- exact: /external/bfo-properties--slim.owl
+  replacement: http://mental-functioning-ontology.googlecode.com/svn/trunk/ontology/external/bfo-properties-slim.owl
+
+- exact: /external/behavior-slim.owl
+  replacement: http://mental-functioning-ontology.googlecode.com/svn/trunk/ontology/external/behavior-slim.owl
+
+- exact: /external/bfo-properties-slim.owl
+  replacement: http://mental-functioning-ontology.googlecode.com/svn/trunk/ontology/external/bfo-properties-slim.owl
+
+- exact: /external/doid-slim.owl
+  replacement: http://mental-functioning-ontology.googlecode.com/svn/trunk/ontology/external/doid-slim.owl

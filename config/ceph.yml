@@ -1,0 +1,15 @@
+# PURL configuration for http://purl.obolibrary.org/obo/ceph
+
+id: CEPH
+base_url: /obo/ceph
+
+products:
+- ceph.owl: http://www.berkeleybop.org/ontologies/ceph.owl
+
+term_browser: ontobee
+example_terms:
+- CEPH_0000000
+
+entries:
+- prefix: /
+  replacement: http://berkeleybop.org/ontologies/ceph/

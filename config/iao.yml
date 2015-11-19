@@ -1,0 +1,208 @@
+# PURL configuration for http://purl.obolibrary.org/obo/iao
+
+id: IAO
+base_url: /obo/iao
+
+base_redirect: http://code.google.com/p/information-artifact-ontology/
+
+products:
+- iao.owl: http://information-artifact-ontology.googlecode.com/svn/releases/2015-02-23/iao.owl
+- iao.obo: http://information-artifact-ontology.googlecode.com/svn/releases/2009-11-06/merged/iao.obo
+
+term_browser: ontobee
+example_terms:
+- IAO_0000030
+
+entries:
+- exact: /2008-11-24/ontology-metadata.owl
+  replacement: http://information-artifact-ontology.googlecode.com/svn/tags/2008-11-24/ontology-metadata.owl
+
+- exact: /2009-07-15/ontology-metadata.owl
+  replacement: http://information-artifact-ontology.googlecode.com/svn/tags/2009-07-15/ontology-metadata.owl
+
+- exact: /2009-01-23/ontology-metadata.owl
+  replacement: http://information-artifact-ontology.googlecode.com/svn/tags/2009-01-23/ontology-metadata.owl
+
+- exact: /dev/examples.owl
+  replacement: http://information-artifact-ontology.googlecode.com/svn/trunk/src/ontology/iao-examples.owl
+
+- exact: /tracker
+  replacement: http://code.google.com/p/information-artifact-ontology/issues/list
+
+- exact: /2009-07-15/obsolete.owl
+  replacement: http://information-artifact-ontology.googlecode.com/svn/tags/2009-07-15/obsolete.owl
+
+- exact: /dev/iao-dev.owl
+  replacement: http://information-artifact-ontology.googlecode.com/svn/trunk/src/ontology/iao-dev.owl
+
+- exact: /2009-03-17/iao.owl
+  replacement: http://information-artifact-ontology.googlecode.com/svn/tags/2009-03-17/IAO.owl
+
+- exact: /dev/owl2bits.owl
+  replacement: http://information-artifact-ontology.googlecode.com/svn/trunk/src/ontology/iao-owl2.owl
+
+- exact: /dev/iao.owl
+  replacement: http://information-artifact-ontology.googlecode.com/svn/trunk/src/ontology/IAO.owl
+
+- exact: /2009-03-17/ontology-metadata.owl
+  replacement: http://information-artifact-ontology.googlecode.com/svn/tags/2009-03-17/ontology-metadata.owl
+
+- exact: /dev/obsolete.owl
+  replacement: http://information-artifact-ontology.googlecode.com/svn/trunk/src/ontology/obsolete.owl
+
+- exact: /dev/ontology-metadata.owl
+  replacement: http://information-artifact-ontology.googlecode.com/svn/trunk/src/ontology/ontology-metadata.owl
+
+- exact: /2009-07-15/iao/iao.owl
+  replacement: http://information-artifact-ontology.googlecode.com/svn/tags/2009-07-15/IAO.owl
+
+- exact: /2008-11-24/iao.owl
+  replacement: http://information-artifact-ontology.googlecode.com/svn/tags/2008-11-24/iao.owl
+
+- exact: /2009-07-15/iao.owl
+  replacement: http://information-artifact-ontology.googlecode.com/svn/tags/2009-07-15/IAO.owl
+
+- exact: /2009-01-23/iao.owl
+  replacement: http://information-artifact-ontology.googlecode.com/svn/tags/2009-01-23/iao.owl
+
+- exact: /dev/external.owl
+  replacement: http://information-artifact-ontology.googlecode.com/svn/trunk/src/ontology/external.owl
+
+- exact: /dev/externalDerived.owl
+  replacement: http://information-artifact-ontology.googlecode.com/svn/trunk/src/ontology/externalDerived.owl
+
+- exact: /dev/iao-main.owl
+  replacement: http://information-artifact-ontology.googlecode.com/svn/trunk/src/ontology/iao-main.owl
+
+- exact: /obsolete.owl
+  replacement: http://information-artifact-ontology.googlecode.com/svn/releases/2009-11-06/merged/obsolete.owl
+
+- exact: /dev/externalByHand.owl
+  replacement: http://information-artifact-ontology.googlecode.com/svn/trunk/src/ontology/externalByHand.owl
+
+- exact: /example/community-label.owl
+  replacement: http://information-artifact-ontology.googlecode.com/svn/trunk/src/example/community-label.owl
+
+- exact: /reports
+  replacement: http://code.google.com/p/information-artifact-ontology/#Presentations
+
+- exact: /documentation
+  replacement: http://code.google.com/p/information-artifact-ontology/w/list
+
+- exact: /repository
+  replacement: http://code.google.com/p/information-artifact-ontology/source/browse/
+
+- exact: /2011-08-04/obsolete.owl
+  replacement: http://information-artifact-ontology.googlecode.com/svn/releases/2011-08-04/merged/obsolete.owl
+
+- exact: /2011-08-04/iao-main.owl
+  replacement: http://information-artifact-ontology.googlecode.com/svn/releases/2011-08-04/merged/iao-main.owl
+
+- exact: /2011-08-04/ontology-metadata.owl
+  replacement: http://information-artifact-ontology.googlecode.com/svn/releases/2011-08-04/merged/ontology-metadata.owl
+
+- exact: /2011-08-04/iao.owl
+  replacement: http://information-artifact-ontology.googlecode.com/svn/releases/2011-08-04/merged/iao.owl
+
+- exact: /2012-01-05/ontology-metadata.owl
+  replacement: https://information-artifact-ontology.googlecode.com/svn/releases/2012-01-05/merged/ontology-metadata.owl
+
+- exact: /2012-01-05/iao-main.owl
+  replacement: https://information-artifact-ontology.googlecode.com/svn/releases/2012-01-05/merged/iao-main.owl
+
+- exact: /iao-main.owl
+  replacement: http://information-artifact-ontology.googlecode.com/svn/releases/2011-05-09/iao-main.owl
+
+- exact: /bfo-transitional/notes
+  replacement: https://docs.google.com/document/d/1CRLrqYyq9s2xaf3zT0mae190ZFDTWJnflgLEtY2Rf8g/edit?usp=sharing
+
+- exact: /bfo2-transitional/notes
+  replacement: https://docs.google.com/document/d/1CRLrqYyq9s2xaf3zT0mae190ZFDTWJnflgLEtY2Rf8g/edit?usp=sharing
+
+- exact: /2015-02-23/iao.owl
+  replacement: http://information-artifact-ontology.googlecode.com/svn/releases/2015-02-23/iao.owl
+
+- exact: /ontology-metadata.owl
+  replacement: http://information-artifact-ontology.googlecode.com/svn/releases/2015-02-23/ontology-metadata.owl
+
+- exact: /2015-02-23/ontology-metadata.owl
+  replacement: http://information-artifact-ontology.googlecode.com/svn/releases/2015-02-23/ontology-metadata.owl
+
+- exact: /d-acts/2013-06-28/d-acts.owl
+  replacement: https://raw.githubusercontent.com/d-acts/d-acts/2013-06-28/d-acts.owl
+
+- exact: /d-acts/2012-1102/d-acts.owl
+  replacement: https://raw.githubusercontent.com/d-acts/d-acts/2012-11-02/d-acts.owl
+
+- exact: /d-acts/2012-07-02-11/d-acts.owl
+  replacement: https://raw.githubusercontent.com/d-acts/d-acts/2012-07-11/d-acts.owl
+
+- exact: /d-acts/2012-11-02/d-acts.owl
+  replacement: https://raw.githubusercontent.com/d-acts/d-acts/2012-11-02/d-acts.owl
+
+- exact: /d-acts/2012-07-06/d-acts.owl
+  replacement: https://raw.githubusercontent.com/d-acts/d-acts/2012-07-06/d-acts.owl
+
+- exact: /d-acts/2012-07-03/d-acts.owl
+  replacement: https://raw.githubusercontent.com/d-acts/d-acts/2012-07-03/d-acts.owl
+
+- exact: /d-acts/2013-11-27-d-acts.owl
+  replacement: https://raw.githubusercontent.com/d-acts/d-acts/2013-11-27/d-acts.owl
+
+- exact: /d-acts/2013-11-27/d-acts.owl
+  replacement: https://raw.githubusercontent.com/d-acts/d-acts/2013-11-27/d-acts.owl
+
+- exact: /pno/2014-05-03/pno.owl
+  replacement: https://raw.githubusercontent.com/ProperNameOntology/proper-name-ontology/2014-03-05/pno.owl
+
+- exact: /pno/bfo2/pno.owl
+  replacement: https://raw.githubusercontent.com/ProperNameOntology/proper-name-ontology/bfo2/pno.owl
+
+- exact: /pno.owl
+  replacement: https://raw.githubusercontent.com/ProperNameOntology/proper-name-ontology/master/pno.owl
+
+- exact: /d-acts/legacy/d-acts.owl
+  replacement: https://raw.githubusercontent.com/d-acts/d-acts/master/d-acts_legacy.owl
+
+- exact: /d-acts/dev/d-acts.owl
+  replacement: https://raw.githubusercontent.com/d-acts/d-acts/master/d-acts.owl
+
+- exact: /d-acts.owl
+  replacement: https://raw.githubusercontent.com/d-acts/d-acts/master/releases/20150916/d-acts.owl
+
+- exact: /d-acts/20150916/d-acts.owl
+  replacement: https://raw.githubusercontent.com/d-acts/d-acts/master/releases/20150916/d-acts.owl
+
+- exact: /d-acts/20150915/d-acts.owl
+  replacement: https://raw.githubusercontent.com/d-acts/d-acts/master/releases/20150915/d-acts.owl
+
+- prefix: /bfo2-transitional/
+  replacement: http://information-artifact-ontology.googlecode.com/svn/branches/2014-06-13/ontology/
+
+- prefix: /2009-11-02/
+  replacement: http://information-artifact-ontology.googlecode.com/svn/releases/2009-11-02/merged/
+
+- prefix: /2009-11-06/
+  replacement: http://information-artifact-ontology.googlecode.com/svn/releases/2009-11-06/merged/
+
+- prefix: /2010-09-14/
+  replacement: http://information-artifact-ontology.googlecode.com/svn/releases/2010-09-14/
+
+- prefix: /2010-10-26/
+  replacement: http://information-artifact-ontology.googlecode.com/svn/releases/2010-10-26/
+
+- prefix: /2011-05-19/
+  replacement: http://information-artifact-ontology.googlecode.com/svn/releases/2011-05-09/
+
+- prefix: /2011-05-09/
+  replacement: http://information-artifact-ontology.googlecode.com/svn/releases/2011-05-09/
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/browser/rdf.php?o=IAO&iri=http://purl.obolibrary.org/obo/
+  tests:
+  - from: /about/IAO_0000030
+    to: http://www.ontobee.org/browser/rdf.php?o=IAO&iri=http://purl.obolibrary.org/obo/IAO_0000030
+
+- prefix: /dev/
+  replacement: http://information-artifact-ontology.googlecode.com/svn/trunk/src/ontology/
+

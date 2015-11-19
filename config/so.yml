@@ -1,0 +1,23 @@
+# PURL configuration for http://purl.obolibrary.org/obo/so
+
+id: SO
+base_url: /obo/so
+
+products:
+- so.owl: https://raw.githubusercontent.com/The-Sequence-Ontology/SO-Ontologies/master/so-xp.owl
+- so.obo: https://raw.githubusercontent.com/The-Sequence-Ontology/SO-Ontologies/master/so-xp.obo
+
+term_browser: ontobee
+example_terms:
+- SO_0000110
+
+entries:
+- prefix: /about/
+  replacement: http://www.ontobee.org/browser/rdf.php?o=SO&iri=http://purl.obolibrary.org/obo/
+  tests:
+  - from: /about/SO_0000110
+    to: http://www.ontobee.org/browser/rdf.php?o=SO&iri=http://purl.obolibrary.org/obo/SO_0000110
+
+- prefix: /
+  replacement: http://svn.code.sf.net/p/song/svn/trunk/
+

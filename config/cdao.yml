@@ -1,0 +1,22 @@
+# PURL configuration for http://purl.obolibrary.org/obo/cdao
+
+id: CDAO
+base_url: /obo/cdao
+
+products:
+- cdao.owl: http://svn.code.sf.net/p/obo/svn/ontologies/trunk/CDAO/cdao.owl
+
+term_browser: ontobee
+example_terms:
+- CDAO_0000040
+
+entries:
+- prefix: /about/
+  replacement: http://www.ontobee.org/browser/rdf.php?o=CDAO&iri=http://purl.obolibrary.org/obo/
+  tests:
+  - from: /about/CDAO_0000040
+    to: http://www.ontobee.org/browser/rdf.php?o=CDAO&iri=http://purl.obolibrary.org/obo/CDAO_0000040
+
+- prefix: /
+  replacement: http://svn.code.sf.net/p/obo/svn/ontologies/trunk/CDAO/
+

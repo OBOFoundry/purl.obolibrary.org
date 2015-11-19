@@ -1,0 +1,12 @@
+# PURL configuration for http://purl.obolibrary.org/obo/gaz
+
+id: GAZ
+base_url: /obo/gaz
+
+products:
+- gaz.owl: http://www.berkeleybop.org/ontologies/gaz.owl
+- gaz.obo: http://www.berkeleybop.org/ontologies/gaz.obo
+
+term_browser: ontobee
+example_terms:
+- GAZ_00002560

@@ -1,0 +1,12 @@
+# PURL configuration for http://purl.obolibrary.org/obo/hsapdv
+
+id: HsapDv
+base_url: /obo/hsapdv
+
+products:
+- hsapdv.owl: http://www.berkeleybop.org/ontologies/hsapdv.owl
+- hsapdv.obo: http://www.berkeleybop.org/ontologies/hsapdv.obo
+
+term_browser: ontobee
+example_terms:
+- HsapDv_0000000

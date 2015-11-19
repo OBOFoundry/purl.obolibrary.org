@@ -1,0 +1,29 @@
+# PURL configuration for http://purl.obolibrary.org/obo/hao
+
+id: HAO
+base_url: /obo/hao
+
+base_redirect: http://hymao.org/
+
+products:
+- hao.owl: http://svn.code.sf.net/p/obo/svn/ontologies/trunk/HAO/hao.owl
+- hao.obo: http://svn.code.sf.net/p/obo/svn/ontologies/trunk/HAO/hao.obo
+
+term_browser: custom
+
+entries:
+- exact: /wiki
+  replacement: http://hymao.org/
+
+- exact: /browse
+  replacement: http://www.ontobee.org/browser/index.php?o=HAO
+
+- prefix: /about/
+  replacement: http://api.hymao.org/api/ontology/ontology_class/
+  tests:
+  - from: /about/HAO_0000000
+    to: http://api.hymao.org/api/ontology/ontology_class/HAO_0000000
+
+- prefix: /
+  replacement: http://svn.code.sf.net/p/obo/svn/ontologies/trunk/HAO/
+

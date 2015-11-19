@@ -1,0 +1,12 @@
+# PURL configuration for http://purl.obolibrary.org/obo/chmo
+
+id: CHMO
+base_url: /obo/chmo
+
+products:
+- chmo.owl: http://rsc-cmo.googlecode.com/svn/trunk/chmo.owl
+- chmo.obo: http://rsc-cmo.googlecode.com/svn/trunk/chmo.obo
+
+term_browser: ontobee
+example_terms:
+- CHMO_0002748

@@ -1,0 +1,12 @@
+# PURL configuration for http://purl.obolibrary.org/obo/fbsp
+
+id: FBsp
+base_url: /obo/fbsp
+
+products:
+- fbsp.owl: http://www.berkeleybop.org/ontologies/fbsp.owl
+- fbsp.obo: http://www.berkeleybop.org/ontologies/fbsp.obo
+
+term_browser: ontobee
+example_terms:
+- FBsp_00000000

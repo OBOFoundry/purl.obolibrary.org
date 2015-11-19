@@ -1,0 +1,44 @@
+# PURL configuration for http://purl.obolibrary.org/obo/fbbt
+
+id: FBbt
+base_url: /obo/fbbt
+
+base_redirect:  https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/wiki
+
+products:
+- fbbt.owl: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/fbbt.owl
+- fbbt.obo: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/fbbt.obo
+- FBbt_RO.owl: http://purl.obolibrary.org/obo/fbbt/2011-09-06/FBbt_helper_relations.owl
+
+term_browser: ontobee
+example_terms:
+- FBbt_10000000
+
+entries:
+- exact: /vfb/demo/owled2014_demo.owl.
+  replacement: https://raw.githubusercontent.com/VirtualFlyBrain/VFB_papers/master/owl/owled2014_demo.owl
+
+- exact: /tracker
+  replacement: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/issues
+
+- exact: /downloads
+  replacement: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/wiki/Download-guide
+
+- prefix: /2011-09-06/
+  replacement: http://obo.cvs.sourceforge.net/viewvc/obo/obo/ontology/anatomy/gross_anatomy/animal_gross_anatomy/fly/2011-09-06/
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/browser/rdf.php?o=FBbt&iri=http://purl.obolibrary.org/obo/
+
+- prefix: /vfb/
+  replacement: https://raw.githubusercontent.com/VirtualFlyBrain/VFB_owl/master/src/owl/
+
+- prefix: /wiki
+  replacement: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/wiki
+
+- prefix: /doc
+  replacement: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/wiki
+
+- prefix: /
+  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/
+

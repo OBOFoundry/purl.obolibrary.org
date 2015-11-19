@@ -1,0 +1,11 @@
+# PURL configuration for http://purl.obolibrary.org/obo/ddanat
+
+id: DDANAT
+base_url: /obo/ddanat
+
+products:
+- ddanat.owl: http://www.berkeleybop.org/ontologies/ddanat.owl
+
+term_browser: ontobee
+example_terms:
+- DDANAT_0000002

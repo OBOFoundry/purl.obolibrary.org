@@ -1,0 +1,11 @@
+# PURL configuration for http://purl.obolibrary.org/obo/miro
+
+id: MIRO
+base_url: /obo/miro
+
+products:
+- miro.owl: http://www.berkeleybop.org/ontologies/miro.owl
+
+term_browser: ontobee
+example_terms:
+- MIRO_40003818

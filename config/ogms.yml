@@ -1,0 +1,49 @@
+# PURL configuration for http://purl.obolibrary.org/obo/ogms
+
+id: OGMS
+base_url: /obo/ogms
+
+base_redirect: http://code.google.com/p/ogms/?
+
+products:
+- ogms.owl: http://ogms.googlecode.com/svn/releases/2014-06-20/ontology/ogms.owl
+- ogms.obo: http://ogms.googlecode.com/svn/releases/2011-09-20/ontology/ogms.obo
+
+term_browser: ontobee
+example_terms:
+- OGMS_0000031
+
+entries:
+- exact: /2009-08-07/ogms.owl
+  replacement: http://ogms.googlecode.com/svn/releases/2009-08-07/ogms.owl
+
+- exact: /2009-12-03/ogms.owl
+  replacement: http://ogms.googlecode.com/svn/releases/2009-12-03/ontology/ogms.owl
+
+- exact: /2009-12-03/ogms.obo
+  replacement: http://ogms.googlecode.com/svn/releases/2009-12-03/ontology/ogms.obo
+
+- exact: /2009-08-07/ogms.obo
+  replacement: http://ogms.googlecode.com/svn/releases/2009-08-07/ogms.obo
+
+- exact: /2010-01-29/ogms.owl
+  replacement: http://ogms.googlecode.com/svn/releases/2010-01-29/ontology/ogms.owl
+
+- exact: /2010-01-29/ogms.obo
+  replacement: http://ogms.googlecode.com/svn/releases/2010-01-29/ontology/ogms.obo
+
+- exact: /omre/dev/omre.owl
+  replacement: http://ogms.googlecode.com/svn/trunk/src/ontology/omre/omre.owl
+
+- exact: /dev/ogms.owl
+  replacement: http://ogms.googlecode.com/svn/trunk/src/ontology/ogms.owl
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/browser/rdf.php?o=OGMS&iri=http://purl.obolibrary.org/obo/
+  tests:
+  - from: /about/OGMS_0000031
+    to: http://www.ontobee.org/browser/rdf.php?o=OGMS&iri=http://purl.obolibrary.org/obo/OGMS_0000031
+
+- prefix: /
+  replacement: http://www.ontobee.org/browser/rdf.php?o=OGMS&iri=http://purl.obolibrary.org/obo/
+

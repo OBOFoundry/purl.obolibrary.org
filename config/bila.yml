@@ -1,0 +1,12 @@
+# PURL configuration for http://purl.obolibrary.org/obo/bila
+
+id: BILA
+base_url: /obo/bila
+
+products:
+- bila.owl: http://www.berkeleybop.org/ontologies/bila.owl
+- bila.obo: http://www.berkeleybop.org/ontologies/bila.obo
+
+term_browser: ontobee
+example_terms:
+- BILA_0000000

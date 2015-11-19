@@ -1,0 +1,11 @@
+# PURL configuration for http://purl.obolibrary.org/obo/hom
+
+id: HOM
+base_url: /obo/hom
+
+products:
+- hom.owl: http://www.berkeleybop.org/ontologies/hom.owl
+
+term_browser: ontobee
+example_terms:
+- HOM_0000000

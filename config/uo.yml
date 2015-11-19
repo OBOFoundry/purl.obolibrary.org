@@ -1,0 +1,12 @@
+# PURL configuration for http://purl.obolibrary.org/obo/uo
+
+id: UO
+base_url: /obo/uo
+
+products:
+- uo.owl: http://www.berkeleybop.org/ontologies/uo.owl
+- uo.obo: http://www.berkeleybop.org/ontologies/uo.obo
+
+term_browser: ontobee
+example_terms:
+- UO_0000000

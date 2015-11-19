@@ -1,0 +1,12 @@
+# PURL configuration for http://purl.obolibrary.org/obo/zfs
+
+id: ZFS
+base_url: /obo/zfs
+
+products:
+- zfs.owl: http://www.berkeleybop.org/ontologies/zfs.owl
+- zfs.obo: http://www.berkeleybop.org/ontologies/zfs.obo
+
+term_browser: ontobee
+example_terms:
+- ZFS_0100000

@@ -1,0 +1,33 @@
+# PURL configuration for http://purl.obolibrary.org/obo/ogg
+
+id: OGG
+base_url: /obo/ogg
+
+products:
+- ogg.owl: http://ogg.googlecode.com/svn/trunk/src/ontology/ogg.owl
+
+term_browser: ontobee
+example_terms:
+- OGG_0000000002
+
+entries:
+- exact: /ogg-pf.owl
+  replacement: http://ogg.googlecode.com/svn/trunk/src/ontology/ogg-pf.owl
+
+- exact: /ogg-mm.owl
+  replacement: http://ogg.googlecode.com/svn/trunk/src/ontology/ogg-mm.owl
+
+- exact: /ogg-dm.owl
+  replacement: http://ogg.googlecode.com/svn/trunk/src/ontology/ogg-dm.owl
+
+- exact: /ogg-sc.owl
+  replacement: http://ogg.googlecode.com/svn/trunk/src/ontology/ogg-sc.owl
+
+- exact: /ogg-dr.owl
+  replacement: http://ogg.googlecode.com/svn/trunk/src/ontology/ogg-dr.owl
+
+- exact: /ogg-ce.owl
+  replacement: http://ogg.googlecode.com/svn/trunk/src/ontology/ogg-ce.owl
+
+- exact: /ogg-at.owl
+  replacement: http://ogg.googlecode.com/svn/trunk/src/ontology/ogg-at.owl

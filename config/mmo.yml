@@ -1,0 +1,12 @@
+# PURL configuration for http://purl.obolibrary.org/obo/mmo
+
+id: MMO
+base_url: /obo/mmo
+
+products:
+- mmo.owl: http://www.berkeleybop.org/ontologies/mmo.owl
+- mmo.obo: http://www.berkeleybop.org/ontologies/mmo.obo
+
+term_browser: ontobee
+example_terms:
+- MMO_0000000

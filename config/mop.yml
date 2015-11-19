@@ -1,0 +1,12 @@
+# PURL configuration for http://purl.obolibrary.org/obo/mop
+
+id: MOP
+base_url: /obo/mop
+
+products:
+- mop.owl: http://www.berkeleybop.org/ontologies/mop.owl
+- mop.obo: http://rxno.googlecode.com/svn/trunk/mop.obo
+
+term_browser: ontobee
+example_terms:
+- MOP_0000000

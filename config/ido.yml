@@ -1,0 +1,121 @@
+# PURL configuration for http://purl.obolibrary.org/obo/ido
+
+id: IDO
+base_url: /obo/ido
+
+base_redirect: http://infectiousdiseaseontology.org/page/Main_Page
+
+products:
+- ido.owl: http://infectious-disease-ontology.googlecode.com/svn/releases/2014-08-01/ido.owl
+- ido.obo: http://infectious-disease-ontology.googlecode.com/svn/releases/2010-12-02/ido.obo
+- idoplant.owl: http://palea.cgrb.oregonstate.edu/viewsvn/Poc/trunk/ontology/collaborators_ontology/plant_disease/idoplant.owl?view=co
+
+term_browser: ontobee
+example_terms:
+- IDO_0000586
+
+entries:
+- exact: /
+  replacement: http://www.infectiousdiseaseontology.org/
+
+- exact: /owldoc
+  replacement: http://owl.cs.manchester.ac.uk/browser/classes/211650690/?session=11d12f491be-6760-11d12f4b77a
+
+- exact: /dev/ido.owl
+  replacement: http://infectious-disease-ontology.googlecode.com/svn/trunk/src/ontology/ido-core/ido.owl
+
+- exact: /2009-08-14/ido.owl
+  replacement: http://infectious-disease-ontology.googlecode.com/svn/releases/2009-08-14/ido.owl
+
+- exact: /dev/pathway.owl
+  replacement: http://infectious-disease-ontology.googlecode.com/svn/trunk/src/ontology/immunology/proto/pathway.owl
+
+- exact: /dev/pathway-external.owl
+  replacement: http://infectious-disease-ontology.googlecode.com/svn/trunk/src/ontology/immunology/proto/pathway-external.owl
+
+- exact: /dev/pathway-external-derived.owl
+  replacement: http://infectious-disease-ontology.googlecode.com/svn/trunk/src/ontology/immunology/proto/pathway-external-derived.owl
+
+- exact: /dev/pathway-defs.owl
+  replacement: http://infectious-disease-ontology.googlecode.com/svn/trunk/src/ontology/immunology/proto/pathway-defs.owl
+
+- exact: /tracker
+  replacement: http://code.google.com/p/infectious-disease-ontology/issues/list
+
+- exact: /repository
+  replacement: http://code.google.com/p/infectious-disease-ontology/source/checkout
+
+- exact: /2010-05-26/ido.owl
+  replacement: http://infectious-disease-ontology.googlecode.com/svn/releases/2010-05-26/ido.owl
+
+- exact: /2010-12-02/ido.owl
+  replacement: http://infectious-disease-ontology.googlecode.com/svn/releases/2010-12-02/ido.owl
+
+- exact: /2010-12-02/ido-base.owl
+  replacement: http://infectious-disease-ontology.googlecode.com/svn/releases/2010-12-02/ido-base.owl
+
+- exact: /2010-12-02/ido-base-asserted.owl
+  replacement: http://infectious-disease-ontology.googlecode.com/svn/releases/2010-12-02/asserted/ido-base-asserted.owl
+
+- exact: /2010-12-02/ido-asserted.owl
+  replacement: http://infectious-disease-ontology.googlecode.com/svn/releases/2010-12-02/asserted/ido-asserted.owl
+
+- exact: /2010-12-02/ido-external.owl
+  replacement: http://infectious-disease-ontology.googlecode.com/svn/releases/2010-12-02/asserted/ido-external.owl
+
+- exact: /2010-12-02/ido-external-derived.owl
+  replacement: http://infectious-disease-ontology.googlecode.com/svn/releases/2010-12-02/asserted/ido-external-derived.owl
+
+- exact: /2010-12-02/ido-external-by-hand.owl
+  replacement: http://infectious-disease-ontology.googlecode.com/svn/releases/2010-12-02/asserted/ido-external-by-hand.owl
+
+- exact: /2010-12-02/ido-main-asserted.owl
+  replacement: http://infectious-disease-ontology.googlecode.com/svn/releases/2010-12-02/asserted/ido-main-asserted.owl
+
+- exact: /2010-12-02/ido-obsolete.owl
+  replacement: http://infectious-disease-ontology.googlecode.com/svn/releases/2010-12-02/asserted/ido-obsolete.owl
+
+- exact: /2010-12-02/ido-main.owl
+  replacement: http://infectious-disease-ontology.googlecode.com/svn/releases/2010-12-02/ido-main.owl
+
+- exact: /2010-12-02/ido.obo
+  replacement: http://infectious-disease-ontology.googlecode.com/svn/releases/2010-12-02/ido.obo
+
+- exact: /2010-05-26/ido.obo
+  replacement: http://infectious-disease-ontology.googlecode.com/svn/releases/2010-05-26/ido.obo
+
+- exact: /2010-12-02/ido-main-workaround.owl
+  replacement: http://infectious-disease-ontology.googlecode.com/svn/releases/2010-12-02/ido-main-workaround.owl
+
+- exact: /browse
+  replacement: http://www.ontobee.org/browser/index.php?o=IDO
+
+- exact: /brucellosis.owl
+  replacement: http://svn.code.sf.net/p/idobru/code/trunk/src/ontology/brucellosis.owl
+
+- exact: /ido-main.owl
+  replacement: http://infectious-disease-ontology.googlecode.com/svn/releases/2014-08-01/ido-main.owl
+
+- exact: /Sa.owl
+  replacement: https://raw.githubusercontent.com/awqbi/ido-staph/master/releases/2012-06-22/ontology/Sa.owl
+
+- exact: /2012-06-22/Sa.owl
+  replacement: https://raw.githubusercontent.com/awqbi/ido-staph/master/releases/2012-06-22/ontology/Sa.owl
+
+- exact: /Sa/dev/Sa.owl
+  replacement: https://raw.githubusercontent.com/awqbi/ido-staph/master/src/ontology/Sa.owl
+
+- exact: /Sa/narsa.owl
+  replacement: https://raw.githubusercontent.com/awqbi/ido-staph/master/applications/narsa/narsa.owl
+
+- exact: /Sa/narsa-isolates.owl
+  replacement: https://raw.githubusercontent.com/awqbi/ido-staph/master/applications/narsa/narsa-isolates.owl
+
+- prefix: /brucellosis/
+  replacement: http://svn.code.sf.net/p/idobru/code/trunk/src/ontology/
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/browser/rdf.php?o=IDO&iri=http://purl.obolibrary.org/obo/
+  tests:
+  - from: /about/IDO_0000586
+    to: http://www.ontobee.org/browser/rdf.php?o=IDO&iri=http://purl.obolibrary.org/obo/IDO_0000586

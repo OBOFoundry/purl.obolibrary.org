@@ -1,0 +1,214 @@
+# PURL configuration for http://purl.obolibrary.org/obo/ero
+
+id: ERO
+base_url: /obo/ero
+
+products:
+- ero.owl: http://eagle-i.googlecode.com/svn/releases/2013-08-02/ero.owl
+- ero.obo: http://eagle-i.googlecode.com/svn/releases/2013-08-02/ero.obo
+
+term_browser: ontobee
+example_terms:
+- ERO_0000021
+
+entries:
+- exact: /dev/externalDerived.owl
+  replacement: http://eagle-i.googlecode.com/svn/trunk/src/ontology/imports/externalDerived.owl
+
+- exact: /dev/external.owl
+  replacement: http://eagle-i.googlecode.com/svn/trunk/src/ontology/imports/external.owl
+
+- exact: /dev/external-byhand.owl
+  replacement: http://eagle-i.googlecode.com/svn/trunk/src/ontology/imports/external-byhand.owl
+
+- exact: /dev/mesh-disease-import.owl
+  replacement: http://eagle-i.googlecode.com/svn/trunk/src/ontology/imports/mesh-disease-import.owl
+
+- exact: /ero-metadata.owl
+  replacement: http://eagle-i.googlecode.com/svn/trunk/src/ontology/imports/ero-metadata.owl
+
+- exact: /dev/iao-imports.owl
+  replacement: http://eagle-i.googlecode.com/svn/trunk/src/ontology/imports/iao-imports.owl
+
+- exact: /dev/eagle-i-core.owl
+  replacement: http://eagle-i.googlecode.com/svn/trunk/src/ontology/eagle-i-core.owl
+
+- exact: /dev/uberon-import.owl
+  replacement: http://eagle-i.googlecode.com/svn/trunk/src/ontology/imports/uberon-import.owl
+
+- exact: /dev/vivo-imports.owl
+  replacement: http://eagle-i.googlecode.com/svn/trunk/src/ontology/imports/vivo-imports.owl
+
+- exact: /dev/swo-imports.owl
+  replacement: http://eagle-i.googlecode.com/svn/trunk/src/ontology/imports/swo-imports.owl
+
+- exact: /dev/so-imports.owl
+  replacement: http://eagle-i.googlecode.com/svn/trunk/src/ontology/imports/so-imports.owl
+
+- exact: /dev/ocre-imports.owl
+  replacement: http://eagle-i.googlecode.com/svn/trunk/src/ontology/imports/ocre-imports.owl
+
+- exact: /dev/obi-imports.owl
+  replacement: http://eagle-i.googlecode.com/svn/trunk/src/ontology/imports/obi-imports.owl
+
+- exact: /dev/ncbi-imports.owl
+  replacement: http://eagle-i.googlecode.com/svn/trunk/src/ontology/imports/ncbi-imports.owl
+
+- exact: /dev/bro-imports.owl
+  replacement: http://eagle-i.googlecode.com/svn/trunk/src/ontology/imports/bro-imports.owl
+
+- exact: /dev/eagle-i-extended.owl
+  replacement: http://eagle-i.googlecode.com/svn/trunk/src/ontology/eagle-i-extended.owl
+
+- exact: /dev/go-imports.owl
+  replacement: http://eagle-i.googlecode.com/svn/trunk/src/ontology/imports/go-imports.owl
+
+- exact: /dev/ro-imports.owl
+  replacement: http://eagle-i.googlecode.com/svn/trunk/src/ontology/imports/ro-imports.owl
+
+- exact: /releases/
+  replacement: http://code.google.com/p/eagle-i/source/browse/#svn%2Freleases
+
+- exact: /releases/2012-04-09/
+  replacement: http://eagle-i.googlecode.com/svn/releases/2012-04-09/
+
+- exact: /releases/2012-05-29/
+  replacement: http://eagle-i.googlecode.com/svn/releases/2012-05-29/
+
+- exact: /releases/2012-07-25/
+  replacement: http://eagle-i.googlecode.com/svn/releases/2012-07-25/
+
+- exact: /releases/2012-03-02/
+  replacement: http://eagle-i.googlecode.com/svn/releases/2012-03-02/
+
+- exact: /dev/mp-imports.owl
+  replacement: http://eagle-i.googlecode.com/svn/trunk/src/ontology/imports/mp-imports.owl
+
+- exact: /dev/pato-imports.owl
+  replacement: http://eagle-i.googlecode.com/svn/trunk/src/ontology/imports/pato-imports.owl
+
+- exact: /releases/2012-10-03/
+  replacement: http://eagle-i.googlecode.com/svn/releases/2012-10-03/
+
+- exact: /releases/2012-03-02/ero.owl
+  replacement: http://eagle-i.googlecode.com/svn/releases/2012-03-02/ero.owl
+
+- exact: /releases/2012-03-02/ero-extended.obo
+  replacement: http://eagle-i.googlecode.com/svn/releases/2012-03-02/ero-extended.obo
+
+- exact: /releases/2012-03-02/ero.obo
+  replacement: http://eagle-i.googlecode.com/svn/releases/2012-03-02/ero.obo
+
+- exact: /releases/2012-03-02/ero-extended.owl
+  replacement: http://eagle-i.googlecode.com/svn/releases/2012-03-02/ero-extended.owl
+
+- exact: /releases/2012-03-02/ero-unreasoned.owl
+  replacement: http://eagle-i.googlecode.com/svn/releases/2012-03-02/ero-unreasoned.owl
+
+- exact: /releases/2012-04-09/ero.owl
+  replacement: http://eagle-i.googlecode.com/svn/releases/2012-04-09/ero.owl
+
+- exact: /releases/2012-04-09/ero.obo
+  replacement: http://eagle-i.googlecode.com/svn/releases/2012-04-09/ero.obo
+
+- exact: /releases/2012-04-09/ero-extended.obo
+  replacement: http://eagle-i.googlecode.com/svn/releases/2012-04-09/ero-extended.obo
+
+- exact: /releases/2012-04-09/ero-extended.owl
+  replacement: http://eagle-i.googlecode.com/svn/releases/2012-04-09/ero-extended.owl
+
+- exact: /releases/2012-05-29/ero.owl
+  replacement: http://eagle-i.googlecode.com/svn/releases/2012-05-29/ero.owl
+
+- exact: /releases/2012-04-09/ero-unreasoned.owl
+  replacement: http://eagle-i.googlecode.com/svn/releases/2012-04-09/ero-unreasoned.owl
+
+- exact: /releases/2012-05-29/ero-extended.owl
+  replacement: http://eagle-i.googlecode.com/svn/releases/2012-05-29/ero-extended.owl
+
+- exact: /releases/2012-05-29/ero.obo
+  replacement: http://eagle-i.googlecode.com/svn/releases/2012-05-29/ero.obo
+
+- exact: /releases/2012-07-25/ero-extended.owl
+  replacement: http://eagle-i.googlecode.com/svn/releases/2012-07-25/ero-extended.owl
+
+- exact: /releases/2012-05-29/ero-unreasoned.owl
+  replacement: http://eagle-i.googlecode.com/svn/releases/2012-05-29/ero-unreasoned.owl
+
+- exact: /releases/2012-05-29/ero-extended.obo
+  replacement: http://eagle-i.googlecode.com/svn/releases/2012-05-29/ero-extended.obo
+
+- exact: /releases/2012-07-25/ero.obo
+  replacement: http://eagle-i.googlecode.com/svn/releases/2012-07-25/ero.obo
+
+- exact: /releases/2012-07-25/ero.owl
+  replacement: http://eagle-i.googlecode.com/svn/releases/2012-07-25/ero.owl
+
+- exact: /releases/2012-07-25/ero-extended.obo
+  replacement: http://eagle-i.googlecode.com/svn/releases/2012-07-25/ero-extended.obo
+
+- exact: /releases/2012-10-03/ero.owl
+  replacement: http://eagle-i.googlecode.com/svn/releases/2012-10-03/ero.owl
+
+- exact: /releases/2012-07-25/ero-unreasoned.owl
+  replacement: http://eagle-i.googlecode.com/svn/releases/2012-07-25/ero-unreasoned.owl
+
+- exact: /releases/2012-10-03/ero.obo
+  replacement: http://eagle-i.googlecode.com/svn/releases/2012-10-03/ero.obo
+
+- exact: /releases/2012-10-03/ero-extended.owl
+  replacement: http://eagle-i.googlecode.com/svn/releases/2012-10-03/ero-extended.owl
+
+- exact: /releases/2012-10-03/ero-extended.obo
+  replacement: http://eagle-i.googlecode.com/svn/releases/2012-10-03/ero-extended.obo
+
+- exact: /releases/2012-10-03/ero-unreasoned.owl
+  replacement: http://eagle-i.googlecode.com/svn/releases/2012-10-03/ero-unreasoned.owl
+
+- exact: /releases/2013-05-06/ero.owl
+  replacement: http://eagle-i.googlecode.com/svn/releases/2013-05-06/ero.owl
+
+- exact: /releases/2013-05-06/ero-extended.owl
+  replacement: http://eagle-i.googlecode.com/svn/releases/2013-05-06/ero-extended.owl
+
+- exact: /releases/2013-05-06/ero-unreasoned.owl
+  replacement: http://eagle-i.googlecode.com/svn/releases/2013-05-06/ero-unreasoned.owl
+
+- exact: /releases/2013-05-06/ero.obo
+  replacement: http://eagle-i.googlecode.com/svn/releases/2013-05-06/ero.obo
+
+- exact: /releases/2013-05-06/ero-extended.obo
+  replacement: http://eagle-i.googlecode.com/svn/releases/2013-05-06/ero-extended.obo
+
+- exact: /releases/2013-05-06/
+  replacement: http://eagle-i.googlecode.com/svn/releases/2013-05-06/
+
+- exact: /ero-extended.owl
+  replacement: http://eagle-i.googlecode.com/svn/releases/2013-08-02/ero-extended.owl
+
+- exact: /ero-unreasoned.owl
+  replacement: http://eagle-i.googlecode.com/svn/releases/2013-08-02/ero-unreasoned.owl
+
+- exact: /ero-extended.obo
+  replacement: http://eagle-i.googlecode.com/svn/releases/2013-08-02/ero-extended.obo
+
+- exact: /releases/2013-08-02/ero.owl
+  replacement: http://eagle-i.googlecode.com/svn/releases/2013-08-02/ero.owl
+
+- exact: /releases/2013-08-02/
+  replacement: http://eagle-i.googlecode.com/svn/releases/2013-08-02/
+
+- exact: /releases/2013-08-02/ero.obo
+  replacement: http://eagle-i.googlecode.com/svn/releases/2013-08-02/ero.obo
+
+- exact: /releases/2013-08-02/ero-extended.owl
+  replacement: http://eagle-i.googlecode.com/svn/releases/2013-08-02/ero-extended.owl
+
+- exact: /releases/2013-08-02/ero-unreasoned.owl
+  replacement: http://eagle-i.googlecode.com/svn/releases/2013-08-02/ero-unreasoned.owl
+
+- exact: /releases/2013-08-02/ero-extended.obo
+  replacement: http://eagle-i.googlecode.com/svn/releases/2013-08-02/ero-extended.obo
+
+- exact: /zzzzzzzzzzzzz.owl
+  replacement: http://google.com

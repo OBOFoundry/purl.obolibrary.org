@@ -1,0 +1,12 @@
+# PURL configuration for http://purl.obolibrary.org/obo/iev
+
+id: IEV
+base_url: /obo/iev
+
+products:
+- iev.owl: http://www.berkeleybop.org/ontologies/iev.owl
+- iev.obo: http://www.berkeleybop.org/ontologies/iev.obo
+
+term_browser: ontobee
+example_terms:
+- IEV_0000000

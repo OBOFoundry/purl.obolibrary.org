@@ -1,0 +1,11 @@
+# PURL configuration for http://purl.obolibrary.org/obo/mfmo
+
+id: MFMO
+base_url: /obo/mfmo
+
+products:
+- mfmo.owl: https://raw.githubusercontent.com/RDruzinsky/feedontology/master/feed.owl
+
+term_browser: ontobee
+example_terms:
+- MFMO_0000001

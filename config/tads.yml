@@ -1,0 +1,12 @@
+# PURL configuration for http://purl.obolibrary.org/obo/tads
+
+id: TADS
+base_url: /obo/tads
+
+products:
+- tads.owl: http://www.berkeleybop.org/ontologies/tads.owl
+- tads.obo: http://www.berkeleybop.org/ontologies/tads.obo
+
+term_browser: ontobee
+example_terms:
+- TADS_0000000

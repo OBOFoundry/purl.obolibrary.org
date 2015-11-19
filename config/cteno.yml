@@ -1,0 +1,11 @@
+# PURL configuration for http://purl.obolibrary.org/obo/cteno
+
+id: CTENO
+base_url: /obo/cteno
+
+products:
+- cteno.owl: http://www.berkeleybop.org/ontologies/cteno.owl
+
+term_browser: ontobee
+example_terms:
+- CTENO_0000001

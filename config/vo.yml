@@ -1,0 +1,36 @@
+# PURL configuration for http://purl.obolibrary.org/obo/vo
+
+id: VO
+base_url: /obo/vo
+
+base_redirect: http://www.violinet.org/vaccineontology
+
+products:
+- vo.owl: http://svn.code.sf.net/p/vaccineontology/code/trunk/src/ontology/VO.owl
+
+term_browser: ontobee
+example_terms:
+- VO_0000000
+
+entries:
+- exact: /2009-11-30/vo.owl
+  replacement: http://www.violinet.org/vo/2009-11-30/VO.owl
+
+- exact: /
+  replacement: http://www.violinet.org/vaccineontology/
+
+- prefix: /2009-11-30/external/
+  replacement: http://www.violinet.org/vo/2009-11-30/external/
+
+- prefix: /external/
+  replacement: http://svn.code.sf.net/p/vaccineontology/code/trunk/src/ontology/
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/browser/rdf.php?o=VO&iri=http://purl.obolibrary.org/obo/
+  tests:
+  - from: /about/VO_0000000
+    to: http://www.ontobee.org/browser/rdf.php?o=VO&iri=http://purl.obolibrary.org/obo/VO_0000000
+
+- prefix: /page/
+  replacement: http://www.ontobee.org/browser/about.php?o=VO&iri=http://purl.obolibrary.org/obo/
+

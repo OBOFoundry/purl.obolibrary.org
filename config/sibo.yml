@@ -1,0 +1,11 @@
+# PURL configuration for http://purl.obolibrary.org/obo/sibo
+
+id: SIBO
+base_url: /obo/sibo
+
+products:
+- sibo.owl: https://raw.githubusercontent.com/obophenotype/sibo/master/sibo.owl
+
+term_browser: ontobee
+example_terms:
+- SIBO_0000000

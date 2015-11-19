@@ -1,0 +1,32 @@
+# PURL configuration for http://purl.obolibrary.org/obo/upheno
+
+id: UPHENO
+base_url: /obo/upheno
+
+products:
+- upheno.owl: http://www.berkeleybop.org/ontologies/upheno.owl
+- upheno.obo: http://www.berkeleybop.org/ontologies/upheno.obo
+
+term_browser: ontobee
+example_terms:
+- UPHENO_0000000
+
+entries:
+- exact: /monarch.owl
+  replacement: https://raw.githubusercontent.com/monarch-initiative/monarch-ontology/master/monarch.owl
+
+- exact: /doid/bridge.owl
+  replacement: https://raw.githubusercontent.com/monarch-initiative/monarch-disease-ontology/master/src/mondo/bridge.owl
+
+- exact: /doid/mondo.owl
+  replacement: https://raw.githubusercontent.com/monarch-initiative/monarch-disease-ontology/master/src/mondo/mondo.owl
+
+- exact: /zp.owl
+  replacement: http://compbio.charite.de/hudson/job/zp-owl/lastSuccessfulBuild/artifact/zp.owl
+
+- prefix: /data/
+  replacement: http://build.berkeleybop.org/view/Monarch/job/generate-triples-from-nif/lastSuccessfulBuild/artifact/target/
+
+- prefix: /
+  replacement: https://raw.githubusercontent.com/obophenotype/upheno/master/
+

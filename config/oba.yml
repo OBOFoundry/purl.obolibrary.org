@@ -1,0 +1,11 @@
+# PURL configuration for http://purl.obolibrary.org/obo/oba
+
+id: OBA
+base_url: /obo/oba
+
+products:
+- oba.owl: http://www.berkeleybop.org/ontologies/oba.owl
+
+term_browser: ontobee
+example_terms:
+- OBA_0000001

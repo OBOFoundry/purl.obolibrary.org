@@ -9,8 +9,8 @@ script:
   - "echo 'localhost' > hosts"
   - "ansible-playbook -i hosts -e 'mode=travis' --connection=local site.yml"
   - "cd .."
-  - "sudo cp -r `pwd` /var/www/obo-purls"
-  - "cd /var/www/obo-purls"
+  - "sudo cp -r `pwd` /var/www/purl.obolibrary.org"
+  - "cd /var/www/purl.obolibrary.org"
   - "sudo make all test"
 notifications:
   email:

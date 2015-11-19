@@ -13,6 +13,8 @@
       Allow from all
     </Directory>
 
-    CustomLog /var/log/apache2/obo_purls_access.log combined
-    ErrorLog /var/log/apache2/obo_purls_error.log
+    # Custom access log in "Common Log Format (CLF)" plus Referer, User-agent, and Location
+    # See http://httpd.apache.org/docs/2.4/mod/mod_log_config.html
+    CustomLog /var/log/apache2/{{ domain }}.access.log "%h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-agent}i\" \"%{Location}o\""
+    ErrorLog /var/log/apache2/{{ domain }}.error.log
 </VirtualHost>

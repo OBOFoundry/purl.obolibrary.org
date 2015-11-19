@@ -46,8 +46,8 @@ PRODUCTION ?= purl.obolibrary.org
 MAKEFLAGS += --warn-undefined-variables
 SHELL := bash
 .SHELLFLAGS := -eu -o pipefail -c
-.DEFAULT_GOAL := all
 .DELETE_ON_ERROR:
+.DEFAULT_GOAL := all
 .SUFFIXES:
 
 
@@ -60,7 +60,7 @@ all: clean validate build
 # Remove directories with generated files.
 .PHONY: clean
 clean:
-	rm -rf tests www/obo
+	rm -rf temp tests www/obo
 
 # Generate .htaccess files for all YAML configuration files.
 .PHONY: build
@@ -82,14 +82,44 @@ validate:
 #
 # Convert the YAML configuration files
 # to Apache .htaccess files with RedirectMatch directives.
+# There are three types:
+# 
+# - base_redirects: when the project's base_url points to something
+# - product: for a project's main OWL file
+# - term: for a project's terms
+# - entries: PURLs under the project's base_url
+#
+# The first three are inserted into www/obo/.htaccess
+# while the last is in the project's www/obo/project/.htaccess
+temp/base_redirects temp/products temp/terms:
+	mkdir -p $@
+
+temp/base_redirects/%.htaccess: config/%.yml temp/base_redirects
+	tools/translate-base-redirects.py $< $@
+
+temp/products/%.htaccess: config/%.yml temp/products
+	tools/translate-products.py $< $@
+
+temp/terms/%.htaccess: config/%.yml temp/terms
+	tools/translate-terms.py $< $@
+
 www/obo/%/.htaccess: config/%.yml
 	mkdir -p www/obo/$*
-	tools/translate.py $< $@
+	tools/translate-entries.py $< $@
 
 # Convert all YAML configuration files to .htaccess
 # and move the special `obo` .htaccess file.
 www/obo: $(foreach o,$(ONTOLOGY_IDS),www/obo/$o/.htaccess)
-	mv www/obo/obo/.htaccess www/obo/.htaccess
+www/obo: $(foreach o,$(ONTOLOGY_IDS),temp/base_redirects/$o.htaccess)
+www/obo: $(foreach o,$(ONTOLOGY_IDS),temp/products/$o.htaccess)
+www/obo: $(foreach o,$(ONTOLOGY_IDS),temp/terms/$o.htaccess)
+	cat www/obo/obo/.htaccess > www/obo/.htaccess
+	echo '' >> www/obo/.htaccess
+	echo '### Generated from project configuration files' >> www/obo/.htaccess
+	echo '' >> www/obo/.htaccess
+	cat temp/base_redirects/*.htaccess >> www/obo/.htaccess
+	cat temp/products/*.htaccess >> www/obo/.htaccess
+	cat temp/terms/*.htaccess >> www/obo/.htaccess
 	rm -rf www/obo/obo
 
 
@@ -140,15 +170,31 @@ tests/examples:
 	mkdir -p $@
 
 tests/examples/%.yml: tools/examples/%.xml tools/examples/%.yml tests/examples
-	tools/migrate.py /obo/$* $< $@
+	tools/migrate.py $* $< $@
 	diff tools/examples/$*.yml $@
 
-tests/examples/%.htaccess: tools/examples/%.yml tools/examples/%.htaccess tests/examples
-	tools/translate.py $< $@
+tests/examples/%.base_redirects.htaccess: tools/examples/%.yml tests/examples
+	tools/translate-base-redirects.py $< $@
+	diff tools/examples/$*.base_redirects.htaccess $@
+
+tests/examples/%.products.htaccess: tools/examples/%.yml tests/examples
+	tools/translate-products.py $< $@
+	diff tools/examples/$*.products.htaccess $@
+
+tests/examples/%.terms.htaccess: tools/examples/%.yml tests/examples
+	tools/translate-terms.py $< $@
+	diff tools/examples/$*.terms.htaccess $@
+
+tests/examples/%.htaccess: tools/examples/%.yml tests/examples
+	tools/translate-entries.py $< $@
 	diff tools/examples/$*.htaccess $@
 
 .PHONY: test-examples
-test-examples: tests/examples/test1.yml tests/examples/test1.htaccess tests/examples/test2.htaccess
+test-examples: tests/examples/test1.yml
+test-examples: tests/examples/test2.htaccess
+test-examples: tests/examples/test2.base_redirects.htaccess
+test-examples: tests/examples/test2.products.htaccess
+test-examples: tests/examples/test2.terms.htaccess
 
 
 ### Update Repository
@@ -186,6 +232,6 @@ migrate-%:
 	|| (echo 'Refusing to overwrite config/$*.yml'; exit 1)
 	mkdir -p migrations
 	test -s migrations/$*.xml \
-	|| curl --fail -o migrations/$*.xml "$(PURL_XML)/obo/$*/*"
+	|| curl --fail -o migrations/$*.xml "$(PURL_XML)/obo/$**"
 	mkdir -p config
-	tools/migrate.py /obo/$* migrations/$*.xml config/$*.yml
+	tools/migrate.py $* migrations/$*.xml config/$*.yml

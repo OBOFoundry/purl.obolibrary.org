@@ -33,9 +33,39 @@ Please use one of these four options to make changes to the PURLs:
 
 Each OBO project using this service gets a [YAML](http://yaml.org) configuration file in `config/`. That YAML configuration file is used to generate an Apache `.htaccess` file for that ontology. That Apache configuration will apply to all PURLs for that project.
 
-For example, PURLs for the OBI project are configured in [`config/obi.yml`](config/obi.yml), which is translated to [`obo/obi/.htaccess`](obo/obi/.htaccess), and which controls all PURLs that begin with `http://purl.obolibrary.org/obo/obi/`.
+Every YAML configuration file must have these fields:
 
-The `.htaccess` file should not be edited! Changes should only be made in the YAML configuration file.
+- `id:` the project's ID, usually uppercase
+- `base_url:` the part of a PURL that comes after the domain, usually lowercase
+- `term_browser:` usually [`ontobee`](http://ontobee.org) but can be `custom` (see below)
+- `products:` a list of primary files for the ontology and the URLs to redirect them to; an `.owl` file is required, and an `.obo` file is optional
+
+Optional fields include:
+
+- `example_terms:` a list of one or more term IDs for automated testing
+- `base_redirect:` If your project redirects its `base_url`, then you will need a `base_redirect:` entry. So `base_redirect: http://obi-ontology.org` will redirect <http://purl.obolibrary.org/obo/obi> to <http://obi-ontology.org>.
+- `entries:` a list of other PURLs under the `base_url`, see below
+
+Here's an example adapted from the [`config/obi.yml`](config/obi.yml) file:
+
+    id: OBI
+    base_url: /obo/obi
+
+    products:
+    - obi.owl: http://svn.code.sf.net/p/obi/code/releases/2015-09-15/obi.owl
+
+    term_browser: ontobee
+    example_terms:
+    - OBI_0000070
+
+    entries:
+    - exact: /wiki
+      replacement: http://obi-ontology.org
+
+Most of these fields are straightforward, but the `entries:` need some more explanation.
+
+
+### Entries
 
 Each YAML configuration file contains the keyword `entries:` followed by a list of entries. Each entry defines an Apache [RedirectMatch](https://httpd.apache.org/docs/2.4/mod/mod_alias.html#redirectmatch) directive for matching URLs and redirecting to new URLs. Every entry begins with a `- `, followed by keywords and values on indented lines. There are three types of entries:
 
@@ -48,7 +78,7 @@ The `#` character indicates a comment, which is not considered part of the confi
 See the [`tools/examples/test2.yml`](tools/examples/test2.yml) and [`tools/examples/test2.htaccess`](tools/examples/test2.htaccess) for examples.
 
 
-### Exact
+#### Exact
 
 In the most common case, your PURL should match a unique URL and redirect to a unique URL. Here's an example from the `config/obi.yml` file:
 
@@ -62,7 +92,7 @@ Behind the scenes, the entry is translated into an Apache RedirectMatch directiv
     RedirectMatch temp "^/2015\-09\-15/obi\.owl$" "http://svn.code.sf.net/p/obi/code/releases/2015-09-15/obi.owl"
 
 
-### Prefix
+#### Prefix
 
 You can also match and replace just the first part of a URL, leaving the rest unchanged. This allows you to define one entry that redirects many URLs matching a common prefix. Another example from `config/obi.yml`:
 
@@ -76,14 +106,14 @@ The translation is similar, with the addition of `(.*)` wildcard and a `$1` "bac
     RedirectMatch temp "^/branches/(.*)$" "http://obi.svn.sourceforge.net/svnroot/obi/trunk/src/ontology/branches/$1"
 
 
-### Regex
+#### Regex
 
 Regular expression entries should only be needed very rarely, and should always be used very carefully.
 
 For the regular expression type, the value of the `regex:` and `replacement:` keywords should contain regular expressions in exactly the format expected by Apache [RedirectMatch](https://httpd.apache.org/docs/2.4/mod/mod_alias.html#redirectmatch). The values will be quoted, but no other changes will be made to them.
 
 
-### Tests
+#### Tests
 
 Every `prefix` or `regex` entry should also have a `tests:` keyword, with a list of additional URLs to check. Each test requires a `from:` value (like `exact:`) and a `to:` value (like `replacement:`). Here's an example:
 
@@ -94,26 +124,26 @@ Every `prefix` or `regex` entry should also have a `tests:` keyword, with a list
         to: http://obi.svn.sourceforge.net/svnroot/obi/trunk/src/ontology/branches/obi.owl
 
 
-### Temporary and Permanent
+#### Temporary and Permanent
 
 Any entry can have a `status:` keyword. By default, every entry uses "temporary" (HTTP 302) status. If you *really* know what you're doing, you can set the status to "permanent" (HTTP 301).
 
 
-### Order of Entries
+#### Order of Entries
 
 Apache RedirectMatch directives are processed in the [order that they appear](https://httpd.apache.org/docs/2.4/mod/mod_alias.html#order) in the configuration file. Be careful that your `prefix` and `regex` entries do not conflict with your other entries. The YAML-to-Apache translation preserves the order of entries, so you can control the order of processing, but it's best to avoid conflicts.
 
 
-## Redirecting Terms
+## Custom Term Browsers
 
-The [`obo.yml`](config/obo.yml) configuration file is special, and contains (among other things) the entries for redirecting each OBO term to the term browser for its ontology. For example, `http://purl.obolibrary.org/obo/OBI_0000070` is redirected to Ontobee for browsing OBI:
+If your project does not use Ontobee as a term browser, you must specify `term_browser: custom` in your project's YAML configuration file, and provide a `regex` entry in the [`config/obo.yml`](config/obo.yml) configuration file. Here's an example for [ChEBI](https://www.ebi.ac.uk/chebi/):
 
-    # Terms for OBI
-    - regex: ^/obo/OBI_(\d+)$
-      replacement: http://www.ontobee.org/browser/rdf.php?o=OBI&iri=http://purl.obolibrary.org/obo/OBI_$1
+    # Terms for CHEBI
+    - regex: ^/obo/CHEBI_(\d+)$
+      replacement: http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:$1
       tests:
-      - from: /OBI_0000070
-        to: http://www.ontobee.org/browser/rdf.php?o=OBI&iri=http://purl.obolibrary.org/obo/OBI_0000070
+      - from: /CHEBI_15377
+        to: http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15377
 
 Since these are `regex` entries, and could affect multiple projects, we prefer that OBO admins are the only ones to edit `obo.yml`. If you need a change to the term redirect entry for your project, please [create a new issue](https://github.com/OBOFoundry/purl.obolibrary.org/issues/new).
 
@@ -122,7 +152,7 @@ Since these are `regex` entries, and could affect multiple projects, we prefer t
 
 OBO projects currently use OCLC for managing PURLs. This project aims to replace OCLC in a straightforward way.
 
-The `Makefile` contains some code for fetching the PURL records for a given ontology ID from OCLC in XML format, and converting the XML to YAML. This should be a one-time migration. Going forward, the YAML configuration should be edited directly.
+The `Makefile` contains some code for fetching the PURL records for a given ontology ID from OCLC in XML format, and converting the XML to YAML. This should be a one-time migration, and it requires some manual editing and checking. Going forward, the YAML configuration should be edited directly.
 
 The order of the migrated entries is: `exact` first (*should* be in the order they were created), followed by `prefix` entries from longest `prefix` to shortest. This order avoids nasty conflicts and has been tested to preserve the OCLC behaviour.
 

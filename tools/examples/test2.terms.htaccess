@@ -1,0 +1,3 @@
+# Term redirect for TEST2
+RedirectMatch temp "^/obo/TEST2_(\d+)$" "http://www.ontobee.org/browser/rdf.php?o=TEST2&iri=http://purl.obolibrary.org/obo/TEST2_$1"
+

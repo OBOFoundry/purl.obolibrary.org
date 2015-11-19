@@ -1,6 +1,15 @@
 # PURL configuration for http://purl.obolibrary.org/obo/obi
 
+id: OBI
 base_url: /obo/obi
+
+products:
+- obi.owl: http://svn.code.sf.net/p/obi/code/releases/2015-09-15/obi.owl
+- obi.obo: http://www.berkeleybop.org/ontologies/obi.obo
+
+term_browser: ontobee
+example_terms:
+- OBI_0000070
 
 entries:
 - exact: /project

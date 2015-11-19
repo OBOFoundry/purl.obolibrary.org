@@ -3,6 +3,7 @@
 .travis_build
 junk/
 migrations/
+temp/
 tests/
 tools/.vagrant/
 tools/hosts

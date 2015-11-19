@@ -1,6 +1,17 @@
 # PURL configuration for http://purl.obolibrary.org/obo/test2
 
+id: TEST2
 base_url: /obo/test2
+
+base_redirect: http://example.org/test2
+
+products:
+- test2.owl: http://example.org/test2.owl
+- test2.obo: http://example.org/test2.obo
+
+term_browser: ontobee
+example_terms:
+- TEST2_0000001
 
 entries:
 - exact: /project

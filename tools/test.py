@@ -3,6 +3,8 @@
 # Read a YAML configuration file,
 # make a series of HTTP HEAD requests to a target server,
 # and report the results in a table.
+#
+# NOTE: Currently only tests `example_terms` when `term_browser: ontobee`.
 
 import argparse, sys, yaml, http.client, time
 
@@ -12,7 +14,7 @@ import argparse, sys, yaml, http.client, time
 # run tests using HTTP HEAD requests,
 # and write results to the report file.
 def main():
-  parser = argparse.ArgumentParser(description='Translate YAML to .htaccess')
+  parser = argparse.ArgumentParser(description='Test a YAML configuration by making HTTP requests')
   parser.add_argument('-d', '--delay', metavar='D',
       type=float,
       default=1,
@@ -41,21 +43,48 @@ def main():
   # Load YAML document and look for 'entries' list.
   document = yaml.load(args.yaml_file)
 
+  if not 'id' in document \
+      or type(document['id']) is not str:
+    raise ValueError('YAML document must contain "id" string')
+  ont_id = document['id']
+
   if not 'base_url' in document \
       or type(document['base_url']) is not str:
     raise ValueError('YAML document must contain "base_url" string')
   base_url = document['base_url']
 
-  if not 'entries' in document \
-      or type(document['entries']) is not list:
-    raise ValueError('YAML document must contain "entries" list')
+  tests = []
 
   # Collect the tests to run.
-  tests = []
-  i = 0
-  for entry in document['entries']:
-    i += 1
-    tests += process_entry(base_url, i, entry)
+  if 'base_redirect' in document:
+    tests += [{
+      'source': base_url,
+      'replacement': document['base_redirect'],
+      'status': '302'
+    }]
+
+  if 'products' in document \
+      and type(document['products']) is list:
+    i = 0
+    for product in document['products']:
+      i += 1
+      tests += process_product(i, product)
+
+  if 'term_browser' in document \
+      and document['term_browser'].strip().lower() == 'ontobee' \
+      and 'example_terms' in document \
+      and type(document['example_terms']) is list:
+    i = 0
+    for example_term in document['example_terms']:
+      i += 1
+      tests += process_ontobee(ont_id, i, example_term)
+
+  if 'entries' in document \
+      and type(document['entries']) is list:
+    i = 0
+    for entry in document['entries']:
+      i += 1
+      tests += process_entry(base_url, i, entry)
 
   # Write report table header.
   args.report_file.write('\t'.join([
@@ -71,6 +100,30 @@ def main():
     args.report_file.write('\t'.join(results) + '\n')
     args.report_file.flush()
     time.sleep(args.delay)
+
+
+def process_product(i, product):
+  """Given an index, and a product dictionary,
+  return a list with a test to run."""
+  for key in product:
+    return [{
+      'source': '/obo/' + key,
+      'replacement': product[key],
+      'status': '302'
+    }]
+
+
+ontobee = 'http://www.ontobee.org/browser/rdf.php?o=%s&iri=http://purl.obolibrary.org/obo/'
+
+def process_ontobee(ont_id, i, example_term):
+  """Given an ontology ID, an index, and an example term ID,
+  return a list with a test to run."""
+  return [{
+    'source': '/obo/' + example_term,
+    'replacement': (ontobee % ont_id) + example_term,
+    #'replacement': 'http://www.berkeleybop.org/ontologies/' + example_term,
+    'status': '302'
+  }]
 
 
 def process_entry(base_url, i, entry):

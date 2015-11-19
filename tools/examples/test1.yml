@@ -1,6 +1,15 @@
 # PURL configuration for http://purl.obolibrary.org/obo/test1
 
+id: TEST1
 base_url: /obo/test1
+
+products:
+- test1.owl: TODO
+- test1.obo: TODO
+
+term_browser: ontobee
+example_terms:
+- TODO
 
 entries:
 - exact: /project

@@ -6,13 +6,33 @@
 ####
 type: map
 mapping:
+  "id":
+    type: str
+    required: true
   "base_url":
     type: str
     pattern: /^\/obo/
     required: true
+  "base_redirect":
+    type: str
+    required: false
+  "products":
+    type: seq
+    required: false
+    sequence:
+      - type: any
+  "term_browser":
+    type: str
+    pattern: /^(ontobee|custom)$/
+    required: true
+  "example_terms":
+    type: seq
+    required: false
+    sequence:
+      - type: str
   "entries":
     type: seq
-    required: true
+    required: false
     sequence:
       - type: map
         mapping:

@@ -1,13 +1,51 @@
 # PURL configuration for http://purl.obolibrary.org/obo/
 
+id: OBO
 base_url: /obo
 
-entries:
+term_browser: custom
 
-# Redirect term identifiers
-- regex: ^/obo/OBI_(\d+)$
-  replacement: http://www.ontobee.org/browser/rdf.php?o=OBI&iri=http://purl.obolibrary.org/obo/OBI_$1
+entries:
+### Term Overrides
+
+- exact: /BFO_0000050
+  replacement: http://www.ontobee.org/browser/rdf.php?o=RO&iri=http://purl.obolibrary.org/obo/BFO_0000050
+
+- exact: /BFO_0000051
+  replacement: http://www.ontobee.org/browser/rdf.php?o=RO&iri=http://purl.obolibrary.org/obo/BFO_0000051
+
+- exact: /BFO_0000066
+  replacement: http://www.ontobee.org/browser/rdf.php?o=RO&iri=http://purl.obolibrary.org/obo/BFO_0000066
+
+- exact: /BFO_0000062
+  replacement: http://www.ontobee.org/browser/rdf.php?o=RO&iri=http://purl.obolibrary.org/obo/BFO_0000062
+
+### Custom (non-Ontobee) term_browser redirects
+
+# Terms for CHEBI
+- regex: ^/obo/CHEBI_(\d+)$
+  replacement: http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:$1
   tests:
-  - from: /OBI_0000070
-    to: http://www.ontobee.org/browser/rdf.php?o=OBI&iri=http://purl.obolibrary.org/obo/OBI_0000070
+  - from: /CHEBI_15377
+    to: http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15377
+
+# Terms for HAO
+- regex: ^/obo/HAO_(\d+)$
+  replacement: http://api.hymao.org/api/ontology/ontology_class/HAO_$1
+  tests:
+  - from: /HAO_0000000
+    to: http://api.hymao.org/api/ontology/ontology_class/HAO_0000000
+
+# Terms for PR and PRO
+- regex: ^/obo/PR_(\d+)$
+  replacement: http://pir.georgetown.edu/cgi-bin/pro/entry_pro?id=PR_$1
+  tests:
+  - from: /PR_000000001
+    to: http://pir.georgetown.edu/cgi-bin/pro/entry_pro?id=PR_000000001
+
+- regex: ^/obo/PRO_(\d+)$
+  replacement: http://pir.georgetown.edu/cgi-bin/pro/entry_pro?id=PRO_$1
+  tests:
+  - from: /PRO_000000001
+    to: http://pir.georgetown.edu/cgi-bin/pro/entry_pro?id=PRO_000000001
 

@@ -3,6 +3,10 @@
 # Migrate PURL configuration
 # from a [PURL.org](http://purl.org) XML file
 # to a YAML configuration file.
+# This script is helpful, but manual improvements are required!
+#
+# Given the project ID, this tool will generate several required fields,
+# then read the PURL.org XML to generate a list of entries.
 #
 # Each PURL is configured in a `<purl>` element, like this:
 #
@@ -38,7 +42,16 @@ prefix = []
 # Define two template strings.
 header_template = '''# PURL configuration for http://purl.obolibrary.org%s
 
+id: %s
 base_url: %s
+
+products:
+- %s.owl: TODO
+- %s.obo: TODO
+
+term_browser: ontobee
+example_terms:
+- TODO
 
 entries:
 '''
@@ -52,9 +65,9 @@ entry_template = '''- %s: %s
 # and write results to the YAML file.
 def main():
   parser = argparse.ArgumentParser(description='Migrate XML to YAML')
-  parser.add_argument('base_url',
+  parser.add_argument('id',
       type=str,
-      help='the base URL, e.g. /obo/foo')
+      help='the project ID, e.g. FOO')
   parser.add_argument('xml_file',
       type=argparse.FileType('r'),
       default=sys.stdin,
@@ -67,6 +80,10 @@ def main():
       help='write to the YAML file (or STDOUT)')
   args = parser.parse_args()
 
+  args.upper_id = args.id.upper()
+  args.lower_id = args.id.lower()
+  args.base_url = '/obo/' + args.lower_id
+
   sax = xml.sax.make_parser()
   sax.setContentHandler(OCLCHandler(args))
   sax.parse(args.xml_file)
@@ -75,7 +92,8 @@ def main():
   if len(entries) == 0:
     raise ValueError('No entries to migrate')
 
-  args.yaml_file.write(header_template % (args.base_url, args.base_url))
+  args.yaml_file.write(header_template %
+      (args.base_url, args.upper_id, args.base_url, args.lower_id, args.lower_id))
   for entry in entries:
     args.yaml_file.write(entry_template %
         (entry['rule'], entry['id'], entry['url']))

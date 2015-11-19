@@ -7,9 +7,21 @@ The OBO community is transitioning away from [PURL.org](http://purl.org) for man
 This repository provides a new way to manage OBO Foundry PURLs. Like <https://github.com/perma-id/w3id.org> we use per-directory Apache configuration files (`.htaccess` files), each of which uses `RedirectMatch` directives to redirect PURL requests to their proper targets. Unlike w3id.org, we do not edit the Apache configuration files by hand. Instead we have a simple YAML configuration format, and scripts to translate the YAML configuration into Apache configuration. The YAML files are easier to read and write, and allow us to validate and test PURLs automatically.
 
 
+## Transition
+
+The new system is not yet handling http://purl.obolibrary.org/obo/ PURLs, but is available for testing: see the next section.
+
+During the transition period, both the new system and the old system will be used:
+
+1. The new system will try to match and handle every request. This allows us to update our PURLs and add new ones using the new system.
+2. If the new system cannot match a request, it will redirect to the old system, and the old system will handle the request. This provides a safety net.
+
+The new system will log requests that it cannot match. We will review these logs and update the new system as required.
+
+
 ## Examples
 
-The following examples are *NOT permanent URLs* -- they are running on a little server that might disappear at any time. But they show how things work:
+The following examples are **NOT permanent URLs** -- they are running on a test server that will soon be shut down. But they show how things work:
 
 - http://url.ontodev.org/obo/OBI_0000070 (and other OBI term IDs) redirect to Ontobee pages: http://www.ontobee.org/browser/rdf.php?o=OBI&iri=http://purl.obolibrary.org/obo/OBI_0000070
 - http://url.ontodev.org/obo/obi/2014-08-18/obi_core.owl redirects to a specific version of the OBI Core OWL file on SourceForge: http://svn.code.sf.net/p/obi/code/releases/2014-08-18/obi_core.owl

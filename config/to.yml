@@ -22,5 +22,5 @@ entries:
     to: http://www.ontobee.org/browser/rdf.php?o=TO&iri=http://purl.obolibrary.org/obo/TO_0000001
 
 - prefix: /
-  replacement: http://github.com/cmungall/phenotype_ontologies/raw/master/to/
+  replacement: https://raw.githubusercontent.com/Planteome/plant-trait-ontology/master/
 

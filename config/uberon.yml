@@ -21,7 +21,7 @@ entries:
   replacement: http://phenoscape.svn.sourceforge.net/svnroot/phenoscape/trunk/vocab/edit/phenoscape-ext.owl
 
 - exact: /experimental/ceph.owl
-  replacement: https://github.com/cmungall/uberon/raw/master/experimental/ceph.owl
+  replacement: http://purl.obolibrary.org/obo/ceph.owl
 
 - prefix: /references/
   replacement: http://svn.code.sf.net/p/obo/svn/uberon/trunk/reference/
@@ -33,7 +33,7 @@ entries:
   replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/
 
 - prefix: /tracker
-  replacement: https://github.com/cmungall/uberon/issues
+  replacement: https://github.com/obophenotype/uberon/issues
 
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=UBERON&iri=http://purl.obolibrary.org/obo/

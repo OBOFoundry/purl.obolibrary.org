@@ -4,7 +4,8 @@ id: FYPO
 base_url: /obo/fypo
 
 products:
-- fypo.owl: http://www.berkeleybop.org/ontologies/fypo.owl
+- fypo.owl: https://raw.githubusercontent.com/pombase/fypo/master/release/fypo.owl
+- fypo.obo: https://raw.githubusercontent.com/pombase/fypo/master/release/fypo.obo
 
 term_browser: ontobee
 example_terms:

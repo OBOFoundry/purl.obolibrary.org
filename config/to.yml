@@ -4,8 +4,8 @@ id: TO
 base_url: /obo/to
 
 products:
-- to.owl: http://www.berkeleybop.org/ontologies/to.owl
-- to.obo: http://www.berkeleybop.org/ontologies/to.obo
+- to.owl: https://raw.githubusercontent.com/Planteome/plant-trait-ontology/master/to.owl
+- to.obo: https://raw.githubusercontent.com/Planteome/plant-trait-ontology/master/to.obo
 
 term_browser: ontobee
 example_terms:

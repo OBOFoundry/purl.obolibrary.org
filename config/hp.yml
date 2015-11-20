@@ -19,7 +19,7 @@ entries:
   replacement: https://compbio.charite.de/svn/hpo/releases/
 
 - prefix: /tracker
-  replacement: http://sourceforge.net/p/obo/human-phenotype-requests
+  replacement: https://github.com/obophenotype/human-phenotype-ontology/issues
 
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=HP&iri=http://purl.obolibrary.org/obo/

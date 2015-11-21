@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/tads
 
-id: TADS
+idspace: TADS
 base_url: /obo/tads
 
 products:

@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/mi
 
-id: MI
+idspace: MI
 base_url: /obo/mi
 
 products:

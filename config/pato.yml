@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/pato
 
-id: PATO
+idspace: PATO
 base_url: /obo/pato
 
 base_redirect: https://github.com/pato-phenotype/pato

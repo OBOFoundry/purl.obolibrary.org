@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/wbphenotype
 
-id: WBPhenotype
+idspace: WBPhenotype
 base_url: /obo/wbphenotype
 
 products:

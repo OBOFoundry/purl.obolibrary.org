@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/doid
 
-id: DOID
+idspace: DOID
 base_url: /obo/doid
 
 products:

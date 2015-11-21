@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/upheno
 
-id: UPHENO
+idspace: UPHENO
 base_url: /obo/upheno
 
 products:

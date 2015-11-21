@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/fao
 
-id: FAO
+idspace: FAO
 base_url: /obo/fao
 
 products:

@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/pw
 
-id: PW
+idspace: PW
 base_url: /obo/pw
 
 products:

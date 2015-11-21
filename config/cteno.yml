@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/cteno
 
-id: CTENO
+idspace: CTENO
 base_url: /obo/cteno
 
 products:

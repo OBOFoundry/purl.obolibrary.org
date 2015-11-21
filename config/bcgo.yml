@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/bcgo
 
-id: BCGO
+idspace: BCGO
 base_url: /obo/bcgo
 
 products:

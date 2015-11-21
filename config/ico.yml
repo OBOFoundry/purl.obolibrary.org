@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/ico
 
-id: ICO
+idspace: ICO
 base_url: /obo/ico
 
 products:

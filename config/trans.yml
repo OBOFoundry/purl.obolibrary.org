@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/trans
 
-id: TRANS
+idspace: TRANS
 base_url: /obo/trans
 
 products:

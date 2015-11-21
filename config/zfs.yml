@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/zfs
 
-id: ZFS
+idspace: ZFS
 base_url: /obo/zfs
 
 products:

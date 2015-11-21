@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/xap
 
-id: XAP
+idspace: XAP
 base_url: /obo/xap
 
 products:

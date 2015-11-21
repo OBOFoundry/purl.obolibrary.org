@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/envo
 
-id: ENVO
+idspace: ENVO
 base_url: /obo/envo
 
 products:

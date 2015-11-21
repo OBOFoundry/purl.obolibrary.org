@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/miro
 
-id: MIRO
+idspace: MIRO
 base_url: /obo/miro
 
 products:

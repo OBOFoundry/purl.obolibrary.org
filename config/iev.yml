@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/iev
 
-id: IEV
+idspace: IEV
 base_url: /obo/iev
 
 products:

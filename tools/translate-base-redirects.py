@@ -33,14 +33,19 @@ def main():
   # Load YAML document and look for 'entries' list.
   document = yaml.load(args.yaml_file)
 
+  if not 'idspace' in document \
+      or type(document['idspace']) is not str:
+    raise ValueError('YAML document must contain "idspace" string')
+  idspace = document['idspace']
+
   if not 'base_url' in document \
       or type(document['base_url']) is not str:
     raise ValueError('YAML document must contain "base_url" string')
   base_url = document['base_url']
 
   if 'base_redirect' in document and type(document['base_redirect']) is str:
-    args.htaccess_file.write(header_template % document['id'])
-    directive = 'RedirectMatch temp "^%s$" "%s"' % (base_url, document['base_redirect'])
+    args.htaccess_file.write(header_template % idspace)
+    directive = 'RedirectMatch temp "(?i)^%s$" "%s"' % (base_url, document['base_redirect'])
     args.htaccess_file.write(directive + '\n\n')
 
 

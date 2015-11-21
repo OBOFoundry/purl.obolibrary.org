@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/dc_cl
 
-id: DC_CL
+idspace: DC_CL
 base_url: /obo/dc_cl
 
 term_browser: ontobee

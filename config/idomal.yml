@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/idomal
 
-id: IDOMAL
+idspace: IDOMAL
 base_url: /obo/idomal
 
 products:

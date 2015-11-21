@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/mmusdv
 
-id: MmusDv
+idspace: MmusDv
 base_url: /obo/mmusdv
 
 products:

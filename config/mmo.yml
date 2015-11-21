@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/mmo
 
-id: MMO
+idspace: MMO
 base_url: /obo/mmo
 
 products:

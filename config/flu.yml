@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/flu
 
-id: FLU
+idspace: FLU
 base_url: /obo/flu
 
 base_redirect: http://influenzaontologywiki.igs.umaryland.edu/wiki/index.php/Main_Page

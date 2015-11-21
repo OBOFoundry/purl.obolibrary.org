@@ -128,11 +128,11 @@ def process_entry(base_url, i, entry):
   # Determine the type for this entry.
   types = []
   if 'exact' in entry:
-    source = '^%s%s$' % (base_url, clean_source(entry['exact']))
+    source = '(?i)^%s%s$' % (base_url, clean_source(entry['exact']))
     replacement = entry['replacement']
     types.append('exact')
   if 'prefix' in entry:
-    source = '^%s%s(.*)$' % (base_url, clean_source(entry['prefix']))
+    source = '(?i)^%s%s(.*)$' % (base_url, clean_source(entry['prefix']))
     replacement = entry['replacement'] + '$1'
     types.append('prefix')
   if 'regex' in entry:

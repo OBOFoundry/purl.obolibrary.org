@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/ehdaa2
 
-id: EHDAA2
+idspace: EHDAA2
 base_url: /obo/ehdaa2
 
 products:

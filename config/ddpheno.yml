@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/ddpheno
 
-id: DDPHENO
+idspace: DDPHENO
 base_url: /obo/ddpheno
 
 products:

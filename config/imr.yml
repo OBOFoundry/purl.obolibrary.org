@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/imr
 
-id: IMR
+idspace: IMR
 base_url: /obo/imr
 
 products:

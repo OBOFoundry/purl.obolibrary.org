@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/ehda
 
-id: EHDA
+idspace: EHDA
 base_url: /obo/ehda
 
 products:

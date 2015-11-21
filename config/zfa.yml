@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/zfa
 
-id: ZFA
+idspace: ZFA
 base_url: /obo/zfa
 
 products:

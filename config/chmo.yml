@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/chmo
 
-id: CHMO
+idspace: CHMO
 base_url: /obo/chmo
 
 products:

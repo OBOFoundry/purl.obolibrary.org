@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/geo
 
-id: GEO
+idspace: GEO
 base_url: /obo/geo
 
 products:

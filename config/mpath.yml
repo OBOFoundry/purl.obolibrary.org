@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/mpath
 
-id: MPATH
+idspace: MPATH
 base_url: /obo/mpath
 
 products:

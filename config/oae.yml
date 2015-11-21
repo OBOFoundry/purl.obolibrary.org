@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/oae
 
-id: OAE
+idspace: OAE
 base_url: /obo/oae
 
 products:

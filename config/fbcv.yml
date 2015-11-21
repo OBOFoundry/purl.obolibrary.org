@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/fbcv
 
-id: FBcv
+idspace: FBcv
 base_url: /obo/fbcv
 
 base_redirect: https://github.com/FlyBase/flybase-controlled-vocabulary/wiki

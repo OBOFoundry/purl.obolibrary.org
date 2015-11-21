@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/bco
 
-id: BCO
+idspace: BCO
 base_url: /obo/bco
 
 products:

@@ -1,0 +1,72 @@
+# PURL configuration for http://purl.obolibrary.org/obo/apollo_sv
+# Note this is a mixture of pointers to releases on googlecode and development on github. Should be fixed..
+
+id: APOLLO_SV
+base_url: /obo/apollo_sv
+
+products:
+- apollo_sv.owl: https://raw.githubusercontent.com/ApolloDev/apollo-sv/master/src/ontology/apollo-sv.owl
+
+term_browser: ontobee
+example_terms:
+- APOLLO_SV_00000219
+
+entries:
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/browser/rdf.php?o=apollo_sv&iri=http://purl.obolibrary.org/obo/
+  tests:
+  - from: /about/APOLLO_SV_00000219
+    to: http://www.ontobee.org/browser/rdf.php?o=APOLLO_SV&iri=http://purl.obolibrary.org/obo/APOLLO_SV_00000219
+
+# Releases
+
+- exact /2013-03-08/apollo_sv.owl 
+  replacement: http://apollo.googlecode.com/svn/apollo-sv/releases/2013-03-08/apollo-sv.owl
+
+- exact /2013-02-24/apollo_sv.owl 
+  replacement: http://apollo.googlecode.com/svn/apollo-sv/releases/2013-02-24/apollo-sv.owl
+
+- exact /2013-02-04/apollo-sv.owl 
+  replacement: http://apollo.googlecode.com/svn/apollo-sv/releases/2013-02-04/apollo-sv.owl
+
+- exact /2013-02-01/apollo_sv.owl 
+  replacement: http://apollo.googlecode.com/svn/apollo-sv/releases/2013-02-01/apollo-sv.owl
+
+- exact /2013-01-31/apollo_sv.owl 
+  replacement: http://apollo.googlecode.com/svn/apollo-sv/releases/2013-01-31/apollo-sv.owl
+
+- exact /2014-02-11/apollo_sv.owl 
+  replacement: http://apollo.googlecode.com/svn/apollo-sv/releases/2014-02-11/apollo-sv.owl
+
+- exact /2014-02-14/apollo_sv.owl 
+  replacement: http://apollo.googlecode.com/svn/apollo-sv/releases/2014-02-14/apollo-sv.owl
+
+- exact /2014-02-24/apollo_sv.owl 
+  replacement: http://apollo.googlecode.com/svn/apollo-sv/releases/2014-02-24/apollo-sv.owl
+
+- exact /2.0.1/apollo_sv.owl 
+  replacement: http://apollo.googlecode.com/svn/apollo-sv/tags/release-2.0.1/apollo-sv.owl
+
+# Misc
+
+- exact /
+  replacement: http://code.google.com/p/apollo/
+
+- exact /views/WebApp_Apollo_SV.owl 
+  replacement: http://apollo.googlecode.com/svn/apollo-sv/branches/WebApp_View.owl
+
+- exact /views/SCV.owl 
+  replacement: http://apollo.googlecode.com/svn/apollo-sv/branches/SCV.owl
+
+
+- exact /apollo_io.owl 
+  replacement: http://apollo.googlecode.com/svn/apollo-sv/branches/apollo_io.owl
+
+
+- exact /dev/apollo_sv.owl 
+  replacement: https://raw.githubusercontent.com/ApolloDev/apollo-sv/master/src/ontology/apollo-sv.owl
+
+- exact /bfo2/apollo_sv.owl 
+  replacement: https://raw.githubusercontent.com/ApolloDev/apollo-sv/bfo2/src/ontology/apollo-sv.owl
+

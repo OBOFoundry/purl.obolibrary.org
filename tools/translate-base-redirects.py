@@ -45,7 +45,7 @@ def main():
 
   if 'base_redirect' in document and type(document['base_redirect']) is str:
     args.htaccess_file.write(header_template % idspace)
-    directive = 'RedirectMatch temp "^%s$" "%s"' % (base_url, document['base_redirect'])
+    directive = 'RedirectMatch temp "(?i)^%s$" "%s"' % (base_url, document['base_redirect'])
     args.htaccess_file.write(directive + '\n\n')
 
 

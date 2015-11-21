@@ -23,7 +23,7 @@ entries:
   - from: /branches/foo
     to: http://example.org/branches/foo
 
-- regex: ^/obo/test2/TEST_(\d+)$
+- regex: (?i)^/obo/test2/TEST_(\d+)$
   replacement: http://example.org/about/TEST_$1
   tests:
   - from: /TEST_1234

@@ -53,7 +53,7 @@ def process_product(i, product):
   ensure that the entry is valid,
   and return an Apache RedirectMatch directive string."""
   for key in product:
-    source = '^/obo/%s$' % key
+    source = '(?i)^/obo/%s$' % key
     replacement = product[key]
 
     return 'RedirectMatch temp "%s" "%s"' % (source, replacement)

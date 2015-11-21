@@ -99,9 +99,9 @@ In the most common case, your PURL should match a unique URL and redirect to a u
 
 This entry will match exactly the URL `http://purl.obolibrary.org/obo/obi/obi.owl`, and it will redirect to exactly `http://svn.code.sf.net/p/obi/code/releases/2015-10-20/obi.owl`. The matched domain name is fixed `http://purl.obolibrary.org`; the next part is project-specific `/obo/obi/`; the final part is taken from the entry `/obi.owl`. The replacement is expected to be a valid, absolute URL, starting with `http`.
 
-Behind the scenes, the entry is translated into an Apache RedirectMatch directive in `obo/obi/.htaccess` by escaping special characters and "anchoring" with initial `^`, the project's base URL, and final `$`:
+Behind the scenes, the entry is translated into a case insensitive Apache RedirectMatch directive in `obo/obi/.htaccess` by escaping special characters and "anchoring" with initial `^`, the project's base URL, and final `$`:
 
-    RedirectMatch temp "^/2015\-09\-15/obi\.owl$" "http://svn.code.sf.net/p/obi/code/releases/2015-09-15/obi.owl"
+    RedirectMatch temp "(?i)^/2015\-09\-15/obi\.owl$" "http://svn.code.sf.net/p/obi/code/releases/2015-09-15/obi.owl"
 
 
 #### Prefix
@@ -115,14 +115,14 @@ This entry will match the URL `http://purl.obolibrary.org/obo/obi/branches/obi.o
 
 The translation is similar, with the addition of `(.*)` wildcard and a `$1` "backreference" at the ends of the given strings:
 
-    RedirectMatch temp "^/branches/(.*)$" "http://obi.svn.sourceforge.net/svnroot/obi/trunk/src/ontology/branches/$1"
+    RedirectMatch temp "(?i)^/branches/(.*)$" "http://obi.svn.sourceforge.net/svnroot/obi/trunk/src/ontology/branches/$1"
 
 
 #### Regex
 
 Regular expression entries should only be needed very rarely, and should always be used very carefully.
 
-For the regular expression type, the value of the `regex:` and `replacement:` keywords should contain regular expressions in exactly the format expected by Apache [RedirectMatch](https://httpd.apache.org/docs/2.4/mod/mod_alias.html#redirectmatch). The values will be quoted, but no other changes will be made to them.
+For the regular expression type, the value of the `regex:` and `replacement:` keywords should contain regular expressions in exactly the format expected by Apache [RedirectMatch](https://httpd.apache.org/docs/2.4/mod/mod_alias.html#redirectmatch). The values will be quoted, but no other changes will be made to them. Consider using `(?i)` to make the match case insensitive.
 
 
 #### Tests
@@ -151,6 +151,8 @@ If your project does not use Ontobee as a term browser, you must specify `term_b
       tests:
       - from: /CHEBI_15377
         to: http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15377
+
+Note that term redirect rules are case sensitive.
 
 Since these are `regex` entries, and could affect multiple projects, we prefer that OBO admins are the only ones to edit `obo.yml`. If you need a change to the term redirect entry for your project, please [create a new issue](https://github.com/OBOFoundry/purl.obolibrary.org/issues/new).
 

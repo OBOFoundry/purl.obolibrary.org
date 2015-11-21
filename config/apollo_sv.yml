@@ -21,52 +21,49 @@ entries:
 
 # Releases
 
-- exact /2013-03-08/apollo_sv.owl 
+- exact: /2013-03-08/apollo_sv.owl 
   replacement: http://apollo.googlecode.com/svn/apollo-sv/releases/2013-03-08/apollo-sv.owl
 
-- exact /2013-02-24/apollo_sv.owl 
+- exact: /2013-02-24/apollo_sv.owl 
   replacement: http://apollo.googlecode.com/svn/apollo-sv/releases/2013-02-24/apollo-sv.owl
 
-- exact /2013-02-04/apollo-sv.owl 
+- exact: /2013-02-04/apollo-sv.owl 
   replacement: http://apollo.googlecode.com/svn/apollo-sv/releases/2013-02-04/apollo-sv.owl
 
-- exact /2013-02-01/apollo_sv.owl 
+- exact: /2013-02-01/apollo_sv.owl 
   replacement: http://apollo.googlecode.com/svn/apollo-sv/releases/2013-02-01/apollo-sv.owl
 
-- exact /2013-01-31/apollo_sv.owl 
+- exact: /2013-01-31/apollo_sv.owl 
   replacement: http://apollo.googlecode.com/svn/apollo-sv/releases/2013-01-31/apollo-sv.owl
 
-- exact /2014-02-11/apollo_sv.owl 
+- exact: /2014-02-11/apollo_sv.owl 
   replacement: http://apollo.googlecode.com/svn/apollo-sv/releases/2014-02-11/apollo-sv.owl
 
-- exact /2014-02-14/apollo_sv.owl 
+- exact: /2014-02-14/apollo_sv.owl 
   replacement: http://apollo.googlecode.com/svn/apollo-sv/releases/2014-02-14/apollo-sv.owl
 
-- exact /2014-02-24/apollo_sv.owl 
+- exact: /2014-02-24/apollo_sv.owl 
   replacement: http://apollo.googlecode.com/svn/apollo-sv/releases/2014-02-24/apollo-sv.owl
 
-- exact /2.0.1/apollo_sv.owl 
+- exact: /2.0.1/apollo_sv.owl 
   replacement: http://apollo.googlecode.com/svn/apollo-sv/tags/release-2.0.1/apollo-sv.owl
 
 # Misc
 
-- exact /
+- exact: /
   replacement: http://code.google.com/p/apollo/
 
-- exact /views/WebApp_Apollo_SV.owl 
+- exact: /views/WebApp_Apollo_SV.owl 
   replacement: http://apollo.googlecode.com/svn/apollo-sv/branches/WebApp_View.owl
 
-- exact /views/SCV.owl 
+- exact: /views/SCV.owl 
   replacement: http://apollo.googlecode.com/svn/apollo-sv/branches/SCV.owl
 
-
-- exact /apollo_io.owl 
+- exact: /apollo_io.owl 
   replacement: http://apollo.googlecode.com/svn/apollo-sv/branches/apollo_io.owl
 
-
-- exact /dev/apollo_sv.owl 
+- exact: /dev/apollo_sv.owl 
   replacement: https://raw.githubusercontent.com/ApolloDev/apollo-sv/master/src/ontology/apollo-sv.owl
 
-- exact /bfo2/apollo_sv.owl 
+- exact: /bfo2/apollo_sv.owl 
   replacement: https://raw.githubusercontent.com/ApolloDev/apollo-sv/bfo2/src/ontology/apollo-sv.owl
-

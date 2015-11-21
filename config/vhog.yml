@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/vhog
 
-id: VHOG
+idspace: VHOG
 base_url: /obo/vhog
 
 products:

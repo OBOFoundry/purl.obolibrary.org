@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/hao
 
-id: HAO
+idspace: HAO
 base_url: /obo/hao
 
 base_redirect: http://hymao.org/

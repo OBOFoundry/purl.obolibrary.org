@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/rex
 
-id: REX
+idspace: REX
 base_url: /obo/rex
 
 products:

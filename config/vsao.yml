@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/vsao
 
-id: VSAO
+idspace: VSAO
 base_url: /obo/vsao
 
 products:

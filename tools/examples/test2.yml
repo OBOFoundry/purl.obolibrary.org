@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/test2
 
-id: TEST2
+idspace: TEST2
 base_url: /obo/test2
 
 base_redirect: http://example.org/test2

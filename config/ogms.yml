@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/ogms
 
-id: OGMS
+idspace: OGMS
 base_url: /obo/ogms
 
 base_redirect: http://code.google.com/p/ogms/?

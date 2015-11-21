@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/olatdv
 
-id: OlatDv
+idspace: OlatDv
 base_url: /obo/olatdv
 
 products:

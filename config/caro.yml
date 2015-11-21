@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/caro
 
-id: CARO
+idspace: CARO
 base_url: /obo/caro
 
 products:

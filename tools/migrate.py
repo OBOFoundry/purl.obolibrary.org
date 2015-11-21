@@ -42,7 +42,7 @@ prefix = []
 # Define two template strings.
 header_template = '''# PURL configuration for http://purl.obolibrary.org%s
 
-id: %s
+idspace: %s
 base_url: %s
 
 products:
@@ -65,9 +65,9 @@ entry_template = '''- %s: %s
 # and write results to the YAML file.
 def main():
   parser = argparse.ArgumentParser(description='Migrate XML to YAML')
-  parser.add_argument('id',
+  parser.add_argument('idspace',
       type=str,
-      help='the project ID, e.g. FOO')
+      help='the project IDSPACE, e.g. FOO')
   parser.add_argument('xml_file',
       type=argparse.FileType('r'),
       default=sys.stdin,
@@ -80,9 +80,9 @@ def main():
       help='write to the YAML file (or STDOUT)')
   args = parser.parse_args()
 
-  args.upper_id = args.id.upper()
-  args.lower_id = args.id.lower()
-  args.base_url = '/obo/' + args.lower_id
+  args.upper_idspace = args.idspace.upper()
+  args.lower_idspace = args.idspace.lower()
+  args.base_url = '/obo/' + args.lower_idspace
 
   sax = xml.sax.make_parser()
   sax.setContentHandler(OCLCHandler(args))
@@ -93,7 +93,7 @@ def main():
     raise ValueError('No entries to migrate')
 
   args.yaml_file.write(header_template %
-      (args.base_url, args.upper_id, args.base_url, args.lower_id, args.lower_id))
+      (args.base_url, args.upper_idspace, args.base_url, args.lower_idspace, args.lower_idspace))
   for entry in entries:
     args.yaml_file.write(entry_template %
         (entry['rule'], entry['id'], entry['url']))

@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/ddanat
 
-id: DDANAT
+idspace: DDANAT
 base_url: /obo/ddanat
 
 products:

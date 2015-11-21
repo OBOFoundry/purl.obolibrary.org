@@ -34,8 +34,13 @@ def main():
   # Load YAML document and look for 'entries' list.
   document = yaml.load(args.yaml_file)
 
+  if not 'idspace' in document \
+      or type(document['idspace']) is not str:
+    raise ValueError('YAML document must contain "idspace" string')
+  idspace = document['idspace']
+
   if 'products' in document and type(document['products']) is list:
-    args.htaccess_file.write(header_template % document['id'])
+    args.htaccess_file.write(header_template % idspace)
     i = 0
     for product in document['products']:
       i += 1

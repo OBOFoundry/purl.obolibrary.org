@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/mfmo
 
-id: MFMO
+idspace: MFMO
 base_url: /obo/mfmo
 
 products:

@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/
 
-id: OBO
+idspace: OBO
 base_url: /obo
 
 term_browser: custom

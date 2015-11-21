@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/fbsp
 
-id: FBsp
+idspace: FBsp
 base_url: /obo/fbsp
 
 products:

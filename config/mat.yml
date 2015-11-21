@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/mat
 
-id: MAT
+idspace: MAT
 base_url: /obo/mat
 
 products:

@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/fma
 
-id: FMA
+idspace: FMA
 base_url: /obo/fma
 
 products:

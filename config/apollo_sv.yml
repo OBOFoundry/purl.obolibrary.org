@@ -1,7 +1,7 @@
 # PURL configuration for http://purl.obolibrary.org/obo/apollo_sv
 # Note this is a mixture of pointers to releases on googlecode and development on github. Should be fixed..
 
-id: APOLLO_SV
+idspace: APOLLO_SV
 base_url: /obo/apollo_sv
 
 products:

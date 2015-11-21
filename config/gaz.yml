@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/gaz
 
-id: GAZ
+idspace: GAZ
 base_url: /obo/gaz
 
 products:

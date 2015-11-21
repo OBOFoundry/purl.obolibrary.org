@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/fbbt
 
-id: FBbt
+idspace: FBbt
 base_url: /obo/fbbt
 
 base_redirect:  https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/wiki

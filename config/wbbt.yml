@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/wbbt
 
-id: WBbt
+idspace: WBbt
 base_url: /obo/wbbt
 
 products:

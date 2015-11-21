@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/fix
 
-id: FIX
+idspace: FIX
 base_url: /obo/fix
 
 products:

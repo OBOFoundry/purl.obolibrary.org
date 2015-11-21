@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/ido
 
-id: IDO
+idspace: IDO
 base_url: /obo/ido
 
 base_redirect: http://infectiousdiseaseontology.org/page/Main_Page

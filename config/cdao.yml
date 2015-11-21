@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/cdao
 
-id: CDAO
+idspace: CDAO
 base_url: /obo/cdao
 
 products:

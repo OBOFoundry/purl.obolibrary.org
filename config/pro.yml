@@ -1,7 +1,7 @@
 # PURL configuration for http://purl.obolibrary.org/obo/pro
 # Warning: the Protein Ontology also uses /obo/pr
 
-id: PRO
+idspace: PRO
 base_url: /obo/pro
 
 products:

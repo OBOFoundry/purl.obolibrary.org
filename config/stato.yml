@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/stato
 
-id: STATO
+idspace: STATO
 base_url: /obo/stato
 
 products:

@@ -6,8 +6,9 @@
 ####
 type: map
 mapping:
-  "id":
+  "idspace":
     type: str
+    pattern: /^[A-Za-z][A-Za-z0-9_]+$/ # See issue #82
     required: true
   "base_url":
     type: str

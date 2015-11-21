@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/tgma
 
-id: TGMA
+idspace: TGMA
 base_url: /obo/tgma
 
 products:

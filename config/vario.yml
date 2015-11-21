@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/vario
 
-id: VariO
+idspace: VariO
 base_url: /obo/vario
 
 products:

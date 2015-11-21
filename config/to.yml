@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/to
 
-id: TO
+idspace: TO
 base_url: /obo/to
 
 products:

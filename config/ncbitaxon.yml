@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/ncbitaxon
 
-id: NCBITaxon
+idspace: NCBITaxon
 base_url: /obo/ncbitaxon
 
 products:

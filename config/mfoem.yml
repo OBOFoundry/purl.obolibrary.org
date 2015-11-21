@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/mfoem
 
-id: MFOEM
+idspace: MFOEM
 base_url: /obo/mfoem
 
 products:

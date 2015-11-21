@@ -38,15 +38,15 @@ def main():
   # Load YAML document and look for 'entries' list.
   document = yaml.load(args.yaml_file)
 
-  if not 'id' in document \
-      or type(document['id']) is not str:
-    raise ValueError('YAML document must contain "id" string')
-  ont_id = document['id']
+  if not 'idspace' in document \
+      or type(document['idspace']) is not str:
+    raise ValueError('YAML document must contain "idspace" string')
+  idspace = document['idspace']
 
   if 'term_browser' in document and document['term_browser'].strip().lower() == 'ontobee':
-    args.htaccess_file.write(header_template % document['id'])
-    replacement = 'http://www.ontobee.org/browser/rdf.php?o=%s&iri=http://purl.obolibrary.org/obo/%s_$1' % (ont_id, ont_id)
-    directive = 'RedirectMatch temp "^/obo/%s_(\d+)$" "%s"' % (ont_id, replacement)
+    args.htaccess_file.write(header_template % idspace)
+    replacement = 'http://www.ontobee.org/browser/rdf.php?o=%s&iri=http://purl.obolibrary.org/obo/%s_$1' % (idspace, idspace)
+    directive = 'RedirectMatch temp "^/obo/%s_(\d+)$" "%s"' % (idspace, replacement)
     args.htaccess_file.write(directive +'\n\n')
 
 

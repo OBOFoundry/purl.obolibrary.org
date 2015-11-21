@@ -47,7 +47,7 @@ Each OBO project using this service gets a [YAML](http://yaml.org) configuration
 
 Every YAML configuration file must have these fields:
 
-- `id:` the project's ID, usually uppercase
+- `idspace:` the project's [IDSPACE](http://obofoundry.org/id-policy.html), case sensitive, usually uppercase
 - `base_url:` the part of a PURL that comes after the domain, usually lowercase
 - `term_browser:` usually [`ontobee`](http://ontobee.org) but can be `custom` (see below)
 - `products:` a list of primary files for the ontology and the URLs to redirect them to; an `.owl` file is required, and an `.obo` file is optional
@@ -60,7 +60,7 @@ Optional fields include:
 
 Here's an example adapted from the [`config/obi.yml`](config/obi.yml) file:
 
-    id: OBI
+    idspace: OBI
     base_url: /obo/obi
 
     products:

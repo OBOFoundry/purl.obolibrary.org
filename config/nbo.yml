@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/nbo
 
-id: NBO
+idspace: NBO
 base_url: /obo/nbo
 
 products:

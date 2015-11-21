@@ -46,7 +46,7 @@ def main():
   if 'term_browser' in document and document['term_browser'].strip().lower() == 'ontobee':
     args.htaccess_file.write(header_template % idspace)
     replacement = 'http://www.ontobee.org/browser/rdf.php?o=%s&iri=http://purl.obolibrary.org/obo/%s_$1' % (idspace, idspace)
-    directive = 'RedirectMatch temp "^/obo/%s_(\d+)$" "%s"' % (idspace, replacement)
+    directive = 'RedirectMatch seeother "^/obo/%s_(\d+)$" "%s"' % (idspace, replacement)
     args.htaccess_file.write(directive +'\n\n')
 
 

@@ -136,11 +136,6 @@ Every `prefix` or `regex` entry should also have a `tests:` keyword, with a list
         to: http://obi.svn.sourceforge.net/svnroot/obi/trunk/src/ontology/branches/obi.owl
 
 
-#### Temporary and Permanent
-
-Any entry can have a `status:` keyword. By default, every entry uses "temporary" (HTTP 302) status. If you *really* know what you're doing, you can set the status to "permanent" (HTTP 301).
-
-
 #### Order of Entries
 
 Apache RedirectMatch directives are processed in the [order that they appear](https://httpd.apache.org/docs/2.4/mod/mod_alias.html#order) in the configuration file. Be careful that your `prefix` and `regex` entries do not conflict with your other entries. The YAML-to-Apache translation preserves the order of entries, so you can control the order of processing, but it's best to avoid conflicts.

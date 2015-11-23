@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/ms
 
-id: MS
+idspace: MS
 base_url: /obo/ms
 
 products:

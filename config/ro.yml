@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/ro
 
-id: RO
+idspace: RO
 base_url: /obo/ro
 
 base_redirect: https://github.com/oborel/obo-relations

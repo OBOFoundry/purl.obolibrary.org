@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/pco
 
-id: PCO
+idspace: PCO
 base_url: /obo/pco
 
 products:

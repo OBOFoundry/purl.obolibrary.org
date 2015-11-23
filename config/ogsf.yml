@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/ogsf
 
-id: OGSF
+idspace: OGSF
 base_url: /obo/ogsf
 
 products:

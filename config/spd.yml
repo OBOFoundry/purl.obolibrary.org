@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/spd
 
-id: SPD
+idspace: SPD
 base_url: /obo/spd
 
 products:

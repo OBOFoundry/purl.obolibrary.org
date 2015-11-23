@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/hsapdv
 
-id: HsapDv
+idspace: HsapDv
 base_url: /obo/hsapdv
 
 products:

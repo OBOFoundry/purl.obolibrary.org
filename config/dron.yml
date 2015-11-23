@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/dron
 
-id: DRON
+idspace: DRON
 base_url: /obo/dron
 
 products:

@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/fbbi
 
-id: FBbi
+idspace: FBbi
 base_url: /obo/fbbi
 
 products:

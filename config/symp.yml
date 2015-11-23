@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/symp
 
-id: SYMP
+idspace: SYMP
 base_url: /obo/symp
 
 products:

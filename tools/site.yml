@@ -41,17 +41,13 @@
 
     - name: Install Travis command-line
       when: mode != "travis"
-      command: gem install travis -v 1.8.0 --no-rdoc --no-ri
+      command: gem install travis -v 1.8.0 --no-rdoc --no-ri creates=/usr/local/bin/travis
 
-    - name: Install Ruby packages
-      command: gem install {{ item }}
-      with_items:
-        - kwalify
+    - name: Install kwalify
+      command: gem install kwalify creates=/usr/local/bin/kwalify
 
-    - name: Install Python packages
-      pip: name={{ item }} state=present executable=pip3
-      with_items:
-        - PyYAML
+    - name: Install PyYAML
+      pip: name=PyYAML executable=pip3
 
     - name: Clone the Git repo
       when: mode == "production"
@@ -63,7 +59,7 @@
 
     - name: Set cron to update PURLs every 10 minutes
       when: mode == "production"
-      cron: name="update PURLs" minute="*/10" job="{{ cron_job }}"
+      cron: name="update PURLs" minute="*/10" job="PATH=/usr/local/bin:$PATH; {{ cron_job }} >> /var/log/obo-purl-cron 2>&1"
 
     - name: Disable default Apache site
       command: a2dissite 000-default removes=/etc/apache2/sites-enabled/000-default.conf

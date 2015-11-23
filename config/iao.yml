@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/iao
 
-id: IAO
+idspace: IAO
 base_url: /obo/iao
 
 base_redirect: http://code.google.com/p/information-artifact-ontology/

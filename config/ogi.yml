@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/ogi
 
-id: OGI
+idspace: OGI
 base_url: /obo/ogi
 
 products:

@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/bila
 
-id: BILA
+idspace: BILA
 base_url: /obo/bila
 
 products:

@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/vt
 
-id: VT
+idspace: VT
 base_url: /obo/vt
 
 products:

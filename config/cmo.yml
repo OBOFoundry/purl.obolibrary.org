@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/cmo
 
-id: CMO
+idspace: CMO
 base_url: /obo/cmo
 
 products:

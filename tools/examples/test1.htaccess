@@ -2,5 +2,5 @@
 # Automatically generated from "tools/examples/test1.yml".
 # Edit that source file then regenerate this file.
 
-RedirectMatch temp "^/obo/test1/project$" "http://example.org/project.html"
-RedirectMatch temp "^/obo/test1/branches/(.*)$" "http://example.org/branches/$1"
+RedirectMatch temp "(?i)^/obo/test1/project$" "http://example.org/project.html"
+RedirectMatch temp "(?i)^/obo/test1/branches/(.*)$" "http://example.org/branches/$1"

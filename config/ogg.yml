@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/ogg
 
-id: OGG
+idspace: OGG
 base_url: /obo/ogg
 
 products:

@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/fbdv
 
-id: FBdv
+idspace: FBdv
 base_url: /obo/fbdv
 
 base_redirect: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/wiki

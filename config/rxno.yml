@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/rxno
 
-id: RXNO
+idspace: RXNO
 base_url: /obo/rxno
 
 products:

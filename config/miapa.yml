@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/miapa
 
-id: MIAPA
+idspace: MIAPA
 base_url: /obo/miapa
 
 products:

@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/poro
 
-id: PORO
+idspace: PORO
 base_url: /obo/poro
 
 base_redirect: https://github.com/obophenotype/porifera-ontology

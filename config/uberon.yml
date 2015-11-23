@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/uberon
 
-id: UBERON
+idspace: UBERON
 base_url: /obo/uberon
 
 base_redirect: http://uberon.github.io/

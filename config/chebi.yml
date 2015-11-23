@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/chebi
 
-id: CHEBI
+idspace: CHEBI
 base_url: /obo/chebi
 
 products:

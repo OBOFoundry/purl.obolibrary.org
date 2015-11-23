@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/emap
 
-id: EMAP
+idspace: EMAP
 base_url: /obo/emap
 
 products:

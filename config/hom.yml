@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/hom
 
-id: HOM
+idspace: HOM
 base_url: /obo/hom
 
 products:

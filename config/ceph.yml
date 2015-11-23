@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/ceph
 
-id: CEPH
+idspace: CEPH
 base_url: /obo/ceph
 
 products:

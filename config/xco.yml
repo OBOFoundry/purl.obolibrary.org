@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/xco
 
-id: XCO
+idspace: XCO
 base_url: /obo/xco
 
 products:

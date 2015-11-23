@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/cvdo
 
-id: CVDO
+idspace: CVDO
 base_url: /obo/cvdo
 
 products:

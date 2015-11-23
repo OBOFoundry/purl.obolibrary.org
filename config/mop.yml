@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/mop
 
-id: MOP
+idspace: MOP
 base_url: /obo/mop
 
 products:

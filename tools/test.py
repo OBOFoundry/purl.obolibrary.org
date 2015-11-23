@@ -43,10 +43,10 @@ def main():
   # Load YAML document and look for 'entries' list.
   document = yaml.load(args.yaml_file)
 
-  if not 'id' in document \
-      or type(document['id']) is not str:
-    raise ValueError('YAML document must contain "id" string')
-  ont_id = document['id']
+  if not 'idspace' in document \
+      or type(document['idspace']) is not str:
+    raise ValueError('YAML document must contain "idspace" string')
+  idspace = document['idspace']
 
   if not 'base_url' in document \
       or type(document['base_url']) is not str:
@@ -77,7 +77,7 @@ def main():
     i = 0
     for example_term in document['example_terms']:
       i += 1
-      tests += process_ontobee(ont_id, i, example_term)
+      tests += process_ontobee(idspace, i, example_term)
 
   if 'entries' in document \
       and type(document['entries']) is list:
@@ -115,14 +115,14 @@ def process_product(i, product):
 
 ontobee = 'http://www.ontobee.org/browser/rdf.php?o=%s&iri=http://purl.obolibrary.org/obo/'
 
-def process_ontobee(ont_id, i, example_term):
-  """Given an ontology ID, an index, and an example term ID,
+def process_ontobee(idspace, i, example_term):
+  """Given an ontology IDSPACE, an index, and an example term ID,
   return a list with a test to run."""
   return [{
     'source': '/obo/' + example_term,
-    'replacement': (ontobee % ont_id) + example_term,
+    'replacement': (ontobee % idspace) + example_term,
     #'replacement': 'http://www.berkeleybop.org/ontologies/' + example_term,
-    'status': '302'
+    'status': '303'
   }]
 
 

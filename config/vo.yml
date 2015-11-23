@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/vo
 
-id: VO
+idspace: VO
 base_url: /obo/vo
 
 base_redirect: http://www.violinet.org/vaccineontology

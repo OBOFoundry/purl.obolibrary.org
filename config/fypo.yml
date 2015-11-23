@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/fypo
 
-id: FYPO
+idspace: FYPO
 base_url: /obo/fypo
 
 products:

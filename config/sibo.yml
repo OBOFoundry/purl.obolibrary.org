@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/sibo
 
-id: SIBO
+idspace: SIBO
 base_url: /obo/sibo
 
 products:

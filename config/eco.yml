@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/eco
 
-id: ECO
+idspace: ECO
 base_url: /obo/eco
 
 products:

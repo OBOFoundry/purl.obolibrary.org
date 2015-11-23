@@ -4,8 +4,8 @@ idspace: PO
 base_url: /obo/po
 
 products:
-- po.owl: http://www.berkeleybop.org/ontologies/po.owl
-- po.obo: http://www.berkeleybop.org/ontologies/po.obo
+- po.owl: https://raw.githubusercontent.com/Planteome/plant-ontology/master/po.obo
+- po.obo: https://raw.githubusercontent.com/Planteome/plant-ontology/master/po.owl
 
 term_browser: ontobee
 example_terms:

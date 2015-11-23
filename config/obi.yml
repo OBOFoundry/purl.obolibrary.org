@@ -4,7 +4,7 @@ idspace: OBI
 base_url: /obo/obi
 
 products:
-- obi.owl: http://svn.code.sf.net/p/obi/code/releases/2015-09-15/obi.owl
+- obi.owl: http://svn.code.sf.net/p/obi/code/releases/2015-10-20/obi.owl
 - obi.obo: http://www.berkeleybop.org/ontologies/obi.obo
 
 term_browser: ontobee
@@ -12,26 +12,32 @@ example_terms:
 - OBI_0000070
 
 entries:
-- exact: /project
-  replacement: http://sw.neurocommons.org/obi-303/project.rdf
 
-- exact: /wiki
-  replacement: http://obi-ontology.org
+### Current Releases
 
-- exact: /calendar
-  replacement: http://www.google.com/calendar/embed?src=p8auq0a930und9nugj44p988e4%40group.calendar.google.com&ctz=America/New_York
+- exact: /obi_core.owl
+  replacement: http://svn.code.sf.net/p/obi/code/releases/2015-10-20/obi_core.owl
 
-- exact: /jowl
-  replacement: http://jowl.ontologyonline.org/obi.html
+- exact: /obi_IEDBview.owl
+  replacement: http://svn.code.sf.net/p/obi/code/releases/2015-10-20/obi_iedb.owl
 
-- exact: /wiki/MinimalMetadata
-  replacement: http://obi-ontology.org/page/OBI_Minimal_metadata
+- exact: /release-notes.html
+  replacement: http://obi-ontology.org/page/Releases/2015-10-20
 
-- exact: /tracker
-  replacement: http://sourceforge.net/tracker/?group_id=177891&atid=886178
+- exact: /webService.owl
+  replacement: https://raw.githubusercontent.com/obi-webservice/OBIws/master/ontology/release/v1.1/webService.owl
 
-- exact: /policy/metadata
-  replacement: http://obi-ontology.org/page/OBI_Minimal_metadata
+- exact: /NIAID-GSC-BRC.owl
+  replacement: http://svn.code.sf.net/p/obi/code/releases/NIAID-GSCID-BRC-view/20150413/NIAID-GSC-BRC.owl
+
+- exact: /obi_FGED.owl
+  replacement: http://svn.code.sf.net/p/obi/code/releases/2013-10-25/obi_FGED.owl
+
+# TODO: This is out of date and in the wrong place.
+- exact: /obi.obo
+  replacement: http://obi.svn.sourceforge.net/svnroot/obi/releases/2012-07-01/merged/obi_cleaned_merged_inferred.obo
+
+### Dated OBI Releases
 
 - exact: /2009-11-02/obi.owl
   replacement: http://obi.svn.sourceforge.net/svnroot/obi/releases/2009-11-02/merged/merged-obi.owl
@@ -39,14 +45,8 @@ entries:
 - exact: /2009-11-06/obi.owl
   replacement: http://obi.svn.sourceforge.net/svnroot/obi/releases/2009-11-06/merged/merged-obi.owl
 
-- exact: /Technical_Reports
-  replacement: http://obi-ontology.org/page/Technical_Reports
-
 - exact: /2009-11-06/obi.obo
   replacement: http://obi.svn.sourceforge.net/svnroot/obi/releases/2009-11-06/merged/obi.obo
-
-- exact: /supplementary/protege-qtt-2009.zip
-  replacement: http://www.stanford.edu/~sunid/OBI/Protege_3.4.2.zip
 
 - exact: /2009-11-06/IEDB-use-case.owl
   replacement: http://obi.svn.sourceforge.net/svnroot/obi/releases/2009-11-06/branches/IEDB-use-case.owl
@@ -56,21 +56,6 @@ entries:
 
 - exact: /2010-10-26/obi.owl
   replacement: http://obi.svn.sourceforge.net/svnroot/obi/releases/2010-10-26/merged/merged-obi.owl
-
-- exact: /homepage
-  replacement: http://obi-ontology.org/
-
-- exact: /report.html
-  replacement: http://obi.svn.sourceforge.net/svnroot/obi/releases/2010-10-26/merged/newClasses.html
-
-- exact: /protege/obi.pprj
-  replacement: http://obi.svn.sourceforge.net/svnroot/obi/releases/obsolete-protege-message.html
-
-- exact: /protege/obi.owl
-  replacement: http://obi.svn.sourceforge.net/svnroot/obi/releases/obsolete-protege-message.html
-
-- exact: /owldoc
-  replacement: http://owl.cs.manchester.ac.uk/browser/classes/830966544/?session=12cbe539878-8862-12cbe54e7be
 
 - exact: /2011-04-20/obi.owl
   replacement: http://obi.svn.sourceforge.net/svnroot/obi/releases/2011-04-20/merged/merged-obi-comments.owl
@@ -99,29 +84,17 @@ entries:
 - exact: /2012-07-01/obi.obo
   replacement: http://obi.svn.sourceforge.net/svnroot/obi/releases/2012-07-01/merged/obi_cleaned_merged_inferred.obo
 
-- exact: /obi.obo
-  replacement: http://obi.svn.sourceforge.net/svnroot/obi/releases/2012-07-01/merged/obi_cleaned_merged_inferred.obo
-
-- exact: /repository
-  replacement: http://sourceforge.net/p/obi/code/HEAD/tree/
-
 - exact: /2013-10-25/obi_core.owl
   replacement: http://svn.code.sf.net/p/obi/code/releases/2013-10-25/obi_core.owl
 
 - exact: /2013-10-25/obi.owl
   replacement: http://svn.code.sf.net/p/obi/code/releases/2013-10-25/obi.owl
 
-- exact: /obi_FGED.owl
-  replacement: http://svn.code.sf.net/p/obi/code/releases/2013-10-25/obi_FGED.owl
-
 - exact: /2014-03-29/obi.owl
   replacement: http://svn.code.sf.net/p/obi/code/releases/2014-03-29/obi.owl
 
 - exact: /2014-03-29/obi_core.owl
   replacement: http://svn.code.sf.net/p/obi/code/releases/2014-03-29/obi_core.owl
-
-- exact: /browse
-  replacement: http://www.ontobee.org/browser/index.php?o=OBI
 
 - exact: /2014-08-18/obi.owl
   replacement: http://svn.code.sf.net/p/obi/code/releases/2014-08-18/obi.owl
@@ -135,9 +108,6 @@ entries:
 - exact: /2014-12-03/obi_core.owl
   replacement: http://svn.code.sf.net/p/obi/code/releases/2014-12-03/obi_core.owl
 
-- exact: /20140106/NIAID-GSC-BRC.owl
-  replacement: http://svn.code.sf.net/p/obi/code/releases/NIAID-GSCID-BRC-view/20140105/NIAID-GSC-BRC.owl
-
 - exact: /2015-03-17/obi.owl
   replacement: http://svn.code.sf.net/p/obi/code/releases/2015-03-17/obi.owl
 
@@ -150,14 +120,19 @@ entries:
 - exact: /2015-04-13/obi_core.owl
   replacement: http://svn.code.sf.net/p/obi/code/releases/2015-04-13/obi_core.owl
 
-- exact: /NIAID-GSC-BRC.owl
-  replacement: http://svn.code.sf.net/p/obi/code/releases/NIAID-GSCID-BRC-view/20150413/NIAID-GSC-BRC.owl
+- exact: /2015-09-15/obi.owl
+  replacement: http://svn.code.sf.net/p/obi/code/releases/2015-09-15/obi.owl
 
-- exact: /20150413/NIAID-GSC-BRC.owl
-  replacement: http://svn.code.sf.net/p/obi/code/releases/NIAID-GSCID-BRC-view/20150413/NIAID-GSC-BRC.owl
+- exact: /2015-09-15/obi_core.owl
+  replacement: http://svn.code.sf.net/p/obi/code/releases/2015-09-15/obi_core.owl
 
-- exact: /webService.owl
-  replacement: https://raw.githubusercontent.com/obi-webservice/OBIws/master/ontology/release/v1.1/webService.owl
+- exact: /2015-10-20/obi.owl
+  replacement: http://svn.code.sf.net/p/obi/code/releases/2015-10-20/obi.owl
+
+- exact: /2015-10-20/obi_core.owl
+  replacement: http://svn.code.sf.net/p/obi/code/releases/2015-10-20/obi_core.owl
+
+### Web Service Releases
 
 - exact: /v1.1/webService.owl
   replacement: https://raw.githubusercontent.com/obi-webservice/OBIws/master/ontology/release/v1.1/webService.owl
@@ -168,23 +143,79 @@ entries:
 - exact: /v0.9/webService.owl
   replacement: https://raw.githubusercontent.com/obi-webservice/OBIws/master/ontology/release/v0.9/webService.owl
 
-- exact: /2015-09-15/obi.owl
-  replacement: http://svn.code.sf.net/p/obi/code/releases/2015-09-15/obi.owl
+# NIAID-GSC-BRC Releases
 
-- exact: /2015-09-15/obi_core.owl
-  replacement: http://svn.code.sf.net/p/obi/code/releases/2015-09-15/obi_core.owl
+- exact: /20140106/NIAID-GSC-BRC.owl
+  replacement: http://svn.code.sf.net/p/obi/code/releases/NIAID-GSCID-BRC-view/20140105/NIAID-GSC-BRC.owl
 
-- exact: /obi_core.owl
-  replacement: http://svn.code.sf.net/p/obi/code/releases/2015-09-15/obi_core.owl
+- exact: /20150413/NIAID-GSC-BRC.owl
+  replacement: http://svn.code.sf.net/p/obi/code/releases/NIAID-GSCID-BRC-view/20150413/NIAID-GSC-BRC.owl
 
-- exact: /obi_IEDBview.owl
-  replacement: http://svn.code.sf.net/p/obi/code/releases/2015-09-15/obi_iedb.owl
+### Wiki Pages
 
-- exact: /release-notes.html
-  replacement: http://obi-ontology.org/page/Releases/2015-09-15
+- exact: /wiki
+  replacement: http://obi-ontology.org
 
-- prefix: /repository/
-  replacement: http://obi.svn.sourceforge.net/svnroot/obi/
+- exact: /wiki/MinimalMetadata
+  replacement: http://obi-ontology.org/page/OBI_Minimal_metadata
+  
+- prefix: /wiki/
+  replacement: http://obi-ontology.org/page/
+
+### Documentation Pages and Redirects
+
+- exact: /homepage
+  replacement: http://obi-ontology.org/
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/browser/rdf.php?o=OBI&iri=http://purl.obolibrary.org/obo/
+  
+- prefix: /doc/
+  replacement: http://obi.svn.sourceforge.net/svnroot/obi/trunk/docs/
+
+- exact: /tracker
+  replacement: http://sourceforge.net/tracker/?group_id=177891&atid=886178
+
+- exact: /project
+  replacement: http://sw.neurocommons.org/obi-303/project.rdf
+
+- exact: /calendar
+  replacement: http://www.google.com/calendar/embed?src=p8auq0a930und9nugj44p988e4%40group.calendar.google.com&ctz=America/New_York
+
+- exact: /jowl
+  replacement: http://jowl.ontologyonline.org/obi.html
+
+- exact: /policy/metadata
+  replacement: http://obi-ontology.org/page/OBI_Minimal_metadata
+
+- exact: /Technical_Reports
+  replacement: http://obi-ontology.org/page/Technical_Reports
+
+- exact: /supplementary/protege-qtt-2009.zip
+  replacement: http://www.stanford.edu/~sunid/OBI/Protege_3.4.2.zip
+
+- exact: /report.html
+  replacement: http://obi.svn.sourceforge.net/svnroot/obi/releases/2010-10-26/merged/newClasses.html
+
+- exact: /protege/obi.pprj
+  replacement: http://obi.svn.sourceforge.net/svnroot/obi/releases/obsolete-protege-message.html
+
+- exact: /protege/obi.owl
+  replacement: http://obi.svn.sourceforge.net/svnroot/obi/releases/obsolete-protege-message.html
+
+- exact: /owldoc
+  replacement: http://owl.cs.manchester.ac.uk/browser/classes/830966544/?session=12cbe539878-8862-12cbe54e7be
+
+- prefix: /protege/
+  replacement: http://obi.svn.sourceforge.net/svnroot/obi/releases/2008-11-28/merged/protege/
+
+- exact: /browse
+  replacement: http://www.ontobee.org/browser/index.php?o=OBI
+
+- prefix: /page/
+  replacement: http://www.ontobee.org/browser/rdf.php?o=OBI&iri=
+
+### Development Pages and Redirects
 
 - prefix: /dev/import/
   replacement: http://svn.code.sf.net/p/obi/code/trunk/src/ontology/branches/OntoFox_outputs/
@@ -192,21 +223,12 @@ entries:
 - prefix: /branches/
   replacement: http://obi.svn.sourceforge.net/svnroot/obi/trunk/src/ontology/branches/
 
-- prefix: /protege/
-  replacement: http://obi.svn.sourceforge.net/svnroot/obi/releases/2008-11-28/merged/protege/
+- exact: /repository
+  replacement: http://sourceforge.net/p/obi/code/HEAD/tree/
 
-- prefix: /about/
-  replacement: http://www.ontobee.org/browser/rdf.php?o=OBI&iri=http://purl.obolibrary.org/obo/
+- prefix: /repository/
+  replacement: http://obi.svn.sourceforge.net/svnroot/obi/
 
-- prefix: /wiki/
-  replacement: http://obi-ontology.org/page/
-
-- prefix: /page/
-  replacement: http://www.ontobee.org/browser/rdf.php?o=OBI&iri=
-
-- prefix: /doc/
-  replacement: http://obi.svn.sourceforge.net/svnroot/obi/trunk/docs/
-
+# WARN: This entry matches everything under /obo/obi/*! It must be last on the list.
 - prefix: /
   replacement: http://obi.svn.sourceforge.net/svnroot/obi/trunk/src/ontology/branches/
-

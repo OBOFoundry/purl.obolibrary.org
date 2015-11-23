@@ -36,16 +36,9 @@ entries:
   - from: /HAO_0000000
     to: http://api.hymao.org/api/ontology/ontology_class/HAO_0000000
 
-# Terms for PR and PRO
+# Terms for PR
 - regex: ^/obo/PR_(\d+)$
   replacement: http://pir.georgetown.edu/cgi-bin/pro/entry_pro?id=PR_$1
   tests:
   - from: /PR_000000001
     to: http://pir.georgetown.edu/cgi-bin/pro/entry_pro?id=PR_000000001
-
-- regex: ^/obo/PRO_(\d+)$
-  replacement: http://pir.georgetown.edu/cgi-bin/pro/entry_pro?id=PRO_$1
-  tests:
-  - from: /PRO_000000001
-    to: http://pir.georgetown.edu/cgi-bin/pro/entry_pro?id=PRO_000000001
-

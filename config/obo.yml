@@ -37,8 +37,11 @@ entries:
     to: http://api.hymao.org/api/ontology/ontology_class/HAO_0000000
 
 # Terms for PR
-- regex: ^/obo/PR_(\d+)$
+# Match digits or UniProt ID, see http://www.uniprot.org/help/accession_numbers
+- regex: ^/obo/PR_(\d+|[OPQ][0-9][A-Z0-9]{3}[0-9]|[A-NR-Z][0-9]([A-Z][A-Z0-9]{2}[0-9]){1,2})$
   replacement: http://pir.georgetown.edu/cgi-bin/pro/entry_pro?id=PR_$1
   tests:
   - from: /PR_000000001
     to: http://pir.georgetown.edu/cgi-bin/pro/entry_pro?id=PR_000000001
+  - from: /PR_Q9BWV1
+    to: http://pir.georgetown.edu/cgi-bin/pro/entry_pro?id=PR_Q9BWV1

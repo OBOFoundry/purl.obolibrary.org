@@ -15,5 +15,4 @@ script:
 notifications:
   email:
     - james@overton.ca
-#   - cjmungall@lbl.gov
-#   - sjcarbon@lbl.gov
+    - cjmungall@lbl.gov

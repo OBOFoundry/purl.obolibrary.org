@@ -160,10 +160,12 @@ def process_entry(base_url, i, entry):
   # Validate status code.
   status = '302'
   if 'status' in entry:
-    if entry['status'] == 'temporary':
+    if entry['status'] == 'permanent':
+      status = '301'
+    elif entry['status'] == 'temporary':
       status = '302'
-    elif entry['status'] == 'permanent':
-      status = '302'
+    elif entry['status'] == 'see other':
+      status = '303'
     else:
       raise ValueError('Invalid status "%s" for entry %d' % (entry['status'], i))
   test['status'] = status

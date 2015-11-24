@@ -31,6 +31,20 @@ mapping:
     required: false
     sequence:
       - type: str
+  "tests":
+    type: seq
+    required: false
+    sequence:
+      - type: map
+        mapping:
+          "from":
+            type: str
+            pattern: /^\//
+            required: true
+          "to":
+            type: str
+            pattern: /^(https?|ftp)\:\/\/.+/
+            required: true
   "entries":
     type: seq
     required: false

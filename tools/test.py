@@ -79,6 +79,21 @@ def main():
       i += 1
       tests += process_ontobee(idspace, i, example_term)
 
+  if 'tests' in document:
+    i = 0
+    status = '302'
+    for test_entry in document['tests']:
+      i += 1
+      test = {'status': status}
+      if 'from' in test_entry:
+        test['source'] = base_url + test_entry['from']
+      if 'to' in test_entry:
+        test['replacement'] = test_entry['to']
+      if 'source' in test and 'replacement' in test:
+        tests.append(test)
+      else:
+        raise ValueError('Invalid test %d in global tests' % i)
+
   if 'entries' in document \
       and type(document['entries']) is list:
     i = 0
@@ -178,7 +193,6 @@ def process_entry(base_url, i, entry):
       if 'source' in test and 'replacement' in test:
         tests.append(test)
       else:
-        print(test)
         raise ValueError('Invalid test %d for entry %d' % (t, i))
 
   return tests

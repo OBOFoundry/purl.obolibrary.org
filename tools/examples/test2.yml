@@ -25,6 +25,7 @@ entries:
 
 - regex: (?i)^/obo/test2/TEST_(\d+)$
   replacement: http://example.org/about/TEST_$1
+  status: see other
   tests:
   - from: /TEST_1234
     replacement: http://example.org/about/TEST_1234

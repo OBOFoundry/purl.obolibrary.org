@@ -70,6 +70,10 @@ mapping:
             pattern: /^(https?|ftp)\:\/\/.+/
             required: true
             unique: false
+          "status":
+            type: str
+            required: false
+            pattern: /^(permanent|temporary|see other)$/
           "tests":
             type: seq
             required: false

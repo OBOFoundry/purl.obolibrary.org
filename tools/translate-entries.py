@@ -151,14 +151,16 @@ def process_entry(base_url, i, entry):
   # Validate status code
   status = 'temporary'
   if 'status' in entry:
-    if entry['status'] in ('temporary', 'permanent'):
+    if entry['status'] in ('permanent', 'temporary', 'see other'):
       status = entry['status']
     else:
       raise ValueError('Invalid status "%s" for entry %d' % (entry['status'], i))
 
-  # Note: Apache config uses "temp" instead of "temporary"
+  # Switch to Apache's preferred names
   if status == 'temporary':
     status = 'temp'
+  elif status == 'see other':
+    status = 'seeother'
 
   return 'RedirectMatch %s "%s" "%s"' % (status, source, replacement)
 

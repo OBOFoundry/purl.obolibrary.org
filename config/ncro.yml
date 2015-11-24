@@ -5,11 +5,17 @@ base_url: /obo/ncro
 
 products:
 - ncro.owl: http://raw.githubusercontent.com/OmniSearch/ncro/master/src/ontology/ncro.owl
-- ncro/imports.owl http://raw.githubusercontent.com/OmniSearch/ncro/master/src/ontology/imports.owl
-- ncro/dev/ncro.owl http://raw.githubusercontent.com/OmniSearch/ncro/master/src/ontology/ncro.owl
-- ncro/dev/ncro/imports.owl http://raw.githubusercontent.com/OmniSearch/ncro/master/src/ontology/imports.owl
-# - ncro.obo: http://www.berkeleybop.org/ontologies/doid.obo
 
 term_browser: ontobee
 example_terms:
 - NCRO_0000818
+
+entries:
+- exact: /imports.owl
+  replacement: http://raw.githubusercontent.com/OmniSearch/ncro/master/src/ontology/imports.owl
+
+- exact: /dev/ncro.owl
+  replacement: http://raw.githubusercontent.com/OmniSearch/ncro/master/src/ontology/ncro.owl
+
+- exact: /dev/ncro/imports.owl
+  replacement: http://raw.githubusercontent.com/OmniSearch/ncro/master/src/ontology/imports.owl

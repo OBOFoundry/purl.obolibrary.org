@@ -28,6 +28,11 @@ entries:
   tests:
   - from: /CHEBI_15377
     to: http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15377
+  # Test case insensitivity
+  - from: /chebi/about/CHEBI_15377
+    to: http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_15377
+  - from: /CHEBI/about/CHEBI_15377
+    to: http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_15377
 
 # Terms for HAO
 - regex: ^/obo/HAO_(\d+)$

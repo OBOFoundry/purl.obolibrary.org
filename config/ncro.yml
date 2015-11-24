@@ -1,0 +1,21 @@
+# PURL configuration for http://purl.obolibrary.org/obo/ncro
+
+idspace: NCRO
+base_url: /obo/ncro
+
+products:
+- ncro.owl: http://raw.githubusercontent.com/OmniSearch/ncro/master/src/ontology/ncro.owl
+
+term_browser: ontobee
+example_terms:
+- NCRO_0000818
+
+entries:
+- exact: /imports.owl
+  replacement: http://raw.githubusercontent.com/OmniSearch/ncro/master/src/ontology/imports.owl
+
+- exact: /dev/ncro.owl
+  replacement: http://raw.githubusercontent.com/OmniSearch/ncro/master/src/ontology/ncro.owl
+
+- exact: /dev/ncro/imports.owl
+  replacement: http://raw.githubusercontent.com/OmniSearch/ncro/master/src/ontology/imports.owl

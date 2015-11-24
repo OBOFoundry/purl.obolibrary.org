@@ -6,9 +6,10 @@ base_url: /obo/po
 products:
 - po.owl: https://raw.githubusercontent.com/Planteome/plant-ontology/master/po.owl
 - po.obo: https://raw.githubusercontent.com/Planteome/plant-ontology/master/po.obo
-- subsets/po-basic.obo: https://raw.githubusercontent.com/Planteome/plant-ontology/master/subsets/po-basic.obo
 
 entries:
+- prefix: /subsets/
+  replacement: https://raw.githubusercontent.com/Planteome/plant-ontology/master/subsets/
 - prefix: /releases/
   replacement: https://raw.githubusercontent.com/Planteome/plant-ontology/v
   

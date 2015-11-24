@@ -8,6 +8,10 @@ products:
 - po.obo: https://raw.githubusercontent.com/Planteome/plant-ontology/master/po.obo
 - subsets/po-basic.obo: https://raw.githubusercontent.com/Planteome/plant-ontology/master/subsets/po-basic.obo
 
+entries:
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/Planteome/plant-ontology/v
+  
 term_browser: ontobee
 example_terms:
 - PO_0009012

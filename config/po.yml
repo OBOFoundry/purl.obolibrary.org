@@ -4,9 +4,15 @@ idspace: PO
 base_url: /obo/po
 
 products:
-- po.owl: http://www.berkeleybop.org/ontologies/po.owl
-- po.obo: http://www.berkeleybop.org/ontologies/po.obo
+- po.owl: https://raw.githubusercontent.com/Planteome/plant-ontology/master/po.owl
+- po.obo: https://raw.githubusercontent.com/Planteome/plant-ontology/master/po.obo
 
+entries:
+- prefix: /subsets/
+  replacement: https://raw.githubusercontent.com/Planteome/plant-ontology/master/subsets/
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/Planteome/plant-ontology/v
+  
 term_browser: ontobee
 example_terms:
 - PO_0009012

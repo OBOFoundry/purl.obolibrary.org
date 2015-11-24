@@ -103,9 +103,21 @@ temp/products/%.htaccess: config/%.yml temp/products
 temp/terms/%.htaccess: config/%.yml temp/terms
 	tools/translate-terms.py $< $@
 
+# Generate temp/obo/foo/.htaccess file
+# and a symbolic link from the IDSPACE:
+# temp/obo/FOO -> temp/obo/foo
+# NOTE: The last line removes spurious links
+# on case insensitive file systems such as Mac OS X.
 temp/obo/%/.htaccess: config/%.yml
 	mkdir -p temp/obo/$*
 	tools/translate-entries.py $< $@
+	< $< \
+	grep '^idspace:' \
+	| sed 's/^idspace://' \
+	| tr -d ' ' \
+	| awk '{print "$* temp/obo/" $$0}' \
+	| xargs -t ln -s
+	rm -f temp/obo/$*/$*
 
 # Convert all YAML configuration files to .htaccess
 # and move the special `obo` .htaccess file.
@@ -123,6 +135,7 @@ build: $(foreach o,$(ONTOLOGY_IDS),temp/terms/$o.htaccess)
 	cat temp/products/*.htaccess >> temp/obo/.htaccess
 	cat temp/terms/*.htaccess >> temp/obo/.htaccess
 	rm -rf temp/obo/obo
+	rm -rf temp/obo/OBO
 	rm -rf www/obo
 	mv temp/obo www/obo
 

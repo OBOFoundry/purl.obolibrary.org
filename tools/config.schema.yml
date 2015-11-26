@@ -6,86 +6,45 @@
 ####
 type: map
 mapping:
-  "idspace":
-    type: str
-    pattern: /^[A-Za-z][A-Za-z0-9_]+$/ # See issue #82
-    required: true
-  "base_url":
-    type: str
-    pattern: /^\/obo/
-    required: true
-  "base_redirect":
-    type: str
-    required: false
-  "products":
+  "purl_rules":
     type: seq
-    required: false
-    sequence:
-      - type: any
-  "term_browser":
-    type: str
-    pattern: /^(ontobee|custom)$/
-    required: true
-  "example_terms":
-    type: seq
-    required: false
-    sequence:
-      - type: str
-  "tests":
-    type: seq
-    required: false
     sequence:
       - type: map
         mapping:
-          "from":
+          "path":
             type: str
             pattern: /^\//
-            required: true
-          "to":
-            type: str
-            pattern: /^(https?|ftp)\:\/\/.+/
-            required: true
-  "entries":
-    type: seq
-    required: false
-    sequence:
-      - type: map
-        mapping:
-          "exact":
-            type: str
-            pattern: /^\//
-            required: false
             unique: true
           "prefix":
             type: str
             pattern: /^\//
-            required: false
             unique: true
           "regex":
             type: str
-            required: false
+            unique: true
+          "term_browser":
+            type: str
+            pattern: /^(ontobee)$/
             unique: true
           "replacement":
             type: str
-            pattern: /^(https?|ftp)\:\/\/.+/
-            required: true
-            unique: false
+            pattern: /^(https?|ftp)\:\/\/.+|\/obo\//
+          "level":
+            type: str
+            pattern: /^(project|top)$/
           "status":
             type: str
-            required: false
             pattern: /^(permanent|temporary|see other)$/
           "tests":
             type: seq
-            required: false
             sequence:
               - type: map
                 mapping:
-                  "from":
+                  "path":
                     type: str
                     pattern: /^\//
                     required: true
-                  "to":
+                  "replacement":
                     type: str
-                    pattern: /^(https?|ftp)\:\/\/.+/
+                    pattern: /^(https?|ftp)\:\/\/.+|\/obo\//
                     required: true
-

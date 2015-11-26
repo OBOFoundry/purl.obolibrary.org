@@ -1,0 +1,40 @@
+# PURL configuration for http://purl.obolibrary.org/obo/chebi
+
+purl_rules:
+- regex: ^/obo/CHEBI_(\d+)$
+  replacement: http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:$1
+  status: see other
+  level: top
+  tests:
+  - path: /obo/CHEBI_15377
+    replacement: http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15377
+
+- path: /obo/chebi.owl
+  replacement: http://www.berkeleybop.org/ontologies/chebi.owl
+
+- path: /obo/chebi.obo
+  replacement: http://www.berkeleybop.org/ontologies/chebi.obo
+
+- path: /obo/chebi/tracker
+  replacement: http://sourceforge.net/tracker/?group_id=125463&atid=703818
+
+- path: /obo/chebi/browse
+  replacement: http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI%3A24431
+
+- path: /obo/chebi/internal/chebi-disjoints.owl
+  replacement: ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi-disjoints.owl
+
+- path: /obo/chebi/internal/chebi-in-bfo.owl
+  replacement: ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi-in-bfo.owl
+
+- path: /obo/chebi/internal/chebi.owl
+  replacement: ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.owl
+
+- prefix: /obo/chebi/about/
+  replacement: http://www.ebi.ac.uk/chebi/searchId.do?chebiId=
+  tests:
+  - path: /obo/chebi/about/CHEBI_15377
+    replacement: http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_15377
+  - path: /obo/CHEBI/about/CHEBI_15377
+    replacement: http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_15377
+

@@ -1,0 +1,6 @@
+# Top-level rules for Test2
+RedirectMatch seeother "(?i)^/obo/Test2_(\d+)$" "http://www.ontobee.org/browser/rdf.php?o=Test2&iri=http://purl.obolibrary.org/obo/Test2_$1"
+RedirectMatch temp "(?i)^/obo/test2\.owl$" "http://example.org/test2.owl"
+RedirectMatch temp "(?i)^/obo/test2\.obo$" "http://example.org/test2.obo"
+RedirectMatch temp "(?i)^/obo/test2$" "http://example.org/project.html"
+RedirectMatch temp "(?i)^/obo/UNSAFE_(\d+)$" "http://example.org/about/Test2_$1"

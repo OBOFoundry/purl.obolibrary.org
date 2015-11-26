@@ -1,0 +1,40 @@
+# PURL configuration for Test2
+
+purl_rules:
+- term_browser: ontobee
+  tests:
+  - path: /obo/Test2_0000001
+    replacement: http://www.ontobee.org/browser/rdf.php?o=Test2&iri=http://purl.obolibrary.org/obo/Test2_0000001
+
+- path: /obo/test2.owl
+  replacement: http://example.org/test2.owl
+
+- path: /obo/test2.obo
+  replacement: http://example.org/test2.obo
+
+- path: /obo/test2
+  replacement: http://example.org/project.html
+
+- path: /obo/test2/project
+  replacement: http://example.org/project.html
+
+- path: /obo/test2/relative
+  replacement: /obo/test2/project
+
+- prefix: /obo/test2/branches/
+  replacement: http://example.org/branches/
+  tests:
+  - path: /obo/test2/branches/foo
+    replacement: http://example.org/branches/foo
+
+- regex: (?i)^/obo/UNSAFE_(\d+)$
+  replacement: http://example.org/about/Test2_$1
+  level: top
+
+- regex: (?i)^/obo/test2/about/Test2_(\d+)$
+  replacement: http://example.org/about/Test2_$1
+  level: project
+  status: see other
+  tests:
+  - path: /obo/test2/about/Test2_1234
+    replacement: http://example.org/about/Test2_1234

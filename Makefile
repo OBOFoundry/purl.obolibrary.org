@@ -91,17 +91,11 @@ validate:
 # These files are built in the `temp/` directory
 # then `temp/obo` replaces `www/obo` as the very last step
 # to keep Apache downtime to an absolute minimum.
-temp/obo temp/base_redirects temp/products temp/terms:
+temp/obo temp/top:
 	mkdir -p $@
 
-temp/base_redirects/%.htaccess: config/%.yml temp/base_redirects
-	tools/translate-base-redirects.py $< $@
-
-temp/products/%.htaccess: config/%.yml temp/products
-	tools/translate-products.py $< $@
-
-temp/terms/%.htaccess: config/%.yml temp/terms
-	tools/translate-terms.py $< $@
+temp/top/%.htaccess: config/%.yml temp/top
+	tools/translate.py top $< $@
 
 # Generate temp/obo/foo/.htaccess file
 # and a symbolic link from the IDSPACE:
@@ -110,11 +104,10 @@ temp/terms/%.htaccess: config/%.yml temp/terms
 # on case insensitive file systems such as Mac OS X.
 temp/obo/%/.htaccess: config/%.yml
 	mkdir -p temp/obo/$*
-	tools/translate-entries.py $< $@
+	tools/translate.py project $< $@
 	< $< \
-	grep '^idspace:' \
-	| sed 's/^idspace://' \
-	| tr -d ' ' \
+	echo '$*'\
+	| tr 'A-Z' 'a-z' \
 	| awk '{print "$* temp/obo/" $$0}' \
 	| xargs -t ln -s
 	rm -f temp/obo/$*/$*
@@ -124,16 +117,10 @@ temp/obo/%/.htaccess: config/%.yml
 # Generate .htaccess files for all YAML configuration files.
 .PHONY: build
 build: $(foreach o,$(ONTOLOGY_IDS),temp/obo/$o/.htaccess)
-build: $(foreach o,$(ONTOLOGY_IDS),temp/base_redirects/$o.htaccess)
-build: $(foreach o,$(ONTOLOGY_IDS),temp/products/$o.htaccess)
-build: $(foreach o,$(ONTOLOGY_IDS),temp/terms/$o.htaccess)
-	cat temp/obo/obo/.htaccess > temp/obo/.htaccess
+build: $(foreach o,$(ONTOLOGY_IDS),temp/top/$o.htaccess)
+	echo '### Generated from project configuration files' > temp/obo/.htaccess
 	echo '' >> temp/obo/.htaccess
-	echo '### Generated from project configuration files' >> temp/obo/.htaccess
-	echo '' >> temp/obo/.htaccess
-	cat temp/base_redirects/*.htaccess >> temp/obo/.htaccess
-	cat temp/products/*.htaccess >> temp/obo/.htaccess
-	cat temp/terms/*.htaccess >> temp/obo/.htaccess
+	cat temp/top/*.htaccess >> temp/obo/.htaccess
 	rm -rf temp/obo/obo
 	rm -rf temp/obo/OBO
 	rm -rf www/obo
@@ -190,28 +177,18 @@ tests/examples/%.yml: tools/examples/%.xml tools/examples/%.yml tests/examples
 	tools/migrate.py $* $< $@
 	diff tools/examples/$*.yml $@
 
-tests/examples/%.base_redirects.htaccess: tools/examples/%.yml tests/examples
-	tools/translate-base-redirects.py $< $@
-	diff tools/examples/$*.base_redirects.htaccess $@
+tests/examples/%.project.htaccess: tools/examples/%.yml tests/examples
+	tools/translate.py project $< $@
+	diff tools/examples/$*.project.htaccess $@
 
-tests/examples/%.products.htaccess: tools/examples/%.yml tests/examples
-	tools/translate-products.py $< $@
-	diff tools/examples/$*.products.htaccess $@
-
-tests/examples/%.terms.htaccess: tools/examples/%.yml tests/examples
-	tools/translate-terms.py $< $@
-	diff tools/examples/$*.terms.htaccess $@
-
-tests/examples/%.htaccess: tools/examples/%.yml tests/examples
-	tools/translate-entries.py $< $@
-	diff tools/examples/$*.htaccess $@
+tests/examples/%.top.htaccess: tools/examples/%.yml tests/examples
+	tools/translate.py top $< $@
+	diff tools/examples/$*.top.htaccess $@
 
 .PHONY: test-examples
-test-examples: tests/examples/test1.yml
-test-examples: tests/examples/test2.htaccess
-test-examples: tests/examples/test2.base_redirects.htaccess
-test-examples: tests/examples/test2.products.htaccess
-test-examples: tests/examples/test2.terms.htaccess
+test-examples: tests/examples/Test1.yml
+test-examples: tests/examples/Test2.project.htaccess
+test-examples: tests/examples/Test2.top.htaccess
 
 
 ### Update Repository

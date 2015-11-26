@@ -6,7 +6,7 @@
 # This script is helpful, but manual improvements are required!
 #
 # Given the project ID, this tool will generate several required fields,
-# then read the PURL.org XML to generate a list of entries.
+# then read the PURL.org XML to generate a list of rules.
 #
 # Each PURL is configured in a `<purl>` element, like this:
 #
@@ -19,44 +19,44 @@
 #       </target>
 #     </purl>
 #
-# The result will be a YAML entry like this:
+# The result will be a YAML list of maps like this:
 #
-#     entries:
-#     - prefix: /branches/
+#     purl_rules:
+#     - prefix: /obo/obi/branches/
 #       replacement: http://obi.svn.sourceforge.net/svnroot/obi/trunk/src/ontology/branches/
 #
 # We use a SAX parser to efficiently read selected fields: id, type, url.
 #
-# PURLs with type "302" will be `exact` entries.
-# PURLs with type "partial" will be `prefix` entries.
+# PURLs with type "302" will be `path` rules.
+# PURLs with type "partial" will be `prefix` rules.
 # To ensure that PURL.org behaviour is duplicated by default,
-# the `exact` entries are output first,
-# followed by `prefix` entries in descending order of `id` length.
+# the `path` rules are output first,
+# followed by `prefix` rules in descending order of `id` length.
 
 import argparse, sys, xml.sax, re
 
-# Accumulate entries in these global lists for later sorting.
-exact = []
+# Accumulate rules in these global lists for later sorting.
+path = []
 prefix = []
 
 # Define two template strings.
-header_template = '''# PURL configuration for http://purl.obolibrary.org%s
+header_template = '''# PURL configuration for {idspace}
 
-idspace: %s
-base_url: %s
+purl_rules:
+- term_browser: ontobee
+  tests:
+  - path: /obo/{idspace}_TODO
+    replacement: http://www.ontobee.org/browser/rdf.php?o={idspace}&iri=http://purl.obolibrary.org/obo/{idspace}_TODO
 
-products:
-- %s.owl: TODO
-- %s.obo: TODO
+- path: /obo/{lower_idspace}.owl
+  replacement: TODO
 
-term_browser: ontobee
-example_terms:
-- TODO
+- path: /obo/{lower_idspace}.obo
+  replacement: TODO
 
-entries:
 '''
-entry_template = '''- %s: %s
-  replacement: %s
+rule_template = '''- {type}: {id}
+  replacement: {url}
 
 '''
 
@@ -80,35 +80,33 @@ def main():
       help='write to the YAML file (or STDOUT)')
   args = parser.parse_args()
 
-  args.upper_idspace = args.idspace.upper()
-  args.lower_idspace = args.idspace.lower()
-  args.base_url = '/obo/' + args.lower_idspace
+  config = {
+    'idspace': args.idspace,
+    'lower_idspace': args.idspace.lower()
+  }
 
   sax = xml.sax.make_parser()
-  sax.setContentHandler(OCLCHandler(args))
+  sax.setContentHandler(OCLCHandler())
   sax.parse(args.xml_file)
 
-  entries = exact + sorted(prefix, key=lambda k: len(k['id']), reverse=True)
-  if len(entries) == 0:
-    raise ValueError('No entries to migrate')
+  rules = path + sorted(prefix, key=lambda k: len(k['id']), reverse=True)
+  if len(rules) == 0:
+    raise ValueError('No rules to migrate')
 
-  args.yaml_file.write(header_template %
-      (args.base_url, args.upper_idspace, args.base_url, args.lower_idspace, args.lower_idspace))
-  for entry in entries:
-    args.yaml_file.write(entry_template %
-        (entry['rule'], entry['id'], entry['url']))
+  args.yaml_file.write(header_template.format(**config))
+  for rule in rules:
+    args.yaml_file.write(rule_template.format(**rule))
 
 
 # Define a SAX ContentHandler class to match the XML format,
-# and accumulate entry dictionaries into the global lists.
+# and accumulate rule dictionaries into the global lists.
 # See example above for XML format.
 class OCLCHandler(xml.sax.ContentHandler):
   # Initialize with results of argparse.
-  def __init__(self, args):
-    self.args = args
+  def __init__(self):
     self.count = 0
     self.content = ''
-    self.entry = {}
+    self.rule = {}
 
   # If this is a new `<purl>` element, clear variables.
   # Always clear the content buffer.
@@ -116,7 +114,7 @@ class OCLCHandler(xml.sax.ContentHandler):
     self.content = ''
     if name == 'purl':
       self.count += 1
-      self.entry = {}
+      self.rule = {}
 
   # Accumulate characters.
   def characters(self, content):
@@ -124,44 +122,36 @@ class OCLCHandler(xml.sax.ContentHandler):
 
   # Get the first value found for type, id, and url.
   # If this is the end of a `purl` element,
-  # validate the entry dictionary,
+  # validate the rule dictionary,
   # then store it in one of the global lists.
   def endElement(self, name):
     if name in ('type', 'id', 'url'):
       if self.content.strip() == '':
         raise ValueError('Empty <%s> for <purl> %d' % (name, self.count))
-      self.entry[name] = self.content.strip()
+      self.rule[name] = self.content.strip()
 
     elif name == 'purl':
-      # The `<id>` in the XML must begin with the base_url,
-      # but we remove this prefix from the YAML output.
-      if not 'id' in self.entry:
+      if not 'id' in self.rule:
         raise ValueError('No <id> for <purl> %d' % self.count)
-      id_re = re.compile('^' + self.args.base_url, re.IGNORECASE)
-      if not id_re.match(self.entry['id']):
-        raise ValueError(
-          'In <purl> %d the <id> "%s" does not begin with base_url "%s"'
-          % (self.count, self.entry['id'], self.args.base_url))
-      self.entry['id'] = id_re.sub('', self.entry['id'])
 
-      if not 'url' in self.entry:
+      if not 'url' in self.rule:
         raise ValueError('No <url> for <purl> %d' % self.count)
-      if not re.match(r'^(https?|ftp)\:\/\/.+', self.entry['url']):
+      if not re.match(r'^(https?|ftp)\:\/\/.+', self.rule['url']):
         raise ValueError(
           'In <purl> %d the <url> "%s" is not an absolute HTTP or FTP URL'
-          % (self.count, self.entry['url']))
+          % (self.count, self.rule['url']))
 
-      if not 'type' in self.entry:
+      if not 'type' in self.rule:
         raise ValueError('No <type> for <purl> %d' % self.count)
-      elif self.entry['type'] == '302':
-        self.entry['rule'] = 'exact'
-        exact.append(self.entry)
-      elif self.entry['type'] == 'partial':
-        self.entry['rule'] = 'prefix'
-        prefix.append(self.entry)
+      elif self.rule['type'] == '302':
+        self.rule['type'] = 'path'
+        path.append(self.rule)
+      elif self.rule['type'] == 'partial':
+        self.rule['type'] = 'prefix'
+        prefix.append(self.rule)
       else:
         raise ValueError('Unknown type "%s" for <purl> %d' %
-            (self.entry['type'], self.count))
+            (self.rule['type'], self.count))
 
 if __name__ == "__main__":
     main()

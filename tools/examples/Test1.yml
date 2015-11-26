@@ -1,0 +1,20 @@
+# PURL configuration for Test1
+
+purl_rules:
+- term_browser: ontobee
+  tests:
+  - path: /obo/Test1_TODO
+    replacement: http://www.ontobee.org/browser/rdf.php?o=Test1&iri=http://purl.obolibrary.org/obo/Test1_TODO
+
+- path: /obo/test1.owl
+  replacement: TODO
+
+- path: /obo/test1.obo
+  replacement: TODO
+
+- path: /obo/test1/project
+  replacement: http://example.org/project.html
+
+- prefix: /obo/test1/branches/
+  replacement: http://example.org/branches/
+

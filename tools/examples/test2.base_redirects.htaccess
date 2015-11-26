@@ -1,3 +1,0 @@
-# Base redirect for TEST2
-RedirectMatch temp "(?i)^/obo/test2$" "http://example.org/test2"
-

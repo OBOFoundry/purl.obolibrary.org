@@ -3,14 +3,14 @@
 purl_rules:
 - term_browser: ontobee
   tests:
-  - path: /obo/Test1_TODO
-    replacement: http://www.ontobee.org/browser/rdf.php?o=Test1&iri=http://purl.obolibrary.org/obo/Test1_TODO
+  - path: /obo/Test1_0000001
+    replacement: http://www.ontobee.org/browser/rdf.php?o=Test1&iri=http://purl.obolibrary.org/obo/Test1_0000001
 
 - path: /obo/test1.owl
-  replacement: TODO
+  replacement: http://www.berkeleybop.org/ontologies/test1.owl
 
 - path: /obo/test1.obo
-  replacement: TODO
+  replacement: http://www.berkeleybop.org/ontologies/test1.obo
 
 - path: /obo/test1/project
   replacement: http://example.org/project.html

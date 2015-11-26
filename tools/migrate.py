@@ -45,14 +45,14 @@ header_template = '''# PURL configuration for {idspace}
 purl_rules:
 - term_browser: ontobee
   tests:
-  - path: /obo/{idspace}_TODO
-    replacement: http://www.ontobee.org/browser/rdf.php?o={idspace}&iri=http://purl.obolibrary.org/obo/{idspace}_TODO
+  - path: /obo/{idspace}_0000001
+    replacement: http://www.ontobee.org/browser/rdf.php?o={idspace}&iri=http://purl.obolibrary.org/obo/{idspace}_0000001
 
 - path: /obo/{lower_idspace}.owl
-  replacement: TODO
+  replacement: http://www.berkeleybop.org/ontologies/{lower_idspace}.owl
 
 - path: /obo/{lower_idspace}.obo
-  replacement: TODO
+  replacement: http://www.berkeleybop.org/ontologies/{lower_idspace}.obo
 
 '''
 rule_template = '''- {type}: {id}
@@ -90,8 +90,6 @@ def main():
   sax.parse(args.xml_file)
 
   rules = path + sorted(prefix, key=lambda k: len(k['id']), reverse=True)
-  if len(rules) == 0:
-    raise ValueError('No rules to migrate')
 
   args.yaml_file.write(header_template.format(**config))
   for rule in rules:
@@ -133,14 +131,8 @@ class OCLCHandler(xml.sax.ContentHandler):
     elif name == 'purl':
       if not 'id' in self.rule:
         raise ValueError('No <id> for <purl> %d' % self.count)
-
       if not 'url' in self.rule:
         raise ValueError('No <url> for <purl> %d' % self.count)
-      if not re.match(r'^(https?|ftp)\:\/\/.+', self.rule['url']):
-        raise ValueError(
-          'In <purl> %d the <url> "%s" is not an absolute HTTP or FTP URL'
-          % (self.count, self.rule['url']))
-
       if not 'type' in self.rule:
         raise ValueError('No <type> for <purl> %d' % self.count)
       elif self.rule['type'] == '302':

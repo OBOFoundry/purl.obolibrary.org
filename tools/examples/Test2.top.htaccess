@@ -4,3 +4,4 @@ RedirectMatch temp "(?i)^/obo/test2\.owl$" "http://example.org/test2.owl"
 RedirectMatch temp "(?i)^/obo/test2\.obo$" "http://example.org/test2.obo"
 RedirectMatch temp "(?i)^/obo/test2$" "http://example.org/project.html"
 RedirectMatch temp "(?i)^/obo/UNSAFE_(\d+)$" "http://example.org/about/Test2_$1"
+

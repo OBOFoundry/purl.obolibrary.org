@@ -5,6 +5,8 @@ junk/
 migrations/
 temp/
 tests/
+tools/.cache/
 tools/.vagrant/
+tools/__pycache__/
 tools/hosts
 www/obo

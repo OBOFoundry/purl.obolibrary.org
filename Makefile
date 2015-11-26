@@ -15,6 +15,7 @@
 # - [kwalify](http://www.kuwata-lab.com/kwalify/) for YAML validation
 # - [Python 3](https://www.python.org/downloads/) to run scripts
 # - [PyYAML](http://pyyaml.org/wiki/PyYAML) for translation to Apache
+# - [pytest](http://pytest.org) for testing scripts
 # - [travis.rb](https://github.com/travis-ci/travis.rb) for Travis-CI
 
 
@@ -118,8 +119,11 @@ temp/obo/%/.htaccess: config/%.yml
 .PHONY: build
 build: $(foreach o,$(ONTOLOGY_IDS),temp/obo/$o/.htaccess)
 build: $(foreach o,$(ONTOLOGY_IDS),temp/top/$o.htaccess)
-	echo '### Generated from project configuration files' > temp/obo/.htaccess
+	cat temp/obo/OBO/.htaccess > temp/obo/.htaccess
 	echo '' >> temp/obo/.htaccess
+	echo '### Generated from project configuration files' >> temp/obo/.htaccess
+	echo '' >> temp/obo/.htaccess
+	rm -f temp/top/OBO.htaccess
 	cat temp/top/*.htaccess >> temp/obo/.htaccess
 	rm -rf temp/obo/obo
 	rm -rf temp/obo/OBO
@@ -189,6 +193,13 @@ tests/examples/%.top.htaccess: tools/examples/%.yml tests/examples
 test-examples: tests/examples/Test1.yml
 test-examples: tests/examples/Test2.project.htaccess
 test-examples: tests/examples/Test2.top.htaccess
+
+.PHONY: test-scripts
+test-scripts:
+	python3 -m pytest tools/translate.py
+
+.PHONY: test-tools
+test-tools: test-scripts test-examples
 
 
 ### Update Repository

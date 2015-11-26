@@ -1,0 +1,18 @@
+# PURL configuration for http://purl.obolibrary.org/obo/
+
+purl_rules:
+
+### Term Overrides
+
+- path: /obo/BFO_0000050
+  replacement: http://www.ontobee.org/browser/rdf.php?o=RO&iri=http://purl.obolibrary.org/obo/BFO_0000050
+
+- path: /obo/BFO_0000051
+  replacement: http://www.ontobee.org/browser/rdf.php?o=RO&iri=http://purl.obolibrary.org/obo/BFO_0000051
+
+- path: /obo/BFO_0000066
+  replacement: http://www.ontobee.org/browser/rdf.php?o=RO&iri=http://purl.obolibrary.org/obo/BFO_0000066
+
+- path: /obo/BFO_0000062
+  replacement: http://www.ontobee.org/browser/rdf.php?o=RO&iri=http://purl.obolibrary.org/obo/BFO_0000062
+

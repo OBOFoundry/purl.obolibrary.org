@@ -10,7 +10,7 @@ purl_rules:
     replacement: http://www.ontobee.org/browser/rdf.php?o=OBI&iri=http://purl.obolibrary.org/obo/OBI_0000070
 
 - path: /obo/obi.owl
-  replacement: /obo/obi/2015-10-20/obi.owl
+  replacement: http://svn.code.sf.net/p/obi/code/releases/2015-10-20/obi.owl
 
 - path: /obo/obi.obo
   replacement: http://www.berkeleybop.org/ontologies/obi.obo

@@ -49,6 +49,9 @@
     - name: Install PyYAML
       pip: name=PyYAML executable=pip3
 
+    - name: Install pytest
+      pip: name=pytest executable=pip3
+
     - name: Clone the Git repo
       when: mode == "production"
       git: repo={{ repo_url }} dest={{ repo_dir }}

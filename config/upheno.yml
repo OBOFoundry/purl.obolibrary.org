@@ -26,7 +26,8 @@ entries:
 
 - prefix: /data/
   replacement: http://build.berkeleybop.org/view/Monarch/job/generate-triples-from-nif/lastSuccessfulBuild/artifact/target/
-  
+- prefix: /imports/
+  replacement: https://raw.githubusercontent.com/obophenotype/upheno/master/imports/
 - prefix: /
   replacement: https://raw.githubusercontent.com/obophenotype/upheno/master/
 

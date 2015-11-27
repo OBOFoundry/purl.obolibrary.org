@@ -17,4 +17,7 @@ entries:
   tests:
   - from: /about/NCBITaxon_1
     to: http://www.ontobee.org/browser/rdf.php?o=NCBITaxon&iri=http://purl.obolibrary.org/obo/NCBITaxon_1
+- prefix: /
+  replacement: http://www.berkeleybop.org/ontologies/ncbitaxon/
+
 

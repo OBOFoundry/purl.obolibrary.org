@@ -1,0 +1,28 @@
+# PURL configuration for http://purl.obolibrary.org/obo/oarcs
+
+idspace: OARCS
+base_url: /obo/oarcs
+
+base_redirect: http://aszool.github.io/oarcs/
+
+products:
+- oarcs.owl: https://github.com/aszool/oarcs/src/ontodflogy/oarcs.owl
+
+term_browser: custom
+
+entries:
+- exact: /wiki
+  replacement: https://github.com/aszool/oarcs/wiki
+
+- exact: /browse
+  replacement: http://www.ontobee.org/browser/index.php?o=OARCS
+
+- prefix: /about/
+  replacement: http://api.hymao.org/api/ontology/ontology_class/
+  tests:
+  - from: /about/HAO_0000000
+    to: http://api.hymao.org/api/ontology/ontology_class/HAO_0000000
+
+- prefix: /
+  replacement: https://github.com/aszool/oarcs/
+

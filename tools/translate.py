@@ -218,14 +218,12 @@ def process_rule(processing_level, idspace, rule):
   # - allow term_browser rules
   # - allow /obo/idspace base redirects
   # - allow /obo/idspace.owl and /obo/idspace.obo paths.
-  # - allow /obo/idspace_ prefixes (for terms)
   if processing_level == 'top':
     if rule_type == 'regex' \
       or rule_type == 'term_browser' \
       or path == base_url \
       or path == base_url + '.owl' \
-      or path == base_url + '.obo' \
-      or prefix == '/obo/%s_' % idspace:
+      or path == base_url + '.obo':
       pass
     else:
       raise ValueError('Invalid top-level rule for IDSPACE "%s":\n%s' % (idspace, rule))
@@ -279,6 +277,10 @@ def test_level_crosstalk():
 def test_top_level_pollution():
   with pytest.raises(ValueError):
     process_rule('top', 'OBI', {'path': '/obo/obi_core.owl', 'replacement': 'foo'})
+
+def test_top_level_prefix():
+  with pytest.raises(ValueError):
+    process_rule('top', 'OBI', {'prefix': '/obo/OBI_', 'replacement': 'foo'})
 
 def test_invalid_level():
   with pytest.raises(ValueError):

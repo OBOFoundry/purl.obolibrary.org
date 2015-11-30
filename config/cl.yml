@@ -65,3 +65,6 @@ entries:
   - from: /about/CL_0000000
     to: http://www.ontobee.org/browser/rdf.php?o=CL&iri=http://purl.obolibrary.org/obo/CL_0000000
 
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/

@@ -19,3 +19,6 @@ entries:
 
 - exact: /dev/ncro/imports.owl
   replacement: http://raw.githubusercontent.com/OmniSearch/ncro/master/src/ontology/imports.owl
+
+- exact: /dev/ncro/chebi-imports.owl
+  replacement: http://raw.githubusercontent.com/OmniSearch/ncro/master/src/ontology/chebi-imports.owl

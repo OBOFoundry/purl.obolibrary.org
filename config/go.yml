@@ -24,6 +24,11 @@ entries:
 - prefix: /experimental/
   replacement: http://geneontology.org/experimental/
 
+## the noctua ontology does not fit in the main GO SVN space, use a Jenkins artefact for now
+## see https://github.com/geneontology/neo/issues/5
+- prefix: /noctua/
+  replacement: https://build.berkeleybop.org/job/build-noctua-entity-ontology/lastSuccessfulBuild/artifact/
+
 - prefix: /releases/
   replacement: http://viewvc.geneontology.org/viewvc/GO-SVN/ontology-releases/
 

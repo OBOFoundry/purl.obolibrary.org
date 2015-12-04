@@ -1,0 +1,16 @@
+# PURL configuration for http://purl.obolibrary.org/obo/omit
+# Maintainer: alanruttenberg
+
+idspace: OMIT
+base_url: /obo/omit
+
+products:
+- omit.owl: http://raw.githubusercontent.com/OmniSearch/omit/master/src/ontology/omit.owl
+
+term_browser: ontobee
+example_terms:
+- OMIT_0000095
+
+entries:
+- prefix: /dev/
+  replacement: http://raw.githubusercontent.com/OmniSearch/omit/master/src/ontology/

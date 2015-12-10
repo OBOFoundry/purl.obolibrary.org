@@ -12,6 +12,8 @@ example_terms:
 - NCBITaxon_1
 
 entries:
+- prefix: /subsets/
+  replacement: http://www.berkeleybop.org/ontologies/ncbitaxon/subsets/
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=NCBITaxon&iri=http://purl.obolibrary.org/obo/
   tests:

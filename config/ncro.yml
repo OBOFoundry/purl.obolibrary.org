@@ -11,11 +11,6 @@ example_terms:
 - NCRO_0000818
 
 entries:
-- exact: /imports.owl
-  replacement: http://raw.githubusercontent.com/OmniSearch/ncro/master/src/ontology/imports.owl
+- prefix: /dev/
+  replacement: http://raw.githubusercontent.com/OmniSearch/ncro/master/src/ontology/
 
-- exact: /dev/ncro.owl
-  replacement: http://raw.githubusercontent.com/OmniSearch/ncro/master/src/ontology/ncro.owl
-
-- exact: /dev/ncro/imports.owl
-  replacement: http://raw.githubusercontent.com/OmniSearch/ncro/master/src/ontology/imports.owl

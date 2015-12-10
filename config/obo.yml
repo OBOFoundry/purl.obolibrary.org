@@ -62,3 +62,11 @@ entries:
     to: http://pir.georgetown.edu/cgi-bin/pro/entry_pro?id=PR_000000001
   - from: /PR_Q9BWV1
     to: http://pir.georgetown.edu/cgi-bin/pro/entry_pro?id=PR_Q9BWV1
+
+
+### OBO Format Specification
+- exact: /oboformat/
+  replacement: http://owlcollab.github.io/oboformat/doc/obo-syntax.html
+
+- exact: /oboformat/spec.html
+  replacement: http://owlcollab.github.io/oboformat/doc/obo-syntax.html

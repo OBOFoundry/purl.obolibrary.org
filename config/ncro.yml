@@ -25,5 +25,11 @@ entries:
 
 # translations for the releases here
 
+# where the source files lives. Note product redirect, however, which is to combined version. Add a new entry for each release.
 - prefix: /2015-12-10/
   replacement: https://raw.githubusercontent.com/OmniSearch/ncro/release-2015-12-10/src/ontology/
+
+# points to the latest version but that still has imports, as top-level ncro.owl is combined. Update each release. For ontobee to know there are imports.
+- exact: /prebuild/ncro.owl
+  replacement: https://raw.githubusercontent.com/OmniSearch/ncro/release-2015-12-10/src/ontology/ncro.owl
+

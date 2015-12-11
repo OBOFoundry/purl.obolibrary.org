@@ -5,7 +5,7 @@ base_url: /obo/ncro
 
 # Current release. This gets updated when there is a new release
 products:
-- ncro.owl: https://raw.githubusercontent.com/OmniSearch/ncro/release-2015-12-10/src/ontology/ncro.owl
+- ncro.owl: https://raw.githubusercontent.com/OmniSearch/ncro/release-2015-12-10/build/ncro-all-in-one.owl
 
 term_browser: ontobee
 example_terms:

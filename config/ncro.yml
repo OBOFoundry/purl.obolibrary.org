@@ -13,4 +13,5 @@ example_terms:
 entries:
 - prefix: /dev/
   replacement: http://raw.githubusercontent.com/OmniSearch/ncro/master/src/ontology/
-
+- prefix: /2015-12-10/
+  replacement: https://raw.githubusercontent.com/OmniSearch/ncro/release-2015-12-10/src/ontology/

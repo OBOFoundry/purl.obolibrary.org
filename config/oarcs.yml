@@ -1,7 +1,7 @@
 # PURL configuration for OArCS 
 
 idspace: OARCS
-base_url: /aszool/oarcs
+base_url: /obo/oarcs
 
 products:
 - oarcs.owl: https://raw.githubusercontent.com/aszool/oarcs/master/src/ontology/oarcs.owl

@@ -4,7 +4,7 @@ idspace: OBI
 base_url: /obo/obi
 
 products:
-- obi.owl: http://svn.code.sf.net/p/obi/code/releases/2015-10-20/obi.owl
+- obi.owl: http://svn.code.sf.net/p/obi/code/releases/2015-12-07/obi.owl
 - obi.obo: http://www.berkeleybop.org/ontologies/obi.obo
 
 term_browser: ontobee
@@ -16,13 +16,13 @@ entries:
 ### Current Releases
 
 - exact: /obi_core.owl
-  replacement: http://svn.code.sf.net/p/obi/code/releases/2015-10-20/obi_core.owl
+  replacement: http://svn.code.sf.net/p/obi/code/releases/2015-12-07/obi_core.owl
 
 - exact: /obi_IEDBview.owl
-  replacement: http://svn.code.sf.net/p/obi/code/releases/2015-10-20/obi_iedb.owl
+  replacement: http://svn.code.sf.net/p/obi/code/releases/2015-12-07/obi_iedb.owl
 
 - exact: /release-notes.html
-  replacement: http://obi-ontology.org/page/Releases/2015-10-20
+  replacement: http://obi-ontology.org/page/Releases/2015-12-07
 
 - exact: /webService.owl
   replacement: https://raw.githubusercontent.com/obi-webservice/OBIws/master/ontology/release/v1.1/webService.owl
@@ -131,6 +131,12 @@ entries:
 
 - exact: /2015-10-20/obi_core.owl
   replacement: http://svn.code.sf.net/p/obi/code/releases/2015-10-20/obi_core.owl
+
+- exact: /2015-12-07/obi.owl
+  replacement: http://svn.code.sf.net/p/obi/code/releases/2015-12-07/obi.owl
+
+- exact: /2015-12-07/obi_core.owl
+  replacement: http://svn.code.sf.net/p/obi/code/releases/2015-12-07/obi_core.owl
 
 ### Web Service Releases
 

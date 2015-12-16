@@ -15,6 +15,9 @@ entries:
 - exact: /termgenie
   replacement: http://to.termgenie.org
 
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/Planteome/plant-trait-ontology/v
+
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=TO&iri=http://purl.obolibrary.org/obo/
   tests:

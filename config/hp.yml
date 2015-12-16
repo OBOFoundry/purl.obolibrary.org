@@ -4,8 +4,8 @@ idspace: HP
 base_url: /obo/hp
 
 products:
-- hp.owl: http://compbio.charite.de/hudson/job/hpo/lastStableBuild/artifact/hp/hp.owl
-- hp.obo: http://compbio.charite.de/hudson/job/hpo/lastStableBuild/artifact/hp/hp.obo
+- hp.owl: https://compbio.charite.de/jenkins/job/hpo/lastStableBuild/artifact/hp/hp.owl
+- hp.obo: https://compbio.charite.de/jenkins/job/hpo/lastStableBuild/artifact/hp/hp.obo
 
 term_browser: ontobee
 example_terms:

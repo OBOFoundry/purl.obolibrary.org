@@ -1,0 +1,12 @@
+# PURL configuration for http://purl.obolibrary.org/obo/micro
+
+idspace: MICRO
+base_url: /obo/micro
+
+products:
+- micro.owl: https://raw.githubusercontent.com/carrineblank/MicrO/master/MicrOandImportModules/MicrO.owl
+
+term_browser: ontobee
+
+example_terms:
+- MICRO_0000000

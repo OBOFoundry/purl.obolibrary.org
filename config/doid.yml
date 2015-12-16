@@ -3,6 +3,8 @@
 idspace: DOID
 base_url: /obo/doid
 
+base_redirect: https://github.com/DiseaseOntology/HumanDiseaseOntology/tree/master/
+
 products:
 - doid.owl: http://www.berkeleybop.org/ontologies/doid.owl
 - doid.obo: http://www.berkeleybop.org/ontologies/doid.obo

@@ -4,7 +4,7 @@ idspace: PCO
 base_url: /obo/pco
 
 products:
-- pco.owl: http://popcomm-ontology.googlecode.com/svn/releases/2014-05-22/pco_merged_inferred.owl
+- pco.owl: https://raw.githubusercontent.com/PopulationAndCommunityOntology/pco/2014-05-22/pco_merged_inferred.owl
 
 term_browser: ontobee
 example_terms:

@@ -1,0 +1,16 @@
+# PURL configuration for http://purl.obolibrary.org/obo/xao
+
+idspace: XAO
+base_url: /obo/xao
+
+products:
+- xap.owl: http://www.berkeleybop.org/ontologies/xao.owl
+- xap.obo: http://www.berkeleybop.org/ontologies/xao.obo
+
+term_browser: ontobee
+example_terms:
+
+entries:
+- prefix: /tracker/
+  replacement: https://sourceforge.net/tracker/?func=detail&group_id=76834&atid=1127722&aid=
+

@@ -19,7 +19,7 @@ entries:
   replacement: http://purl.obolibrary.org/obo/envo/mappings/spire-mapping.tsv
 
 - prefix: /releases/
-  replacement: https://raw.githubusercontent.com/EnvironmentOntology/envo/master/releases/
+  replacement: https://raw.githubusercontent.com/EnvironmentOntology/envo/master/v
 
 - prefix: /mappings/
   replacement: https://raw.githubusercontent.com/EnvironmentOntology/envo/master/mappings/

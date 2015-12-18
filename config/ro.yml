@@ -15,6 +15,9 @@ example_terms:
 - RO_0001000
 
 entries:
+- exact: /docs/causal-relations
+  replacement: https://docs.google.com/document/d/1WxocTXZaGVhEV1n7NB86pCF3SUcBJh8bq4vQrVCkjSU/edit#
+
 - exact: /ro-idranges.owl
   replacement: https://obo-relations.googlecode.com/svn/trunk/src/ontology/ro-idranges.owl
 

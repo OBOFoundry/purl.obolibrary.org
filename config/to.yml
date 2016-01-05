@@ -18,6 +18,15 @@ entries:
 - prefix: /releases/
   replacement: https://raw.githubusercontent.com/Planteome/plant-trait-ontology/v
 
+- prefix: /ibp-cassava-traits/
+  replacement: https://raw.githubusercontent.com/Planteome/ibp-cassava-traits/master/
+
+- prefix: /ibp-lentil-traits/
+  replacement: https://raw.githubusercontent.com/Planteome/ibp-lentil-traits/master/
+
+- prefix: /ibp-rice-traits/
+  replacement: https://raw.githubusercontent.com/Planteome/ibp-rice-traits/master/
+
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=TO&iri=http://purl.obolibrary.org/obo/
   tests:

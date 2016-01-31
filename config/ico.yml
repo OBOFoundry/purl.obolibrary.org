@@ -4,7 +4,7 @@ idspace: ICO
 base_url: /obo/ico
 
 products:
-- ico.owl: http://ico-ontology.googlecode.com/svn/trunk/src/ontology/ico_merged.owl
+- ico.owl: https://raw.githubusercontent.com/ICO-ontology/ICO/master/src/ontology/ico_merged.owl
 
 term_browser: ontobee
 example_terms:

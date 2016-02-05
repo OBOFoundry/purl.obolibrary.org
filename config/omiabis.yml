@@ -68,7 +68,7 @@ entries:
 - exact: /omiabis.owl
   replacement: https://raw.githubusercontent.com/OMIABIS/omiabis-dev/master/BFO2%20omiabis/omiabis.owl
   
-- exact: /merged/omiabis
+- exact: /merged/omiabis.owl
   replacement: https://raw.githubusercontent.com/OMIABIS/omiabis-dev/master/BFO2%20omiabis/omiabis_merged.owl
 
 - exact: /

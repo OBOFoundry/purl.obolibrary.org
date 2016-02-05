@@ -9,7 +9,8 @@ This repository provides a new way to manage OBO Foundry PURLs. Like <https://gi
 
 ## Status
 
-All http://purl.obolibrary.org/obo/ PURLs are now handled by this system.
+All http://purl.obolibrary.org/obo/ PURLs are now handled by this system, with the exception of some [open issues](https://github.com/OBOFoundry/purl.obolibrary.org/issues).
+
 
 ## Adding and Updating PURLs
 

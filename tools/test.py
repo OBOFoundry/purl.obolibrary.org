@@ -7,6 +7,7 @@
 # NOTE: Currently only tests `example_terms` when `term_browser: ontobee`.
 
 import argparse, sys, yaml, http.client, time
+from urllib.parse import unquote
 
 
 # Parse command line arguments,
@@ -216,8 +217,8 @@ def run_test(conn, test):
   else:
     location.replace('&amp;', '&')
 
-  expected = [test['status'], test['replacement']]
-  actual = [str(response.status), location]
+  expected = [test['status'], unquote(test['replacement'])]
+  actual = [str(response.status), unquote(location)]
   result = 'FAIL'
   if actual == expected:
     result = 'PASS'

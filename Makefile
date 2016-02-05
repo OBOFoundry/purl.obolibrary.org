@@ -119,6 +119,12 @@ temp/obo/%/.htaccess: config/%.yml
 	| xargs -t ln -s
 	rm -f temp/obo/$*/$*
 
+backup/:
+	mkdir $@
+
+# Get name of a dated-backup directory, in a portable way.
+BACKUP = backup/obo-$(shell python -c "import time,os;print(time.strftime('%Y%m%d-%H%M%S',time.gmtime(os.path.getmtime('www/obo'))))")
+
 # Convert all YAML configuration files to .htaccess
 # and move the special `obo` .htaccess file.
 # Generate .htaccess files for all YAML configuration files.
@@ -127,6 +133,7 @@ build: $(foreach o,$(ONTOLOGY_IDS),temp/obo/$o/.htaccess)
 build: $(foreach o,$(ONTOLOGY_IDS),temp/base_redirects/$o.htaccess)
 build: $(foreach o,$(ONTOLOGY_IDS),temp/products/$o.htaccess)
 build: $(foreach o,$(ONTOLOGY_IDS),temp/terms/$o.htaccess)
+build: | backup/
 	cat temp/obo/obo/.htaccess > temp/obo/.htaccess
 	echo '' >> temp/obo/.htaccess
 	echo '### Generated from project configuration files' >> temp/obo/.htaccess
@@ -136,7 +143,7 @@ build: $(foreach o,$(ONTOLOGY_IDS),temp/terms/$o.htaccess)
 	cat temp/terms/*.htaccess >> temp/obo/.htaccess
 	rm -rf temp/obo/obo
 	rm -rf temp/obo/OBO
-	rm -rf www/obo
+	-test -e www/obo && mv www/obo $(BACKUP)
 	mv temp/obo www/obo
 
 

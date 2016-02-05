@@ -2,21 +2,15 @@
 
 [![Build Status](https://travis-ci.org/OBOFoundry/purl.obolibrary.org.svg)](https://travis-ci.org/OBOFoundry/purl.obolibrary.org)
 
-The OBO community is transitioning away from [PURL.org](http://purl.org) for managing Persistent URLs.
+The OBO community has transitioned away from [PURL.org](http://purl.org) for managing Persistent URLs.
 
 This repository provides a new way to manage OBO Foundry PURLs. Like <https://github.com/perma-id/w3id.org> we use per-directory Apache configuration files (`.htaccess` files), each of which uses `RedirectMatch` directives to redirect PURL requests to their proper targets. Unlike w3id.org, we do not edit the Apache configuration files by hand. Instead we have a simple YAML configuration format, and scripts to translate the YAML configuration into Apache configuration. The YAML files are easier to read and write, and allow us to validate and test PURLs automatically.
 
 
-## Transition
+## Status
 
-The new system is not yet handling http://purl.obolibrary.org/obo/ PURLs, but is available for testing: see the next section.
+All http://purl.obolibrary.org/obo/ PURLs are now handled by this system, with the exception of some [open issues](https://github.com/OBOFoundry/purl.obolibrary.org/issues).
 
-During the transition period, both the new system and the old system will be used:
-
-1. The new system will try to match and handle every request. This allows us to update our PURLs and add new ones using the new system.
-2. If the new system cannot match a request, it will redirect to the old system, and the old system will handle the request. This provides a safety net.
-
-The new system will log requests that it cannot match. We will review these logs and update the new system as required.
 
 ## Adding and Updating PURLs
 

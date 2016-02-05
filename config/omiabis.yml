@@ -1,0 +1,72 @@
+# PURL configuration for http://purl.obolibrary.org/obo/omiabis
+
+idspace: OMIABIS
+base_url: /obo/omiabis
+
+products:
+- omiabis.owl: https://raw.githubusercontent.com/OMIABIS/omiabis-dev/master/BFO2%20omiabis/omiabis.owl
+
+term_browser: ontobee
+example_terms:
+- OMIABIS_0000001
+
+entries:
+- exact: /alice.owl
+  replacement: http://omiabis-dev.googlecode.com/svn/branches/AliceOntology.owl
+
+- exact: /dev/omiabis.owl
+  replacement: https://raw.githubusercontent.com/OMIABIS/omiabis-dev/master/omiabis.owl
+
+- exact: /competencytest/omiabis.owl
+  replacement: https://raw.githubusercontent.com/OMIABIS/omiabis-dev/master/CompetencyTest.owl
+
+- exact: /biobank-omiabis/externalByhand.owl
+  replacement: https://raw.githubusercontent.com/OMIABIS/omiabis-dev/master/biobank-omiabis/externalByhand.owl
+
+- exact: /biobank-omiabis/import_OBI_subset.owl
+  replacement: https://raw.githubusercontent.com/OMIABIS/omiabis-dev/master/biobank-omiabis/import_OBI_subset.owl
+
+- exact: /biobank-omiabis/import_OBO.owl
+  replacement: https://raw.githubusercontent.com/OMIABIS/omiabis-dev/master/biobank-omiabis/import_OBO.owl
+
+- exact: /2013-06-03/omiabis.owl
+  replacement: https://raw.githubusercontent.com/OMIABIS/omiabis-dev/2013-06-03/omiabis.owl
+
+- exact: /2013-03-27/omiabis.owl
+  replacement: https://raw.githubusercontent.com/OMIABIS/omiabis-dev/2013-03-27/omiabis.owl
+
+- exact: /2013-03-25/omiabis.owl
+  replacement: https://raw.githubusercontent.com/OMIABIS/omiabis-dev/2013-03-25/omiabis.owl
+
+- exact: /2013-03-24/omiabis.owl
+  replacement: https://raw.githubusercontent.com/OMIABIS/omiabis-dev/2013-03-24/omiabis.owl
+
+- exact: /2013-03-18/omiabis.owl
+  replacement: https://raw.githubusercontent.com/OMIABIS/omiabis-dev/2013-03-18/omiabis.owl
+
+- exact: /2012-12-12/omiabis.owl
+  replacement: https://raw.githubusercontent.com/OMIABIS/omiabis-dev/2012-12-12/omiabis.owl
+
+- exact: /2012-12-18/omiabis.owl
+  replacement: https://raw.githubusercontent.com/OMIABIS/omiabis-dev/2012-12-18/omiabis.owl
+
+- exact: /2012-12-04/omiabis.owl
+  replacement: https://raw.githubusercontent.com/OMIABIS/omiabis-dev/2012-12-04/omiabis.owl
+
+- exact: /2012-08-04/omiabis.owl
+  replacement: https://raw.githubusercontent.com/OMIABIS/omiabis-dev/2012-08-04/omiabis.owl
+
+- exact: /2012-09-14/omiabis.owl
+  replacement: https://raw.githubusercontent.com/OMIABIS/omiabis-dev/2012-09-14/omiabis.owl
+
+- exact: /2012-07-26/omiabis.owl
+  replacement: https://raw.githubusercontent.com/OMIABIS/omiabis-dev/2012-07-26/omiabis.owl
+
+- exact: /2014-05-28/omiabis.owl
+  replacement: https://raw.githubusercontent.com/OMIABIS/omiabis-dev/2014-05-28/omiabis.owl
+
+- exact: /
+  replacement: https://github.com/OMIABIS/omiabis-dev
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/browser/rdf.php?o=OMIABIS&iri=http://purl.obolibrary.org/obo/

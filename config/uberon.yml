@@ -3,7 +3,7 @@
 idspace: UBERON
 base_url: /obo/uberon
 
-base_redirect: http://uberon.github.io/
+base_redirect: http://uberon.org
 
 products:
 - uberon.owl: http://berkeleybop.org/ontologies/uberon.owl

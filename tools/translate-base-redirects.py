@@ -9,6 +9,7 @@
 # then no output is generated.
 
 import argparse, sys, yaml, re
+from urllib.parse import unquote
 
 header_template = '''# Base redirect for %s
 '''
@@ -41,11 +42,12 @@ def main():
   if not 'base_url' in document \
       or type(document['base_url']) is not str:
     raise ValueError('YAML document must contain "base_url" string')
-  base_url = document['base_url']
 
   if 'base_redirect' in document and type(document['base_redirect']) is str:
+    base_url = unquote(document['base_url'])
+    base_redirect = unquote(document['base_redirect'])
     args.htaccess_file.write(header_template % idspace)
-    directive = 'RedirectMatch temp "(?i)^%s$" "%s"' % (base_url, document['base_redirect'])
+    directive = 'RedirectMatch temp "(?i)^%s$" "%s"' % (base_url, base_redirect)
     args.htaccess_file.write(directive + '\n\n')
 
 

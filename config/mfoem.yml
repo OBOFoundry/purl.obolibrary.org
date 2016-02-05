@@ -4,7 +4,7 @@ idspace: MFOEM
 base_url: /obo/mfoem
 
 products:
-- mfoem.owl: http://emotion-ontology.googlecode.com/svn/trunk/ontology/MFOEM.owl
+- mfoem.owl: https://raw.githubusercontent.com/jannahastings/emotion-ontology/master/ontology/MFOEM.owl
 
 term_browser: ontobee
 example_terms:
@@ -12,16 +12,16 @@ example_terms:
 
 entries:
 - exact: /internal/neuroanno-gen.owl
-  replacement: http://emotion-ontology.googlecode.com/svn/trunk/ontology/internal/neuroanno-gen.owl
+  replacement: https://raw.githubusercontent.com/jannahastings/emotion-ontology/master/ontology/internal/neuroanno-gen.owl
 
 - exact: /external/PATO_imported.owl
-  replacement: http://emotion-ontology.googlecode.com/svn/trunk/ontology/external/PATO_imported.owl
+  replacement: https://raw.githubusercontent.com/jannahastings/emotion-ontology/master/ontology/external/PATO_imported.owl
 
 - exact: /internal/neuroanno.owl
-  replacement: http://emotion-ontology.googlecode.com/svn/trunk/ontology/internal/neuroanno.owl
+  replacement: https://raw.githubusercontent.com/jannahastings/emotion-ontology/master/ontology/internal/neuroanno.owl
 
 - exact: /internal/em-cogpo-mapping.owl
-  replacement: http://emotion-ontology.googlecode.com/svn/trunk/ontology/internal/em-cogpo-mapping.owl
+  replacement: https://raw.githubusercontent.com/jannahastings/emotion-ontology/master/ontology/internal/em-cogpo-mapping.owl
 
 - exact: /internal/em-cogatlas-mapping.owl
-  replacement: http://emotion-ontology.googlecode.com/svn/trunk/ontology/internal/em-cogatlas-mapping.owl
+  replacement: https://raw.githubusercontent.com/jannahastings/emotion-ontology/master/ontology/internal/em-cogatlas-mapping.owl

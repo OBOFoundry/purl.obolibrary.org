@@ -1,0 +1,20 @@
+# PURL configuration for http://purl.obolibrary.org/obo/mro
+
+idspace: MRO
+base_url: /obo/mro
+
+base_redirect: https://github.com/IEDB/MRO
+
+products:
+- mro.owl: https://raw.githubusercontent.com/IEDB/MRO/v2016-01-07/mro.owl
+
+term_browser: ontobee
+example_terms:
+- MRO_0000012
+
+entries:
+- exact: /2016-01-07/mro.owl
+  replacement: https://raw.githubusercontent.com/IEDB/MRO/v2016-01-07/mro.owl
+
+- prefix: /
+  replacement: https://github.com/IEDB/MRO

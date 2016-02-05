@@ -1,6 +1,6 @@
 # OBO PURLs
 
-[![Build Status](https://travis-ci.org/OBOFoundry/purl.obolibrary.org.svg)](https://travis-ci.org/OBOFoundry/purl.obolibrary.org)
+[![Build Status](https://travis-ci.org/OBOFoundry/purl.obolibrary.org.svg?branch=master)](https://travis-ci.org/OBOFoundry/purl.obolibrary.org)
 
 The OBO community has transitioned away from [PURL.org](http://purl.org) for managing Persistent URLs.
 

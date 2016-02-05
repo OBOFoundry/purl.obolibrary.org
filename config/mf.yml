@@ -23,9 +23,6 @@ entries:
 - exact: /external/ontology-metadata-slim.owl
   replacement: https://raw.githubusercontent.com/jannahastings/mental-functioning-ontology/master/ontology/external/ontology-metadata-slim.owl
 
-- exact: /external/bfo-properties-slim.owl
-  replacement: https://raw.githubusercontent.com/jannahastings/mental-functioning-ontology/master/ontology/external/bfo-properties-slim.owl
-
 - exact: /external/behavior-slim.owl
   replacement: https://raw.githubusercontent.com/jannahastings/mental-functioning-ontology/master/ontology/external/behavior-slim.owl
 

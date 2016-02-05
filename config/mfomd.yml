@@ -1,0 +1,15 @@
+# PURL configuration for http://purl.obolibrary.org/obo/mfomd
+
+idspace: MFOMD
+base_url: /obo/mfomd
+
+products:
+- mfomd.owl: https://raw.githubusercontent.com/jannahastings/mental-functioning-ontology/master/ontology/MFOMD.owl
+
+term_browser: ontobee
+example_terms:
+- MFOMD_0000003
+
+entries:
+- exact: /external/doid-slim.owl
+  replacement: https://raw.githubusercontent.com/jannahastings/mental-functioning-ontology/master/ontology/external/doid-slim.owl

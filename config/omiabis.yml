@@ -4,7 +4,7 @@ idspace: OMIABIS
 base_url: /obo/omiabis
 
 products:
-- omiabis.owl: https://raw.githubusercontent.com/OMIABIS/omiabis-dev/master/BFO2%20omiabis/omiabis.owl
+- omiabis.owl: https://raw.githubusercontent.com/OMIABIS/omiabis-dev/master/BFO2 omiabis/omiabis.owl
 
 term_browser: ontobee
 example_terms:

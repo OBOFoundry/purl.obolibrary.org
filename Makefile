@@ -143,7 +143,7 @@ build: | backup/
 	cat temp/terms/*.htaccess >> temp/obo/.htaccess
 	rm -rf temp/obo/obo
 	rm -rf temp/obo/OBO
-	test -e www/obo && mv www/obo $(BACKUP)
+	-test -e www/obo && mv www/obo $(BACKUP)
 	mv temp/obo www/obo
 
 

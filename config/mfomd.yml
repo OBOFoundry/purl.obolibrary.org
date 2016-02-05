@@ -4,7 +4,7 @@ idspace: MFOMD
 base_url: /obo/mfomd
 
 products:
-- mfomd.owl: http://raw.githubusercontent.com/jannahastings/mental-functioning-ontology/master/ontology/MFOMD.owl
+- mfomd.owl: https://raw.githubusercontent.com/jannahastings/mental-functioning-ontology/master/ontology/MFOMD.owl
 
 term_browser: ontobee
 example_terms:
@@ -12,4 +12,4 @@ example_terms:
 
 entries:
 - exact: /external/doid-slim.owl
-  replacement: http://raw.githubusercontent.com/jannahastings/mental-functioning-ontology/master/ontology/external/doid-slim.owl
+  replacement: https://raw.githubusercontent.com/jannahastings/mental-functioning-ontology/master/ontology/external/doid-slim.owl

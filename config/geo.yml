@@ -46,3 +46,7 @@ entries:
 
 - exact: /bfo2/geo.owl
   replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/bfo2/geo.owl
+
+- exact: /dev/us-basic-geography.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-basic-geography.owl
+  

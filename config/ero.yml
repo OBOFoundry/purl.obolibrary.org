@@ -4,8 +4,7 @@ idspace: ERO
 base_url: /obo/ero
 
 products:
-- ero.owl: http://eagle-i.googlecode.com/svn/releases/2013-08-02/ero.owl
-- ero.obo: http://eagle-i.googlecode.com/svn/releases/2013-08-02/ero.obo
+- ero.owl: https://www.eagle-i.net/ero/latest/ero.owl
 
 term_browser: ontobee
 example_terms:

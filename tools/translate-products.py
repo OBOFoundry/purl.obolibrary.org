@@ -10,6 +10,7 @@
 # If no products are found, no output is generated.
 
 import argparse, sys, yaml, re
+from urllib.parse import unquote
 
 header_template = '''# Products for %s
 '''
@@ -53,8 +54,8 @@ def process_product(i, product):
   ensure that the entry is valid,
   and return an Apache RedirectMatch directive string."""
   for key in product:
-    source = '(?i)^/obo/%s$' % key
-    replacement = product[key]
+    source = unquote('(?i)^/obo/%s$' % key)
+    replacement = unquote(product[key])
 
     return 'RedirectMatch temp "%s" "%s"' % (source, replacement)
 

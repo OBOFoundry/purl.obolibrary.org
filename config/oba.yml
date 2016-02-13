@@ -5,7 +5,7 @@ base_url: /obo/oba
 
 products:
 - oba.owl: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/oba.owl
-- oba.owl: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/oba.obo
+- oba.obo: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/oba.obo
 
 term_browser: ontobee
 example_terms:

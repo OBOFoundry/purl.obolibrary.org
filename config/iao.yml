@@ -151,6 +151,9 @@ entries:
 
 - exact: /d-acts/2013-11-27/d-acts.owl
   replacement: https://raw.githubusercontent.com/d-acts/d-acts/2013-11-27/d-acts.owl
+  
+- exact: /d-acts/2016-02-16/d-acts.owl
+  replacement: https://raw.githubusercontent.com/d-acts/d-acts/master/d-acts_revFeb2016.owl
 
 - exact: /pno/2014-05-03/pno.owl
   replacement: https://raw.githubusercontent.com/ProperNameOntology/proper-name-ontology/2014-03-05/pno.owl

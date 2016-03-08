@@ -14,7 +14,7 @@ term_browser: custom
 
 entries:
 - prefix: /about/
-  replacement: http://pir.georgetown.edu/cgi-bin/pro/entry_pro?id=
+  replacement: http://research.bioinformatics.udel.edu/pro/entry/
   tests:
   - from: /about/PR_000000001
-    to: http://pir.georgetown.edu/cgi-bin/pro/entry_pro?id=PR_000000001
+    to: http://research.bioinformatics.udel.edu/pro/entry/PR_000000001

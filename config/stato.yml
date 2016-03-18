@@ -4,7 +4,7 @@ idspace: STATO
 base_url: /obo/stato
 
 products:
-- stato.owl: https://raw.githubusercontent.com/ISA-tools/stato/dev/releases/1.2/stato.owl
+- stato.owl: https://raw.githubusercontent.com/ISA-tools/stato/dev/releases/latest_release/stato.owl
 
 term_browser: ontobee
 example_terms:

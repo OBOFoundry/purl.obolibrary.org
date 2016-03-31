@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/taxrank
+
+idspace: TAXRANK
+base_url: /obo/taxrank
+
+products:
+- taxrank.owl: https://raw.githubusercontent.com/phenoscape/master/taxrank.owl
+- taxrank.obo: https://raw.githubusercontent.com/phenoscape/master/taxrank.obo
+
+term_browser: ontobee
+example_terms:
+- TAXRANK_0000006
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/phenoscape/taxrank/v
+
+- prefix: /tracker/
+  replacement: https://github.com/phenoscape/taxrank/issues/
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/browser/rdf.php?o=TAXRANK&iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/phenoscape/taxrank/master/

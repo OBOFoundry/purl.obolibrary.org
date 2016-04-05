@@ -178,6 +178,9 @@ entries:
 
 - exact: /d-acts/20150915/d-acts.owl
   replacement: https://raw.githubusercontent.com/d-acts/d-acts/master/releases/20150915/d-acts.owl
+  
+- exact: /d-acts/20151202/d-acts.owl
+  replacement: https://raw.githubusercontent.com/d-acts/d-acts/2015-12-02/d-acts.owl
 
 - prefix: /bfo2-transitional/
   replacement: http://information-artifact-ontology.googlecode.com/svn/branches/2014-06-13/ontology/

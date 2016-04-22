@@ -168,10 +168,10 @@ entries:
   replacement: https://raw.githubusercontent.com/d-acts/d-acts/master/d-acts_legacy.owl
 
 - exact: /d-acts/dev/d-acts.owl
-  replacement: https://raw.githubusercontent.com/d-acts/d-acts/2016-04-07/d-acts.owl
+  replacement: https://raw.githubusercontent.com/d-acts/d-acts/2016-04-22/d-acts.owl
 
 - exact: /d-acts.owl
-  replacement: https://raw.githubusercontent.com/d-acts/d-acts/2016-04-07/d-acts.owl
+  replacement: https://raw.githubusercontent.com/d-acts/d-acts/2016-04-22/d-acts.owl
 
 - exact: /d-acts/20150916/d-acts.owl
   replacement: https://raw.githubusercontent.com/d-acts/d-acts/master/releases/20150916/d-acts.owl

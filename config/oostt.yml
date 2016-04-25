@@ -4,7 +4,7 @@ idspace: OOSTT
 base_url: /obo/oostt
 
 products:
-- oostt.owl: https://raw.githubusercontent.com/OOSTT/OOSTT/master/oostt.owl
+- oostt.owl: https://raw.githubusercontent.com/OOSTT/OOSTT/2015-10-16/releases/oostt.owl
 
 term_browser: ontobee
 example_terms:

@@ -13,3 +13,9 @@ example_terms:
 entries:
 - exact: /2015-10-16/oostt.owl
   replacement: https://raw.githubusercontent.com/OOSTT/OOSTT/2015-10-16/releases/oostt.owl
+  
+- exact: /oostt.owl
+  replacement: https://raw.githubusercontent.com/OOSTT/OOSTT/2015-10-16/releases/oostt.owl
+
+- exact: /dev/oostt.owl
+  replacement: https://raw.githubusercontent.com/OOSTT/OOSTT/2015-10-16/releases/oostt.owl

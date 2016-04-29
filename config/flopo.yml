@@ -1,0 +1,18 @@
+# PURL configuration for http://purl.obolibrary.org/obo/fma
+
+idspace: FLOPO
+base_url: /obo/flopo
+
+products:
+- flopo.owl: http://www.berkeleybop.org/ontologies/flopo.owl
+
+term_browser: custom
+
+entries:
+- regex: ^/obo/FLOPO_(\d+)$
+  replacement: http://aber-owl.net/ontology/FLOPO#!http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FFLOPO_$1
+  status: see other
+  tests:
+  - from: /FLOPO_0000000
+    to: http://aber-owl.net/ontology/FLOPO#!http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FFLOPO_0000000
+    

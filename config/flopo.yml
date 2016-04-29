@@ -4,7 +4,7 @@ idspace: FLOPO
 base_url: /obo/flopo
 
 products:
-- flopo.owl: http://www.berkeleybop.org/ontologies/flopo.owl
+- flopo.owl: https://github.com/flora-phenotype-ontology/flopoontology/raw/master/ontology/flopo.owl
 
 term_browser: custom
 

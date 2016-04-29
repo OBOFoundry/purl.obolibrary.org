@@ -24,6 +24,9 @@ entries:
 - exact: /zp.owl
   replacement: http://compbio.charite.de/hudson/job/zp-owl/lastSuccessfulBuild/artifact/zp.owl
 
+- prefix: /mondo/gard/
+  replacement: https://raw.githubusercontent.com/monarch-initiative/monarch-disease-ontology/master/src/gard/
+
 - prefix: /data/
   replacement: http://build.berkeleybop.org/view/Monarch/job/generate-triples-from-nif/lastSuccessfulBuild/artifact/target/
 - prefix: /imports/

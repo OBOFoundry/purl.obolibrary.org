@@ -7,9 +7,3 @@ products:
 - flopo.owl: https://github.com/flora-phenotype-ontology/flopoontology/raw/master/ontology/flopo.owl
 
 term_browser: custom
-
-entries:
-- regex: ^/obo/FLOPO_(\d+)$
-  replacement: http://aber-owl.net/ontology/FLOPO#!http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FFLOPO_$1
-  status: see other
-

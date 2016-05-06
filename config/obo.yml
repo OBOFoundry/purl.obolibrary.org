@@ -44,6 +44,14 @@ entries:
   - from: /CHEBI_15377
     to: http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15377
 
+# Term redirects for FLOPO
+- regex: ^/obo/FLOPO_(\d+)$
+  replacement: http://aber-owl.net/ontology/FLOPO#!http://purl.obolibrary.org/obo/FLOPO_$1
+  status: see other
+  tests:
+  - from: /FLOPO_0000000
+    to: http://aber-owl.net/ontology/FLOPO#!http://purl.obolibrary.org/obo/FLOPO_0000000
+
 # Term redirects for HAO
 - regex: ^/obo/HAO_(\d+)$
   replacement: http://api.hymao.org/api/ontology/ontology_class/HAO_$1

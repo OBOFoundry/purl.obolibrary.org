@@ -13,3 +13,6 @@ example_terms:
 entries:
 - exact: /iswcTest/dideo.owl
   replacement: https://raw.githubusercontent.com/DIDEO/DIDEO/master/Dideo_ISWC_Test.owl
+  
+- exact: /2016-05-12/dideo.owl
+  replacement: https://raw.githubusercontent.com/DIDEO/DIDEO/2016-05-12/dideo.owl

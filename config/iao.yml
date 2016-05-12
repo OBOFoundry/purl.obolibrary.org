@@ -15,73 +15,73 @@ example_terms:
 
 entries:
 - exact: /2008-11-24/ontology-metadata.owl
-  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/tags/2008-11-24/ontology-metadata.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/2008-11-24/ontology-metadata.owl
 
 - exact: /2009-07-15/ontology-metadata.owl
-  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/tags/2009-07-15/ontology-metadata.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/2009-07-15/ontology-metadata.owl
 
 - exact: /2009-01-23/ontology-metadata.owl
-  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/tags/2009-01-23/ontology-metadata.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/2009-01-23/ontology-metadata.owl
 
 - exact: /dev/examples.owl
-  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/trunk/src/ontology/iao-examples.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/src/ontology/iao-examples.owl
 
 - exact: /tracker
   replacement: https://github.com/information-artifact-ontology/IAO/issues
 
 - exact: /2009-07-15/obsolete.owl
-  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/tags/2009-07-15/obsolete.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/2009-07-15/obsolete.owl
 
 - exact: /dev/iao-dev.owl
-  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/trunk/src/ontology/iao-dev.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/src/ontology/iao-dev.owl
 
 - exact: /2009-03-17/iao.owl
-  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/tags/2009-03-17/IAO.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/2009-03-17/IAO.owl
 
 - exact: /dev/owl2bits.owl
-  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/trunk/src/ontology/iao-owl2.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/src/ontology/iao-owl2.owl
 
 - exact: /dev/iao.owl
-  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/trunk/src/ontology/IAO.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/src/ontology/IAO.owl
 
 - exact: /2009-03-17/ontology-metadata.owl
-  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/tags/2009-03-17/ontology-metadata.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/2009-03-17/ontology-metadata.owl
 
 - exact: /dev/obsolete.owl
-  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/trunk/src/ontology/obsolete.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/src/ontology/obsolete.owl
 
 - exact: /dev/ontology-metadata.owl
-  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/trunk/src/ontology/ontology-metadata.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/src/ontology/ontology-metadata.owl
 
 - exact: /2009-07-15/iao/iao.owl
-  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/tags/2009-07-15/IAO.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/2009-07-15/IAO.owl
 
 - exact: /2008-11-24/iao.owl
-  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/tags/2008-11-24/iao.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/2008-11-24/iao.owl
 
 - exact: /2009-07-15/iao.owl
-  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/tags/2009-07-15/IAO.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/2009-07-15/IAO.owl
 
 - exact: /2009-01-23/iao.owl
-  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/tags/2009-01-23/iao.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/2009-01-23/iao.owl
 
 - exact: /dev/external.owl
-  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/trunk/src/ontology/external.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/src/ontology/external.owl
 
 - exact: /dev/externalDerived.owl
-  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/trunk/src/ontology/externalDerived.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/src/ontology/externalDerived.owl
 
 - exact: /dev/iao-main.owl
-  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/trunk/src/ontology/iao-main.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/src/ontology/iao-main.owl
 
 - exact: /obsolete.owl
   replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2009-11-06/merged/obsolete.owl
 
 - exact: /dev/externalByHand.owl
-  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/trunk/src/ontology/externalByHand.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/src/ontology/externalByHand.owl
 
 - exact: /example/community-label.owl
-  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/trunk/src/example/community-label.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/src/example/community-label.owl
 
 - exact: /reports
   replacement: https://github.com/information-artifact-ontology/IAO/tree/master/docs
@@ -186,7 +186,7 @@ entries:
   replacement: https://raw.githubusercontent.com/d-acts/d-acts/2015-12-02/d-acts.owl
 
 - prefix: /bfo2-transitional/
-  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/branches/2014-06-13/ontology/
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/tree/2014-06-13/ontology/
 
 - prefix: /2009-11-02/
   replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2009-11-02/merged/
@@ -213,4 +213,4 @@ entries:
     to: http://www.ontobee.org/browser/rdf.php?o=IAO&iri=http://purl.obolibrary.org/obo/IAO_0000030
 
 - prefix: /dev/
-  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/trunk/src/ontology/
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/src/ontology/

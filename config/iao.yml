@@ -111,7 +111,7 @@ entries:
   replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2012-01-05/merged/iao-main.owl
 
 - exact: /iao-main.owl
-  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2011-05-09/iao-main.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2015-02-23/ontology/iao-main.owl
 
 - exact: /bfo-transitional/notes
   replacement: https://docs.google.com/document/d/1CRLrqYyq9s2xaf3zT0mae190ZFDTWJnflgLEtY2Rf8g/edit?usp=sharing

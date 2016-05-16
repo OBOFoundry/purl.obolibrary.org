@@ -3,10 +3,10 @@
 idspace: AERO
 base_url: /obo/aero
 
-base_redirect: http://code.google.com/p/adverse-event-reporting-ontology/
+base_redirect: https://github.com/mcourtot/adverse-event-reporting-ontology/tree/master/src/ontology
 
 products:
-- aero.owl: http://adverse-event-reporting-ontology.googlecode.com/svn/trunk/src/ontology/aero.owl
+- aero.owl: https://raw.githubusercontent.com/mcourtot/adverse-event-reporting-ontology/master/src/ontology/aero.owl
 
 term_browser: ontobee
 example_terms:
@@ -14,19 +14,16 @@ example_terms:
 
 entries:
 - exact: /external.owl
-  replacement: http://adverse-event-reporting-ontology.googlecode.com/svn/trunk/src/ontology/external.owl
+  replacement: https://raw.githubusercontent.com/mcourtot/adverse-event-reporting-ontology/master/src/ontology/external.owl
 
 - exact: /externalDerived.owl
-  replacement: http://adverse-event-reporting-ontology.googlecode.com/svn/trunk/src/ontology/externalDerived.owl
+  replacement: https://raw.githubusercontent.com/mcourtot/adverse-event-reporting-ontology/master/src/ontology/externalDerived.owl
 
 - exact: /external-by-hand.owl
-  replacement: http://adverse-event-reporting-ontology.googlecode.com/svn/trunk/src/ontology/external-by-hand.owl
+  replacement: https://raw.githubusercontent.com/mcourtot/adverse-event-reporting-ontology/master/src/ontology/external-by-hand.owl
 
 - exact: /tracker
-  replacement: http://code.google.com/p/adverse-event-reporting-ontology/issues/list
-
-- exact: /OMRE_AEROImport.owl
-  replacement: http://ogms.googlecode.com/svn/trunk/src/ontology/omre/OMRE_AEROImport.owl
+  replacement: https://github.com/mcourtot/adverse-event-reporting-ontology/issues
 
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=AERO&iri=http://purl.obolibrary.org/obo/

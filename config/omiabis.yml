@@ -4,7 +4,7 @@ idspace: OMIABIS
 base_url: /obo/omiabis
 
 products:
-- omiabis.owl: https://raw.githubusercontent.com/OMIABIS/omiabis-dev/master/BFO2%20omiabis/omiabis.owl
+- omiabis.owl:  https://raw.githubusercontent.com/OMIABIS/omiabis-dev/master/BFO2%20omiabis/omiabis_merged.owl
 
 term_browser: ontobee
 example_terms:
@@ -66,7 +66,7 @@ entries:
   replacement: https://raw.githubusercontent.com/OMIABIS/omiabis-dev/2014-05-28/omiabis.owl
   
 - exact: /omiabis.owl
-  replacement: https://raw.githubusercontent.com/OMIABIS/omiabis-dev/master/BFO2%20omiabis/omiabis.owl
+   https://raw.githubusercontent.com/OMIABIS/omiabis-dev/master/BFO2%20omiabis/omiabis_merged.owl
   
 - exact: /merged/omiabis.owl
   replacement: https://raw.githubusercontent.com/OMIABIS/omiabis-dev/master/BFO2%20omiabis/omiabis_merged.owl

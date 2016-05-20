@@ -65,9 +65,6 @@ entries:
 - exact: /2014-05-28/omiabis.owl
   replacement: https://raw.githubusercontent.com/OMIABIS/omiabis-dev/2014-05-28/omiabis.owl
   
-- exact: /omiabis.owl
-  replacement: https://raw.githubusercontent.com/OMIABIS/omiabis-dev/master/BFO2%20omiabis/omiabis.owl
-  
 - exact: /merged/omiabis.owl
   replacement: https://raw.githubusercontent.com/OMIABIS/omiabis-dev/master/BFO2%20omiabis/omiabis_merged.owl
 

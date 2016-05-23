@@ -4,8 +4,8 @@ idspace: CHMO
 base_url: /obo/chmo
 
 products:
-- chmo.owl: http://rsc-cmo.googlecode.com/svn/trunk/chmo.owl
-- chmo.obo: http://rsc-cmo.googlecode.com/svn/trunk/chmo.obo
+- chmo.owl: http://github.com/rsc-ontologies/rsc-cmo/chmo.owl
+- chmo.obo: http://github.com/rsc-ontologies/rsc-cmo/chmo.obo
 
 term_browser: ontobee
 example_terms:

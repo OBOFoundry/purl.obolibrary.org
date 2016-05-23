@@ -4,8 +4,8 @@ idspace: RXNO
 base_url: /obo/rxno
 
 products:
-- rxno.owl: http://rxno.googlecode.com/svn/trunk/rxno.owl
-- rxno.obo: http://rxno.googlecode.com/svn/trunk/rxno.obo
+- rxno.owl: https://github.com/rsc-ontologies/rxno/rxno.owl
+- rxno.obo: https://github.com/rsc-ontologies/rxno/rxno.obo
 
 term_browser: ontobee
 example_terms:

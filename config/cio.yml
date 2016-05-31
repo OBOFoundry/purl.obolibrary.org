@@ -5,6 +5,10 @@ base_url: /obo/cio
 
 products:
 - cio.owl: https://raw.githubusercontent.com/BgeeDB/confidence-information-ontology/master/src/ontology/cio.owl
-- cio.obo: https://raw.githubusercontent.com/BgeeDB/confidence-information-ontology/master/src/ontology/cio-simple.obo
+- cio.obo: https://raw.githubusercontent.com/BgeeDB/confidence-information-ontology/master/src/ontology/cio.obo
 
 term_browser: ontobee
+
+entries:
+- exact: http://purl.obolibrary.org/obo/cio/cio-simple.obo
+  replacememt: https://raw.githubusercontent.com/BgeeDB/confidence-information-ontology/master/src/ontology/cio-simple.obo

@@ -11,4 +11,4 @@ term_browser: ontobee
 
 entries:
 - exact: /cio-simple.obo
-  replacememt: https://raw.githubusercontent.com/BgeeDB/confidence-information-ontology/master/src/ontology/cio-simple.obo
+  replacement: https://raw.githubusercontent.com/BgeeDB/confidence-information-ontology/master/src/ontology/cio-simple.obo

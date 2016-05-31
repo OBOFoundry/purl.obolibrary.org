@@ -10,5 +10,5 @@ products:
 term_browser: ontobee
 
 entries:
-- exact: http://purl.obolibrary.org/obo/cio/cio-simple.obo
+- exact: /cio-simple.obo
   replacememt: https://raw.githubusercontent.com/BgeeDB/confidence-information-ontology/master/src/ontology/cio-simple.obo

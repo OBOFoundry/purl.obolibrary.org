@@ -4,8 +4,12 @@ idspace: OVAE
 base_url: /obo/ovae
 
 products:
-- ovae.owl: http://ovae.googlecode.com/svn/trunk/src/ontology/ovae.owl
+- ovae.owl: https://raw.githubusercontent.com/OVAE-Ontology/ovae/master/src/ontology/ovae_merged.owl
 
 term_browser: ontobee
 example_terms:
-- OVAE_0000004
+- OVAE_0000001
+- OVAE_0000002
+- OVAE_0000061
+- OVAE_0000984
+

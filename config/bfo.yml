@@ -13,31 +13,31 @@ example_terms:
 
 entries:
 - exact: /classes.owl
-  replacement: http://bfo.googlecode.com/svn/trunk/src/ontology/owl-ruttenberg/bfo2-classes.owl
+  replacement: https://raw.githubusercontent.com/BFO-ontology/BFO/master/src/ontology/owl-ruttenberg/bfo2-classes.owl
 
 - exact: /core-relations.owl
-  replacement: http://bfo.googlecode.com/svn/trunk/src/ontology/owl-ruttenberg/bfo2-relations.owl
+  replacement: https://raw.githubusercontent.com/BFO-ontology/BFO/master/src/ontology/owl-ruttenberg/bfo2-relations.owl
 
 - exact: /core-classes.owl
-  replacement: http://bfo.googlecode.com/svn/trunk/src/ontology/owl-ruttenberg/bfo2-classes.owl
+  replacement: https://raw.githubusercontent.com/BFO-ontology/BFO/master/src/ontology/owl-ruttenberg/bfo2-classes.owl
 
 - exact: /relations.owl
-  replacement: http://bfo.googlecode.com/svn/trunk/src/ontology/owl-ruttenberg/bfo2-relations.owl
+  replacement: https://raw.githubusercontent.com/BFO-ontology/BFO/master/src/ontology/owl-ruttenberg/bfo2-relations.owl
 
 - exact: /bfo+granularity.owl
   replacement: http://bfo.googlecode.com/svn/trunk/src/ontology/owl-ruttenberg/bfo2_granularity.owl
 
 - exact: /all.owl
-  replacement: http://bfo.googlecode.com/svn/trunk/src/ontology/owl-ruttenberg/bfo2_all.owl
+  replacement: https://raw.githubusercontent.com/BFO-ontology/BFO/master/src/ontology/owl-ruttenberg/bfo2_all.owl
 
 - exact: /granularity-classes.owl
-  replacement: http://bfo.googlecode.com/svn/trunk/src/ontology/owl-ruttenberg/bfo2-granularity.owl
+  replacement: https://raw.githubusercontent.com/BFO-ontology/BFO/master/src/ontology/owl-ruttenberg/bfo2-granularity.owl
 
 - exact: /region-classes.owl
-  replacement: http://bfo.googlecode.com/svn/trunk/src/ontology/owl-ruttenberg/bfo2-regions.owl
+  replacement: https://raw.githubusercontent.com/BFO-ontology/BFO/master/src/ontology/owl-ruttenberg/bfo2-regions.owl
 
 - exact: /bfo+region.owl
-  replacement: http://bfo.googlecode.com/svn/trunk/src/ontology/owl-ruttenberg/bfo2_regions.owl
+  replacement: https://raw.githubusercontent.com/BFO-ontology/BFO/master/src/ontology/owl-ruttenberg/bfo2_regions.owl
 
 - exact: /2012-07/ReleaseNotes
   replacement: https://docs.google.com/document/d/1_lKE8kAmFfi12_TBrDs1COMDPXDQGByKJZAaBwW5xVM/edit

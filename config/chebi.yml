@@ -11,7 +11,7 @@ term_browser: custom
 
 entries:
 - exact: /tracker
-  replacement: http://sourceforge.net/tracker/?group_id=125463&atid=703818
+  replacement: https://github.com/ebi-chebi/ChEBI/issues
 
 - exact: /browse
   replacement: http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI%3A24431

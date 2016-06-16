@@ -11,11 +11,9 @@ example_terms:
 - OMRSE_00000098
 
 entries:
-- exact: /dev
-  replacement: http://omrse.googlecode.com/svn/trunk/omrse/omrse.owl
 
 - exact: /dev/omrse.owl
-  replacement: http://omrse.googlecode.com/svn/trunk/omrse/omrse.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/OMRSE/devel/omrse.owl
 
 - exact: /dao.owl
   replacement: https://raw.githubusercontent.com/ufbmi/demo-app-ontology/master/DAO.owl

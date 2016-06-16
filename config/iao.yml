@@ -152,6 +152,9 @@ entries:
 - exact: /d-acts/2013-11-27/d-acts.owl
   replacement: https://raw.githubusercontent.com/d-acts/d-acts/2013-11-27/d-acts.owl
   
+- exact: /d-acts/2016-02-16/d-acts.owl
+  replacement: https://raw.githubusercontent.com/d-acts/d-acts/2016-04-22/d-acts.owl
+  
 - exact: /d-acts/2016-04-22/d-acts.owl
   replacement: https://raw.githubusercontent.com/d-acts/d-acts/2016-04-22/d-acts.owl
 

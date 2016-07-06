@@ -6,8 +6,8 @@ base_url: /obo/ido
 base_redirect: http://infectiousdiseaseontology.org/page/Main_Page
 
 products:
-- ido.owl: https://raw.githubusercontent.com/infectious-disease-ontology/infectious-disease-ontology/master/releases/2014-08-01/ido.owl
-- ido.obo: https://raw.githubusercontent.com/infectious-disease-ontology/infectious-disease-ontology/master/releases/2010-12-02/ido.obo
+- ido.owl: https://raw.githubusercontent.com/infectious-disease-ontology/infectious-disease-ontology/master/releases/2016-07-05/ido-merged.owl
+- ido.obo: https://raw.githubusercontent.com/infectious-disease-ontology/infectious-disease-ontology/master/releases/2014-08-01/ido.obo
 - idoplant.owl: http://palea.cgrb.oregonstate.edu/viewsvn/Poc/trunk/ontology/collaborators_ontology/plant_disease/idoplant.owl?view=co
 
 term_browser: ontobee
@@ -90,8 +90,11 @@ entries:
 - exact: /brucellosis.owl
   replacement: http://svn.code.sf.net/p/idobru/code/trunk/src/ontology/brucellosis.owl
 
-- exact: /ido-main.owl
-  replacement: https://raw.githubusercontent.com/infectious-disease-ontology/infectious-disease-ontology/master/releases/2014-08-01/ido-main.owl
+- exact: /2014-08-01/ido.owl
+  replacement: https://raw.githubusercontent.com/infectious-disease-ontology/infectious-disease-ontology/master/releases/2014-08-01/ido_merged.owl
+
+- exact: /2016-07-05/ido.owl
+  replacement: https://raw.githubusercontent.com/infectious-disease-ontology/infectious-disease-ontology/master/releases/2016-07-05/ido-merged.owl
 
 - exact: /Sa.owl
   replacement: https://raw.githubusercontent.com/awqbi/ido-staph/master/releases/2012-06-22/ontology/Sa.owl

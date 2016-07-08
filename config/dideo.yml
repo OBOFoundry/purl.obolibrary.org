@@ -21,7 +21,7 @@ entries:
   replacement: https://raw.githubusercontent.com/DIDEO/DIDEO/2016-07-06/ontology%20releases/dideo.owl
   
 - exact: /2016-07-07/dideo.owl
-  replacement: https://raw.githubusercontent.com/DIDEO/DIDEO/2017-07-07/ontology_release/dideo.owl
+  replacement: https://raw.githubusercontent.com/DIDEO/DIDEO/2016-07-07/ontology_release/dideo.owl
 
 - prefix: /release/
   replacement: https://raw.githubusercontent.com/DIDEO/DIDEO/

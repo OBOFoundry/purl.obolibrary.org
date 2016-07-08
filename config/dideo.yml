@@ -4,7 +4,7 @@ idspace: DIDEO
 base_url: /obo/dideo
 
 products:
-- dideo.owl: https://raw.githubusercontent.com/DIDEO/DIDEO/master/ontology_release/dideo.owl
+- dideo.owl: https://raw.githubusercontent.com/DIDEO/DIDEO/master/dideo.owl
 
 term_browser: ontobee
 example_terms:
@@ -23,8 +23,11 @@ entries:
 - exact: /2016-07-07/dideo.owl
   replacement: https://raw.githubusercontent.com/DIDEO/DIDEO/2017-07-07/ontology_release/dideo.owl
 
+- prefix: /release/
+  replacement: https://raw.githubusercontent.com/DIDEO/DIDEO/
+
 - exact: /EvidenceTypes/dideo.owl
   replacement: https://raw.githubusercontent.com/DIDEO/DIDEO/master/evidence_types_test.owl
   
 - exact: /dev/dideo.owl
-  replacement: https://raw.githubusercontent.com/DIDEO/DIDEO/master/dideo.owl
+  replacement: https://raw.githubusercontent.com/DIDEO/DIDEO/master/development/dideo.owl

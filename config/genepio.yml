@@ -1,0 +1,15 @@
+# PURL configuration for http://purl.obolibrary.org/obo/genepio
+
+idspace: GENEPIO
+base_url: /obo/genepio
+
+products:
+- genepio.owl: https://raw.githubusercontent.com/GenEpiO/genepio/master/genepio.owl
+
+term_browser: ontobee
+example_terms:
+- GENEPIO_0000021
+
+entries:
+- prefix: /imports/
+  replacement: https://raw.githubusercontent.com/GenEpiO/genepio/master/src/imports/

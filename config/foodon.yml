@@ -1,0 +1,17 @@
+
+# PURL configuration for http://purl.obolibrary.org/obo/foodon
+
+idspace: FOODON
+base_url: /obo/foodon
+
+products:
+- foodon.owl: https://raw.githubusercontent.com/FoodOntology/foodon/master/foodon.owl
+- foodon.obo: https://raw.githubusercontent.com/FoodOntology/foodon/master/foodon.obo
+
+term_browser: ontobee
+example_terms:
+- FOODON_00000000
+
+entries:
+- prefix: /imports/
+  replacement: https://raw.githubusercontent.com/FoodOntology/foodon/master/src/imports/

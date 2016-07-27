@@ -1,0 +1,31 @@
+# PURL configuration for http://purl.obolibrary.org/obo/agro
+
+idspace: AGRO
+base_url: /obo/agro
+
+products:
+- agro.owl: https://raw.githubusercontent.com/AgriculturalSemantics/agro/master/agro.owl
+- agro.obo: https://raw.githubusercontent.com/AgriculturalSemantics/agro/master/agro.obo
+
+term_browser: ontobee
+example_terms:
+- AGRO_00000002
+
+entries:
+- exact: /mappings/spire-mapping.ttxt
+  replacement: http://purl.obolibrary.org/obo/agro/mappings/spire-mapping.tsv
+
+- exact: /mappings/spire-mapping.txt
+  replacement: http://purl.obolibrary.org/obo/agro/mappings/spire-mapping.tsv
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/AgriculturalSemantics/agro/master/v
+
+- prefix: /mappings/
+  replacement: https://raw.githubusercontent.com/AgriculturalSemantics/agro/master/mappings/
+
+- prefix: /subsets/
+  replacement: https://raw.githubusercontent.com/AgriculturalSemantics/agro/master/subsets/
+
+- prefix: /imports/
+  replacement: https://raw.githubusercontent.com/AgriculturalSemantics/agro/master/imports/

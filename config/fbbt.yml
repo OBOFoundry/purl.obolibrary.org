@@ -29,9 +29,12 @@ entries:
 
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=FBbt&iri=http://purl.obolibrary.org/obo/
+  
+- exact: /vfb/vfb.owl
+  replacement: http://virtualflybrain.org/owl/vfb.owl
 
 - prefix: /vfb/
-  replacement: https://raw.githubusercontent.com/VirtualFlyBrain/VFB_owl/master/src/owl/
+  replacement: https://raw.githubusercontent.com/VirtualFlyBrain/VFB_owl/Current/src/owl/
 
 - prefix: /wiki
   replacement: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/wiki

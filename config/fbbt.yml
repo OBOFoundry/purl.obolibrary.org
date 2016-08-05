@@ -33,7 +33,7 @@ entries:
 - prefix: /vfb/
   replacement: https://raw.githubusercontent.com/VirtualFlyBrain/VFB_owl/Current/src/owl/
   
-- exact /vfb/vfb.owl
+- exact: /vfb/vfb.owl
   replacement: http://www.virtualflybrain.org/owl/vfb.owl
 
 - prefix: /wiki

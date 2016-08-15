@@ -33,7 +33,7 @@ entries:
 - exact: /vfb/vfb.owl
   replacement: http://virtualflybrain.org/owl/vfb.owl
   
-- regex: ^/obo/fbbt/vfb/(2016-0[0-7]-[0-9][0-9])/vfb\.owl&
+- regex: ^/obo/fbbt/vfb/(2016-0[0-7]-[0-9][0-9])/vfb\.owl$
   replacement: https://raw.githubusercontent.com/VirtualFlyBrain/VFB_owl/Archive/src/owl/$1/vfb.owl.gz
   tests:
   - from: /vfb/2016-01-21/vfb.owl

@@ -33,31 +33,31 @@ entries:
 - exact: /vfb/vfb.owl
   replacement: http://virtualflybrain.org/owl/vfb.owl
   
-- regex: ^/vfb/(2016-0[0-7]-[0-9][0-9])/vfb\.owl&
+- regex: ^/obo/fbbt/vfb/(2016-0[0-7]-[0-9][0-9])/vfb\.owl&
   replacement: https://raw.githubusercontent.com/VirtualFlyBrain/VFB_owl/Archive/src/owl/$1/vfb.owl.gz
   tests:
   - from: /vfb/2016-01-21/vfb.owl
     to: https://raw.githubusercontent.com/VirtualFlyBrain/VFB_owl/Archive/src/owl/2016-01-21/vfb.owl.gz
   
-- regex: ^/vfb/(2016-0[0-7]-[0-9][0-9])/fbbt_(.*)\.owl$
+- regex: ^/obo/fbbt/vfb/(2016-0[0-7]-[0-9][0-9])/fbbt_(.*)\.owl$
   replacement: https://raw.githubusercontent.com/VirtualFlyBrain/VFB_owl/Archive/src/owl/$1/fbbt_$2.owl
   tests:
   - from: /vfb/2016-01-21/fbbt_vfb_ind.owl
     to: https://raw.githubusercontent.com/VirtualFlyBrain/VFB_owl/Archive/src/owl/2016-01-21/fbbt_vfb_ind.owl.gz
   
-- regex: ^/vfb/(201[5-6]-0[0-7]-[0-9][0-9])/$
+- regex: ^/obo/fbbt/vfb/(201[5-6]-0[0-7]-[0-9][0-9])/$
   replacement: https://raw.githubusercontent.com/VirtualFlyBrain/VFB_owl/Archive/src/owl/$1/
   tests:
   - from: /vfb/2016-01-21/
     to: https://raw.githubusercontent.com/VirtualFlyBrain/VFB_owl/Archive/src/owl/2016-01-21/
 
-- regex: ^/vfb/(20.*)/vfb\.owl$
+- regex: ^/obo/fbbt/vfb/(20.*)/vfb\.owl$
   replacement: https://raw.githubusercontent.com/VirtualFlyBrain/VFB_owl/$1/src/owl/vfb.owl.gz
   tests:
   - from: /vfb/2016-07-12/vfb.owl
     to: https://raw.githubusercontent.com/VirtualFlyBrain/VFB_owl/2016-07-12/src/owl/vfb.owl.gz
 
-- regex: ^/vfb/(20.*)/$
+- regex: ^/obo/fbbt/vfb/(20.*)/$
   replacement: https://raw.githubusercontent.com/VirtualFlyBrain/VFB_owl/$1/src/owl/
   tests:
   - from: /vfb/2016-07-12/

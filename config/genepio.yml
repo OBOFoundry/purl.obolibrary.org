@@ -12,4 +12,4 @@ example_terms:
 
 entries:
 - prefix: /imports/
-  replacement: https://raw.githubusercontent.com/GenEpiO/genepio/master/src/imports/
+  replacement: https://raw.githubusercontent.com/GenEpiO/genepio/master/imports/

@@ -4,8 +4,24 @@ idspace: FAO
 base_url: /obo/fao
 
 products:
-- fao.owl: http://www.berkeleybop.org/ontologies/fao.owl
+- fao.owl: https://raw.githubusercontent.com/obophenotype/master/fao.owl
+- fao.obo: https://raw.githubusercontent.com/obophenotype/master/fao.obo
 
 term_browser: ontobee
 example_terms:
 - FAO_0000001
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/obophenotype/fungal-anatomy-ontology/v
+
+- prefix: /tracker/
+  replacement: https://github.com/obophenotype/fungal-anatomy-ontology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/FAO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/obophenotype/fungal-anatomy-ontology/master/

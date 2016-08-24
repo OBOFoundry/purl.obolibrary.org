@@ -4,8 +4,8 @@ idspace: CTENO
 base_url: /obo/cteno
 
 products:
-- cteno.owl: https://raw.githubusercontent.com/obophenotype/master/cteno.owl
-- cteno.obo: https://raw.githubusercontent.com/obophenotype/master/cteno.obo
+- cteno.owl: https://raw.githubusercontent.com/obophenotype/ctenophore-ontology/master/cteno.owl
+- cteno.obo: https://raw.githubusercontent.com/obophenotype/ctenophore-ontology/master/cteno.obo
 
 term_browser: ontobee
 example_terms:

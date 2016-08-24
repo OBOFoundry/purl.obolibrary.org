@@ -4,8 +4,8 @@ idspace: FAO
 base_url: /obo/fao
 
 products:
-- fao.owl: https://raw.githubusercontent.com/obophenotype/master/fao.owl
-- fao.obo: https://raw.githubusercontent.com/obophenotype/master/fao.obo
+- fao.owl: https://raw.githubusercontent.com/obophenotype/fungal-anatomy-ontology/master/fao.owl
+- fao.obo: https://raw.githubusercontent.com/obophenotype/fungal-anatomy-ontology/master/fao.obo
 
 term_browser: ontobee
 example_terms:

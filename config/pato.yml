@@ -3,7 +3,7 @@
 idspace: PATO
 base_url: /obo/pato
 
-base_redirect: https://github.com/pato-phenotype/pato
+base_redirect: https://github.com/pato-ontology/pato
 
 products:
 - pato.owl: https://raw.githubusercontent.com/pato-ontology/pato/master/pato.owl
@@ -31,7 +31,4 @@ entries:
 
 - prefix: /imports/
   replacement: https://raw.githubusercontent.com/pato-ontology/pato/master/imports/
-
-- exact: /
-  replacement: https://github.com/pato-ontology/pato/
 

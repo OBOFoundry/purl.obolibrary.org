@@ -32,3 +32,5 @@ entries:
 - prefix: /imports/
   replacement: https://raw.githubusercontent.com/pato-ontology/pato/master/imports/
 
+- exact: /
+  replacement: https://github.com/pato-ontology/pato/

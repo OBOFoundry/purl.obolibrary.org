@@ -26,6 +26,12 @@ entries:
   - from: /about/PATO_0000001
     to: http://www.ontobee.org/browser/rdf.php?o=PATO&iri=http://purl.obolibrary.org/obo/PATO_0000001
 
-- prefix: /
-  replacement: https://raw.githubusercontent.com/pato-ontology/pato/master/
+- prefix: /subsets/
+  replacement: https://raw.githubusercontent.com/pato-ontology/pato/master/subsets/
+
+- prefix: /imports/
+  replacement: https://raw.githubusercontent.com/pato-ontology/pato/master/imports/
+
+- exact: /
+  replacement: https://github.com/pato-ontology/pato/
 

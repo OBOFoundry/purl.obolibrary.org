@@ -4,7 +4,7 @@ idspace: CVDO
 base_url: /obo/cvdo
 
 products:
-- cvdo.owl: https://cvdo.googlecode.com/svn/trunk/src/ontology/core/cvdo.owl
+- cvdo.owl: https://raw.githubusercontent.com/OpenLHS/CVDO/master/cvdo.owl
 
 term_browser: ontobee
 example_terms:

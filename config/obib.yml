@@ -4,7 +4,7 @@ idspace: OBIB
 base_url: /obo/obib
 
 products:
-- obib.owl: https://raw.githubusercontent.com/biobanking/biobanking/master/release/20151122/obib_merged_inferred.owl
+- obib.owl: https://raw.githubusercontent.com/biobanking/biobanking/master/release/20160914/obib_merged_inferred.owl
 
 term_browser: ontobee
 example_terms:
@@ -22,3 +22,6 @@ entries:
 
 - exact: /2015-11-22/obib.owl
   replacement: https://raw.githubusercontent.com/biobanking/biobanking/master/release/20151122/obib_merged_inferred.owl
+  
+- exact: /2016-09-14/obib.owl
+  replacement: https://raw.githubusercontent.com/biobanking/biobanking/master/release/20160914/obib_merged_inferred.owl

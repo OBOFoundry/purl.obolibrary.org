@@ -4,8 +4,8 @@ idspace: ZECO
 base_url: /obo/zeco
 
 products:
-- zeco.owl: https://raw.githubusercontent.com/ybradford/zeco/master/zeco.owl
-- zeco.obo: https://raw.githubusercontent.com/ybradford/zeco/master/zeco.obo
+- zeco.owl: https://raw.githubusercontent.com/ybradford/zebrafish-experimental-conditions-ontology/master/zeco.owl
+- zeco.obo: https://raw.githubusercontent.com/ybradford/zebrafish-experimental-conditions-ontology/master/zeco.obo
 
 term_browser: ontobee
 example_terms:

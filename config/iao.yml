@@ -170,6 +170,12 @@ entries:
 - exact: /pno.owl
   replacement: https://raw.githubusercontent.com/ProperNameOntology/proper-name-ontology/master/pno.owl
 
+- exact: /pno/dev/pno.owl
+  replacement: https://raw.githubusercontent.com/ProperNameOntology/proper-name-ontology/master/development/pno.owl
+
+- prefix: /pno/release/
+  replacement: https://raw.githubusercontent.com/ProperNameOntology/proper-name-ontology/
+
 - exact: /d-acts/legacy/d-acts.owl
   replacement: https://raw.githubusercontent.com/d-acts/d-acts/master/d-acts_legacy.owl
 

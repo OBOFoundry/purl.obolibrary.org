@@ -174,10 +174,13 @@ entries:
   replacement: https://raw.githubusercontent.com/d-acts/d-acts/master/d-acts_legacy.owl
 
 - exact: /d-acts/dev/d-acts.owl
-  replacement: https://raw.githubusercontent.com/d-acts/d-acts/master/d-acts.owl
+  replacement: https://raw.githubusercontent.com/d-acts/d-acts/master/development/d-acts.owl
 
 - exact: /d-acts.owl
-  replacement: https://raw.githubusercontent.com/d-acts/d-acts/master/releases/d-acts.owl
+  replacement: https://raw.githubusercontent.com/d-acts/d-acts/master/d-acts.owl
+  
+- prefix: /d-acts/release/
+  replacement: https://raw.githubusercontent.com/d-acts/d-acts/
 
 - exact: /d-acts/20150916/d-acts.owl
   replacement: https://raw.githubusercontent.com/d-acts/d-acts/master/releases/20150916/d-acts.owl

@@ -179,7 +179,7 @@ entries:
 - exact: /d-acts.owl
   replacement: https://raw.githubusercontent.com/d-acts/d-acts/master/d-acts.owl
   
-- prefix: /release/
+- prefix: /d-acts/release/
   replacement: https://raw.githubusercontent.com/d-acts/d-acts/
 
 - exact: /d-acts/20150916/d-acts.owl

@@ -144,10 +144,10 @@ entries:
 - exact: /2016-06-30/obi_core.owl
   replacement: http://svn.code.sf.net/p/obi/code/releases/2016-06-30/obi_core.owl
 
-- exact: /2016-06-30/obi.owl
+- exact: /2016-10-11/obi.owl
   replacement: http://svn.code.sf.net/p/obi/code/releases/2016-10-11/obi.owl
 
-- exact: /2016-06-30/obi_core.owl
+- exact: /2016-10-11/obi_core.owl
   replacement: http://svn.code.sf.net/p/obi/code/releases/2016-10-11/obi_core.owl
 
 ### Web Service Releases

@@ -4,7 +4,8 @@ idspace: EO
 base_url: /obo/eo
 
 products:
-- eo.owl: http://www.berkeleybop.org/ontologies/eo.owl
+- eo.owl: https://raw.githubusercontent.com/Planteome/plant-environment-ontology/master/plant-environment-ontology.obo.owl
+- eo.OBO: https://raw.githubusercontent.com/Planteome/plant-environment-ontology/master/plant-environment-ontology.obo
 
 term_browser: ontobee
 example_terms:
@@ -12,4 +13,4 @@ example_terms:
 
 entries:
 - exact: /tracker
-  replacement: https://sourceforge.net/tracker/?atid=5010796&group_id=76834&func=browse
+  replacement: https://github.com/Planteome/plant-environment-ontology/issues

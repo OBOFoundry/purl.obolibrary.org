@@ -13,4 +13,4 @@ example_terms:
 
 entries:
 - exact: /tracker
-- replacement: https://github.com/Planteome/plant-environment-ontology/issues
+  replacement: https://github.com/Planteome/plant-environment-ontology/issues

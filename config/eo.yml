@@ -12,3 +12,5 @@ example_terms:
 - EO_0007359
 
 entries:
+- exact: /tracker
+- replacement: https://github.com/Planteome/plant-environment-ontology/issues

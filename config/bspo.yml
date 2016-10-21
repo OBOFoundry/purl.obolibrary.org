@@ -4,7 +4,8 @@ idspace: BSPO
 base_url: /obo/bspo
 
 products:
-- bspo.owl: http://www.berkeleybop.org/ontologies/bspo.owl
+- pato.owl: https://raw.githubusercontent.com/obophenotype/bspo/master/pato.owl
+- pato.obo: https://raw.githubusercontent.com/obophenotype/bspo/master/pato.obo
 
 term_browser: ontobee
 example_terms:
@@ -12,4 +13,4 @@ example_terms:
 
 entries:
 - prefix: /releases/
-  replacement: https://biological-spatial-ontology.googlecode.com/svn/releases/
+  replacement: https://raw.githubusercontent.com/obophenotype/bspo/v

@@ -4,8 +4,8 @@ idspace: BSPO
 base_url: /obo/bspo
 
 products:
-- pato.owl: https://raw.githubusercontent.com/obophenotype/bspo/master/pato.owl
-- pato.obo: https://raw.githubusercontent.com/obophenotype/bspo/master/pato.obo
+- bspo.owl: https://raw.githubusercontent.com/obophenotype/bspo/master/bspo.owl
+- bspo.obo: https://raw.githubusercontent.com/obophenotype/bspo/master/bspo.obo
 
 term_browser: ontobee
 example_terms:

@@ -29,6 +29,9 @@ entries:
 - prefix: /noctua/
   replacement: http://build-artifacts.berkeleybop.org/build-noctua-entity-ontology/latest/
 
+- prefix: /noctua-obo/
+  replacement: http://build-artifacts.berkeleybop.org/build-noctua-obo-ontology/latest/
+
 - prefix: /releases/
   replacement: http://viewvc.geneontology.org/viewvc/GO-SVN/ontology-releases/
 

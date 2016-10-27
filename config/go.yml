@@ -44,8 +44,8 @@ entries:
 # Terms for GO REFs
 # https://github.com/geneontology/go-site/blob/master/metadata/gorefs/goref-0000001.md
 # should point to
-#h ttp://purl.obolibrary.org/obo/go/references/0000001
-- regex: ^/obo/go/references/(\d+)$
+# http://purl.obolibrary.org/obo/go/references/0000001
+- regex: ^/references/(\d+)$
   replacement: https://github.com/geneontology/go-site/blob/master/metadata/gorefs/goref-$1.md
   tests:
   - from: /references/0000001

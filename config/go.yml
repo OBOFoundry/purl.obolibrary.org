@@ -38,16 +38,21 @@ entries:
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=GO&iri=http://purl.obolibrary.org/obo/
 
-- prefix: /
-  replacement: http://geneontology.org/ontology/
-  
-# Terms for GO REFs
-# https://github.com/geneontology/go-site/blob/master/metadata/gorefs/goref-0000001.md
-# should point to
+  # Terms for GO REFs
 # http://purl.obolibrary.org/obo/go/references/0000001
+# should point to
+# https://github.com/geneontology/go-site/blob/master/metadata/gorefs/goref-0000001.md
+
+
 - regex: ^/obo/go/references/(\d+)$
   replacement: https://github.com/geneontology/go-site/blob/master/metadata/gorefs/goref-$1.md
   tests:
   - from: /references/0000001
     to: https://github.com/geneontology/go-site/blob/master/metadata/gorefs/goref-0000001.md
+
+# Keep this as last entry as the rules are matched in order
+- prefix: /
+  replacement: http://geneontology.org/ontology/
+  
+
 

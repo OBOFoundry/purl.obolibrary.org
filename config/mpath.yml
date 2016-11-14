@@ -4,8 +4,7 @@ idspace: MPATH
 base_url: /obo/mpath
 
 products:
-- mpath.owl: http://www.berkeleybop.org/ontologies/mpath.owl
-- mpath.obo: http://www.berkeleybop.org/ontologies/mpath.obo
+- mpath.obo: https://raw.githubusercontent.com/PaulNSchofield/mpath/master/mpath.obo
 
 term_browser: ontobee
 example_terms:

@@ -4,8 +4,8 @@ idspace: TADS
 base_url: /obo/tads
 
 products:
-- tads.owl: http://www.berkeleybop.org/ontologies/tads.owl
-- tads.obo: http://www.berkeleybop.org/ontologies/tads.obo
+- tads.owl: http://ontologies.berkeleybop.org/tads.owl
+- tads.obo: http://ontologies.berkeleybop.org/tads.obo
 
 term_browser: ontobee
 example_terms:

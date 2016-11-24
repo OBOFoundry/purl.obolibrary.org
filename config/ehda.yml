@@ -4,8 +4,8 @@ idspace: EHDA
 base_url: /obo/ehda
 
 products:
-- ehda.owl: http://www.berkeleybop.org/ontologies/ehda.owl
-- ehda.obo: http://www.berkeleybop.org/ontologies/ehda.obo
+- ehda.owl: http://ontologies.berkeleybop.org/ehda.owl
+- ehda.obo: http://ontologies.berkeleybop.org/ehda.obo
 
 term_browser: ontobee
 example_terms:

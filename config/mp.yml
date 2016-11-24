@@ -5,7 +5,7 @@ base_url: /obo/mp
 
 products:
 - mp.owl: ftp://ftp.informatics.jax.org/pub/reports/mp.owl
-- mp.obo: http://www.berkeleybop.org/ontologies/mp.obo
+- mp.obo: http://ontologies.berkeleybop.org/mp.obo
 
 term_browser: ontobee
 example_terms:

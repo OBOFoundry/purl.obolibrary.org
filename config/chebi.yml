@@ -4,8 +4,8 @@ idspace: CHEBI
 base_url: /obo/chebi
 
 products:
-- chebi.owl: http://www.berkeleybop.org/ontologies/chebi.owl
-- chebi.obo: http://www.berkeleybop.org/ontologies/chebi.obo
+- chebi.owl: http://ontologies.berkeleybop.org/chebi.owl
+- chebi.obo: http://ontologies.berkeleybop.org/chebi.obo
 
 term_browser: custom
 

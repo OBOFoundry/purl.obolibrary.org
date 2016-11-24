@@ -4,8 +4,8 @@ idspace: XAO
 base_url: /obo/xao
 
 products:
-- xap.owl: http://www.berkeleybop.org/ontologies/xao.owl
-- xap.obo: http://www.berkeleybop.org/ontologies/xao.obo
+- xap.owl: http://ontologies.berkeleybop.org/xao.owl
+- xap.obo: http://ontologies.berkeleybop.org/xao.obo
 
 term_browser: ontobee
 example_terms:

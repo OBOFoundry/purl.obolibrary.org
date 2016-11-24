@@ -137,7 +137,7 @@ def process_ontobee(idspace, i, example_term):
   return [{
     'source': '/obo/' + example_term,
     'replacement': (ontobee % idspace) + example_term,
-    #'replacement': 'http://www.berkeleybop.org/ontologies/' + example_term,
+    #'replacement': 'http://ontologies.berkeleybop.org/' + example_term,
     'status': '303'
   }]
 

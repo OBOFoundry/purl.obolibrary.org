@@ -4,8 +4,8 @@ idspace: IEV
 base_url: /obo/iev
 
 products:
-- iev.owl: http://www.berkeleybop.org/ontologies/iev.owl
-- iev.obo: http://www.berkeleybop.org/ontologies/iev.obo
+- iev.owl: http://ontologies.berkeleybop.org/iev.owl
+- iev.obo: http://ontologies.berkeleybop.org/iev.obo
 
 term_browser: ontobee
 example_terms:

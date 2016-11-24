@@ -4,8 +4,8 @@ idspace: MAT
 base_url: /obo/mat
 
 products:
-- mat.owl: http://www.berkeleybop.org/ontologies/mat.owl
-- mat.obo: http://www.berkeleybop.org/ontologies/mat.obo
+- mat.owl: http://ontologies.berkeleybop.org/mat.owl
+- mat.obo: http://ontologies.berkeleybop.org/mat.obo
 
 term_browser: ontobee
 example_terms:

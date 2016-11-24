@@ -4,7 +4,7 @@ idspace: ExO
 base_url: /obo/exo
 
 products:
-- exo.owl: http://www.berkeleybop.org/ontologies/exo.owl
+- exo.owl: http://ontologies.berkeleybop.org/exo.owl
 
 term_browser: ontobee
 example_terms:

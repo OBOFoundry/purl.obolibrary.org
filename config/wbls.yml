@@ -4,8 +4,8 @@ idspace: WBls
 base_url: /obo/wbls
 
 products:
-- wbls.owl: http://www.berkeleybop.org/ontologies/wbls.owl
-- wbls.obo: http://www.berkeleybop.org/ontologies/wbls.obo
+- wbls.owl: http://ontologies.berkeleybop.org/wbls.owl
+- wbls.obo: http://ontologies.berkeleybop.org/wbls.obo
 
 term_browser: ontobee
 example_terms:

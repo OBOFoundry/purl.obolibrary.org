@@ -4,8 +4,8 @@ idspace: GAZ
 base_url: /obo/gaz
 
 products:
-- gaz.owl: http://www.berkeleybop.org/ontologies/gaz.owl
-- gaz.obo: http://www.berkeleybop.org/ontologies/gaz.obo
+- gaz.owl: http://ontologies.berkeleybop.org/gaz.owl
+- gaz.obo: http://ontologies.berkeleybop.org/gaz.obo
 
 term_browser: ontobee
 example_terms:

@@ -4,7 +4,7 @@ idspace: IDOMAL
 base_url: /obo/idomal
 
 products:
-- idomal.owl: http://www.berkeleybop.org/ontologies/idomal.owl
+- idomal.owl: http://ontologies.berkeleybop.org/idomal.owl
 
 term_browser: ontobee
 example_terms:

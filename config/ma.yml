@@ -4,8 +4,8 @@ idspace: MA
 base_url: /obo/ma
 
 products:
-- ma.owl: http://www.berkeleybop.org/ontologies/ma.owl
-- ma.obo: http://www.berkeleybop.org/ontologies/ma.obo
+- ma.owl: http://ontologies.berkeleybop.org/ma.owl
+- ma.obo: http://ontologies.berkeleybop.org/ma.obo
 
 term_browser: ontobee
 example_terms:

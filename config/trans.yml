@@ -4,8 +4,8 @@ idspace: TRANS
 base_url: /obo/trans
 
 products:
-- trans.owl: http://www.berkeleybop.org/ontologies/trans.owl
-- trans.obo: http://www.berkeleybop.org/ontologies/trans.obo
+- trans.owl: http://ontologies.berkeleybop.org/trans.owl
+- trans.obo: http://ontologies.berkeleybop.org/trans.obo
 
 term_browser: ontobee
 example_terms:

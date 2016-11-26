@@ -4,8 +4,8 @@ idspace: SYMP
 base_url: /obo/symp
 
 products:
-- symp.owl: http://www.berkeleybop.org/ontologies/symp.owl
-- symp.obo: http://www.berkeleybop.org/ontologies/symp.obo
+- symp.owl: http://ontologies.berkeleybop.org/symp.owl
+- symp.obo: http://ontologies.berkeleybop.org/symp.obo
 
 term_browser: ontobee
 example_terms:

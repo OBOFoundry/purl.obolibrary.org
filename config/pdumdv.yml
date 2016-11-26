@@ -4,8 +4,8 @@ idspace: PDUMDV
 base_url: /obo/pdumdv
 
 products:
-- pdumdv.owl: http://www.berkeleybop.org/ontologies/pdumdv.owl
-- pdumdv.obo: http://www.berkeleybop.org/ontologies/pdumdv.obo
+- pdumdv.owl: http://ontologies.berkeleybop.org/pdumdv.owl
+- pdumdv.obo: http://ontologies.berkeleybop.org/pdumdv.obo
 
 term_browser: ontobee
 example_terms:

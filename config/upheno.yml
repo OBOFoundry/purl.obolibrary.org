@@ -4,8 +4,8 @@ idspace: UPHENO
 base_url: /obo/upheno
 
 products:
-- upheno.owl: http://www.berkeleybop.org/ontologies/upheno.owl
-- upheno.obo: http://www.berkeleybop.org/ontologies/upheno.obo
+- upheno.owl: http://ontologies.berkeleybop.org/upheno.owl
+- upheno.obo: http://ontologies.berkeleybop.org/upheno.obo
 
 term_browser: ontobee
 example_terms:

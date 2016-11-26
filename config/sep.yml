@@ -4,8 +4,8 @@ idspace: sep
 base_url: /obo/sep
 
 products:
-- sep.owl: http://www.berkeleybop.org/ontologies/sep.owl
-- sep.obo: http://www.berkeleybop.org/ontologies/sep.obo
+- sep.owl: http://ontologies.berkeleybop.org/sep.owl
+- sep.obo: http://ontologies.berkeleybop.org/sep.obo
 
 term_browser: ontobee
 example_terms:

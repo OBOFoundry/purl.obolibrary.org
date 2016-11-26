@@ -4,7 +4,7 @@ idspace: DDANAT
 base_url: /obo/ddanat
 
 products:
-- ddanat.owl: http://www.berkeleybop.org/ontologies/ddanat.owl
+- ddanat.owl: http://ontologies.berkeleybop.org/ddanat.owl
 
 term_browser: ontobee
 example_terms:

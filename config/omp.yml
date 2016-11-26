@@ -4,8 +4,8 @@ idspace: OMP
 base_url: /obo/omp
 
 products:
-- omp.owl: http://www.berkeleybop.org/ontologies/omp.owl
-- omp.obo: http://www.berkeleybop.org/ontologies/omp.obo
+- omp.owl: http://ontologies.berkeleybop.org/omp.owl
+- omp.obo: http://ontologies.berkeleybop.org/omp.obo
 
 term_browser: ontobee
 example_terms:

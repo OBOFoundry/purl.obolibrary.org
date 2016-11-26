@@ -4,8 +4,8 @@ idspace: IMR
 base_url: /obo/imr
 
 products:
-- imr.owl: http://www.berkeleybop.org/ontologies/imr.owl
-- imr.obo: http://www.berkeleybop.org/ontologies/imr.obo
+- imr.owl: http://ontologies.berkeleybop.org/imr.owl
+- imr.obo: http://ontologies.berkeleybop.org/imr.obo
 
 term_browser: ontobee
 example_terms:

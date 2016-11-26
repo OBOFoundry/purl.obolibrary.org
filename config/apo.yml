@@ -4,8 +4,8 @@ idspace: APO
 base_url: /obo/apo
 
 products:
-- apo.owl: http://www.berkeleybop.org/ontologies/apo.owl
-- apo.obo: http://www.berkeleybop.org/ontologies/apo.obo
+- apo.owl: http://ontologies.berkeleybop.org/apo.owl
+- apo.obo: http://ontologies.berkeleybop.org/apo.obo
 
 term_browser: ontobee
 example_terms:

@@ -4,8 +4,8 @@ idspace: SBO
 base_url: /obo/sbo
 
 products:
-- sbo.owl: http://www.berkeleybop.org/ontologies/sbo.owl
-- sbo.obo: http://www.berkeleybop.org/ontologies/sbo.obo
+- sbo.owl: http://ontologies.berkeleybop.org/sbo.owl
+- sbo.obo: http://ontologies.berkeleybop.org/sbo.obo
 
 term_browser: ontobee
 example_terms:

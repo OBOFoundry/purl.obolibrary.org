@@ -4,7 +4,7 @@ idspace: BTO
 base_url: /obo/bto
 
 products:
-- bto.owl: http://www.berkeleybop.org/ontologies/bto.owl
+- bto.owl: http://ontologies.berkeleybop.org/bto.owl
 
 term_browser: ontobee
 example_terms:

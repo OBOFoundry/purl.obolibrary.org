@@ -6,8 +6,8 @@ base_url: /obo/uberon
 base_redirect: http://uberon.org
 
 products:
-- uberon.owl: http://berkeleybop.org/ontologies/uberon.owl
-- uberon.obo: http://berkeleybop.org/ontologies/uberon.obo
+- uberon.owl: http://ontologies.berkeleybop.org/uberon.owl
+- uberon.obo: http://ontologies.berkeleybop.org/uberon.obo
 
 term_browser: ontobee
 example_terms:
@@ -45,5 +45,5 @@ entries:
   replacement: https://github.com/obophenotype/uberon/wiki
 
 - prefix: /
-  replacement: http://berkeleybop.org/ontologies/uberon/
+  replacement: http:///ontologies.berkeleybop.org/uberon/
 

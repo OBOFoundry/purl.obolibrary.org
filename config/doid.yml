@@ -12,3 +12,12 @@ products:
 term_browser: ontobee
 example_terms:
 - DOID_4
+
+- exact: /obo/ext.owl
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/ext.owl
+
+- prefix: /imports/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/imports/
+  tests:
+  - from: /imports/relations.owl
+    to: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/imports/relations.owl

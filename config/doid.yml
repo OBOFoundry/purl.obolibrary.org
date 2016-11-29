@@ -13,6 +13,8 @@ term_browser: ontobee
 example_terms:
 - DOID_4
 
+entries:
+
 - exact: /obo/ext.owl
   replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/ext.owl
 

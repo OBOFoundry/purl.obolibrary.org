@@ -1,8 +1,8 @@
 ####
 #### Use kwalify and this schema to validate the config files.
 #### Example:
-####    kwalify -E -m cofig.schema.yaml
-####    kwalify -E -f ./metadata/db-xrefs.schema.yaml ./metadata/db-xrefs.yaml
+####    kwalify -E -m ./tools/config.schema.yml
+####    kwalify -E -f ./tools/config.schema.yml ./config/ddanat.yml
 ####
 type: map
 mapping:
@@ -43,7 +43,7 @@ mapping:
             required: true
           "to":
             type: str
-            pattern: /^(https?|ftp)\:\/\/.+/
+            pattern: "/^(https?|ftp)\:\/\/[a-zA-Z0-9][\/\.\-\:\?\=\&\#\%\!\$\~\w]+$/"
             required: true
   "entries":
     type: seq
@@ -67,7 +67,7 @@ mapping:
             unique: true
           "replacement":
             type: str
-            pattern: /^(https?|ftp)\:\/\/.+/
+            pattern: "/^(https?|ftp)\:\/\/[a-zA-Z0-9][\/\.\-\:\?\=\&\#\%\!\$\~\w]+$/"
             required: true
             unique: false
           "status":
@@ -86,6 +86,6 @@ mapping:
                     required: true
                   "to":
                     type: str
-                    pattern: /^(https?|ftp)\:\/\/.+/
+                    pattern: "/^(https?|ftp)\:\/\/[a-zA-Z0-9][\/\.\-\:\?\=\&\#\%\!\$\~\w]+$/"
                     required: true
 

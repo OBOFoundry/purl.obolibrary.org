@@ -4,7 +4,7 @@ idspace: BCO
 base_url: /obo/bco
 
 products:
-- bco.owl: https://raw.githubusercontent.com/BiodiversityOntologies/bco/master/src/ontology/bco.owl
+- bco.owl: https://raw.githubusercontent.com/BiodiversityOntologies/bco/master/releases/2015-04-10/bco.owl
 
 term_browser: ontobee
 example_terms:

@@ -4,7 +4,7 @@ idspace: BCO
 base_url: /obo/bco
 
 products:
-- bco.owl: https://raw.githubusercontent.com/tucotuco/bco/master/releases/2015-04-10/bco.owl
+- bco.owl: https://raw.githubusercontent.com/BiodiversityOntologies/bco/master/src/ontology/bco.owl
 
 term_browser: ontobee
 example_terms:
@@ -12,11 +12,10 @@ example_terms:
 
 entries:
 - exact: /bco-non-classified.owl
-  replacement: https://raw.githubusercontent.com/tucotuco/bco/master/releases/2015-04-10/bco-non-classified.owl
+  replacement: https://raw.githubusercontent.com/BiodiversityOntologies/bco/master/releases/2015-04-10/bco-non-classified.owl
 
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=BCO&iri=http://purl.obolibrary.org/obo/
 
 - prefix: /
-  replacement: https://raw.githubusercontent.com/tucotuco/bco/master/
-
+  replacement: https://raw.githubusercontent.com/BiodiversityOntologies/bco/master/

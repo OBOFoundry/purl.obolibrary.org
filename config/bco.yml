@@ -18,4 +18,4 @@ entries:
   replacement: http://www.ontobee.org/browser/rdf.php?o=BCO&iri=http://purl.obolibrary.org/obo/
 
 - prefix: /
-  replacement: https://raw.githubusercontent.com/BiodiversityOntologies/bco/master/
+  replacement: https://raw.githubusercontent.com/BiodiversityOntologies/bco/master/releases/2015-04-10/

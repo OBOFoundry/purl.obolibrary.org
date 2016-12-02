@@ -4,7 +4,7 @@ idspace: OGG
 base_url: /obo/ogg
 
 products:
-- ogg.owl: http://ogg.googlecode.com/svn/trunk/src/ontology/ogg.owl
+- ogg.owl: https://bitbucket.org/hegroup/ogg/raw/master/ogg-merged.owl
 
 term_browser: ontobee
 example_terms:
@@ -12,22 +12,25 @@ example_terms:
 
 entries:
 - exact: /ogg-pf.owl
-  replacement: http://ogg.googlecode.com/svn/trunk/src/ontology/ogg-pf.owl
+  replacement: https://bitbucket.org/hegroup/ogg-pf/raw/master/ogg-pf.owl 
 
 - exact: /ogg-mm.owl
-  replacement: http://ogg.googlecode.com/svn/trunk/src/ontology/ogg-mm.owl
+  replacement: https://bitbucket.org/hegroup/ogg-mouse/raw/master/ogg-mm.owl
 
 - exact: /ogg-dm.owl
-  replacement: http://ogg.googlecode.com/svn/trunk/src/ontology/ogg-dm.owl
+  replacement: https://bitbucket.org/hegroup/ogg-dm/raw/master/ogg-dm.owl
 
 - exact: /ogg-sc.owl
-  replacement: http://ogg.googlecode.com/svn/trunk/src/ontology/ogg-sc.owl
+  replacement: https://bitbucket.org/hegroup/ogg-sc/raw/master/ogg-sc.owl
 
 - exact: /ogg-dr.owl
-  replacement: http://ogg.googlecode.com/svn/trunk/src/ontology/ogg-dr.owl
+  replacement: https://bitbucket.org/hegroup/ogg-dr/raw/master/ogg-dr.owl
 
 - exact: /ogg-ce.owl
-  replacement: http://ogg.googlecode.com/svn/trunk/src/ontology/ogg-ce.owl
+  replacement: https://bitbucket.org/hegroup/ogg-ce/raw/master/ogg-ce.owl
 
+- exact: /ogg-bru.owl
+  replacement: https://bitbucket.org/hegroup/ogg-bru/raw/master/ogg-bru.owl
+  
 - exact: /ogg-at.owl
-  replacement: http://ogg.googlecode.com/svn/trunk/src/ontology/ogg-at.owl
+  replacement: https://bitbucket.org/hegroup/ogg-at/raw/master/ogg-at.owl

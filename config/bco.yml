@@ -15,8 +15,8 @@ entries:
 - exact: /bco-non-classified.owl
   replacement: https://raw.githubusercontent.com/BiodiversityOntologies/bco/2016-12-14/bco-non-classified.owl
 
-- exact: /releases/2016-12-14/bco.owl
-  replacement: https://raw.githubusercontent.com/BiodiversityOntologies/bco/2016-12-14/bco.owl
+- prefix: /releases/2016-12-14/
+  replacement: https://raw.githubusercontent.com/BiodiversityOntologies/bco/2016-12-14/
 
 - prefix: /releases/2015-04-10/
   replacement: https://raw.githubusercontent.com/BiodiversityOntologies/bco/master/releases/2015-04-10/
@@ -32,6 +32,3 @@ entries:
 
 - prefix: /imports/
   replacement: https://raw.githubusercontent.com/BiodiversityOntologies/bco/2016-12-14/imports/
-
-- prefix: /2016-12-14/
-  replacement: https://raw.githubusercontent.com/BiodiversityOntologies/bco/2016-12-14/

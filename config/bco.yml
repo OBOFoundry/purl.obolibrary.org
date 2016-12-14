@@ -19,5 +19,5 @@ entries:
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=BCO&iri=http://purl.obolibrary.org/obo/
 
-- prefix: /
-  replacement: https://raw.githubusercontent.com/BiodiversityOntologies/bco/
+- prefix: /imports/
+  replacement: https://raw.githubusercontent.com/BiodiversityOntologies/bco/imports/

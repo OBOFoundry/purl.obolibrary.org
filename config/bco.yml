@@ -32,3 +32,6 @@ entries:
 
 - prefix: /imports/
   replacement: https://raw.githubusercontent.com/BiodiversityOntologies/bco/2016-12-14/imports/
+
+- prefix: /2016-12-14/
+  replacement: https://raw.githubusercontent.com/BiodiversityOntologies/bco/2016-12-14/

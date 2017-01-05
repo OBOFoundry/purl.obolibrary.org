@@ -19,10 +19,6 @@ entries:
 - exact: /tracker
   replacement: https://github.com/ontoneo-project/Ontoneo/issues
 
-### Current Releases
-- exact: ontoneo.owl
-  replacement: hhttps://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/ontoneo.owl
-
 ### Imported ontologies current release
 - exact: /external
   replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/import

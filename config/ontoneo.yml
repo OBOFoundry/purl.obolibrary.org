@@ -9,22 +9,3 @@ products:
 term_browser: ontobee
 example_terms:
 - ONTONEO_00000005
-
-entries:
-
-- exact: /ontoneo.owl
-  replacement: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/ontoneo.owl
-
-- exact: /ontoneo/external
-  replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/import
-  
-- exact: /ontoneo/releases
-  replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases
-
-- exact: /ontoneo/project
-  replacement: https://github.com/ontoneo-project/Ontoneo
-  
-- exact: /ontoneo/homepage
-  replacement: https://ontoneo.com/
-
-  

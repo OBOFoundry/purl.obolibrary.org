@@ -1,0 +1,13 @@
+# PURL configuration for http://purl.obolibrary.org/obo/geno
+
+idspace: GENO
+base_url: /obo/geno
+
+products:
+- geno.owl: https://raw.githubusercontent.com/monarch-initiative/GENO-ontology/develop/src/ontology/geno.owl
+
+entries:
+- exact: /geno.owl
+  replacement: https://raw.githubusercontent.com/monarch-initiative/GENO-ontology/develop/src/ontology/geno.owl
+
+

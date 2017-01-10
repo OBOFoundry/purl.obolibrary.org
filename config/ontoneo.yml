@@ -25,7 +25,7 @@ entries:
   tests:
   - from: /import/uberon_import.owl
     to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/import/uberon_import.owl
-	 
+
 ### Previous release
 
 - exact: /releases/
@@ -33,13 +33,13 @@ entries:
   
 - exact: /releases/2016-11-07
   replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/2016-11-07
-  
+ 
 - exact: /releases/2016-12-14
   replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/2016-12-14
-  
+
 - exact: /releases/2016-12-26
   replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/2016-12-26
-    
+  
 ### Documentation Pages and Redirects
 - exact: /homepage
   replacement: http://ontoneo.com

@@ -34,29 +34,11 @@ entries:
 - exact: /releases/2016-11-07
   replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/2016-11-07
   
- - prefix: /releases/2016-11-07/
-  replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/2016-11-07/
-  tests:
-  - from: /releases/2016-11-07/bfo_import.owl
-    to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/2016-11-07/bfo_import.owl
- 
 - exact: /releases/2016-12-14
   replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/2016-12-14
-
- - prefix: /releases/2016-12-14/
-  replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/2016-12-14/
-  tests:
-  - from: /releases/2016-12-14/bfo_import.owl
-    to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/2016-12-14/bfo_import.owl
-    
+  
 - exact: /releases/2016-12-26
   replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/2016-12-26
-
- - prefix: /releases/2016-12-26/
-  replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/2016-12-26/
-  tests:
-  - from: /releases/2016-11-07/bfo_import.owl
-    to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/2016-12-26/bfo_import.owl
     
 ### Documentation Pages and Redirects
 - exact: /homepage

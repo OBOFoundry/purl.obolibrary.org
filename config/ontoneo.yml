@@ -25,18 +25,44 @@ entries:
   tests:
   - from: /import/uberon_import.owl
     to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/import/uberon_import.owl
+	
+### Current release
 
+- exact: /releases/2016-12-26
+  replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/2016-12-26
+  
 ### Previous release
 
-- exact: /release/
+- exact: /releases/
   replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases
   
-- exact: /releases/v1
-  replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/v1.0
- 
-- exact: /releases/v1.1
-  replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/v1.1
+- exact: /releases/2016-11-07
+  replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/2016-11-07
   
+ - prefix: /releases/2016-11-07/
+  replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/2016-11-07/
+  tests:
+  - from: /releases/2016-11-07/bfo_import.owl
+    to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/2016-11-07/bfo_import.owl
+ 
+- exact: /releases/2016-12-14
+  replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/2016-12-14
+
+ - prefix: /releases/2016-12-14/
+  replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/2016-12-14/
+  tests:
+  - from: /releases/2016-12-14/bfo_import.owl
+    to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/2016-12-14/bfo_import.owl
+    
+- exact: /releases/2016-12-26
+  replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/2016-12-26
+
+ - prefix: /releases/2016-12-26/
+  replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/2016-12-26/
+  tests:
+  - from: /releases/2016-11-07/bfo_import.owl
+    to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/2016-12-26/bfo_import.owl
+    
 ### Documentation Pages and Redirects
 - exact: /homepage
   replacement: http://ontoneo.com

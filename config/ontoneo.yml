@@ -23,8 +23,8 @@ entries:
 - prefix: /import/
   replacement: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/import/
   tests:
-  - from: /import/UBERON_import.owl
-    to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/import/UBERON_import.owl
+  - from: /import/uberon_import.owl
+    to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/import/uberon_import.owl
 
 ### Previous release
 

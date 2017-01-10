@@ -4,8 +4,8 @@ idspace: ATO
 base_url: /obo/ato
 
 products:
-- ato.owl: http://www.berkeleybop.org/ontologies/ato.owl
-- ato.obo: http://www.berkeleybop.org/ontologies/ato.obo
+- ato.owl: http://ontologies.berkeleybop.org/ato.owl
+- ato.obo: http://ontologies.berkeleybop.org/ato.obo
 
 term_browser: ontobee
 example_terms:

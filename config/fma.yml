@@ -4,8 +4,8 @@ idspace: FMA
 base_url: /obo/fma
 
 products:
-- fma.owl: http://www.berkeleybop.org/ontologies/fma.owl
-- fma.obo: http://www.berkeleybop.org/ontologies/fma.obo
+- fma.owl: http://ontologies.berkeleybop.org/fma.owl
+- fma.obo: http://ontologies.berkeleybop.org/fma.obo
 
 term_browser: ontobee
 example_terms:

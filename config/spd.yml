@@ -4,8 +4,8 @@ idspace: SPD
 base_url: /obo/spd
 
 products:
-- spd.owl: http://www.berkeleybop.org/ontologies/spd.owl
-- spd.obo: http://www.berkeleybop.org/ontologies/spd.obo
+- spd.owl: http://ontologies.berkeleybop.org/spd.owl
+- spd.obo: http://ontologies.berkeleybop.org/spd.obo
 
 term_browser: ontobee
 example_terms:

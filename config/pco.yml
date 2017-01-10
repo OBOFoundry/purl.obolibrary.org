@@ -4,13 +4,16 @@ idspace: PCO
 base_url: /obo/pco
 
 products:
-- pco.owl: https://raw.githubusercontent.com/PopulationAndCommunityOntology/pco/2016-08-01/src/ontology/pco_merged_inferred.owl
+- pco.owl: https://raw.githubusercontent.com/PopulationAndCommunityOntology/pco/2016-12-14/src/ontology/pco_merged_inferred.owl
 
 term_browser: ontobee
 example_terms:
 - PCO_0000000
 
 entries:
+- exact: /releases/2016-12-14/pco.owl
+  replacement: https://raw.githubusercontent.com/PopulationAndCommunityOntology/pco/2016-12-14/src/ontology/pco_merged_inferred.owl
+
 - exact: /releases/2016-08-01/pco.owl
   replacement: https://raw.githubusercontent.com/PopulationAndCommunityOntology/pco/2016-08-01/src/ontology/pco_merged_inferred.owl
 

@@ -4,7 +4,7 @@ idspace: NBO
 base_url: /obo/nbo
 
 products:
-- nbo.owl: http://www.berkeleybop.org/ontologies/nbo.owl
+- nbo.owl: http://ontologies.berkeleybop.org/nbo.owl
 
 term_browser: ontobee
 example_terms:

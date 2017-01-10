@@ -4,7 +4,7 @@ idspace: DDPHENO
 base_url: /obo/ddpheno
 
 products:
-- ddpheno.owl: http://www.berkeleybop.org/ontologies/ddpheno.owl
+- ddpheno.owl: http://ontologies.berkeleybop.org/ddpheno.owl
 
 term_browser: ontobee
 example_terms:

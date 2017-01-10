@@ -5,7 +5,7 @@ base_url: /obo/obi
 
 products:
 - obi.owl: http://svn.code.sf.net/p/obi/code/releases/2016-10-11/obi.owl
-- obi.obo: http://www.berkeleybop.org/ontologies/obi.obo
+- obi.obo: http://ontologies.berkeleybop.org/obi.obo
 
 term_browser: ontobee
 example_terms:

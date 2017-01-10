@@ -4,8 +4,8 @@ idspace: VHOG
 base_url: /obo/vhog
 
 products:
-- vhog.owl: http://www.berkeleybop.org/ontologies/vhog.owl
-- vhog.obo: http://www.berkeleybop.org/ontologies/vhog.obo
+- vhog.owl: http://ontologies.berkeleybop.org/vhog.owl
+- vhog.obo: http://ontologies.berkeleybop.org/vhog.obo
 
 term_browser: ontobee
 example_terms:

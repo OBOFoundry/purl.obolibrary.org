@@ -4,8 +4,8 @@ idspace: ZFA
 base_url: /obo/zfa
 
 products:
-- zfa.owl: http://www.berkeleybop.org/ontologies/zfa.owl
-- zfa.obo: http://www.berkeleybop.org/ontologies/zfa.obo
+- zfa.owl: http://ontologies.berkeleybop.org/zfa.owl
+- zfa.obo: http://ontologies.berkeleybop.org/zfa.obo
 
 term_browser: ontobee
 example_terms:

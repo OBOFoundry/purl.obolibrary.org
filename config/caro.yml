@@ -4,7 +4,7 @@ idspace: CARO
 base_url: /obo/caro
 
 products:
-- caro.owl: http://www.berkeleybop.org/ontologies/caro.owl
+- caro.owl: https://raw.githubusercontent.com/obophenotype/caro/master/src/ontology/caro.owl
 
 term_browser: ontobee
 example_terms:

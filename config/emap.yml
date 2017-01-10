@@ -4,7 +4,7 @@ idspace: EMAP
 base_url: /obo/emap
 
 products:
-- emap.owl: http://www.berkeleybop.org/ontologies/emap.owl
+- emap.owl: http://ontologies.berkeleybop.org/emap.owl
 
 term_browser: ontobee
 example_terms:

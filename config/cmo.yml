@@ -4,8 +4,8 @@ idspace: CMO
 base_url: /obo/cmo
 
 products:
-- cmo.owl: http://www.berkeleybop.org/ontologies/cmo.owl
-- cmo.obo: http://www.berkeleybop.org/ontologies/cmo.obo
+- cmo.owl: http://ontologies.berkeleybop.org/cmo.owl
+- cmo.obo: http://ontologies.berkeleybop.org/cmo.obo
 
 term_browser: ontobee
 example_terms:

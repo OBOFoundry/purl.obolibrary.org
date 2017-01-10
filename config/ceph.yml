@@ -4,8 +4,8 @@ idspace: CEPH
 base_url: /obo/ceph
 
 products:
-- ceph.owl: https://raw.githubusercontent.com/obophenotype/cephalopod-ontology/master/cl.owl
-- ceph.obo: https://raw.githubusercontent.com/obophenotype/cephalopod-ontology/master/cl.obo
+- ceph.owl: https://raw.githubusercontent.com/obophenotype/cephalopod-ontology/master/ceph.owl
+- ceph.obo: https://raw.githubusercontent.com/obophenotype/cephalopod-ontology/master/ceph.obo
 
 term_browser: ontobee
 example_terms:
@@ -15,4 +15,4 @@ entries:
 - prefix: /releases/
   replacement: https://raw.githubusercontent.com/obophenotype/cephalopod-ontology/v
 - prefix: /
-  replacement: http://berkeleybop.org/ontologies/ceph/
+  replacement: http://ontologies.berkeleybop.org/ceph/

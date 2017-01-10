@@ -4,8 +4,8 @@ idspace: OlatDv
 base_url: /obo/olatdv
 
 products:
-- olatdv.owl: http://www.berkeleybop.org/ontologies/olatdv.owl
-- olatdv.obo: http://www.berkeleybop.org/ontologies/olatdv.obo
+- olatdv.owl: http://ontologies.berkeleybop.org/olatdv.owl
+- olatdv.obo: http://ontologies.berkeleybop.org/olatdv.obo
 
 term_browser: ontobee
 example_terms:

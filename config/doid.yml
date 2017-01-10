@@ -6,9 +6,20 @@ base_url: /obo/doid
 base_redirect: https://github.com/DiseaseOntology/HumanDiseaseOntology/tree/master/
 
 products:
-- doid.owl: http://www.berkeleybop.org/ontologies/doid.owl
-- doid.obo: http://www.berkeleybop.org/ontologies/doid.obo
+- doid.owl: http://ontologies.berkeleybop.org/doid.owl
+- doid.obo: http://ontologies.berkeleybop.org/doid.obo
 
 term_browser: ontobee
 example_terms:
 - DOID_4
+
+entries:
+
+- exact: /obo/ext.owl
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/ext.owl
+
+- prefix: /imports/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/imports/
+  tests:
+  - from: /imports/relations.owl
+    to: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/imports/relations.owl

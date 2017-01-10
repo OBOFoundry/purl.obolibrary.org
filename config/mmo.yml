@@ -4,8 +4,8 @@ idspace: MMO
 base_url: /obo/mmo
 
 products:
-- mmo.owl: http://www.berkeleybop.org/ontologies/mmo.owl
-- mmo.obo: http://www.berkeleybop.org/ontologies/mmo.obo
+- mmo.owl: http://ontologies.berkeleybop.org/mmo.owl
+- mmo.obo: http://ontologies.berkeleybop.org/mmo.obo
 
 term_browser: ontobee
 example_terms:

@@ -4,8 +4,8 @@ idspace: WBPhenotype
 base_url: /obo/wbphenotype
 
 products:
-- wbphenotype.owl: http://www.berkeleybop.org/ontologies/wbphenotype.owl
-- wbphenotype.obo: http://www.berkeleybop.org/ontologies/wbphenotype.obo
+- wbphenotype.owl: http://ontologies.berkeleybop.org/wbphenotype.owl
+- wbphenotype.obo: http://ontologies.berkeleybop.org/wbphenotype.obo
 
 term_browser: ontobee
 example_terms:

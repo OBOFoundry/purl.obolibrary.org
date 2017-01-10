@@ -4,8 +4,8 @@ idspace: MI
 base_url: /obo/mi
 
 products:
-- mi.owl: http://www.berkeleybop.org/ontologies/mi.owl
-- mi.obo: http://www.berkeleybop.org/ontologies/mi.obo
+- mi.owl: http://ontologies.berkeleybop.org/mi.owl
+- mi.obo: http://ontologies.berkeleybop.org/mi.obo
 
 term_browser: ontobee
 example_terms:

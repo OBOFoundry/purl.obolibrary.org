@@ -4,8 +4,8 @@ idspace: PW
 base_url: /obo/pw
 
 products:
-- pw.owl: http://www.berkeleybop.org/ontologies/pw.owl
-- pw.obo: http://www.berkeleybop.org/ontologies/pw.obo
+- pw.owl: http://ontologies.berkeleybop.org/pw.owl
+- pw.obo: http://ontologies.berkeleybop.org/pw.obo
 
 term_browser: ontobee
 example_terms:

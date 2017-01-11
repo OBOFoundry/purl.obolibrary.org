@@ -1,0 +1,45 @@
+# PURL configuration for http://purl.obolibrary.org/obo/ontoneo/
+
+idspace: ONTONEO
+base_url: /obo/ontoneo
+
+products:
+- ontoneo.owl: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/ontoneo.owl
+
+term_browser: ontobee
+example_terms:
+- ONTONEO_00000005
+
+entries:
+
+### Project Page and Tracker
+- exact: /project
+  replacement: https://github.com/ontoneo-project/Ontoneo
+ 
+- exact: /tracker
+  replacement: https://github.com/ontoneo-project/Ontoneo/issues
+
+### Imported ontologies current release
+- prefix: /import/
+  replacement: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/import/
+  tests:
+  - from: /import/uberon_import.owl
+    to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/import/uberon_import.owl
+
+### Previous release
+
+- exact: /releases/
+  replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases
+  
+- exact: /releases/2016-11-07
+  replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/2016-11-07
+ 
+- exact: /releases/2016-12-14
+  replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/2016-12-14
+
+- exact: /releases/2016-12-26
+  replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/2016-12-26
+  
+### Documentation Pages and Redirects
+- exact: /homepage
+  replacement: http://ontoneo.com

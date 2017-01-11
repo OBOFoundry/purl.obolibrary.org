@@ -4,18 +4,31 @@ idspace: BCO
 base_url: /obo/bco
 
 products:
-- bco.owl: https://raw.githubusercontent.com/BiodiversityOntologies/bco/master/releases/2015-04-10/bco.owl
+- bco.owl: https://raw.githubusercontent.com/BiodiversityOntologies/bco/2016-12-14/bco.owl
 
 term_browser: ontobee
+
 example_terms:
 - BCO_0000000
 
 entries:
 - exact: /bco-non-classified.owl
-  replacement: https://raw.githubusercontent.com/BiodiversityOntologies/bco/master/releases/2015-04-10/bco-non-classified.owl
+  replacement: https://raw.githubusercontent.com/BiodiversityOntologies/bco/2016-12-14/bco-non-classified.owl
+
+- prefix: /releases/2016-12-14/
+  replacement: https://raw.githubusercontent.com/BiodiversityOntologies/bco/2016-12-14/
+
+- prefix: /releases/2015-04-10/
+  replacement: https://raw.githubusercontent.com/BiodiversityOntologies/bco/master/releases/2015-04-10/
+
+- prefix: /releases/2014-05-27/
+  replacement: https://raw.githubusercontent.com/BiodiversityOntologies/bco/master/releases/2014-05-27/
+
+- prefix: /releases/2013-10-01/
+  replacement: https://raw.githubusercontent.com/BiodiversityOntologies/bco/master/releases/2013-10-01/
 
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=BCO&iri=http://purl.obolibrary.org/obo/
 
-- prefix: /
-  replacement: https://raw.githubusercontent.com/BiodiversityOntologies/bco/master/releases/2015-04-10/
+- prefix: /imports/
+  replacement: https://raw.githubusercontent.com/BiodiversityOntologies/bco/2016-12-14/imports/

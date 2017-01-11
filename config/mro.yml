@@ -6,13 +6,16 @@ base_url: /obo/mro
 base_redirect: https://github.com/IEDB/MRO
 
 products:
-- mro.owl: https://raw.githubusercontent.com/IEDB/MRO/v2016-01-07/mro.owl
+- mro.owl: https://raw.githubusercontent.com/IEDB/MRO/v2016-12-15/mro.owl
 
 term_browser: ontobee
 example_terms:
 - MRO_0000012
 
 entries:
+- exact: /2016-12-15/mro.owl
+  replacement: https://raw.githubusercontent.com/IEDB/MRO/v2016-12-15/mro.owl
+  
 - exact: /2016-01-07/mro.owl
   replacement: https://raw.githubusercontent.com/IEDB/MRO/v2016-01-07/mro.owl
 

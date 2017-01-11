@@ -3,9 +3,11 @@
 idspace: SYMP
 base_url: /obo/symp
 
+base_redirect: https://github.com/DiseaseOntology/SymptomOntology/blob/master/
+
 products:
-- symp.owl: http://ontologies.berkeleybop.org/symp.owl
-- symp.obo: http://ontologies.berkeleybop.org/symp.obo
+- symp.owl: https://github.com/DiseaseOntology/SymptomOntology/blob/master/symp.owl
+- symp.obo: https://github.com/DiseaseOntology/SymptomOntology/blob/master/symp.obo
 
 term_browser: ontobee
 example_terms:

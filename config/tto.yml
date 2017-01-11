@@ -4,8 +4,8 @@ idspace: TTO
 base_url: /obo/tto
 
 products:
-- tto.owl: http://ontologies.berkeleybop.org/tto.owl
-- tto.obo: http://ontologies.berkeleybop.org/tto.obo
+- tto.owl: https://raw.githubusercontent.com/phenoscape/teleost-taxonomy-ontology/master/tto.owl
+- tto.obo: https://raw.githubusercontent.com/phenoscape/teleost-taxonomy-ontology/master/tto.obo
 
 term_browser: ontobee
 example_terms:

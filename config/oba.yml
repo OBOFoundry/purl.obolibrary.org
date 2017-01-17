@@ -6,7 +6,14 @@ base_url: /obo/oba
 products:
 - oba.owl: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/oba.owl
 - oba.obo: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/oba.obo
+- oba.json: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/oba.json
 
+entries:
+- prefix: /subsets/
+  replacement: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/subsets/
+- prefix: /imports/
+  replacement: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/imports/  
+  
 term_browser: ontobee
 example_terms:
 - OBA_0000001

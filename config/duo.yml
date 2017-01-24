@@ -4,8 +4,8 @@ idspace: DUO
 base_url: /obo/duo
 
 products:
-- duo.owl: https://raw.githubusercontent.com/EBISPOT/master/duo.owl
-- duo.obo: https://raw.githubusercontent.com/EBISPOT/master/duo.obo
+- duo.owl: https://raw.githubusercontent.com/EBISPOT/DUO/master/duo.owl
+- duo.obo: https://raw.githubusercontent.com/EBISPOT/DUO/master/duo.obo
 
 term_browser: ontobee
 example_terms:
@@ -14,14 +14,14 @@ example_terms:
 entries:
 
 - prefix: /releases/
-  replacement: https://raw.githubusercontent.com/EBISPOT/duo/releases
+  replacement: https://raw.githubusercontent.com/EBISPOT/DUO/releases/v
 
 - prefix: /tracker/
-  replacement: https://github.com/EBISPOT/duo/issues
+  replacement: https://github.com/EBISPOT/DUO/issues
 
 - prefix: /about/
   replacement: http://www.ontobee.org/ontology/DUO?iri=http://purl.obolibrary.org/obo/
 
 ## generic fall-through, serve direct from github by default
 - prefix: /
-  replacement: https://raw.githubusercontent.com/EBISPOT/duo/master/
+  replacement: https://raw.githubusercontent.com/EBISPOT/DUO/master/

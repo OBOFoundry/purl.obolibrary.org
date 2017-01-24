@@ -1,0 +1,11 @@
+# PURL configuration for http://purl.obolibrary.org/obo/duo
+
+idspace: DUO
+base_url: /obo/duo
+
+products:
+- duo.owl: https://github.com/EBISPOT/DUO/blob/master/DataUseOntology.owl
+
+term_browser: ontobee
+example_terms:
+- DUO_0000007

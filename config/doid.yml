@@ -23,3 +23,9 @@ entries:
   tests:
   - from: /imports/relations.owl
     to: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/imports/relations.owl
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/releases/
+  tests:
+  - from: /releases/2017-01-27/doid.owl
+    to: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/releases/2017-01-27/doid.owl

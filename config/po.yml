@@ -10,6 +10,8 @@ products:
 entries:
 - prefix: /subsets/
   replacement: https://raw.githubusercontent.com/Planteome/plant-ontology/master/subsets/
+- prefix: /imports/
+  replacement: https://raw.githubusercontent.com/Planteome/plant-ontology/master/imports/
 - prefix: /releases/
   replacement: https://raw.githubusercontent.com/Planteome/plant-ontology/v
   

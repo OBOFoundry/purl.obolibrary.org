@@ -4,7 +4,7 @@ idspace: MP
 base_url: /obo/mp
 
 products:
-- mp.owl: ftp://ftp.informatics.jax.org/pub/reports/mp.owl
+- mp.owl: http://ontologies.berkeleybop.org/mp.owl
 - mp.obo: http://ontologies.berkeleybop.org/mp.obo
 
 term_browser: ontobee

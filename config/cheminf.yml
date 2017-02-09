@@ -2,5 +2,5 @@ idspace: CHEMINFO
 base_url: /obo/cheminf
 
 products:
-- obi.owl: https://raw.githubusercontent.com/egonw/semanticchemistry/master/ontology/cheminf.owl
-- obi.obo: http://ontologies.berkeleybop.org/cheminf.obo
+- cheminf.owl: https://raw.githubusercontent.com/egonw/semanticchemistry/master/ontology/cheminf.owl
+- cheminf.obo: http://ontologies.berkeleybop.org/cheminf.obo

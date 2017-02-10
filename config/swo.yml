@@ -1,0 +1,19 @@
+# PURL configuration for http://purl.obolibrary.org/obo/swo
+
+idspace: SWO
+base_url: /obo/swo
+
+products:
+- swo.owl: https://raw.githubusercontent.com/allysonlister/swo/master/release/swo_inferred.owl
+
+term_browser: ontobee
+example_terms:
+- SWO_0000000
+
+entries:
+- prefix: /tracker/
+  replacement: https://github.com/allysonlister/swo/issues
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://github.com/allysonlister/swo/tree/master

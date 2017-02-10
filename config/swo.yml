@@ -8,7 +8,7 @@ products:
 
 term_browser: ontobee
 example_terms:
-- DUO_0000000
+- SWO_0000000
 
 entries:
 - prefix: /tracker/

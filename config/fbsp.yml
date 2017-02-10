@@ -4,8 +4,8 @@ idspace: FBsp
 base_url: /obo/fbsp
 
 products:
-- fbsp.owl: http://www.berkeleybop.org/ontologies/fbsp.owl
-- fbsp.obo: http://www.berkeleybop.org/ontologies/fbsp.obo
+- fbsp.owl: http://ontologies.berkeleybop.org/fbsp.owl
+- fbsp.obo: http://ontologies.berkeleybop.org/fbsp.obo
 
 term_browser: ontobee
 example_terms:

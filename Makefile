@@ -73,6 +73,11 @@ validate:
 	kwalify -f tools/config.schema.yml config/*.yml \
 	| awk '{print} /INVALID/ {status=1} END {exit status}'
 
+# Validate a single configuration file.
+.PHONY: validate-%
+validate-%:
+	kwalify -f tools/config.schema.yml config/$*.yml
+
 
 ### Generate Apache Config
 #
@@ -118,6 +123,11 @@ temp/obo/%/.htaccess: config/%.yml
 	| awk '{print "$* temp/obo/" $$0}' \
 	| xargs -t ln -s
 	rm -f temp/obo/$*/$*
+
+# Build temp files for a single project.
+.PHONY: build-%
+build-%: validate-% temp/obo/%/.htaccess temp/base_redirects/%.htaccess temp/products/%.htaccess temp/terms/%.htaccess
+	@echo "Built files in temp/$*"
 
 backup/:
 	mkdir $@

@@ -11,5 +11,14 @@ example_terms:
 - OOSTT_00000029
 
 entries:
+- prefix: /release/
+  replacement: https://raw.githubusercontent.com/OOSTT/OOSTT/
+
 - exact: /2015-10-16/oostt.owl
   replacement: https://raw.githubusercontent.com/OOSTT/OOSTT/2015-10-16/releases/oostt.owl
+  
+- exact: /dev/oostt.owl
+  replacement: https://raw.githubusercontent.com/OOSTT/OOSTT/master/development/oostt.owl
+  
+- exact: /2016-06-17/oostt.owl
+  replacement: https://raw.githubusercontent.com/OOSTT/OOSTT/2016-07-17/releases/oostt.owl

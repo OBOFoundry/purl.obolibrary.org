@@ -4,8 +4,8 @@ idspace: MOP
 base_url: /obo/mop
 
 products:
-- mop.owl: http://www.berkeleybop.org/ontologies/mop.owl
-- mop.obo: http://rxno.googlecode.com/svn/trunk/mop.obo
+- mop.owl: https://raw.githubusercontent.com/rsc-ontologies/rxno/master/mop.owl
+- mop.obo: https://raw.githubusercontent.com/rsc-ontologies/rxno/master/mop.obo
 
 term_browser: ontobee
 example_terms:

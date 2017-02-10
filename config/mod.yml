@@ -4,7 +4,7 @@ idspace: MOD
 base_url: /obo/mod
 
 products:
-- mod.owl: http://www.berkeleybop.org/ontologies/mod.owl
+- mod.owl: http://ontologies.berkeleybop.org/mod.owl
 
 term_browser: ontobee
 example_terms:

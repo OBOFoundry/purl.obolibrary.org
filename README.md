@@ -154,34 +154,63 @@ You can run migration for a single ontology at a time, by its ID (usually lower 
 
     make migrate-obi
 
-The tool will refuse to overwrite existing YAML configuration files. If you are running a test server (see next section) you can test the configuration as you are migrating:
+The tool will refuse to overwrite existing YAML configuration files. If you're running a test server (see next section) you can test the configuration as you're migrating:
 
     make migrate-obi && make all test
 
 
 ## Development and Testing
 
-Developers can test their changes using a local virtual machine. First install [VirtualBox](https://www.virtualbox.org) and [Vagrant](https://www.vagrantup.com). Then check out a copy of this repository and start a virtual machine like so:
+The PURL system runs on Ubuntu Linux, but you can test your changes using a virtual machine (VM) that runs on Windows, Mac, or Linux. Your local development machine (Windows, Mac, or Linux) will be the "host" machine. The VM will be a copy of Ubuntu Linux that runs on your host, and can be thrown away when you're done testing.
+
+You'll have to install these three tools on your host machine:
+
+1. [VirtualBox](https://www.virtualbox.org) to run the VM
+2. [Vagrant](https://www.vagrantup.com) to setting up the VM
+3. [Ansible](https://) to provisioning the VM with the right software
+
+All of these tools are free for you to use. If you're using macOS with [Homebrew](http://brew.sh), then you can install the three tools like this:
+
+    brew cask install Caskroom/cask/vagrant
+    brew cask install Caskroom/cask/virtualbox
+    brew install ansible
+
+Once the three tools are installed, check out a copy of this repository and start the VM:
 
     git clone https://github.com/OBOFoundry/purl.obolibrary.org.git
     cd purl.obolibrary.org/tools
     vagrant up
 
-This will download a Ubuntu Linux virtual machine, start it, and configure it as a web server. The `/var/www/purl.obolibrary.org` directory of the VM is synced with your local `purl.obolibrary.org` directory. You can then log in and rebuild the `.htaccess` files:
+This will:
+
+1. download an Ubuntu Linux virtual machine (using Vagrant and the `tools/Vagrantfile`)
+2. run it (using VirtualBox)
+3. configure it as a web server (using Ansible and the `tools/site.yml` file)
+
+If something goes wrong with step 3, the `vagrant provision` command will run Ansible again. Please [report any issues](https://github.com/OBOFoundry/purl.obolibrary.org/issues) that you run into.
+
+Use your favourite text editor on your host machine to make your changes to the files in the `purl.obolibrary.org` directory. That directory will be synchronized with the `/var/www/purl.obolibrary.org` directory inside the VM. When you're ready to test your changes, log in to the VM and rebuild the `.htaccess` files:
 
     vagrant ssh
     cd /var/www/purl.obolibrary.org
-    make
+    make clean all
 
-Test your changes in your browser using URLs starting with `http://172.16.100.10/obo/`, such as [`http://172.16.100.10/obo/OBI_0000070`](http://172.16.100.10/obo/OBI_0000070). You can also run an automated test of all the configured URLs like so:
+You can use the web browser on the host machine to see the results, using URLs starting with `http://172.16.100.10/obo/`, such as [`http://172.16.100.10/obo/OBI_0000070`](http://172.16.100.10/obo/OBI_0000070). You can also run an automated tests. To check a single `config/foo.yml` configuration file, run one of these commands
 
-    make all test
+    make clean validate-foo
+    make clean build-foo
 
-Test results will be listed in `tests/development/*.tsv` with their expected and actual values. If you are making changes to the project tools, you can test them against the `tools/examples/` files with:
+To update and test the whole system, run
+
+    make clean all test
+
+Detailed test results will be listed in `tests/development/*.tsv` files, with their expected and actual values. If you're making changes to the project tools, you can test them against the `tools/examples/` files with:
 
     make clean test-examples
 
-When you are done with the VM, log out with `exit`. Then you can choose to suspend the VM with
+Expert users who have to run more extensive tests can consider (temporarily) modifying their `hosts` file to redirect `purl.obolibrary.org` to the test server.
+
+When you're done with the VM, log out with `exit`. Then you can choose to suspend the VM with
 
     vagrant suspend
 

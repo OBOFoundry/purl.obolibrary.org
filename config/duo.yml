@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/duo
+
+idspace: DUO
+base_url: /obo/duo
+
+products:
+- duo.owl: https://raw.githubusercontent.com/EBISPOT/DUO/master/duo.owl
+- duo.obo: https://raw.githubusercontent.com/EBISPOT/DUO/master/duo.obo
+
+term_browser: ontobee
+example_terms:
+- DUO_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/EBISPOT/DUO/v
+
+- prefix: /tracker/
+  replacement: https://github.com/EBISPOT/DUO/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/DUO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/EBISPOT/DUO/master/

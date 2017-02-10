@@ -27,7 +27,10 @@ entries:
 ## the noctua ontology does not fit in the main GO SVN space, use a Jenkins artefact for now
 ## see https://github.com/geneontology/neo/issues/5
 - prefix: /noctua/
-  replacement: http://build.berkeleybop.org/job/build-noctua-entity-ontology/lastSuccessfulBuild/artifact/
+  replacement: http://build-artifacts.berkeleybop.org/build-noctua-entity-ontology/latest/
+
+- prefix: /noctua-obo/
+  replacement: http://build-artifacts.berkeleybop.org/build-noctua-obo-ontology/latest/
 
 - prefix: /releases/
   replacement: http://viewvc.geneontology.org/viewvc/GO-SVN/ontology-releases/
@@ -35,6 +38,21 @@ entries:
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=GO&iri=http://purl.obolibrary.org/obo/
 
+  # Terms for GO REFs
+# http://purl.obolibrary.org/obo/go/references/0000001
+# should point to
+# https://github.com/geneontology/go-site/blob/master/metadata/gorefs/goref-0000001.md
+
+
+- regex: ^/obo/go/references/(\d+)$
+  replacement: https://github.com/geneontology/go-site/blob/master/metadata/gorefs/goref-$1.md
+  tests:
+  - from: /references/0000001
+    to: https://github.com/geneontology/go-site/blob/master/metadata/gorefs/goref-0000001.md
+
+# Keep this as last entry as the rules are matched in order
 - prefix: /
   replacement: http://geneontology.org/ontology/
+  
+
 

@@ -8,7 +8,7 @@ base_redirect: https://github.com/oborel/obo-relations
 products:
 - ro.owl: https://raw.githubusercontent.com/oborel/obo-relations/master/ro.owl
 - ro.obo: https://raw.githubusercontent.com/oborel/obo-relations/master/ro.obo
-- ro.html: http://code.google.com/p/obo-relations/
+- ro.html: https://github.com/oborel/obo-relations
 
 term_browser: ontobee
 example_terms:
@@ -19,13 +19,16 @@ entries:
   replacement: https://docs.google.com/document/d/1WxocTXZaGVhEV1n7NB86pCF3SUcBJh8bq4vQrVCkjSU/edit#
 
 - exact: /ro-idranges.owl
-  replacement: https://obo-relations.googlecode.com/svn/trunk/src/ontology/ro-idranges.owl
+  replacement: https://raw.githubusercontent.com/oborel/obo-relations/master/src/ontology/ro-idranges.owl
 
 - prefix: /releases/2015-04-12/
   replacement: https://obo-relations.googlecode.com/svn/releases/2015-04-12/
 
 - prefix: /releases/
   replacement: https://raw.githubusercontent.com/oborel/obo-relations/v
+
+- prefix: /docs/
+  replacement: https://raw.githubusercontent.com/oborel/obo-relations/master/docs/
 
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=RO&iri=http://purl.obolibrary.org/obo/

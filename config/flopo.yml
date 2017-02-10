@@ -1,0 +1,9 @@
+# PURL configuration for http://purl.obolibrary.org/obo/fma
+
+idspace: FLOPO
+base_url: /obo/flopo
+
+products:
+- flopo.owl: https://github.com/flora-phenotype-ontology/flopoontology/raw/master/ontology/flopo.owl
+
+term_browser: custom

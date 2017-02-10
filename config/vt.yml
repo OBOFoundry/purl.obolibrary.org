@@ -4,8 +4,8 @@ idspace: VT
 base_url: /obo/vt
 
 products:
-- vt.owl: http://www.berkeleybop.org/ontologies/vt.owl
-- vt.obo: http://www.berkeleybop.org/ontologies/vt.obo
+- vt.owl: https://raw.githubusercontent.com/obophenotype/upheno/master/vt/vt.owl
+- vt.obo: https://raw.githubusercontent.com/obophenotype/upheno/master/vt/vt.obo
 
 term_browser: ontobee
 example_terms:

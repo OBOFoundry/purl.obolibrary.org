@@ -55,3 +55,9 @@ entries:
 
 - exact: /dev/dron-lite.owl
   replacement: https://bitbucket.org/uamsdbmi/dron/raw/development/dron-lite.owl
+
+- exact: /dev/dron-hand.owl
+  replacement: https://bitbucket.org/uamsdbmi/dron/raw/development/dron-hand.owl
+  
+- exact: /dron-hand.owl
+  replacement: https://bitbucket.org/uamsdbmi/dron/raw/master/dron-hand.owl

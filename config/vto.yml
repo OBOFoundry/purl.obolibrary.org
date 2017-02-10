@@ -4,8 +4,8 @@ idspace: VTO
 base_url: /obo/vto
 
 products:
-- vto.owl: http://vertebrate-taxonomy-ontology.googlecode.com/svn/trunk/releases/vto.owl
-- vto.obo: http://vertebrate-taxonomy-ontology.googlecode.com/svn/trunk/releases/vto.obo
+- vto.owl: http://vertebrate-taxonomy-ontology.s3-website-us-west-2.amazonaws.com/releases/vto.owl
+- vto.obo: http://vertebrate-taxonomy-ontology.s3-website-us-west-2.amazonaws.com/releases/vto.obo
 
 term_browser: ontobee
 example_terms:
@@ -22,5 +22,5 @@ entries:
     to: http://www.ontobee.org/browser/rdf.php?o=VTO&iri=http://purl.obolibrary.org/obo/VTO_0000001
 
 - prefix: /
-  replacement: http://vertebrate-taxonomy-ontology.googlecode.com/svn/trunk/releases/
+  replacement: http://vertebrate-taxonomy-ontology.s3-website-us-west-2.amazonaws.com/releases/
 

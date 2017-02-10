@@ -4,8 +4,24 @@ idspace: CTENO
 base_url: /obo/cteno
 
 products:
-- cteno.owl: http://www.berkeleybop.org/ontologies/cteno.owl
+- cteno.owl: https://raw.githubusercontent.com/obophenotype/ctenophore-ontology/master/cteno.owl
+- cteno.obo: https://raw.githubusercontent.com/obophenotype/ctenophore-ontology/master/cteno.obo
 
 term_browser: ontobee
 example_terms:
 - CTENO_0000001
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/obophenotype/ctenophore-ontology/v
+
+- prefix: /tracker/
+  replacement: https://github.com/obophenotype/ctenophore-ontology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/CTENO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/obophenotype/ctenophore-ontology/master/

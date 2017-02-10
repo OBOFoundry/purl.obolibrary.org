@@ -7,8 +7,10 @@ base_url: /obo/pr
 base_redirect: http://proconsortium.org
 
 products:
-- pr.owl: ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro.owl
-- pr.obo: ftp://ftp.pir.georgetown.edu/databases/ontology/pro_obo/pro.obo
+- pr.owl: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/pro_reasoned.owl
+- pr.obo: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/pro_reasoned.obo
+- pr-asserted.owl: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/pro.owl
+- pr-asserted.obo: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/pro.obo
 
 term_browser: custom
 

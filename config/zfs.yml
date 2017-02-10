@@ -4,8 +4,8 @@ idspace: ZFS
 base_url: /obo/zfs
 
 products:
-- zfs.owl: http://www.berkeleybop.org/ontologies/zfs.owl
-- zfs.obo: http://www.berkeleybop.org/ontologies/zfs.obo
+- zfs.owl: http://ontologies.berkeleybop.org/zfs.owl
+- zfs.obo: http://ontologies.berkeleybop.org/zfs.obo
 
 term_browser: ontobee
 example_terms:

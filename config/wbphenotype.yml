@@ -4,19 +4,10 @@ idspace: WBPhenotype
 base_url: /obo/wbphenotype
 
 products:
-- wbphenotype.owl: http://www.berkeleybop.org/ontologies/wbphenotype.owl
+- wbphenotype.owl: http://ontologies.berkeleybop.org/wbphenotype.owl
+- wbphenotype.obo: http://ontologies.berkeleybop.org/wbphenotype.obo
 
 term_browser: ontobee
 example_terms:
 - WBPhenotype_0000886
-
-entries:
-- prefix: /about/
-  replacement: http://www.ontobee.org/browser/rdf.php?o=WBPhenotype&iri=http://purl.obolibrary.org/obo/
-  tests:
-  - from: /about/WBPhenotype_0000886
-    to: http://www.ontobee.org/browser/rdf.php?o=WBPhenotype&iri=http://purl.obolibrary.org/obo/WBPhenotype_0000886
-
-- prefix: /
-  replacement: http://phenotype-ontologies.googlecode.com/svn/trunk/src/ontology/wbphenotype/
 

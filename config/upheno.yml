@@ -4,8 +4,8 @@ idspace: UPHENO
 base_url: /obo/upheno
 
 products:
-- upheno.owl: http://www.berkeleybop.org/ontologies/upheno.owl
-- upheno.obo: http://www.berkeleybop.org/ontologies/upheno.obo
+- upheno.owl: http://ontologies.berkeleybop.org/upheno.owl
+- upheno.obo: http://ontologies.berkeleybop.org/upheno.obo
 
 term_browser: ontobee
 example_terms:
@@ -23,6 +23,12 @@ entries:
 
 - exact: /zp.owl
   replacement: http://compbio.charite.de/hudson/job/zp-owl/lastSuccessfulBuild/artifact/zp.owl
+
+- exact: /mp-hp-view.owl
+  replacement: http://build-artifacts.berkeleybop.org/build-mp-hp-view/latest/mp-hp-view.owl
+
+- prefix: /mondo/gard/
+  replacement: https://raw.githubusercontent.com/monarch-initiative/monarch-disease-ontology/master/src/gard/
 
 - prefix: /data/
   replacement: http://build.berkeleybop.org/view/Monarch/job/generate-triples-from-nif/lastSuccessfulBuild/artifact/target/

@@ -14,7 +14,7 @@ example_terms:
 entries:
 
 - prefix: /releases/
-  replacement: https://raw.githubusercontent.com/EBISPOT/DUO/releases/v
+  replacement: https://raw.githubusercontent.com/EBISPOT/DUO/v
 
 - prefix: /tracker/
   replacement: https://github.com/EBISPOT/DUO/issues

@@ -1,0 +1,8 @@
+idspace: CHEMINFO
+base_url: /obo/cheminf
+
+products:
+- cheminf.owl: https://raw.githubusercontent.com/egonw/semanticchemistry/master/ontology/cheminf.owl
+- cheminf.obo: http://ontologies.berkeleybop.org/cheminf.obo
+
+term_browser: ontobee

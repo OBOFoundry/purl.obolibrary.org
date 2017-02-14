@@ -10,9 +10,8 @@ base_url: /obo/iao
 base_redirect: https://github.com/information-artifact-ontology/IAO 
 
 products:
-###  STAGING: uncomment when 2017-01-06 is made current, and remove corresponding stale entries here
-###- iao.owl: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2017-01-06/iao-merged.owl
-- iao.owl: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2015-02-23/iao.owl
+###  2017-01-06 is now current. There is no current OBO version. That should be fixed.
+- iao.owl: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2017-01-06/iao-merged.owl
 - iao.obo: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2009-11-06/merged/iao.obo
 
 term_browser: ontobee

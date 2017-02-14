@@ -12,22 +12,22 @@ example_terms:
 
 entries:
 - exact: /dev/dron-rxnorm.owl
-  replacement: http://s3.amazonaws.com/UAMS/dev/dron-rxnorm.owl
+  replacement: https://s3.amazonaws.com/drugontology/dev/dron-rxnorm.owl
 
 - exact: /dev/dron-ndc.owl
-  replacement: http://s3.amazonaws.com/UAMS/dev/dron-ndc.owl
+  replacement: https://s3.amazonaws.com/drugontology/dev/dron-ndc.owl
 
 - exact: /dron-ndc.owl
-  replacement: http://s3.amazonaws.com/UAMS/dron-ndc.owl
+  replacement: https://s3.amazonaws.com/drugontology/dron-ndc.owl
 
 - exact: /dron-rxnorm.owl
-  replacement: http://s3.amazonaws.com/UAMS/dron-rxnorm.owl
+  replacement: https://s3.amazonaws.com/drugontology/dron-rxnorm.owl
 
 - exact: /dron-ingredient.owl
-  replacement: http://s3.amazonaws.com/UAMS/dron-ingredient.owl
+  replacement: https://s3.amazonaws.com/drugontology/dron-ingredient.owl
 
 - exact: /dev/dron-ingredient.owl
-  replacement: http://s3.amazonaws.com/UAMS/dev/dron-ingredient.owl
+  replacement: https://s3.amazonaws.com/drugontology/dev/dron-ingredient.owl
 
 - exact: /dev/dron.owl
   replacement: https://bitbucket.org/uamsdbmi/dron/raw/development/dron-full.owl

@@ -4,7 +4,7 @@ idspace: OBI
 base_url: /obo/obi
 
 products:
-- obi.owl: http://svn.code.sf.net/p/obi/code/releases/2016-10-11/obi.owl
+- obi.owl: https://raw.githubusercontent.com/obi-ontology/obi-temp/master/obi.owl
 - obi.obo: http://ontologies.berkeleybop.org/obi.obo
 
 term_browser: ontobee
@@ -16,10 +16,10 @@ entries:
 ### Current Releases
 
 - exact: /obi_core.owl
-  replacement: http://svn.code.sf.net/p/obi/code/releases/2016-10-11/obi_core.owl
+  replacement: https://raw.githubusercontent.com/obi-ontology/obi-temp/master/obi_core.owl
 
 - exact: /obi_IEDBview.owl
-  replacement: http://svn.code.sf.net/p/obi/code/releases/2016-10-11/obi_iedb.owl
+  replacement: https://raw.githubusercontent.com/obi-ontology/obi-temp/master/obi_iedb.owl
 
 - exact: /release-notes.html
   replacement: http://obi-ontology.org/page/Releases/2016-10-11

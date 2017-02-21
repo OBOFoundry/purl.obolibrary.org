@@ -1,0 +1,22 @@
+# PURL configuration for OArCS 
+
+idspace: OARCS
+base_url: /obo/oarcs
+
+products:
+- oarcs.owl: https://raw.githubusercontent.com/aszool/oarcs/master/src/ontology/oarcs.owl
+
+term_browser: ontobee
+example_terms:
+- OARCS_0000001
+
+entries:
+
+- exact: /browse
+  replacement: http://www.ontobee.org/browser/index.php?o=OARCS
+
+- prefix: /about/
+  replacement: http://oarcs-api.speciesfilegroup.org/api/ontology/ontology_class/
+  tests:
+  - from: /about/OARCS_0000000
+    to: http://oarcs-api.speciesfilegroup.org/api/ontology/ontology_class/OARCS_0000000

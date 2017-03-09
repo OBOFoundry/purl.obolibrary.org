@@ -3,9 +3,11 @@
 idspace: HP
 base_url: /obo/hp
 
+base_redirect: https://github.com/obophenotype/human-phenotype-ontology
+
 products:
-- hp.owl: https://compbio.charite.de/jenkins/job/hpo/lastStableBuild/artifact/hp/hp.owl
-- hp.obo: https://compbio.charite.de/jenkins/job/hpo/lastStableBuild/artifact/hp/hp.obo
+- hp.owl: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/hp.owl
+- hp.obo: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/hp.obo
 
 term_browser: ontobee
 example_terms:
@@ -16,7 +18,7 @@ entries:
   replacement: http://compbio.charite.de/hudson/job/hpo.ontology.uberpheno/lastStableBuild/artifact/data/uberphenoOut/
 
 - prefix: /releases/
-  replacement: https://compbio.charite.de/svn/hpo/releases/
+  replacement: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/v
 
 - prefix: /tracker
   replacement: https://github.com/obophenotype/human-phenotype-ontology/issues

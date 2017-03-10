@@ -6,7 +6,7 @@ base_url: /obo/foodon
 
 products:
 - foodon.owl: https://raw.githubusercontent.com/FoodOntology/foodon/master/foodon.owl
-- foodon.obo: https://raw.githubusercontent.com/FoodOntology/foodon/master/foodon.obo
+- foodon_core.owl: https://raw.githubusercontent.com/FoodOntology/foodon/master/foodon_core.owl
 
 term_browser: ontobee
 example_terms:
@@ -14,4 +14,5 @@ example_terms:
 
 entries:
 - prefix: /imports/
-  replacement: https://raw.githubusercontent.com/FoodOntology/foodon/master/src/imports/
+  replacement: https://raw.githubusercontent.com/FoodOntology/foodon/master/imports/
+  

@@ -7,6 +7,7 @@ base_url: /obo/foodon
 products:
 - foodon.owl: https://raw.githubusercontent.com/FoodOntology/foodon/master/foodon.owl
 - foodon_core.owl: https://raw.githubusercontent.com/FoodOntology/foodon/master/foodon_core.owl
+- foodon.obo: https://raw.githubusercontent.com/FoodOntology/foodon/master/foodon_old.obo
 
 term_browser: ontobee
 example_terms:

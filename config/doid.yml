@@ -6,7 +6,7 @@ base_url: /obo/doid
 base_redirect: https://github.com/DiseaseOntology/HumanDiseaseOntology/tree/master/
 
 products:
-- doid.owl: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid-non-classified.owl
+- doid.owl: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid.owl
 - doid.obo: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid-non-classified.obo
 
 term_browser: ontobee

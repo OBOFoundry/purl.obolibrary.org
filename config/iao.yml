@@ -10,8 +10,8 @@ base_url: /obo/iao
 base_redirect: https://github.com/information-artifact-ontology/IAO 
 
 products:
-###  2017-01-06 is now current. There is no current OBO version. That should be fixed.
-- iao.owl: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2017-01-06/iao-merged.owl
+###  2017-03-24 is now current. There is no current OBO version. That should be fixed.
+- iao.owl: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2017-03-24/iao-merged.owl
 - iao.obo: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2009-11-06/merged/iao.obo
 
 term_browser: ontobee
@@ -20,22 +20,15 @@ example_terms:
 - IAO_0000030
 
 entries:
-# IAO Current 
-###  STAGING: uncomment when 2017-01-06 is made current, and remove corresponding stale entries
-### - exact: /iao-stated.owl
-###   replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2017-01-06/iao.owl
-### - exact: /ontology-metadata.owl
-###   replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2017-01-06/ontology-metadata.owl
-### - exact: /iao-main.owl
-###   replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2017-01-06/iao-main.owl
-### - exact: /release-notes
-###   replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2017-01-06/release-notes.txt
 
-- exact: /iao-main.owl
-  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2015-02-23/ontology/iao-main.owl
-
+- exact: /iao-stated.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2017-03-24/iao.owl
 - exact: /ontology-metadata.owl
-  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2015-02-23/ontology-metadata.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2017-03-24/ontology-metadata.owl
+- exact: /iao-main.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2017-03-24/iao-main.owl
+- exact: /release-notes
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2017-03-24/release-notes.txt
 
 # IAO Examples
 
@@ -68,6 +61,20 @@ entries:
   replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/src/ontology/
 
 # IAO Versions
+
+# 2017-03-24
+
+- exact: /2017-03-24/iao.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2017-03-24/iao-merged.owl
+
+- exact: /2017-03-24/iao-stated.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2017-03-24/iao.owl
+
+- exact: /2017-03-24/release-notes
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2017-03-24/release-notes.txt
+
+- prefix: /2017-03-24/ 
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2017-03-24/
 
 # 2017-01-06
 

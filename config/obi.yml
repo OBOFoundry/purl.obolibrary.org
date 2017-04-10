@@ -181,10 +181,10 @@ entries:
   replacement: http://obi-ontology.org
 
 - exact: /wiki/MinimalMetadata
-  replacement: http://obi-ontology.org/page/OBI_Minimal_metadata
+  replacement: https://github.com/obi-ontology/obi-legacy-wiki/tree/master/pages/OBI_Minimal_metadata.mw
   
 - prefix: /wiki/
-  replacement: http://obi-ontology.org/page/
+  replacement: https://github.com/obi-ontology/obi-legacy-wiki/tree/master/pages/
 
 ### Documentation Pages and Redirects
 
@@ -198,7 +198,7 @@ entries:
   replacement: http://obi.svn.sourceforge.net/svnroot/obi/trunk/docs/
 
 - exact: /tracker
-  replacement: http://sourceforge.net/tracker/?group_id=177891&atid=886178
+  replacement: https://github.com/obi-ontology/obi/issues
 
 - exact: /project
   replacement: http://sw.neurocommons.org/obi-303/project.rdf
@@ -210,10 +210,10 @@ entries:
   replacement: http://jowl.ontologyonline.org/obi.html
 
 - exact: /policy/metadata
-  replacement: http://obi-ontology.org/page/OBI_Minimal_metadata
+  replacement: https://github.com/obi-ontology/obi-legacy-wiki/tree/master/pages/OBI_Minimal_metadata.mw
 
 - exact: /Technical_Reports
-  replacement: http://obi-ontology.org/page/Technical_Reports
+  replacement: https://github.com/obi-ontology/obi-legacy-wiki/tree/master/pages/Technical_Reports.mw
 
 - exact: /supplementary/protege-qtt-2009.zip
   replacement: http://www.stanford.edu/~sunid/OBI/Protege_3.4.2.zip
@@ -248,7 +248,7 @@ entries:
   replacement: http://obi.svn.sourceforge.net/svnroot/obi/trunk/src/ontology/branches/
 
 - exact: /repository
-  replacement: http://sourceforge.net/p/obi/code/HEAD/tree/
+  replacement: https://github.com/obi-ontology/obi
 
 - prefix: /repository/
   replacement: http://obi.svn.sourceforge.net/svnroot/obi/

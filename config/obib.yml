@@ -12,13 +12,13 @@ example_terms:
 
 entries:
 - exact: /dev/import_OBI_subset.owl
-  replacement: https://raw.githubusercontent.com/biobanking/biobanking/master/ontology/import_OBI_subset.owl
+  replacement: https://raw.githubusercontent.com/biobanking/ontology/master/src/imports/import_OBI_subset.owl
 
 - exact: /dev/import_OBO.owl
-  replacement: https://raw.githubusercontent.com/biobanking/biobanking/master/ontology/import_OBO.owl
+  replacement: https://raw.githubusercontent.com/biobanking/ontology/master/src/imports/import_OBO.owl
 
 - exact: /dev/externalByhand.owl
-  replacement: https://raw.githubusercontent.com/biobanking/biobanking/master/ontology/externalByhand.owl
+  replacement: https://raw.githubusercontent.com/biobanking/ontology/master/src/imports/externalByhand.owl
 
 - exact: /2015-11-22/obib.owl
   replacement: https://raw.githubusercontent.com/biobanking/biobanking/master/release/20151122/obib_merged_inferred.owl

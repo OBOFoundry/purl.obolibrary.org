@@ -1,0 +1,15 @@
+# PURL configuration for http://purl.obolibrary.org/obo/mondo
+
+idspace: MONDO
+base_url: /obo/mondo
+
+products:
+- mondo.owl: https://raw.githubusercontent.com/monarch-initiative/monarch-disease-ontology/master/src/mondo/mondo.owl
+- mondo.obo: https://raw.githubusercontent.com/monarch-initiative/monarch-disease-ontology/master/src/mondo/mondo.obo
+
+term_browser: ontobee
+
+entries:
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/monarch-initiative/monarch-disease-ontology/v
+

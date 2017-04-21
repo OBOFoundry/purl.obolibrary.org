@@ -1,0 +1,12 @@
+# PURL configuration for http://purl.obolibrary.org/obo/ohmi
+
+idspace: OHMI
+base_url: /obo/ohmi
+
+products:
+- ohmi.owl: https://raw.githubusercontent.com/OHMI-ontology/OHMI/master/src/ohmi_merged.owl
+
+term_browser: ontobee
+example_terms:
+- OHMI_0000002
+

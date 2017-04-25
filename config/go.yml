@@ -35,6 +35,9 @@ entries:
 - prefix: /releases/
   replacement: http://viewvc.geneontology.org/viewvc/GO-SVN/ontology-releases/
 
+- prefix: /snapshot/
+  replacement: http://snapshot.geneontology.org/ontology/
+
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=GO&iri=http://purl.obolibrary.org/obo/
 

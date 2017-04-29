@@ -4,18 +4,21 @@ idspace: OBCS
 base_url: /obo/obcs
 
 products:
-- obcs.owl: https://raw.githubusercontent.com/obcs/obcs/master/release/20160604/obcs_merged_inferred.owl
+- obcs.owl: https://raw.githubusercontent.com/obcs/obcs/master/release/20170429/obcs_merged_inferred.owl
 
 term_browser: ontobee
 example_terms:
 - OBCS_0000001
 
 entries:
-- exact: /2015-04-17/obcs.owl
-  replacement: https://raw.githubusercontent.com/obcs/obcs/master/release/20150417/obcs_merged_inferred.owl
+- exact: /2017-04-29/obcs.owl
+  replacement: https://raw.githubusercontent.com/obcs/obcs/master/release/20170429/obcs_merged_inferred.owl
+  
+- exact: /2016-06-04/obcs.owl
+  replacement: https://raw.githubusercontent.com/obcs/obcs/master/release/20160604/obcs_merged_inferred.owl
 
 - exact: /2015-11-18/obcs.owl
   replacement: https://raw.githubusercontent.com/obcs/obcs/master/release/20151118/obcs_merged_inferred.owl
 
-- exact: /2016-06-04/obcs.owl
-  replacement: https://raw.githubusercontent.com/obcs/obcs/master/release/20160604/obcs_merged_inferred.owl
+- exact: /2015-04-17/obcs.owl
+  replacement: https://raw.githubusercontent.com/obcs/obcs/master/release/20150417/obcs_merged_inferred.owl

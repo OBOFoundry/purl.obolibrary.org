@@ -35,6 +35,6 @@ entries:
 - exact: /prebuild/ncro.owl
   replacement: https://raw.githubusercontent.com/OmniSearch/ncro/release-2015-12-10/src/ontology/ncro.owl
   
-- exact: /lncrnao/lncrnao.owl
+- exact: /lncrnao.owl
   replacement: https://raw.githubusercontent.com/alanruttenberg/lncrnao/master/src/ontology/lncrnao.owl
 

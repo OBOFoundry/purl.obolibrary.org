@@ -25,7 +25,7 @@ entries:
 - exact /OMRE_AEROImport.owl
   replacement: https://raw.githubusercontent.com/OGMS/ogms/master/src/ontology/omre/OMRE_AEROImport.owl
 
-- exact: /tracker
+- exact /tracker
   replacement: https://github.com/mcourtot/adverse-event-reporting-ontology/issues
 
 - prefix: /about/

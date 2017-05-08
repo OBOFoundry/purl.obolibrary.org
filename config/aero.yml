@@ -21,6 +21,9 @@ entries:
 
 - exact: /external-by-hand.owl
   replacement: https://raw.githubusercontent.com/mcourtot/adverse-event-reporting-ontology/master/src/ontology/external-by-hand.owl
+  
+- exact /OMRE_AEROImport.owl
+  replacement: https://raw.githubusercontent.com/OGMS/ogms/master/src/ontology/omre/OMRE_AEROImport.owl
 
 - exact: /tracker
   replacement: https://github.com/mcourtot/adverse-event-reporting-ontology/issues

@@ -1,0 +1,16 @@
+# PURL configuration for http://purl.obolibrary.org/obo/peco
+
+idspace: PECO
+base_url: /obo/peco
+
+products:
+- eo.owl: https://raw.githubusercontent.com/Planteome/plant-environment-ontology/master/peco.owl
+- eo.OBO: https://raw.githubusercontent.com/Planteome/plant-environment-ontology/master/peco.obo
+
+term_browser: ontobee
+example_terms:
+- PECO_0007359
+
+entries:
+- exact: /tracker
+  replacement: https://github.com/Planteome/plant-environment-ontology/issues

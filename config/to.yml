@@ -33,6 +33,9 @@ entries:
   - from: /about/TO_0000001
     to: http://www.ontobee.org/browser/rdf.php?o=TO&iri=http://purl.obolibrary.org/obo/TO_0000001
 
+- prefix: /patterns/
+  replacement: https://raw.githubusercontent.com/Planteome/plant-trait-ontology/master/patterns/
+    
 - prefix: /
   replacement: https://raw.githubusercontent.com/Planteome/plant-trait-ontology/master/
 

@@ -13,10 +13,13 @@ example_terms:
 
 entries:
 - exact: /go.obo
-  replacement: http://viewvc.geneontology.org/viewvc/GO-SVN/trunk/ontology/go.obo
+  replacement: http://current.geneontology.org/ontology/go.obo
 
 - exact: /go.owl
-  replacement: http://viewvc.geneontology.org/viewvc/GO-SVN/trunk/ontology/go.owl
+  replacement: http://current.geneontology.org/ontology/go.owl
+
+- exact: /go.json
+  replacement: http://current.geneontology.org/ontology/go.json
 
 - exact: /tracker
   replacement: https://github.com/geneontology/go-ontology/issues

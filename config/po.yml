@@ -8,6 +8,8 @@ products:
 - po.obo: https://raw.githubusercontent.com/Planteome/plant-ontology/master/po.obo
 
 entries:
+- exact: /planteome.owl
+  replacement: https://raw.githubusercontent.com/Planteome/planteome-core/master/planteome.owl
 - prefix: /subsets/
   replacement: https://raw.githubusercontent.com/Planteome/plant-ontology/master/subsets/
 - prefix: /imports/

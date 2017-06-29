@@ -4,13 +4,21 @@ idspace: OBIB
 base_url: /obo/obib
 
 products:
-- obib.owl: https://raw.githubusercontent.com/biobanking/biobanking/master/release/20160914/obib_merged_inferred.owl
-
+- obib.owl: https://raw.githubusercontent.com/biobanking/ontology/20170627/src/obib.owl
 term_browser: ontobee
 example_terms:
 - OBIB_0000037
 
 entries:
+- exact: /2017-06-27/obib.owl
+  replacement: https://raw.githubusercontent.com/biobanking/ontology/20170627/src/obib.owl
+  
+- exact: /2016-09-14/obib.owl
+  replacement: https://raw.githubusercontent.com/biobanking/ontology/20160914/src/obib.owl
+
+- exact: /2015-11-22/obib.owl
+  replacement: https://raw.githubusercontent.com/biobanking/biobanking/master/release/20151122/obib_merged_inferred.owl
+
 - exact: /dev/import_OBI_subset.owl
   replacement: https://raw.githubusercontent.com/biobanking/ontology/master/src/imports/import_OBI_subset.owl
 
@@ -19,9 +27,4 @@ entries:
 
 - exact: /dev/externalByhand.owl
   replacement: https://raw.githubusercontent.com/biobanking/ontology/master/src/imports/externalByhand.owl
-
-- exact: /2015-11-22/obib.owl
-  replacement: https://raw.githubusercontent.com/biobanking/biobanking/master/release/20151122/obib_merged_inferred.owl
-  
-- exact: /2016-09-14/obib.owl
-  replacement: https://raw.githubusercontent.com/biobanking/biobanking/master/release/20160914/obib_merged_inferred.owl
+ 

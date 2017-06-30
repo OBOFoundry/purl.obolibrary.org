@@ -36,7 +36,7 @@ entries:
   replacement: http://build-artifacts.berkeleybop.org/build-noctua-obo-ontology/latest/
 
 - prefix: /releases/
-  replacement: http://viewvc.geneontology.org/viewvc/GO-SVN/ontology-releases/
+  replacement: http://release.geneontology.org/ontology/
 
 - prefix: /snapshot/
   replacement: http://snapshot.geneontology.org/ontology/

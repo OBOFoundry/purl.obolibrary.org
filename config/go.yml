@@ -13,10 +13,10 @@ example_terms:
 
 entries:
 - exact: /go.obo
-  replacement: http://viewvc.geneontology.org/viewvc/GO-SVN/trunk/ontology/go.obo
+  replacement: http://snapshot.geneontology.org/ontology/go.obo
 
 - exact: /go.owl
-  replacement: http://viewvc.geneontology.org/viewvc/GO-SVN/trunk/ontology/go.owl
+  replacement: http://snapshot.geneontology.org/ontology/go.owl
 
 - exact: /tracker
   replacement: https://github.com/geneontology/go-ontology/issues
@@ -55,7 +55,7 @@ entries:
 
 # Keep this as last entry as the rules are matched in order
 - prefix: /
-  replacement: http://geneontology.org/ontology/
+  replacement: http://snapshot.geneontology.org/ontology/
   
 
 

@@ -4,8 +4,8 @@ idspace: GO
 base_url: /obo/go
 
 products:
-- go.owl: http://geneontology.org/ontology/go.owl
-- go.obo: http://geneontology.org/ontology/go.obo
+- go.owl: http://snapshot.geneontology.org/ontology/go.owl
+- go.obo: http://snapshot.geneontology.org/ontology/go.obo
 
 term_browser: ontobee
 example_terms:

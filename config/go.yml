@@ -17,6 +17,10 @@ entries:
 
 - exact: /go.owl
   replacement: http://snapshot.geneontology.org/ontology/go.owl
+  
+# temporary
+- exact: /extensions/go-modules-annotations.owl
+  replacement: http://geneontology.org/ontology/extensions/go-modules-annotations.owl
 
 - exact: /tracker
   replacement: https://github.com/geneontology/go-ontology/issues

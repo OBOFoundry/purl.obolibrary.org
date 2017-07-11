@@ -20,8 +20,8 @@
       service: name=apache2 state=restarted
 
   tasks:
-    - name: Update apt-get cache
-      apt: update_cache=yes
+    #- name: Update apt-get cache
+    #  apt: update_cache=yes
 
     - name: Install system-wide packages (not Travis)
       when: mode != "travis"

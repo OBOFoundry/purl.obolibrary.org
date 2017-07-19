@@ -6,6 +6,7 @@ base_url: /obo/go
 products:
 - go.owl: http://snapshot.geneontology.org/ontology/go.owl
 - go.obo: http://snapshot.geneontology.org/ontology/go.obo
+- go.json: http://snapshot.geneontology.org/ontology/go.json
 
 term_browser: ontobee
 example_terms:

@@ -1,0 +1,23 @@
+# PURL configuration for http://purl.obolibrary.org/obo/ncit
+
+idspace: NCIT
+base_url: /obo/ncit
+
+products:
+- ncit.owl: https://stars.renci.org/var/NCIt/ncit.owl
+
+term_browser: ontobee
+
+entries:
+- prefix: /releases/
+  replacement: https://stars.renci.org/var/NCIt/releases/
+
+- prefix: /tracker/
+  replacement: https://github.com/NCI-Thesaurus/thesaurus-obo-edition/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/NCIT?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/obophenotype/ctenophore-ontology/master/

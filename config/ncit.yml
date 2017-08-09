@@ -5,11 +5,8 @@ base_url: /obo/ncit
 
 products:
 - ncit.owl: https://stars.renci.org/var/NCIt/ncit.owl
-- vto.obo: https://stars.renci.org/var/NCIt/ncit.obo
 
 term_browser: ontobee
-example_terms:
-- NCIT_C3262
 
 entries:
 - prefix: /releases/

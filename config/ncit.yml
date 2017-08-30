@@ -19,6 +19,6 @@ entries:
 - prefix: /about/
   replacement: http://www.ontobee.org/ontology/NCIT?iri=http://purl.obolibrary.org/obo/
 
-## generic fall-through, serve direct from github by default
+## generic fall-through, serve direct from stars by default
 - prefix: /
-  replacement: https://raw.githubusercontent.com/NCI-Thesaurus/thesaurus-obo-edition/master/
+  replacement: https://stars.renci.org/var/NCIt/

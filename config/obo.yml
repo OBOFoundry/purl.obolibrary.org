@@ -62,7 +62,14 @@ entries:
     to: http://pir.georgetown.edu/cgi-bin/pro/entry_pro?id=PR_000000001
   - from: /PR_Q9BWV1
     to: http://pir.georgetown.edu/cgi-bin/pro/entry_pro?id=PR_Q9BWV1
-
+    
+# Term redirects for NCIT (not restricted to digits)
+- regex: ^/obo/NCIT_([a-zA-Z0-9]+)$
+  replacement: http://www.ontobee.org/ontology/NCIT?iri=http://purl.obolibrary.org/obo/NCIT_$1
+  status: see other
+  tests:
+  - from: /NCIT_C2916
+    to: http://www.ontobee.org/ontology/NCIT?iri=http://purl.obolibrary.org/obo/NCIT_C2916
 
 ### OBO Format Specification
 - exact: /oboformat/

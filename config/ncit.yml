@@ -7,7 +7,7 @@ products:
 - ncit.owl: https://stars.renci.org/var/NCIt/ncit.owl
 - ncit.obo: https://stars.renci.org/var/NCIt/ncit.obo
 
-term_browser: ontobee
+term_browser: custom
 
 entries:
 - prefix: /releases/

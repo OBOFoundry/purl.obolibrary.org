@@ -388,3 +388,6 @@ entries:
   
 - exact: /dev/us-wy-county-geography.owl
   replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-wy-county-geography.owl
+
+- exact: /dev/us-hrsa-geography.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-hrsa-geography.owl

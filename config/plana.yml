@@ -21,6 +21,9 @@ entries:
 
 - prefix: /about/
   replacement: http://www.ontobee.org/ontology/PLANA?iri=http://purl.obolibrary.org/obo/
+  
+  - prefix: /images/
+ replacement: https://github.com/obophenotype/planaria-ontology/raw/master/metadata/images/
 
 ## generic fall-through, serve direct from github by default
 - prefix: /

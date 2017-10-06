@@ -5,6 +5,7 @@ base_url: /obo/ddanat
 
 products:
 - ddanat.owl: http://ontologies.berkeleybop.org/ddanat.owl
+- ddanat.obo: http://ontologies.berkeleybop.org/ddanat.obo
 
 term_browser: ontobee
 example_terms:

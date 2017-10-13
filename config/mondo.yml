@@ -10,6 +10,12 @@ products:
 term_browser: ontobee
 
 entries:
+- exact: /pre/mondo.obo
+  replacement: https://osf.io/nuvbs/download
+- exact: /pre/mondo.json
+  replacement: https://osf.io/4hj8b/download
+- exact: /pre/mondo.owl
+  replacement: https://osf.io/mhqcv/download
 - prefix: /releases/
   replacement: https://raw.githubusercontent.com/monarch-initiative/monarch-disease-ontology/v
 

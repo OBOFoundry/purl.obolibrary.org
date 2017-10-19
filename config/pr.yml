@@ -15,11 +15,13 @@ products:
 term_browser: custom
 
 entries:
-- regex: (?i)^/obo/pr/release/(\d+\.\d+)/pr.obo$
+- regex: (?i)^/obo/pr/release/(\d+\.\d+\.?)/pr.obo$
   replacement: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_$1/pro_reasoned.obo
   tests:
   - from: /release/52.0/pr.obo
     to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_52.0/pro_reasoned.obo
+  - from: /release/52.0./pr.obo
+    to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_52.0./pro_reasoned.obo
 
 - prefix: /about/
   replacement: http://research.bioinformatics.udel.edu/pro/entry/

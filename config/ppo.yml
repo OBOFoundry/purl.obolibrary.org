@@ -2,13 +2,17 @@ idspace: PPO
 base_url: /obo/ppo
 
 products:
-- ppo.owl: https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/ontology/ppo-raw.owl
-#needs to be replaced by a stable release URL
+- ppo.owl: https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/releases/2017-10-20/ppo.owl
 
 term_browser: ontobee
+
 example_terms:
 - PPO_0000001
 
 entries:
 - exact: /wiki
   replacement: https://github.com/PlantPhenoOntology/ppo/wiki
+  
+- prefix: /releases/2017-10-20/
+  https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/releases/2017-10-20/
+

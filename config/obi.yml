@@ -247,8 +247,8 @@ entries:
 
 ### Development Pages and Redirects
 
-- prefix: /dev/import/
-  replacement: http://svn.code.sf.net/p/obi/code/trunk/src/ontology/branches/OntoFox_outputs/
+- prefix: /dev/
+  replacement: https://raw.githubusercontent.com/obi-ontology/obi/master/src/ontology/
 
 - prefix: /branches/
   replacement: http://obi.svn.sourceforge.net/svnroot/obi/trunk/src/ontology/branches/

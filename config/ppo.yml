@@ -14,5 +14,5 @@ entries:
   replacement: https://github.com/PlantPhenoOntology/ppo/wiki
   
 - prefix: /releases/2017-10-20/
-  https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/releases/2017-10-20/
+  replacement: https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/releases/2017-10-20/
 

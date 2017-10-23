@@ -247,8 +247,17 @@ entries:
 
 ### Development Pages and Redirects
 
+- prefix: /dev/import/
+  replacement: https://raw.githubusercontent.com/obi-ontology/obi/master/src/ontology/OntoFox_outputs/
+  tests:
+  - from: /dev/import/OBO_imports.owl
+    to: https://raw.githubusercontent.com/obi-ontology/obi/master/src/ontology/OntoFox_outputs/OBO_imports.owl
+
 - prefix: /dev/
   replacement: https://raw.githubusercontent.com/obi-ontology/obi/master/src/ontology/
+  tests:
+  - from: /dev/obi-edit.owl
+    to: https://raw.githubusercontent.com/obi-ontology/obi/master/src/ontology/obi-edit.owl
 
 - prefix: /branches/
   replacement: http://obi.svn.sourceforge.net/svnroot/obi/trunk/src/ontology/branches/

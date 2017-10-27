@@ -1,0 +1,22 @@
+# PURL configuration for http://purl.obolibrary.org/obo/mondo
+
+idspace: MONDO
+base_url: /obo/mondo
+
+products:
+- mondo.owl: https://osf.io/bqpjm/download
+- mondo.obo: https://osf.io/e87hn/download
+- mondo.json: https://osf.io/pbq3a/download
+
+term_browser: ontobee
+
+entries:
+- exact: /pre/mondo.obo
+  replacement: https://osf.io/4c9qp/download
+- exact: /pre/mondo.json
+  replacement: https://osf.io/wdnyu/download
+- exact: /pre/mondo.owl
+  replacement: https://osf.io/ysg2b/download
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/monarch-initiative/monarch-disease-ontology/v
+

@@ -4,8 +4,16 @@ idspace: MIAPA
 base_url: /obo/miapa
 
 products:
-- miapa.owl: https://raw.githubusercontent.com/miapa/miapa/master/ontology/miapa.owl
+- miapa.owl: https://raw.githubusercontent.com/evoinfo/miapa/master/ontology/miapa.owl
 
 term_browser: ontobee
 example_terms:
 - MIAPA_0000038
+
+entries:
+## initial versioned release - future releases should follow a different path pattern
+- exact: /2013-02-01/miapa.owl
+  replacement: https://raw.githubusercontent.com/evoinfo/miapa/2013-02-01/ontology/miapa.owl
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/evoinfo/miapa/master/ontology/

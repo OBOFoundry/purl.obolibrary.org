@@ -14,6 +14,9 @@ entries:
 - exact: /nation-and-dependency-instances.owl
   replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/nation-and-dependency-instances.owl
   
+- exact: /dev/major-world-cities-geography.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/major-world-cities-geography.owl
+  
 - exact: /nation-geography.owl
   replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/nation-geography.owl
   
@@ -385,3 +388,6 @@ entries:
   
 - exact: /dev/us-wy-county-geography.owl
   replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-wy-county-geography.owl
+
+- exact: /dev/us-hrsa-geography.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-hrsa-geography.owl

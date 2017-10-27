@@ -4,8 +4,8 @@ idspace: PECO
 base_url: /obo/peco
 
 products:
-- peco.owl: https://raw.githubusercontent.com/Planteome/plant-environment-ontology/master/peco.owl
-- peco.OBO: https://raw.githubusercontent.com/Planteome/plant-environment-ontology/master/peco.obo
+- peco.owl: https://raw.githubusercontent.com/Planteome/plant-experimental-conditions-ontology/master/peco.owl
+- peco.OBO: https://raw.githubusercontent.com/Planteome/plant-experimental-conditions-ontology/master/peco.obo
 
 term_browser: ontobee
 example_terms:

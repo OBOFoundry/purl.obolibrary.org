@@ -4,7 +4,7 @@ idspace: CDAO
 base_url: /obo/cdao
 
 products:
-- cdao.owl: http://svn.code.sf.net/p/obo/svn/ontologies/trunk/CDAO/cdao.owl
+- cdao.owl: https://raw.githubusercontent.com/evoinfo/cdao/master/cdao.owl
 
 term_browser: ontobee
 example_terms:
@@ -17,6 +17,26 @@ entries:
   - from: /about/CDAO_0000040
     to: http://www.ontobee.org/browser/rdf.php?o=CDAO&iri=http://purl.obolibrary.org/obo/CDAO_0000040
 
-- prefix: /
-  replacement: http://svn.code.sf.net/p/obo/svn/ontologies/trunk/CDAO/
+- prefix: /1.0/
+  replacement: https://raw.githubusercontent.com/evoinfo/cdao/cdao-rel-1.0/OWL/
+  tests:
+  - from: /1.0/cdao.owl
+    to: https://raw.githubusercontent.com/evoinfo/cdao/cdao-rel-1.0/OWL/cdao.owl
 
+- prefix: /2012-
+  replacement: https://raw.githubusercontent.com/evoinfo/cdao/cdao-rel-2012-
+  tests:
+  - from: /2012-06-06/cdao.owl
+    to: https://raw.githubusercontent.com/evoinfo/cdao/cdao-rel-2012-06-06/cdao.owl
+  - from: /2012-04-12/cdao.owl
+    to: https://raw.githubusercontent.com/evoinfo/cdao/cdao-rel-2012-04-12/cdao.owl
+
+- prefix: /2013-02-01/
+  replacement: https://raw.githubusercontent.com/evoinfo/cdao/cdao-rel-2013-02-01/
+  tests:
+  - from: /2013-02-01/cdao.owl
+    to: https://raw.githubusercontent.com/evoinfo/cdao/cdao-rel-2013-02-01/cdao.owl
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/evoinfo/cdao/master/

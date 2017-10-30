@@ -9,14 +9,42 @@ base_redirect: http://proconsortium.org
 products:
 - pr.owl: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/pro_reasoned.owl
 - pr.obo: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/pro_reasoned.obo
-- pr-asserted.owl: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/pro.owl
-- pr-asserted.obo: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/pro.obo
+- pr-asserted.owl: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/pro_nonreasoned.owl
+- pr-asserted.obo: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/pro_nonreasoned.obo
 
 term_browser: custom
 
 entries:
+- regex: (?i)^/obo/pr/release/(\d+\.\d+)\.?/pr.obo$
+  replacement: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_$1/pro_reasoned.obo
+  tests:
+  - from: /release/52.0/pr.obo
+    to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_52.0/pro_reasoned.obo
+  - from: /release/52.0./pr.obo
+    to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_52.0/pro_reasoned.obo
+- regex: (?i)^/obo/pr/release/(\d+\.\d+)\.?/pr.owl$
+  replacement: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_$1/pro_reasoned.owl
+  tests:
+  - from: /release/52.0/pr.owl
+    to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_52.0/pro_reasoned.owl
+  - from: /release/52.0./pr.owl
+    to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_52.0/pro_reasoned.owl
+# Note that both of the above forms (with and without period after version number) should resolve to the
+#   same file, as the extraneous trailing period stems from an error on the data-version line
+#   in releases prior to 54.0
+
 - prefix: /about/
   replacement: http://research.bioinformatics.udel.edu/pro/entry/
   tests:
   - from: /about/PR_000000001
     to: http://research.bioinformatics.udel.edu/pro/entry/PR_000000001
+
+# ISSUES
+# http://purl.obolibrary.org/obo/pr-asserted.obo
+#  resolves to
+# ftp://ftp.proconsortium.org/databases/ontology/pro_obo/pro.obo
+#  which is invalid.
+# http://purl.obolibrary.org/obo/pr/pr-asserted.obo  (the ID-policy-compliant format)
+#  also fails (attempts to go to purl.oclc.org)
+
+

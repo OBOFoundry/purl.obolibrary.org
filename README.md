@@ -2,14 +2,12 @@
 
 [![Build Status](https://travis-ci.org/OBOFoundry/purl.obolibrary.org.svg?branch=master)](https://travis-ci.org/OBOFoundry/purl.obolibrary.org)
 
-The OBO community has transitioned away from [PURL.org](http://purl.org) for managing Persistent URLs.
-
-This repository provides a new way to manage OBO Foundry PURLs. Like <https://github.com/perma-id/w3id.org> we use per-directory Apache configuration files (`.htaccess` files), each of which uses `RedirectMatch` directives to redirect PURL requests to their proper targets. Unlike w3id.org, we do not edit the Apache configuration files by hand. Instead we have a simple YAML configuration format, and scripts to translate the YAML configuration into Apache configuration. The YAML files are easier to read and write, and allow us to validate and test PURLs automatically.
+This repository provides tools for managing OBO Foundry Permanent URLs (PURLs). Like <https://github.com/perma-id/w3id.org> we use per-directory Apache configuration files (`.htaccess` files), each of which uses `RedirectMatch` directives to redirect PURL requests to their proper targets. Unlike w3id.org, we do not edit the Apache configuration files by hand. Instead we have a simple YAML configuration format, and scripts to translate the YAML configuration into Apache configuration. The YAML files are easier to read and write, and allow us to validate and test PURLs automatically.
 
 
 ## Status
 
-All http://purl.obolibrary.org/obo/ PURLs are now handled by this system, with the exception of some [open issues](https://github.com/OBOFoundry/purl.obolibrary.org/issues).
+All http://purl.obolibrary.org/obo/ PURLs are now handled by this system, with the exception of some [open issues](https://github.com/OBOFoundry/purl.obolibrary.org/issues). PURLs that do not match any rule in this system will fall back to the old [PURL.org](http://purl.org) system.
 
 
 ## Adding and Updating PURLs
@@ -25,6 +23,7 @@ Please use one of these four options to make changes to the PURLs:
 4. [Fork this repository](https://help.github.com/articles/fork-a-repo/) and [make a pull request](https://help.github.com/articles/using-pull-requests/).
 
 All changes are reviewed before they are merged into the `master` branch. Once merged, updated PURLs will be active within 20 minutes.
+
 
 ## Configuration Format
 
@@ -142,23 +141,6 @@ Note that term redirect rules are case sensitive.
 Since these are `regex` entries, and could affect multiple projects, we prefer that OBO admins are the only ones to edit `obo.yml`. If you need a change to the term redirect entry for your project, please [create a new issue](https://github.com/OBOFoundry/purl.obolibrary.org/issues/new).
 
 
-## Migrating Configuration
-
-OBO projects currently use OCLC for managing PURLs. This project aims to replace OCLC in a straightforward way.
-
-The `Makefile` contains some code for fetching the PURL records for a given ontology ID from OCLC in XML format, and converting the XML to YAML. This should be a one-time migration, and it requires some manual editing and checking. Going forward, the YAML configuration should be edited directly.
-
-The order of the migrated entries is: `exact` first (*should* be in the order they were created), followed by `prefix` entries from longest `prefix` to shortest. This order avoids nasty conflicts and has been tested to preserve the OCLC behaviour.
-
-You can run migration for a single ontology at a time, by its ID (usually lower case):
-
-    make migrate-obi
-
-The tool will refuse to overwrite existing YAML configuration files. If you're running a test server (see next section) you can test the configuration as you're migrating:
-
-    make migrate-obi && make all test
-
-
 ## Development and Testing
 
 The PURL system runs on Ubuntu Linux, but you can test your changes using a virtual machine (VM) that runs on Windows, Mac, or Linux. Your local development machine (Windows, Mac, or Linux) will be the "host" machine. The VM will be a copy of Ubuntu Linux that runs on your host, and can be thrown away when you're done testing.
@@ -223,14 +205,14 @@ You can test against the production PURL server using `make test-production`. We
 
 ## Deployment
 
-Deployment is automated using [Ansible](http://ansible.com), and targets a stock Ubuntu Linux server. You should install on a **fresh** server, not one that's running other applications, unless you **really** know what you're doing.
+Deployment is automated using [Ansible](http://ansible.com), and targets a stock Ubuntu Linux server with Python installed. You should install on a **fresh** server, not one that's running other applications, unless you **really** know what you're doing.
 
-Install Ansible on your local machine, add the IP address or hostname of your target server to `tools/hosts`, then run:
+Install Ansible on your **local** machine, add the IP address or hostname of your **target** server to `tools/hosts`, then run:
 
     cd tools
     ansible-playbook -i hosts site.yml
 
-Ansible uses SSH to connect to the server an execute the tasks in [`tools/site.yml`](tools/site.yml). If you have trouble connecting, you may have to adjust your SSH configuration to be more automatic, say by editing your `.ssh/config`.
+Ansible uses SSH to connect to the target server an execute the tasks defined in [`tools/site.yml`](tools/site.yml). If you have trouble connecting, you may have to adjust your SSH configuration to be more automatic, say by editing your `.ssh/config`.
 
 You can re-run Ansible as you make changes. Once the system is running, it will fetch changes from the master Git repository every 10 minutes. From your local machine, you can test all URLs against any target server, e.g.:
 

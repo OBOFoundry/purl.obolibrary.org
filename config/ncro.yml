@@ -22,6 +22,8 @@ entries:
   replacement: https://github.com/OmniSearch/ncro/issues
 - exact: /browse
   replacement: http://purl.obolibrary.org/obo/NCRO_0004000
+- prefix: /lncrnao/
+  replacement: https://raw.githubusercontent.com/alanruttenberg/lncrnao/master/src/ontology/
 
 # translations for the releases here
 
@@ -32,4 +34,7 @@ entries:
 # points to the latest version but that still has imports, as top-level ncro.owl is combined. Update each release. For ontobee to know there are imports.
 - exact: /prebuild/ncro.owl
   replacement: https://raw.githubusercontent.com/OmniSearch/ncro/release-2015-12-10/src/ontology/ncro.owl
+  
+- exact: /lncrnao.owl
+  replacement: https://raw.githubusercontent.com/alanruttenberg/lncrnao/master/src/ontology/lncrnao.owl
 

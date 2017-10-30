@@ -20,4 +20,3 @@ entries:
   tests:
   - from: /about/OARCS_0000000
     to: http://oarcs-api.speciesfilegroup.org/api/ontology/ontology_class/OARCS_0000000
-

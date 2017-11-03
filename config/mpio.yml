@@ -1,0 +1,18 @@
+# PURL configuration for http://purl.obolibrary.org/obo/mpio
+
+idspace: MPIO
+base_url: /obo/mpio
+
+products:
+- mpio.owl: https://raw.githubusercontent.com/MPIO-Developers/MPIO/master/mpio.owl
+
+term_browser: ontobee
+example_terms:
+- MPIO_0000007
+
+entries:
+- prefix: /release/
+  replacement: https://raw.githubusercontent.com/MPIO-Developers/MPIO/
+  
+- exact: /dev/mpio.owl
+  replacement: https://raw.githubusercontent.com/MPIO-Developers/MPIO/master/development/mpio.owl

@@ -38,3 +38,7 @@ entries:
 - exact: /lncrnao.owl
   replacement: https://raw.githubusercontent.com/alanruttenberg/lncrnao/master/src/ontology/lncrnao.owl
 
+# initial nsfo
+ - exact: /nsfo.owl
+   replacement: https://raw.githubusercontent.com/alanruttenberg/nsfo/master/src/ontology/nsfo.owl
+   

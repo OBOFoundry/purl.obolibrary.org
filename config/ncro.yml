@@ -41,4 +41,6 @@ entries:
 # initial nsfo
 - exact: /nsfo.owl
   replacement: https://raw.githubusercontent.com/alanruttenberg/nsfo/master/src/ontology/nsfo.owl
-   
+
+- prefix: /nsfo/
+  replacement: https://raw.githubusercontent.com/alanruttenberg/nsfo/master/src/ontology/

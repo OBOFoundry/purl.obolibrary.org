@@ -44,7 +44,7 @@
       command: gem install travis --no-rdoc --no-ri creates=/usr/local/bin/travis
 
     - name: Install kwalify
-      command: gem install kwalify creates=/usr/local/bin/kwalify
+      command: gem install kwalify -n /usr/local/bin creates=/usr/local/bin/kwalify
 
     - name: Install PyYAML
       pip: name=PyYAML executable=pip3

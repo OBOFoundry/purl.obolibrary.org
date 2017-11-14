@@ -70,13 +70,13 @@ clean:
 # If any INVALID results are found, exit with an error.
 .PHONY: validate
 validate:
-	kwalify -f tools/config.schema.yml config/*.yml \
+	/usr/local/bin/kwalify -f tools/config.schema.yml config/*.yml \
 	| awk '{print} /INVALID/ {status=1} END {exit status}'
 
 # Validate a single configuration file.
 .PHONY: validate-%
 validate-%:
-	kwalify -f tools/config.schema.yml config/$*.yml
+	/usr/local/bin/kwalify -f tools/config.schema.yml config/$*.yml
 
 
 ### Generate Apache Config

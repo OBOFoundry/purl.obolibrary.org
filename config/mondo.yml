@@ -22,7 +22,7 @@ entries:
 - exact: /extid/mondo.owl
   replacement: https://osf.io/jxkth/download
 - prefix: /imports/
-  replacement: https://raw.githubusercontent.com/monarch-initiative/monarch-disease-ontology/master/imports/
+  replacement: https://raw.githubusercontent.com/monarch-initiative/mondo-build/master/imports/
 - prefix: /releases/
-  replacement: https://raw.githubusercontent.com/monarch-initiative/monarch-disease-ontology/v
+  replacement: https://raw.githubusercontent.com/monarch-initiative/mondo-build/v
 

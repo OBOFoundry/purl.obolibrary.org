@@ -20,9 +20,9 @@ entries:
   replacement: http://snapshot.geneontology.org/ontology/go.owl
 
 ## User and group metadata for GO-CAM model metadata resolution.
-- exact: /metadata/users.yaml
+- exact: /metadata/users.ttl
   replacement: http://experimental.geneontology.io/metadata/users.ttl
-- exact: /metadata/groups.yaml
+- exact: /metadata/groups.ttl
   replacement: http://experimental.geneontology.io/metadata/groups.ttl
 
 - exact: /tracker

@@ -19,6 +19,12 @@ entries:
 - exact: /go.owl
   replacement: http://snapshot.geneontology.org/ontology/go.owl
 
+## User and group metadata for GO-CAM model metadata resolution.
+- exact: /metadata/users.yaml
+  replacement: http://experimental.geneontology.io/metadata/users.ttl
+- exact: /metadata/groups.yaml
+  replacement: http://experimental.geneontology.io/metadata/groups.ttl
+
 - exact: /tracker
   replacement: https://github.com/geneontology/go-ontology/issues
 
@@ -57,9 +63,4 @@ entries:
 # Keep this as last entry as the rules are matched in order
 - prefix: /
   replacement: http://snapshot.geneontology.org/ontology/
-
-## User and group metadata for GO-CAM model metadata resolution.
-- exact: /metadata/users.yaml
-  replacement: http://experimental.geneontology.io/metadata/users.ttl
-- exact: /metadata/groups.yaml
-  replacement: http://experimental.geneontology.io/metadata/groups.ttl
+  

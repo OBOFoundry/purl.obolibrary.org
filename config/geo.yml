@@ -404,9 +404,9 @@ entries:
 - exact: /dev/tz-admin-level-one.owl
   replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/TZ/TZ-admin-level-1.owl
   
- - exact: /dev/tz-admin-level-two.owl
+- exact: /dev/tz-admin-level-two.owl
   replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/TZ/TZ-admin-level-2.owl
   
- - exact: /dev/tz-admin-level-three.owl
+- exact: /dev/tz-admin-level-three.owl
   replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/TZ/TZ-admin-level-3.owl
   

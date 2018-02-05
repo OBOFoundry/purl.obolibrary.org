@@ -14,7 +14,7 @@ entries:
 - exact: /nation-and-dependency-instances.owl
   replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/nation-and-dependency-instances.owl
   
-- exact: /dev/major-world-cities-geography.owl
+- exact: /major-world-cities-geography.owl
   replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/major-world-cities-geography.owl
   
 - exact: /nation-geography.owl
@@ -409,4 +409,3 @@ entries:
   
 - exact: /dev/tz-admin-level-three.owl
   replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/TZ/TZ-admin-level-3.owl
-  

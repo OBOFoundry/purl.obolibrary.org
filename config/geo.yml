@@ -101,6 +101,9 @@ entries:
 - exact: /us-ky-county-geography.owl
   replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-ky-county-geography.owl
   
+- exact: /us-la-county-geography.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-la-county-geography.owl
+  
 - exact: /us-ma-county-geography.owl
   replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-ma-county-geography.owl
   

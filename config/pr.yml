@@ -33,11 +33,37 @@ entries:
 #   same file, as the extraneous trailing period stems from an error on the data-version line
 #   in releases prior to 54.0
 
+### OBO Foundry ID-policy compliant PURLs
+
 - prefix: /about/
   replacement: http://research.bioinformatics.udel.edu/pro/entry/
   tests:
   - from: /about/PR_000000001
     to: http://research.bioinformatics.udel.edu/pro/entry/PR_000000001
+
+- exact: /pr-asserted.obo
+  replacement: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/pro_nonreasoned.obo
+  
+- exact: /pr-asserted.owl
+  replacement: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/pro_nonreasoned.owl
+  
+- exact: /homepage
+  replacement: http://proconsortium.org
+
+- exact: /tracker
+  replacement: http://sourceforge.net/tracker/?group_id=266825&atid=1135711
+
+- exact: /wiki
+  replacement: https://pir17.georgetown.edu/confluence/display/PROWIKI/Home
+
+- exact: /browse
+  replacement: http://www.ontobee.org/browser/index.php?o=pr
+
+### Development Pages and Redirects
+
+- exact: /pr-dev.obo
+  replacement: http://pir.georgetown.edu/projects/pro/pro_wv.obo
+  
 
 # ISSUES
 # http://purl.obolibrary.org/obo/pr-asserted.obo

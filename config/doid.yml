@@ -8,13 +8,15 @@ base_redirect: https://github.com/DiseaseOntology/HumanDiseaseOntology/tree/mast
 products:
 - doid.owl: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid.owl
 - doid.obo: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid-non-classified.obo
-- HumanDO.obo:https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid-non-classified.obo 
 
 term_browser: ontobee
 example_terms:
 - DOID_4
 
 entries:
+
+- exact: /HumanDO.obo
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid-non-classified.obo
 
 - exact: /obo/ext.owl
   replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/ext.owl

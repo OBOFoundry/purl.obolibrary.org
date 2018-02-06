@@ -6,9 +6,8 @@ base_url: /obo/ido
 base_redirect: http://infectiousdiseaseontology.org/page/Main_Page
 
 products:
-- ido.owl: https://raw.githubusercontent.com/infectious-disease-ontology/infectious-disease-ontology/master/releases/2016-07-05/ido-merged.owl
+- ido.owl: https://raw.githubusercontent.com/infectious-disease-ontology/infectious-disease-ontology/2017-11-03/ido.owl
 - ido.obo: https://raw.githubusercontent.com/infectious-disease-ontology/infectious-disease-ontology/master/releases/2014-08-01/ido.obo
-- idoplant.owl: http://palea.cgrb.oregonstate.edu/viewsvn/Poc/trunk/ontology/collaborators_ontology/plant_disease/idoplant.owl?view=co
 
 term_browser: ontobee
 example_terms:
@@ -42,6 +41,9 @@ entries:
 - exact: /repository
   replacement: https://github.com/infectious-disease-ontology/infectious-disease-ontology
 
+- exact: /2017-11-03/ido.owl  
+  replacement: https://raw.githubusercontent.com/infectious-disease-ontology/infectious-disease-ontology/2017-11-03/ido.owl
+  
 - exact: /2010-05-26/ido.owl
   replacement: https://raw.githubusercontent.com/infectious-disease-ontology/infectious-disease-ontology/master/releases/2010-05-26/ido.owl
 
@@ -91,10 +93,10 @@ entries:
   replacement: http://svn.code.sf.net/p/idobru/code/trunk/src/ontology/brucellosis.owl
 
 - exact: /2014-08-01/ido.owl
-  replacement: https://raw.githubusercontent.com/infectious-disease-ontology/infectious-disease-ontology/master/releases/2014-08-01/ido_merged.owl
+  replacement: https://raw.githubusercontent.com/infectious-disease-ontology/infectious-disease-ontology-retired/master/releases/2014-08-01/ido_merged.owl
 
 - exact: /2016-07-05/ido.owl
-  replacement: https://raw.githubusercontent.com/infectious-disease-ontology/infectious-disease-ontology/master/releases/2016-07-05/ido-merged.owl
+  replacement: https://raw.githubusercontent.com/infectious-disease-ontology/infectious-disease-ontology-retired/master/releases/2016-07-05/ido-merged.owl
 
 - exact: /Sa.owl
   replacement: https://raw.githubusercontent.com/awqbi/ido-staph/master/releases/2012-06-22/ontology/Sa.owl

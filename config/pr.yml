@@ -18,17 +18,45 @@ entries:
 - regex: (?i)^/obo/pr/release/(\d+\.\d+)\.?/pr.obo$
   replacement: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_$1/pro_reasoned.obo
   tests:
-  - from: /release/52.0/pr.obo
-    to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_52.0/pro_reasoned.obo
-  - from: /release/52.0./pr.obo
-    to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_52.0/pro_reasoned.obo
+  - from: /release/51.0/pr.obo
+    to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_51.0/pro_reasoned.obo
+  - from: /release/51.0./pr.obo
+    to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_51.0/pro_reasoned.obo
 - regex: (?i)^/obo/pr/release/(\d+\.\d+)\.?/pr.owl$
   replacement: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_$1/pro_reasoned.owl
   tests:
-  - from: /release/52.0/pr.owl
-    to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_52.0/pro_reasoned.owl
-  - from: /release/52.0./pr.owl
-    to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_52.0/pro_reasoned.owl
+  - from: /release/51.0/pr.owl
+    to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_51.0/pro_reasoned.owl
+  - from: /release/51.0./pr.owl
+    to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_51.0/pro_reasoned.owl
+- regex: (?i)^/obo/pr/(\d+\.\d+)\.?/pr.obo$
+  replacement: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_$1/pro_reasoned.obo
+  tests:
+  - from: /51.0/pr.obo
+    to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_51.0/pro_reasoned.obo
+  - from: /51.0./pr.obo
+    to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_51.0/pro_reasoned.obo
+- regex: (?i)^/obo/pr/(\d+\.\d+)\.?/pr.owl$
+  replacement: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_$1/pro_reasoned.owl
+  tests:
+  - from: /51.0/pr.owl
+    to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_51.0/pro_reasoned.owl
+  - from: /51.0./pr.owl
+    to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_51.0/pro_reasoned.owl
+- regex: (?i)^/obo/pr/(\d+\.\d+)\.?/pr-asserted.obo$
+  replacement: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_$1/pro_nonreasoned.obo
+  tests:
+  - from: /51.0/pr-asserted.obo
+    to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_51.0/pro_nonreasoned.obo
+  - from: /51.0./pr-asserted.obo
+    to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_51.0/pro_nonreasoned.obo
+- regex: (?i)^/obo/pr/(\d+\.\d+)\.?/pr-asserted.owl$
+  replacement: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_$1/pro_nonreasoned.owl
+  tests:
+  - from: /51.0/pr-asserted.owl
+    to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_51.0/pro_nonreasoned.owl
+  - from: /51.0./pr-asserted.owl
+    to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_51.0/pro_nonreasoned.owl
 # Note that both of the above forms (with and without period after version number) should resolve to the
 #   same file, as the extraneous trailing period stems from an error on the data-version line
 #   in releases prior to 54.0
@@ -54,7 +82,7 @@ entries:
   replacement: http://sourceforge.net/tracker/?group_id=266825&atid=1135711
 
 - exact: /wiki
-  replacement: https://pir17.georgetown.edu/confluence/display/PROWIKI/Home
+  replacement: https://pir17.georgetown.edu/confluence/display/PROWIKI
 
 - exact: /browse
   replacement: http://www.ontobee.org/browser/index.php?o=pr

@@ -1,4 +1,4 @@
-# PURL configuration for http://purl.obolibrary.org/obo/pr
+i# PURL configuration for http://purl.obolibrary.org/obo/pr
 # Warning: the Protein Ontology also uses /obo/pro
 
 idspace: PR
@@ -83,6 +83,12 @@ entries:
 
 - exact: /wiki
   replacement: https://pir17.georgetown.edu/confluence/display/PROWIKI
+
+- prefix: /wiki/
+  replacement: https://pir17.georgetown.edu/confluence/display/PROWIKI/
+  tests:
+  - from: /wiki/PRO+URI+policy
+  - to: https://pir17.georgetown.edu/confluence/display/PROWIKI/PRO+URI+policy
 
 - exact: /browse
   replacement: http://www.ontobee.org/browser/index.php?o=pr

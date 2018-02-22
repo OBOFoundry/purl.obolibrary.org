@@ -85,7 +85,7 @@ entries:
   replacement: https://pir17.georgetown.edu/confluence/display/PROWIKI/
   tests:
   - from: /wiki/PRO+URI+policy
-  - to: https://pir17.georgetown.edu/confluence/display/PROWIKI/PRO+URI+policy
+    to: https://pir17.georgetown.edu/confluence/display/PROWIKI/PRO+URI+policy
 
 - exact: /wiki
   replacement: https://pir17.georgetown.edu/confluence/display/PROWIKI

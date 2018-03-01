@@ -43,7 +43,7 @@ mapping:
             required: true
           "to":
             type: str
-            pattern: "/^(https?|ftp)\:\/\/[a-zA-Z0-9][\/\.\-\:\?\=\&\#\%\!\$\~\w]+$/"
+            pattern: "/^(https?|ftp)\:\/\/[a-zA-Z0-9][\/\.\-\:\?\=\&\#\%\!\$\~\+\w]+$/"
             required: true
   "entries":
     type: seq
@@ -67,7 +67,7 @@ mapping:
             unique: true
           "replacement":
             type: str
-            pattern: "/^(https?|ftp)\:\/\/[a-zA-Z0-9][\/\.\-\:\?\=\&\#\%\!\$\~\w]+$/"
+            pattern: "/^(https?|ftp)\:\/\/[a-zA-Z0-9][\/\.\-\:\?\=\&\#\%\!\$\~\+\w]+$/"
             required: true
             unique: false
           "status":
@@ -86,6 +86,6 @@ mapping:
                     required: true
                   "to":
                     type: str
-                    pattern: "/^(https?|ftp)\:\/\/[a-zA-Z0-9][\/\.\-\:\?\=\&\#\%\!\$\~\w]+$/"
+                    pattern: "/^(https?|ftp)\:\/\/[a-zA-Z0-9][\/\.\-\:\?\=\&\#\%\!\$\~\+\w]+$/"
                     required: true
 

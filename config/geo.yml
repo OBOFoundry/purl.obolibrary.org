@@ -14,7 +14,7 @@ entries:
 - exact: /nation-and-dependency-instances.owl
   replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/nation-and-dependency-instances.owl
   
-- exact: /dev/major-world-cities-geography.owl
+- exact: /major-world-cities-geography.owl
   replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/major-world-cities-geography.owl
   
 - exact: /nation-geography.owl
@@ -100,6 +100,9 @@ entries:
   
 - exact: /us-ky-county-geography.owl
   replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-ky-county-geography.owl
+  
+- exact: /us-la-county-geography.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-la-county-geography.owl
   
 - exact: /us-ma-county-geography.owl
   replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-ma-county-geography.owl
@@ -388,3 +391,24 @@ entries:
   
 - exact: /dev/us-wy-county-geography.owl
   replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-wy-county-geography.owl
+
+- exact: /dev/us-hrsa-geography.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-hrsa-geography.owl
+
+- exact: /dev/mx-admin-level-one.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/MX/MX-admin-level-1.owl
+
+- exact: /dev/mx-admin-level-two.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/MX/MX-admin-level-2.owl
+  
+- exact: /dev/mx-admin-level-three.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/MX/MX-admin-level-3.owl
+  
+- exact: /dev/tz-admin-level-one.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/TZ/TZ-admin-level-1.owl
+  
+- exact: /dev/tz-admin-level-two.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/TZ/TZ-admin-level-2.owl
+  
+- exact: /dev/tz-admin-level-three.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/TZ/TZ-admin-level-3.owl

@@ -21,7 +21,7 @@
 
   tasks:
     - name: Update apt-get cache
-      apt: update_cache=yes
+      shell: "apt-get update"
 
     - name: Install system-wide packages (not Travis)
       when: mode != "travis"

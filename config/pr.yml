@@ -84,8 +84,8 @@ entries:
 - prefix: /wiki/
   replacement: https://pir17.georgetown.edu/confluence/display/PROWIKI/
   tests:
-  - from: /wiki/PRO+URI+policy
-    to: https://pir17.georgetown.edu/confluence/display/PROWIKI/PRO+URI+policy
+  - from: /wiki/PRO+PURLs
+    to: https://pir17.georgetown.edu/confluence/display/PROWIKI/PRO+PURLs
 
 - exact: /wiki
   replacement: https://pir17.georgetown.edu/confluence/display/PROWIKI

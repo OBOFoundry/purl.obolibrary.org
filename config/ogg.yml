@@ -15,7 +15,7 @@ entries:
   replacement: https://bitbucket.org/hegroup/ogg-pf/raw/master/ogg-pf.owl 
 
 - exact: /ogg-mm.owl
-  replacement: https://bitbucket.org/hegroup/ogg-mouse/raw/master/ogg-mm.owl
+  replacement: https://bitbucket.org/hegroup/ogg-mm/raw/master/ogg-mm.owl
 
 - exact: /ogg-dm.owl
   replacement: https://bitbucket.org/hegroup/ogg-dm/raw/master/ogg-dm.owl

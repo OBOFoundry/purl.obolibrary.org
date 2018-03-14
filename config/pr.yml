@@ -24,7 +24,7 @@ entries:
   - from: /9.0/pr.obo
     to: https://research.bioinformatics.udel.edu/PRO/data/release_9.0/pro_nonreasoned.obo
 - regex: (?i)^/obo/pr/([123]\d\.\d+)\.?/pr.obo$
-  replacement: https://research.bioinformatics.udel.edu/PRO/data/release_$1/pro_non_reasoned.obo
+  replacement: https://research.bioinformatics.udel.edu/PRO/data/release_$1/pro_nonreasoned.obo
   tests:
   - from: /22.0/pr.obo
     to: https://research.bioinformatics.udel.edu/PRO/data/release_22.0/pro_nonreasoned.obo
@@ -93,9 +93,9 @@ entries:
   replacement: https://research.bioinformatics.udel.edu/PRO/data/release_$1/pro_nonreasoned.obo
   tests:
   - from: /51.0/pr-asserted.obo
-    to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_51.0/pro_nonreasoned.obo
+    to: https://research.bioinformatics.udel.edu/PRO/data/release_51.0/pro_nonreasoned.obo
   - from: /51.0./pr-asserted.obo
-    to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_51.0/pro_nonreasoned.obo
+    to: https://research.bioinformatics.udel.edu/PRO/data/release_51.0/pro_nonreasoned.obo
 
 - regex: (?i)^/obo/pr/(4[3456789]\.\d+)\.?/pr-asserted.owl$
   replacement: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_$1/pro_nonreasoned.owl

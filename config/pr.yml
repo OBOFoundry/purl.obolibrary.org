@@ -7,56 +7,86 @@ base_url: /obo/pr
 base_redirect: http://proconsortium.org
 
 products:
-- pr.owl: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/pro_reasoned.owl
-- pr.obo: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/pro_reasoned.obo
-- pr-asserted.owl: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/pro_nonreasoned.owl
-- pr-asserted.obo: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/pro_nonreasoned.obo
+- pr.owl: https://research.bioinformatics.udel.edu/PRO/data/current/pro_reasoned.owl
+- pr.obo: https://research.bioinformatics.udel.edu/PRO/data/current/pro_reasoned.obo
+- pr-asserted.owl: https://research.bioinformatics.udel.edu/PRO/data/current/pro_nonreasoned.owl
+- pr-asserted.obo: https://research.bioinformatics.udel.edu/PRO/data/current/pro_nonreasoned.obo
 
 term_browser: custom
 
 entries:
-- regex: (?i)^/obo/pr/release/(\d+\.\d+)\.?/pr.obo$
-  replacement: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_$1/pro_reasoned.obo
+
+##### PURLs using major.minor style to indicate the release #####
+# major releases prior to release 43.0; no reasoned version produced so default to non-reasoned; no OWL produced
+# The regex matches three sets of version numbers:
+# - 0-9: \d
+# - 10-39: [1-3]\d
+# - 40-42: 4[0-2]\d
+# Then 'pr' and 'pr-asserted' are treated the same.
+
+- regex: (?i)^/obo/pr/((\d|[1-3]\d|4[0-2])\.\d)\.?/(pr|pr-asserted).obo$
+  replacement: https://research.bioinformatics.udel.edu/PRO/data/release_$1/pro_nonreasoned.obo
   tests:
-  - from: /release/51.0/pr.obo
-    to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_51.0/pro_reasoned.obo
-  - from: /release/51.0./pr.obo
-    to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_51.0/pro_reasoned.obo
-- regex: (?i)^/obo/pr/release/(\d+\.\d+)\.?/pr.owl$
-  replacement: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_$1/pro_reasoned.owl
+  - from: /9.0/pr.obo
+    to: https://research.bioinformatics.udel.edu/PRO/data/release_9.0/pro_nonreasoned.obo
+  - from: /22.0/pr.obo
+    to: https://research.bioinformatics.udel.edu/PRO/data/release_22.0/pro_nonreasoned.obo
+  - from: /42.0/pr.obo
+    to: https://research.bioinformatics.udel.edu/PRO/data/release_42.0/pro_nonreasoned.obo
+  - from: /9.0/pr-asserted.obo
+    to: https://research.bioinformatics.udel.edu/PRO/data/release_9.0/pro_nonreasoned.obo
+  - from: /22.0/pr-asserted.obo
+    to: https://research.bioinformatics.udel.edu/PRO/data/release_22.0/pro_nonreasoned.obo
+  - from: /42.0/pr-asserted.obo
+    to: https://research.bioinformatics.udel.edu/PRO/data/release_42.0/pro_nonreasoned.obo
+
+# major releases 43.0 and later; reasoned version of both OBO and OWL produced
+# The regex matches three sets of version numbers:
+# - 43-49: 4[3-9]\d
+# - 50-99: [5-9]\d
+# - 100-999: \d\d\d
+# The file extension can be either 'obo' or 'owl'.
+
+- regex: (?i)^/obo/pr/((4[3-9]|[5-9]\d|\d\d\d)\.\d+)\.?/pr.(obo|owl)$
+  replacement: https://research.bioinformatics.udel.edu/PRO/data/release_$1/pro_reasoned.$3
   tests:
-  - from: /release/51.0/pr.owl
-    to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_51.0/pro_reasoned.owl
-  - from: /release/51.0./pr.owl
-    to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_51.0/pro_reasoned.owl
-- regex: (?i)^/obo/pr/(\d+\.\d+)\.?/pr.obo$
-  replacement: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_$1/pro_reasoned.obo
-  tests:
+  - from: /45.0/pr.obo
+    to: https://research.bioinformatics.udel.edu/PRO/data/release_45.0/pro_reasoned.obo
+  - from: /45.0./pr.obo
+    to: https://research.bioinformatics.udel.edu/PRO/data/release_45.0/pro_reasoned.obo
   - from: /51.0/pr.obo
-    to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_51.0/pro_reasoned.obo
+    to: https://research.bioinformatics.udel.edu/PRO/data/release_51.0/pro_reasoned.obo
   - from: /51.0./pr.obo
-    to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_51.0/pro_reasoned.obo
-- regex: (?i)^/obo/pr/(\d+\.\d+)\.?/pr.owl$
-  replacement: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_$1/pro_reasoned.owl
-  tests:
+    to: https://research.bioinformatics.udel.edu/PRO/data/release_51.0/pro_reasoned.obo
+  - from: /45.0/pr.owl
+    to: https://research.bioinformatics.udel.edu/PRO/data/release_45.0/pro_reasoned.owl
+  - from: /45.0./pr.owl
+    to: https://research.bioinformatics.udel.edu/PRO/data/release_45.0/pro_reasoned.owl
   - from: /51.0/pr.owl
-    to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_51.0/pro_reasoned.owl
+    to: https://research.bioinformatics.udel.edu/PRO/data/release_51.0/pro_reasoned.owl
   - from: /51.0./pr.owl
-    to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_51.0/pro_reasoned.owl
-- regex: (?i)^/obo/pr/(\d+\.\d+)\.?/pr-asserted.obo$
-  replacement: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_$1/pro_nonreasoned.obo
+    to: https://research.bioinformatics.udel.edu/PRO/data/release_51.0/pro_reasoned.owl
+
+- regex: (?i)^/obo/pr/((4[3-9]|[5-9]\d|\d\d\d)\.\d+)\.?/pr-asserted.(obo|owl)$
+  replacement: https://research.bioinformatics.udel.edu/PRO/data/release_$1/pro_nonreasoned.$3
   tests:
+  - from: /45.0/pr-asserted.obo
+    to: https://research.bioinformatics.udel.edu/PRO/data/release_45.0/pro_nonreasoned.obo
+  - from: /45.0./pr-asserted.obo
+    to: https://research.bioinformatics.udel.edu/PRO/data/release_45.0/pro_nonreasoned.obo
   - from: /51.0/pr-asserted.obo
-    to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_51.0/pro_nonreasoned.obo
+    to: https://research.bioinformatics.udel.edu/PRO/data/release_51.0/pro_nonreasoned.obo
   - from: /51.0./pr-asserted.obo
-    to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_51.0/pro_nonreasoned.obo
-- regex: (?i)^/obo/pr/(\d+\.\d+)\.?/pr-asserted.owl$
-  replacement: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_$1/pro_nonreasoned.owl
-  tests:
+    to: https://research.bioinformatics.udel.edu/PRO/data/release_51.0/pro_nonreasoned.obo
+  - from: /45.0/pr-asserted.owl
+    to: https://research.bioinformatics.udel.edu/PRO/data/release_45.0/pro_nonreasoned.owl
+  - from: /45.0./pr-asserted.owl
+    to: https://research.bioinformatics.udel.edu/PRO/data/release_45.0/pro_nonreasoned.owl
   - from: /51.0/pr-asserted.owl
-    to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_51.0/pro_nonreasoned.owl
+    to: https://research.bioinformatics.udel.edu/PRO/data/release_51.0/pro_nonreasoned.owl
   - from: /51.0./pr-asserted.owl
-    to: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/old_files/release_51.0/pro_nonreasoned.owl
+    to: https://research.bioinformatics.udel.edu/PRO/data/release_51.0/pro_nonreasoned.owl
+
 # Note that both of the above forms (with and without period after version number) should resolve to the
 #   same file, as the extraneous trailing period stems from an error on the data-version line
 #   in releases prior to 54.0
@@ -70,10 +100,10 @@ entries:
     to: http://research.bioinformatics.udel.edu/pro/entry/PR_000000001
 
 - exact: /pr-asserted.obo
-  replacement: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/pro_nonreasoned.obo
+  replacement: https://research.bioinformatics.udel.edu/PRO/data/current/pro_nonreasoned.obo
   
 - exact: /pr-asserted.owl
-  replacement: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/pro_nonreasoned.owl
+  replacement: https://research.bioinformatics.udel.edu/PRO/data/current/pro_nonreasoned.owl
   
 - exact: /homepage
   replacement: http://proconsortium.org
@@ -97,14 +127,3 @@ entries:
 
 - exact: /pr-dev.obo
   replacement: http://pir.georgetown.edu/projects/pro/pro_wv.obo
-  
-
-# ISSUES
-# http://purl.obolibrary.org/obo/pr-asserted.obo
-#  resolves to
-# ftp://ftp.proconsortium.org/databases/ontology/pro_obo/pro.obo
-#  which is invalid.
-# http://purl.obolibrary.org/obo/pr/pr-asserted.obo  (the ID-policy-compliant format)
-#  also fails (attempts to go to purl.oclc.org)
-
-

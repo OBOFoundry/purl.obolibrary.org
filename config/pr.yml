@@ -9,8 +9,6 @@ base_redirect: http://proconsortium.org
 products:
 - pr.owl: https://research.bioinformatics.udel.edu/PRO/data/current/pro_reasoned.owl
 - pr.obo: https://research.bioinformatics.udel.edu/PRO/data/current/pro_reasoned.obo
-- pr-asserted.owl: https://research.bioinformatics.udel.edu/PRO/data/current/pro_nonreasoned.owl
-- pr-asserted.obo: https://research.bioinformatics.udel.edu/PRO/data/current/pro_nonreasoned.obo
 
 term_browser: custom
 

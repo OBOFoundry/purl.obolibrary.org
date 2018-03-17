@@ -97,17 +97,17 @@ entries:
 #   returning the release that was active on that date. This obviates the need for a user to know the
 #   precise dates of releases, and allows us to bypass the need to create a new PURL for every release.
 
--regex: (?i)^/obo/pr/((2\d\d\d\-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01]))/(pr|pr-asserted)\.(obo|owl))$
- replacement: https://hershey.dbi.udel.edu/natale-cgi/getPRO?request=$1
- tests:
- - from: /2011-03-29/pr.obo
-   to: https://research.bioinformatics.udel.edu/PRO/data/release_17.0/pro_nonreasoned.obo
- - from: /2011-04-01/pr.obo
-   to: https://research.bioinformatics.udel.edu/PRO/data/release_17.0/pro_nonreasoned.obo
- - from: /2017-02-01/pr.owl
-   to: https://research.bioinformatics.udel.edu/PRO/data/release_51.0/pro_reasoned.owl
- - from: /2017-02-01/pr-asserted.owl
-   to: https://research.bioinformatics.udel.edu/PRO/data/release_51.0/pro_nonreasoned.owl
+- regex: (?i)^/obo/pr/((2\d\d\d\-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01]))/(pr|pr-asserted)\.(obo|owl))$
+  replacement: https://hershey.dbi.udel.edu/natale-cgi/getPRO?request=$1
+  tests:
+  - from: /2011-03-29/pr.obo
+    to: https://research.bioinformatics.udel.edu/PRO/data/release_17.0/pro_nonreasoned.obo
+  - from: /2011-04-01/pr.obo
+    to: https://research.bioinformatics.udel.edu/PRO/data/release_17.0/pro_nonreasoned.obo
+  - from: /2017-02-01/pr.owl
+    to: https://research.bioinformatics.udel.edu/PRO/data/release_51.0/pro_reasoned.owl
+  - from: /2017-02-01/pr-asserted.owl
+    to: https://research.bioinformatics.udel.edu/PRO/data/release_51.0/pro_nonreasoned.owl
 
 ### OBO Foundry ID-policy compliant PURLs
 

@@ -101,13 +101,19 @@ entries:
   replacement: https://hershey.dbi.udel.edu/natale-cgi/getPRO?request=$1
   tests:
   - from: /2011-03-29/pr.obo
-    to: https://research.bioinformatics.udel.edu/PRO/data/release_17.0/pro_nonreasoned.obo
+    to: https://hershey.dbi.udel.edu/natale-cgi/getPRO?request=2011-03-29/pr.obo
   - from: /2011-04-01/pr.obo
-    to: https://research.bioinformatics.udel.edu/PRO/data/release_17.0/pro_nonreasoned.obo
+    to: https://hershey.dbi.udel.edu/natale-cgi/getPRO?request=2011-04-01/pr.obo
   - from: /2017-02-01/pr.owl
-    to: https://research.bioinformatics.udel.edu/PRO/data/release_51.0/pro_reasoned.owl
+    to: https://hershey.dbi.udel.edu/natale-cgi/getPRO?request=017-02-01/pr.owl
   - from: /2017-02-01/pr-asserted.owl
-    to: https://research.bioinformatics.udel.edu/PRO/data/release_51.0/pro_nonreasoned.owl
+    to: https://hershey.dbi.udel.edu/natale-cgi/getPRO?request=2017-02-01/pr-asserted.owl
+
+# The above ultimately resolve to:
+#   2011-03-29/pr.obo           https://research.bioinformatics.udel.edu/PRO/data/release_17.0/pro_nonreasoned.obo 
+#   2011-04-01/pr.obo           https://research.bioinformatics.udel.edu/PRO/data/release_17.0/pro_nonreasoned.obo 
+#   2017-02-01/pr.owl           https://research.bioinformatics.udel.edu/PRO/data/release_51.0/pro_reasoned.owl 
+#   2017-02-01/pr-asserted.owl  https://research.bioinformatics.udel.edu/PRO/data/release_51.0/pro_nonreasoned.owl 
 
 ### OBO Foundry ID-policy compliant PURLs
 

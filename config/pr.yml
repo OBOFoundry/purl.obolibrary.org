@@ -105,7 +105,7 @@ entries:
   - from: /2011-04-01/pr.obo
     to: https://hershey.dbi.udel.edu/natale-cgi/getPRO?request=2011-04-01/pr.obo
   - from: /2017-02-01/pr.owl
-    to: https://hershey.dbi.udel.edu/natale-cgi/getPRO?request=017-02-01/pr.owl
+    to: https://hershey.dbi.udel.edu/natale-cgi/getPRO?request=2017-02-01/pr.owl
   - from: /2017-02-01/pr-asserted.owl
     to: https://hershey.dbi.udel.edu/natale-cgi/getPRO?request=2017-02-01/pr-asserted.owl
 

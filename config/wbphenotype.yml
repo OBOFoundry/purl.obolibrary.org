@@ -7,6 +7,10 @@ products:
 - wbphenotype.owl: http://ontologies.berkeleybop.org/wbphenotype.owl
 - wbphenotype.obo: http://ontologies.berkeleybop.org/wbphenotype.obo
 
+entries: 
+- exact: /wbphenotype-importer.owl
+  replacement: https://raw.githubusercontent.com/obophenotype/upheno/master/wbphenotype/wbphenotype-importer.owl
+
 term_browser: ontobee
 example_terms:
 - WBPhenotype_0000886

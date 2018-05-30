@@ -174,10 +174,10 @@ entries:
 - exact: /2018-02-12/obi_core.owl
   replacement: https://raw.githubusercontent.com/obi-ontology/obi/v2018-02-12/obi_core.owl
 
-- exact: /2018-02-12/obi.owl
+- exact: /2018-05-23/obi.owl
   replacement: https://raw.githubusercontent.com/obi-ontology/obi/v2018-05-23/obi.owl
 
-- exact: /2018-02-12/obi_core.owl
+- exact: /2018-05-23/obi_core.owl
   replacement: https://raw.githubusercontent.com/obi-ontology/obi/v2018-05-23/obi_core.owl
 
 ### Web Service Releases

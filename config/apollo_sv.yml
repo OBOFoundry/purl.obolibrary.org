@@ -31,3 +31,10 @@ entries:
 
 - exact: /bfo2/apollo_sv.owl 
   replacement: https://raw.githubusercontent.com/ApolloDev/apollo-sv/bfo2/src/ontology/apollo-sv.owl
+  
+- exact: /4.1/apollo_sv.owl
+  replacement: https://raw.githubusercontent.com/ApolloDev/apollo-sv/v4.1/src/ontology/apollo-sv.owl
+  
+- exact: /4.0.1/apollo_sv.owl
+  replacement: https://raw.githubusercontent.com/ApolloDev/apollo-sv/v4.0.1/src/ontology/apollo-sv.owl
+  

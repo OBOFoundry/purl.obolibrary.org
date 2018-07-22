@@ -33,6 +33,8 @@ entries:
   replacement: http://build.berkeleybop.org/view/Monarch/job/generate-triples-from-nif/lastSuccessfulBuild/artifact/target/
 - prefix: /imports/
   replacement: https://raw.githubusercontent.com/obophenotype/upheno/master/imports/
+- prefix: /patterns/
+  replacement: https://raw.githubusercontent.com/obophenotype/upheno/master/src/patterns/
 - prefix: /
   replacement: https://raw.githubusercontent.com/obophenotype/upheno/master/
 

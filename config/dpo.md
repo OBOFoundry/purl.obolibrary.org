@@ -11,6 +11,6 @@ products:
 
 term_browser: ontobee
 example_terms:
-- FBdv_00005370
+- FBdv_0000670
 
 entries:

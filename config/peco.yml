@@ -18,5 +18,7 @@ entries:
   replacement: https://raw.githubusercontent.com/Planteome/plant-experimental-conditions-ontology/master/imports/  
 - prefix: /patterns/
   replacement: https://raw.githubusercontent.com/Planteome/plant-experimental-conditions-ontology/master/src/ontology/patterns/  
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/Planteome/plant-experimental-conditions-ontology/v
 - exact: /tracker
   replacement: https://github.com/Planteome/plant-experimental-conditions-ontology/issues

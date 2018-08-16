@@ -4,7 +4,8 @@ idspace: EMAPA
 base_url: /obo/emapa
 
 products:
-- emapa.owl: http://ontologies.berkeleybop.org/emapa.owl
+- emapa.owl: https://raw.githubusercontent.com/obophenotype/mouse-anatomy-ontology/master/emapa.owl
+- emapa.obo: https://raw.githubusercontent.com/obophenotype/mouse-anatomy-ontology/master/emapa.obo
 
 term_browser: ontobee
 example_terms:

@@ -36,6 +36,14 @@ entries:
 
 ### Custom (non-Ontobee) term_browser redirects
 
+# Term redirects for DUO
+- regex: ^/obo/DUO_(\d+)$
+  replacement: https://www.ebi.ac.uk/ols/ontologies/duo/terms?iri=http://purl.obolibrary.org/obo/DUO_$1
+  status: see other
+  tests:
+  - from: /DUO_0000005
+    to: https://www.ebi.ac.uk/ols/ontologies/duo/terms?iri=http://purl.obolibrary.org/obo/DUO_0000005
+    
 # Term redirects for CHEBI
 - regex: ^/obo/CHEBI_(\d+)$
   replacement: http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:$1

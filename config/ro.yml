@@ -16,7 +16,7 @@ example_terms:
 
 entries:
 - exact: /docs/causal-relations
-  replacement: https://docs.google.com/document/d/1WxocTXZaGVhEV1n7NB86pCF3SUcBJh8bq4vQrVCkjSU/edit#
+  replacement: https://github.com/oborel/obo-relations/wiki/causal-relations
 
 - exact: /ro-idranges.owl
   replacement: https://raw.githubusercontent.com/oborel/obo-relations/master/src/ontology/ro-idranges.owl

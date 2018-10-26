@@ -130,10 +130,13 @@ entries:
   replacement: https://research.bioinformatics.udel.edu/PRO/data/current/pro_nonreasoned.owl
   
 - exact: /homepage
-  replacement: http://proconsortium.org
+  replacement: http://proconsortium.org/pro
 
 - exact: /tracker
   replacement: http://sourceforge.net/tracker/?group_id=266825&atid=1135711
+
+- exact: /downloads
+  replacement: https://research.bioinformatics.udel.edu/PRO/data/current
 
 - prefix: /wiki/
   replacement: https://pir17.georgetown.edu/confluence/display/PROWIKI/

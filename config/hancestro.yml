@@ -1,0 +1,19 @@
+# PURL configuration for http://purl.obolibrary.org/obo/hancestro
+
+idspace: HANCESTRO
+base_url: /obo/hancestro
+
+products:
+- hancestro.owl: https://raw.githubusercontent.com/EBISPOT/ancestro/master/hancestro.owl
+
+term_browser: ontobee
+example_terms:
+- HANCESTRO_0004
+
+entries:
+- exact: /hancestro.owl
+  replacement: https://raw.githubusercontent.com/EBISPOT/ancestro/master/hancestro.owl
+- exact: /hancestro_inferred.owl
+  replacement: https://raw.githubusercontent.com/EBISPOT/ancestro/master/hancestro_inferred.owl
+- exact: /hancestro_bfo.owl
+  replacement: https://raw.githubusercontent.com/EBISPOT/ancestro/master/hancestro_bfo.owl

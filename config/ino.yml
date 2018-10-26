@@ -1,0 +1,13 @@
+ # PURL configuration for http://purl.obolibrary.org/obo/ino
+ # See more detail: http://obofoundry.org/ontology/ino.html 
+
+idspace: INO
+base_url: /obo/ino
+
+products:
+- ino.owl: https://raw.githubusercontent.com/INO-ontology/ino/master/src/ino_merged.owl
+
+term_browser: ontobee
+example_terms:
+- INO_0000001
+- INO_0000002 

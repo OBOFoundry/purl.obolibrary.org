@@ -11,6 +11,14 @@ products:
 term_browser: ontobee
 
 entries:
+- exact: /mondo-base.owl
+  replacement: https://osf.io/5c6ky/download
+- exact: /subsets/mondo-minimal.owl
+  replacement: https://osf.io/8avz5/download
+- exact: /subsets/mondo-minimal.obo
+  replacement: https://osf.io/heu72/download
+- exact: /subsets/mondo-minimal.json
+  replacement: https://osf.io/6c8nk/download
 - exact: /pre/mondo.obo
   replacement: https://osf.io/4c9qp/download
 - exact: /pre/mondo.json

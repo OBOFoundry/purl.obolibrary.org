@@ -5,6 +5,7 @@ base_url: /obo/mod
 
 products:
 - mod.owl: http://ontologies.berkeleybop.org/mod.owl
+- mod.obo: https://raw.githubusercontent.com/MICommunity/psidev/master/psi/mod/data/PSI-MOD.obo
 
 term_browser: ontobee
 example_terms:

@@ -8,6 +8,7 @@ base_redirect: https://github.com/pato-ontology/pato
 products:
 - pato.owl: https://raw.githubusercontent.com/pato-ontology/pato/master/pato.owl
 - pato.obo: https://raw.githubusercontent.com/pato-ontology/pato/master/pato.obo
+- pato.json: https://raw.githubusercontent.com/pato-ontology/pato/master/pato.json
 
 term_browser: ontobee
 example_terms:

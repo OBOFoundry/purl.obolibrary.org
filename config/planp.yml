@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/planp
+
+idspace: PLANP
+base_url: /obo/planp
+
+products:
+- planp.owl: https://raw.githubusercontent.com/srobb1/planarian-phenotype-ontology/master/planp.owl
+- planp.obo: https://raw.githubusercontent.com/srobb1/planarian-phenotype-ontology/master/planp.obo
+
+term_browser: ontobee
+example_terms:
+- PLANP_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/srobb1/planarian-phenotype-ontology/v
+
+- prefix: /tracker/
+  replacement: https://github.com/srobb1/planarian-phenotype-ontology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/PLANP?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/srobb1/planarian-phenotype-ontology/master/

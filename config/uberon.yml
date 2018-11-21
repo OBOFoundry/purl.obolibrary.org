@@ -8,6 +8,7 @@ base_redirect: http://uberon.org
 products:
 - uberon.owl: http://ontologies.berkeleybop.org/uberon.owl
 - uberon.obo: http://ontologies.berkeleybop.org/uberon.obo
+- not-a-real-product.obo: http://ontologies.berkeleybop.org/foo.obo
 
 term_browser: ontobee
 example_terms:

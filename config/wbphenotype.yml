@@ -4,10 +4,23 @@ idspace: WBPhenotype
 base_url: /obo/wbphenotype
 
 products:
-- wbphenotype.owl: http://ontologies.berkeleybop.org/wbphenotype.owl
-- wbphenotype.obo: http://ontologies.berkeleybop.org/wbphenotype.obo
+- wbphenotype.owl: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/wbphenotype.owl
+- wbphenotype.obo: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/wbphenotype.obo
+- wbphenotype-merged.owl: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/wbphenotype-merged.owl
+- wbphenotype-merged.obo: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/wbphenotype-merged.obo
+- wbphenotype-base.owl: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/wbphenotype-base.owl
 
 term_browser: ontobee
 example_terms:
 - WBPhenotype_0000886
 
+entries:
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/v
+- prefix: /tracker/
+  replacement: https://github.com/obophenotype/c-elegans-phenotype-ontology/issues
+- prefix: /about/
+  replacement: https://github.com/obophenotype/c-elegans-phenotype-ontology
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/obophenotype/c-elegans-phenotype-ontology/master/

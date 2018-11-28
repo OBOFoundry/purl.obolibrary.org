@@ -12,6 +12,9 @@ example_terms:
 - MP_0000001
 
 entries:
+- exact: /mp-base.owl
+  replacement: http://ontologies.berkeleybop.org/mp/mp-base.owl
+
 - prefix: /about/
   replacement: http://www.ebi.ac.uk/ontology-lookup/browse.do?ontName=MP&termId=http://purl.obolibrary.org/obo/
   tests:

@@ -32,5 +32,5 @@ entries:
 - prefix: /imports/
   replacement: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports/
 - prefix: /releases/
-  replacement: https://raw.githubusercontent.com/monarch-initiative/mondo/v
+  replacement: https://github.com/monarch-initiative/mondo/releases/download/v
 

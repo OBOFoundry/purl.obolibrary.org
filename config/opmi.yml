@@ -1,0 +1,12 @@
+# PURL configuration for http://purl.obolibrary.org/obo/opmi
+
+idspace: OPMI
+base_url: /obo/opmi
+
+products:
+- opmi.owl: https://raw.githubusercontent.com/OPMI/opmi/master/src/ontology/opmi-merged.owl
+
+term_browser: ontobee
+example_terms:
+- OPMI_0000001
+- OPMI_0000002

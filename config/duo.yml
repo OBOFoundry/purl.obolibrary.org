@@ -13,14 +13,17 @@ example_terms:
 
 entries:
 
+- prefix: /home/
+  replacement: https://github.com/EBISPOT/DUO
+  
 - prefix: /releases/
-  replacement: https://raw.githubusercontent.com/EBISPOT/DUO/v
+  replacement: https://github.com/EBISPOT/DUO/releases/
 
 - prefix: /tracker/
   replacement: https://github.com/EBISPOT/DUO/issues
 
 - prefix: /about/
-  replacement: http://www.ontobee.org/ontology/DUO?iri=http://purl.obolibrary.org/obo/
+  replacement: https://www.ebi.ac.uk/ols/ontologies/duo
 
 ## generic fall-through, serve direct from github by default
 - prefix: /

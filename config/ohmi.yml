@@ -4,9 +4,16 @@ idspace: OHMI
 base_url: /obo/ohmi
 
 products:
-- ohmi.owl: https://raw.githubusercontent.com/OHMI-ontology/OHMI/master/src/ohmi_merged.owl
+- ohmi.owl: https://raw.githubusercontent.com/OHMI-ontology/OHMI/v2019-01-24/ohmi.owl
 
 term_browser: ontobee
 example_terms:
 - OHMI_0000002
+
+entries:
+- exact: /2019-01-24/ohmi.owl
+  replacement: https://raw.githubusercontent.com/OHMI-ontology/OHMI/v2019-01-24/ohmi.owl
+  
+# previous version which has no version IRI:  https://raw.githubusercontent.com/OHMI-ontology/OHMI/master/src/ohmi_merged.owl
+
 

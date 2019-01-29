@@ -17,13 +17,13 @@ entries:
   replacement: https://github.com/EBISPOT/DUO
   
 - prefix: /releases/
-  replacement: https://github.com/EBISPOT/DUO/releases/
+  replacement: https://raw.githubusercontent.com/EBISPOT/DUO/v
 
 - prefix: /tracker/
   replacement: https://github.com/EBISPOT/DUO/issues
 
 - prefix: /about/
-  replacement: https://www.ebi.ac.uk/ols/ontologies/duo
+  replacement: https://www.ebi.ac.uk/ols/ontologies/duo/
 
 ## generic fall-through, serve direct from github by default
 - prefix: /

@@ -17,7 +17,7 @@ entries:
   replacement: https://raw.githubusercontent.com/obo-behavior/behavior-ontology/v
 
 - prefix: /tracker/
-  replacement: https://github.com/obo-behavior/behavior-ontology/issues
+  replacement: https://github.com/obo-behavior/behavior-ontology/issues/
 
 - prefix: /about/
   replacement: http://www.ontobee.org/ontology/NBO?iri=http://purl.obolibrary.org/obo/

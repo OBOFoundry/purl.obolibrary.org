@@ -285,13 +285,13 @@ def main():
                      help='Directory containing YAML input files')
   args = parser.parse_args()
 
-  # Create the output directory, failing if it already exists or if unsuccessful for another reason:
+  # Create the output directory, if it already exist. If this isn't possible, fail. Note that if
+  # the directory already exists, then the files inside will be overwritten.
   normalised_output_dir = os.path.normpath(args.output_dir)
   try:
     os.makedirs(normalised_output_dir)
-  except OSError as e:
-    print(e, file=sys.stderr)
-    sys.exit(1)
+  except FileExistsError as e:
+    pass
 
   entries = {}
   base_redirects = {}
@@ -310,9 +310,15 @@ def main():
       entries = translate_entries(yamldoc, base_url)
       # Write the entries for the given project to its project-specific .htaccess file, located
       # in a subdirectory under the given output directory:
-      ontid = re.sub('\.yml', '', os.path.basename(yamlname))
-      os.mkdir('{}/{}'.format(normalised_output_dir, ontid))
-      with open('{}/{}/.htaccess'.format(normalised_output_dir, ontid), 'w') as outfile:
+      yamlroot = re.sub('\.yml', '', os.path.basename(yamlname))
+
+      # Create the subdirectory; if it already exists, the files inside will be overwritten.
+      try:
+        os.mkdir('{}/{}'.format(normalised_output_dir, yamlroot))
+      except FileExistsError as e:
+        pass
+
+      with open('{}/{}/.htaccess'.format(normalised_output_dir, yamlroot), 'w') as outfile:
         write_entries(entries, yamlname, outfile)
   elif args.input_dir:
     normalised_input_dir = os.path.normpath(args.input_dir)
@@ -330,7 +336,7 @@ def main():
 
       # `idspace` and `yamlroot` are synonyms. The former is taken from the `idspace` specified
       # within the given YAML file, while the latter is derived from the filename. They need to
-      # match (up to a change of case - idspace is always uppercase while ontid is lower).
+      # match (up to a change of case - idspace is always uppercase while yamlroot is lower).
       # If they do not match, emit a warning.
       idspace = yamldoc['idspace']
       yamlroot = re.sub('\.yml', '', os.path.basename(yamlname))
@@ -340,8 +346,12 @@ def main():
       # Collect the entries for the current idspace:
       entries[idspace] = translate_entries(yamldoc, base_url)
       # Write the entries to the idspace's project-specific file located in its own subdirectory
-      # under the output directory:
-      os.mkdir('{}/{}'.format(normalised_output_dir, yamlroot))
+      # under the output directory. If it already exists, the files inside will be overwritten.
+      try:
+        os.mkdir('{}/{}'.format(normalised_output_dir, yamlroot))
+      except FileExistsError:
+        pass
+
       with open('{}/{}/.htaccess'.format(normalised_output_dir, yamlroot), 'w') as outfile:
         write_entries(entries[idspace], yamlname, outfile)
       # Extract the idspace's base redirects, products, and terms but do not write them yet:

@@ -73,6 +73,8 @@ Note that in the case of terms, only `term_browser: ontobee` is currently
 supported. When `term_browser: custom` is used no output is generated.
 """
 
+import json
+import jsonschema
 import re
 import os
 import sys
@@ -81,6 +83,39 @@ import yaml
 from argparse import ArgumentParser
 from glob import glob
 from urllib.parse import unquote
+
+pwd = os.path.dirname(os.path.realpath(__file__))
+schemafile = "{}/config.schema.json".format(pwd)
+
+
+def load_and_validate(yamlname, schema):
+  try:
+    yamlfile = open(yamlname)
+    yamldoc = yaml.load(yamlfile)
+    jsonschema.validate(yamldoc, schema)
+  except FileNotFoundError as e:
+    print(e, file=sys.stderr)
+    sys.exit(1)
+  except yaml.YAMLError as e:
+    print(e, file=sys.stderr)
+    sys.exit(1)
+  except jsonschema.exceptions.ValidationError as e:
+    print("In file: {}:\n{}".format(yamlname, e), file=sys.stderr)
+    sys.exit(1)
+
+  # These errors should not occur, since they should have been caught by the above jsonschema
+  # validation step, but double-check anyway:
+  if 'base_url' not in yamldoc \
+     or type(yamldoc['base_url']) is not str:
+    print('YAML document must contain "base_url" string', file=sys.stderr)
+    sys.exit(1)
+
+  if 'idspace' not in yamldoc \
+     or type(yamldoc['idspace']) is not str:
+    print('YAML document must contain "idspace" string', file=sys.stderr)
+    sys.exit(1)
+
+  return yamldoc
 
 
 def clean_source(s):
@@ -108,7 +143,8 @@ def process_entry(base_url, i, entry):
   if type(entry) is not dict:
     raise ValueError('Entry %d is not a YAML map: "%s"' % (i, entry))
 
-  # Validate "replacement" field
+  # Validate that "replacement" field exists. If it is missing it should have been caught by the
+  # jsonschema validation step (see above), but we double-check anyway:
   if 'replacement' not in entry \
      or entry['replacement'] is None \
      or entry['replacement'].strip() == '':
@@ -137,7 +173,8 @@ def process_entry(base_url, i, entry):
     raise ValueError('Entry %d has multiple types: %s; see "replacement: %s"'
                      % (i, ', '.join(types), entry['replacement']))
 
-  # Validate status code
+  # Validate status code. Any error here should have been caught by the jsonschema validation
+  # (see above), but we double-check here anyway:
   status = 'temporary'
   if 'status' in entry:
     if entry['status'] in ('permanent', 'temporary', 'see other'):
@@ -293,6 +330,7 @@ def main():
   except FileExistsError as e:
     pass
 
+  schema = json.load(open(schemafile))
   entries = {}
   base_redirects = {}
   products = {}
@@ -301,39 +339,25 @@ def main():
     # If only a sequence of YAML filenames is given, then just write the entries found within
     # those files but not the base redirects, products, or terms.
     for yamlname in args.input_files:
-      yamldoc = yaml.load(open(yamlname))
-      if 'base_url' not in yamldoc \
-         or type(yamldoc['base_url']) is not str:
-        raise ValueError('YAML document must contain "base_url" string')
+      yamldoc = load_and_validate(yamlname, schema)
       base_url = yamldoc['base_url']
-
+      # Extract the entries for the project from the YAML file:
       entries = translate_entries(yamldoc, base_url)
       # Write the entries for the given project to its project-specific .htaccess file, located
-      # in a subdirectory under the given output directory:
+      # in a subdirectory under the given output directory. Note that if the subdirectory already
+      # exists, the files inside will simply be overriden:
       yamlroot = re.sub('\.yml', '', os.path.basename(yamlname))
-
-      # Create the subdirectory; if it already exists, the files inside will be overwritten.
       try:
         os.mkdir('{}/{}'.format(normalised_output_dir, yamlroot))
       except FileExistsError as e:
         pass
-
       with open('{}/{}/.htaccess'.format(normalised_output_dir, yamlroot), 'w') as outfile:
         write_entries(entries, yamlname, outfile)
   elif args.input_dir:
     normalised_input_dir = os.path.normpath(args.input_dir)
     for yamlname in glob("{}/*.yml".format(normalised_input_dir)):
-      yamldoc = yaml.load(open(yamlname))
-
-      if 'base_url' not in yamldoc \
-         or type(yamldoc['base_url']) is not str:
-        raise ValueError('YAML document must contain "base_url" string')
+      yamldoc = load_and_validate(yamlname, schema)
       base_url = yamldoc['base_url']
-
-      if 'idspace' not in yamldoc \
-         or type(yamldoc['idspace']) is not str:
-        raise ValueError('YAML document must contain "idspace" string')
-
       # `idspace` and `yamlroot` are synonyms. The former is taken from the `idspace` specified
       # within the given YAML file, while the latter is derived from the filename. They need to
       # match (up to a change of case - idspace is always uppercase while yamlroot is lower).
@@ -351,9 +375,9 @@ def main():
         os.mkdir('{}/{}'.format(normalised_output_dir, yamlroot))
       except FileExistsError:
         pass
-
       with open('{}/{}/.htaccess'.format(normalised_output_dir, yamlroot), 'w') as outfile:
         write_entries(entries[idspace], yamlname, outfile)
+
       # Extract the idspace's base redirects, products, and terms but do not write them yet:
       base_redirects[idspace] = translate_base_redirects(yamldoc)
       products[idspace] = translate_products(yamldoc)

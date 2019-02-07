@@ -12,7 +12,6 @@
 # Required software:
 #
 # - [GNU Make](http://www.gnu.org/software/make/) to run this file
-# - [kwalify](http://www.kuwata-lab.com/kwalify/) for YAML validation
 # - [Python 3](https://www.python.org/downloads/) to run scripts
 # - [PyYAML](http://pyyaml.org/wiki/PyYAML) for translation to Apache
 # - [travis.rb](https://github.com/travis-ci/travis.rb) for Travis-CI
@@ -53,9 +52,12 @@ SHELL := bash
 
 ### Basic Operations
 
-# Default goal: Remove generated files, validate config, and regenerate.
+# Default goal: Remove generated files and regenerate.
 .PHONY: all
-all: clean validate build
+all: clean build
+
+.PHONY: old
+old: clean validateold buildold
 
 # Remove directories with generated files.
 .PHONY: clean
@@ -68,16 +70,20 @@ clean:
 # Use kwalify and the tools/config.schema.yml
 # to validate all YAML configuration files.
 # If any INVALID results are found, exit with an error.
-.PHONY: validate
-validate:
+.PHONY: validateold
+validateold:
 	kwalify -f tools/config.schema.yml config/*.yml \
 	| awk '{print} /INVALID/ {status=1} END {exit status}'
 
 # Validate a single configuration file.
-.PHONY: validate-%
-validate-%:
+.PHONY: validateold-%
+validateold-%:
 	kwalify -f tools/config.schema.yml config/$*.yml
 
+# Check code style for python source files.
+# || true is appended to force make to ignore the exit code from pycodestyle
+style:
+	pep8 --max-line-length=100 --ignore E129,E126,E121,E111,E114 tools/translate_yaml.py || true
 
 ### Generate Apache Config
 #
@@ -126,11 +132,19 @@ temp/obo/%/.htaccess: config/%.yml
 
 # Build temp files for a single project.
 .PHONY: build-%
-build-%: validate-% temp/obo/%/.htaccess temp/base_redirects/%.htaccess temp/products/%.htaccess temp/terms/%.htaccess
+build-%:
+	tools/translate_yaml.py --input_files config/$*.yml --output_dir temp
+	@echo "Built files in temp/$*"
+
+.PHONY: buildold-%
+buildold-%: validateold-% temp/obo/%/.htaccess temp/base_redirects/%.htaccess temp/products/%.htaccess temp/terms/%.htaccess
 	@echo "Built files in temp/$*"
 
 backup/:
 	mkdir $@
+
+www/obo/:
+	mkdir -p $@
 
 # Get name of a dated-backup directory, in a portable way.
 BACKUP = backup/obo-$(shell python -c "import time,os;print(time.strftime('%Y%m%d-%H%M%S',time.gmtime(os.path.getmtime('www/obo'))))")
@@ -139,11 +153,18 @@ BACKUP = backup/obo-$(shell python -c "import time,os;print(time.strftime('%Y%m%
 # and move the special `obo` .htaccess file.
 # Generate .htaccess files for all YAML configuration files.
 .PHONY: build
-build: $(foreach o,$(ONTOLOGY_IDS),temp/obo/$o/.htaccess)
-build: $(foreach o,$(ONTOLOGY_IDS),temp/base_redirects/$o.htaccess)
-build: $(foreach o,$(ONTOLOGY_IDS),temp/products/$o.htaccess)
-build: $(foreach o,$(ONTOLOGY_IDS),temp/terms/$o.htaccess)
-build: | backup/
+build: | backup/ www/obo/
+	tools/translate_yaml.py --input_dir config --output_dir temp/obo
+	rm -rf temp/obo/obo
+	-test -e www/obo && mv www/obo $(BACKUP)
+	mv temp/obo www/obo
+
+.PHONY: buildold
+buildold: $(foreach o,$(ONTOLOGY_IDS),temp/obo/$o/.htaccess)
+buildold: $(foreach o,$(ONTOLOGY_IDS),temp/base_redirects/$o.htaccess)
+buildold: $(foreach o,$(ONTOLOGY_IDS),temp/products/$o.htaccess)
+buildold: $(foreach o,$(ONTOLOGY_IDS),temp/terms/$o.htaccess)
+buildold: | backup/
 	cat temp/obo/obo/.htaccess > temp/obo/.htaccess
 	echo '' >> temp/obo/.htaccess
 	echo '### Generated from project configuration files' >> temp/obo/.htaccess

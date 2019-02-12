@@ -93,10 +93,7 @@ def load_and_validate(yamlname, schema):
     yamlfile = open(yamlname)
     yamldoc = yaml.load(yamlfile)
     jsonschema.validate(yamldoc, schema)
-  except FileNotFoundError as e:
-    print(e, file=sys.stderr)
-    sys.exit(1)
-  except yaml.YAMLError as e:
+  except (FileNotFoundError, IsADirectoryError, yaml.YAMLError) as e:
     print(e, file=sys.stderr)
     sys.exit(1)
   except jsonschema.exceptions.ValidationError as e:
@@ -114,6 +111,30 @@ def load_and_validate(yamlname, schema):
      or type(yamldoc['idspace']) is not str:
     print('YAML document must contain "idspace" string', file=sys.stderr)
     sys.exit(1)
+
+  # This is a possible error, since jsonschema is not sophisticated enough to validate this:
+  if os.path.basename(yamldoc['base_url']).lower() != yamldoc['idspace'].lower():
+    print("WARNING: Base URL '{}' must end with '{}', not '{}'"
+          .format(yamldoc['base_url'], yamldoc['idspace'], os.path.basename(yamldoc['base_url'])))
+
+  # There may be problems with the product list as well, which can't be validated in jsonschema:
+  if 'products' in yamldoc and type(yamldoc['products']) is list:
+    products_have_owl = False
+    for product_map in yamldoc['products']:
+      # Each product map has one key:
+      key = [k for k in product_map].pop()
+      if not (key.lower().endswith('.owl') or key.lower().endswith('.obo')):
+        # This actually could be validated using the schema by adding
+        # `"additionalProperties": false` right after `patternProperties`:
+        print("WARNING: In project '{}', product: '{}' does not end with '.owl' or '.obo'"
+              .format(yamldoc['idspace'], key))
+      # This, however, cannot be validated using json.schema and must be done here.
+      if key.endswith('.owl'):
+        products_have_owl = True
+
+    if not products_have_owl:
+      print("WARNING: In project '{}': Mandatory .owl entry missing from product list."
+            .format(yamldoc['idspace']))
 
   return yamldoc
 
@@ -356,6 +377,10 @@ def main():
       with open('{}/{}/.htaccess'.format(normalised_output_dir, yamlroot), 'w') as outfile:
         write_entries(entries, yamlname, outfile)
   elif args.input_dir:
+    if not os.path.isdir(args.input_dir):
+      print("{} is not a directory.".format(args.input_dir))
+      sys.exit(1)
+
     normalised_input_dir = os.path.normpath(args.input_dir)
     for yamlname in glob("{}/*.yml".format(normalised_input_dir)):
       yamldoc = load_and_validate(yamlname, schema)

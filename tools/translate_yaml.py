@@ -100,8 +100,8 @@ def load_and_validate(yamlname, schema):
     print("In file: {}:\n{}".format(yamlname, e), file=sys.stderr)
     sys.exit(1)
 
-  # These errors should not occur, since they should have been caught by the above jsonschema
-  # validation step, but double-check anyway:
+  # The following two errors should not occur, since the presence of `base_url` and `idspace`
+  # should have been enforced by the above jsonschema validation step. But we double-check anyway.
   if 'base_url' not in yamldoc \
      or type(yamldoc['base_url']) is not str:
     print('YAML document must contain "base_url" string', file=sys.stderr)
@@ -112,7 +112,7 @@ def load_and_validate(yamlname, schema):
     print('YAML document must contain "idspace" string', file=sys.stderr)
     sys.exit(1)
 
-  # This is a possible error, since jsonschema is not sophisticated enough to validate this:
+  # jsonschema is not sophisticated enough to validate this one, so we do it here:
   if os.path.basename(yamldoc['base_url']).lower() != yamldoc['idspace'].lower():
     print("WARNING: Base URL '{}' must end with '{}', not '{}'"
           .format(yamldoc['base_url'], yamldoc['idspace'], os.path.basename(yamldoc['base_url'])))
@@ -266,7 +266,7 @@ def translate_products(yamldoc):
     for product in yamldoc['products']:
       key = [k for k in product].pop()
       if not (key.lower().endswith('.owl') or key.lower().endswith('.obo')):
-        # If we really do want to enforce this condition, the better way to do it is to add
+        # If we want to enforce this condition, the way to do it is to add
         # `"additionalProperties": false` right after `patternProperties` in the schema file.
         print("WARNING: In project '{}', product: '{}' does not end with '.owl' or '.obo'"
               .format(yamldoc['idspace'], key))

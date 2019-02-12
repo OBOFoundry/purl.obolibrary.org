@@ -2,6 +2,8 @@
 # 2015-11-06
 # James A. Overton <james@overton.ca>
 #
+# Last major modification: 2019-02-10, Michael Cuffaro <consulting@michaelcuffaro.com>
+#
 # This file contains code for working with
 # Open Biomedical Ontoloiges (OBO)
 # Persistent Uniform Resource Locators (PURLs).
@@ -56,88 +58,15 @@ SHELL := bash
 .PHONY: all
 all: clean build
 
-.PHONY: old
-old: clean validateold buildold
-
 # Remove directories with generated files.
 .PHONY: clean
 clean:
 	rm -rf temp tests
 
-
-### Validate YAML Config
-#
-# Use kwalify and the tools/config.schema.yml
-# to validate all YAML configuration files.
-# If any INVALID results are found, exit with an error.
-.PHONY: validateold
-validateold:
-	kwalify -f tools/config.schema.yml config/*.yml \
-	| awk '{print} /INVALID/ {status=1} END {exit status}'
-
-# Validate a single configuration file.
-.PHONY: validateold-%
-validateold-%:
-	kwalify -f tools/config.schema.yml config/$*.yml
-
-# Check code style for python source files.
-# || true is appended to force make to ignore the exit code from pycodestyle
-style:
-	pep8 --max-line-length=100 --ignore E129,E126,E121,E111,E114 tools/translate_yaml.py || true
-
-### Generate Apache Config
-#
-# Convert the YAML configuration files
-# to Apache .htaccess files with RedirectMatch directives.
-# There are three types:
-#
-# - base_redirects: when the project's base_url points to something
-# - product: for a project's main OWL file
-# - term: for a project's terms
-# - entries: PURLs under the project's base_url
-#
-# The first three are inserted into www/obo/.htaccess
-# while the last is in the project's www/obo/project/.htaccess
-#
-# These files are built in the `temp/` directory
-# then `temp/obo` replaces `www/obo` as the very last step
-# to keep Apache downtime to an absolute minimum.
-temp/obo temp/base_redirects temp/products temp/terms:
-	mkdir -p $@
-
-temp/base_redirects/%.htaccess: config/%.yml temp/base_redirects
-	tools/translate-base-redirects.py $< $@
-
-temp/products/%.htaccess: config/%.yml temp/products
-	tools/translate-products.py $< $@
-
-temp/terms/%.htaccess: config/%.yml temp/terms
-	tools/translate-terms.py $< $@
-
-# Generate temp/obo/foo/.htaccess file
-# and a symbolic link from the IDSPACE:
-# temp/obo/FOO -> temp/obo/foo
-# NOTE: The last line removes spurious links
-# on case insensitive file systems such as Mac OS X.
-temp/obo/%/.htaccess: config/%.yml
-	mkdir -p temp/obo/$*
-	tools/translate-entries.py $< $@
-	< $< \
-	grep '^idspace:' \
-	| sed 's/^idspace://' \
-	| tr -d ' ' \
-	| awk '{print "$* temp/obo/" $$0}' \
-	| xargs -t ln -s
-	rm -f temp/obo/$*/$*
-
 # Build temp files for a single project.
 .PHONY: build-%
 build-%:
 	tools/translate_yaml.py --input_files config/$*.yml --output_dir temp
-	@echo "Built files in temp/$*"
-
-.PHONY: buildold-%
-buildold-%: validateold-% temp/obo/%/.htaccess temp/base_redirects/%.htaccess temp/products/%.htaccess temp/terms/%.htaccess
 	@echo "Built files in temp/$*"
 
 backup/:
@@ -149,34 +78,14 @@ www/obo/:
 # Get name of a dated-backup directory, in a portable way.
 BACKUP = backup/obo-$(shell python -c "import time,os;print(time.strftime('%Y%m%d-%H%M%S',time.gmtime(os.path.getmtime('www/obo'))))")
 
-# Convert all YAML configuration files to .htaccess
-# and move the special `obo` .htaccess file.
-# Generate .htaccess files for all YAML configuration files.
+# Convert all YAML configuration files to .htaccess.
 .PHONY: build
 build: | backup/ www/obo/
 	tools/translate_yaml.py --input_dir config --output_dir temp/obo
 	rm -rf temp/obo/obo
 	-test -e www/obo && mv www/obo $(BACKUP)
 	mv temp/obo www/obo
-
-.PHONY: buildold
-buildold: $(foreach o,$(ONTOLOGY_IDS),temp/obo/$o/.htaccess)
-buildold: $(foreach o,$(ONTOLOGY_IDS),temp/base_redirects/$o.htaccess)
-buildold: $(foreach o,$(ONTOLOGY_IDS),temp/products/$o.htaccess)
-buildold: $(foreach o,$(ONTOLOGY_IDS),temp/terms/$o.htaccess)
-buildold: | backup/
-	cat temp/obo/obo/.htaccess > temp/obo/.htaccess
-	echo '' >> temp/obo/.htaccess
-	echo '### Generated from project configuration files' >> temp/obo/.htaccess
-	echo '' >> temp/obo/.htaccess
-	cat temp/base_redirects/*.htaccess >> temp/obo/.htaccess
-	cat temp/products/*.htaccess >> temp/obo/.htaccess
-	cat temp/terms/*.htaccess >> temp/obo/.htaccess
-	rm -rf temp/obo/obo
-	rm -rf temp/obo/OBO
-	-test -e www/obo && mv www/obo $(BACKUP)
-	mv temp/obo www/obo
-
+	rmdir temp
 
 ### Test Development Apache Config
 #
@@ -290,3 +199,13 @@ migrate-%:
 	|| curl --fail -o migrations/$*.xml "$(PURL_XML)/obo/$**"
 	mkdir -p config
 	tools/migrate.py $* migrations/$*.xml config/$*.yml
+
+### Check code style for python source files.
+# || true is appended to force make to ignore the exit code from pycodestyle
+.PHONY: style
+style:
+	pep8 --max-line-length=100 --ignore E129,E126,E121,E111,E114 tools/*.py || true
+
+# Run the delinter
+lint:
+	python3 -m pyflakes tools/*.py || true

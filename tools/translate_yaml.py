@@ -117,25 +117,6 @@ def load_and_validate(yamlname, schema):
     print("WARNING: Base URL '{}' must end with '{}', not '{}'"
           .format(yamldoc['base_url'], yamldoc['idspace'], os.path.basename(yamldoc['base_url'])))
 
-  # There may be problems with the product list as well, which can't be validated in jsonschema:
-  if 'products' in yamldoc and type(yamldoc['products']) is list:
-    products_have_owl = False
-    for product_map in yamldoc['products']:
-      # Each product map has one key:
-      key = [k for k in product_map].pop()
-      if not (key.lower().endswith('.owl') or key.lower().endswith('.obo')):
-        # This actually could be validated using the schema by adding
-        # `"additionalProperties": false` right after `patternProperties`:
-        print("WARNING: In project '{}', product: '{}' does not end with '.owl' or '.obo'"
-              .format(yamldoc['idspace'], key))
-      # This, however, cannot be validated using json.schema and must be done here.
-      if key.endswith('.owl'):
-        products_have_owl = True
-
-    if not products_have_owl:
-      print("WARNING: In project '{}': Mandatory .owl entry missing from product list."
-            .format(yamldoc['idspace']))
-
   return yamldoc
 
 
@@ -280,9 +261,24 @@ def translate_products(yamldoc):
   and appends them all to a list of processed products that is then returned.
   """
   if 'products' in yamldoc and type(yamldoc['products']) is list:
+    products_have_owl = False
     products = []
     for product in yamldoc['products']:
+      key = [k for k in product].pop()
+      if not (key.lower().endswith('.owl') or key.lower().endswith('.obo')):
+        # If we really do want to enforce this condition, the better way to do it is to add
+        # `"additionalProperties": false` right after `patternProperties` in the schema file.
+        print("WARNING: In project '{}', product: '{}' does not end with '.owl' or '.obo'"
+              .format(yamldoc['idspace'], key))
+      if key.endswith('.owl'):
+        products_have_owl = True
+
       products.append(process_product(product))
+
+    if not products_have_owl:
+      print("WARNING: In project '{}': Mandatory .owl entry missing from product list."
+            .format(yamldoc['idspace']))
+
     return products
 
 

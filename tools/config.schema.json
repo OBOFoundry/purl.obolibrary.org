@@ -16,7 +16,6 @@
 			"type": "array",
 			"items": {
 				"type": "object",
-				"_comment": "How to make *.owl mandatory?",
 				"patternProperties": {
 					"\\.owl$": { "type": "string" },
 					"\\.obo$": { "type": "string" }

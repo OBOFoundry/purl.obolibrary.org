@@ -163,23 +163,12 @@ test-examples: tests/examples/test2.terms.htaccess
 
 ### Update Repository
 #
-# Check Travis-CI for the last build.
-# If it did not pass, then fail.
-# If it is the same as .current_build, then fail.
-# Otherwise replace .current_build,
-# pull from git, and run a new `make`.
+# Run the safe-update.py script which does the following:
+# - Check Travis-CI for the last build.
+# - If it did not pass, or if it is the same as the current build, then do nothing.
+# - Otherwise replace .current_build, pull from git, and run a new `make`.
 safe-update:
-	travis history --no-interactive \
-	--repo $(PROJECT) --branch master --limit 1 \
-	> .travis_build
-	@grep ' passed:   ' .travis_build
-	@echo 'Last build is green, but might not be new'
-	@diff .current_build .travis_build && exit 1 || exit 0
-	@echo 'New green build available'
-	@mv .travis_build .current_build
-	git pull
-	make
-
+	tools/safe-update.py
 
 ### Migrate Configuration from PURL.org
 #

@@ -28,7 +28,10 @@ entries:
 
 - prefix: /mondo/gard/
   replacement: https://raw.githubusercontent.com/monarch-initiative/monarch-disease-ontology/master/src/gard/
-
+- prefix: /patterns/
+  replacement: https://raw.githubusercontent.com/obophenotype/upheno/master/src/patterns/dosdp-patterns/
+- prefix: /patterns-dev/
+  replacement: https://raw.githubusercontent.com/obophenotype/upheno/master/src/patterns/dosdp-dev/
 - prefix: /data/
   replacement: http://build.berkeleybop.org/view/Monarch/job/generate-triples-from-nif/lastSuccessfulBuild/artifact/target/
 - prefix: /imports/

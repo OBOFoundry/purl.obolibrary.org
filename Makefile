@@ -16,7 +16,6 @@
 # - [GNU Make](http://www.gnu.org/software/make/) to run this file
 # - [Python 3](https://www.python.org/downloads/) to run scripts
 # - [PyYAML](http://pyyaml.org/wiki/PyYAML) for translation to Apache
-# - [travis.rb](https://github.com/travis-ci/travis.rb) for Travis-CI
 
 
 ### Configuration
@@ -29,9 +28,6 @@
 # List of ontology IDs to work with, as file names (lowercase).
 # Defaults to the list of config/*.yml files.
 ONTOLOGY_IDS ?= $(patsubst config/%.yml,%,$(wildcard config/*.yml))
-
-# The GitHub owner/project
-PROJECT ?= OBOFoundry/purl.obolibrary.org
 
 # Local development server.
 DEVELOPMENT ?= localhost
@@ -58,7 +54,7 @@ SHELL := bash
 .PHONY: all
 all: clean build
 
-# Remove directories with generated files.
+# Remove directories with generated files and tests.
 .PHONY: clean
 clean:
 	rm -rf temp tests
@@ -69,6 +65,8 @@ build-%:
 	tools/translate_yaml.py --input_files config/$*.yml --output_dir temp
 	@echo "Built files in temp/$*"
 
+# The following two directories Must exist in order to execute the code that
+# assigns the variable BACKUP (see below)
 backup/:
 	mkdir $@
 
@@ -130,35 +128,16 @@ test-production: $(foreach o,$(ONTOLOGY_IDS),tests/production/$o.tsv)
 ### Test Tools
 #
 # Test our tools on files in examples/ directory.
-tests/examples:
-	mkdir -p $@
-
-tests/examples/%.yml: tools/examples/%.xml tools/examples/%.yml tests/examples
-	tools/migrate.py $* $< $@
-	diff tools/examples/$*.yml $@
-
-tests/examples/%.base_redirects.htaccess: tools/examples/%.yml tests/examples
-	tools/translate-base-redirects.py $< $@
-	diff tools/examples/$*.base_redirects.htaccess $@
-
-tests/examples/%.products.htaccess: tools/examples/%.yml tests/examples
-	tools/translate-products.py $< $@
-	diff tools/examples/$*.products.htaccess $@
-
-tests/examples/%.terms.htaccess: tools/examples/%.yml tests/examples
-	tools/translate-terms.py $< $@
-	diff tools/examples/$*.terms.htaccess $@
-
-tests/examples/%.htaccess: tools/examples/%.yml tests/examples
-	tools/translate-entries.py $< $@
-	diff tools/examples/$*.htaccess $@
-
-.PHONY: test-examples
-test-examples: tests/examples/test1.yml
-test-examples: tests/examples/test2.htaccess
-test-examples: tests/examples/test2.base_redirects.htaccess
-test-examples: tests/examples/test2.products.htaccess
-test-examples: tests/examples/test2.terms.htaccess
+.PHONY: test-examples test-example1 test-example2
+test-example1:
+	tools/migrate.py test1 tools/examples/test1/test1.xml tests/examples/test1/test1.yml
+	diff tools/examples/test1/test1.yml tests/examples/test1/test1.yml
+test-example2:
+	tools/translate_yaml.py --input_dir tools/examples/test2/ --output_dir tests/examples/test2/
+	diff tools/examples/test2/test2.htaccess tests/examples/test2/.htaccess
+	diff tools/examples/test2/obo/obo.htaccess tests/examples/test2/obo/.htaccess
+	diff tools/examples/test2/test2/test2.htaccess tests/examples/test2/test2/.htaccess	
+test-examples: test-example1 test-example2
 
 
 ### Update Repository

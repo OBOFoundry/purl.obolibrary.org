@@ -1,4 +1,0 @@
-# Products for TEST2
-RedirectMatch temp "(?i)^/obo/test2.owl$" "http://example.org/test2.owl"
-RedirectMatch temp "(?i)^/obo/test2.obo$" "http://example.org/test2.obo"
-

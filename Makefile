@@ -59,25 +59,35 @@ all: clean build
 clean:
 	rm -rf temp tests
 
-# Build temp files for a single project.
+
+### Build recipe for a single project.
+#
+# Convert the YAML file of a single project to a .htaccess file and place it
+# in the temp/ directory.
 .PHONY: build-%
 build-%:
 	tools/translate_yaml.py --input_files config/$*.yml --output_dir temp
 	@echo "Built files in temp/$*"
 
-# The following two directories Must exist in order to execute the code that
-# assigns the variable BACKUP (see below)
-backup/:
-	mkdir $@
 
+# Build recipe for all projects
+#
+# Convert the YAML files of every project to .htaccess files and place them
+# in the www/obo directory.
+
+# Final output directory:
 www/obo/:
 	mkdir -p $@
 
-# Get name of a dated-backup directory, in a portable way.
-BACKUP = backup/obo-$(shell python -c "import time,os;print(time.strftime('%Y%m%d-%H%M%S',time.gmtime(os.path.getmtime('www/obo'))))")
+# When a new build is created, the old build's files are moved here, in a subdirectory
+# whose name is generated in a portable way using python (see the target-specific
+# variable BACKUP below).
+backup/:
+	mkdir $@
 
-# Convert all YAML configuration files to .htaccess.
+# The main build target:
 .PHONY: build
+build: BACKUP = backup/obo-$(shell python -c "import time,os;print(time.strftime('%Y%m%d-%H%M%S',time.gmtime(os.path.getmtime('www/obo'))))")
 build: | backup/ www/obo/
 	tools/translate_yaml.py --input_dir config --output_dir temp/obo
 	rm -rf temp/obo/obo
@@ -85,17 +95,16 @@ build: | backup/ www/obo/
 	mv temp/obo www/obo
 	rmdir temp
 
+
 ### Test Development Apache Config
 #
 # Make HTTP HEAD requests quickly against the DEVELOPMENT server
 # to ensure that redirects are working properly.
-tests/development:
-	mkdir -p $@
 
 # Run tests for a single YAML configuration file.
 # against the DEVELOPMENT server,
 # making requests every 0.01 seconds.
-tests/development/%.tsv: config/%.yml tests/development
+tests/development/%.tsv: config/%.yml
 	tools/test.py --delay=0.01 $(DEVELOPMENT) $< $@
 
 # Run all tests against development and fail if any FAIL line is found.
@@ -109,13 +118,11 @@ test: $(foreach o,$(ONTOLOGY_IDS),tests/development/$o.tsv)
 #
 # Make HTTP HEAD requests slowly against the PRODUCTION server
 # to ensure that redirects are working properly.
-tests/production:
-	mkdir -p $@
 
 # Run tests for a single YAML configuration file
 # against the PRODUCTION server,
 # making requests every 1 second.
-tests/production/%.tsv: config/%.yml tests/production
+tests/production/%.tsv: config/%.yml
 	tools/test.py --delay=1 $(PRODUCTION) $< $@
 
 # Run all tests against production and fail if any FAIL line is found.
@@ -128,15 +135,19 @@ test-production: $(foreach o,$(ONTOLOGY_IDS),tests/production/$o.tsv)
 ### Test Tools
 #
 # Test our tools on files in examples/ directory.
-.PHONY: test-examples test-example1 test-example2
+.PHONY: test-example1
 test-example1:
 	tools/migrate.py test1 tools/examples/test1/test1.xml tests/examples/test1/test1.yml
 	diff tools/examples/test1/test1.yml tests/examples/test1/test1.yml
+
+.PHONY: test-example2
 test-example2:
 	tools/translate_yaml.py --input_dir tools/examples/test2/ --output_dir tests/examples/test2/
 	diff tools/examples/test2/test2.htaccess tests/examples/test2/.htaccess
 	diff tools/examples/test2/obo/obo.htaccess tests/examples/test2/obo/.htaccess
 	diff tools/examples/test2/test2/test2.htaccess tests/examples/test2/test2/.htaccess	
+
+.PHONY: test-examples
 test-examples: test-example1 test-example2
 
 
@@ -148,6 +159,7 @@ test-examples: test-example1 test-example2
 # - Otherwise replace .current_build, pull from git, and run a new `make`.
 safe-update:
 	tools/safe-update.py
+
 
 ### Migrate Configuration from PURL.org
 #
@@ -168,12 +180,14 @@ migrate-%:
 	mkdir -p config
 	tools/migrate.py $* migrations/$*.xml config/$*.yml
 
-### Check code style for python source files.
-# || true is appended to force make to ignore the exit code from pycodestyle
+
+### Code style and lint checks for python source files.
+#
+# Note that `|| true` is appended to force make to ignore the exit code in both cases
 .PHONY: style
 style:
 	pep8 --max-line-length=100 --ignore E129,E126,E121,E111,E114 tools/*.py || true
 
-# Run the delinter
-lint:
+.PHONY: delint
+delint:
 	python3 -m pyflakes tools/*.py || true

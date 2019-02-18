@@ -114,6 +114,7 @@ def main():
 
   args.yaml_file.close()
 
+
 # Define a SAX ContentHandler class to match the XML format,
 # and accumulate entry dictionaries into the global lists.
 # See example above for XML format.

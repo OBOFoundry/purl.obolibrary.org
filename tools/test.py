@@ -2,13 +2,14 @@
 #
 # Read a YAML configuration file,
 # make a series of HTTP HEAD requests to a target server,
-# and report the results in a table.
+# and report the results in a TSV file.
 #
 # NOTE: Currently only tests `example_terms` when `term_browser: ontobee`.
 
 import argparse
 import http.client
 import os
+import re
 import sys
 import time
 import yaml
@@ -29,6 +30,10 @@ def main():
                       type=float,
                       default=10,
                       help='connection timeout in seconds (default 10)')
+  parser.add_argument('-o', '--output', metavar='DIR',
+                      type=str,
+                      required=True,
+                      help='Directory to write TSV files to')
   parser.add_argument('domain',
                       type=str,
                       default='172.16.100.10',
@@ -39,99 +44,91 @@ def main():
                       default=sys.stdin,
                       nargs='?',
                       help='read from the YAML file (or STDIN)')
-  parser.add_argument('report_file',
-                      type=str,
-                      nargs='?',
-                      help='write to the TSV file (or STDOUT)')
   args = parser.parse_args()
 
-  # Create the report file if has been specified, otherwise set it to sys.stdout:
-  if args.report_file is not None:
-    try:
-      args.report_file = open(args.report_file, 'w')
-    except FileNotFoundError:
-      os.makedirs(os.path.dirname(args.report_file))
-      args.report_file = open(args.report_file, 'w')
-  else:
-    args.report_file = sys.stdout
+  # Create the output directory if it doesn't already exist
+  try:
+    os.makedirs(args.output)
+  except FileExistsError:
+    pass
 
-  # Load YAML document and look for 'entries' list.
-  document = yaml.load(args.yaml_file)
+  with open(os.path.normpath(args.output) + '/' +
+            re.sub('\.yml$', '.tsv', os.path.basename(args.yaml_file.name)), 'w') as report_file:
+    # Load YAML document and look for 'entries' list.
+    document = yaml.load(args.yaml_file)
 
-  if 'idspace' not in document \
-     or type(document['idspace']) is not str:
-    raise ValueError('YAML document must contain "idspace" string')
-  idspace = document['idspace']
+    if 'idspace' not in document \
+       or type(document['idspace']) is not str:
+      raise ValueError('YAML document must contain "idspace" string')
+    idspace = document['idspace']
 
-  if 'base_url' not in document \
-     or type(document['base_url']) is not str:
-    raise ValueError('YAML document must contain "base_url" string')
-  base_url = document['base_url']
+    if 'base_url' not in document \
+       or type(document['base_url']) is not str:
+      raise ValueError('YAML document must contain "base_url" string')
+    base_url = document['base_url']
 
-  tests = []
+    tests = []
 
-  # Collect the tests to run.
-  if 'base_redirect' in document:
-    tests += [{
-      'source': base_url,
-      'replacement': document['base_redirect'],
-      'status': '302'
-    }]
+    # Collect the tests to run.
+    if 'base_redirect' in document:
+      tests += [{
+        'source': base_url,
+        'replacement': document['base_redirect'],
+        'status': '302'
+      }]
 
-  if 'products' in document \
-     and type(document['products']) is list:
-    i = 0
-    for product in document['products']:
-      i += 1
-      tests += process_product(i, product)
+    if 'products' in document \
+       and type(document['products']) is list:
+      i = 0
+      for product in document['products']:
+        i += 1
+        tests += process_product(i, product)
 
-  if 'term_browser' in document \
-     and document['term_browser'].strip().lower() == 'ontobee' \
-     and 'example_terms' in document \
-     and type(document['example_terms']) is list:
-    i = 0
-    for example_term in document['example_terms']:
-      i += 1
-      tests += process_ontobee(idspace, i, example_term)
+    if 'term_browser' in document \
+       and document['term_browser'].strip().lower() == 'ontobee' \
+       and 'example_terms' in document \
+       and type(document['example_terms']) is list:
+      i = 0
+      for example_term in document['example_terms']:
+        i += 1
+        tests += process_ontobee(idspace, i, example_term)
 
-  if 'tests' in document:
-    i = 0
-    status = '302'
-    for test_entry in document['tests']:
-      i += 1
-      test = {'status': status}
-      if 'from' in test_entry:
-        test['source'] = base_url + test_entry['from']
-      if 'to' in test_entry:
-        test['replacement'] = test_entry['to']
-      if 'source' in test and 'replacement' in test:
-        tests.append(test)
-      else:
-        raise ValueError('Invalid test %d in global tests' % i)
+    if 'tests' in document:
+      i = 0
+      status = '302'
+      for test_entry in document['tests']:
+        i += 1
+        test = {'status': status}
+        if 'from' in test_entry:
+          test['source'] = base_url + test_entry['from']
+        if 'to' in test_entry:
+          test['replacement'] = test_entry['to']
+        if 'source' in test and 'replacement' in test:
+          tests.append(test)
+        else:
+          raise ValueError('Invalid test %d in global tests' % i)
 
-  if 'entries' in document \
-     and type(document['entries']) is list:
-    i = 0
-    for entry in document['entries']:
-      i += 1
-      tests += process_entry(base_url, i, entry)
+    if 'entries' in document \
+       and type(document['entries']) is list:
+      i = 0
+      for entry in document['entries']:
+        i += 1
+        tests += process_entry(base_url, i, entry)
 
-  # Write report table header.
-  args.report_file.write('\t'.join([
-    'Result', 'Source URL',
-    'Expected Status', 'Expected URL',
-    'Actual Status', 'Actual URL'
-  ]) + '\n')
+    # Write report table header.
+    report_file.write('\t'.join([
+      'Result', 'Source URL',
+      'Expected Status', 'Expected URL',
+      'Actual Status', 'Actual URL'
+    ]) + '\n')
 
-  # Run the tests and add results to the report table.
-  conn = http.client.HTTPConnection(args.domain, timeout=args.timeout)
-  for test in tests:
-    results = run_test(conn, test)
-    args.report_file.write('\t'.join(results) + '\n')
-    args.report_file.flush()
-    time.sleep(args.delay)
-
-  args.report_file.close()
+    # Run the tests and add results to the report table.
+    conn = http.client.HTTPConnection(args.domain, timeout=args.timeout)
+    for test in tests:
+      results = run_test(conn, test)
+      report_file.write('\t'.join(results) + '\n')
+      report_file.flush()
+      time.sleep(args.delay)
 
 
 def process_product(i, product):

@@ -105,7 +105,7 @@ build: | backup/ www/obo/
 # against the DEVELOPMENT server,
 # making requests every 0.01 seconds.
 tests/development/%.tsv: config/%.yml
-	tools/test.py --delay=0.01 $(DEVELOPMENT) $< $@
+	tools/test.py --delay=0.01 --output $(@D) $(DEVELOPMENT) $<
 
 # Run all tests against development and fail if any FAIL line is found.
 .PHONY: test
@@ -123,7 +123,7 @@ test: $(foreach o,$(ONTOLOGY_IDS),tests/development/$o.tsv)
 # against the PRODUCTION server,
 # making requests every 1 second.
 tests/production/%.tsv: config/%.yml
-	tools/test.py --delay=1 $(PRODUCTION) $< $@
+	tools/test.py --delay=1 --output $(@D) $(PRODUCTION) $<
 
 # Run all tests against production and fail if any FAIL line is found.
 .PHONY: test-production

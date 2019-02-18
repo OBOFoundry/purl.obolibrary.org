@@ -47,7 +47,6 @@ for d in diff:
   print(d, end='')
 print('\nNew green build available. Updating local repository ...')
 
-subprocess.call(["git", "pull"])
-subprocess.call(["make"])
-with open('.current_build', 'w') as outfile:
-  outfile.write(newbuild_lines.pop())
+if subprocess.call(["git", "pull"]) == 0 and subprocess.call(["make"]) == 0:
+  with open('.current_build', 'w') as outfile:
+    outfile.write(newbuild_lines.pop())

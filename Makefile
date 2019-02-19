@@ -90,7 +90,7 @@ backup/:
 build: BACKUP = backup/obo-$(shell python -c "import time,os;print(time.strftime('%Y%m%d-%H%M%S',time.gmtime(os.path.getmtime('www/obo'))))")
 build: | backup/ www/obo/
 	tools/translate_yaml.py --input_dir config --output_dir temp/obo
-	rm -rf temp/obo/obo
+	rm -rf temp/obo/obo temp/obo/OBO
 	-test -e www/obo && mv www/obo $(BACKUP)
 	mv temp/obo www/obo
 	rmdir temp

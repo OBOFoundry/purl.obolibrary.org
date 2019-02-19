@@ -407,9 +407,13 @@ def main():
       # Collect the entries for the current idspace:
       entries[idspace] = translate_entries(yamldoc, base_url)
       # Write the entries to the idspace's project-specific file located in its own subdirectory
-      # under the output directory. If it already exists, the files inside will be overwritten.
+      # under the output directory, as well as a symlink to the project subdirectory in the
+      # output directory. If the files/directories already exist, they will be overwritten.
       try:
-        os.mkdir('{}/{}'.format(normalised_output_dir, yamlroot))
+        projdir = '{}/{}'.format(normalised_output_dir, yamlroot)
+        symlink = '{}/{}'.format(normalised_output_dir, idspace)
+        os.mkdir(projdir)
+        os.symlink(os.path.basename(projdir), symlink, target_is_directory=True)
       except FileExistsError:
         pass
       with open('{}/{}/.htaccess'.format(normalised_output_dir, yamlroot), 'w') as outfile:

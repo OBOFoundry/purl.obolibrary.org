@@ -138,8 +138,8 @@ def main():
 
   if failures:
     print("The following idspaces encountered failures: {}.\n"
-          "See their corresponding TSV files in '{}' for more detail.\n"
-          "Use the script '{}' to run tests for just those idspaces."
+          "For more details, see their corresponding TSV files in '{}'.\n"
+          "To re-run tests for just those idspaces, use the script '{}'."
           .format(', '.join(failures), args.output, __file__))
 
 

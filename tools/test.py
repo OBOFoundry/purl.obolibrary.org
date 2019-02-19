@@ -138,8 +138,10 @@ def main():
 
   if failures:
     print("The following idspaces encountered failures: {}.\n"
-          "Use the script {} to run tests for just those idspaces."
-          .format(', '.join(failures), __file__))
+          "See their corresponding TSV files in '{}' for more detail.\n"
+          "Use the script '{}' to run tests for just those idspaces."
+          .format(', '.join(failures), args.output, __file__))
+
 
 def process_product(i, product):
   """Given an index, and a product dictionary,

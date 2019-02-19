@@ -100,36 +100,19 @@ build: | backup/ www/obo/
 #
 # Make HTTP HEAD requests quickly against the DEVELOPMENT server
 # to ensure that redirects are working properly.
-
-# Run tests for a single YAML configuration file.
-# against the DEVELOPMENT server,
-# making requests every 0.01 seconds.
-tests/development/%.tsv: config/%.yml
-	tools/test.py --delay=0.01 --output $(@D) $(DEVELOPMENT) $<
-
-# Run all tests against development and fail if any FAIL line is found.
+# Fail if any FAIL line is found in any of them.
 .PHONY: test
-test: $(foreach o,$(ONTOLOGY_IDS),tests/development/$o.tsv)
-	@cat tests/development/*.tsv \
-	| awk '/^FAIL/ {status=1; print} END {exit status}'
+test:
+	tools/test.py --delay=0.01 --output=tests/development --domain=$(DEVELOPMENT) config/*.yml
 
 
 ### Test Production Apache Config
 #
 # Make HTTP HEAD requests slowly against the PRODUCTION server
 # to ensure that redirects are working properly.
-
-# Run tests for a single YAML configuration file
-# against the PRODUCTION server,
-# making requests every 1 second.
-tests/production/%.tsv: config/%.yml
-	tools/test.py --delay=1 --output $(@D) $(PRODUCTION) $<
-
-# Run all tests against production and fail if any FAIL line is found.
 .PHONY: test-production
-test-production: $(foreach o,$(ONTOLOGY_IDS),tests/production/$o.tsv)
-	@cat tests/production/*.tsv \
-	| awk '/^FAIL/ {status=1; print} END {exit status}'
+test-production:
+	tools/test.py --delay=1 --output=tests/production --domain=$(PRODUCTION) config/*.yml
 
 
 ### Test Tools

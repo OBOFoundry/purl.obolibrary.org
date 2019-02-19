@@ -73,6 +73,7 @@ Note that in the case of terms, only `term_browser: ontobee` is currently
 supported. When `term_browser: custom` is used no output is generated.
 """
 
+import functools
 import json
 import jsonschema
 import re
@@ -365,7 +366,7 @@ def main():
       # Write the entries for the given project to its project-specific .htaccess file, located
       # in a subdirectory under the given output directory. Note that if the subdirectory already
       # exists, the files inside will simply be overriden:
-      yamlroot = re.sub('\.yml', '', os.path.basename(yamlname))
+      yamlroot = re.sub('\.yml$', '', os.path.basename(yamlname))
       try:
         os.mkdir('{}/{}'.format(normalised_output_dir, yamlroot))
       except FileExistsError:
@@ -377,8 +378,21 @@ def main():
       print("{} is not a directory.".format(args.input_dir))
       sys.exit(1)
 
+    @functools.cmp_to_key
+    def cmp(s, t):
+      "Case-insensitive sort, longer names first"
+      s = s.lower()
+      t = t.lower()
+      s_pad = (s + t[len(s):] + 'z') if len(s) < len(t) else s
+      t_pad = (t + s[len(t):] + 'z') if len(t) < len(s) else t
+      if s_pad < t_pad:
+        return -1
+      if s_pad > t_pad:
+        return 1
+      return 0
+
     normalised_input_dir = os.path.normpath(args.input_dir)
-    for yamlname in glob("{}/*.yml".format(normalised_input_dir)):
+    for yamlname in sorted(glob("{}/*.yml".format(normalised_input_dir)), key=cmp):
       yamldoc = load_and_validate(yamlname, schema)
       base_url = yamldoc['base_url']
       # `idspace` and `yamlroot` are synonyms. The former is taken from the `idspace` specified
@@ -386,7 +400,7 @@ def main():
       # match (up to a change of case - idspace is always uppercase while yamlroot is lower).
       # If they do not match, emit a warning.
       idspace = yamldoc['idspace']
-      yamlroot = re.sub('\.yml', '', os.path.basename(yamlname))
+      yamlroot = re.sub('\.yml$', '', os.path.basename(yamlname))
       if idspace.lower() != yamlroot.lower():
         print("WARNING: idspace: {} does not match filename {}".format(idspace, yamlname))
 
@@ -414,11 +428,11 @@ def main():
     # Append the base redirects, products, and terms to the global .htaccess file:
     with open('{}/.htaccess'.format(normalised_output_dir), 'a') as outfile:
       outfile.write('\n### Generated from project configuration files\n\n')
-      for idspace in sorted(base_redirects):
+      for idspace in sorted(base_redirects, key=cmp):
         append_base_redirect(base_redirects[idspace], idspace, outfile)
-      for idspace in sorted(products):
+      for idspace in sorted(products, key=cmp):
         append_products(products[idspace], idspace, outfile)
-      for idspace in sorted(terms):
+      for idspace in sorted(terms, key=cmp):
         append_term(terms[idspace], idspace, outfile)
 
 

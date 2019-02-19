@@ -157,4 +157,5 @@ entries:
 ### Development Pages and Redirects
 
 - exact: /pr-dev.obo
-  replacement: http://pir.georgetown.edu/projects/pro/pro_wv.obo
+  replacement: https://pir.udel.edu/projects/pro/pro_wv.obo
+### this is currently down:  http://pir.georgetown.edu/projects/pro/pro_wv.obo

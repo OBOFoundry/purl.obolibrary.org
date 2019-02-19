@@ -5,7 +5,23 @@ base_url: /obo/nbo
 
 products:
 - nbo.owl: https://raw.github.com/obo-behavior/behavior-ontology/master/nbo.owl
+- nbo.obo: https://raw.github.com/obo-behavior/behavior-ontology/master/nbo.obo
 
 term_browser: ontobee
 example_terms:
 - NBO_0000607
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/obo-behavior/behavior-ontology/v
+
+- prefix: /tracker/
+  replacement: https://github.com/obo-behavior/behavior-ontology/issues/
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/NBO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/obo-behavior/behavior-ontology/master/

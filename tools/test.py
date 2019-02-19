@@ -198,7 +198,6 @@ def process_entry(base_url, i, entry):
   test['status'] = status
 
   # Determine the type for this entry.
-  types = []
   if 'exact' in entry:
     test['source'] = base_url + entry['exact']
     test['replacement'] = entry['replacement']

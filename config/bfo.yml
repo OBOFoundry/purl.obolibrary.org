@@ -4,7 +4,7 @@ idspace: BFO
 base_url: /obo/bfo
 
 products:
-- bfo.owl: https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl
+- bfo.owl: https://raw.githubusercontent.com/BFO-ontology/BFO/v2019-02-21/bfo_classes_only.owl
 - bfo.obo: https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.obo
 
 term_browser: ontobee
@@ -56,6 +56,9 @@ entries:
 
 - exact: /dev/bfo.owl
   replacement: https://github.com/BFO-ontology/BFO/raw/master/src/ontology/owl-group/bfo.owl
+
+- exact: /dev/bfo_classes_only_dev.owl
+  replacement: https://github.com/BFO-ontology/BFO/raw/master/src/ontology/owl-group/bfo_classes_only_dev.owl
 
 - exact: /dev/bfo.clif
   replacement: https://github.com/BFO-ontology/BFO/raw/master/src/ontology/fol-ressler/BFO-FOL-alpha-2012-05-21.clif
@@ -132,8 +135,11 @@ entries:
 - exact: /2014-05-03/bfo.owl
   replacement: https://github.com/BFO-ontology/BFO/raw/releases/2014-05-03/owl-group/bfo.owl
 
-- exact: /2015-8-29/bfo.owl
+- exact: /2015-08-29/bfo.owl
   replacement: https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl
+
+- exact: /2019-02-21/bfo.owl
+  replacement: https://raw.githubusercontent.com/BFO-ontology/BFO/v2019-02-21/bfo_classes_only.owl
 
 - prefix: /2010-05-25/
   replacement: https://github.com/BFO-ontology/BFO/tree/releases/owl-ruttenberg-2010-05-25

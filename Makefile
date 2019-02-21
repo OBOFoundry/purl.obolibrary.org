@@ -144,26 +144,6 @@ safe-update:
 	tools/safe-update.py
 
 
-### Migrate Configuration from PURL.org
-#
-# Given an ontology ID (usually lower-case),
-# fetch and translate a PURL.org XML file
-# into a YAML configuration file.
-# This should be a one-time migration.
-# Do not overwrite existing config file.
-PURL_XML = https://purl.org/admin/purl/?target=&seealso=&maintainers=&explicitmaintainers=&tombstone=false&p_id=
-
-.PHONY: migrate-%
-migrate-%:
-	@test ! -s config/$*.yml \
-	|| (echo 'Refusing to overwrite config/$*.yml'; exit 1)
-	mkdir -p migrations
-	test -s migrations/$*.xml \
-	|| curl --fail -o migrations/$*.xml "$(PURL_XML)/obo/$**"
-	mkdir -p config
-	tools/migrate.py $* migrations/$*.xml config/$*.yml
-
-
 ### Code style and lint checks for python source files.
 #
 # Note that `|| true` is appended to force make to ignore the exit code in both cases

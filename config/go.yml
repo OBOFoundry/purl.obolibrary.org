@@ -39,14 +39,19 @@ entries:
 - prefix: /noctua-obo/
   replacement: http://build-artifacts.berkeleybop.org/build-noctua-obo-ontology/latest/
 
-- prefix: /releases/
-  replacement: http://viewvc.geneontology.org/viewvc/GO-SVN/ontology-releases/
-
 - prefix: /snapshot/
   replacement: http://snapshot.geneontology.org/ontology/
 
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=GO&iri=http://purl.obolibrary.org/obo/
+
+- regex: ^/obo/go/releases/([^\s/]+)/(\S+)$
+  replacement: http://release.geneontology.org/$1/ontology/$2
+  tests:
+  - from: /releases/2019-01-01/go.owl
+    to: http://release.geneontology.org/2019-01-01/ontology/go.owl
+  - from: /releases/2019-01-01/extensions/go-plus.owl
+    to: http://release.geneontology.org/2019-01-01/ontology/extensions/go-plus.owl
 
   # Terms for GO REFs
 # http://purl.obolibrary.org/obo/go/references/0000001

@@ -7,8 +7,19 @@ and writes Apache mod_alias RedirectMatch directives to corresponding
 
 https://httpd.apache.org/docs/2.4/mod/mod_alias.html
 
-The YAML files will have a `base_url`, a list of `entries`, a `base_redirect`
-field (optional), a `products` field (optional), and a `terms` field (optional).
+The `foo.yml` file will generate output for two targets:
+
+1. /www/obo/foo/.htaccess
+2. /www/obo/.htaccess
+
+Target (1) only applies to project `foo`.
+It is generated from `base_url` and the `entries` list.
+Projects have wide discretion for this target.
+
+Target (2) applies to all projects.
+The content is tightly constrained to avoid conflicts.
+This content is generated from other YAML fields,
+such as `products` and `term_browser`.
 
 Entries:
 =======
@@ -33,7 +44,7 @@ Entries can have these fields:
   exactly one required
 - status: HTTP status for redirect;
   zero or one value; defaults to "temporary";
-  can be "permanent" (301) or "temporary" (302);
+  can be "permanent" (301), "temporary" (302), or "see other" (303);
   (Apache uses "temp" for "temporary")
 - tests: an optional list of tests
   each test requires a `from` value, like `exact`,
@@ -66,6 +77,7 @@ without any directives.
 
 Base redirects, Products, and Terms
 ===================================
+
 These fields are optional. If the YAML input does not contain them, no
 corresponding output will be generated.
 
@@ -197,18 +209,6 @@ def process_entry(base_url, i, entry):
   return 'RedirectMatch %s "%s" "%s"' % (status, source, replacement)
 
 
-def process_product(product):
-  """
-  Given a product dictionary with one key,
-  ensure that the entry is valid,
-  and return an Apache RedirectMatch directive string.
-  """
-  key = [k for k in product].pop()
-  source = unquote('(?i)^/obo/%s$' % key)
-  replacement = unquote(product[key])
-  return 'RedirectMatch temp "%s" "%s"' % (source, replacement)
-
-
 def translate_entries(yamldoc, base_url):
   """
   Reads the field `entries` from the YAML document, processes each entry that is read using the
@@ -254,6 +254,18 @@ def append_base_redirect(base_redirect, idspace, outfile):
   if base_redirect:
     outfile.write('# Base redirect for %s\n' % idspace)
     outfile.write(base_redirect + '\n\n')
+
+
+def process_product(product):
+  """
+  Given a product dictionary with one key,
+  ensure that the entry is valid,
+  and return an Apache RedirectMatch directive string.
+  """
+  key = [k for k in product].pop()
+  source = unquote('(?i)^/obo/%s$' % key)
+  replacement = unquote(product[key])
+  return 'RedirectMatch temp "%s" "%s"' % (source, replacement)
 
 
 def translate_products(yamldoc):

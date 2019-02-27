@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 
+# Check Travis CI build status for the `master` branch of OBOFoundry/purl.obolibrary.org
+# If `master` is green (i.e. all tests are passing),
+# and the build number is greater than the current build
+# (i.e. the last time we updated),
+# then pull `master`, run Make, and update .current_build.
+
 import difflib
 import requests
 import subprocess

@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/mco
+
+idspace: MCO
+base_url: /obo/mco
+
+products:
+- mco.owl: https://raw.githubusercontent.com/citmejia/microbial-conditions-ontology/master/mco.owl
+- mco.obo: https://raw.githubusercontent.com/citmejia/microbial-conditions-ontology/master/mco.obo
+
+term_browser: ontobee
+example_terms:
+- MCO_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/citmejia/microbial-conditions-ontology/v
+
+- prefix: /tracker/
+  replacement: https://github.com/citmejia/microbial-conditions-ontology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/MCO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/citmejia/microbial-conditions-ontology/master/

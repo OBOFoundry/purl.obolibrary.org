@@ -10,6 +10,3 @@ products:
 - dpo.owl: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/dpo.owl
 
 term_browser: ontobee
-example_terms:
-
-entries:

@@ -4,8 +4,8 @@ idspace: MCO
 base_url: /obo/mco
 
 products:
-- mco.owl: https://raw.githubusercontent.com/citmejia/microbial-conditions-ontology/master/mco.owl
-- mco.obo: https://raw.githubusercontent.com/citmejia/microbial-conditions-ontology/master/mco.obo
+- mco.owl: https://raw.githubusercontent.com/microbial-conditions-ontology/microbial-conditions-ontology/master/mco.owl
+- mco.obo: https://raw.githubusercontent.com/microbial-conditions-ontology/microbial-conditions-ontology/master/mco.obo
 
 term_browser: ontobee
 example_terms:

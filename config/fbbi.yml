@@ -4,7 +4,8 @@ idspace: FBbi
 base_url: /obo/fbbi
 
 products:
-- fbbi.owl: http://ontologies.berkeleybop.org/fbbi.owl
+- fbbi.owl: https://raw.githubusercontent.com/Imaging-semantics/fbbi/fbbi.owl
+- fbbi.obo: https://raw.githubusercontent.com/Imaging-semantics/fbbi/fbbi.obo
 
 term_browser: ontobee
 example_terms:

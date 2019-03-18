@@ -135,6 +135,9 @@ entries:
 - exact: /2014-05-03/bfo.owl
   replacement: https://github.com/BFO-ontology/BFO/raw/releases/2014-05-03/owl-group/bfo.owl
 
+- exact: /2015-8-29/bfo.owl
+  replacement: https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl
+
 - exact: /2015-08-29/bfo.owl
   replacement: https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.owl
 

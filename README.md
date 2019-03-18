@@ -202,6 +202,29 @@ or delete the VM with
 
 You can test against the production PURL server using `make test-production`. We only make one request per second, to avoid abusing the server, so this can take along time.
 
+### Optional: Sync VirtualBox Guest Additions
+
+If you keep your development VM for any length of time you may be presented with this message upon starting your VM:
+```
+==> default: A newer version of the box 'ubuntu/trusty64' is available! You currently
+==> default: have version '20190122.1.1'. The latest is version '20190206.0.0'. Run
+==> default: `vagrant box update` to update.
+```
+If you upgrade, then the next time you resume your box you may receive the warning:
+```
+[default] The guest additions on this VM do not match the install version of
+VirtualBox! This may cause things such as forwarded ports, shared
+folders, and more to not work properly. If any of those things fail on
+this machine, please update the guest additions and repackage the
+box.
+```
+
+To automatically sync with VirtualBox's Guest Additions at startup (and thus avoid this warning) you can install `vagrant-vbguest` like so:
+
+- `vagrant plugin install vagrant-vbguest` (in the tools directory on the host machine)
+
+Now, whenever you bring up your VM, it will check the version of the VM's guest additions and automatically bring them up to date whenever this is needed.
+
 
 ## Deployment
 

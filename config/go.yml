@@ -4,9 +4,9 @@ idspace: GO
 base_url: /obo/go
 
 products:
-- go.owl: http://snapshot.geneontology.org/ontology/go.owl
-- go.obo: http://snapshot.geneontology.org/ontology/go.obo
-- go.json: http://snapshot.geneontology.org/ontology/go.json
+- go.owl: http://current.geneontology.org/ontology/go.owl
+- go.obo: http://current.geneontology.org/ontology/go.obo
+- go.json: http://current.geneontology.org/ontology/go.json
 
 term_browser: ontobee
 example_terms:
@@ -14,10 +14,10 @@ example_terms:
 
 entries:
 - exact: /go.obo
-  replacement: http://snapshot.geneontology.org/ontology/go.obo
+  replacement: http://current.geneontology.org/ontology/go.obo
 
 - exact: /go.owl
-  replacement: http://snapshot.geneontology.org/ontology/go.owl
+  replacement: http://current.geneontology.org/ontology/go.owl
 
 ## User and group metadata for GO-CAM model metadata resolution.
 - exact: /metadata/users.ttl
@@ -67,5 +67,5 @@ entries:
 
 # Keep this as last entry as the rules are matched in order
 - prefix: /
-  replacement: http://snapshot.geneontology.org/ontology/
+  replacement: http://current.geneontology.org/ontology/
   

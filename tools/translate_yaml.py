@@ -104,7 +104,7 @@ schemafile = "{}/config.schema.json".format(pwd)
 def load_and_validate(yamlname, schema):
   try:
     yamlfile = open(yamlname)
-    yamldoc = yaml.load(yamlfile)
+    yamldoc = yaml.load(yamlfile, Loader=yaml.SafeLoader)
     jsonschema.validate(yamldoc, schema)
   except (FileNotFoundError, IsADirectoryError, yaml.YAMLError) as e:
     print(e, file=sys.stderr)

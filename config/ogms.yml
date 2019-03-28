@@ -14,28 +14,28 @@ example_terms:
 
 entries:
 - exact: /2009-08-07/ogms.owl
-  replacement: http://ogms.googlecode.com/svn/releases/2009-08-07/ogms.owl
+  replacement: https://raw.githubusercontent.com/OGMS/ogms/releases/2009-08-07/ogms.owl
 
 - exact: /2009-12-03/ogms.owl
-  replacement: http://ogms.googlecode.com/svn/releases/2009-12-03/ontology/ogms.owl
+  replacement: https://raw.githubusercontent.com/OGMS/ogms/releases/2009-12-03/ontology/ogms.owl
 
 - exact: /2009-12-03/ogms.obo
-  replacement: http://ogms.googlecode.com/svn/releases/2009-12-03/ontology/ogms.obo
+  replacement: https://raw.githubusercontent.com/OGMS/ogms/releases/2009-12-03/ontology/ogms.obo
 
 - exact: /2009-08-07/ogms.obo
-  replacement: http://ogms.googlecode.com/svn/releases/2009-08-07/ogms.obo
+  replacement: https://raw.githubusercontent.com/OGMS/ogms/releases/2009-08-07/ogms.obo
 
 - exact: /2010-01-29/ogms.owl
-  replacement: http://ogms.googlecode.com/svn/releases/2010-01-29/ontology/ogms.owl
+  replacement: https://raw.githubusercontent.com/OGMS/ogms/releases/2010-01-29/ontology/ogms.owl
 
 - exact: /2010-01-29/ogms.obo
-  replacement: http://ogms.googlecode.com/svn/releases/2010-01-29/ontology/ogms.obo
+  replacement: https://raw.githubusercontent.com/OGMS/ogms/releases/2010-01-29/ontology/ogms.obo
 
 - exact: /omre/dev/omre.owl
-  replacement: http://ogms.googlecode.com/svn/trunk/src/ontology/omre/omre.owl
+  replacement: https://raw.githubusercontent.com/OGMS/ogms/master/src/ontology/omre/omre.owl
 
 - exact: /dev/ogms.owl
-  replacement: http://ogms.googlecode.com/svn/trunk/src/ontology/ogms.owl
+  replacement: https://github.com/OGMS/ogms/blob/master/src/ontology/ogms.owl
 
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=OGMS&iri=http://purl.obolibrary.org/obo/

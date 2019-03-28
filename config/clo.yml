@@ -4,7 +4,7 @@ idspace: CLO
 base_url: /obo/clo
 
 products:
-- clo.owl: https://raw.githubusercontent.com/CLO-ontology/CLO/master/src/ontology/clo_merged.owl
+- clo.owl: https://raw.githubusercontent.com/ICO-ontology/ICO/master/ico.owl
 
 term_browser: ontobee
 example_terms:

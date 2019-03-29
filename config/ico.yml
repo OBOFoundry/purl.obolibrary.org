@@ -4,8 +4,8 @@ idspace: ICO
 base_url: /obo/ico
 
 products:
-- ico.owl: https://raw.githubusercontent.com/ICO-ontology/ICO/master/src/ontology/ico_merged.owl
+- ico.owl: https://raw.githubusercontent.com/ICO-ontology/ICO/master/ico.owl
 
 term_browser: ontobee
 example_terms:
-- ICO_0000001
+- ICO_0000001 

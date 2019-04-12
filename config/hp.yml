@@ -30,5 +30,5 @@ entries:
     to: http://www.ontobee.org/browser/rdf.php?o=HP&iri=http://purl.obolibrary.org/obo/HP_0000001
 
 - prefix: /
-  replacement: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src/ontology/
+  replacement: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/
 

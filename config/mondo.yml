@@ -4,35 +4,21 @@ idspace: MONDO
 base_url: /obo/mondo
 
 products:
-- mondo.owl: https://osf.io/bqpjm/download
-- mondo.obo: https://osf.io/e87hn/download
-- mondo.json: https://osf.io/pbq3a/download
+- mondo.owl: https://github.com/monarch-initiative/mondo/releases/download/current/mondo.owl
+- mondo.obo: https://github.com/monarch-initiative/mondo/releases/download/current/mondo.obo
+- mondo.json: https://github.com/monarch-initiative/mondo/releases/download/current/mondo.json
 
 term_browser: ontobee
 
 entries:
-- exact: /mondo-base.owl
-  replacement: https://osf.io/5c6ky/download
-- exact: /subsets/mondo-minimal.owl
-  replacement: https://osf.io/8avz5/download
-- exact: /subsets/mondo-minimal.obo
-  replacement: https://osf.io/heu72/download
-- exact: /subsets/mondo-minimal.json
-  replacement: https://osf.io/6c8nk/download
-- exact: /pre/mondo.obo
-  replacement: https://osf.io/4c9qp/download
-- exact: /pre/mondo.json
-  replacement: https://osf.io/wdnyu/download
-- exact: /pre/mondo.owl
-  replacement: https://osf.io/ysg2b/download
-- exact: /extid/mondo.obo
-  replacement: https://osf.io/ay3hr/download
-- exact: /extid/mondo.owl
-  replacement: https://osf.io/jxkth/download
+- prefix: /subsets/
+  replacement: https://github.com/monarch-initiative/mondo/releases/download/current/
 - prefix: /imports/
   replacement: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports/
 - prefix: /reports/
   replacement: https://raw.githubusercontent.com/monarch-initiative/mondo/master/reports/
 - prefix: /releases/
   replacement: https://github.com/monarch-initiative/mondo/releases/download/v
+- prefix: /
+  replacement: https://github.com/monarch-initiative/mondo/releases/download/current/  
 

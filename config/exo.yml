@@ -5,6 +5,7 @@ base_url: /obo/exo
 
 products:
 - exo.owl: http://ontologies.berkeleybop.org/exo.owl
+- exo.obo: https://github.com/CTDbase/exposure-ontology/raw/master/src/ontology/exo.obo
 
 term_browser: ontobee
 example_terms:

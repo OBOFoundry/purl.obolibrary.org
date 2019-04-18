@@ -71,19 +71,19 @@ entries:
 # Term redirects for PR
 # Match digits or UniProt ID, see http://www.uniprot.org/help/accession_numbers
 - regex: ^/obo/PR_(\d+|[OPQ][0-9][A-Z0-9]{3}[0-9](-\d+)?|[A-NR-Z][0-9]([A-Z][A-Z0-9]{2}[0-9]){1,2}(-\d+)?)$
-  replacement: http://pir.georgetown.edu/cgi-bin/pro/entry_pro?id=PR_$1
+  replacement: https://proconsortium.org/cgi-bin/entry_pro?id=PR_$1
   status: see other
   tests:
   - from: /PR_000000001
-    to: http://pir.georgetown.edu/cgi-bin/pro/entry_pro?id=PR_000000001
+    to: https://proconsortium.org/cgi-bin/entry_pro?id=PR_000000001
   - from: /PR_Q9BWV1
-    to: http://pir.georgetown.edu/cgi-bin/pro/entry_pro?id=PR_Q9BWV1
+    to: https://proconsortium.org/cgi-bin/entry_pro?id=PR_Q9BWV1
   - from: /PR_P20263-1
-    to: http://pir.georgetown.edu/cgi-bin/pro/entry_pro?id=PR_P20263-1
+    to: hhttps://proconsortium.org/cgi-bin/entry_pro?id=PR_P20263-1
   - from: /PR_A0A0E0NEP8
-    to: http://pir.georgetown.edu/cgi-bin/pro/entry_pro?id=PR_A0A0E0NEP8
+    to: https://proconsortium.org/cgi-bin/entry_pro?id=PR_A0A0E0NEP8
   - from: /PR_A0A0E0NEP8-37
-    to: http://pir.georgetown.edu/cgi-bin/pro/entry_pro?id=PR_A0A0E0NEP8-37
+    to: https://proconsortium.org/cgi-bin/entry_pro?id=PR_A0A0E0NEP8-37
     
 # Term redirects for NCIT (not restricted to digits)
 - regex: ^/obo/NCIT_([a-zA-Z0-9]+)$

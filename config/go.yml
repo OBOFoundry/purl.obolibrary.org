@@ -4,9 +4,9 @@ idspace: GO
 base_url: /obo/go
 
 products:
-- go.owl: http://snapshot.geneontology.org/ontology/go.owl
-- go.obo: http://snapshot.geneontology.org/ontology/go.obo
-- go.json: http://snapshot.geneontology.org/ontology/go.json
+- go.owl: http://current.geneontology.org/ontology/go.owl
+- go.obo: http://current.geneontology.org/ontology/go.obo
+- go.json: http://current.geneontology.org/ontology/go.json
 
 term_browser: ontobee
 example_terms:
@@ -14,10 +14,10 @@ example_terms:
 
 entries:
 - exact: /go.obo
-  replacement: http://snapshot.geneontology.org/ontology/go.obo
+  replacement: http://current.geneontology.org/ontology/go.obo
 
 - exact: /go.owl
-  replacement: http://snapshot.geneontology.org/ontology/go.owl
+  replacement: http://current.geneontology.org/ontology/go.owl
 
 ## User and group metadata for GO-CAM model metadata resolution.
 - exact: /metadata/users.ttl
@@ -39,14 +39,19 @@ entries:
 - prefix: /noctua-obo/
   replacement: http://build-artifacts.berkeleybop.org/build-noctua-obo-ontology/latest/
 
-- prefix: /releases/
-  replacement: http://viewvc.geneontology.org/viewvc/GO-SVN/ontology-releases/
-
 - prefix: /snapshot/
   replacement: http://snapshot.geneontology.org/ontology/
 
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=GO&iri=http://purl.obolibrary.org/obo/
+
+- regex: ^/obo/go/releases/([^\s/]+)/(\S+)$
+  replacement: http://release.geneontology.org/$1/ontology/$2
+  tests:
+  - from: /releases/2019-01-01/go.owl
+    to: http://release.geneontology.org/2019-01-01/ontology/go.owl
+  - from: /releases/2019-01-01/extensions/go-plus.owl
+    to: http://release.geneontology.org/2019-01-01/ontology/extensions/go-plus.owl
 
   # Terms for GO REFs
 # http://purl.obolibrary.org/obo/go/references/0000001
@@ -62,5 +67,5 @@ entries:
 
 # Keep this as last entry as the rules are matched in order
 - prefix: /
-  replacement: http://snapshot.geneontology.org/ontology/
+  replacement: http://current.geneontology.org/ontology/
   

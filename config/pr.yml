@@ -8,8 +8,8 @@ base_redirect: http://proconsortium.org
 
 products:
 - pr.owl: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/pro_reasoned.owl
-# - pr.owl: https://research.bioinformatics.udel.edu/PRO/data/current/pro_reasoned.owl
-- pr.obo: https://research.bioinformatics.udel.edu/PRO/data/current/pro_reasoned.obo
+# - pr.owl: https://proconsortium.org/download/current/pro_reasoned.owl
+- pr.obo: https://proconsortium.org/download/current/pro_reasoned.obo
 
 term_browser: custom
 
@@ -27,20 +27,20 @@ entries:
 # Then 'pr' and 'pr-asserted' are treated the same.
 
 - regex: (?i)^/obo/pr/((\d|[1-3]\d|4[0-2])\.\d)\.?/(pr|pr-asserted).obo$
-  replacement: https://research.bioinformatics.udel.edu/PRO/data/release_$1/pro_nonreasoned.obo
+  replacement: https://proconsortium.org/download/release_$1/pro_nonreasoned.obo
   tests:
   - from: /9.0/pr.obo
-    to: https://research.bioinformatics.udel.edu/PRO/data/release_9.0/pro_nonreasoned.obo
+    to: https://proconsortium.org/download/release_9.0/pro_nonreasoned.obo
   - from: /22.0/pr.obo
-    to: https://research.bioinformatics.udel.edu/PRO/data/release_22.0/pro_nonreasoned.obo
+    to: https://proconsortium.org/download/release_22.0/pro_nonreasoned.obo
   - from: /42.0/pr.obo
-    to: https://research.bioinformatics.udel.edu/PRO/data/release_42.0/pro_nonreasoned.obo
+    to: https://proconsortium.org/download/release_42.0/pro_nonreasoned.obo
   - from: /9.0/pr-asserted.obo
-    to: https://research.bioinformatics.udel.edu/PRO/data/release_9.0/pro_nonreasoned.obo
+    to: https://proconsortium.org/download/release_9.0/pro_nonreasoned.obo
   - from: /22.0/pr-asserted.obo
-    to: https://research.bioinformatics.udel.edu/PRO/data/release_22.0/pro_nonreasoned.obo
+    to: https://proconsortium.org/download/release_22.0/pro_nonreasoned.obo
   - from: /42.0/pr-asserted.obo
-    to: https://research.bioinformatics.udel.edu/PRO/data/release_42.0/pro_nonreasoned.obo
+    to: https://proconsortium.org/download/release_42.0/pro_nonreasoned.obo
 
 # major releases 43.0 and later; reasoned version of both OBO and OWL produced
 # The regex matches three sets of version numbers:
@@ -50,44 +50,44 @@ entries:
 # The file extension can be either 'obo' or 'owl'.
 
 - regex: (?i)^/obo/pr/((4[3-9]|[5-9]\d|\d\d\d)\.\d+)\.?/pr.(obo|owl)$
-  replacement: https://research.bioinformatics.udel.edu/PRO/data/release_$1/pro_reasoned.$3
+  replacement: https://proconsortium.org/download/release_$1/pro_reasoned.$3
   tests:
   - from: /45.0/pr.obo
-    to: https://research.bioinformatics.udel.edu/PRO/data/release_45.0/pro_reasoned.obo
+    to: https://proconsortium.org/download/release_45.0/pro_reasoned.obo
   - from: /45.0./pr.obo
-    to: https://research.bioinformatics.udel.edu/PRO/data/release_45.0/pro_reasoned.obo
+    to: https://proconsortium.org/download/release_45.0/pro_reasoned.obo
   - from: /51.0/pr.obo
-    to: https://research.bioinformatics.udel.edu/PRO/data/release_51.0/pro_reasoned.obo
+    to: https://proconsortium.org/download/release_51.0/pro_reasoned.obo
   - from: /51.0./pr.obo
-    to: https://research.bioinformatics.udel.edu/PRO/data/release_51.0/pro_reasoned.obo
+    to: https://proconsortium.org/download/release_51.0/pro_reasoned.obo
   - from: /45.0/pr.owl
-    to: https://research.bioinformatics.udel.edu/PRO/data/release_45.0/pro_reasoned.owl
+    to: https://proconsortium.org/download/release_45.0/pro_reasoned.owl
   - from: /45.0./pr.owl
-    to: https://research.bioinformatics.udel.edu/PRO/data/release_45.0/pro_reasoned.owl
+    to: https://proconsortium.org/download/release_45.0/pro_reasoned.owl
   - from: /51.0/pr.owl
-    to: https://research.bioinformatics.udel.edu/PRO/data/release_51.0/pro_reasoned.owl
+    to: https://proconsortium.org/download/release_51.0/pro_reasoned.owl
   - from: /51.0./pr.owl
-    to: https://research.bioinformatics.udel.edu/PRO/data/release_51.0/pro_reasoned.owl
+    to: https://proconsortium.org/download/release_51.0/pro_reasoned.owl
 
 - regex: (?i)^/obo/pr/((4[3-9]|[5-9]\d|\d\d\d)\.\d+)\.?/pr-asserted.(obo|owl)$
-  replacement: https://research.bioinformatics.udel.edu/PRO/data/release_$1/pro_nonreasoned.$3
+  replacement: https://proconsortium.org/download/release_$1/pro_nonreasoned.$3
   tests:
   - from: /45.0/pr-asserted.obo
-    to: https://research.bioinformatics.udel.edu/PRO/data/release_45.0/pro_nonreasoned.obo
+    to: https://proconsortium.org/download/release_45.0/pro_nonreasoned.obo
   - from: /45.0./pr-asserted.obo
-    to: https://research.bioinformatics.udel.edu/PRO/data/release_45.0/pro_nonreasoned.obo
+    to: https://proconsortium.org/download/release_45.0/pro_nonreasoned.obo
   - from: /51.0/pr-asserted.obo
-    to: https://research.bioinformatics.udel.edu/PRO/data/release_51.0/pro_nonreasoned.obo
+    to: https://proconsortium.org/download/release_51.0/pro_nonreasoned.obo
   - from: /51.0./pr-asserted.obo
-    to: https://research.bioinformatics.udel.edu/PRO/data/release_51.0/pro_nonreasoned.obo
+    to: https://proconsortium.org/download/release_51.0/pro_nonreasoned.obo
   - from: /45.0/pr-asserted.owl
-    to: https://research.bioinformatics.udel.edu/PRO/data/release_45.0/pro_nonreasoned.owl
+    to: https://proconsortium.org/download/release_45.0/pro_nonreasoned.owl
   - from: /45.0./pr-asserted.owl
-    to: https://research.bioinformatics.udel.edu/PRO/data/release_45.0/pro_nonreasoned.owl
+    to: https://proconsortium.org/download/release_45.0/pro_nonreasoned.owl
   - from: /51.0/pr-asserted.owl
-    to: https://research.bioinformatics.udel.edu/PRO/data/release_51.0/pro_nonreasoned.owl
+    to: https://proconsortium.org/download/release_51.0/pro_nonreasoned.owl
   - from: /51.0./pr-asserted.owl
-    to: https://research.bioinformatics.udel.edu/PRO/data/release_51.0/pro_nonreasoned.owl
+    to: https://proconsortium.org/download/release_51.0/pro_nonreasoned.owl
 
 # Note that both of the above forms (with and without period after version number) should resolve to the
 #   same file, as the extraneous trailing period stems from an error on the data-version line
@@ -102,45 +102,45 @@ entries:
 #   precise dates of releases, and allows us to bypass the need to create a new PURL for every release.
 
 - regex: (?i)^/obo/pr/((2\d\d\d\-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01]))/(pr|pr-asserted)\.(obo|owl))$
-  replacement: https://hershey.dbi.udel.edu/natale-cgi/getPRO?request=$1
+  replacement:  https://proconsortium.org/cgi-bin/getPRO?request=$1
   tests:
   - from: /2011-03-29/pr.obo
-    to: https://hershey.dbi.udel.edu/natale-cgi/getPRO?request=2011-03-29/pr.obo
+    to:  https://proconsortium.org/cgi-bin/getPRO?request=2011-03-29/pr.obo
   - from: /2011-04-01/pr.obo
-    to: https://hershey.dbi.udel.edu/natale-cgi/getPRO?request=2011-04-01/pr.obo
+    to:  https://proconsortium.org/cgi-bin/getPRO?request=2011-04-01/pr.obo
   - from: /2017-02-01/pr.owl
-    to: https://hershey.dbi.udel.edu/natale-cgi/getPRO?request=2017-02-01/pr.owl
+    to:  https://proconsortium.org/cgi-bin/getPRO?request=2017-02-01/pr.owl
   - from: /2017-02-01/pr-asserted.owl
-    to: https://hershey.dbi.udel.edu/natale-cgi/getPRO?request=2017-02-01/pr-asserted.owl
+    to:  https://proconsortium.org/cgi-bin/getPRO?request=2017-02-01/pr-asserted.owl
 
 # The above ultimately resolve to:
-#   2011-03-29/pr.obo           https://research.bioinformatics.udel.edu/PRO/data/release_17.0/pro_nonreasoned.obo 
-#   2011-04-01/pr.obo           https://research.bioinformatics.udel.edu/PRO/data/release_17.0/pro_nonreasoned.obo 
-#   2017-02-01/pr.owl           https://research.bioinformatics.udel.edu/PRO/data/release_51.0/pro_reasoned.owl 
-#   2017-02-01/pr-asserted.owl  https://research.bioinformatics.udel.edu/PRO/data/release_51.0/pro_nonreasoned.owl 
+#   2011-03-29/pr.obo           https://proconsortium.org/download/release_17.0/pro_nonreasoned.obo 
+#   2011-04-01/pr.obo           https://proconsortium.org/download/release_17.0/pro_nonreasoned.obo 
+#   2017-02-01/pr.owl           https://proconsortium.org/download/release_51.0/pro_reasoned.owl 
+#   2017-02-01/pr-asserted.owl  https://proconsortium.org/download/release_51.0/pro_nonreasoned.owl 
 
 ### OBO Foundry ID-policy compliant PURLs
 
 - prefix: /about/
-  replacement: http://research.bioinformatics.udel.edu/pro/entry/
+  replacement: https://proconsortium.org/app/entry/
   tests:
   - from: /about/PR_000000001
-    to: http://research.bioinformatics.udel.edu/pro/entry/PR_000000001
+    to: https://proconsortium.org/app/entry/PR_000000001
 
 - exact: /pr-asserted.obo
-  replacement: https://research.bioinformatics.udel.edu/PRO/data/current/pro_nonreasoned.obo
+  replacement: https://proconsortium.org/download/current/pro_nonreasoned.obo
   
 - exact: /pr-asserted.owl
-  replacement: https://research.bioinformatics.udel.edu/PRO/data/current/pro_nonreasoned.owl
+  replacement: https://proconsortium.org/download/current/pro_nonreasoned.owl
   
 - exact: /homepage
-  replacement: http://proconsortium.org/pro
+  replacement: http://proconsortium.org
 
 - exact: /tracker
   replacement: http://sourceforge.net/tracker/?group_id=266825&atid=1135711
 
 - exact: /downloads
-  replacement: https://research.bioinformatics.udel.edu/PRO/data/current
+  replacement: https://proconsortium.org/download/current
 
 - prefix: /wiki/
   replacement: https://pir17.georgetown.edu/confluence/display/PROWIKI/
@@ -157,5 +157,4 @@ entries:
 ### Development Pages and Redirects
 
 - exact: /pr-dev.obo
-  replacement: https://pir.udel.edu/projects/pro/pro_wv.obo
-### this is currently down:  http://pir.georgetown.edu/projects/pro/pro_wv.obo
+  replacement: https://proconsortium.org/download/development/pro_wv.obo

@@ -1,17 +1,8 @@
-# PURL configuration for http://purl.obolibrary.org/obo/test2
+# PURL configuration for http://purl.obolibrary.org/obo/obo
 
-idspace: TEST2
-base_url: /obo/test2
-
-base_redirect: http://example.org/test2
-
-products:
-- test2.owl: http://example.org/test2.owl
-- test2.obo: http://example.org/test2.obo
-
-term_browser: ontobee
-example_terms:
-- TEST2_0000001
+idspace: OBO
+base_url: /obo/obo
+term_browser: custom
 
 entries:
 - exact: /project
@@ -28,4 +19,4 @@ entries:
   status: see other
   tests:
   - from: /TEST_1234
-    replacement: http://example.org/about/TEST_1234
+    to: http://example.org/about/TEST_1234

@@ -8,7 +8,6 @@ products:
 - xao.obo: http://ontologies.berkeleybop.org/xao.obo
 
 term_browser: ontobee
-example_terms:
 
 entries:
 - prefix: /tracker/

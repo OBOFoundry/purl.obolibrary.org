@@ -29,8 +29,6 @@
       with_items:
         - ntp
         - git
-        - ruby
-        - ruby-dev
         - python3
 
     - name: Install system-wide packages (All)
@@ -39,15 +37,11 @@
         - apache2
         - python3-pip
 
-    - name: Install Travis command-line
-      when: mode == "production"
-      command: gem install travis --no-rdoc --no-ri creates=/usr/local/bin/travis
-
-    - name: Install kwalify
-      command: gem install kwalify creates=/usr/local/bin/kwalify
-
     - name: Install PyYAML
       pip: name=PyYAML executable=pip3
+
+    - name: Install jsonschema
+      pip: name=jsonschema executable=pip3
 
     - name: Clone the Git repo
       when: mode == "production"

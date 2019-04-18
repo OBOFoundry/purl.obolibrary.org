@@ -4,6 +4,7 @@ idspace: FIX
 base_url: /obo/fix
 
 products:
+- fix.obo: ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/fix.obo
 - fix.owl: http://ontologies.berkeleybop.org/fix.owl
 
 term_browser: ontobee

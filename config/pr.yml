@@ -122,10 +122,10 @@ entries:
 ### OBO Foundry ID-policy compliant PURLs
 
 - prefix: /about/
-  replacement: https://proconsortium.org/app/entry/
+  replacement: https://proconsortium.org/cgi-bin/entry_pro?id=
   tests:
   - from: /about/PR_000000001
-    to: https://proconsortium.org/app/entry/PR_000000001
+    to: https://proconsortium.org/cgi-bin/entry_pro?id=PR_000000001
 
 - exact: /pr-asserted.obo
   replacement: https://proconsortium.org/download/current/pro_nonreasoned.obo

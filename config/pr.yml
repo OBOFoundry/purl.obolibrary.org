@@ -153,6 +153,9 @@ entries:
 
 - exact: /purls
   replacement: https://pir17.georgetown.edu/confluence/display/PROWIKI/PRO+PURLs
+  
+- exact: /gpi
+  replacement: https://proconsortium.org/download/more/pro.gpi
 
 - exact: /browse
   replacement: http://www.ontobee.org/browser/index.php?o=pr
@@ -161,3 +164,6 @@ entries:
 
 - exact: /pr-dev.obo
   replacement: https://proconsortium.org/download/development/pro_wv.obo
+
+- exact: /pr-dev.gpi
+  replacement: https://proconsortium.org/download/development/pro_wv.gpi

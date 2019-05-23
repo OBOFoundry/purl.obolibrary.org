@@ -137,7 +137,8 @@ entries:
   replacement: http://proconsortium.org
 
 - exact: /tracker
-  replacement: http://sourceforge.net/tracker/?group_id=266825&atid=1135711
+  replacement: https://github.com/PROconsortium/PRoteinOntology/issues/new/choose
+#  replacement: http://sourceforge.net/tracker/?group_id=266825&atid=1135711
 
 - exact: /downloads
   replacement: https://proconsortium.org/download/current

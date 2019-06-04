@@ -23,8 +23,8 @@ entries:
 
 - exact: /iao-stated.owl
   replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2017-03-24/iao.owl
-- exact: /ontology-metadata.owl
-  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2017-03-24/ontology-metadata.owl
+#- exact: /ontology-metadata.owl
+#  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2017-03-24/ontology-metadata.owl
 - exact: /iao-main.owl
   replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2017-03-24/iao-main.owl
 - exact: /release-notes

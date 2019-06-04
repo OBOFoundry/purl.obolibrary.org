@@ -30,6 +30,14 @@ entries:
 - exact: /release-notes
   replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2017-03-24/release-notes.txt
 
+# ontology metadata
+- exact: /ontology-metadata.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/ontology-metadata/v2019-01-24/ontology-metadata.owl
+
+# ontology metadata versions (from 2019)
+- exact: /2019-01-24/ontology-metadata.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/ontology-metadata/v2019-01-24/ontology-metadata.owl
+
 # IAO Examples
 
 - exact: /example/community-label.owl

@@ -1,11 +1,14 @@
 # PURL configuration for http://purl.obolibrary.org/obo/obib
 idspace: HTN
 base_url: /obo/htn
+
 products:
 - htn.owl: https://raw.githubusercontent.com/aellenhicks/htn_owl/master/htn.owl
+
 term_browser: ontobee
 example_terms:
 - HTN_00000015
+
 entries:
 - exact: /htn.owl
-replacement: https://raw.githubusercontent.com/aellenhicks/htn_owl/master/htn.owl
+  replacement: https://raw.githubusercontent.com/aellenhicks/htn_owl/master/htn.owl

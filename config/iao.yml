@@ -21,12 +21,10 @@ example_terms:
 
 entries:
 
-#- exact: /iao-stated.owl
-#  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2017-03-24/iao.owl
-#- exact: /ontology-metadata.owl
-#  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2017-03-24/ontology-metadata.owl
-#- exact: /iao-main.owl
-#  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2017-03-24/iao-main.owl
+- exact: /iao-stated.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/v2019-06-07/iao.owl
+- exact: /iao-main.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/v2019-06-07/src/ontology/iao-edit.owl 
 - exact: /release-notes
   replacement: https://github.com/information-artifact-ontology/IAO/releases/tag/v2019-06-07
 

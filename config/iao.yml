@@ -10,29 +10,32 @@ base_url: /obo/iao
 base_redirect: https://github.com/information-artifact-ontology/IAO 
 
 products:
-###  2017-03-24 is now current. There is no current OBO version. That should be fixed.
-- iao.owl: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2017-03-24/iao-merged.owl
-- iao.obo: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2009-11-06/merged/iao.obo
+- iao.owl: https://raw.githubusercontent.com/information-artifact-ontology/IAO/v2019-06-07/iao.owl
+- iao.obo: http://ontologies.berkeleybop.org/iao.obo
 
 term_browser: ontobee
 
 example_terms:
 - IAO_0000030
 
+
 entries:
 
 - exact: /iao-stated.owl
-  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2017-03-24/iao.owl
-#- exact: /ontology-metadata.owl
-#  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2017-03-24/ontology-metadata.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/v2019-06-07/iao.owl
 - exact: /iao-main.owl
-  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2017-03-24/iao-main.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/v2019-06-07/src/ontology/iao-edit.owl 
 - exact: /release-notes
-  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/releases/2017-03-24/release-notes.txt
+  replacement: https://github.com/information-artifact-ontology/IAO/releases/tag/v2019-06-07
 
 # ontology metadata
+### release version
 - exact: /ontology-metadata.owl
   replacement: https://raw.githubusercontent.com/information-artifact-ontology/ontology-metadata/v2019-01-24/ontology-metadata.owl
+
+### development version
+- exact: /dev/ontology-metadata.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/ontology-metadata/master/src/ontology/ontology-metadata-edit.owl
 
 # ontology metadata versions (from 2019)
 - exact: /2019-01-24/ontology-metadata.owl
@@ -68,7 +71,17 @@ entries:
 - prefix: /dev/
   replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/src/ontology/
 
+- exact: /dev/iao-edit.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/src/ontology/iao-edit.owl 
+
 # IAO Versions
+
+# 2019-06-07
+- exact: /2019-06-07/iao.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/v2019-06-07/iao.owl
+
+- exact: /2019-06-07/release-notes
+  replacement: https://github.com/information-artifact-ontology/IAO/releases/tag/v2019-06-07
 
 # 2017-03-24
 

@@ -186,6 +186,12 @@ entries:
 - exact: /2018-08-27/obi_core.owl
   replacement: https://raw.githubusercontent.com/obi-ontology/obi/v2018-08-27/obi_core.owl
 
+- exact: /2019-06-05/obi.owl
+  replacement: https://raw.githubusercontent.com/obi-ontology/obi/v2019-06-05/obi.owl
+
+- exact: /2019-06-05/obi_core.owl
+  replacement: https://raw.githubusercontent.com/obi-ontology/obi/v2019-06-05/obi_core.owl
+
 ### Web Service Releases
 
 - exact: /v1.1/webService.owl

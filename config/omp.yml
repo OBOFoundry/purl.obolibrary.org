@@ -4,8 +4,8 @@ idspace: OMP
 base_url: /obo/omp
 
 products:
-- omp.owl: http://ontologies.berkeleybop.org/omp.owl
-- omp.obo: http://ontologies.berkeleybop.org/omp.obo
+- omp.owl: https://raw.githubusercontent.com/microbialphenotypes/OMP-ontology/master/omp.owl
+- omp.obo: https://raw.githubusercontent.com/microbialphenotypes/OMP-ontology/master/omp.obo
 
 term_browser: ontobee
 example_terms:

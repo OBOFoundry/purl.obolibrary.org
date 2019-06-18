@@ -12,6 +12,8 @@ example_terms:
 - SO_0000110
 
 entries:
+- prefix: /so-simple.obo
+  replacement: https://raw.githubusercontent.com/The-Sequence-Ontology/SO-Ontologies/master/so-simple.obo
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=SO&iri=http://purl.obolibrary.org/obo/
   tests:

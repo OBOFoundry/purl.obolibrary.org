@@ -1,0 +1,13 @@
+# PURL configuration for http://purl.obolibrary.org/obo/rnao
+
+idspace: XLMOD
+base_url: /obo/xlmod
+
+products:
+- xlmod.obo: https://raw.githubusercontent.com/HUPO-PSI/mzIdentML/master/cv/XLMOD.obo
+
+term_browser: ontobee
+
+entries:
+- exact: /tracker
+  replacement: https://github.com/HUPO-PSI/mzIdentML/issues

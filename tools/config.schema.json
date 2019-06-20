@@ -2,10 +2,12 @@
 	"properties": {
 		"idspace": {
 			"_comment": "See issue #82",
+			"description": "'idspace' must consist of letters, numbers, and underscores only, and must begin with a letter",
 			"type": "string",
 			"pattern": "^[A-Za-z][A-Za-z0-9_]+$"
 		},
 		"base_url": {
+			"description": "'base_url' must begin with '/obo'",
 			"type": "string",
 			"pattern": "^\\/obo"
 		},
@@ -23,6 +25,7 @@
 			}
 		},
 		"term_browser": {
+			"description": "'term_browser' must be either 'ontobee' or 'custom'",
 			"type": "string",
 			"pattern": "^(ontobee|custom)$"
 		},
@@ -38,10 +41,12 @@
 				"type": "object",
 				"properties": {
 					"from": {
+						"description": "'from' must begin with '/'",
 						"type": "string",
 						"pattern": "^\\/"
 					},
 					"to": {
+						"description": "'to' must be in the form of a URL",
 						"type": "string",
 						"pattern": "^(https?|ftp)\\:\\/\\/[a-zA-Z0-9][\\/\\.\\-\\:\\?\\=\\&\\#\\%\\!\\$\\~\\+\\w]+$"
 					}
@@ -56,11 +61,13 @@
 				"properties": {
 					"exact": {
 						"_comment": "Note: JSON-Schema cannot ensure that `exact` mappings are unique",
+						"description": "'exact' must begin with '/'",
 						"type": "string",
 						"pattern": "^\\/"
 					},
 					"prefix": {
 						"_comment": "Note: JSON-Schema cannot ensure that `prefix` mappings are unique",
+						"description": "'prefix' must begin with '/'",
 						"type": "string",
 						"pattern": "^\\/"
 					},
@@ -70,9 +77,11 @@
 					},
 					"replacement": {
 						"type": "string",
+						"description": "'replacement' must be in the form of a URL",
 						"pattern": "^(https?|ftp)\\:\\/\\/[a-zA-Z0-9][\\/\\.\\-\\:\\?\\=\\&\\#\\%\\!\\$\\~\\+\\w]+$"
 					},
 					"status": {
+						"description": "'status' must be either 'permanent', 'temporary', or 'see other'",
 						"type": "string",
 						"pattern": "^(permanent|temporary|see other)$"
 					},
@@ -82,10 +91,12 @@
 							"type": "object",
 							"properties": {
 								"from": {
+									"description": "'from' must begin with '/'",
 									"type": "string",
 									"pattern": "^\\/"
 								},
 								"to": {
+									"description": "'to' must be in the form of a URL",
 									"type": "string",
 									"pattern": "^(https?|ftp)\\:\\/\\/[a-zA-Z0-9][\\/\\.\\-\\:\\?\\=\\&\\#\\%\\!\\$\\~\\+\\w]+$"
 								}

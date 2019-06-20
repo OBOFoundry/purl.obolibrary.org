@@ -1,0 +1,12 @@
+# PURL configuration for http://purl.obolibrary.org/obo/ornaseq
+
+idspace: ORNASEQ
+base_url: /obo/ornaseq
+
+products:
+- ornaseq.owl: https://raw.githubusercontent.com/safisher/ornaseq/master/ornaseq.owl
+
+term_browser: ontobee
+example_terms:
+- ORNASEQ_0000001
+- ORNASEQ_0000002

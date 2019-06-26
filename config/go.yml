@@ -45,6 +45,10 @@ entries:
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=GO&iri=http://purl.obolibrary.org/obo/
 
+# This release IRI was published with an incorrect date due to a timezone issue in Docker
+- prefix: /releases/2019-06-10/
+  replacement: http://release.geneontology.org/2019-06-09/ontology/
+
 - regex: ^/obo/go/releases/([^\s/]+)/(\S+)$
   replacement: http://release.geneontology.org/$1/ontology/$2
   tests:

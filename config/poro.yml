@@ -9,9 +9,9 @@ products:
 - poro.owl: https://raw.githubusercontent.com/obophenotype/porifera-ontology/master/poro.owl
 - poro.obo: https://raw.githubusercontent.com/obophenotype/porifera-ontology/master/poro.obo
 
-term_browser: ontobee
+term_browser: ols
 example_terms:
-- PORO_0000000
+- PORO_0000017
 
 entries:
 - exact: /browse
@@ -23,8 +23,8 @@ entries:
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=PORO&iri=http://purl.obolibrary.org/obo/
   tests:
-  - from: /about/PORO_0000000
-    to: http://www.ontobee.org/browser/rdf.php?o=PORO&iri=http://purl.obolibrary.org/obo/PORO_0000000
+  - from: /about/PORO_0000017
+    to: https://www.ebi.ac.uk/ols/ontologies/poro/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPORO_0000017
 
 - prefix: /
   replacement: https://raw.githubusercontent.com/obophenotype/porifera-ontology/master/

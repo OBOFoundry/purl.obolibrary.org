@@ -7,7 +7,7 @@ products:
 - ceph.owl: https://raw.githubusercontent.com/obophenotype/cephalopod-ontology/master/ceph.owl
 - ceph.obo: https://raw.githubusercontent.com/obophenotype/cephalopod-ontology/master/ceph.obo
 
-term_browser: ols
+term_browser: custom
 example_terms:
 - CEPH_0000256
 

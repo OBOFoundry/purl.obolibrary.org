@@ -3,7 +3,7 @@
 idspace: DOID
 base_url: /obo/doid
 
-base_redirect: https://github.com/DiseaseOntology/HumanDiseaseOntology/tree/master/
+base_redirect: https://github.com/DiseaseOntology/HumanDiseaseOntology/tree/master/src/ontology/
 
 products:
 - doid.owl: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid.owl
@@ -14,9 +14,6 @@ example_terms:
 - DOID_4
 
 entries:
-
-- exact: /HumanDO.obo
-  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid-non-classified.obo
 
 - exact: /obo/ext.owl
   replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/ext.owl

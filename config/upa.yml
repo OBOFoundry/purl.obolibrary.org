@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/upa
+
+idspace: UPA
+base_url: /obo/upa
+
+products:
+- upa.owl: https://raw.githubusercontent.com/geneontology/unipathway/master/upa.owl
+- upa.obo: https://raw.githubusercontent.com/geneontology/unipathway/master/upa.obo
+
+term_browser: ontobee
+example_terms:
+- upa_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/geneontology/unipathway/v
+
+- prefix: /tracker/
+  replacement: https://github.com/geneontology/unipathway/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/UPA?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/geneontology/unipathway/master/

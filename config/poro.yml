@@ -21,7 +21,7 @@ entries:
   replacement: https://raw.githubusercontent.com/obophenotype/porifera-ontology/v
 
 - prefix: /about/
-  replacement: http://www.ontobee.org/browser/rdf.php?o=PORO&iri=http://purl.obolibrary.org/obo/
+  replacement: https://www.ebi.ac.uk/ols/ontologies/poro/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2F
   tests:
   - from: /about/PORO_0000017
     to: https://www.ebi.ac.uk/ols/ontologies/poro/terms?iri=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FPORO_0000017

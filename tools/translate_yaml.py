@@ -319,7 +319,7 @@ def translate_terms(yamldoc, idspace):
     return 'RedirectMatch seeother "^/obo/%s_(\d+)$" "%s"' % (idspace, replacement)
   if 'term_browser' in yamldoc and yamldoc['term_browser'].strip().lower() == 'ols':
     replacement = ('https://www.ebi.ac.uk/ols/ontologies/%s/terms?iri=http://purl.obolibrary.org/obo/%s_$1'
-                   % (idspace, idspace))
+                   % (idspace.lower(), idspace))
     return 'RedirectMatch seeother "^/obo/%s_(\d+)$" "%s"' % (idspace, replacement)
 
 

@@ -13,7 +13,7 @@ example_terms:
 entries:
 
 - exact: /dev/omrse.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/OMRSE/devel/omrse.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/OMRSE/devel/omrse/omrse.owl
 
 - exact: /dao.owl
   replacement: https://raw.githubusercontent.com/ufbmi/demo-app-ontology/master/DAO.owl

@@ -52,6 +52,14 @@ entries:
   - from: /CHEBI_15377
     to: http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15377
 
+# Term redirects for HP
+- regex: ^/obo/HP_(\d+)$
+  replacement: https://hpo.jax.org/app/browse/term/HP:$1
+  status: see other
+  tests:
+  - from: /HP_0002088
+    to: https://hpo.jax.org/app/browse/term/HP:0002088
+
 # Term redirects for FLOPO
 - regex: ^/obo/FLOPO_(\d+)$
   replacement: http://aber-owl.net/ontology/FLOPO#!http://purl.obolibrary.org/obo/FLOPO_$1

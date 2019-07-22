@@ -10,9 +10,7 @@ products:
 - hp.obo: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/hp.obo
 - hp.json: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/hp.json
 
-term_browser: ontobee
-example_terms:
-- HP_0000001
+term_browser: custom
 
 entries:
 - prefix: /uberpheno/

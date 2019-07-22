@@ -141,6 +141,7 @@ def main():
           "For more details, see their corresponding TSV files in '{}'.\n"
           "To re-run tests for just those idspaces, use the script '{}'."
           .format(', '.join(failures), args.output, __file__))
+    sys.exit(1)
 
 
 def process_product(i, product):

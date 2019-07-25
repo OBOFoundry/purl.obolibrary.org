@@ -3,7 +3,7 @@
 # but we want a top-level dpo.owl PURL.
 # See also the fbcv.yml file.
 
-idspace: dpo
+idspace: DPO
 base_url: /obo/dpo
 
 products:

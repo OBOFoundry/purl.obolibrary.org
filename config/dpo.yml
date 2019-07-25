@@ -1,5 +1,5 @@
 # PURL configuration for http://purl.obolibrary.org/obo/dpo
-# Note that for historical reasons DPO uses the FBdv IDSPACE,
+# Note that for historical reasons DPO uses the FBcv IDSPACE,
 # but we want a top-level dpo.owl PURL.
 # See also the fbcv.yml file.
 
@@ -7,6 +7,22 @@ idspace: DPO
 base_url: /obo/dpo
 
 products:
-- dpo.owl: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/dpo.owl
+- dpo.owl: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/dpo.owl
+- dpo.obo: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/dpo.obo
 
 term_browser: ontobee
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/v
+
+- prefix: /tracker/
+  replacement: https://github.com/FlyBase/drosophila-phenotype-ontology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/dpo?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/

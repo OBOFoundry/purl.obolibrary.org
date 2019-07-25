@@ -11,8 +11,6 @@ products:
 - dpo.obo: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/dpo.obo
 
 term_browser: ontobee
-example_terms:
-- FBcv_0000408
 
 entries:
 

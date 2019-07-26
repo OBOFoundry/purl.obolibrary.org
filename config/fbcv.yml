@@ -29,34 +29,34 @@ entries:
 - prefix: /wiki/
   replacement: https://github.com/FlyBase/flybase-controlled-vocabulary/wiki
 
-- prefix: /releases/2013-03-08/
+- prefix: /2013-03-08/
   replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/2013-03-08/
 
-- prefix: /releases/2013-07-11/
+- prefix: /2013-07-11/
   replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/2013-07-11/
 
-- prefix: /releases/2013-08-23/
+- prefix: /2013-08-23/
   replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/2013-08-23/
 
-- prefix: /releases/2014-02-27/
+- prefix: /2014-02-27/
   replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/2014-02-27/
 
-- prefix: /releases/2014-03-28/
+- prefix: /2014-03-28/
   replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/2014-03-28/
 
-- prefix: /releases/2014-09-23/
+- prefix: /2014-09-23/
   replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/2014-09-23/
 
-- prefix: /releases/2015-11-19/
+- prefix: /2015-11-19/
   replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/2015-11-19/
 
-- prefix: /releases/2016-04-08/
+- prefix: /2016-04-08/
   replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/2016-04-08/
 
-- prefix: /releases/2016-04-08a/
+- prefix: /2016-04-08a/
   replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/2016-04-08a/
 
-- prefix: /releases/2016-10-26/
+- prefix: /2016-10-26/
   replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/2016-10-26/
 
 - prefix: /releases/2016-10-27/

@@ -59,13 +59,13 @@ entries:
 - prefix: /2016-10-26/
   replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/2016-10-26/
 
-- prefix: /releases/2016-10-27/
+- prefix: /2016-10-27/
   replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/2016-10-27/
 
-- prefix: /releases/2017-07-05/
+- prefix: /2017-07-05/
   replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/2017-07-05/
 
-- prefix: /releases/2018-01-03/
+- prefix: /2018-01-03/
   replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/2018-01-03/
  
 - prefix: /releases/

@@ -4,9 +4,24 @@ idspace: WBls
 base_url: /obo/wbls
 
 products:
-- wbls.owl: http://ontologies.berkeleybop.org/wbls.owl
-- wbls.obo: http://ontologies.berkeleybop.org/wbls.obo
+- wbls.owl: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/wbls.owl
+- wbls.obo: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/wbls.obo
 
 term_browser: ontobee
 example_terms:
 - WBls_0000075
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/v
+
+- prefix: /tracker/
+  replacement: https://github.com/obophenotype/c-elegans-development-ontology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/WBls?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/obophenotype/c-elegans-development-ontology/master/

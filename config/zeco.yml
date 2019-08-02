@@ -6,6 +6,7 @@ base_url: /obo/zeco
 products:
 - zeco.owl: https://raw.githubusercontent.com/ybradford/zebrafish-experimental-conditions-ontology/master/zeco.owl
 - zeco.obo: https://raw.githubusercontent.com/ybradford/zebrafish-experimental-conditions-ontology/master/zeco.obo
+- zeco.json: https://raw.githubusercontent.com/ybradford/zebrafish-experimental-conditions-ontology/master/zeco.json
 
 term_browser: ontobee
 example_terms:

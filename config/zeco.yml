@@ -14,11 +14,11 @@ example_terms:
 entries:
 
 - prefix: /releases/
-  replacement: https://raw.githubusercontent.com/ybradford/zeco/master/v
+  replacement: https://raw.githubusercontent.com/ybradford/zebrafish-experimental-conditions-ontology/master/v
   
 - prefix: /tracker/
-  replacement: https://github.com/ybradford/zeco/issues
+  replacement: https://github.com/ybradford/zebrafish-experimental-conditions-ontology/issues
 
 ## generic fall-through, serve direct from github by default
 - prefix: /
-  replacement: https://raw.githubusercontent.com/ybradford/zeco/master/
+  replacement: https://raw.githubusercontent.com/ybradford/zebrafish-experimental-conditions-ontology/master/

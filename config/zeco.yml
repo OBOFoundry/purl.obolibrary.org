@@ -15,3 +15,10 @@ entries:
 
 - prefix: /releases/
   replacement: https://raw.githubusercontent.com/ybradford/zeco/master/v
+  
+- prefix: /tracker/
+  replacement: https://github.com/ybradford/zeco/issues
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/ybradford/zeco/master/

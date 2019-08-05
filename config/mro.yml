@@ -13,14 +13,8 @@ example_terms:
 - MRO_0000012
 
 entries:
-- prefix: /releases/
-  replacement: https://raw.githubusercontent.com/IEDB/MRO/v
-
-- exact: /2016-12-15/mro.owl
-  replacement: https://raw.githubusercontent.com/IEDB/MRO/v2016-12-15/mro.owl
-  
-- exact: /2016-01-07/mro.owl
-  replacement: https://raw.githubusercontent.com/IEDB/MRO/v2016-01-07/mro.owl
+- prefix: /20
+  replacement: https://raw.githubusercontent.com/IEDB/MRO/v20
   
 - prefix: /
   replacement: https://raw.githubusercontent.com/IEDB/MRO/master/

@@ -15,6 +15,9 @@ example_terms:
 entries:
 - prefix: /20
   replacement: https://raw.githubusercontent.com/IEDB/MRO/v20
+  tests:
+  - from: /2016-01-07/mro.owl
+	  to: https://raw.githubusercontent.com/IEDB/MRO/v2016-01-07/mro.owl
   
 - prefix: /
   replacement: https://raw.githubusercontent.com/IEDB/MRO/master/

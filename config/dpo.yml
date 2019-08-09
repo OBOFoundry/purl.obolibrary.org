@@ -9,6 +9,7 @@ base_url: /obo/dpo
 products:
 - dpo.owl: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/dpo.owl
 - dpo.obo: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/dpo.obo
+- dpo.json: https://raw.githubusercontent.com/FlyBase/drosophila-phenotype-ontology/master/dpo.json
 
 term_browser: ontobee
 

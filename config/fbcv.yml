@@ -8,6 +8,7 @@ base_redirect: https://github.com/FlyBase/flybase-controlled-vocabulary/wiki
 products:
 - fbcv.owl: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/fbcv.owl
 - fbcv.obo: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/fbcv.obo
+- fbcv.json: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/fbcv.json
 
 term_browser: ontobee
 example_terms:

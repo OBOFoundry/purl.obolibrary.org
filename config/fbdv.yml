@@ -15,6 +15,9 @@ example_terms:
 - FBdv_00005370
 
 entries:
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/v
+
 - exact: /tracker
   replacement: https://github.com/FlyBase/drosophila-developmental-ontology/issues
 

@@ -3,11 +3,12 @@
 idspace: DOID
 base_url: /obo/doid
 
-base_redirect: https://github.com/DiseaseOntology/HumanDiseaseOntology/tree/master/src/ontology/
+base_redirect: https://github.com/DiseaseOntology/HumanDiseaseOntology
 
 products:
 - doid.owl: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid.owl
 - doid.obo: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid.obo
+- doid.json: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid.json
 
 term_browser: ontobee
 example_terms:
@@ -15,14 +16,20 @@ example_terms:
 
 entries:
 
+- exact: /
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/
+  tests:
+  - from: /HumanDO.owl
+    to: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/HumanDO.owl
+
 - exact: /obo/ext.owl
   replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/ext.owl
 
 - prefix: /imports/
   replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/imports/
   tests:
-  - from: /imports/relations.owl
-    to: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/imports/relations.owl
+  - from: /imports/ro_import.owl
+    to: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/imports/ro_import.owl
 
 - prefix: /releases/
   replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/releases/

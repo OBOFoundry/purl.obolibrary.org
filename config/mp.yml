@@ -4,23 +4,27 @@ idspace: MP
 base_url: /obo/mp
 
 products:
-- mp.owl: http://ontologies.berkeleybop.org/mp.owl
-- mp.obo: http://ontologies.berkeleybop.org/mp.obo
+- mp.owl: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/download/current/mp.owl
+- mp.obo: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/download/current/mp.obo
+- mp.json: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/download/current/mp.json
 
 term_browser: ontobee
 example_terms:
 - MP_0000001
 
 entries:
-- exact: /mp-base.owl
-  replacement: http://ontologies.berkeleybop.org/mp/mp-base.owl
-
 - prefix: /about/
   replacement: http://www.ebi.ac.uk/ontology-lookup/browse.do?ontName=MP&termId=http://purl.obolibrary.org/obo/
   tests:
   - from: /about/MP_0000001
     to: http://www.ebi.ac.uk/ontology-lookup/browse.do?ontName=MP&termId=http://purl.obolibrary.org/obo/MP_0000001
 
-- prefix: /
-  replacement: https://raw.githubusercontent.com/obophenotype/mammalian-phenotype-ontology/master/src/ontology/
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/obophenotype/mammalian-phenotype-ontology/v
 
+- prefix: /tracker/
+  replacement: https://github.com/obophenotype/mammalian-phenotype-ontology/issues
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/download/current/

@@ -4,7 +4,7 @@ idspace: OBI
 base_url: /obo/obi
 
 products:
-- obi.owl: https://raw.githubusercontent.com/obi-ontology/obi/v2019-06-05/obi.owl
+- obi.owl: https://raw.githubusercontent.com/obi-ontology/obi/v2019-08-06/obi.owl
 - obi.obo: http://ontologies.berkeleybop.org/obi.obo
 
 term_browser: ontobee
@@ -16,7 +16,7 @@ entries:
 ### Current Releases
 
 - exact: /obi_core.owl
-  replacement: https://raw.githubusercontent.com/obi-ontology/obi/v2019-06-05/obi_core.owl
+  replacement: https://raw.githubusercontent.com/obi-ontology/obi/v2019-08-06/obi_core.owl
 
 - exact: /obi_IEDBview.owl
   replacement: https://raw.githubusercontent.com/obi-ontology/obi/v2017-02-22/obi_iedb.owl
@@ -191,6 +191,12 @@ entries:
 
 - exact: /2019-06-05/obi_core.owl
   replacement: https://raw.githubusercontent.com/obi-ontology/obi/v2019-06-05/obi_core.owl
+
+- exact: /2019-08-06/obi.owl
+  replacement: https://raw.githubusercontent.com/obi-ontology/obi/v2019-08-06/obi.owl
+
+- exact: /2019-08-06/obi_core.owl
+  replacement: https://raw.githubusercontent.com/obi-ontology/obi/v2019-08-06/obi_core.owl
 
 ### Web Service Releases
 

@@ -34,7 +34,7 @@ entries:
   replacement: http://svn.code.sf.net/p/obi/code/releases/2013-10-25/obi_FGED.owl
 
 - exact: /obi.obo
-	replacement: https://raw.githubusercontent.com/obi-ontology/obi/master/obi.obo
+  replacement: https://raw.githubusercontent.com/obi-ontology/obi/master/obi.obo
 
 ### Dated OBI Releases
 

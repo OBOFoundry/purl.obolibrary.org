@@ -30,6 +30,9 @@ entries:
 - exact: /releases/2018-06-04/ornaseq.owl
   replacement: https://raw.githubusercontent.com/safisher/ornaseq/v1.0/ornaseq.owl
 
+- exact: /releases/2018-06-04/ornaseq.obo
+  replacement: https://raw.githubusercontent.com/safisher/ornaseq/v1.0/ornaseq.obo
+
 # Misc
 
 - prefix: /tracker/

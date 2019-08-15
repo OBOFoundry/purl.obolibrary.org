@@ -4,8 +4,8 @@ idspace: ORNASEQ
 base_url: /obo/ornaseq
 
 products:
-- ornaseq.owl: https://raw.githubusercontent.com/safisher/ornaseq/master/ornaseq.owl
-- ornaseq.obo: https://raw.githubusercontent.com/safisher/ornaseq/master/ornaseq.obo
+- ornaseq.owl: https://raw.githubusercontent.com/safisher/ornaseq/2019-07-08/ornaseq.owl
+- ornaseq.obo: https://raw.githubusercontent.com/safisher/ornaseq/2019-07-08/ornaseq.obo
 
 term_browser: ontobee
 example_terms:
@@ -15,18 +15,12 @@ example_terms:
 entries:
 
 # Releases
-- exact: /2019-07-08/ornaseq.owl
+- exact: /releases/2019-07-08/ornaseq.owl
   replacement: https://raw.githubusercontent.com/safisher/ornaseq/2019-07-08/ornaseq.owl
 
-- exact: /2019-07-08/ornaseq.obo
+- exact: /releases/2019-07-08/ornaseq.obo
   replacement: https://raw.githubusercontent.com/safisher/ornaseq/2019-07-08/ornaseq.obo
 
-- exact: /2018-07-13/ornaseq.owl
-  replacement: https://raw.githubusercontent.com/safisher/ornaseq/v1.0/ornaseq.owl
-
-- exact: /2018-07-13/ornaseq.obo
-  replacement: https://raw.githubusercontent.com/safisher/ornaseq/v1.0/ornaseq.obo
-  
 - exact: /releases/2018-06-04/ornaseq.owl
   replacement: https://raw.githubusercontent.com/safisher/ornaseq/v1.0/ornaseq.owl
 

@@ -16,12 +16,6 @@ example_terms:
 
 entries:
 
-- exact: /
-  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/
-  tests:
-  - from: /HumanDO.owl
-    to: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/HumanDO.owl
-
 - exact: /obo/ext.owl
   replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/ext.owl
 
@@ -36,3 +30,9 @@ entries:
   tests:
   - from: /releases/2017-01-27/doid.owl
     to: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/releases/2017-01-27/doid.owl
+
+- prefix: /
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/
+  tests:
+  - from: /HumanDO.owl
+    to: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/HumanDO.owl

@@ -1,0 +1,12 @@
+# PURL configuration for http://purl.obolibrary.org/obo/bco
+
+idspace: NOMEN
+base_url: /obo/nomen
+
+products:
+- nomen.owl: https://raw.githubusercontent.com/SpeciesFileGroup/nomen/master/src/ontology/nomen.owl
+
+term_browser: ontobee
+
+example_terms:
+- NOMEN_0000272

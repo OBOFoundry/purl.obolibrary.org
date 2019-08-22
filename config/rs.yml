@@ -5,7 +5,7 @@ base_url: /obo/rs
 
 products:
 - rs.owl: http://ontologies.berkeleybop.org/rs.owl
-- rs.obo: ftp://rgd.mcw.edu/pub/ontology/rat_strain/rat_strain_20121106_v4.6.obo
+- rs.obo: ftp://ftp.rgd.mcw.edu/pub/ontology/rat_strain/rat_strain.obo
 
 term_browser: ontobee
 example_terms:

@@ -1,0 +1,17 @@
+# PURL configuration for http://purl.obolibrary.org/obo/rnao
+
+idspace: RNAO
+base_url: /obo/rnao
+
+products:
+- rnao.owl: https://raw.githubusercontent.com/BGSU-RNA/rnao/master/rnao.owl
+- rnao.obo: https://raw.githubusercontent.com/BGSU-RNA/rnao/master/rnao.obo
+
+term_browser: custom
+
+entries:
+- exact: /tracker
+  replacement: https://github.com/BGSU-RNA/rnao/issues
+
+- exact: /browser
+  replacement: http://bgsu-rna.github.io/rnao/

@@ -4,7 +4,7 @@ idspace: OGSF
 base_url: /obo/ogsf
 
 products:
-- ogsf.owl: https://ogsf.googlecode.com/svn/trunk/src/ogsf.owl
+- ogsf.owl: https://raw.githubusercontent.com/linikujp/OGSF/master/src/ogsf-merged.owl
 
 term_browser: ontobee
 example_terms:

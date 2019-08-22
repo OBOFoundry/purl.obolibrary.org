@@ -8,10 +8,9 @@ base_redirect: https://github.com/obophenotype/human-phenotype-ontology
 products:
 - hp.owl: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/hp.owl
 - hp.obo: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/hp.obo
+- hp.json: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/hp.json
 
-term_browser: ontobee
-example_terms:
-- HP_0000001
+term_browser: custom
 
 entries:
 - prefix: /uberpheno/
@@ -30,5 +29,5 @@ entries:
     to: http://www.ontobee.org/browser/rdf.php?o=HP&iri=http://purl.obolibrary.org/obo/HP_0000001
 
 - prefix: /
-  replacement: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src/ontology/
+  replacement: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/
 

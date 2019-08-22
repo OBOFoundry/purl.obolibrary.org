@@ -6,8 +6,9 @@ base_url: /obo/fbcv
 base_redirect: https://github.com/FlyBase/flybase-controlled-vocabulary/wiki
 
 products:
-- fbcv.owl: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/fbcv.owl
-- fbcv.obo: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/fbcv.obo
+- fbcv.owl: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/fbcv.owl
+- fbcv.obo: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/fbcv.obo
+- fbcv.json: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/fbcv.json
 
 term_browser: ontobee
 example_terms:
@@ -21,10 +22,7 @@ entries:
   replacement: https://github.com/FlyBase/flybase-controlled-vocabulary/wiki
 
 - exact: /fbcv-flybase.obo
-  replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/fbcv-flybase.obo
-
-- exact: /releases/
-  replacement: https://github.com/FlyBase/flybase-controlled-vocabulary/tree/master/releases
+  replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/fbcv-flybase.obo
 
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=FBcv&iri=http://purl.obolibrary.org/obo/
@@ -32,6 +30,47 @@ entries:
 - prefix: /wiki/
   replacement: https://github.com/FlyBase/flybase-controlled-vocabulary/wiki
 
-- prefix: /
-  replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/
+- prefix: /2013-03-08/
+  replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/2013-03-08/
 
+- prefix: /2013-07-11/
+  replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/2013-07-11/
+
+- prefix: /2013-08-23/
+  replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/2013-08-23/
+
+- prefix: /2014-02-27/
+  replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/2014-02-27/
+
+- prefix: /2014-03-28/
+  replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/2014-03-28/
+
+- prefix: /2014-09-23/
+  replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/2014-09-23/
+
+- prefix: /2015-11-19/
+  replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/2015-11-19/
+
+- prefix: /2016-04-08/
+  replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/2016-04-08/
+
+- prefix: /2016-04-08a/
+  replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/2016-04-08a/
+
+- prefix: /2016-10-26/
+  replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/2016-10-26/
+
+- prefix: /2016-10-27/
+  replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/2016-10-27/
+
+- prefix: /2017-07-05/
+  replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/2017-07-05/
+
+- prefix: /2018-01-03/
+  replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/2018-01-03/
+ 
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/v
+
+- prefix: /
+  replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/

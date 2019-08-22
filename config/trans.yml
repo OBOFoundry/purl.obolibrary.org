@@ -7,7 +7,7 @@ base_redirect: https://github.com/DiseaseOntology/PathogenTransmissionOntology/t
 
 products:
 - trans.owl: https://raw.githubusercontent.com/DiseaseOntology/PathogenTransmissionOntology/master/src/ontology/trans.owl
-- trans.obo: https://raw.githubusercontent.com/DiseaseOntology/PathogenTransmissionOntology/master/src/ontology/transmission_process.obo
+- trans.obo: https://raw.githubusercontent.com/DiseaseOntology/PathogenTransmissionOntology/master/src/ontology/trans.obo
 
 term_browser: ontobee
 example_terms:

@@ -31,13 +31,16 @@ entries:
 # ontology metadata
 ### release version
 - exact: /ontology-metadata.owl
-  replacement: https://raw.githubusercontent.com/information-artifact-ontology/ontology-metadata/v2019-01-24/ontology-metadata.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/ontology-metadata/v2019-08-26/ontology-metadata.owl
 
 ### development version
 - exact: /dev/ontology-metadata.owl
   replacement: https://raw.githubusercontent.com/information-artifact-ontology/ontology-metadata/master/src/ontology/ontology-metadata-edit.owl
 
 # ontology metadata versions (from 2019)
+- exact: /2019-08-26/ontology-metadata.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/ontology-metadata/v2019-08-26/ontology-metadata.owl
+
 - exact: /2019-01-24/ontology-metadata.owl
   replacement: https://raw.githubusercontent.com/information-artifact-ontology/ontology-metadata/v2019-01-24/ontology-metadata.owl
 

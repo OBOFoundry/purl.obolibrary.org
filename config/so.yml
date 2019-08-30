@@ -14,6 +14,8 @@ example_terms:
 entries:
 - prefix: /so-simple.obo
   replacement: https://raw.githubusercontent.com/The-Sequence-Ontology/SO-Ontologies/master/so-simple.obo
+- prefix: /subsets/
+  replacement: https://raw.githubusercontent.com/The-Sequence-Ontology/SO-Ontologies/master/subsets/
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=SO&iri=http://purl.obolibrary.org/obo/
   tests:

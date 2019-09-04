@@ -1,0 +1,11 @@
+# PURL configuration for http://purl.obolibrary.org/obo/labo
+
+idspace: LABO
+base_url: /obo/labo
+
+products:
+- labo.owl: https://raw.githubusercontent.com/OpenLHS/LABO/master/Releases/2019-08-29/LABO.owl
+
+term_browser: ontobee
+example_terms:
+- LABO_0000007

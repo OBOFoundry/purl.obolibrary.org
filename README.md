@@ -246,4 +246,4 @@ The `make safe-update` task will check [Travis-CI](https://travis-ci.org/OBOFoun
 
 ## Copyright
 
-The copyright for the OBO PURL code and documentation belongs to the respective authors. The code is distributed under a [BSD3 license](https://github.com/ontodev/robot/blob/master/LICENSE.txt).
+The copyright for the OBO PURL code and documentation belongs to the respective authors. The code is distributed under a [BSD3 license](https://github.com/OBOFoundry/purl.obolibrary.org/blob/master/LICENSE).

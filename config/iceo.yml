@@ -1,0 +1,11 @@
+# PURL configuration for http://purl.obolibrary.org/obo/iceo
+
+idspace: ICEO
+base_url: /obo/iceo
+
+products:
+- iceo.owl: https://raw.githubusercontent.com/ontoice/ICEO/master/src/iceo_merged.owl
+
+term_browser: ontobee
+example_terms:
+- ICEO_0000143

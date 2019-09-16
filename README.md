@@ -242,3 +242,8 @@ You can re-run Ansible as you make changes. Once the system is running, it will 
     export PRODUCTION=url.ontodev.org; make clean test-production
 
 The `make safe-update` task will check [Travis-CI](https://travis-ci.org/OBOFoundry/purl.obolibrary.org) to ensure that the latest build on the master branch passed all automated tests, and that it is newer than the last time `safe-update` completed. Then it will pull from the Git repository and rebuild the site. This *should* be safe for a `cron` task to synchronize PURLs with the repository.
+
+
+## Copyright
+
+The copyright for the OBO PURL code and documentation belongs to the respective authors. The code is distributed under a [BSD3 license](https://github.com/OBOFoundry/purl.obolibrary.org/blob/master/LICENSE).

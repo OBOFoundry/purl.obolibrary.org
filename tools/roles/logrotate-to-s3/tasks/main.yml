@@ -34,7 +34,7 @@
     dest: "/etc/logrotate.d/{{ target_service }}"
     regexp: "logrotate-to-s3.s3cmd"
     insertafter: "postrotate"
-    line: '                UPLOAD_CMD="s3cmd -c /opt/credentials/logrotate-to-s3.s3cmd --mime-type=text/plain put" NAME_PREFIX="{{ var_name_prefix }}" S3_PATH="{{ var_s3_path }}" /opt/bin/logrotate-to-s3.sh go-service-logs "$@"'
+    line: '                UPLOAD_CMD="s3cmd -c /opt/credentials/logrotate-to-s3.s3cmd --mime-type=text/plain put" NAME_PREFIX="{{ var_name_prefix }}" S3_PATH="{{ var_s3_path }}" /opt/bin/logrotate-to-s3.sh obo-service-logs "$@"'
 - name: Try and remove sharedscripts
   lineinfile:
     dest: "/etc/logrotate.d/{{ target_service }}"

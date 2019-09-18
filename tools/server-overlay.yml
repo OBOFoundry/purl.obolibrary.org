@@ -11,5 +11,5 @@
     - role: logrotate-to-s3
       var_s3_path: "obo/purl"
       var_name_prefix: ""
-      var_s3_push_credentials: "/home/sjcarbon/local/share/secrets/bbop/aws/s3/.s3cfg.go-push"
+      var_s3_push_credentials: "/home/sjcarbon/local/share/secrets/bbop/aws/s3/.s3cfg.obo-service-log-push"
       target_service: "apache2"

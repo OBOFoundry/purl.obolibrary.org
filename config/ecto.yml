@@ -6,6 +6,7 @@ base_url: /obo/ecto
 products:
 - ecto.owl: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/ecto.owl
 - ecto.obo: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/ecto.obo
+- ecto.json: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/ecto.json
 
 term_browser: ontobee
 example_terms:

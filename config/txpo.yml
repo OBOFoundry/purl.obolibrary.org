@@ -1,0 +1,11 @@
+# PURL configuration for http://purl.obolibrary.org/obo/txpo
+
+idspace: TXPO
+base_url: /obo/txpo
+
+products:
+- txpo.owl: https://raw.githubusercontent.com/txpo-ontology/TXPO/master/txpo.owl
+
+term_browser: ontobee
+example_terms:
+- TXPO_0002209

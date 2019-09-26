@@ -10,17 +10,18 @@ products:
 # - pr.owl: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/pro_reasoned.owl
 - pr.owl: https://proconsortium.org/download/current/pro_reasoned.owl
 - pr.obo: https://proconsortium.org/download/current/pro_reasoned.obo
+- pr.owl.gz: https://proconsortium.org/download/current/pro_reasoned.owl.gz
 
 term_browser: custom
 
 entries:
 
-- exact: /pr.owl
+# - exact: /pr.owl
 # replacement: ftp://ftp.proconsortium.org/databases/ontology/pro_obo/pro_reasoned.owl
-  replacement: https://proconsortium.org/download/current/pro_reasoned.owl
+#  replacement: https://proconsortium.org/download/current/pro_reasoned.owl
   
-- exact: /pr.owl.gz
-  replacement: https://proconsortium.org/download/current/pro_reasoned.owl.gz
+# - exact: /pr.owl.gz
+#  replacement: https://proconsortium.org/download/current/pro_reasoned.owl.gz
   
 ##### PURLs using major.minor style to indicate the release; this is the versioning format used by PRO #####
 # major releases prior to release 43.0; no reasoned version produced so default to non-reasoned; no OWL produced

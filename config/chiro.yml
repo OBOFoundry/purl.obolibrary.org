@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/chiro
+
+idspace: CHIRO
+base_url: /obo/chiro
+
+products:
+- chiro.owl: https://raw.githubusercontent.com/obophenotype/chiro/master/chiro.owl
+- chiro.obo: https://raw.githubusercontent.com/obophenotype/chiro/master/chiro.obo
+
+term_browser: ontobee
+example_terms:
+- CHIRO_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/obophenotype/chiro/v
+
+- prefix: /tracker/
+  replacement: https://github.com/obophenotype/chiro/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/CHIRO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/obophenotype/chiro/master/

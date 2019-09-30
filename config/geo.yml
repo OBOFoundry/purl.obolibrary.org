@@ -451,3 +451,69 @@ entries:
   
 - exact: /dev/ca-admin-level-four.owl
   replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/CA/CA-admin-level-4.owl
+
+- exact: /dev/gn-admin-level-one.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/GN/GN-admin-level-1.owl
+  
+  - exact: /dev/gn-admin-level-two.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/GN/GN-admin-level-2.owl
+  
+  - exact: /dev/gn-admin-level-three.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/GN/GN-admin-level-3.owl
+  
+  - exact: /dev/gn-admin-level-four.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/GN/GN-admin-level-4.owl
+  
+  - exact: /dev/lr-admin-level-one.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/LR/LR-admin-level-1.owl
+  
+   - exact: /dev/lr-admin-level-two.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/LR/LR-admin-level-2.owl
+  
+   - exact: /dev/lr-admin-level-three.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/LR/LR-admin-level-3.owl
+  
+ - exact: /dev/ml-admin-level-one.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/ML/ML-admin-level-1.owl
+  
+ - exact: /dev/ml-admin-level-two.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/ML/ML-admin-level-2.owl
+  
+  - exact: /dev/ml-admin-level-three.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/ML/ML-admin-level-3.owl
+  
+ - exact: /dev/ml-admin-level-four.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/ML/ML-admin-level-4.owl
+  
+ - exact: /dev/ng-admin-level-one.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/NG/NG-admin-level-1.owl
+  
+   - exact: /dev/ng-admin-level-two.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/NG/NG-admin-level-2.owl
+  
+   - exact: /dev/ng-admin-level-three.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/NG/NG-admin-level-3.owl
+  
+   - exact: /dev/sl-admin-level-one.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/SL/SL-admin-level-1.owl
+  
+   - exact: /dev/sl-admin-level-two.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/SL/SL-admin-level-2.owl
+
+   - exact: /dev/sl-admin-level-three.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/SL/SL-admin-level-3.owl
+
+   - exact: /dev/sl-admin-level-four.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/SL/SL-admin-level-4.owl
+
+- exact: /dev/sn-admin-level-one.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/SN/SN-admin-level-1.owl
+
+- exact: /dev/sn-admin-level-two.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/SN/SN-admin-level-2.owl
+
+- exact: /dev/sn-admin-level-three.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/SN/SN-admin-level-3.owl
+
+- exact: /dev/sn-admin-level-four.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/SN/SN-admin-level-4.owl

@@ -4,10 +4,10 @@ idspace: CHEBI
 base_url: /obo/chebi
 
 products:
-- chebi.owl: ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.owl
-- chebi.obo: ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.obo
-- chebi.owl.gz: ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.owl.gz
-- chebi.obo.gz: ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.obo.gz
+- chebi.owl: http://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.owl
+- chebi.obo: http://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.obo
+- chebi.owl.gz: http://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.owl.gz
+- chebi.obo.gz: http://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.obo.gz
 
 term_browser: custom
 
@@ -19,13 +19,13 @@ entries:
   replacement: http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI%3A24431
 
 - exact: /internal/chebi-disjoints.owl
-  replacement: ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi-disjoints.owl
+  replacement: http://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi-disjoints.owl
 
 - exact: /internal/chebi-in-bfo.owl
-  replacement: ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi-in-bfo.owl
+  replacement: http://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi-in-bfo.owl
 
 - exact: /internal/chebi.owl
-  replacement: ftp://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.owl
+  replacement: http://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.owl
 
 - prefix: /about/
   replacement: http://www.ebi.ac.uk/chebi/searchId.do?chebiId=

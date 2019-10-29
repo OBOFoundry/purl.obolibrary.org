@@ -151,7 +151,7 @@ entries:
   replacement: https://raw.githubusercontent.com/BFO-ontology/BFO/v2019-08-26/bfo_classes_only.obo
 
 - prefix: /2010-05-25/
-  replacement: https://github.com/BFO-ontology/BFO/tree/releases/owl-ruttenberg-2010-05-25
+  replacement: https://raw.githubusercontent.com/BFO-ontology/BFO/releases/owl-ruttenberg-2010-05-25/  
 
 - prefix: /axiom/
   replacement: https://github.com/BFO-ontology/BFO/master/src/ontology/owl-group/axiom.html#

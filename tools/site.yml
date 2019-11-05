@@ -3,7 +3,8 @@
 
 - hosts: all
   user: ubuntu
-  sudo: True
+  become: True
+  become_method: sudo
   gather_facts: True
 
   vars:
@@ -20,6 +21,9 @@
       service: name=apache2 state=restarted
 
   tasks:
+    - name: Update apt-get cache
+      shell: "apt-get update"
+
     - name: Install system-wide packages (not Travis)
       when: mode != "travis"
       apt: pkg={{ item }} state=installed
@@ -36,6 +40,9 @@
 
     - name: Install PyYAML
       pip: name=PyYAML executable=pip3
+
+    - name: Install pathlib2 for jsonschema
+      pip: name=pathlib2 executable=pip3
 
     - name: Install jsonschema
       pip: name=jsonschema executable=pip3

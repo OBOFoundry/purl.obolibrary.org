@@ -6,10 +6,10 @@ base_url: /obo/fbbt
 base_redirect:  https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/wiki
 
 products:
-- fbbt.owl: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/fbbt.owl
-- fbbt.obo: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/fbbt.obo
+- fbbt.owl: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt.owl
+- fbbt.obo: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt.obo
 - FBbt_RO.owl: http://purl.obolibrary.org/obo/fbbt/2011-09-06/FBbt_helper_relations.owl
-- fbbt.json: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/fbbt.json
+- fbbt.json: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt.json
 
 
 term_browser: ontobee

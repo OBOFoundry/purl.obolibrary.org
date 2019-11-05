@@ -19,4 +19,4 @@ entries:
   replacement: https://raw.githubusercontent.com/ufbmi/demo-app-ontology/master/DAO.owl
 
 - exact: /dev/language.owl
-  replacement: http://purl.obolibrary.org/obo/omrse/dev/language.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/OMRSE/devel/omrse/language/omrse-language.owl

@@ -2,8 +2,9 @@
 # This is an Ansible playbook specifying the instructions for deploying the purl.obolibrary.org site.
 
 - hosts: all
-  user: ubuntu
-  sudo: True
+  become: yes
+  become_user: ubuntu
+  become_method: sudo
   gather_facts: True
 
   vars:
@@ -20,9 +21,6 @@
       service: name=apache2 state=restarted
 
   tasks:
-    - name: Update apt-get cache
-      shell: "apt-get update"
-
     - name: Install system-wide packages (not Travis)
       when: mode != "travis"
       apt: pkg={{ item }} state=installed

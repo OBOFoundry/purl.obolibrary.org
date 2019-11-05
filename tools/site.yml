@@ -2,8 +2,8 @@
 # This is an Ansible playbook specifying the instructions for deploying the purl.obolibrary.org site.
 
 - hosts: all
+  user: ubuntu
   become: yes
-  become_user: ubuntu
   become_method: sudo
   gather_facts: True
 

@@ -3,8 +3,7 @@
 
 - hosts: all
   user: ubuntu
-  become: yes
-  become_method: sudo
+  sudo: True
   gather_facts: True
 
   vars:
@@ -37,9 +36,6 @@
 
     - name: Install PyYAML
       pip: name=PyYAML executable=pip3
- 
-    - name: Install pathlib2 for jsonschema
-      pip: name=pathlib2 executable=pip3
 
     - name: Install jsonschema
       pip: name=jsonschema executable=pip3

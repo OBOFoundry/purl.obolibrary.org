@@ -5,7 +5,7 @@ base_url: /obo/obi
 
 products:
 - obi.owl: https://raw.githubusercontent.com/obi-ontology/obi/v2019-08-06/obi.owl
-- obi.obo: http://ontologies.berkeleybop.org/obi.obo
+- obi.obo: https://raw.githubusercontent.com/obi-ontology/obi/master/obi.obo
 
 term_browser: ontobee
 example_terms:
@@ -33,9 +33,8 @@ entries:
 - exact: /obi_FGED.owl
   replacement: http://svn.code.sf.net/p/obi/code/releases/2013-10-25/obi_FGED.owl
 
-# TODO: This is out of date and in the wrong place.
 - exact: /obi.obo
-  replacement: http://obi.svn.sourceforge.net/svnroot/obi/releases/2012-07-01/merged/obi_cleaned_merged_inferred.obo
+  replacement: https://raw.githubusercontent.com/obi-ontology/obi/master/obi.obo
 
 ### Dated OBI Releases
 

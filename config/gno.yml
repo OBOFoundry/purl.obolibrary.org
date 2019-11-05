@@ -1,0 +1,13 @@
+# PURL configuration for http://purl.obolibrary.org/obo/gno
+
+idspace: GNO
+base_url: /obo/gno
+
+products:
+- gno.owl: https://raw.githubusercontent.com/glygen-glycan-data/GNOme/master/GNOme.owl
+- gno.obo: https://raw.githubusercontent.com/glygen-glycan-data/GNOme/master/GNOme.obo
+- gno.json: https://raw.githubusercontent.com/glygen-glycan-data/GNOme/master/GNOme.json
+
+term_browser: ontobee
+example_terms:
+- GNO_10000019

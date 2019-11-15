@@ -4,9 +4,9 @@ idspace: GNO
 base_url: /obo/gno
 
 products:
-- gno.owl: https://raw.githubusercontent.com/glygen-glycan-data/GNOme/master/GNOme.owl
-- gno.obo: https://raw.githubusercontent.com/glygen-glycan-data/GNOme/master/GNOme.obo
-- gno.json: https://raw.githubusercontent.com/glygen-glycan-data/GNOme/master/GNOme.json
+- gno.owl: https://github.com/glygen-glycan-data/GNOme/releases/latest/download/GNOme.owl
+- gno.obo: https://github.com/glygen-glycan-data/GNOme/releases/latest/download/GNOme.obo
+- gno.json: https://github.com/glygen-glycan-data/GNOme/releases/latest/download/GNOme.json
 
 term_browser: ontobee
 example_terms:

@@ -4,8 +4,25 @@ idspace: BTO
 base_url: /obo/bto
 
 products:
-- bto.owl: http://ontologies.berkeleybop.org/bto.owl
+- bto.owl: https://github.com/BRENDA-Enzymes/BTO/raw/master/bto.owl
+- bto.obo: https://github.com/BRENDA-Enzymes/BTO/raw/master/bto.obo
+- bto.json: https://github.com/BRENDA-Enzymes/BTO/raw/master/bto.json
 
 term_browser: ontobee
 example_terms:
 - BTO_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://github.com/BRENDA-Enzymes/BTO/v
+
+- prefix: /tracker/
+  replacement: https://github.com/BRENDA-Enzymes/BTO/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/BTO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/BRENDA-Enzymes/BTO/master/

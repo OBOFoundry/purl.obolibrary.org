@@ -33,6 +33,9 @@ entries:
 - exact: /obi_FGED.owl
   replacement: http://svn.code.sf.net/p/obi/code/releases/2013-10-25/obi_FGED.owl
 
+- exact: /obi.obo
+  replacement: https://raw.githubusercontent.com/obi-ontology/obi/v2019-11-12/obi.obo
+
 ### Dated OBI Releases
 
 - exact: /2009-11-02/obi.owl

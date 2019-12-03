@@ -1,0 +1,15 @@
+
+# PURL configuration for http://purl.obolibrary.org/obo/fobi
+
+idspace: FOBI
+
+base_url: /obo/fobi
+
+products:
+- fobi.owl: https://raw.githubusercontent.com/FoodBiomarkerOntology/master/fobi.owl
+
+term_browser: ontobee
+
+entries:
+- prefix: /imports/
+  replacement: https://raw.githubusercontent.com/FoodBiomarkerOntology/master/imports/

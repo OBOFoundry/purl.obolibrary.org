@@ -6,10 +6,10 @@ idspace: FOBI
 base_url: /obo/fobi
 
 products:
-- fobi.owl: https://raw.githubusercontent.com/FoodBiomarkerOntology/master/fobi.owl
+- fobi.owl: https://raw.githubusercontent.com/pcastellanoescuder/FoodBiomarkerOntology/master/fobi.owl
 
 term_browser: ontobee
 
 entries:
 - prefix: /imports/
-  replacement: https://raw.githubusercontent.com/FoodBiomarkerOntology/master/imports/
+  replacement: https://raw.githubusercontent.com/pcastellanoescuder/FoodBiomarkerOntology/master/imports/

@@ -13,3 +13,5 @@ term_browser: ontobee
 entries:
 - prefix: /imports/
   replacement: https://raw.githubusercontent.com/pcastellanoescuder/FoodBiomarkerOntology/master/imports/
+- exact: /tracker
+  replacement: https://github.com/pcastellanoescuder/FoodBiomarkerOntology/issues

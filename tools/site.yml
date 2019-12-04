@@ -45,7 +45,7 @@
       pip: name=pathlib2 executable=pip3
 
     - name: Install jsonschema
-      pip: name=jsonschema executable=pip3
+      pip: name=jsonschema==3.0.2 executable=pip3
 
     - name: Clone the Git repo
       when: mode == "production"

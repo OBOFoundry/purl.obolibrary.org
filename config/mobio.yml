@@ -1,0 +1,13 @@
+# PURL configuration for http://purl.obolibrary.org/obo/mobio
+
+idspace: MOBIO
+base_url: /obo/mobio
+
+products:
+  - mobio.owl: https://raw.githubusercontent.com/arpcard/mobio/master/mobio.owl
+
+term_browser: ontobee
+example_terms:
+  - MOBIO_0000001
+  - MOBIO_0000002
+  - MOBIO_0000003

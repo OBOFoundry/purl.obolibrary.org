@@ -28,6 +28,9 @@ entries:
 - exact: /releases/2016-08-01/pco.owl
   replacement: https://raw.githubusercontent.com/PopulationAndCommunityOntology/pco/2016-08-01/src/ontology/pco_merged_inferred.owl
 
+- exact: /pco_merged_inferred.owl
+  replacement: https://raw.githubusercontent.com/PopulationAndCommunityOntology/pco/master/src/ontology/pco_merged_inferred.owl
+   
 # - prefix: /releases/
 #   replacement: https://raw.githubusercontent.com/PopulationAndCommunityOntology/pco/v
 

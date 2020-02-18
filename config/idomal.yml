@@ -4,8 +4,13 @@ idspace: IDOMAL
 base_url: /obo/idomal
 
 products:
-- idomal.owl: http://ontologies.berkeleybop.org/idomal.owl
+- idomal.owl: https://raw.githubusercontent.com/VEuPathDB-ontology/IDOMAL/v2015-03-16/idomal.owl
+- idomal.obo: https://raw.githubusercontent.com/VEuPathDB-ontology/IDOMAL/v2015-03-16/idomal.obo
 
 term_browser: ontobee
 example_terms:
 - IDOMAL_0000000
+
+entries:
+- exact: /2015-03-16/idomal.owl
+  replacement: https://raw.githubusercontent.com/VEuPathDB-ontology/IDOMAL/v2015-03-16/idomal.owl

@@ -4,8 +4,13 @@ idspace: MIRO
 base_url: /obo/miro
 
 products:
-- miro.owl: http://ontologies.berkeleybop.org/miro.owl
+- miro.owl: https://raw.githubusercontent.com/VEuPathDB-ontology/MIRO/v2014-05-14/miro.owl
+- miro.obo: https://raw.githubusercontent.com/VEuPathDB-ontology/MIRO/v2014-05-14/miro.obo
 
 term_browser: ontobee
 example_terms:
 - MIRO_40003818
+
+entries:
+- exact: /releases/2014-05-14/miro.owl
+  replacement: https://raw.githubusercontent.com/VEuPathDB-ontology/MIRO/v2014-05-14/miro.owl

@@ -14,6 +14,9 @@ entries:
 
 - exact: /dev/omrse.owl
   replacement: https://raw.githubusercontent.com/ufbmi/OMRSE/devel/omrse/omrse.owl
+  
+- exact: /dev/omrse-core.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/OMRSE/devel/omrse/omrse-core.owl
 
 - exact: /dao.owl
   replacement: https://raw.githubusercontent.com/ufbmi/demo-app-ontology/master/DAO.owl

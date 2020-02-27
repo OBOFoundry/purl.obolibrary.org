@@ -4,9 +4,13 @@ idspace: TADS
 base_url: /obo/tads
 
 products:
-- tads.owl: http://ontologies.berkeleybop.org/tads.owl
-- tads.obo: http://ontologies.berkeleybop.org/tads.obo
+- tads.owl: https://raw.githubusercontent.com/VEuPathDB-ontology/TADS/v2015-08-20/tads.owl
+- tads.obo: https://raw.githubusercontent.com/VEuPathDB-ontology/TADS/v2015-08-20/tads.obo
 
 term_browser: ontobee
 example_terms:
 - TADS_0000000
+
+entries:
+- exact: /2015-08-20/tads.owl
+  replacement: https://raw.githubusercontent.com/VEuPathDB-ontology/TADS/v2015-08-20/tads.owl

@@ -395,6 +395,9 @@ entries:
 - exact: /dev/us-hrsa-geography.owl
   replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-hrsa-geography.owl
 
+- exact: /us-hrsa-geography.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-hrsa-geography.owl
+
 - exact: /dev/mx-admin-level-one.owl
   replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/MX/MX-admin-level-1.owl
 

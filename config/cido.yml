@@ -1,0 +1,14 @@
+# PURL configuration for http://purl.obolibrary.org/obo/cido
+
+idspace: CIDO
+base_url: /obo/cido
+
+products:
+- cido.owl: https://raw.githubusercontent.com/CIDO-ontology/cido/master/src/ontology/cido.owl
+
+term_browser: ontobee
+example_terms:
+- NCBITaxon_11118
+- NCBITaxon_1335626
+- NCBITaxon_694009
+- NCBITaxon_2697049

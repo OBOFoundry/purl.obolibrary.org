@@ -4,12 +4,15 @@ idspace: EUPATH
 base_url: /obo/eupath
 
 products:
-- eupath.owl: https://raw.githubusercontent.com/VEuPathDB-ontology/VEuPathDB-ontology/2019-12-16/eupath.owl
+- eupath.owl: https://raw.githubusercontent.com/VEuPathDB-ontology/VEuPathDB-ontology/2020-03-16/eupath.owl
 term_browser: ontobee
 example_terms:
 - EUPATH_0000001
 
 entries:
+- exact: /2020-03-16/eupath.owl
+  replacement: https://raw.githubusercontent.com/VEuPathDB-ontology/VEuPathDB-ontology/2020-03-16/eupath.owl
+  
 - exact: /2019-12-16/eupath.owl
   replacement: https://raw.githubusercontent.com/VEuPathDB-ontology/VEuPathDB-ontology/2019-12-16/eupath.owl
   

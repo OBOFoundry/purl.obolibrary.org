@@ -23,19 +23,17 @@ entries:
   - from: /1.0/cdao.owl
     to: https://raw.githubusercontent.com/evoinfo/cdao/cdao-rel-1.0/OWL/cdao.owl
 
-- prefix: /2012-
-  replacement: https://raw.githubusercontent.com/evoinfo/cdao/cdao-rel-2012-
+- regex: ^/obo/cdao/(\d+-\d+-\d+)/(\S+)$
+  replacement: https://raw.githubusercontent.com/evoinfo/cdao/cdao-rel-$1/$2
   tests:
   - from: /2012-06-06/cdao.owl
     to: https://raw.githubusercontent.com/evoinfo/cdao/cdao-rel-2012-06-06/cdao.owl
   - from: /2012-04-12/cdao.owl
     to: https://raw.githubusercontent.com/evoinfo/cdao/cdao-rel-2012-04-12/cdao.owl
-
-- prefix: /2013-02-01/
-  replacement: https://raw.githubusercontent.com/evoinfo/cdao/cdao-rel-2013-02-01/
-  tests:
   - from: /2013-02-01/cdao.owl
     to: https://raw.githubusercontent.com/evoinfo/cdao/cdao-rel-2013-02-01/cdao.owl
+  - from: /2019-06-26/cdao.owl
+    to: https://raw.githubusercontent.com/evoinfo/cdao/cdao-rel-2019-06-26/cdao.owl
 
 ## generic fall-through, serve direct from github by default
 - prefix: /

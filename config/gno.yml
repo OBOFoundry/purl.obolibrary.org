@@ -8,9 +8,7 @@ products:
 - gno.obo: https://github.com/glygen-glycan-data/GNOme/releases/latest/download/GNOme.obo
 - gno.json: https://github.com/glygen-glycan-data/GNOme/releases/latest/download/GNOme.json
 
-term_browser: ontobee
-example_terms:
-- GNO_10000019
+term_browser: custom
 
 entries:
   - exact: /2020-03-20/gno.owl

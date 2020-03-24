@@ -152,16 +152,16 @@ entries:
   replacement: https://proconsortium.org/download/current
 
 - prefix: /wiki/
-  replacement: https://pir17.georgetown.edu/confluence/display/PROWIKI/
+  replacement: https://confluence.proteininformationresource.org/display/PROWIKI/
   tests:
   - from: /wiki/PRO+PURLs
-    to: https://pir17.georgetown.edu/confluence/display/PROWIKI/PRO+PURLs
+    to: https://confluence.proteininformationresource.org/display/PROWIKI/PRO+PURLs
 
 - exact: /wiki
-  replacement: https://pir17.georgetown.edu/confluence/display/PROWIKI
+  replacement: https://confluence.proteininformationresource.org/display/PROWIKI
 
 - exact: /purls
-  replacement: https://pir17.georgetown.edu/confluence/display/PROWIKI/PRO+PURLs
+  replacement: https://confluence.proteininformationresource.org/display/PROWIKI/PRO+PURLs
   
 - exact: /gpi
   replacement: https://proconsortium.org/download/more/pro.gpi

@@ -11,5 +11,5 @@ products:
 term_browser: custom
 
 entries:
-  - exact: /2020-03-20/gno.owl
-    replacement: https://github.com/glygen-glycan-data/GNOme/releases/download/V1.5.0/GNOme.owl
+  - exact: /2020-03-23/gno.owl
+    replacement: https://github.com/glygen-glycan-data/GNOme/releases/download/V1.5.1/GNOme.owl

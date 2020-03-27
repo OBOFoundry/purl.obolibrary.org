@@ -11,7 +11,7 @@ import requests
 import subprocess
 import sys
 
-api_url = 'https://api.travis-ci.org'
+api_url = 'https://api.travis-ci.com'
 repo_slug = 'OBOFoundry/purl.obolibrary.org'
 accept_header = {'Accept': 'application/vnd.travis-ci.2.1+json'}
 

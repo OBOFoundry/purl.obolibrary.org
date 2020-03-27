@@ -15,7 +15,7 @@ example_terms:
 
 entries:
 - exact: /phenoscape-ext-simple.obo
-  replacement: http://build.berkeleybop.org/job/build-phenoscape/lastStableBuild/artifact/main/uberon/phenoscape-ext-simple.obo
+  replacement: https://stars-app.renci.org/jenkins/job/Phenoscape/job/build-phenoscape-ext-simple/lastSuccessfulBuild/artifact/phenoscape-ext-simple.obo
 
 - exact: /phenoscape-ext.owl
   replacement: http://phenoscape.svn.sourceforge.net/svnroot/phenoscape/trunk/vocab/edit/phenoscape-ext.owl

@@ -4,7 +4,7 @@ idspace: BCO
 base_url: /obo/bco
 
 products:
-- bco.owl: https://raw.githubusercontent.com/BiodiversityOntologies/bco/2016-12-14/bco.owl
+- bco.owl: https://raw.githubusercontent.com/BiodiversityOntologies/bco/master/bco.owl
 
 term_browser: ontobee
 
@@ -14,6 +14,10 @@ example_terms:
 entries:
 - exact: /bco-non-classified.owl
   replacement: https://raw.githubusercontent.com/BiodiversityOntologies/bco/2016-12-14/bco-non-classified.owl
+#bco-non-classified is no longer supported as of the release on 2020-03-27. Only the main product is now supported. Additional products (e.g. .obo files and base files) may be added with future releases. 
+
+- prefix: /releases/2020-03-27/
+  replacement: https://raw.githubusercontent.com/BiodiversityOntologies/bco/2020-03-27/
 
 - prefix: /releases/2016-12-14/
   replacement: https://raw.githubusercontent.com/BiodiversityOntologies/bco/2016-12-14/

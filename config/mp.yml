@@ -27,6 +27,9 @@ entries:
 
 - prefix: /patterns/
   replacement: https://raw.githubusercontent.com/obophenotype/mammalian-phenotype-ontology/master/src/patterns/
+  
+- prefix: /imports/
+  replacement: https://raw.githubusercontent.com/obophenotype/mammalian-phenotype-ontology/master/src/ontology/imports/
 
 ## generic fall-through, serve direct from github by default
 - prefix: /

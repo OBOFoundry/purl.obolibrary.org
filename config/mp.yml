@@ -25,6 +25,9 @@ entries:
 - prefix: /tracker/
   replacement: https://github.com/obophenotype/mammalian-phenotype-ontology/issues
 
+- prefix: /patterns/
+  replacement: https://raw.githubusercontent.com/obophenotype/mammalian-phenotype-ontology/master/src/patterns/
+
 ## generic fall-through, serve direct from github by default
 - prefix: /
   replacement: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/download/current/

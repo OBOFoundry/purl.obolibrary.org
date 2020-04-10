@@ -7,11 +7,13 @@ products:
 - ceph.owl: https://raw.githubusercontent.com/obophenotype/cephalopod-ontology/master/ceph.owl
 - ceph.obo: https://raw.githubusercontent.com/obophenotype/cephalopod-ontology/master/ceph.obo
 
-term_browser: ontobee
+term_browser: custom
 example_terms:
 - CEPH_0000000
 
 entries:
+- prefix: /about/
+  replacement: https://www.ebi.ac.uk/ols/ontologies/ceph/
 - prefix: /releases/
   replacement: https://raw.githubusercontent.com/obophenotype/cephalopod-ontology/v
 - prefix: /

@@ -1,0 +1,28 @@
+# PURL configuration for http://purl.obolibrary.org/obo/ecto
+
+idspace: ECTO
+base_url: /obo/ecto
+
+products:
+- ecto.owl: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/ecto.owl
+- ecto.obo: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/ecto.obo
+- ecto.json: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/ecto.json
+
+term_browser: ontobee
+example_terms:
+- ECTO_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/v
+
+- prefix: /tracker/
+  replacement: https://github.com/EnvironmentOntology/environmental-exposure-ontology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/ECTO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/EnvironmentOntology/environmental-exposure-ontology/master/

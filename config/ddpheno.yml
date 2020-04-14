@@ -4,9 +4,25 @@ idspace: DDPHENO
 base_url: /obo/ddpheno
 
 products:
-- ddpheno.owl: http://ontologies.berkeleybop.org/ddpheno.owl
-- ddpheno.obo: http://ontologies.berkeleybop.org/ddpheno.obo
+- ddpheno.owl: https://raw.githubusercontent.com/obophenotype/dicty-phenotype-ontology/master/ddpheno.owl
+- ddpheno.obo: https://raw.githubusercontent.com/obophenotype/dicty-phenotype-ontology/master/ddpheno.obo
+- ddpheno.json: https://raw.githubusercontent.com/obophenotype/dicty-phenotype-ontology/master/ddpheno.json
 
 term_browser: ontobee
 example_terms:
 - DDPHENO_0000001
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/obophenotype/dicty-phenotype-ontology/v
+
+- prefix: /tracker/
+  replacement: https://github.com/obophenotype/dicty-phenotype-ontology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/DDPHENO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/obophenotype/dicty-phenotype-ontology/master/

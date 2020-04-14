@@ -4,11 +4,28 @@ idspace: EUPATH
 base_url: /obo/eupath
 
 products:
-- eupath.owl: https://raw.githubusercontent.com/EuPath-ontology/EuPath-ontology/2019-04-02/eupath.owl
+- eupath.owl: https://raw.githubusercontent.com/VEuPathDB-ontology/VEuPathDB-ontology/2020-03-16/eupath.owl
 term_browser: ontobee
 example_terms:
 - EUPATH_0000001
 
 entries:
-- exact: /2019-01-09/eupath.owl
-  replacement: https://raw.githubusercontent.com/EuPath-ontology/EuPath-ontology/2019-04-02/eupath.owl
+- exact: /2020-03-16/eupath.owl
+  replacement: https://raw.githubusercontent.com/VEuPathDB-ontology/VEuPathDB-ontology/2020-03-16/eupath.owl
+  
+- exact: /2019-12-16/eupath.owl
+  replacement: https://raw.githubusercontent.com/VEuPathDB-ontology/VEuPathDB-ontology/2019-12-16/eupath.owl
+  
+- exact: /2019-09-04/eupath.owl
+  replacement: https://raw.githubusercontent.com/VEuPathDB-ontology/VEuPathDB-ontology/2019-09-04/eupath.owl
+
+- exact: /2019-04-02/eupath.owl
+  replacement: https://raw.githubusercontent.com/VEuPathDB-ontology/VEuPathDB-ontology/2019-04-02/eupath.owl
+  
+- exact: /2019-01-08/eupath.owl
+  replacement: https://raw.githubusercontent.com/VEuPathDB-ontology/VEuPathDB-ontology/2019-01-09/eupath.owl
+  
+- exact: /2018-05-09/eupath.owl
+  replacement: https://raw.githubusercontent.com/VEuPathDB-ontology/VEuPathDB-ontology/2018-05-09/ontology/src/eupath.owl
+
+  

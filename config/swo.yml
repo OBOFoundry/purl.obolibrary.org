@@ -4,7 +4,7 @@ idspace: SWO
 base_url: /obo/swo
 
 products:
-- swo.owl: https://raw.githubusercontent.com/allysonlister/swo/master/release/swo_inferred.owl
+- swo.owl: https://raw.githubusercontent.com/allysonlister/swo/master/release/swo-inferred.owl
 
 term_browser: ontobee
 example_terms:

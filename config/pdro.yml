@@ -4,7 +4,7 @@ idspace: PDRO
 base_url: /obo/pdro
 
 products:
-- pdro.owl: https://raw.githubusercontent.com/OpenLHS/PDRO/master/PDRO.owl
+- pdro.owl: https://raw.githubusercontent.com/OpenLHS/PDRO/master/pdro.owl
 
 term_browser: ontobee
 example_terms:

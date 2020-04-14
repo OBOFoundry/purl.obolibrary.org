@@ -5,7 +5,7 @@ base_url: /obo/pco
 
 products:
 - pco.owl:  https://raw.githubusercontent.com/PopulationAndCommunityOntology/pco/master/pco.owl
-# - pco.obo: https://raw.githubusercontent.com/PopulationAndCommunityOntology/pco/master/pco.obo
+- pco.obo: https://raw.githubusercontent.com/PopulationAndCommunityOntology/pco/master/pco.obo
 
 term_browser: ontobee
 example_terms:
@@ -13,9 +13,9 @@ example_terms:
 
 entries:
 
-- exact: /pco_merged_inferred.owl
-  replacement: https://raw.githubusercontent.com/PopulationAndCommunityOntology/pco/master/src/ontology/pco_merged_inferred.owl
-   
+- exact: /releases/2020-02-12/pco.owl
+  replacement: https://raw.githubusercontent.com/PopulationAndCommunityOntology/pco/2020-02-12/pco.owl
+  
 - exact: /releases/2017-11-06/pco.owl
   replacement: https://raw.githubusercontent.com/PopulationAndCommunityOntology/pco/2017-11-06/pco.owl
   
@@ -28,6 +28,9 @@ entries:
 - exact: /releases/2016-08-01/pco.owl
   replacement: https://raw.githubusercontent.com/PopulationAndCommunityOntology/pco/2016-08-01/src/ontology/pco_merged_inferred.owl
 
+- exact: /pco_merged_inferred.owl
+  replacement: https://raw.githubusercontent.com/PopulationAndCommunityOntology/pco/master/src/ontology/pco_merged_inferred.owl
+   
 # - prefix: /releases/
 #   replacement: https://raw.githubusercontent.com/PopulationAndCommunityOntology/pco/v
 

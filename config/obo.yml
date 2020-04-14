@@ -92,6 +92,17 @@ entries:
     to: https://proconsortium.org/cgi-bin/entry_pro?id=PR_A0A0E0NEP8
   - from: /PR_A0A0E0NEP8-37
     to: https://proconsortium.org/cgi-bin/entry_pro?id=PR_A0A0E0NEP8-37
+ 
+# Term redirects for GNO
+# Match digits or GlyTouCan ID
+- regex: ^/obo/GNO_(\d+|G[0-9]{5}[A-Z]{2})$
+  replacement: http://www.ontobee.org/ontology/GNO?iri=http://purl.obolibrary.org/obo/GNO_$1
+  status: see other
+  tests:
+  - from: /GNO_00000001
+    to: http://www.ontobee.org/ontology/GNO?iri=http://purl.obolibrary.org/obo/GNO_00000001
+  - from: /GNO_G00982CE
+    to: http://www.ontobee.org/ontology/GNO?iri=http://purl.obolibrary.org/obo/GNO_G00982CE
     
 # Term redirects for NCIT (not restricted to digits)
 - regex: ^/obo/NCIT_([a-zA-Z0-9]+)$

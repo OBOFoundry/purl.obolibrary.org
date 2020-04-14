@@ -4,9 +4,24 @@ idspace: WBbt
 base_url: /obo/wbbt
 
 products:
-- wbbt.owl: http://ontologies.berkeleybop.org/wbbt.owl
-- wbbt.obo: http://ontologies.berkeleybop.org/wbbt.obo
+- wbbt.owl: https://raw.githubusercontent.com/obophenotype/c-elegans-gross-anatomy-ontology/master/wbbt.owl
+- wbbt.obo: https://raw.githubusercontent.com/obophenotype/c-elegans-gross-anatomy-ontology/master/wbbt.obo
 
 term_browser: ontobee
 example_terms:
 - WBbt_0005733
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/obophenotype/c-elegans-gross-anatomy-ontology/v
+
+- prefix: /tracker/
+  replacement: https://github.com/obophenotype/c-elegans-gross-anatomy-ontology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/WBbt?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/obophenotype/c-elegans-gross-anatomy-ontology/master/

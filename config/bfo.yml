@@ -4,8 +4,8 @@ idspace: BFO
 base_url: /obo/bfo
 
 products:
-- bfo.owl: https://raw.githubusercontent.com/BFO-ontology/BFO/v2019-02-21/bfo_classes_only.owl
-- bfo.obo: https://raw.githubusercontent.com/BFO-ontology/BFO/v2.0/bfo.obo
+- bfo.owl: https://raw.githubusercontent.com/BFO-ontology/BFO/v2019-08-26/bfo_classes_only.owl
+- bfo.obo: https://raw.githubusercontent.com/BFO-ontology/BFO/v2019-08-26/bfo_classes_only.obo
 
 term_browser: ontobee
 example_terms:
@@ -144,8 +144,14 @@ entries:
 - exact: /2019-02-21/bfo.owl
   replacement: https://raw.githubusercontent.com/BFO-ontology/BFO/v2019-02-21/bfo_classes_only.owl
 
+- exact: /2019-08-26/bfo.owl
+  replacement: https://raw.githubusercontent.com/BFO-ontology/BFO/v2019-08-26/bfo_classes_only.owl
+
+- exact: /2019-08-26/bfo.obo
+  replacement: https://raw.githubusercontent.com/BFO-ontology/BFO/v2019-08-26/bfo_classes_only.obo
+
 - prefix: /2010-05-25/
-  replacement: https://github.com/BFO-ontology/BFO/tree/releases/owl-ruttenberg-2010-05-25
+  replacement: https://raw.githubusercontent.com/BFO-ontology/BFO/releases/owl-ruttenberg-2010-05-25/  
 
 - prefix: /axiom/
   replacement: https://github.com/BFO-ontology/BFO/master/src/ontology/owl-group/axiom.html#

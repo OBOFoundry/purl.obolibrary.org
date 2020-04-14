@@ -4,8 +4,8 @@ idspace: SO
 base_url: /obo/so
 
 products:
-- so.owl: https://raw.githubusercontent.com/The-Sequence-Ontology/SO-Ontologies/master/so.owl
-- so.obo: https://raw.githubusercontent.com/The-Sequence-Ontology/SO-Ontologies/master/so.obo
+- so.owl: https://raw.githubusercontent.com/The-Sequence-Ontology/SO-Ontologies/master/Ontology_Files/so.owl
+- so.obo: https://raw.githubusercontent.com/The-Sequence-Ontology/SO-Ontologies/master/Ontology_Files/so.obo
 
 term_browser: ontobee
 example_terms:
@@ -13,7 +13,9 @@ example_terms:
 
 entries:
 - prefix: /so-simple.obo
-  replacement: https://raw.githubusercontent.com/The-Sequence-Ontology/SO-Ontologies/master/so-simple.obo
+  replacement: https://raw.githubusercontent.com/The-Sequence-Ontology/SO-Ontologies/master/Ontology_Files/so-simple.obo
+- prefix: /subsets/
+  replacement: https://raw.githubusercontent.com/The-Sequence-Ontology/SO-Ontologies/master/Ontology_Files/subsets/
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=SO&iri=http://purl.obolibrary.org/obo/
   tests:

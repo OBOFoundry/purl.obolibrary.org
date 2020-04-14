@@ -26,6 +26,9 @@ entries:
 - exact: /mp-hp-view.owl
   replacement: http://build-artifacts.berkeleybop.org/build-mp-hp-view/latest/mp-hp-view.owl
 
+- exact: /mappings/mp-hp.csv
+  replacement: https://raw.githubusercontent.com/obophenotype/upheno-dev/master/mappings/upheno_mapping_mp_hp.csv
+
 - prefix: /mondo/gard/
   replacement: https://raw.githubusercontent.com/monarch-initiative/monarch-disease-ontology/master/src/gard/
 - prefix: /patterns/

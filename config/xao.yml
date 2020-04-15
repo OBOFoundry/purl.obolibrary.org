@@ -4,12 +4,11 @@ idspace: XAO
 base_url: /obo/xao
 
 products:
-- xao.owl: http://ontologies.berkeleybop.org/xao.owl
-- xao.obo: http://ontologies.berkeleybop.org/xao.obo
+- xao.owl: https://raw.githubusercontent.com/xenopus-anatomy/xao/master/xenopus_anatomy.owl
+- xao.obo: https://raw.githubusercontent.com/xenopus-anatomy/xao/master/xenopus_anatomy.obo
 
 term_browser: ontobee
 
 entries:
 - prefix: /tracker/
-  replacement: https://sourceforge.net/tracker/?func=detail&group_id=76834&atid=1127722&aid=
-
+  replacement: https://github.com/xenopus-anatomy/xao/issues

@@ -4,12 +4,23 @@ idspace: GENO
 base_url: /obo/geno
 
 products:
-- geno.owl: https://raw.githubusercontent.com/monarch-initiative/GENO-ontology/develop/src/ontology/geno.owl
+- geno.owl: https://raw.githubusercontent.com/monarch-initiative/GENO-ontology/develop/geno.owl
+- geno.obo: https://raw.githubusercontent.com/monarch-initiative/GENO-ontology/develop/geno.obo
+- geno.json: https://raw.githubusercontent.com/monarch-initiative/GENO-ontology/develop/geno.json
 
 term_browser: ontobee
 
 entries:
-- exact: /geno.owl
-  replacement: https://raw.githubusercontent.com/monarch-initiative/GENO-ontology/develop/src/ontology/geno.owl
 
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/monarch-initiative/GENO-ontology/v
 
+- prefix: /tracker/
+  replacement: https://github.com/monarch-initiative/GENO-ontology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/GENO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/monarch-initiative/GENO-ontology/develop/

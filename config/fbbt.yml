@@ -6,15 +6,20 @@ base_url: /obo/fbbt
 base_redirect:  https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/wiki
 
 products:
-- fbbt.owl: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/fbbt.owl
-- fbbt.obo: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/fbbt.obo
+- fbbt.owl: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt.owl
+- fbbt.obo: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt.obo
 - FBbt_RO.owl: http://purl.obolibrary.org/obo/fbbt/2011-09-06/FBbt_helper_relations.owl
+- fbbt.json: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt.json
+
 
 term_browser: ontobee
 example_terms:
 - FBbt_10000000
 
 entries:
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/v
+
 - exact: /vfb/demo/owled2014_demo.owl.
   replacement: https://raw.githubusercontent.com/VirtualFlyBrain/VFB_papers/master/owl/owled2014_demo.owl
 
@@ -26,6 +31,84 @@ entries:
 
 - prefix: /2011-09-06/
   replacement: http://obo.cvs.sourceforge.net/viewvc/obo/obo/ontology/anatomy/gross_anatomy/animal_gross_anatomy/fly/2011-09-06/
+
+- prefix: /2013-06-13/
+  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/2013-06-13/
+
+- prefix: /2013-07-09/
+  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/2013-07-09/
+
+- prefix: /2013-07-10/
+  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/2013-07-10/
+
+- prefix: /2013-07-26/
+  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/2013-07-26/
+
+- prefix: /2014-01-29/
+  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/2014-01-29/
+
+- prefix: /2014-05-26/
+  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/2014-05-26/
+
+- prefix: /2014-11-07/
+  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/2014-11-07/
+
+- prefix: /2015-03-11/
+  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/2015-03-11/
+
+- prefix: /2015-05-12/
+  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/2015-05-123/
+
+- prefix: /2015-07-16/
+  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/2015-07-16/
+
+- prefix: /2015-09-16/
+  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/2015-09-16/
+
+- prefix: /2016-01-21/
+  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/2016-01-21/
+
+- prefix: /2016-04-05/
+  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/2016-04-05/
+
+- prefix: /2016-06-02/
+  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/2016-06-02/
+
+- prefix: /2016-08-17/
+  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/2016-08-17/
+
+- prefix: /2016-12-08/
+  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/2016-12-08/
+
+- prefix: /2017-02-15/
+  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/2017-02-15/
+
+- prefix: /2017-05-03/
+  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/2017-05-03/
+
+- prefix: /2017-09-06/
+  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/2017-09-06/
+
+- prefix: /2018-02-21/
+  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/2018-02-21/
+
+- prefix: /2018-07-05/
+  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/2018-07-05/
+
+- prefix: /2018-08-08/
+  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/2018-08-08/
+
+- prefix: /2018-10-03/
+  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/2018-10-03/
+
+- prefix: /2019-01-16/
+  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/2019-01-16/
+
+- prefix: /2019-02-14/
+  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/2019-02-14/
+
+- prefix: /2019-03-28/
+  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/2019-03-28/
 
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=FBbt&iri=http://purl.obolibrary.org/obo/
@@ -91,5 +174,5 @@ entries:
   replacement: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/wiki
 
 - prefix: /
-  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt/releases/
+  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/
 

@@ -1,0 +1,26 @@
+# PURL configuration for http://purl.obolibrary.org/obo/sepio
+
+idspace: SEPIO
+base_url: /obo/sepio
+
+products:
+- sepio.owl: https://github.com/monarch-initiative/SEPIO-ontology/releases/download/current/sepio.owl
+
+term_browser: ontobee
+example_terms:
+- SEPIO_0000001
+
+entries:
+
+- prefix: /releases/
+  replacement: https://github.com/monarch-initiative/SEPIO-ontology/v
+
+- prefix: /tracker/
+  replacement: https://github.com/monarch-initiative/SEPIO-ontology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/SEPIO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://github.com/monarch-initiative/SEPIO-ontology/releases/download/current/

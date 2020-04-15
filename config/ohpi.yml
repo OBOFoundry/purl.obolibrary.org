@@ -1,0 +1,12 @@
+# PURL configuration for http://purl.obolibrary.org/obo/ohpi
+
+idspace: OHPI
+base_url: /obo/ohpi
+
+products:
+- ohpi.owl: https://raw.githubusercontent.com/OHPI/ohpi/master/ohpi.owl
+
+term_browser: ontobee
+
+example_terms:
+- OHPI_0000001

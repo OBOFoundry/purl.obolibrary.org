@@ -1,0 +1,28 @@
+# PURL configuration for http://purl.obolibrary.org/obo/maxo
+
+idspace: MAXO
+base_url: /obo/maxo
+
+products:
+- maxo.owl: https://raw.githubusercontent.com/monarch-initiative/MAxO/master/maxo.owl
+- maxo.obo: https://raw.githubusercontent.com/monarch-initiative/MAxO/master/maxo.obo
+- maxo.json: https://raw.githubusercontent.com/monarch-initiative/MAxO/master/maxo.json
+
+term_browser: ontobee
+example_terms:
+- MAXO_0000001
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/monarch-initiative/MAxO/v
+
+- prefix: /tracker/
+  replacement: https://github.com/monarch-initiative/MAxO/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/MAXO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/monarch-initiative/MAxO/master/

@@ -3,7 +3,8 @@
 
 - hosts: all
   user: ubuntu
-  sudo: True
+  become: True
+  become_method: sudo
   gather_facts: True
 
   vars:
@@ -40,8 +41,11 @@
     - name: Install PyYAML
       pip: name=PyYAML executable=pip3
 
+    - name: Install pathlib2 for jsonschema
+      pip: name=pathlib2 executable=pip3
+
     - name: Install jsonschema
-      pip: name=jsonschema executable=pip3
+      pip: name=jsonschema==3.0.2 executable=pip3
 
     - name: Clone the Git repo
       when: mode == "production"

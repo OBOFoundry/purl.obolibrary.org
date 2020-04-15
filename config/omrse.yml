@@ -14,6 +14,21 @@ entries:
 
 - exact: /dev/omrse.owl
   replacement: https://raw.githubusercontent.com/ufbmi/OMRSE/devel/omrse/omrse.owl
+  
+- exact: /dev/omrse-core.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/OMRSE/devel/omrse/omrse-core.owl
 
 - exact: /dao.owl
   replacement: https://raw.githubusercontent.com/ufbmi/demo-app-ontology/master/DAO.owl
+
+- exact: /dev/language.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/OMRSE/devel/omrse/language/omrse-language.owl
+
+- exact: /language.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/OMRSE/master/omrse/language/omrse-language.owl
+  
+- exact: /language-individuals.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/OMRSE/master/omrse/language/language-individuals.owl
+
+- exact: /dev/language-individuals.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/OMRSE/devel/omrse/language/language-individuals.owl

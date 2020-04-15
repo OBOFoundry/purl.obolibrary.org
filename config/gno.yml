@@ -8,7 +8,7 @@ products:
 - gno.obo: https://github.com/glygen-glycan-data/GNOme/releases/latest/download/GNOme.obo
 - gno.json: https://github.com/glygen-glycan-data/GNOme/releases/latest/download/GNOme.json
 
-term_browser: ontobee
+term_browser: custom
 example_terms:
   - GNO_G24005JZ
 

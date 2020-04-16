@@ -307,19 +307,20 @@ def append_products(products, idspace, outfile):
     outfile.write('\n')
 
 
+ontobee = 'http://www.ontobee.org/browser/rdf.php?o=%s&iri=http://purl.obolibrary.org/obo/%s_$1'
+ols = 'https://www.ebi.ac.uk/ols/ontologies/%s/terms?iri=http%%3A%%2F%%2Fpurl.obolibrary.org%%2Fobo%%2F%s_$1'
+
+
 def translate_terms(yamldoc, idspace):
   """
   Reads the `term_browser` field from the given YAML document, validates that it is a supported
   term browser, and returns a corresponding Apache redirect statement.
   """
   if 'term_browser' in yamldoc and yamldoc['term_browser'].strip().lower() == 'ontobee':
-    replacement = ('http://www.ontobee.org/browser/rdf.php?'
-                   'o=%s&iri=http://purl.obolibrary.org/obo/%s_$1'
-                   % (idspace, idspace))
+    replacement = (ontobee % (idspace, idspace))
     return 'RedirectMatch seeother "^/obo/%s_(\d+)$" "%s"' % (idspace, replacement)
   if 'term_browser' in yamldoc and yamldoc['term_browser'].strip().lower() == 'ols':
-    replacement = ('https://www.ebi.ac.uk/ols/ontologies/%s/terms?iri=http://purl.obolibrary.org/obo/%s_$1'
-                   % (idspace.lower(), idspace))
+    replacement = (ols % (idspace.lower(), idspace))
     return 'RedirectMatch seeother "^/obo/%s_(\d+)$" "%s"' % (idspace, replacement)
 
 

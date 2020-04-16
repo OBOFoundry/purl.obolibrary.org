@@ -33,7 +33,7 @@ Every YAML configuration file must have these fields:
 
 - `idspace:` the project's [IDSPACE](http://obofoundry.org/id-policy.html), case sensitive, usually uppercase
 - `base_url:` the part of a PURL that comes after the domain, usually lowercase
-- `term_browser:` usually [`ontobee`](http://ontobee.org) but can be `custom` (see below)
+- `term_browser:` usually [`ontobee`](http://ontobee.org) or [`ols`](https://www.ebi.ac.uk/ols/index) but can be `custom` (see below)
 - `products:` a list of primary files for the ontology and the URLs to redirect them to; an `.owl` file is required, and an `.obo` file is optional
 
 Optional fields include:
@@ -127,7 +127,7 @@ Apache RedirectMatch directives are processed in the [order that they appear](ht
 
 ## Custom Term Browsers
 
-If your project does not use Ontobee as a term browser, you must specify `term_browser: custom` in your project's YAML configuration file, and provide a `regex` entry in the [`config/obo.yml`](config/obo.yml) configuration file. Here's an example for [ChEBI](https://www.ebi.ac.uk/chebi/):
+If your project does not use Ontobee or OLS as a term browser, you must specify `term_browser: custom` in your project's YAML configuration file, and provide a `regex` entry in the [`config/obo.yml`](config/obo.yml) configuration file. Here's an example for [ChEBI](https://www.ebi.ac.uk/chebi/):
 
     # Terms for CHEBI
     - regex: ^/obo/CHEBI_(\d+)$

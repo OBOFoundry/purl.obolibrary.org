@@ -13,7 +13,7 @@ example_terms:
 
 entries:
 - prefix: /about/
-  replacement: https://www.ebi.ac.uk/ols/ontologies/ceph/terms?iri=http://purl.obolibrary.org/obo/CEPH_
+  replacement: https://www.ebi.ac.uk/ols/ontologies/ceph/terms?iri=http://purl.obolibrary.org/obo/
   tests:
   - from: /about/CEPH_0000256
     to: https://www.ebi.ac.uk/ols/ontologies/ceph/terms?iri=http://purl.obolibrary.org/obo/CEPH_0000256

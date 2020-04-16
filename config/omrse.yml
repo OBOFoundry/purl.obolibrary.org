@@ -32,3 +32,6 @@ entries:
 
 - exact: /dev/language-individuals.owl
   replacement: https://raw.githubusercontent.com/ufbmi/OMRSE/devel/omrse/language/language-individuals.owl
+
+- exact: /dev/education.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/OMRSE/devel/omrse/education/omrse-education.owl

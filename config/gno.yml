@@ -9,6 +9,8 @@ products:
 - gno.json: https://github.com/glygen-glycan-data/GNOme/releases/latest/download/GNOme.json
 
 term_browser: custom
+example_terms:
+  - GNO_G24005JZ
 
 entries:
   - exact: /2020-03-20/gno.owl
@@ -16,3 +18,6 @@ entries:
 
   - exact: /2020-03-23/gno.owl
     replacement: https://github.com/glygen-glycan-data/GNOme/releases/download/V1.5.1/GNOme.owl
+    
+  - exact: /2020-04-14/gno.owl
+    replacement: https://github.com/glygen-glycan-data/GNOme/releases/download/V1.5.2/GNOme.owl

@@ -27,7 +27,7 @@
 		"term_browser": {
 			"description": "'term_browser' must be either 'ontobee' or 'custom'",
 			"type": "string",
-			"pattern": "^(ontobee|custom)$"
+			"pattern": "^(ontobee|ols|custom)$"
 		},
 		"example_terms": {
 			"type": "array",

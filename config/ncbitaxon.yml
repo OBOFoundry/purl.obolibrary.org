@@ -14,8 +14,8 @@ example_terms:
 entries:
 - prefix: /subsets/
   replacement: https://github.com/obophenotype/ncbitaxon/releases/download/current/
-- prefix: /releases/
-  replacement: https://github.com/obophenotype/ncbitaxon/releases/download/v
+- prefix: /2
+  replacement: https://github.com/obophenotype/ncbitaxon/releases/download/v2
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=NCBITaxon&iri=http://purl.obolibrary.org/obo/
   tests:

@@ -1,0 +1,16 @@
+# PURL configuration for http://purl.obolibrary.org/obo/cob
+
+idspace: COB
+base_url: /obo/cob
+
+products:
+- cob.owl: https://raw.githubusercontent.com/OBOFoundry/COB/master/cob.owl
+
+term_browser: ontobee
+example_terms:
+- COB_0000001
+
+entries:
+
+- prefix: /
+  replacement: https://raw.githubusercontent.com/OBOFoundry/COB/master/

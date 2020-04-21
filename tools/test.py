@@ -4,7 +4,7 @@
 # make a series of HTTP HEAD requests to a target server,
 # and report the results in a TSV file.
 #
-# NOTE: Currently only tests `example_terms` when `term_browser: ontobee`.
+# NOTE: Currently only tests `example_terms` when `term_browser:` is ontobee` or `ols`.
 
 import argparse
 import http.client
@@ -58,7 +58,7 @@ def main():
     with open(os.path.normpath(args.output) + '/' +
               re.sub('\.yml$', '.tsv', os.path.basename(yaml_file.name)), 'w') as report_file:
       # Load YAML document and look for 'entries' list.
-      document = yaml.load(yaml_file)
+      document = yaml.load(yaml_file, Loader=yaml.SafeLoader)
 
       if 'idspace' not in document \
          or type(document['idspace']) is not str:
@@ -88,13 +88,16 @@ def main():
           tests += process_product(i, product)
 
       if 'term_browser' in document \
-         and document['term_browser'].strip().lower() == 'ontobee' \
          and 'example_terms' in document \
          and type(document['example_terms']) is list:
+        browser = document['term_browser'].strip().lower()
         i = 0
         for example_term in document['example_terms']:
           i += 1
-          tests += process_ontobee(idspace, i, example_term)
+          if browser == 'ontobee':
+            tests += process_ontobee(idspace, i, example_term)
+          elif browser == 'ols':
+            tests += process_ols(idspace, i, example_term)
 
       if 'tests' in document:
         i = 0
@@ -173,15 +176,24 @@ def process_product(i, product):
 
 
 ontobee = 'http://www.ontobee.org/browser/rdf.php?o=%s&iri=http://purl.obolibrary.org/obo/'
+ols = 'https://www.ebi.ac.uk/ols/ontologies/%s/terms?iri=http%%3A%%2F%%2Fpurl.obolibrary.org%%2Fobo%%2F'
 
 
 def process_ontobee(idspace, i, example_term):
   """Given an ontology IDSPACE, an index, and an example term ID,
-  return a list with a test to run."""
+  return a list with a test to run against Ontobee."""
   return [{
     'source': '/obo/' + example_term,
     'replacement': (ontobee % idspace) + example_term,
-    # 'replacement': 'http://ontologies.berkeleybop.org/' + example_term,
+    'status': '303'
+  }]
+
+def process_ols(idspace, i, example_term):
+  """Given an ontology IDSPACE, an index, and an example term ID,
+  return a list with a test to run against OLS."""
+  return [{
+    'source': '/obo/' + example_term,
+    'replacement': (ols % idspace.lower()) + example_term,
     'status': '303'
   }]
 

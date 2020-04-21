@@ -1,0 +1,26 @@
+# PURL configuration for http://purl.obolibrary.org/obo/amphx
+
+idspace: AMPHX
+base_url: /obo/amphx
+
+products:
+- amphx.owl: https://raw.githubusercontent.com/EBISPOT/amphx_ontology/master/amphx.owl
+- amphx.obo: https://raw.githubusercontent.com/EBISPOT/amphx_ontology/master/amphx.obo
+
+term_browser: ontobee
+example_terms:
+- AMPHX_0000001
+
+entries:
+
+- prefix: /releases/
+  replacement: https://github.com/EBISPOT/amphx_ontology/releases/download/v
+
+- prefix: /tracker/
+  replacement: https://github.com/EBISPOT/amphx_ontology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/AMPHX?iri=http://purl.obolibrary.org/obo/
+
+- prefix: /
+  replacement: https://github.com/EBISPOT/amphx_ontology/releases/download/current/

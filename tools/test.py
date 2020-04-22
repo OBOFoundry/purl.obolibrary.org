@@ -51,6 +51,7 @@ def main():
   except FileExistsError:
     pass
 
+  failed_idspaces = []
   failures = []
   for yaml_file in args.yaml_files:
     print("Checking {} ...".format(yaml_file.name))
@@ -134,16 +135,32 @@ def main():
         if results[0] == 'FAIL':
           print("FAILURE when checking {}. See {} for details."
                 .format(yaml_file.name, report_file.name))
-          failures.append(idspace)
+          failed_idspaces.append(idspace)
+          failures.append(results)
         report_file.write('\t'.join(results) + '\n')
         report_file.flush()
         time.sleep(args.delay)
 
   if failures:
-    print("The following idspaces encountered failures: {}.\n"
-          "For more details, see their corresponding TSV files in '{}'.\n"
-          "To re-run tests for just those idspaces, use the script '{}'."
-          .format(', '.join(failures), args.output, __file__))
+    print()
+    print("The following idspaces encountered failures: {}."
+          .format(', '.join(failed_idspaces)))
+    message = None
+    if len(failures) == 1:
+      message = "1 failure"
+    elif len(failures) < 10:
+      message = "{} failures".format(len(failures))
+    else:
+      message = "First 10 failures of {}".format(len(failures))
+    print(message + " (path, expected, actual):")
+    for failure in failures[0:10]:
+      print("  " + failure[1])
+      print("    " +  " ".join(failure[2:4]))
+      print("    " +  " ".join(failure[4:6]))
+    print("For more details, see their corresponding TSV files in '{}'."
+          .format(args.output))
+    print("To re-run tests for just those idspaces, use the script '{}'."
+          .format(__file__))
     sys.exit(1)
 
 

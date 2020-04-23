@@ -4,8 +4,8 @@ idspace: OBI
 base_url: /obo/obi
 
 products:
-- obi.owl: https://raw.githubusercontent.com/obi-ontology/obi/v2020-04-09/obi.owl
-- obi.obo: https://raw.githubusercontent.com/obi-ontology/obi/v2020-04-09/views/obi.obo
+- obi.owl: https://raw.githubusercontent.com/obi-ontology/obi/v2020-04-23/obi.owl
+- obi.obo: https://raw.githubusercontent.com/obi-ontology/obi/v2020-04-23/views/obi.obo
 
 term_browser: ontobee
 example_terms:
@@ -22,7 +22,7 @@ entries:
   replacement: https://raw.githubusercontent.com/obi-ontology/obi/v2017-02-22/obi_iedb.owl
 
 - exact: /release-notes.html
-  replacement: https://raw.githubusercontent.com/obi-ontology/obi/v2020-04-09/README.md
+  replacement: https://raw.githubusercontent.com/obi-ontology/obi/v2020-04-23/README.md
 
 - exact: /webService.owl
   replacement: https://raw.githubusercontent.com/obi-webservice/OBIws/master/ontology/release/v1.1/webService.owl
@@ -214,6 +214,12 @@ entries:
 
 - exact: /2020-04-09/obi_core.owl
   replacement: https://raw.githubusercontent.com/obi-ontology/obi/v2020-04-09/views/obi_core.owl
+
+- exact: /2020-04-23/obi.owl
+  replacement: https://raw.githubusercontent.com/obi-ontology/obi/v2020-04-23/obi.owl
+
+- exact: /2020-04-23/obi.obo
+  replacement: https://raw.githubusercontent.com/obi-ontology/obi/v2020-04-23/views/obi.obo
 
 ### Web Service Releases
 

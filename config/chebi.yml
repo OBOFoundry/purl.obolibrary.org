@@ -33,6 +33,12 @@ entries:
   - from: /about/CHEBI_15377
     to: http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_15377
 
+- regex: ^/obo/chebi/(\d+)/(.+)$
+  replacement: http://ftp.ebi.ac.uk/pub/databases/chebi/archive/rel$1/ontology/$2
+  tests:
+  - from: http://purl.obolibrary.org/obo/chebi/186/chebi.owl
+    to: http://ftp.ebi.ac.uk/pub/databases/chebi/archive/rel186/ontology/chebi.owl
+
 ## generic fall-through, serve direct from github by default
 - prefix: /
   replacement: http://ftp.ebi.ac.uk/pub/databases/chebi/ontology/

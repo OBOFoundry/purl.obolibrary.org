@@ -36,7 +36,7 @@ entries:
 - regex: ^/obo/chebi/(\d+)/(.+)$
   replacement: http://ftp.ebi.ac.uk/pub/databases/chebi/archive/rel$1/ontology/$2
   tests:
-  - from: http://purl.obolibrary.org/obo/chebi/186/chebi.owl
+  - from: /186/chebi.owl
     to: http://ftp.ebi.ac.uk/pub/databases/chebi/archive/rel186/ontology/chebi.owl
 
 ## generic fall-through, serve direct from github by default

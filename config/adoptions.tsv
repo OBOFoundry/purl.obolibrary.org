@@ -1,0 +1,81 @@
+ID	IDSPACE	Label
+BFO_0000050	RO	part of
+BFO_0000051	RO	has part
+BFO_0000062	RO	preceded by
+BFO_0000066	RO	occurs in
+IAO_0000002	OMO	example to be eventually removed
+IAO_0000078	OMO	curation status specification
+IAO_0000102	OMO	data about an ontology part
+IAO_0000103	OMO	failed exploratory term
+IAO_0000111	OMO	editor preferred term
+IAO_0000112	OMO	example of usage
+IAO_0000113	OMO	in branch
+IAO_0000114	OMO	has curation status
+IAO_0000115	OMO	definition
+IAO_0000116	OMO	editor note
+IAO_0000117	OMO	term editor
+IAO_0000118	OMO	alternative term
+IAO_0000119	OMO	definition source
+IAO_0000120	OMO	metadata complete
+IAO_0000121	OMO	organizational term
+IAO_0000122	OMO	ready for release
+IAO_0000123	OMO	metadata incomplete
+IAO_0000124	OMO	uncurated
+IAO_0000125	OMO	pending final vetting
+IAO_0000224	OMO	obsolete_core
+IAO_0000225	OMO	obsolescence reason specification
+IAO_0000226	OMO	placeholder removed
+IAO_0000227	OMO	terms merged
+IAO_0000228	OMO	term imported
+IAO_0000229	OMO	term split
+IAO_0000231	OMO	has obsolescence reason
+IAO_0000232	OMO	curator note
+IAO_0000233	OMO	term tracker item
+IAO_0000234	OMO	ontology term requester
+IAO_0000409	OMO	denotator type
+IAO_0000410	OMO	universal
+IAO_0000411	OMO	is denotator type
+IAO_0000412	OMO	imported from
+IAO_0000420	OMO	defined class
+IAO_0000421	OMO	named class expression
+IAO_0000423	OMO	to be replaced with external ontology term
+IAO_0000424	OMO	expand expression to
+IAO_0000425	OMO	expand assertion to
+IAO_0000426	OMO	first order logic expression
+IAO_0000427	OMO	antisymmetric property
+IAO_0000428	OMO	requires discussion
+IAO_0000589	OMO	OBO foundry unique label
+IAO_0000596	OMO	has ID digit count
+IAO_0000597	OMO	has ID range allocated to
+IAO_0000598	OMO	has ID policy for
+IAO_0000599	OMO	has ID prefix
+IAO_0000600	OMO	elucidation
+IAO_0000601	OMO	has associated axiom(nl)
+IAO_0000602	OMO	has associated axiom(fol)
+IAO_0000603	OMO	is allocated id range
+IAO_0000700	OMO	has ontology root term
+IAO_0006011	OMO	may be identical to
+IAO_0006012	OMO	scheduled for obsoletion on or after
+IAO_0010000	OMO	has axiom label
+IAO_0100001	OMO	term replaced by
+IAO_8000000	OMO	ontology module
+IAO_8000001	OMO	base ontology module
+IAO_8000002	OMO	editors ontology module
+IAO_8000003	OMO	main release ontology module
+IAO_8000004	OMO	bridge ontology module
+IAO_8000005	OMO	import ontology module
+IAO_8000006	OMO	subset ontology module
+IAO_8000007	OMO	curation subset ontology module
+IAO_8000008	OMO	analysis subset ontology module
+IAO_8000009	OMO	single layer subset ontology module
+IAO_8000010	OMO	exclusion subset ontology module
+IAO_8000011	OMO	external import ontology module
+IAO_8000012	OMO	species subset ontology module
+IAO_8000013	OMO	reasoned ontology module
+IAO_8000014	OMO	generated ontology module
+IAO_8000015	OMO	template generated ontology module
+IAO_8000016	OMO	taxonomic bridge ontology module
+IAO_8000017	OMO	ontology module subsetted by expressivity
+IAO_8000018	OMO	obo basic subset ontology module
+IAO_8000019	OMO	ontology module subsetted by OWL profile
+IAO_8000020	OMO	EL++ ontology module

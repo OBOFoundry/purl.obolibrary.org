@@ -4,7 +4,7 @@ idspace: OBI
 base_url: /obo/obi
 
 products:
-- obi.owl: https://raw.githubusercontent.com/obi-ontology/obi/v2020-04-23/obi.owl
+- obi.owl: https://raw.githubusercontent.com/obi-ontology/obi/v2120-04-23/obi.owl
 - obi.obo: https://raw.githubusercontent.com/obi-ontology/obi/v2020-04-23/views/obi.obo
 
 term_browser: ontobee

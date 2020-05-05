@@ -1,0 +1,23 @@
+# PURL configuration for http://purl.obolibrary.org/obo/omo
+
+idspace: OMO
+base_url: /obo/omo
+
+products:
+- omo.owl: https://raw.githubusercontent.com/information-artifact-ontology/ontology-metadata/v2020-05-03/omo.owl
+
+term_browser: ontobee
+example_terms:
+- IAO_0000115
+
+entries:
+- exact: /omo.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/ontology-metadata/v2020-05-03/omo.owl
+
+# version IRIs
+- exact: /v2020-05-03/omo.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/ontology-metadata/v2020-05-03/omo.owl
+
+# development version
+- exact: /omo/omo-edit.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/ontology-metadata/master/src/ontology/omo-edit.owl

@@ -4,8 +4,8 @@ idspace: VT
 base_url: /obo/vt
 
 products:
-- vt.owl: https://raw.githubusercontent.com/obophenotype/upheno/master/vt/vt.owl
-- vt.obo: https://raw.githubusercontent.com/obophenotype/upheno/master/vt/vt.obo
+- vt.owl: https://github.com/AnimalGenome/vertebrate-trait-ontology/raw/master/current_release/vt.owl
+- vt.obo: https://github.com/AnimalGenome/vertebrate-trait-ontology/raw/master/current_release/vt.obo
 
 term_browser: ontobee
 example_terms:

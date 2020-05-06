@@ -1,0 +1,26 @@
+# PURL configuration for http://purl.obolibrary.org/obo/clyh
+
+idspace: CLYH
+base_url: /obo/clyh
+
+products:
+- clyh.owl: https://raw.githubusercontent.com/EBISPOT/clyh_ontology/master/clyh.owl
+- clyh.obo: https://raw.githubusercontent.com/EBISPOT/clyh_ontology/master/clyh.obo
+
+term_browser: ontobee
+example_terms:
+- CLYH_0000001
+
+entries:
+
+- prefix: /releases/
+  replacement: https://github.com/EBISPOT/clyh_ontology/releases/download/v
+
+- prefix: /tracker/
+  replacement: https://github.com/EBISPOT/clyh_ontology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/CLYH?iri=http://purl.obolibrary.org/obo/
+
+- prefix: /
+  replacement: https://github.com/EBISPOT/clyh_ontology/releases/download/current/

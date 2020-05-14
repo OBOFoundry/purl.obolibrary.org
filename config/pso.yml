@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/pso.owl
+
+idspace: PSO
+base_url: /obo/pso
+
+products:
+- pso.owl: https://raw.githubusercontent.com/Planteome/plant-stress-ontology/pso.owl
+- pso.obo: https://raw.githubusercontent.com/Planteome/plant-stress-ontology/pso.obo
+
+term_browser: ontobee
+example_terms:
+- PSO_0000001
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/Planteome/plant-stress-ontology/pso/v
+
+- prefix: /tracker/
+  replacement: https://github.com/Planteome/plant-stress-ontology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/PSO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/Planteome/plant-stress-ontology/master/

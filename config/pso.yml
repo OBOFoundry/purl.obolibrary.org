@@ -4,8 +4,8 @@ idspace: PSO
 base_url: /obo/pso
 
 products:
-- pso.owl: https://raw.githubusercontent.com/Planteome/plant-stress-ontology/pso.owl
-- pso.obo: https://raw.githubusercontent.com/Planteome/plant-stress-ontology/pso.obo
+- pso.owl: https://raw.githubusercontent.com/Planteome/plant-stress-ontology/master/pso.owl
+- pso.obo: https://raw.githubusercontent.com/Planteome/plant-stress-ontology/master/pso.obo
 
 term_browser: ontobee
 example_terms:
@@ -14,7 +14,7 @@ example_terms:
 entries:
 
 - prefix: /releases/
-  replacement: https://raw.githubusercontent.com/Planteome/plant-stress-ontology/pso/v
+  replacement: https://raw.githubusercontent.com/Planteome/plant-stress-ontology/v
 
 - prefix: /tracker/
   replacement: https://github.com/Planteome/plant-stress-ontology/issues

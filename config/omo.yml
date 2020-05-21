@@ -7,8 +7,6 @@ products:
 - omo.owl: https://raw.githubusercontent.com/information-artifact-ontology/ontology-metadata/v2020-05-03/omo.owl
 
 term_browser: ontobee
-example_terms:
-- IAO_0000115
 
 entries:
 - exact: /omo.owl

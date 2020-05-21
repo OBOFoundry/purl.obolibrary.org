@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/fovt
+
+idspace: FOVT
+base_url: /obo/fovt
+
+products:
+- fovt.owl: https://raw.githubusercontent.com/futres/fovt/master/fovt.owl
+- fovt.obo: https://raw.githubusercontent.com/futres/fovt/master/fovt.obo
+
+term_browser: ontobee
+example_terms:
+- FOVT_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/futres/fovt/v
+
+- prefix: /tracker/
+  replacement: https://github.com/futres/fovt/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/FOVT?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/futres/fovt/master/

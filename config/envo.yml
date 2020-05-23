@@ -30,3 +30,7 @@ entries:
 
 - prefix: /imports/
   replacement: https://raw.githubusercontent.com/EnvironmentOntology/envo/master/src/envo/imports/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/EnvironmentOntology/envo/master/

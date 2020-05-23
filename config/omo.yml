@@ -13,9 +13,9 @@ entries:
   replacement: https://raw.githubusercontent.com/information-artifact-ontology/ontology-metadata/v2020-05-08/omo.owl
 
 # version IRIs
-- exact: /v2020-05-08/omo.owl
+- exact: /2020-05-08/omo.owl
   replacement: https://raw.githubusercontent.com/information-artifact-ontology/ontology-metadata/v2020-05-08/omo.owl
 
 # development version
-- exact: /omo/omo-edit.owl
+- exact: /omo-edit.owl
   replacement: https://raw.githubusercontent.com/information-artifact-ontology/ontology-metadata/master/src/ontology/omo-edit.owl

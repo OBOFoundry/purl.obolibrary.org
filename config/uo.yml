@@ -4,8 +4,8 @@ idspace: UO
 base_url: /obo/uo
 
 products:
-- uo.owl: http://ontologies.berkeleybop.org/uo.owl
-- uo.obo: http://ontologies.berkeleybop.org/uo.obo
+- uo.owl: https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/uo.owl
+- uo.obo: https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/unit.obo
 
 term_browser: ontobee
 example_terms:

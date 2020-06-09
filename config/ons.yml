@@ -4,8 +4,8 @@ idspace: ONS
 base_url: /obo/ons
 
 products:
-- ons_release_v1.0.owl: https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/ons_release_v1.0.owl
-- ons_release_v1.0.obi: https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/ons_release_v1.0.obo
+- ons.owl: https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/ons_release_v1.0.owl
+- ons.obo: https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/ons_release_v1.0.obo
 
 term_browser: ontobee
 example_terms:

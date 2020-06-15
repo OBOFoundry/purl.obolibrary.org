@@ -3,11 +3,11 @@
 # Redirect anything /obo/ that was not matched back to the old PURL system.
 RedirectMatch temp ^/obo/(.*)$ http://purl.oclc.org/obo/$1
 
-# Redirect anything else to the GitHub page.
-RedirectMatch temp ^.*$ https://github.com/OBOFoundry/purl.obolibrary.org/
-
 ### Meta
 # http://purl.obolibrary.org/meta/
 # see https://github.com/OBOFoundry/purl.obolibrary.org/issues/427
 # E.g. http://purl.obolibrary.org/meta/ontologies.{yml,json,ttl}
 RedirectMatch temp ^/meta/(.*)$ https://raw.githubusercontent.com/OBOFoundry/OBOFoundry.github.io/master/registry/$1
+
+# Redirect anything else to the GitHub page.
+RedirectMatch temp ^.*$ https://github.com/OBOFoundry/purl.obolibrary.org/

@@ -9,7 +9,7 @@ products:
 - uberon.owl: http://ontologies.berkeleybop.org/uberon.owl
 - uberon.obo: http://ontologies.berkeleybop.org/uberon.obo
 
-term_browser: ontobee
+term_browser: ols
 example_terms:
 - UBERON_0000000
 

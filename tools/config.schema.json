@@ -1,13 +1,38 @@
 {
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"definitions": {
+		"url": {
+			"description": "should be a URL string, beginning with either https: or ftp:",
+			"type": "string",
+			"pattern": "^(https?|ftp)\\:\\/\\/[a-zA-Z0-9][\\/\\.\\-\\:\\?\\=\\&\\#\\%\\!\\$\\~\\+\\w]+$"
+		},
+		"path": {
+			"description": "must begin with '/'",
+			"type": "string",
+			"pattern": "^\\/"
+		},
+		"test_item": {
+			"type": "object",
+			"properties": {
+				"from": {
+					"$ref": "#/definitions/path"
+				},
+				"to": {
+					"$ref": "#/definitions/url"
+				}
+			},
+			"required": ["from", "to"]
+		}
+	},
 	"properties": {
 		"idspace": {
 			"_comment": "See issue #82",
-			"description": "'idspace' must consist of letters, numbers, and underscores only, and must begin with a letter",
+			"description": "must consist of letters, numbers, and underscores only, and must begin with a letter",
 			"type": "string",
 			"pattern": "^[A-Za-z][A-Za-z0-9_]+$"
 		},
 		"base_url": {
-			"description": "'base_url' must begin with '/obo'",
+			"description": "must begin with '/obo'",
 			"type": "string",
 			"pattern": "^\\/obo"
 		},
@@ -25,7 +50,7 @@
 			}
 		},
 		"term_browser": {
-			"description": "'term_browser' must be either 'ontobee' or 'custom'",
+			"description": "must be either 'ontobee' or 'custom'",
 			"type": "string",
 			"pattern": "^(ontobee|ols|custom)$"
 		},
@@ -37,21 +62,8 @@
 		},
 		"tests": {
 			"type": "array",
-			"items": {
-				"type": "object",
-				"properties": {
-					"from": {
-						"description": "'from' must begin with '/'",
-						"type": "string",
-						"pattern": "^\\/"
-					},
-					"to": {
-						"description": "'to' must be in the form of a URL",
-						"type": "string",
-						"pattern": "^(https?|ftp)\\:\\/\\/[a-zA-Z0-9][\\/\\.\\-\\:\\?\\=\\&\\#\\%\\!\\$\\~\\+\\w]+$"
-					}
-				},
-				"required": ["from", "to"]
+			"items" : {
+				"$ref": "#/definitions/test_item"
 			}
 		},
 		"entries": {
@@ -61,47 +73,28 @@
 				"properties": {
 					"exact": {
 						"_comment": "Note: JSON-Schema cannot ensure that `exact` mappings are unique",
-						"description": "'exact' must begin with '/'",
-						"type": "string",
-						"pattern": "^\\/"
+						"$ref": "#/definitions/path"
 					},
 					"prefix": {
 						"_comment": "Note: JSON-Schema cannot ensure that `prefix` mappings are unique",
-						"description": "'prefix' must begin with '/'",
-						"type": "string",
-						"pattern": "^\\/"
+						"$ref": "#/definitions/path"
 					},
 					"regex": {
 						"_comment": "Note: JSON-Schema cannot ensure that `regex` mappings are unique",
 						"type": "string"
 					},
 					"replacement": {
-						"type": "string",
-						"description": "'replacement' must be in the form of a URL",
-						"pattern": "^(https?|ftp)\\:\\/\\/[a-zA-Z0-9][\\/\\.\\-\\:\\?\\=\\&\\#\\%\\!\\$\\~\\+\\w]+$"
+						"$ref": "#/definitions/url"
 					},
 					"status": {
-						"description": "'status' must be either 'permanent', 'temporary', or 'see other'",
+						"description": "must be either 'permanent', 'temporary', or 'see other'",
 						"type": "string",
 						"pattern": "^(permanent|temporary|see other)$"
 					},
 					"tests": {
 						"type": "array",
-						"items": {
-							"type": "object",
-							"properties": {
-								"from": {
-									"description": "'from' must begin with '/'",
-									"type": "string",
-									"pattern": "^\\/"
-								},
-								"to": {
-									"description": "'to' must be in the form of a URL",
-									"type": "string",
-									"pattern": "^(https?|ftp)\\:\\/\\/[a-zA-Z0-9][\\/\\.\\-\\:\\?\\=\\&\\#\\%\\!\\$\\~\\+\\w]+$"
-								}
-							},
-							"required": ["from", "to"]
+						"items" : {
+							"$ref": "#/definitions/test_item"
 						}
 					}
 				},

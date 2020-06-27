@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/ecao
+
+idspace: ECAO
+base_url: /obo/ecao
+
+products:
+- ecao.owl: https://raw.githubusercontent.com/echinoderm-ontology/ecao_ontology/master/ecao.owl
+- ecao.obo: https://raw.githubusercontent.com/echinoderm-ontology/ecao_ontology/master/ecao.obo
+- ecao-base.owl: https://raw.githubusercontent.com/echinoderm-ontology/ecao_ontology/master/ecao-base.owl
+
+term_browser: ontobee
+example_terms:
+- ECAO_0000001
+
+entries:
+
+- prefix: /releases/
+  replacement: https://github.com/echinoderm-ontology/ecao_ontology/releases/download/v
+
+- prefix: /tracker/
+  replacement: https://github.com/echinoderm-ontology/ecao_ontology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/ECAO?iri=http://purl.obolibrary.org/obo/
+
+- prefix: /
+  replacement: https://raw.githubusercontent.com/echinoderm-ontology/ecao_ontology/master/

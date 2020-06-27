@@ -4,8 +4,8 @@ idspace: NCBITaxon
 base_url: /obo/ncbitaxon
 
 products:
-- ncbitaxon.owl: http://ontologies.berkeleybop.org/ncbitaxon.owl
-- ncbitaxon.obo: http://ontologies.berkeleybop.org/ncbitaxon.obo
+- ncbitaxon.owl: https://github.com/obophenotype/ncbitaxon/releases/download/current/ncbitaxon.owl
+- ncbitaxon.obo: https://github.com/obophenotype/ncbitaxon/releases/download/current/ncbitaxon.obo
 
 term_browser: ontobee
 example_terms:
@@ -13,13 +13,15 @@ example_terms:
 
 entries:
 - prefix: /subsets/
-  replacement: http://ontologies.berkeleybop.org/ncbitaxon/subsets/
+  replacement: https://github.com/obophenotype/ncbitaxon/releases/download/current/
+- prefix: /2
+  replacement: https://github.com/obophenotype/ncbitaxon/releases/download/v2
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=NCBITaxon&iri=http://purl.obolibrary.org/obo/
   tests:
   - from: /about/NCBITaxon_1
     to: http://www.ontobee.org/browser/rdf.php?o=NCBITaxon&iri=http://purl.obolibrary.org/obo/NCBITaxon_1
 - prefix: /
-  replacement: http://ontologies.berkeleybop.org/ncbitaxon/
+  replacement: https://github.com/obophenotype/ncbitaxon/releases/download/current/
 
 

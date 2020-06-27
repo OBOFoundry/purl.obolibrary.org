@@ -1,0 +1,19 @@
+# PURL configuration for http://purl.obolibrary.org/obo/ons
+
+idspace: ONS
+base_url: /obo/ons
+
+products:
+- ons.owl: https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/ons_release_v1.0.owl
+- ons.obo: https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/ons_release_v1.0.obo
+
+term_browser: ontobee
+example_terms:
+- ONS_0000000
+
+entries:
+- exact: /ons_release_v1.0.owl
+  replacement: https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/ons_release_v1.0.owl
+  
+- prefix: /imports/
+  replacement: https://github.com/enpadasi/Ontology-for-Nutritional-Studies/tree/master/src/ontology/imports

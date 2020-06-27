@@ -9,7 +9,7 @@ products:
 - uberon.owl: http://ontologies.berkeleybop.org/uberon.owl
 - uberon.obo: http://ontologies.berkeleybop.org/uberon.obo
 
-term_browser: ontobee
+term_browser: ols
 example_terms:
 - UBERON_0000000
 
@@ -36,10 +36,10 @@ entries:
   replacement: https://github.com/obophenotype/uberon/issues
 
 - prefix: /about/
-  replacement: http://www.ontobee.org/browser/rdf.php?o=UBERON&iri=http://purl.obolibrary.org/obo/
+  replacement: https://www.ebi.ac.uk/ols/ontologies/uberon/terms?iri=http://purl.obolibrary.org/obo/
   tests:
-  - from: /about/UBERON_0000000
-    to: http://www.ontobee.org/browser/rdf.php?o=UBERON&iri=http://purl.obolibrary.org/obo/UBERON_0000000
+  - from: /about/UBERON_0000981
+    to: https://www.ebi.ac.uk/ols/ontologies/uberon/terms?iri=http://purl.obolibrary.org/obo/UBERON_0000981
 
 - prefix: /docs
   replacement: https://github.com/obophenotype/uberon/wiki

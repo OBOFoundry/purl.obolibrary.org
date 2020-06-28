@@ -243,7 +243,7 @@ def translate_base_redirects(yamldoc):
   if 'base_redirect' in yamldoc and type(yamldoc['base_redirect']) is str:
     base_url = unquote(yamldoc['base_url'])
     base_redirect = unquote(yamldoc['base_redirect'])
-    directive = 'RedirectMatch temp "(?i)^%s$" "%s"' % (base_url, base_redirect)
+    directive = 'RedirectMatch temp "(?i)^%s[/]$" "%s"' % (base_url, base_redirect)
     return directive
 
 

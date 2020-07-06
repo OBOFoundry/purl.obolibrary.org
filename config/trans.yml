@@ -3,11 +3,11 @@
 idspace: TRANS
 base_url: /obo/trans
 
-base_redirect: https://github.com/DiseaseOntology/PathogenTransmissionOntology/tree/master/src/ontology
+base_redirect: https://github.com/DiseaseOntology/PathogenTransmissionOntology/tree/main/src/ontology
 
 products:
-- trans.owl: https://raw.githubusercontent.com/DiseaseOntology/PathogenTransmissionOntology/master/src/ontology/trans.owl
-- trans.obo: https://raw.githubusercontent.com/DiseaseOntology/PathogenTransmissionOntology/master/src/ontology/trans.obo
+- trans.owl: https://raw.githubusercontent.com/DiseaseOntology/PathogenTransmissionOntology/main/src/ontology/trans.owl
+- trans.obo: https://raw.githubusercontent.com/DiseaseOntology/PathogenTransmissionOntology/main/src/ontology/trans.obo
 
 term_browser: ontobee
 example_terms:

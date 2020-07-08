@@ -1,0 +1,12 @@
+# PURL configuration for http://purl.obolibrary.org/obo/cto
+
+idspace: CTO
+base_url: /obo/cto
+
+products:
+- cto.owl: https://raw.githubusercontent.com/ClinicalTrialOntology/CTO/master/cto.owl
+
+term_browser: ontobee
+
+example_terms:
+- CTO_0000001

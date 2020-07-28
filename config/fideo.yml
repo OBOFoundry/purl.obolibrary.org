@@ -4,7 +4,7 @@ idspace: FIDEO
 base_url: /obo/fideo
 
 products:
-- fideo_1.0.0.owl: https://gitub.u-bordeaux.fr/erias/fideo/-/blob/master/fideo_1.0.0.owl
+- fideo.owl: https://gitub.u-bordeaux.fr/erias/fideo/-/raw/master/fideo_1.0.0.owl
 
 term_browser: ontobee
 example_terms:

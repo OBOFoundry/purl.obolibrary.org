@@ -8,6 +8,7 @@ base_redirect: http://uberon.org
 products:
 - uberon.owl: http://ontologies.berkeleybop.org/uberon.owl
 - uberon.obo: http://ontologies.berkeleybop.org/uberon.obo
+- uberon.json: http://ontologies.berkeleybop.org/uberon.json
 
 term_browser: ols
 example_terms:

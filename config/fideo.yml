@@ -1,0 +1,15 @@
+# PURL configuration for http://purl.obolibrary.org/obo/fideo
+
+idspace: FIDEO
+base_url: /obo/fideo
+
+products:
+- fideo_1.0.0.owl: https://gitub.u-bordeaux.fr/erias/fideo/-/blob/master/fideo_1.0.0.owl
+
+term_browser: ontobee
+example_terms:
+- FIDEO_00000000
+
+entries:
+- prefix: /imports/
+  replacement: https://gitub.u-bordeaux.fr/erias/fideo/-/tree/master/imports

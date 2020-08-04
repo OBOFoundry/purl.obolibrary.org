@@ -13,6 +13,9 @@ example_terms:
 - OGMS_0000031
 
 entries:
+- exact: /2020-07-06/ogms.owl 
+  replacement: https://raw.githubusercontent.com/OGMS/ogms/2020-07-06/src/ontology/ogms.owl
+
 - exact: /2009-08-07/ogms.owl
   replacement: https://raw.githubusercontent.com/OGMS/ogms/releases/2009-08-07/ogms.owl
 

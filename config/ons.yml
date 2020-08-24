@@ -13,7 +13,7 @@ example_terms:
 
 entries:
 - exact: /ons_release_v1.0.owl
-  replacement: https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/ons_release_v1.0.owl
+  replacement: https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/Older_deprecated/ons_release_v1.0.owl
 
 - exact: /ons_release_v1.1.owl
   replacement: https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/ons_release_v1.1.owl

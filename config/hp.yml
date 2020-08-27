@@ -33,10 +33,10 @@ entries:
   replacement: http://compbio.charite.de/jenkins/job/hpo.annotations/lastSuccessfulBuild/artifact/misc/phenotype_annotation_negated.tab
 
 - exact: /hpoa/genes_to_phenotype.txt
-  replacement: http://compbio.charite.de/jenkins/job/hpo.annotations/lastSuccessfulBuild/artifact/misc/genes_to_phenotype.txt
+  replacement: http://compbio.charite.de/jenkins/job/hpo.annotations/lastSuccessfulBuild/artifact/util/annotation/genes_to_phenotype.txt
 
 - exact: /hpoa/phenotype_to_genes.txt
-  replacement: http://compbio.charite.de/jenkins/job/hpo.annotations/lastSuccessfulBuild/artifact/misc/phenotype_to_genes.txt
+  replacement: http://compbio.charite.de/jenkins/job/hpo.annotations/lastSuccessfulBuild/artifact/util/annotation/phenotype_to_genes.txt
 
 - exact: /hpoa/phenotype.hpoa
   replacement: http://compbio.charite.de/jenkins/job/hpo.annotations.current/lastSuccessfulBuild/artifact/current/phenotype.hpoa

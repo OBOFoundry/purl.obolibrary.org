@@ -14,7 +14,7 @@ example_terms:
 entries:
 
 - exact: /releases/2020-08-26/
-  replacement: https://raw.githubusercontent.com/PopulationAndCommunityOntology/pco/2017-08-26/
+  replacement: https://raw.githubusercontent.com/PopulationAndCommunityOntology/pco/2020-08-26/
 
 #Note this one has to be the full URI, because the ontology has the version IRI listed as 2020-02-13, and a partial replacement won't work:
 - exact: http://purl.obolibrary.org/obo/pco/releases/2020-02-12/pco.owl

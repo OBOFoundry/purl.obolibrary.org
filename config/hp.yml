@@ -13,9 +13,6 @@ products:
 term_browser: custom
 
 entries:
-- prefix: /uberpheno/
-  replacement: http://compbio.charite.de/hudson/job/hpo.ontology.uberpheno/lastStableBuild/artifact/data/uberphenoOut/
-
 - prefix: /releases/
   replacement: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/v
 
@@ -28,6 +25,23 @@ entries:
   - from: /about/HP_0000001
     to: http://www.ontobee.org/browser/rdf.php?o=HP&iri=http://purl.obolibrary.org/obo/HP_0000001
 
+# HPOA files
+- exact: /hpoa/phenotype_annotation.tab
+  replacement: http://compbio.charite.de/jenkins/job/hpo.annotations/lastSuccessfulBuild/artifact/misc/phenotype_annotation.tab
+
+- exact: /hpoa/phenotype_annotation_negated.tab
+  replacement: http://compbio.charite.de/jenkins/job/hpo.annotations/lastSuccessfulBuild/artifact/misc/phenotype_annotation_negated.tab
+
+- exact: /hpoa/genes_to_phenotype.txt
+  replacement: http://compbio.charite.de/jenkins/job/hpo.annotations/lastSuccessfulBuild/artifact/util/annotation/genes_to_phenotype.txt
+
+- exact: /hpoa/phenotype_to_genes.txt
+  replacement: http://compbio.charite.de/jenkins/job/hpo.annotations/lastSuccessfulBuild/artifact/util/annotation/phenotype_to_genes.txt
+
+- exact: /hpoa/phenotype.hpoa
+  replacement: http://compbio.charite.de/jenkins/job/hpo.annotations.current/lastSuccessfulBuild/artifact/current/phenotype.hpoa
+
+
+# default
 - prefix: /
   replacement: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/
-

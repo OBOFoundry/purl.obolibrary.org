@@ -26,19 +26,19 @@ entries:
     to: http://www.ontobee.org/browser/rdf.php?o=HP&iri=http://purl.obolibrary.org/obo/HP_0000001
 
 # HPOA files
-- prefix: /hpoa/phenotype_annotation.tab
+- exact: /hpoa/phenotype_annotation.tab
   replacement: http://compbio.charite.de/jenkins/job/hpo.annotations/lastSuccessfulBuild/artifact/misc/phenotype_annotation.tab
 
-- prefix: /hpoa/phenotype_annotation_negated.tab
+- exact: /hpoa/phenotype_annotation_negated.tab
   replacement: http://compbio.charite.de/jenkins/job/hpo.annotations/lastSuccessfulBuild/artifact/misc/phenotype_annotation_negated.tab
 
-- prefix: /hpoa/genes_to_phenotype.txt
+- exact: /hpoa/genes_to_phenotype.txt
   replacement: http://compbio.charite.de/jenkins/job/hpo.annotations/lastSuccessfulBuild/artifact/misc/genes_to_phenotype.txt
 
-- prefix: /hpoa/phenotype_to_genes.txt
+- exact: /hpoa/phenotype_to_genes.txt
   replacement: http://compbio.charite.de/jenkins/job/hpo.annotations/lastSuccessfulBuild/artifact/misc/phenotype_to_genes.txt
 
-- prefix: /hpoa/phenotype.hpoa
+- exact: /hpoa/phenotype.hpoa
   replacement: http://compbio.charite.de/jenkins/job/hpo.annotations.current/lastSuccessfulBuild/artifact/current/phenotype.hpoa
 
 

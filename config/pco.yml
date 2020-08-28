@@ -15,7 +15,7 @@ entries:
 
 # Handle typo in versionIRI date, see https://github.com/PopulationAndCommunityOntology/pco/issues/84
 - exact: /releases/2020-02-13/pco.owl
-   replacement: https://raw.githubusercontent.com/PopulationAndCommunityOntology/pco/2020-02-12/pco.owl
+  replacement: https://raw.githubusercontent.com/PopulationAndCommunityOntology/pco/2020-02-12/pco.owl
 
 - exact: /releases/2016-12-14/pco.owl
   replacement: https://raw.githubusercontent.com/PopulationAndCommunityOntology/pco/2016-12-14/src/ontology/pco_merged_inferred.owl

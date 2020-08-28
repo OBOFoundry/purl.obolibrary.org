@@ -13,14 +13,9 @@ example_terms:
 
 entries:
 
-- exact: /releases/2020-02-12/pco.owl
+# Handle typo in versionIRI date, see https://github.com/PopulationAndCommunityOntology/pco/issues/84
+- exact: /releases/2020-02-13/pco.owl
   replacement: https://raw.githubusercontent.com/PopulationAndCommunityOntology/pco/2020-02-12/pco.owl
-  
-- exact: /releases/2017-11-06/pco.owl
-  replacement: https://raw.githubusercontent.com/PopulationAndCommunityOntology/pco/2017-11-06/pco.owl
-  
-- exact: /releases/2017-08-16/pco.owl
-  replacement: https://raw.githubusercontent.com/PopulationAndCommunityOntology/pco/2017-08-16/pco.owl
 
 - exact: /releases/2016-12-14/pco.owl
   replacement: https://raw.githubusercontent.com/PopulationAndCommunityOntology/pco/2016-12-14/src/ontology/pco_merged_inferred.owl
@@ -31,8 +26,15 @@ entries:
 - exact: /pco_merged_inferred.owl
   replacement: https://raw.githubusercontent.com/PopulationAndCommunityOntology/pco/master/src/ontology/pco_merged_inferred.owl
    
-# - prefix: /releases/
-#   replacement: https://raw.githubusercontent.com/PopulationAndCommunityOntology/pco/v
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/PopulationAndCommunityOntology/pco/
+  tests:
+  - from: /releases/2020-08-26/pco.owl
+    to: https://raw.githubusercontent.com/PopulationAndCommunityOntology/pco/2020-08-26/pco.owl
+  - from: /releases/2017-08-16/pco.owl
+    to: https://raw.githubusercontent.com/PopulationAndCommunityOntology/pco/2017-08-16/pco.owl
+  - from: /releases/2017-11-06/pco.owl
+    to: https://raw.githubusercontent.com/PopulationAndCommunityOntology/pco/2017-11-06/pco.owl
 
 - prefix: /about/
   replacement: http://www.ontobee.org/ontology/PCO?iri=http://purl.obolibrary.org/obo/

@@ -14,3 +14,6 @@ example_terms:
 entries:
 - prefix: /views/
   replacement: https://raw.githubusercontent.com/IHCC-cohorts/GECKO/master/views/
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/IHCC-cohorts/GECKO/v

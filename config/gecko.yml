@@ -5,6 +5,7 @@ base_url: /obo/gecko
 
 products:
 - gecko.owl: https://raw.githubusercontent.com/IHCC-cohorts/GECKO/master/gecko.owl
+- ihcc-gecko.owl: https://raw.githubusercontent.com/IHCC-cohorts/GECKO/master/views/ihcc-gecko.owl
 
 term_browser: ontobee
 example_terms:

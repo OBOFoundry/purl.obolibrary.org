@@ -15,6 +15,9 @@ entries:
 
 ### Current Releases
 
+- exact: /obi-base.owl
+  replacement: https://raw.githubusercontent.com/obi-ontology/obi/master/views/obi-base.owl
+
 - exact: /obi_core.owl
   replacement: https://raw.githubusercontent.com/obi-ontology/obi/v2020-04-09/views/obi_core.owl
 

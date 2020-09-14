@@ -11,5 +11,11 @@ example_terms:
 - GECKO_0000001
 
 entries:
+- exact: /ihcc-gecko.owl
+  replacement: https://raw.githubusercontent.com/IHCC-cohorts/GECKO/master/views/ihcc-gecko.owl
+
 - prefix: /views/
   replacement: https://raw.githubusercontent.com/IHCC-cohorts/GECKO/master/views/
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/IHCC-cohorts/GECKO/v

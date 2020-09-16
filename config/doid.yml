@@ -6,9 +6,9 @@ base_url: /obo/doid
 base_redirect: https://github.com/DiseaseOntology/HumanDiseaseOntology
 
 products:
-- doid.owl: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid.owl
-- doid.obo: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid.obo
-- doid.json: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/doid.json
+- doid.owl: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/main/src/ontology/doid.owl
+- doid.obo: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/main/src/ontology/doid.obo
+- doid.json: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/main/src/ontology/doid.json
 
 term_browser: ontobee
 example_terms:
@@ -17,22 +17,22 @@ example_terms:
 entries:
 
 - exact: /obo/ext.owl
-  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/ext.owl
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/main/src/ontology/ext.owl
 
 - prefix: /imports/
-  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/imports/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/main/src/ontology/imports/
   tests:
   - from: /imports/ro_import.owl
-    to: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/imports/ro_import.owl
+    to: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/main/src/ontology/imports/ro_import.owl
 
 - prefix: /releases/
-  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/releases/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/main/src/ontology/releases/
   tests:
   - from: /releases/2017-01-27/doid.owl
-    to: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/releases/2017-01-27/doid.owl
+    to: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/main/src/ontology/releases/2017-01-27/doid.owl
 
 - prefix: /
-  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/main/src/ontology/
   tests:
   - from: /HumanDO.owl
-    to: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/master/src/ontology/HumanDO.owl
+    to: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/main/src/ontology/HumanDO.owl

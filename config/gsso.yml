@@ -27,7 +27,7 @@ entries:
   replacement: https://raw.githubusercontent.com/Superraptor/GSSO/master/subsets/
 
 - prefix: /
-  replacement: hhttps://raw.githubusercontent.com/Superraptor/GSSO/master/
+  replacement: https://raw.githubusercontent.com/Superraptor/GSSO/master/
 
 - exact: /
   replacement: https://github.com/Superraptor/GSSO/

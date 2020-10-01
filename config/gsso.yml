@@ -1,0 +1,31 @@
+# PURL configuration for http://purl.obolibrary.org/obo/gsso
+
+idspace: GSSO
+base_url: /obo/gsso
+
+products:
+- gsso.owl: https://raw.githubusercontent.com/Superraptor/GSSO/master/gsso.owl
+- gsso.obo: https://raw.githubusercontent.com/Superraptor/GSSO/master/gsso.obo
+- gsso.json: https://raw.githubusercontent.com/Superraptor/GSSO/master/gsso.json
+
+term_browser: ontobee
+example_terms:
+- GSSO_000130
+
+entries:
+
+- prefix: /releases/
+  replacement: https://github.com/Superraptor/GSSO/releases/download/v
+
+- exact: /tracker
+  replacement: https://github.com/Superraptor/GSSO/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/GSSO?iri=http://purl.obolibrary.org/obo/
+
+- prefix: /subsets/
+  replacement: https://raw.githubusercontent.com/Superraptor/GSSO/master/subsets/
+
+- prefix: /
+  replacement: https://raw.githubusercontent.com/Superraptor/GSSO/master/
+

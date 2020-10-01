@@ -14,6 +14,9 @@ example_terms:
 
 entries:
 
+- exact: /
+  replacement: https://github.com/Superraptor/GSSO/
+
 - prefix: /releases/
   replacement: https://github.com/Superraptor/GSSO/releases/download/v
 
@@ -29,5 +32,3 @@ entries:
 - prefix: /
   replacement: https://raw.githubusercontent.com/Superraptor/GSSO/master/
 
-- exact: /
-  replacement: https://github.com/Superraptor/GSSO/

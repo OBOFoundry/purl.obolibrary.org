@@ -6,13 +6,21 @@ base_url: /obo/mro
 base_redirect: https://github.com/IEDB/MRO
 
 products:
-- mro.owl: https://raw.githubusercontent.com/IEDB/MRO/master/mro.owl
+- mro.owl: https://github.com/IEDB/MRO/releases/latest/download/mro.owl
 
 term_browser: ontobee
 example_terms:
 - MRO_0000012
 
 entries:
+
+### Dated Releases after 2020-10-07
+
+- exact: /2020-10-07/mro.owl
+  replacement: https://github.com/IEDB/MRO/releases/download/v2020-10-07/mro.owl
+
+### Dated Releases before 2020-10-07
+
 - prefix: /20
   replacement: https://raw.githubusercontent.com/IEDB/MRO/v20
   tests:

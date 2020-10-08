@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/clao
+
+idspace: CLAO
+base_url: /obo/clao
+
+products:
+- clao.owl: https://raw.githubusercontent.com/luis-gonzalez-m/Collembola/master/clao.owl
+- clao.obo: https://raw.githubusercontent.com/luis-gonzalez-m/Collembola/master/clao.obo
+
+term_browser: ontobee
+example_terms:
+- CLAO_0000002
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/luis-gonzalez-m/Collembola/v
+
+- prefix: /tracker/
+  replacement: https://github.com/luis-gonzalez-m/Collembola/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/CLAO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/luis-gonzalez-m/Collembola/master/

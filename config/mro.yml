@@ -16,6 +16,9 @@ entries:
 
 ### Dated Releases after 2020-10-07
 
+- exact: /2020-10-14/mro.owl
+  replacement: https://github.com/IEDB/MRO/releases/download/v2020-10-14/mro.owl
+
 - exact: /2020-10-07/mro.owl
   replacement: https://github.com/IEDB/MRO/releases/download/v2020-10-07/mro.owl
 

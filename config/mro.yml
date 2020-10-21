@@ -14,21 +14,13 @@ example_terms:
 
 entries:
 
-### Dated Releases after 2020-10-07
-
-- exact: /2020-10-14/mro.owl
-  replacement: https://github.com/IEDB/MRO/releases/download/v2020-10-14/mro.owl
-
-- exact: /2020-10-07/mro.owl
-  replacement: https://github.com/IEDB/MRO/releases/download/v2020-10-07/mro.owl
-
-### Dated Releases before 2020-10-07
+### Dated Releases
 
 - prefix: /20
-  replacement: https://raw.githubusercontent.com/IEDB/MRO/v20
+  replacement: https://github.com/IEDB/MRO/releases/download/v20
   tests:
   - from: /2016-01-07/mro.owl
-    to: https://raw.githubusercontent.com/IEDB/MRO/v2016-01-07/mro.owl
+    to: https://github.com/IEDB/MRO/releases/download/v2016-01-07/mro.owl
   
 - prefix: /
   replacement: https://raw.githubusercontent.com/IEDB/MRO/master/

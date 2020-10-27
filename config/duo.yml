@@ -3,6 +3,8 @@
 idspace: DUO
 base_url: /obo/duo
 
+base_redirect: https://github.com/EBISPOT/DUO
+
 products:
 - duo.owl: https://raw.githubusercontent.com/EBISPOT/DUO/master/duo.owl
 - duo.obo: https://raw.githubusercontent.com/EBISPOT/DUO/master/duo.obo

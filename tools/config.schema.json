@@ -34,13 +34,17 @@
 		"base_url": {
 			"description": "must begin with '/obo'",
 			"type": "string",
-			"pattern": "^\\/obo"
+			"pattern": "^\\/obo",
+			"suggestion": "/obo/"
 		},
 		"base_redirect": {
-			"type": "string"
+			"description": "must be a valid URL",
+			"type": "string",
+			"format": "uri"
 		},
 		"products": {
 			"type": "array",
+			"description": "must specify the ontology files",
 			"items": {
 				"type": "object",
 				"patternProperties": {
@@ -50,11 +54,16 @@
 			}
 		},
 		"term_browser": {
-			"description": "must be either 'ontobee' or 'custom'",
+			"description": "must be one of 'ontobee', 'ols' or 'custom'",
 			"type": "string",
-			"pattern": "^(ontobee|ols|custom)$"
+			"enum": [
+				"ontobee",
+				"ols",
+				"custom"
+			]
 		},
 		"example_terms": {
+			"description": "include one or more examples IDs for exemplary ontology entries",
 			"type": "array",
 			"items": {
 				"type": "string"
@@ -62,11 +71,14 @@
 		},
 		"tests": {
 			"type": "array",
+			"suggestion": "from: \n  to: ",
 			"items" : {
 				"$ref": "#/definitions/test_item"
 			}
 		},
 		"entries": {
+			"description": "list PURL mapping paths (exact, prefix or regex) and replacement URLs",
+			"suggestion": "exact: \n  replacement: ",
 			"type": "array",
 			"items": {
 				"type": "object",
@@ -87,17 +99,28 @@
 						"$ref": "#/definitions/url"
 					},
 					"status": {
-						"description": "must be either 'permanent', 'temporary', or 'see other'",
+						"description": "must be one of 'permanent', 'temporary', or 'see other'",
 						"type": "string",
-						"pattern": "^(permanent|temporary|see other)$"
+						"enum": [
+							"permanent",
+							"temporary",
+							"see other"
+						]
 					},
 					"tests": {
 						"type": "array",
+						"description": "Indicates a from: and to: mapping that should be successful",
 						"items" : {
 							"$ref": "#/definitions/test_item"
 						}
 					}
 				},
+				"oneOf": [
+						{"description": "one of exact, prefix or regex is required",
+							"required": ["exact"]},
+						{"required": ["prefix"]},
+						{"required": ["regex"]}
+					],
 				"required": ["replacement"]
 			}
 		}

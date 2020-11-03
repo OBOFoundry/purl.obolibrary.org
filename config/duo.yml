@@ -17,9 +17,13 @@ entries:
 
 - prefix: /home/
   replacement: https://github.com/EBISPOT/DUO
-  
-- prefix: /releases/
-  replacement: https://raw.githubusercontent.com/EBISPOT/DUO/v
+ 
+- exact: /releases/
+  replacement: https://github.com/EBISPOT/DUO/releases
+
+# Handle all dated releases for this millenium (starting with 2)
+- prefix: /releases/2
+  replacement: https://raw.githubusercontent.com/EBISPOT/DUO/v2
 
 - prefix: /tracker/
   replacement: https://github.com/EBISPOT/DUO/issues

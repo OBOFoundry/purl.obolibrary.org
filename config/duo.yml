@@ -17,6 +17,9 @@ entries:
 
 - prefix: /home/
   replacement: https://github.com/EBISPOT/DUO
+ 
+- exact: /releases/
+  replacement: https://github.com/EBISPOT/DUO/releases
   
 - prefix: /releases/
   replacement: https://raw.githubusercontent.com/EBISPOT/DUO/v

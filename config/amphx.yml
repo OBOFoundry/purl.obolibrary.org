@@ -14,7 +14,7 @@ example_terms:
 entries:
 
 - prefix: /releases/
-  replacement: https://github.com/EBISPOT/amphx_ontology/releases/download/v
+  replacement: https://raw.githubusercontent.com/EBISPOT/amphx_ontology/v
 
 - prefix: /tracker/
   replacement: https://github.com/EBISPOT/amphx_ontology/issues
@@ -23,4 +23,4 @@ entries:
   replacement: http://www.ontobee.org/ontology/AMPHX?iri=http://purl.obolibrary.org/obo/
 
 - prefix: /
-  replacement: https://github.com/EBISPOT/amphx_ontology/releases/download/current/
+  replacement: https://github.com/EBISPOT/amphx_ontology/releases/latest

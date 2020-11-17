@@ -4,7 +4,7 @@ idspace: ONE
 base_url: /obo/one
 
 products:
-- foodon.owl: https://raw.githubusercontent.com/cyang0128/Nutritional-epidemiologic-ontologies/master/ONE.owl
+- one.owl: https://raw.githubusercontent.com/cyang0128/Nutritional-epidemiologic-ontologies/master/ONE.owl
 
 term_browser: ontobee
 example_terms:

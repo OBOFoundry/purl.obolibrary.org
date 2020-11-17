@@ -23,4 +23,4 @@ entries:
   replacement: http://www.ontobee.org/ontology/AMPHX?iri=http://purl.obolibrary.org/obo/
 
 - prefix: /
-  replacement: https://github.com/EBISPOT/amphx_ontology/releases/latest
+  replacement: https://raw.githubusercontent.com/EBISPOT/amphx_ontology/master/

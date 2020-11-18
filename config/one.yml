@@ -1,0 +1,29 @@
+# PURL configuration for http://purl.obolibrary.org/obo/one
+
+idspace: ONE
+base_url: /obo/one
+
+products:
+- one.owl: https://raw.githubusercontent.com/cyang0128/Nutritional-epidemiologic-ontologies/master/ONE.owl
+
+term_browser: ontobee
+example_terms:
+- ONE_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/cyang0128/Nutritional-epidemiologic-ontologies/v
+
+- prefix: /tracker/
+  replacement: https://github.com/cyang0128/Nutritional-epidemiologic-ontologies/issues/
+
+- prefix: /diffs/
+  replacement: https://github.com/cyang0128/Nutritional-epidemiologic-ontologies/commit/
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/ONE?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/cyang0128/Nutritional-epidemiologic-ontologies/master/

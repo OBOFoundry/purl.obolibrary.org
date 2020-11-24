@@ -6,6 +6,12 @@ base_url: /obo/uo
 products:
 - uo.owl: https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/uo.owl
 - uo.obo: https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/unit.obo
+- uo-without-units-as-classes.owl: https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/uo-without-units-as-classes.owl
+- uo-without-instances.owl: https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/uo-without-instances.owl
+- uo-without-pato-references.owl: https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/uo-without-pato-references.owl
+- uo-without-singleton-definitions.owl: https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/uo-without-singleton-definitions.owl
+- uo-with-pato.owl: https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/uo-with-pato.owl
+
 
 term_browser: ontobee
 example_terms:

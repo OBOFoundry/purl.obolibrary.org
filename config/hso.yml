@@ -1,0 +1,15 @@
+# PURL configuration for http://purl.obolibrary.org/obo/hso
+
+idspace: HSO
+base_url: /obo/hso
+
+products:
+- hso.owl: https://raw.githubusercontent.com/SVA-SE/HSO/master/hso.owl
+
+term_browser: ontobee
+example_terms:
+- HSO_0000001
+
+entries:
+- prefix: /imports/
+  replacement: https://raw.githubusercontent.com/SVA-SE/HSO/master/imports/

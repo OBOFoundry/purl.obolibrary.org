@@ -4,7 +4,7 @@ idspace: LABO
 base_url: /obo/labo
 
 products:
-- labo.owl: https://raw.githubusercontent.com/OpenLHS/LABO/master/LABO.owl
+- labo.owl: https://raw.githubusercontent.com/OpenLHS/LABO/master/labo.owl
 
 term_browser: ontobee
 example_terms:

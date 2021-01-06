@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/pdumdv
 
-idspace: PDUMDV
+idspace: PdumDv
 base_url: /obo/pdumdv
 
 products:

@@ -31,14 +31,20 @@ entries:
 - exact: /releases/
   replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases
   
-- exact: /releases/2016-11-07
-  replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/2016-11-07
- 
-- exact: /releases/2016-12-14
-  replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/2016-12-14
+- exact: /releases/version_v1.4
+  replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/version_v1.4
 
-- exact: /releases/2016-12-26
-  replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/2016-12-26
+- exact: /releases/version_v1.3
+  replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/version_v1.3
+
+- exact: /releases/version_v1.2
+  replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/version_v1.2
+ 
+- exact: /releases/version_v1.1
+  replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/version_v1.1
+
+- exact: /releases/version_v1.0
+  replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/version_v1.0
   
 ### Documentation Pages and Redirects
 - exact: /homepage

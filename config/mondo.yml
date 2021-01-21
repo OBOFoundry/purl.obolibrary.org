@@ -4,9 +4,9 @@ idspace: MONDO
 base_url: /obo/mondo
 
 products:
-- mondo.owl: https://github.com/monarch-initiative/mondo/releases/download/current/mondo.owl
-- mondo.obo: https://github.com/monarch-initiative/mondo/releases/download/current/mondo.obo
-- mondo.json: https://github.com/monarch-initiative/mondo/releases/download/current/mondo.json
+- mondo.owl: https://github.com/monarch-initiative/mondo/releases/latest/download/mondo.owl
+- mondo.obo: https://github.com/monarch-initiative/mondo/releases/latest/download/mondo.obo
+- mondo.json: https://github.com/monarch-initiative/mondo/releases/latest/download/mondo.json
 
 term_browser: ontobee
 

@@ -32,7 +32,7 @@ entries:
 - exact: /2011-06-14/opl.owl
   replacement: https://raw.githubusercontent.com/OPL-ontology/OPL/master/release/20110614/opl_inferred_v1.0.owl
   
-- exact: opl_base.owl
+- exact: /opl_base.owl
   replacement: https://raw.githubusercontent.com/OPL-ontology/OPL/v2021-01-28/opl_base.owl
   
 - exact: /2021-01-28/opl_base.owl

@@ -4,9 +4,9 @@ idspace: MP
 base_url: /obo/mp
 
 products:
-- mp.owl: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/download/current/mp.owl
-- mp.obo: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/download/current/mp.obo
-- mp.json: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/download/current/mp.json
+- mp.owl: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/latest/download/mp.owl
+- mp.obo: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/latest/download/mp.obo
+- mp.json: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/latest/download/mp.json
 
 term_browser: ontobee
 example_terms:
@@ -33,4 +33,4 @@ entries:
 
 ## generic fall-through, serve direct from github by default
 - prefix: /
-  replacement: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/download/current/
+  replacement: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/latest/download/

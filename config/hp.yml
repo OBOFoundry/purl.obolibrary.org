@@ -27,19 +27,19 @@ entries:
 
 # HPOA files
 - exact: /hpoa/phenotype_annotation.tab
-  replacement: http://compbio.charite.de/jenkins/job/hpo.annotations/lastSuccessfulBuild/artifact/misc/phenotype_annotation.tab
+  replacement: https://ci.monarchinitiative.org/view/hpo/job/hpo.annotations/lastSuccessfulBuild/artifact/rare-diseases/misc/phenotype_annotation.tab
 
 - exact: /hpoa/phenotype_annotation_negated.tab
-  replacement: http://compbio.charite.de/jenkins/job/hpo.annotations/lastSuccessfulBuild/artifact/misc/phenotype_annotation_negated.tab
+  replacement: https://ci.monarchinitiative.org/view/hpo/job/hpo.annotations/lastSuccessfulBuild/artifact/rare-diseases/misc/phenotype_annotation_negated.tab
 
 - exact: /hpoa/genes_to_phenotype.txt
-  replacement: http://compbio.charite.de/jenkins/job/hpo.annotations/lastSuccessfulBuild/artifact/util/annotation/genes_to_phenotype.txt
+  replacement: https://ci.monarchinitiative.org/view/hpo/job/hpo.annotations/lastSuccessfulBuild/artifact/rare-diseases/util/annotation/genes_to_phenotype.txt
 
 - exact: /hpoa/phenotype_to_genes.txt
-  replacement: http://compbio.charite.de/jenkins/job/hpo.annotations/lastSuccessfulBuild/artifact/util/annotation/phenotype_to_genes.txt
+  replacement: https://ci.monarchinitiative.org/view/hpo/job/hpo.annotations/lastSuccessfulBuild/artifact/rare-diseases/util/annotation/phenotype_to_genes.txt
 
 - exact: /hpoa/phenotype.hpoa
-  replacement: http://compbio.charite.de/jenkins/job/hpo.annotations.current/lastSuccessfulBuild/artifact/current/phenotype.hpoa
+  replacement: https://ci.monarchinitiative.org/view/hpo/job/hpo.annotations.current/lastSuccessfulBuild/artifact/rare-diseases/current/phenotype.hpoa
 
 
 # default

@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/cdno
+
+idspace: CDNO
+base_url: /obo/cdno
+
+products:
+- cdno.owl: https://raw.githubusercontent.com/Southern-Cross-Plant-Science/cdno/master/cdno.owl
+- cdno.obo: https://raw.githubusercontent.com/Southern-Cross-Plant-Science/cdno/master/cdno.obo
+
+term_browser: ontobee
+example_terms:
+- CDNO_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/Southern-Cross-Plant-Science/cdno/v
+
+- prefix: /tracker/
+  replacement: https://github.com/Southern-Cross-Plant-Science/cdno/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/CDNO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/Southern-Cross-Plant-Science/cdno/master/

@@ -12,7 +12,7 @@ term_browser: ontobee
 
 entries:
 - prefix: /subsets/
-  replacement: https://github.com/monarch-initiative/mondo/releases/download/current/
+  replacement: https://github.com/monarch-initiative/mondo/releases/latest/download/
 - prefix: /imports/
   replacement: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports/
 - prefix: /components/
@@ -26,5 +26,5 @@ entries:
 - prefix: /releases/
   replacement: https://github.com/monarch-initiative/mondo/releases/download/v
 - prefix: /
-  replacement: https://github.com/monarch-initiative/mondo/releases/download/current/  
+  replacement: https://github.com/monarch-initiative/mondo/releases/latest/download/
 

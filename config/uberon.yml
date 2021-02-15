@@ -30,8 +30,381 @@ entries:
 - prefix: /homology/
   replacement: https://phenoscape.svn.sourceforge.net/svnroot/phenoscape/trunk/vocab/homology/
 
+- prefix: /releases/2011-09-17/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2011-09-17/
+
+- prefix: /releases/2011-09-24/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2011-09-24/
+
+- prefix: /releases/2011-09-25/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2011-09-25/
+
+- prefix: /releases/2011-10-01/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2011-10-01/
+
+- prefix: /releases/2011-10-12/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2011-10-12/
+
+- prefix: /releases/2011-10-17/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2011-10-17/
+
+- prefix: /releases/2011-11-28/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2011-11-28/
+
+- prefix: /releases/2011-11-30/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2011-11-30/
+
+- prefix: /releases/2011-12-05/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2011-12-05/
+
+- prefix: /releases/2011-12-08/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2011-12-08/
+
+- prefix: /releases/2011-12-14/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2011-12-14/
+
+- prefix: /releases/2012-01-20/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2012-01-20/
+
+- prefix: /releases/2012-01-28/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2012-01-28/
+
+- prefix: /releases/2012-02-17/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2012-02-17/
+
+- prefix: /releases/2012-05-30/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2012-05-30/
+
+- prefix: /releases/2012-06-13/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2012-06-13/
+
+- prefix: /releases/2012-08-09/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2012-08-09/
+
+- prefix: /releases/2012-08-13/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2012-08-13/
+
+- prefix: /releases/2012-08-14/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2012-08-14/
+
+- prefix: /releases/2012-09-05/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2012-09-05/
+
+- prefix: /releases/2012-10-02/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2012-10-02/
+
+- prefix: /releases/2012-10-09/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2012-10-09/
+
+- prefix: /releases/2013-01-07/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2013-01-07/
+
+- prefix: /releases/2013-01-13/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2013-01-13/
+
+- prefix: /releases/2013-02-02/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2013-02-02/
+
+- prefix: /releases/2013-02-03/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2013-02-03/
+
+- prefix: /releases/2013-02-12/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2013-02-12/
+
+- prefix: /releases/2013-02-21/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2013-02-21/
+
+- prefix: /releases/2013-03-02/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2013-03-02/
+
+- prefix: /releases/2013-03-23/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2013-03-23/
+
+- prefix: /releases/2013-03-24/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2013-03-24/
+
+- prefix: /releases/2013-04-23/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2013-04-23/
+
+- prefix: /releases/2013-05-01/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2013-05-01/
+
+- prefix: /releases/2013-05-22/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2013-05-22/
+
+- prefix: /releases/2013-05-23/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2013-05-23/
+
+- prefix: /releases/2013-05-26/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2013-05-26/
+
+- prefix: /releases/2013-06-08/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2013-06-08/
+
+- prefix: /releases/2013-06-13/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2013-06-13/
+
+- prefix: /releases/2013-07-03/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2013-07-03/
+
+- prefix: /releases/2013-07-08/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2013-07-08/
+
+- prefix: /releases/2013-07-12/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2013-07-12/
+
+- prefix: /releases/2013-07-17/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2013-07-17/
+
+- prefix: /releases/2013-07-23/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2013-07-23/
+
+- prefix: /releases/2013-08-09/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2013-08-09/
+
+- prefix: /releases/2013-08-28/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2013-08-28/
+
+- prefix: /releases/2013-09-03/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2013-09-03/
+
+- prefix: /releases/2013-09-09/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2013-09-09/
+
+- prefix: /releases/2013-09-10/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2013-09-10/
+
+- prefix: /releases/2013-10-21/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2013-10-21/
+
+- prefix: /releases/2013-11-08/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2013-11-08/
+
+- prefix: /releases/2013-11-13/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2013-11-13/
+
+- prefix: /releases/2013-11-19/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2013-11-19/
+
+- prefix: /releases/2013-11-21/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2013-11-21/
+
+- prefix: /releases/2013-12-03/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2013-12-03/
+
+- prefix: /releases/2013-12-15/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2013-12-15/
+
+- prefix: /releases/2013-12-17/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2013-12-17/
+
+- prefix: /releases/2013-12-18/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2013-12-18/
+
+- prefix: /releases/2014-01-11/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-01-11/
+
+- prefix: /releases/2014-01-23/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-01-23/
+
+- prefix: /releases/2014-02-04/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-02-04/
+
+- prefix: /releases/2014-02-28/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-02-28/
+
+- prefix: /releases/2014-03-03/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-03-03/
+
+- prefix: /releases/2014-03-05/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-03-05/
+
+- prefix: /releases/2014-03-13/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-03-13/
+
+- prefix: /releases/2014-03-26/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-03-26/
+
+2014-03-26b/
+- prefix: /releases/2014-03-27/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-03-27/
+
+- prefix: /releases/2014-04-10/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-04-10/
+
+- prefix: /releases/2014-04-23/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-04-23/
+
+- prefix: /releases/2014-04-30/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-04-30/
+
+- prefix: /releases/2014-05-03/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-05-03/
+
+- prefix: /releases/2014-05-16/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-05-16/
+
+- prefix: /releases/2014-05-22/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-05-22/
+
+- prefix: /releases/2014-05-27/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-05-27/
+
+- prefix: /releases/2014-06-21/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-06-21/
+
+- prefix: /releases/2014-06-26/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-06-26/
+
+- prefix: /releases/2014-07-01/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-07-01/
+
+- prefix: /releases/2014-07-06/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-07-06/
+
+- prefix: /releases/2014-07-11/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-07-11/
+
+- prefix: /releases/2014-07-15/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-07-15/
+
+- prefix: /releases/2014-07-31/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-07-31/
+
+- prefix: /releases/2014-08-18/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-08-18/
+
+- prefix: /releases/2014-08-21/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-08-21/
+
+- prefix: /releases/2014-08-22/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-08-22/
+
+- prefix: /releases/2014-09-18/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-09-18/
+
+- prefix: /releases/2014-09-23/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-09-23/
+
+- prefix: /releases/2014-10-26/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-10-26/
+
+- prefix: /releases/2014-11-01/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-11-01/
+
+- prefix: /releases/2014-12-09/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-12-09/
+
+- prefix: /releases/2015-01-01/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2015-01-01/
+
+- prefix: /releases/2015-02-02/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2015-02-02/
+
+- prefix: /releases/2015-02-14/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2015-02-14/
+
+- prefix: /releases/2015-03-15/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2015-03-15/
+
+- prefix: /releases/2015-04-12/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2015-04-12/
+
+- prefix: /releases/2015-04-23/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2015-04-23/
+
+- prefix: /releases/2015-05-25/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2015-05-25/
+
+- prefix: /releases/2015-06-22/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2015-06-22/
+
+- prefix: /releases/2015-07-24/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2015-07-24/
+
+- prefix: /releases/2015-08-11/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2015-08-11/
+
+- prefix: /releases/2015-09-27/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2015-09-27/
+
+- prefix: /releases/2015-11-19/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2015-11-19/
+
+- prefix: /releases/2016-01-26/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2016-01-26/
+
+- prefix: /releases/2016-04-19/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2016-04-19/
+
+- prefix: /releases/2016-05-11/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2016-05-11/
+
+- prefix: /releases/2016-07-14/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2016-07-14/
+
+- prefix: /releases/2016-08-12/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2016-08-12/
+
+- prefix: /releases/2016-09-07/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2016-09-07/
+
+- prefix: /releases/2016-10-23/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2016-10-23/
+
+- prefix: /releases/2016-11-23/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2016-11-23/
+
+- prefix: /releases/2017-02-05/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2017-02-05/
+
+- prefix: /releases/2017-05-21/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2017-05-21/
+
+- prefix: /releases/2017-05-29/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2017-05-29/
+
+- prefix: /releases/2017-10-28/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2017-10-28/
+
+- prefix: /releases/2018-02-28/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2018-02-28/
+
+- prefix: /releases/2018-03-09/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2018-03-09/
+
+- prefix: /releases/2018-05-14/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2018-05-14/
+
+- prefix: /releases/2018-06-21/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2018-06-21/
+
+- prefix: /releases/2018-07-27/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2018-07-27/
+
+- prefix: /releases/2018-07-30/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2018-07-30/
+
+- prefix: /releases/2018-10-14/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2018-10-14/
+
+- prefix: /releases/2019-06-27/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2019-06-27/
+
+- prefix: /releases/2019-11-22/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2019-11-22/
+
+- prefix: /releases/2020-05-06/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2020-05-06/
+
+- prefix: /releases/2020-06-05/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2020-06-05/
+
+- prefix: /releases/2020-09-16/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2020-09-16/
+
 - prefix: /releases/
-  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v
 
 - prefix: /tracker
   replacement: https://github.com/obophenotype/uberon/issues
@@ -46,5 +419,5 @@ entries:
   replacement: https://github.com/obophenotype/uberon/wiki
 
 - prefix: /
-  replacement: http://ontologies.berkeleybop.org/uberon/
+  replacement: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/
 

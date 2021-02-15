@@ -25,7 +25,7 @@ entries:
   replacement: http://purl.obolibrary.org/obo/ceph.owl
 
 - prefix: /references/
-  replacement: http://svn.code.sf.net/p/obo/svn/uberon/trunk/reference/
+  replacement: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/reference/
 
 - prefix: /homology/
   replacement: https://phenoscape.svn.sourceforge.net/svnroot/phenoscape/trunk/vocab/homology/

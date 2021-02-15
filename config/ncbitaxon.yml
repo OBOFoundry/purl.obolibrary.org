@@ -6,10 +6,10 @@ base_url: /obo/ncbitaxon
 products:
 - ncbitaxon.owl: https://github.com/obophenotype/ncbitaxon/releases/latest/download/ncbitaxon.owl
 - ncbitaxon.obo: https://github.com/obophenotype/ncbitaxon/releases/latest/download/ncbitaxon.obo
-- ncbitaxon.json: https://github.com/obophenotype/ncbitaxon/releases/latest/download/ncbitaxon.obo
+- ncbitaxon.json: https://github.com/obophenotype/ncbitaxon/releases/latest/download/ncbitaxon.json
 - ncbitaxon.owl.gz: https://github.com/obophenotype/ncbitaxon/releases/latest/download/ncbitaxon.owl.gz
 - ncbitaxon.obo.gz: https://github.com/obophenotype/ncbitaxon/releases/latest/download/ncbitaxon.obo.gz
-- ncbitaxon.json.gz: https://github.com/obophenotype/ncbitaxon/releases/latest/download/ncbitaxon.obo.gz
+- ncbitaxon.json.gz: https://github.com/obophenotype/ncbitaxon/releases/latest/download/ncbitaxon.json.gz
 
 term_browser: ontobee
 example_terms:

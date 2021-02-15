@@ -225,7 +225,9 @@ entries:
 - prefix: /releases/2014-03-26/
   replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-03-26/
 
-2014-03-26b/
+- prefix: /releases/2014-03-26b/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-03-26b/
+
 - prefix: /releases/2014-03-27/
   replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-03-27/
 

@@ -73,3 +73,14 @@ entries:
 - prefix: /
   replacement: https://raw.githubusercontent.com/obophenotype/uberon/master/
 
+tests:
+    - from: /releases/2015-04-23//
+      to: http://svn.code.sf.net/p/obo/svn/uberon/releases/2015-04-23/
+    - from: /releases/2020-05-06/
+      to: http://svn.code.sf.net/p/obo/svn/uberon/releases/2020-05-06/
+    - from: /releases/2014-03-26b/
+      to: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-03-26b/
+    - from: /releases/2020-09-16/composite-metazoan-basic.obo
+      to: http://svn.code.sf.net/p/obo/svn/uberon/releases/2020-09-16/composite-metazoan-basic.obo
+    - from: /releases/2021-02-12/uberon.obo
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2020-09-16/uberon.obo

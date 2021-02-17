@@ -44,7 +44,7 @@ entries:
 
 # Previously Uberon was releaseon on svn.code.sf.net. The following redirect essentially redirects any release pre-2020 (2019, 2018 etc) to that svn.
 - prefix: /releases/201
-   replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/201
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/201
 
 - prefix: /releases/2020-05-06/
   replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2020-05-06/

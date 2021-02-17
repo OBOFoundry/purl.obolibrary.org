@@ -69,7 +69,7 @@ entries:
   replacement: https://raw.githubusercontent.com/obophenotype/uberon/v
   tests:  
     - from: /releases/2021-02-12/uberon.obo
-      to: https://raw.githubusercontent.com/obophenotype/uberon/v2020-09-16/uberon.obo
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-02-12/uberon.obo
 
 - prefix: /tracker
   replacement: https://github.com/obophenotype/uberon/issues

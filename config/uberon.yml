@@ -45,9 +45,19 @@ entries:
 # Previously Uberon was releaseon on svn.code.sf.net. The following redirect essentially redirects any release pre-2020 (2019, 2018 etc) to that svn.
 - prefix: /releases/201
   replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/201
+  tests:
+    - from: /releases/2015-04-23//
+      to: http://svn.code.sf.net/p/obo/svn/uberon/releases/2015-04-23/
+    - from: /releases/2014-03-26b/
+      to: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-03-26b/
 
 - prefix: /releases/2020-05-06/
   replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2020-05-06/
+  tests:
+    - from: /releases/2020-05-06/
+      to: http://svn.code.sf.net/p/obo/svn/uberon/releases/2020-05-06/
+    - from: /releases/2020-05-06/composite-metazoan-basic.obo
+      to: http://svn.code.sf.net/p/obo/svn/uberon/releases/2020-05-06/composite-metazoan-basic.obo
 
 - prefix: /releases/2020-06-05/
   replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2020-06-05/
@@ -57,6 +67,9 @@ entries:
 
 - prefix: /releases/
   replacement: https://raw.githubusercontent.com/obophenotype/uberon/v
+  tests:  
+    - from: /releases/2021-02-12/uberon.obo
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2020-09-16/uberon.obo
 
 - prefix: /tracker
   replacement: https://github.com/obophenotype/uberon/issues
@@ -73,14 +86,3 @@ entries:
 - prefix: /
   replacement: https://raw.githubusercontent.com/obophenotype/uberon/master/
 
-tests:
-    - from: /releases/2015-04-23//
-      to: http://svn.code.sf.net/p/obo/svn/uberon/releases/2015-04-23/
-    - from: /releases/2020-05-06/
-      to: http://svn.code.sf.net/p/obo/svn/uberon/releases/2020-05-06/
-    - from: /releases/2014-03-26b/
-      to: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-03-26b/
-    - from: /releases/2020-09-16/composite-metazoan-basic.obo
-      to: http://svn.code.sf.net/p/obo/svn/uberon/releases/2020-09-16/composite-metazoan-basic.obo
-    - from: /releases/2021-02-12/uberon.obo
-      to: https://raw.githubusercontent.com/obophenotype/uberon/v2020-09-16/uberon.obo

@@ -6,9 +6,9 @@ base_url: /obo/uberon
 base_redirect: http://uberon.org
 
 products:
-- uberon.owl: http://ontologies.berkeleybop.org/uberon.owl
-- uberon.obo: http://ontologies.berkeleybop.org/uberon.obo
-- uberon.json: http://ontologies.berkeleybop.org/uberon.json
+- uberon.owl: https://raw.githubusercontent.com/obophenotype/uberon/master/uberon.owl
+- uberon.obo: https://raw.githubusercontent.com/obophenotype/uberon/master/uberon.obo
+- uberon.json: https://raw.githubusercontent.com/obophenotype/uberon/master/uberon.json
 
 term_browser: ols
 example_terms:

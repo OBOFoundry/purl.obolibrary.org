@@ -20,18 +20,56 @@ entries:
 
 - exact: /phenoscape-ext.owl
   replacement: http://phenoscape.svn.sourceforge.net/svnroot/phenoscape/trunk/vocab/edit/phenoscape-ext.owl
+  
+- exact: /composite-vertebrate.owl
+  replacement: https://github.com/obophenotype/uberon/releases/latest/download/composite-vertebrate.owl
+  
+- exact: /composite-vertebrate.obo
+  replacement: https://github.com/obophenotype/uberon/releases/latest/download/composite-vertebrate.owl
+
+- exact: /composite-metazoan.owl
+  replacement: https://github.com/obophenotype/uberon/releases/latest/download/composite-metazoan.owl
+  
+- exact: /composite-metazoan.obo
+  replacement: https://github.com/obophenotype/uberon/releases/latest/download/composite-metazoan.obo
 
 - exact: /experimental/ceph.owl
   replacement: http://purl.obolibrary.org/obo/ceph.owl
 
 - prefix: /references/
-  replacement: http://svn.code.sf.net/p/obo/svn/uberon/trunk/reference/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/master/reference/
 
 - prefix: /homology/
   replacement: https://phenoscape.svn.sourceforge.net/svnroot/phenoscape/trunk/vocab/homology/
 
+# Previously Uberon was releaseon on svn.code.sf.net. The following redirect essentially redirects any release pre-2020 (2019, 2018 etc) to that svn.
+- prefix: /releases/201
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/201
+  tests:
+    - from: /releases/2015-04-23//
+      to: http://svn.code.sf.net/p/obo/svn/uberon/releases/2015-04-23/
+    - from: /releases/2014-03-26b/
+      to: http://svn.code.sf.net/p/obo/svn/uberon/releases/2014-03-26b/
+
+- prefix: /releases/2020-05-06/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2020-05-06/
+  tests:
+    - from: /releases/2020-05-06/
+      to: http://svn.code.sf.net/p/obo/svn/uberon/releases/2020-05-06/
+    - from: /releases/2020-05-06/composite-metazoan-basic.obo
+      to: http://svn.code.sf.net/p/obo/svn/uberon/releases/2020-05-06/composite-metazoan-basic.obo
+
+- prefix: /releases/2020-06-05/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2020-06-05/
+
+- prefix: /releases/2020-09-16/
+  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2020-09-16/
+
 - prefix: /releases/
-  replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v
+  tests:  
+    - from: /releases/2021-02-12/uberon.obo
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-02-12/uberon.obo
 
 - prefix: /tracker
   replacement: https://github.com/obophenotype/uberon/issues
@@ -46,5 +84,5 @@ entries:
   replacement: https://github.com/obophenotype/uberon/wiki
 
 - prefix: /
-  replacement: http://ontologies.berkeleybop.org/uberon/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/master/
 

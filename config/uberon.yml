@@ -25,7 +25,7 @@ entries:
   replacement: https://github.com/obophenotype/uberon/releases/latest/download/composite-vertebrate.owl
   
 - exact: /composite-vertebrate.obo
-  replacement: https://github.com/obophenotype/uberon/releases/latest/download/composite-vertebrate.owl
+  replacement: https://github.com/obophenotype/uberon/releases/latest/download/composite-vertebrate.obo
 
 - exact: /composite-metazoan.owl
   replacement: https://github.com/obophenotype/uberon/releases/latest/download/composite-metazoan.owl

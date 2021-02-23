@@ -4,8 +4,8 @@ idspace: ZP
 base_url: /obo/zp
 
 products:
-- zp.owl: https://github.com/obophenotype/zebrafish-phenotype-ontology/releases/download/current/zp.owl
-- zp.obo: https://github.com/obophenotype/zebrafish-phenotype-ontology/releases/download/current/zp.obo
+- zp.owl: https://github.com/obophenotype/zebrafish-phenotype-ontology/releases/latest/download/zp.owl
+- zp.obo: https://github.com/obophenotype/zebrafish-phenotype-ontology/releases/latest/download/zp.obo
 
 term_browser: ontobee
 example_terms:
@@ -23,4 +23,4 @@ entries:
   replacement: http://www.ontobee.org/ontology/ZP?iri=http://purl.obolibrary.org/obo/
 
 - prefix: /
-  replacement: https://github.com/obophenotype/zebrafish-phenotype-ontology/releases/download/current/
+  replacement: https://github.com/obophenotype/zebrafish-phenotype-ontology/releases/latest/download/

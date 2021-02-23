@@ -4,7 +4,7 @@ idspace: SEPIO
 base_url: /obo/sepio
 
 products:
-- sepio.owl: https://github.com/monarch-initiative/SEPIO-ontology/releases/download/current/sepio.owl
+- sepio.owl: https://github.com/monarch-initiative/SEPIO-ontology/releases/latest/download/sepio.owl
 
 term_browser: ontobee
 example_terms:
@@ -23,4 +23,4 @@ entries:
 
 ## generic fall-through, serve direct from github by default
 - prefix: /
-  replacement: https://github.com/monarch-initiative/SEPIO-ontology/releases/download/current/
+  replacement: https://github.com/monarch-initiative/SEPIO-ontology/releases/latest/download/

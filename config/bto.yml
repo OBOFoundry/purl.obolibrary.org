@@ -4,9 +4,9 @@ idspace: BTO
 base_url: /obo/bto
 
 products:
-- bto.owl: https://github.com/BRENDA-Enzymes/BTO/raw/master/bto.owl
-- bto.obo: https://github.com/BRENDA-Enzymes/BTO/raw/master/bto.obo
-- bto.json: https://github.com/BRENDA-Enzymes/BTO/raw/master/bto.json
+- bto.owl: https://raw.githubusercontent.com/BRENDA-Enzymes/BTO/master/bto.owl
+- bto.obo: https://raw.githubusercontent.com/BRENDA-Enzymes/BTO/master/bto.obo
+- bto.json: https://raw.githubusercontent.com/BRENDA-Enzymes/BTO/master/bto.json
 
 term_browser: ontobee
 example_terms:

@@ -4,8 +4,8 @@ idspace: NBO
 base_url: /obo/nbo
 
 products:
-- nbo.owl: https://raw.github.com/obo-behavior/behavior-ontology/master/nbo.owl
-- nbo.obo: https://raw.github.com/obo-behavior/behavior-ontology/master/nbo.obo
+- nbo.owl: https://raw.githubusercontent.com/obo-behavior/behavior-ontology/master/nbo.owl
+- nbo.obo: https://raw.githubusercontent.com/obo-behavior/behavior-ontology/master/nbo.obo
 
 term_browser: ontobee
 example_terms:

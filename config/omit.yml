@@ -5,7 +5,7 @@ idspace: OMIT
 base_url: /obo/omit
 
 products:
-- omit.owl: http://raw.githubusercontent.com/OmniSearch/omit/master/src/ontology/omit.owl
+- omit.owl: https://raw.githubusercontent.com/OmniSearch/omit/master/src/ontology/omit.owl
 
 term_browser: ontobee
 example_terms:
@@ -13,4 +13,4 @@ example_terms:
 
 entries:
 - prefix: /dev/
-  replacement: http://raw.githubusercontent.com/OmniSearch/omit/master/src/ontology/
+  replacement: https://raw.githubusercontent.com/OmniSearch/omit/master/src/ontology/

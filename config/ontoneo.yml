@@ -21,9 +21,9 @@ entries:
 
 ### Imported ontologies current release
 - prefix: /import/
-  replacement: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/import/
+  replacement: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/2021-02-24/import/bfo_import.owl
   tests:
-  - from: /import/uberon_import.owl
+  - from: releases/2021-02-24/import/bfo_import.owl
     to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/import/uberon_import.owl
 
 ### Previous release
@@ -31,14 +31,20 @@ entries:
 - exact: /releases/
   replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases
   
-- exact: /releases/2016-11-07
-  replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/2016-11-07
- 
-- exact: /releases/2016-12-14
-  replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/2016-12-14
+- exact: /releases/2021-02-24
+  replacement: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/2021-02-24
+
+- exact: /releases/2017-03-04
+  replacement: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/2017-03-04
 
 - exact: /releases/2016-12-26
-  replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/2016-12-26
+  replacement: hhttps://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/2016-12-26
+ 
+- exact: /releases/2016-12-14
+  replacement: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/releases/2016-12-14
+
+- exact: /releases/2016-11-07
+  replacement: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/releases/2016-11-07
   
 ### Documentation Pages and Redirects
 - exact: /homepage

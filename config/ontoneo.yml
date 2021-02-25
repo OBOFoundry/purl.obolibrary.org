@@ -21,10 +21,10 @@ entries:
 
 ### Imported ontologies current release
 - prefix: /import/
-  replacement: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/2021-02-24/import/bfo_import.owl
+  replacement: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/2021-02-24/import/
   tests:
-  - from: releases/2021-02-24/import/bfo_import.owl
-    to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/import/uberon_import.owl
+  - from: /import/bfo_import.owl
+    to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/2021-02-24/import/bfo_import.owl
 
 ### Previous release
 

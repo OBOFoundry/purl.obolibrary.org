@@ -38,7 +38,7 @@ entries:
   replacement: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/2017-03-04
 
 - exact: /releases/2016-12-26
-  replacement: hhttps://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/2016-12-26
+  replacement: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/2016-12-26
  
 - exact: /releases/2016-12-14
   replacement: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/releases/2016-12-14

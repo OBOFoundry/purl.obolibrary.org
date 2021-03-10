@@ -25,14 +25,297 @@ entries:
   - from: /imports/ro_import.owl
     to: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/main/src/ontology/imports/ro_import.owl
 
-- prefix: /releases/
-  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/main/src/ontology/releases/
-  tests:
-  - from: /releases/2017-01-27/doid.owl
-    to: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/main/src/ontology/releases/2017-01-27/doid.owl
-
 - prefix: /
   replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/main/src/ontology/
   tests:
   - from: /HumanDO.owl
     to: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/main/src/ontology/HumanDO.owl
+
+
+### Dated DO Releases
+
+- prefix: /releases/2021-02-24/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2021-02-24/src/ontology/
+  tests:
+  - from: /releases/2021-02/24/doid.owl
+    to: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2021-02-24/src/ontology/doid.owl
+
+- prefix: /releases/2021-01-28/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2021-01-28/src/ontology/
+
+- prefix: /releases/2020-12-22/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2020-12-22/src/ontology/
+
+- prefix: /releases/2020-12-21/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2020-12-21/src/ontology/
+
+- prefix: /releases/2020-12-02/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2020-12-02/src/ontology/
+
+- prefix: /releases/2020-11-11/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2020-11-11/src/ontology/
+
+- prefix: /releases/2020-11-03/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2020-11-03/src/ontology/
+
+- prefix: /releases/2020-10-15/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2020-10-15/src/ontology/
+
+- prefix: /releases/2020-09-28/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2020-09-28/src/ontology/
+
+- prefix: /releases/2020-09-15/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2020-09-15/src/ontology/
+
+- prefix: /releases/2020-08-21/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2020-08-21/src/ontology/
+
+- prefix: /releases/2020-07-23/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2020-07-23/src/ontology/
+
+- prefix: /releases/2020-06-18/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2020-06-18/src/ontology/
+
+- prefix: /releases/2020-05-20/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2020-05-20/src/ontology/
+
+- prefix: /releases/2020-04-20/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/2020-04-20/src/ontology/
+
+- prefix: /releases/2020-04-03/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2020-04-03/src/ontology/
+
+- prefix: /releases/2020-04-01/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2020-04-01/src/ontology/
+
+- prefix: /releases/2020-03-20/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2020-03-20/src/ontology/
+
+- prefix: /releases/2020-03-18/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2020-03-18/src/ontology/
+
+- prefix: /releases/2020-03-05/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2020-03-05/src/ontology/
+
+- prefix: /releases/2020-02-19v2/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2020-02-19v2/src/ontology/
+
+- prefix: /releases/2020-02-19/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2020-02-19/src/ontology/
+
+- prefix: /releases/2020-02-18/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2020-02-18/src/ontology/
+
+- prefix: /releases/2020-02-04/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2020-02-04/src/ontology/
+
+- prefix: /releases/2020-01-15/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2020-01-15/src/ontology/
+
+- prefix: /releases/2020-01-14/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2020-01-14/src/ontology/
+
+- prefix: /releases/2019-12-12/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2019-12-12/src/ontology/
+
+- prefix: /releases/2019-11-20_v2/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2019-11-20_v2/src/ontology/
+
+- prefix: /releases/2019-11-20/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2019-11-20/src/ontology/
+
+- prefix: /releases/2019-10-30/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2019-10-30/src/ontology/
+
+- prefix: /releases/2019-09-16/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2019-09-16/src/ontology/
+
+- prefix: /releases/2019-8-22/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2019-8-22/src/ontology/
+
+- prefix: /releases/2019-8-06/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2019-8-06/src/ontology/
+
+- prefix: /releases/2019-07015/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2019-07015/src/ontology/
+
+- prefix: /releases/2019-06-28/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2019-06-28/src/ontology/
+
+- prefix: /releases/2019-05-13/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2019-05-13/src/ontology/
+
+- prefix: /releases/2019-04-18v2/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2019-04-18v2/src/ontology/
+
+- prefix: /releases/2019-04-18/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2019-04-18/src/ontology/
+
+- prefix: /releases/2019-03-01/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2019-03-01/src/ontology/
+
+- prefix: /releases/2019-02-21/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2019-02-21/src/ontology/
+
+- prefix: /releases/2018-12-17/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2018-12-17/src/ontology/
+
+- prefix: /releases/2018-12-14/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2018-12-14/src/ontology/
+
+- prefix: /releases/2018-11-02/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2018-11-02/src/ontology/
+
+- prefix: /releases/2018-10-24/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2018-10-24/src/ontology/
+
+- prefix: /releases/2018-10-11/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2018-10-11/src/ontology/
+
+- prefix: /releases/2018-10-05/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2018-10-05/src/ontology/
+
+- prefix: /releases/2018-09-25/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2018-09-25/src/ontology/
+
+- prefix: /releases/2018-09-13/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2018-09-13/src/ontology/
+
+- prefix: /releases/2018-09-10v2/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2018-09-10v2/src/ontology/
+
+- prefix: /releases/2018-09-10/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2018-09-10/src/ontology/
+
+- prefix: /releases/2018-09-07.2/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2018-09-07.2/src/ontology/
+
+- prefix: /releases/2018-09-07/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2018-09-07/src/ontology/
+
+- prefix: /releases/2018-07/05/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2018-07/05/src/ontology/
+
+- prefix: /releases/2018-07-03/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2018-07-03/src/ontology/
+
+- prefix: /releases/2018-06-29/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2018-06-29/src/ontology/
+
+- prefix: /releases/2018-06-25/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2018-06-25/src/ontology/
+
+- prefix: /releases/2018-06-21/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2018-06-21/src/ontology/
+
+- prefix: /releases/2018-6-20/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2018-6-20/src/ontology/
+
+- prefix: /releases/2018-05-15/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2018-05-15/src/ontology/
+
+- prefix: /releases/2018-05-11/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2018-05-11/src/ontology/
+
+- prefix: /releases/2018-03-02/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2018-03-02/src/ontology/
+
+- prefix: /releases/2017-11-28/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2017-11-28/src/ontology/
+
+- prefix: /releases/2017-9-29/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2017-9-29/src/ontology/
+
+- prefix: /releases/2017-07-14/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2017-07-14/src/ontology/
+
+- prefix: /releases/2017-06-13/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2017-06-13/src/ontology/
+
+- prefix: /releases/2017-05-24/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2017-05-24/src/ontology/
+
+- prefix: /releases/2017-05-05/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2017-05-05/src/ontology/
+
+- prefix: /releases/2017-04-13/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2017-04-13/src/ontology/
+
+- prefix: /releases/2017-03-10/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2017-03-10/src/ontology/
+
+- prefix: /releases/2017-02-17/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2017-02-17/src/ontology/
+
+- prefix: /releases/2017-01-27/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2017-01-27/src/ontology/
+
+- prefix: /releases/2017-01-13/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2017-01-13/src/ontology/
+
+- prefix: /releases/2017-01-09/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2017-01-09/src/ontology/
+
+- prefix: /releases/2016-12-16/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2016-12-16/src/ontology/
+
+- prefix: /releases/2016-12-09/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2016-12-09/src/ontology/
+
+- prefix: /releases/2016-11-22/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2016-11-22/src/ontology/
+
+- prefix: /releases/2016-11-18/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2016-11-18/src/ontology/
+
+- prefix: /releases/2016-11-04/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2016-11-04/src/ontology/
+
+- prefix: /releases/2016-10-21/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2016-10-21/src/ontology/
+
+- prefix: /releases/2016-09-30/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2016-09-30/src/ontology/
+
+- prefix: /releases/2016-09-26/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2016-09-26/src/ontology/
+
+- prefix: /releases/2016-09-23/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2016-09-23/src/ontology/
+
+- prefix: /releases/2016-08-12/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2016-08-12/src/ontology/
+
+- prefix: /releases/2016-07-08/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2016-07-08/src/ontology/
+
+- prefix: /releases/2016-07-01/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2016-07-01/src/ontology/
+
+- prefix: /releases/2016-06-17/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2016-06-17/src/ontology/
+
+- prefix: /releases/2016-06-10/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/vv2016-06-10/src/ontology/
+
+- prefix: /releases/2016-05-23/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2016-05-23/src/ontology/
+
+- prefix: /releases/2016-05-06/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2016-05-06/src/ontology/
+
+- prefix: /releases/2016-04-08/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2016-04-08/src/ontology/
+
+- prefix: /releases/2016-04-01/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2016-04-01/src/ontology/
+
+- prefix: /releases/2016-03-25/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2016-03-25/src/ontology/
+
+- prefix: /releases/2016-03-18/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2016-03-18/src/ontology/
+
+- prefix: /releases/2016-03-11/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2016-03-11/src/ontology/
+>>>>>>> Stashed changes

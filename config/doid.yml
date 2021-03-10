@@ -37,7 +37,7 @@ entries:
 - prefix: /releases/2021-02-24/
   replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2021-02-24/src/ontology/
   tests:
-  - from: /releases/2021-02/24/doid.owl
+  - from: /releases/2021-02-24/doid.owl
     to: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2021-02-24/src/ontology/doid.owl
 
 - prefix: /releases/2021-01-28/

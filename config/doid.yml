@@ -25,11 +25,13 @@ entries:
   - from: /imports/ro_import.owl
     to: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/main/src/ontology/imports/ro_import.owl
 
-- prefix: /releases/
-  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/main/src/ontology/releases/
+- regex: ^/obo/doid/releases/([^\s/]+)/(\S+)$
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v$1/src/ontology/$2
   tests:
-  - from: /releases/2017-01-27/doid.owl
-    to: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/main/src/ontology/releases/2017-01-27/doid.owl
+  - from: /releases/2016-12-16/doid.owl
+    to: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2016-12-16/src/ontology/doid.owl
+  - from: /releases/2020-03-05/subsets/DO_MGI_slim.obo
+    to: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2020-03-05/src/ontology/subsets/DO_MGI_slim.obo
 
 - prefix: /
   replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/main/src/ontology/

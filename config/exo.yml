@@ -4,8 +4,8 @@ idspace: ExO
 base_url: /obo/exo
 
 products:
-- exo.owl: http://ontologies.berkeleybop.org/exo.owl
-- exo.obo: https://github.com/CTDbase/exposure-ontology/raw/master/src/ontology/exo.obo
+- exo.owl: https://github.com/CTDbase/exposure-ontology/raw/master/exo.owl
+- exo.obo: https://github.com/CTDbase/exposure-ontology/raw/master/exo.obo
 
 term_browser: ontobee
 example_terms:

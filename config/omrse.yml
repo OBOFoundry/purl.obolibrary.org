@@ -4,7 +4,9 @@ idspace: OMRSE
 base_url: /obo/omrse
 
 products:
-- omrse.owl: https://raw.githubusercontent.com/ufbmi/OMRSE/master/omrse/omrse.owl
+- omrse.owl: https://raw.githubusercontent.com/ufbmi/OMRSE/master/omrse.owl
+- omrse.obo: https://raw.githubusercontent.com/ufbmi/OMRSE/master/omrse.obo
+- omrse.json: https://raw.githubusercontent.com/ufbmi/OMRSE/master/omrse.json
 
 term_browser: ontobee
 example_terms:
@@ -35,3 +37,16 @@ entries:
 
 - exact: /dev/education.owl
   replacement: https://raw.githubusercontent.com/ufbmi/OMRSE/devel/omrse/education/omrse-education.owl
+  
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/ufbmi/OMRSE/v
+
+- prefix: /tracker/
+  replacement: https://github.com/ufbmi/OMRSE/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/OMRSE?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/ufbmi/OMRSE/master/

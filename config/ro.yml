@@ -29,7 +29,7 @@ entries:
   replacement: https://raw.githubusercontent.com/oborel/obo-relations/v
 
 - prefix: /docs/
-  replacement: https://raw.githubusercontent.com/oborel/obo-relations/master/docs/
+  replacement: https://oborel.github.io/obo-relations/
 
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=RO&iri=http://purl.obolibrary.org/obo/

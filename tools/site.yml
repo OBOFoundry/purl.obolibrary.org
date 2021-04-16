@@ -41,6 +41,9 @@
     - name: Install PyYAML
       pip: name=PyYAML executable=pip3
 
+    - name: Install setuptools for jsonschema
+      pip: name=setuptools executable=pip3
+
     - name: Install pathlib2 for jsonschema
       pip: name=pathlib2 executable=pip3
 

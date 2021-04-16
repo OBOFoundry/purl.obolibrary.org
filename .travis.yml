@@ -3,7 +3,7 @@ dist: trusty
 language: python
 python: "3.5"
 install:
-  - "sudo pip install ansible==2.1"
+  - "sudo pip install ansible==2.10.7"
 script:
   - "cd tools"
   - "echo 'localhost' > hosts"

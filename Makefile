@@ -82,18 +82,19 @@ www/obo/:
 # When a new build is created, the old build's files are moved here, in a subdirectory
 # whose name is generated in a portable way using python (see the target-specific
 # variable BACKUP below).
-backup/:
+versions/:
 	mkdir $@
 
+NEW_VERSION := versions/obo-$(shell date -u +"%Y%m%d-%H%M%S")
+$(NEW_VERSION): | versions/
+	mkdir -p $@
+	tools/translate_yaml.py --input_dir config --output_dir $@
+	
 # The main build target:
 .PHONY: build
-build: BACKUP = backup/obo-$(shell python -c "import time,os;print(time.strftime('%Y%m%d-%H%M%S',time.gmtime(os.path.getmtime('www/obo'))))")
-build: | backup/ www/obo/
-	tools/translate_yaml.py --input_dir config --output_dir temp/obo
-	rm -rf temp/obo/obo temp/obo/OBO
-	-test -e www/obo && mv www/obo $(BACKUP)
-	mv temp/obo www/obo
-	rmdir temp
+build: $(NEW_VERSION)
+	rm -rf www/obo
+	ln -s $(PWD)/$(NEW_VERSION) $(PWD)/www/obo
 
 
 ### Test Development Apache Config

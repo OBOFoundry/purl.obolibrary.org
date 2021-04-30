@@ -22,14 +22,14 @@ entries:
 ### Current Releases
 
 - exact: /ontoneo.owl
-  replacement: hhttps://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/ontoneo.owl
+  replacement: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/ontoneo.owl
   
 ### Imported ontologies current release
 - prefix: /import/
   replacement: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/import/
   tests:
-  - from: /import/ro_import.owl
-    to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/import/ro_import.owl
+  - from: /import/bcgo_import.owl
+    to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/import/bcgo_import.owl
 
 ### Previous release
 
@@ -38,6 +38,12 @@ entries:
   
 - exact: /releases/2021-04-29
   replacement: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/2021-04-29
+  tests:
+  - from: releases/2021-04-29/ontoneo.owl
+    to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/2021-04-29/ontoneo.owl  
+  
+- exact: /releases/2021-04-29/import/  
+  replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/2021-02-24/import
   tests:
   - from: releases/2021-04-29/import/ro_import.owl
     to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/import/ro_import.owl  

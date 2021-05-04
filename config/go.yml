@@ -28,6 +28,12 @@ entries:
 - exact: /tracker
   replacement: https://github.com/geneontology/go-ontology/issues
 
+- prefix: /patterns/
+  replacement: https://raw.githubusercontent.com/geneontology/go-ontology/master/src/design_patterns/
+  tests:
+  - from: /patterns/regulation.yaml
+    to: https://raw.githubusercontent.com/geneontology/go-ontology/master/src/design_patterns/regulation.yaml
+
 - prefix: /experimental/
   replacement: http://geneontology.org/experimental/
 

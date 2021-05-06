@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/aism
+
+idspace: AISM
+base_url: /obo/aism
+
+products:
+- aism.owl: https://raw.githubusercontent.com/obophenotype/anatomy_ontology_of_insect_skeletomuscular_system/master/aism.owl
+- aism.obo: https://raw.githubusercontent.com/obophenotype/anatomy_ontology_of_insect_skeletomuscular_system/master/aism.obo
+
+term_browser: ontobee
+example_terms:
+- AISM_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/obophenotype/anatomy_ontology_of_insect_skeletomuscular_system/v
+
+- prefix: /tracker/
+  replacement: https://github.com/obophenotype/anatomy_ontology_of_insect_skeletomuscular_system/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/AISM?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/obophenotype/anatomy_ontology_of_insect_skeletomuscular_system/master/

@@ -4,24 +4,28 @@ idspace: AISM
 base_url: /obo/aism
 
 products:
-- aism.owl: https://raw.githubusercontent.com/obophenotype/anatomy_ontology_of_insect_skeletomuscular_system/master/aism.owl
-- aism.obo: https://raw.githubusercontent.com/obophenotype/anatomy_ontology_of_insect_skeletomuscular_system/master/aism.obo
+- aism.owl: https://raw.githubusercontent.com/insect-morphology/aism/master/aism.owl
+- aism.obo: https://raw.githubusercontent.com/insect-morphology/aism/master/aism.obo
+- aism.json: https://raw.githubusercontent.com/insect-morphology/aism/master/aism.json
 
 term_browser: ontobee
 example_terms:
-- AISM_0000000
+- AISM_0000005
 
 entries:
 
 - prefix: /releases/
-  replacement: https://raw.githubusercontent.com/obophenotype/anatomy_ontology_of_insect_skeletomuscular_system/v
+  replacement: https://raw.githubusercontent.com/insect-morphology/aism/v
+  tests:
+    - from: /releases/2021-04-26/
+      to: https://raw.githubusercontent.com/insect-morphology/aism/v2021-04-26/
 
 - prefix: /tracker/
-  replacement: https://github.com/obophenotype/anatomy_ontology_of_insect_skeletomuscular_system/issues
+  replacement: https://github.com/insect-morphology/aism/issues
 
 - prefix: /about/
   replacement: http://www.ontobee.org/ontology/AISM?iri=http://purl.obolibrary.org/obo/
 
 ## generic fall-through, serve direct from github by default
 - prefix: /
-  replacement: https://raw.githubusercontent.com/obophenotype/anatomy_ontology_of_insect_skeletomuscular_system/master/
+  replacement: https://raw.githubusercontent.com/insect-morphology/aism/master/

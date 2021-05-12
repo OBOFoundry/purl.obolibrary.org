@@ -28,7 +28,7 @@ entries:
 
 ### Previous release
 
-- exact: /releases/
+- prefix: /releases/
   replacement: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/
   tests:
   - from: /releases/2021-02-24/ontoneo.owl

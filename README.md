@@ -1,7 +1,5 @@
 # OBO PURLs
 
-[![Build Status](https://travis-ci.com/OBOFoundry/purl.obolibrary.org.svg?branch=master)](https://travis-ci.com/OBOFoundry/purl.obolibrary.org)
-
 This repository provides tools for managing OBO Foundry Permanent URLs (PURLs). Like <https://github.com/perma-id/w3id.org> we use per-directory Apache configuration files (`.htaccess` files), each of which uses `RedirectMatch` directives to redirect PURL requests to their proper targets. Unlike w3id.org, we do not edit the Apache configuration files by hand. Instead we have a simple YAML configuration format, and scripts to translate the YAML configuration into Apache configuration. The YAML files are easier to read and write, and allow us to validate and test PURLs automatically.
 
 

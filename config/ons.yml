@@ -5,7 +5,6 @@ base_url: /obo/ons
 
 products:
 - ons.owl: https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/ons.owl
-
 - ons.obo: https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/ons.obo
 
 term_browser: ontobee

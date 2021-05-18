@@ -21,7 +21,7 @@ entries:
   replacement: https://raw.githubusercontent.com/monarch-initiative/monarch-disease-ontology/master/src/mondo/mondo.owl
 
 - exact: /zp.owl
-  replacement: http://compbio.charite.de/hudson/job/zp-owl/lastSuccessfulBuild/artifact/zp.owl
+  replacement: http://purl.obolibrary.org/obo/zp.owl
 
 - exact: /mp-hp-view.owl
   replacement: http://build-artifacts.berkeleybop.org/build-mp-hp-view/latest/mp-hp-view.owl

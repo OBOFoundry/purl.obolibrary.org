@@ -23,4 +23,4 @@ entries:
   replacement: https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/Older_deprecated/ons_release_v1.1.obo
   
 - prefix: /imports/
-  replacement: https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/ONS_imports.owl
+  replacement: https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/

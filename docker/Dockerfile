@@ -1,10 +1,10 @@
-FROM ubuntu:14.04
+FROM ubuntu:20.04
 LABEL maintainer="aes"
 
 # Install dependencies.
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-       software-properties-common \
+       software-properties-common sudo cron \
     && rm -Rf /var/lib/apt/lists/* \
     && rm -Rf /usr/share/doc && rm -Rf /usr/share/man \
     && apt-get clean
@@ -35,6 +35,3 @@ RUN cd /tmp/tools \
     && echo 'localhost' > hosts \
     && ansible-playbook -i hosts --connection=local site.yml \
     && ansible-playbook -i hosts --connection=local server-overlay.yml
-
-#RUN cd /tmp/tools  && ansible-playbook -i hosts --connection=local server-overlay.yml
-# ansible-playbook server-overlay.yml

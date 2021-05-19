@@ -23,7 +23,7 @@
 - name: "Get credentials in place"
   copy:
     src: "{{ var_s3_push_credentials }}"
-    dest: "/opt/credentials/logrotate-to-s3.s3cmd"
+    dest: "/opt/credentials/s3cfg"
     #owner: root
     #group: root
     mode: 0600
@@ -36,12 +36,12 @@
     dest: "/etc/logrotate.d/{{ target_service }}"
     regexp: "logrotate-to-s3.s3cmd"
     insertafter: "postrotate"
-    line: '                UPLOAD_CMD="s3cmd -c /opt/credentials/logrotate-to-s3.s3cmd --mime-type=text/plain put" NAME_PREFIX="{{ var_name_prefix }}" S3_PATH="{{ var_s3_path }}" /opt/bin/logrotate-to-s3.sh {{ s3_bucket }} "$@"'
+    line: '                UPLOAD_CMD="s3cmd -c /opt/credentials/s3cfg --mime-type=text/plain put" NAME_PREFIX="{{ var_name_prefix }}" S3_PATH="{{ var_s3_path }}" /opt/bin/logrotate-to-s3.sh {{ s3_bucket }} "$@"'
 - name: Try and remove sharedscripts
   lineinfile:
     dest: "/etc/logrotate.d/{{ target_service }}"
     regexp: "sharedscripts"
     state: absent
-- name: List contents of s3 bucket
-  shell: "s3cmd -c /opt/credentials/logrotate-to-s3.s3cmd ls s3://{{ s3_bucket }}"
-  changed_when: False
+# - name: List contents of s3 bucket
+#   shell: "s3cmd -c /opt/credentials/s3cfg ls s3://{{ s3_bucket }}"
+#  changed_when: False

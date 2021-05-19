@@ -21,17 +21,20 @@ RUN apt-add-repository -y ppa:ansible/ansible \
 RUN useradd -m -s /bin/bash -u 1500 ubuntu \
     && echo "ubuntu     ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
+COPY ./docker/entrypoint.sh /
+RUN chmod +x /entrypoint.sh
+ENTRYPOINT [ "/entrypoint.sh" ]
+CMD ["tail", "-f", "/dev/null" ]
+
 USER ubuntu
 
-ADD . /tmp 
+COPY --chown=ubuntu:1500 ./tools /tmp/tools
 
-RUN cd /tmp \
-    && pwd \
-    && ls -l \
+RUN cd /tmp/tools \
     && touch ~/.s3cfg \
     && echo 'localhost' > hosts \
-    && ansible-playbook -i hosts --connection=local site.yml 
+    && ansible-playbook -i hosts --connection=local site.yml \
+    && ansible-playbook -i hosts --connection=local server-overlay.yml
 
-RUN cd /tmp && ansible-playbook -i hosts --connection=local server-overlay.yml
-
+#RUN cd /tmp/tools  && ansible-playbook -i hosts --connection=local server-overlay.yml
 # ansible-playbook server-overlay.yml

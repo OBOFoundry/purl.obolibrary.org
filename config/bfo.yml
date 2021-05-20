@@ -150,6 +150,9 @@ entries:
 - exact: /2019-08-26/bfo.obo
   replacement: https://raw.githubusercontent.com/BFO-ontology/BFO/v2019-08-26/bfo_classes_only.obo
 
+- exact: /iso/2020/bfo.owl
+  replacement: https://raw.githubusercontent.com/BFO-ontology/BFO-2020/master/21838-2/owl/bfo-2020.owl
+  
 - prefix: /2010-05-25/
   replacement: https://raw.githubusercontent.com/BFO-ontology/BFO/releases/owl-ruttenberg-2010-05-25/  
 

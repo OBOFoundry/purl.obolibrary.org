@@ -23,22 +23,18 @@ entries:
 - prefix: /import/
   replacement: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/import/
   tests:
-  - from: /import/uberon_import.owl
-    to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/import/uberon_import.owl
+  - from: /import/ro_import.owl
+    to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/import/ro_import.owl
 
 ### Previous release
 
-- exact: /releases/
-  replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases
-  
-- exact: /releases/2016-11-07
-  replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/2016-11-07
- 
-- exact: /releases/2016-12-14
-  replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/2016-12-14
-
-- exact: /releases/2016-12-26
-  replacement: https://github.com/ontoneo-project/Ontoneo/tree/master/releases/2016-12-26
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/
+  tests:
+  - from: /releases/2021-02-24/ontoneo.owl
+    to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/2021-02-24/ontoneo.owl
+  - from: /releases/2016-12-14/import/bfo_import.owl
+    to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/2016-12-14/import/bfo_import.owl
   
 ### Documentation Pages and Redirects
 - exact: /homepage

@@ -3,17 +3,10 @@ LABEL maintainer="aes"
 
 # Install dependencies.
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends \
-       software-properties-common sudo cron \
-    && rm -Rf /var/lib/apt/lists/* \
-    && rm -Rf /usr/share/doc && rm -Rf /usr/share/man \
-    && apt-get clean
-
-# Install Ansible.
-RUN apt-add-repository -y ppa:ansible/ansible \
+    && apt-get install -y --no-install-recommends software-properties-common sudo cron logrotate \
+    && apt-add-repository -y ppa:ansible/ansible \
     && apt-get update \
-    && apt-get install -y --no-install-recommends \
-       ansible \
+    && apt-get install -y --no-install-recommends ansible \
     && rm -rf /var/lib/apt/lists/* \
     && rm -Rf /usr/share/doc && rm -Rf /usr/share/man \
     && apt-get clean
@@ -31,7 +24,10 @@ USER ubuntu
 COPY --chown=ubuntu:1500 ./tools /tmp/tools
 
 RUN cd /tmp/tools \
-    && touch ~/.s3cfg \
     && echo 'localhost' > hosts \
     && ansible-playbook -i hosts --connection=local site.yml \
-    && ansible-playbook -i hosts --connection=local server-overlay.yml
+    && touch ~/.s3cfg \
+    && ansible-playbook -i hosts --connection=local server-overlay.yml \
+    && rm -rf ~/.s3cfg /tmp/tools
+
+WORKDIR /home/ubuntu

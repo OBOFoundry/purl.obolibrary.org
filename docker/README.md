@@ -1,6 +1,6 @@
 ## Using purl.obolibrary.org.git in docker
 
-### Installation
+#### Installation
 
 - These steps were successfully tested on:
     - macOS (10.15.3)
@@ -22,13 +22,13 @@ access_key = REPLACE_ME
 secret_key = REPLACE_ME
 ```
 
-#### Clone the repository.
+#### Clone the repository
 
 ```sh
 git clone https://github.com/OBOFoundry/purl.obolibrary.org.git
 ```
 
-#### Build Purl Image.
+#### Build Purl Image
 
 ```sh
 cd purl.obolibrary.org
@@ -36,7 +36,7 @@ docker build -f docker/Dockerfile -t purl:latest .
 docker image list | grep purl 
 ```
 
-#### Launch Container.
+#### Launch Container
 
 Run interactively and access the web server using [http://localhost:8080](http://localhost:8080).
 Be sure to specify the absolute path to s3 credentials.
@@ -48,7 +48,7 @@ sudo cat /opt/credentials/s3cfg   # Make sure crendetials were mounted properly
 ps -ef                            # Make sure apache is running
 ```
 
-#### Cleanup.
+#### Cleanup
 
 Stop Container.
 
@@ -68,7 +68,7 @@ Delete Image.
 docker image rm purl:latest
 ```
 
-#### Test Inside Container.
+#### Test Inside Container
 
 Run tests and safe-update.
 

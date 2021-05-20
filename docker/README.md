@@ -14,7 +14,7 @@ The following tools should be available on the system.
 
 #### AWS S3 Credentials
 
-Prepare The s3 credential file used by logrotatePrepare. It should like so: 
+Prepare The s3 credential file needed for LogRotate. It should like so: 
 
 ```sh
 [default]
@@ -38,7 +38,7 @@ docker image list | grep purl
 
 #### Launch Container.
 
-Run interactively and access the web server using [http://localhost:8080](http://localhost:808).
+Run interactively and access the web server using [http://localhost:8080](http://localhost:8080).
 Be sure to specify the absolute path to s3 credentials.
 
 ```sh

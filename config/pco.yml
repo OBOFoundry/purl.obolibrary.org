@@ -12,6 +12,8 @@ example_terms:
 - PCO_0000000
 
 entries:
+- exact: /releases/2021-05-03/pco.owl
+  replacement: https://raw.githubusercontent.com/PopulationAndCommunityOntology/pco/2021-05-03/pco.owl
 
 # Handle typo in versionIRI date, see https://github.com/PopulationAndCommunityOntology/pco/issues/84
 - exact: /releases/2020-02-13/pco.owl

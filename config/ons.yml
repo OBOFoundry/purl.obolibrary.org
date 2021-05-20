@@ -4,8 +4,8 @@ idspace: ONS
 base_url: /obo/ons
 
 products:
-- ons.owl: https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/ons_release_v1.1.owl
-- ons.obo: https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/ons_release_v1.1.obo
+- ons.owl: https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/ons.owl
+- ons.obo: https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/ons.obo
 
 term_browser: ontobee
 example_terms:
@@ -16,7 +16,10 @@ entries:
   replacement: https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/Older_deprecated/ons_release_v1.0.owl
 
 - exact: /ons_release_v1.1.owl
-  replacement: https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/ons_release_v1.1.owl
+  replacement: https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/Older_deprecated/ons_release_v1.1.owl
+
+- exact: /ons_release_v1.0.obo
+  replacement: https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/Older_deprecated/ons_release_v1.1.obo
   
 - prefix: /imports/
-  replacement: https://github.com/enpadasi/Ontology-for-Nutritional-Studies/tree/master/src/ontology/imports
+  replacement: https://raw.githubusercontent.com/enpadasi/Ontology-for-Nutritional-Studies/master/src/ontology/imports/

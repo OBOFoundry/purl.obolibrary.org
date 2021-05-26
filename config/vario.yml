@@ -4,7 +4,7 @@ idspace: VariO
 base_url: /obo/vario
 
 products:
-- vario.owl: http://ontologies.berkeleybop.org/vario.owl
+- vario.owl: http://www.variationontology.org/vario_download/vario.owl
 - vario.obo: http://www.variationontology.org/vario_download/vario.obo
 
 term_browser: ontobee

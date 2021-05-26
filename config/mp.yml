@@ -4,9 +4,9 @@ idspace: MP
 base_url: /obo/mp
 
 products:
-- mp.owl: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/latest/download/mp.owl
-- mp.obo: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/latest/download/mp.obo
-- mp.json: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/latest/download/mp.json
+- mp.owl: https://github.com/mgijax/mammalian-phenotype-ontology/releases/latest/download/mp.owl
+- mp.obo: https://github.com/mgijax/mammalian-phenotype-ontology/releases/latest/download/mp.obo
+- mp.json: https://github.com/mgijax/mammalian-phenotype-ontology/releases/latest/download/mp.json
 
 term_browser: ontobee
 example_terms:
@@ -20,17 +20,17 @@ entries:
     to: http://www.ebi.ac.uk/ontology-lookup/browse.do?ontName=MP&termId=http://purl.obolibrary.org/obo/MP_0000001
 
 - prefix: /releases/
-  replacement: https://raw.githubusercontent.com/obophenotype/mammalian-phenotype-ontology/v
+  replacement: https://raw.githubusercontent.com/mgijax/mammalian-phenotype-ontology/v
 
 - prefix: /tracker/
-  replacement: https://github.com/obophenotype/mammalian-phenotype-ontology/issues
+  replacement: https://github.com/mgijax/mammalian-phenotype-ontology/issues
 
 - prefix: /patterns/
-  replacement: https://raw.githubusercontent.com/obophenotype/mammalian-phenotype-ontology/master/src/patterns/
+  replacement: https://raw.githubusercontent.com/mgijax/mammalian-phenotype-ontology/master/src/patterns/
   
 - prefix: /imports/
-  replacement: https://raw.githubusercontent.com/obophenotype/mammalian-phenotype-ontology/master/src/ontology/imports/
+  replacement: https://raw.githubusercontent.com/mgijax/mammalian-phenotype-ontology/master/src/ontology/imports/
 
 ## generic fall-through, serve direct from github by default
 - prefix: /
-  replacement: https://github.com/obophenotype/mammalian-phenotype-ontology/releases/latest/download/
+  replacement: https://github.com/mgijax/mammalian-phenotype-ontology/releases/latest/download/

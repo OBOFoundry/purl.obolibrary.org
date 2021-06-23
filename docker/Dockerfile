@@ -27,6 +27,7 @@ RUN cd /tmp/tools \
     && echo 'localhost' > hosts \
     && ansible-playbook -i hosts --connection=local site.yml \
     && touch ~/.s3cfg \
+    && sudo ln -s /usr/bin/python3 /usr/bin/python \
     && ansible-playbook -i hosts --connection=local server-overlay.yml \
     && rm -rf ~/.s3cfg /tmp/tools
 

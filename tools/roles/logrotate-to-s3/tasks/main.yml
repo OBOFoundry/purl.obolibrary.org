@@ -1,0 +1,47 @@
+####
+#### Setup log rotation into S3.
+####
+---
+## Get script into place and setup.
+- name: "Ensure /opt/bin path"
+  file:
+    path: /opt/bin
+    state: directory
+    mode: 0755
+- name: "Ensure /opt/credentials path"
+  file:
+    path: /opt/credentials
+    state: directory
+    mode: 0700
+- name: "Get script in place"
+  copy:
+    src: logrotate-to-s3.sh
+    dest: /opt/bin/logrotate-to-s3.sh
+    #owner: root
+    #group: root
+    mode: 0755
+- name: "Get credentials in place"
+  copy:
+    src: "{{ var_s3_push_credentials }}"
+    dest: "/opt/credentials/s3cfg"
+    #owner: root
+    #group: root
+    mode: 0600
+- name: Install s3cmd 
+  pip: name=s3cmd executable=pip3
+## Setup the logrotate.
+## See: https://github.com/ttakezawa/logrotate-to-s3
+- name: Try and add to logrotate
+  lineinfile:
+    dest: "/etc/logrotate.d/{{ target_service }}"
+    regexp: "logrotate-to-s3.s3cmd"
+    insertafter: "postrotate"
+    line: '                UPLOAD_CMD="s3cmd -c /opt/credentials/s3cfg --mime-type=text/plain put" NAME_PREFIX="{{ var_name_prefix }}" S3_PATH="{{ var_s3_path }}" /opt/bin/logrotate-to-s3.sh {{ s3_bucket }} "$@"'
+- name: Try and remove sharedscripts
+  lineinfile:
+    dest: "/etc/logrotate.d/{{ target_service }}"
+    regexp: "sharedscripts"
+    state: absent
+# - name: List contents of s3 bucket
+#   shell: "s3cmd -c /opt/credentials/s3cfg ls s3://{{ s3_bucket }}"
+#  changed_when: False

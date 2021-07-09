@@ -1,58 +1,105 @@
 #!/usr/bin/env python3
 
-# Check Travis CI build status for the `master` branch of OBOFoundry/purl.obolibrary.org
+# Check Github CI build status for the `master` branch of OBOFoundry/purl.obolibrary.org
 # If `master` is green (i.e. all tests are passing),
 # and the build number is greater than the current build
 # (i.e. the last time we updated),
 # then pull `master`, run Make, and update .current_build.
 
-import difflib
 import requests
 import subprocess
 import sys
+import os
+from types import SimpleNamespace
 
-api_url = 'https://api.travis-ci.com'
-repo_slug = 'OBOFoundry/purl.obolibrary.org'
-accept_header = {'Accept': 'application/vnd.travis-ci.2.1+json'}
 
-# Get the last build ID from Travis:
-resp = requests.get('{}/repos/{}'.format(api_url, repo_slug), headers=accept_header)
+def printf(fmt, *varargs):
+    sys.stdout.write(fmt % varargs)
+
+
+def git_exec(repo, args):
+    git_dir = os.path.join(repo, '.git')
+    command = ['git', '--work-tree=' + repo, '--git-dir=' + git_dir] + args.split()
+
+    with open(os.devnull, 'w') as devnull:
+        result = subprocess.run(command, stdout=subprocess.PIPE, stderr=devnull)
+        code = result.returncode
+
+        if code != 0:
+            raise Exception('failed:{}, code='.format(subprocess.list2cmdline(command), code))
+
+        return result.stdout.decode('utf-8').strip()
+
+
+def get_repo_slug(repo):
+    url = git_exec(repo, 'config --get remote.origin.url')
+    pattern = 'github.com/'
+    return url[url.index(pattern) + len(pattern):url.rindex('.git')]
+
+
+if len(sys.argv) > 1:
+    repo_dir = sys.argv[1]
+else:
+    repo_dir = os.getcwd()
+
+repo_slug = get_repo_slug(repo_dir)
+printf('repo_slug=%s\n', repo_slug)
+
+branch = git_exec(repo_dir, 'name-rev --name-only HEAD')
+printf('branch=%s\n', branch)
+
+head_sha = git_exec(repo_dir, 'rev-parse {}'.format(branch))
+printf('head_sha=%s\n', head_sha)
+
+ret = git_exec(repo_dir, 'ls-remote https://github.com/{}.git {}'.format(repo_slug, branch)).split()
+
+if not ret:
+    printf('Not a remote branch  %s\n', branch)
+    sys.exit(1)
+
+remote_head_sha = ret[0]
+printf('remote_head_sha=%s\n', remote_head_sha)
+
+if remote_head_sha == head_sha:
+    printf('Nothing has been checked in into %s\n', branch)
+    sys.exit(1)
+
+api_url = 'https://api.github.com'
+accept_header = {'Accept': 'application/vnd.github.v3+json'}
+resp = requests.get('{}/repos/{}/actions/runs'.format(api_url, repo_slug), headers=accept_header)
+
 if resp.status_code != requests.codes.ok:
-  resp.raise_for_status()
-last_build_id = resp.json()['repo']['last_build_id']
+    resp.raise_for_status()
 
-# Now get the build details:
-resp = requests.get('{}/repos/{}/builds/{}'.format(api_url, repo_slug, last_build_id),
-                    headers=accept_header)
-if resp.status_code != requests.codes.ok:
-  resp.raise_for_status()
-content = resp.json()
+json_result = SimpleNamespace(**resp.json())
+workflow_runs = map(lambda x: SimpleNamespace(**x), json_result.workflow_runs)
+workflow_run = next(filter(lambda x: x.head_sha == remote_head_sha, workflow_runs), None)
 
-# If the last build did not pass, then do nothing and exit.
-if content['build']['state'] != 'passed':
-  print("Last build is not green. Not updating.", file=sys.stderr)
-  sys.exit(0)
+if not workflow_run:
+    printf('Workflow run not found for %s\n', remote_head_sha)
+    sys.exit(1)
 
-# Otherwise see if the build description is different from the current build
-print("Last build is green. Checking whether it is new ...")
-build_desc = "#{} {}:    {} {}".format(content['build']['number'], content['build']['state'],
-                                       content['commit']['branch'], content['commit']['message'])
-# We only want to keep the first line of the last build's description for comparison purposes:
-newbuild_lines = build_desc.splitlines(keepends=True)[:1]
-with open('.current_build') as infile:
-  currbuild_lines = infile.readlines()
+assert workflow_run.head_branch == branch, 'branch check failed'
+assert workflow_run.event == 'push', 'event check failed'
 
-diff = list(difflib.unified_diff(currbuild_lines, newbuild_lines))
-if not diff:
-  print("Last build is not new. Not updating.")
-  sys.exit(0)
+if workflow_run.status != 'completed' or workflow_run.conclusion != 'success':
+    printf('workflow run failed checks: status=%s conclusion=%s\n',
+           workflow_run.status, workflow_run.conclusion)
+    sys.exit(1)
 
-# Output a diff for information purposes and then do a `git pull` and `make` from the current
-# working directory:
-for d in diff:
-  print(d, end='')
-print('\nNew green build available. Updating local repository ...')
+printf("workflow: id=%d, run_number=%d\n", workflow_run.id, workflow_run.run_number)
 
-if subprocess.call(["git", "pull"]) == 0 and subprocess.call(["make"]) == 0:
-  with open('.current_build', 'w') as outfile:
-    outfile.write(newbuild_lines.pop())
+git_exec(repo_dir, 'pull')
+head_sha = git_exec(repo_dir, 'rev-parse {}'.format(branch)).split()[0]
+printf('head_sha_after_git_pull=%s\n', head_sha)
+
+if remote_head_sha != head_sha:
+    printf('Something else has been checked in into %s\n', branch)
+    sys.exit(1)
+
+if subprocess.call(["make"]) != 0:
+    printf('make failed on %s\n', branch)
+    sys.exit(1)
+
+printf('updated successfully on %s\n', branch)
+sys.exit(0)

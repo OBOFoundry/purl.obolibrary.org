@@ -42,10 +42,6 @@ secret_key = REPLACE_ME
 
 ```
 
-#### Very Important
-- Create an elastic ip and override it using its id in vars.tf
-- Override the tag used in vars.tf if needed
-
 #### Create AWS instance: 
 
 Note: Terraform creates some folders and files to maintain the state. Use <i>ls -a aws</i>

@@ -8,3 +8,7 @@ tests/
 tools/.vagrant/
 tools/hosts
 www/obo
+.terraform
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup

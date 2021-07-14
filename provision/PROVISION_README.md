@@ -93,7 +93,7 @@ ansible-playbook -e "host=$HOST" --private-key $PRIVATE_KEY -u ubuntu -i "$HOST,
 
 ### Start Docker Instance: 
 
-Start the instance and access it from broswer use http://REPLACE_WITH_ELASTIC_IP/
+Start the instance and access it from browser use http://REPLACE_WITH_ELASTIC_IP/
 
 ```
 ssh -o StrictHostKeyChecking=no -i $PRIVATE_KEY ubuntu@$HOST

@@ -4,7 +4,7 @@ variable "tags" {
 }
 
 variable "region" {
-  default = "us-west-2"
+  default = "us-east-1"
 }
 
 variable eip_id {
@@ -15,12 +15,8 @@ variable "instance_type" {
   default = "t2.micro" 
 }
 
-variable "ami" {
-  default = "ami-07dd19a7900a1f049"
-}
-
 variable "key_name" {
-  default = "test-purl-ssh-key"
+  default = "purl-ssh-key"
 }
 
 variable "public_key_path" {

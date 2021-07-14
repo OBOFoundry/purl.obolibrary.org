@@ -5,11 +5,15 @@ resource "aws_vpc" "purl_app_stack_vpc" {
   tags                 = var.tags
 }
 
+data "aws_availability_zones" "available" {
+  state = "available"
+}
+
 resource "aws_subnet" "purl_app_stack_public_subnet" {
   vpc_id                  = aws_vpc.purl_app_stack_vpc.id
   cidr_block              = "10.0.1.0/24"
   map_public_ip_on_launch = true
-  availability_zone       = "us-west-2a"
+  availability_zone       = data.aws_availability_zones.available.names[0]
   tags                    = var.tags
 }
 

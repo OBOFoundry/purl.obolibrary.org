@@ -1,5 +1,5 @@
-resource "aws_security_group" "test_purl_sg" {
-  name   = "test-purl-sg"
+resource "aws_security_group" "purl_sg" {
+  name   = "purl-sg"
   vpc_id = aws_vpc.purl_app_stack_vpc.id
   tags   = var.tags
 

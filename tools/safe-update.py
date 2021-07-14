@@ -89,12 +89,13 @@ if workflow_run.status != 'completed' or workflow_run.conclusion != 'success':
 
 printf("workflow: id=%d, run_number=%d\n", workflow_run.id, workflow_run.run_number)
 
-git_exec(repo_dir, 'pull')
+git_exec(repo_dir, 'fetch origin')
+git_exec(repo_dir, 'merge ' + remote_head_sha)
 head_sha = git_exec(repo_dir, 'rev-parse {}'.format(branch)).split()[0]
-printf('head_sha_after_git_pull=%s\n', head_sha)
+printf('head_sha_after_git_merge=%s\n', head_sha)
 
 if remote_head_sha != head_sha:
-    printf('Something else has been checked in into %s\n', branch)
+    printf('Something went terribly wrong when merging latest hash  %s\n', branch)
     sys.exit(1)
 
 if subprocess.call(["make"]) != 0:

@@ -14,18 +14,18 @@ data "aws_ami" "ubuntu" {
     owners = ["099720109477"]
 }
 
-resource "aws_eip" "purl_elastic_ip" {
-  instance   = aws_instance.purl_server.id
-  vpc        = true
-  tags       = var.tags
+resource "aws_eip_association" "eip_assoc" {
+  instance_id   = aws_instance.purl_server.id
+  allocation_id = var.eip_alloc_id
 }
 
 resource "aws_instance" "purl_server" {
+  // This ami works for use-east-1 "ami-0dd76f917833aac4b"   
   ami                    = data.aws_ami.ubuntu.id
   instance_type          = var.instance_type
   vpc_security_group_ids = [aws_security_group.purl_sg.id]
   subnet_id              = aws_subnet.purl_app_stack_public_subnet.id
-  key_name               = var.key_name
+  key_name               = aws_key_pair.ssh_key.key_name
   tags                   = var.tags
 
   ebs_block_device {

@@ -7,16 +7,12 @@ variable "region" {
   default = "us-east-1"
 }
 
-variable eip_id {
-  default = "eipalloc-0dcdeb0173415c6c0"
+variable eip_alloc_id {
+  default = "eipalloc-06a756400951b4801"
 }
 
 variable "instance_type" {
   default = "t2.micro" 
-}
-
-variable "key_name" {
-  default = "purl-ssh-key"
 }
 
 variable "public_key_path" {

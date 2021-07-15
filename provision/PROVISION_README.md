@@ -4,7 +4,7 @@
 
 - The steps below were successfully tested using:
     - Terraform (0.14.4)
-    - Ansible 
+    - Ansible   (2.10.7) Python (3.8.5)
 
 #### Install Terraform
 
@@ -47,7 +47,7 @@ secret_key = REPLACE_ME
 Create elastic ip (VPC) and use its allocation_id aws/vars.tf 
 
 Note: A default elastic ip has already been created for region us-east-1
-      It can be used if unused. 
+      It can be used if not associated to an instance. 
 
 ```sh
 variable eip_alloc_id {

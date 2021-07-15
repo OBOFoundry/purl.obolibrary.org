@@ -14,9 +14,15 @@ data "aws_ami" "ubuntu" {
     owners = ["099720109477"]
 }
 
+// Search for eip by allocation_id
+// If found data.aws_eip.purl_eip.public_ip will be the public ip.
+data "aws_eip" "purl_eip" {
+  id = var.eip_alloc_id
+}
+
 resource "aws_eip_association" "eip_assoc" {
   instance_id   = aws_instance.purl_server.id
-  allocation_id = var.eip_alloc_id
+  allocation_id = data.aws_eip.purl_eip.public_ip
 }
 
 resource "aws_instance" "purl_server" {

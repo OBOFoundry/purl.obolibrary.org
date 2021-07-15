@@ -66,10 +66,12 @@ cd provision
 # This will install the aws provider. 
 terraform -chdir=aws init
 
-# Validate the config
+# Validate the terraform scripts' syntax
 terraform -chdir=aws validate
 
 # View the plan that is going to be created.
+# This is very useful as it will also search for the elastic ip using 
+# the supplied eip_alloc_id. And would fail if it does not find it.
 terraform -chdir=aws plan
 
 # This will create the vpc, security group and the instance
@@ -85,7 +87,7 @@ terraform -chdir=aws show
 #### Test AWS Instance: 
 
 ```sh
-export HOST="REPLACE_ME_WITH_ELASTIC_IP"
+export HOST=`terraform -chdir=aws output -raw public_ip`
 export PRIVATE_KEY=`terraform -chdir=aws output -raw private_key_path`
 
 ssh -o StrictHostKeyChecking=no -i $PRIVATE_KEY ubuntu@$HOST
@@ -102,7 +104,7 @@ Note: The ansible script assumes the S3 bucket credentials are in ~/.s3cfg
 
 ```sh
 cd provision
-export HOST="REPLACE_ME_WITH_ELASTIC_IP"
+export HOST=`terraform -chdir=aws output -raw public_ip`
 export PRIVATE_KEY=`terraform -chdir=aws output -raw private_key_path`
 ansible-playbook -e "host=$HOST" --private-key $PRIVATE_KEY -u ubuntu -i "$HOST," stage.yaml
 ```

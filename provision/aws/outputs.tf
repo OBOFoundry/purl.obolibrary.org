@@ -7,9 +7,5 @@ output "http_port" {
 }
 
 output "public_ip" {
-  value = "Please use the ip address associated with the elastic ip"
+  value = data.aws_eip.purl_eip.public_ip
 }
-
-//output "public_ip" {
-//  value = aws_eip.purl_elastic_ip.public_ip
-//}

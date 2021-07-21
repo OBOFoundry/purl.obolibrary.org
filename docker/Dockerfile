@@ -12,7 +12,8 @@ RUN apt-get update \
     && apt-get clean
 
 RUN useradd -m -s /bin/bash -u 1500 ubuntu \
-    && echo "ubuntu     ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
+    && echo "ubuntu     ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers \
+    && echo "#!/bin/sh\nexit 0" > /usr/sbin/policy-rc.d
 
 COPY ./docker/entrypoint.sh /
 RUN chmod +x /entrypoint.sh

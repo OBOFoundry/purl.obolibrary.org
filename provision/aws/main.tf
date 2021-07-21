@@ -22,7 +22,7 @@ data "aws_eip" "purl_eip" {
 
 resource "aws_eip_association" "eip_assoc" {
   instance_id   = aws_instance.purl_server.id
-  allocation_id = data.aws_eip.purl_eip.public_ip
+  allocation_id = data.aws_eip.purl_eip.id
 }
 
 resource "aws_instance" "purl_server" {

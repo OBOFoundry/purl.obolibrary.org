@@ -41,6 +41,9 @@ entries:
 
 - prefix: /homology/
   replacement: https://phenoscape.svn.sourceforge.net/svnroot/phenoscape/trunk/vocab/homology/
+  
+- prefix: /bridge/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/master/src/ontology/bridge/
 
 # Previously Uberon was releaseon on svn.code.sf.net. The following redirect essentially redirects any release pre-2020 (2019, 2018 etc) to that svn.
 - prefix: /releases/201

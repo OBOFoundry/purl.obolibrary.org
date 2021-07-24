@@ -1,0 +1,10 @@
+version: '3'
+services:
+  purl:
+    container_name: purl 
+    image: '{{ image }}:{{ tag }}'
+    volumes:
+      - {{ creds_dest}}:/opt/credentials/s3cfg
+    ports:
+      - 80:80
+    restart: unless-stopped

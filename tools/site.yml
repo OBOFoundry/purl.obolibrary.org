@@ -51,6 +51,10 @@
       when: mode == "production"
       git: repo={{ repo_url }} dest={{ repo_dir }}
 
+    - name: Build Apache Config 
+      when: mode == "production"
+      shell:  "cd {{ repo_dir }} && make all"
+
     - name: Immediately update the PURLs
       when: mode == "production"
       shell: "{{ cron_job }}; exit 0"

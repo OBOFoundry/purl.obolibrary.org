@@ -64,6 +64,12 @@ entries:
   tests:
   - from: /about/CL_0000000
     to: http://www.ontobee.org/browser/rdf.php?o=CL&iri=http://purl.obolibrary.org/obo/CL_0000000
+    
+- prefix: /bds/
+  replacement: https://github.com/obophenotype/brain_data_standards_ontologies/tree/workshop_dosdp_improvement/
+  
+- prefix: /bds/browser/
+  replacement: http://ec2-3-143-113-50.us-east-2.compute.amazonaws.com:8080/ontologies/bds2/
 
 ## generic fall-through, serve direct from github by default
 - prefix: /

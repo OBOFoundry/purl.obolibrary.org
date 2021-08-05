@@ -23,6 +23,9 @@ entries:
 
 - exact: /3.0.1/apollo_sv.owl 
   replacement: https://raw.githubusercontent.com/ApolloDev/apollo-sv/v3.0.1/src/ontology/apollo-sv.owl
+  
+- exact: /v4.1.1/apollo_sv.owl
+  replacement: https://raw.githubusercontent.com/ApolloDev/apollo-sv/v4.1.1/src/ontology/apollo-sv.owl
 
 # Misc
 

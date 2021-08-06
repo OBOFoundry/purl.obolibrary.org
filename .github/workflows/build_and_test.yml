@@ -56,5 +56,5 @@ jobs:
 
       - name: Run Tests 
         run: |
-          docker run -w /var/www/purl.obolibrary.org -t purl:latest sudo make all test
+          docker run -w /var/www/purl.obolibrary.org -v ${{ github.workspace }}:/var/www/purl.obolibrary.org -t purl:latest sudo make all test
 

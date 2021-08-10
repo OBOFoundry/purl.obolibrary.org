@@ -6,7 +6,7 @@ base_url: /obo/ogms
 base_redirect: http://code.google.com/p/ogms/?
 
 products:
-- ogms.owl: https://raw.githubusercontent.com/OGMS/ogms/master/src/ontology/ogms.owl
+- ogms.owl: https://raw.githubusercontent.com/OGMS/ogms/master/ogms.owl
 
 term_browser: ontobee
 example_terms:

@@ -65,11 +65,23 @@ entries:
   - from: /about/CL_0000000
     to: http://www.ontobee.org/browser/rdf.php?o=CL&iri=http://purl.obolibrary.org/obo/CL_0000000
 
+- regex: ^/obo/cl/bds/releases/(.*)/bds\.owl$
+  replacement: https://raw.githubusercontent.com/obophenotype/brain_data_standards_ontologies/$1/bdscratch-full.owl
+  tests:
+  - from: /bds/releases/2021-06-29/bds.owl
+    to: https://raw.githubusercontent.com/obophenotype/brain_data_standards_ontologies/2021-06-29/bdscratch-full.owl
+    
+- regex: ^/obo/cl/bds/releases/(.*)/bds-(.*)\.owl$
+  replacement: https://raw.githubusercontent.com/obophenotype/brain_data_standards_ontologies/$1/bdscratch-$2.owl
+  tests:
+  - from: /bds/releases/Current/bds-base.owl
+    to: https://raw.githubusercontent.com/obophenotype/brain_data_standards_ontologies/Current/bdscratch-base.owl
+
 - prefix: /bds/browser/
   replacement: http://ec2-3-143-113-50.us-east-2.compute.amazonaws.com:8080/ontologies/bds2/
 
 - prefix: /bds/
-  replacement: https://github.com/obophenotype/brain_data_standards_ontologies/tree/workshop_dosdp_improvement/
+  replacement: https://github.com/obophenotype/brain_data_standards_ontologies/
 
 ## generic fall-through, serve direct from github by default
 - prefix: /

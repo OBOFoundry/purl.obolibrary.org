@@ -66,3 +66,13 @@ entries:
 
 - prefix: /
   replacement: https://github.com/ufbmi/dron/releases/latest/download/
+  tests:  
+    - from: /dron-base.json
+      to: https://github.com/ufbmi/dron/releases/latest/download/dron-base.json
+
+- prefix: /releases/
+  replacement: https://github.com/ufbmi/dron/releases/download/v
+  tests:  
+    - from: /releases/2021-08-12/dron-base.obo
+      to: https://github.com/ufbmi/dron/releases/download/v2021-08-12/dron-base.obo
+

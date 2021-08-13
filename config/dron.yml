@@ -5,7 +5,7 @@ base_url: /obo/dron
 
 products:
 - dron.owl: https://github.com/ufbmi/dron/releases/latest/download/dron.owl
-- dron.obo: https://github.com/ufbmi/dron/releases/latest/download/dron.owl
+- dron.obo: https://github.com/ufbmi/dron/releases/latest/download/dron.obo
 - dron.json: https://github.com/ufbmi/dron/releases/latest/download/dron.json
 
 term_browser: ontobee

@@ -12,7 +12,8 @@ example_terms:
 
 entries:
 
-- prefix: /
-  replacement: https://raw.githubusercontent.com/OBOFoundry/COB/master/
 - prefix: /branch/
   replacement: https://raw.githubusercontent.com/OBOFoundry/COB/
+- prefix: /
+  replacement: https://raw.githubusercontent.com/OBOFoundry/COB/master/
+

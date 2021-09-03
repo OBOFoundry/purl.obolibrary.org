@@ -4,13 +4,15 @@ idspace: APO
 base_url: /obo/apo
 
 products:
-- apo.owl: http://ontologies.berkeleybop.org/apo.owl
-- apo.obo: http://ontologies.berkeleybop.org/apo.obo
+- apo.owl: https://github.com/obophenotype/ascomycete-phenotype-ontology/raw/master/apo.owl
+- apo.obo: https://github.com/obophenotype/ascomycete-phenotype-ontology/raw/master/apo.obo
 
 term_browser: ontobee
 example_terms:
 - APO_0000018
 
 entries:
-- prefix: /
-  replacement: https://github.com/cmungall/phenotype_ontologies/raw/master/apo/
+- prefix: /releases/
+  replacement: https://github.com/obophenotype/ascomycete-phenotype-ontology/raw/v
+- exact: /
+  replacement: https://github.com/obophenotype/ascomycete-phenotype-ontology/

@@ -4,9 +4,9 @@ idspace: MP
 base_url: /obo/mp
 
 products:
-- mp.owl: https://github.com/mgijax/mammalian-phenotype-ontology/releases/latest/download/mp.owl
-- mp.obo: https://github.com/mgijax/mammalian-phenotype-ontology/releases/latest/download/mp.obo
-- mp.json: https://github.com/mgijax/mammalian-phenotype-ontology/releases/latest/download/mp.json
+- mp.owl: http://www.informatics.jax.org/downloads/reports/mp.owl
+- mp.obo: http://www.informatics.jax.org/downloads/reports/MPheno_OBO.ontology
+- mp.json: http://www.informatics.jax.org/downloads/reports/mp.json
 
 term_browser: ontobee
 example_terms:

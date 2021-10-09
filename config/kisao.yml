@@ -1,0 +1,11 @@
+# PURL configuration for http://purl.obolibrary.org/obo/kisao
+
+idspace: KISAO
+base_url: /obo/kisao
+
+products:
+- kisao.owl: https://raw.githubusercontent.com/SED-ML/KiSAO/deploy/kisao.owl
+
+term_browser: ontobee
+example_terms:
+- KISAO_0000392

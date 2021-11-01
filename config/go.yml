@@ -8,7 +8,7 @@ products:
 - go.obo: http://current.geneontology.org/ontology/go.obo
 - go.json: http://current.geneontology.org/ontology/go.json
 
-term_browser: ontobee
+term_browser: custom
 example_terms:
 - GO_0000001
 

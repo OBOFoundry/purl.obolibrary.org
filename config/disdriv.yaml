@@ -1,0 +1,14 @@
+# PURL configuration for http://purl.obolibrary.org/obo/disdriv
+
+idspace: DISDRIV
+base_url: /obo/disdriv
+
+base_redirect: https://github.com/DiseaseOntology/DiseaseDriversOntology/
+
+products:
+- disdriv.owl: https://github.com/DiseaseOntology/DiseaseDriversOntology/blob/main/src/ontology/releases/disdriv.owl
+
+term_browser: ontobee
+example_terms:
+- DISDRIV_0000002
+

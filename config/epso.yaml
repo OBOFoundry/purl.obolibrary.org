@@ -1,0 +1,7 @@
+idspace: EPSO
+base_url: /obo/epso
+
+products:
+- obi.owl: https://github.com/phwegner/Epilepsyontology/blob/main/EPSO.owl
+
+term_browser: ontobee

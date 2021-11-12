@@ -3,10 +3,10 @@
 idspace: DISDRIV
 base_url: /obo/disdriv
 
-base_redirect: https://github.com/DiseaseOntology/DiseaseDriversOntology/
+base_redirect: https://github.com/DiseaseOntology/DiseaseDriversOntology
 
 products:
-- disdriv.owl: https://github.com/DiseaseOntology/DiseaseDriversOntology/blob/main/src/ontology/releases/disdriv.owl
+- disdriv.owl: https://raw.githubusercontent.com/DiseaseOntology/DiseaseDriversOntology/main/src/ontology/releases/disdriv.owl
 
 term_browser: ontobee
 example_terms:

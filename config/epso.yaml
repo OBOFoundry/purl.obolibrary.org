@@ -1,0 +1,25 @@
+idspace: EPSO
+base_url: /obo/epso
+
+products:
+- epso.owl: https://raw.githubusercontent.com/phwegner/Epilepsyontology/main/EPSO.owl
+- EPSO_merged.owl: https://github.com/phwegner/Epilepsyontology/tree/main/release/EPSO_merged.owl
+
+term_browser: ontobee
+
+example_terms:
+- EPSO_0000011
+
+entries:
+
+- prefix: /releases/
+  replacement: https://github.com/phwegner/Epilepsyontology/tree/main/release
+  
+
+- prefix: /tracker/
+  replacement: https://github.com/phwegner/Epilepsyontology/issues
+
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://github.com/phwegner/Epilepsyontology

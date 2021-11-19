@@ -4,12 +4,15 @@ idspace: OBIB
 base_url: /obo/obib
 
 products:
-- obib.owl: https://raw.githubusercontent.com/biobanking/ontology/20210202/obib.owl
+- obib.owl: https://raw.githubusercontent.com/biobanking/ontology/v2021-11-12/obib.owl
 term_browser: ontobee
 example_terms:
 - OBIB_0000150
 
 entries:
+- exact: /2021-11-12/obib.owl
+  replacement: https://raw.githubusercontent.com/biobanking/ontology/v2021-11-12/obib.owl
+
 - exact: /2021-02-02/obib.owl
   replacement: https://raw.githubusercontent.com/biobanking/ontology/20210202/obib.owl
 

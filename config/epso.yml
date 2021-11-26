@@ -2,8 +2,8 @@ idspace: EPSO
 base_url: /obo/epso
 
 products:
-- epso.owl: https://raw.githubusercontent.com/phwegner/Epilepsyontology/main/EPSO.owl
-- EPSO_merged.owl: https://github.com/phwegner/Epilepsyontology/tree/main/release/EPSO_merged.owl
+- epso.owl: https://raw.githubusercontent.com/phwegner/Epilepsyontology/main/release/EPSO_merged.owl
+
 
 term_browser: ontobee
 

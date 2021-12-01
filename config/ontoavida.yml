@@ -1,0 +1,32 @@
+# PURL configuration for http://purl.obolibrary.org/obo/ontoavida
+
+idspace: ONTOAVIDA
+base_url: /obo/ontoavida
+
+products:
+- ontoavida.owl: https://gitlab.com/fortunalab/ontoavida/-/raw/master/ontoavida.owl
+- ontoavida.obo: https://gitlab.com/fortunalab/ontoavida/-/raw/master/ontoavida.obo
+
+term_browser: ontobee
+example_terms:
+- ONTOAVIDA_00000097
+- ONTOAVIDA_00000151
+- ONTOAVIDA_00000124
+
+entries:
+
+- prefix: /releases/
+  replacement: https://gitlab.com/fortunalab/ontoavida/-/raw/
+  tests:
+    - from: /releases/2021-12-01/
+      to: https://gitlab.com/fortunalab/ontoavida/-/raw/2021-12-01/
+
+- prefix: /tracker/
+  replacement: https://gitlab.com/fortunalab/ontoavida/-/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/ONTOAVIDA?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from gitlab by default
+- prefix: /
+  replacement: https://gitlab.com/fortunalab/ontoavida/-/raw/master/

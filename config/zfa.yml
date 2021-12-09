@@ -6,7 +6,7 @@ base_url: /obo/zfa
 products:
 - zfa.owl: https://raw.githubusercontent.com/cerivs/zebrafish-anatomical-ontology/master/zfa.owl
 - zfa.obo: https://raw.githubusercontent.com/cerivs/zebrafish-anatomical-ontology/master/zfa.obo
-- zfa.json: https://raw.githubusercontent.com/cerivs/zebrafish-anatomical-ontology/master/zfa.obo
+- zfa.json: https://raw.githubusercontent.com/cerivs/zebrafish-anatomical-ontology/master/zfa.json
 
 term_browser: ontobee
 example_terms:

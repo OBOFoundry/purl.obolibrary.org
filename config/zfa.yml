@@ -4,28 +4,9 @@ idspace: ZFA
 base_url: /obo/zfa
 
 products:
-- zfa.owl: https://raw.githubusercontent.com/cerivs/zebrafish-anatomical-ontology/master/zfa.owl
-- zfa.obo: https://raw.githubusercontent.com/cerivs/zebrafish-anatomical-ontology/master/zfa.obo
-- zfa.json: https://raw.githubusercontent.com/cerivs/zebrafish-anatomical-ontology/master/zfa.obo
+- zfa.owl: http://ontologies.berkeleybop.org/zfa.owl
+- zfa.obo: http://ontologies.berkeleybop.org/zfa.obo
 
 term_browser: ontobee
 example_terms:
 - ZFA_0000000
-
-entries:
-
-- prefix: /releases/
-  replacement: https://raw.githubusercontent.com/cerivs/zebrafish-anatomical-ontology/v
-  tests:
-    - from: /releases/2021-12-09/
-      to: https://raw.githubusercontent.com/cerivs/zebrafish-anatomical-ontology/v2021-12-09/
-
-- prefix: /tracker/
-  replacement: https://github.com/cerivs/zebrafish-anatomical-ontology/issues
-
-- prefix: /about/
-  replacement: http://www.ontobee.org/ontology/ZFA?iri=http://purl.obolibrary.org/obo/
-
-## generic fall-through, serve direct from github by default
-- prefix: /
-  replacement: https://raw.githubusercontent.com/cerivs/zebrafish-anatomical-ontology/master/

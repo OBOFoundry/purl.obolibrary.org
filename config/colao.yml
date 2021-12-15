@@ -6,7 +6,6 @@ base_url: /obo/colao
 products:
 - colao.owl: https://raw.githubusercontent.com/insect-morphology/colao/master/colao.owl
 - colao.obo: https://raw.githubusercontent.com/insect-morphology/colao/master/colao.obo
-- colao.json: https://raw.githubusercontent.com/insect-morphology/colao/master/colao.json
 
 term_browser: ontobee
 example_terms:

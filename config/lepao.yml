@@ -6,7 +6,6 @@ base_url: /obo/lepao
 products:
 - lepao.owl: https://raw.githubusercontent.com/insect-morphology/lepao/master/lepao.owl
 - lepao.obo: https://raw.githubusercontent.com/insect-morphology/lepao/master/lepao.obo
-- lepao.json: https://raw.githubusercontent.com/insect-morphology/lepao/master/lepao.json
 
 term_browser: ontobee
 example_terms:

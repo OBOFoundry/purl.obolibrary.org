@@ -1,0 +1,31 @@
+# PURL configuration for http://purl.obolibrary.org/obo/lepao
+
+idspace: LEPAO
+base_url: /obo/lepao
+
+products:
+- lepao.owl: https://raw.githubusercontent.com/insect-morphology/lepao/master/lepao.owl
+- lepao.obo: https://raw.githubusercontent.com/insect-morphology/lepao/master/lepao.obo
+- lepao.json: https://raw.githubusercontent.com/insect-morphology/lepao/master/lepao.json
+
+term_browser: ontobee
+example_terms:
+- LEPAO_0000005
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/insect-morphology/lepao/v
+  tests:
+    - from: /releases/2021-11-20/
+      to: https://raw.githubusercontent.com/insect-morphology/lepao/v2021-11-20/
+
+- prefix: /tracker/
+  replacement: https://github.com/insect-morphology/lepao/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/LEPAO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/insect-morphology/lepao/master/

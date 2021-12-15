@@ -4,9 +4,9 @@ idspace: COLAO
 base_url: /obo/colao
 
 products:
-- aism.owl: https://raw.githubusercontent.com/insect-morphology/colao/master/colao.owl
-- aism.obo: https://raw.githubusercontent.com/insect-morphology/colao/master/colao.obo
-- aism.json: https://raw.githubusercontent.com/insect-morphology/colao/master/colao.json
+- colao.owl: https://raw.githubusercontent.com/insect-morphology/colao/master/colao.owl
+- colao.obo: https://raw.githubusercontent.com/insect-morphology/colao/master/colao.obo
+- colao.json: https://raw.githubusercontent.com/insect-morphology/colao/master/colao.json
 
 term_browser: ontobee
 example_terms:

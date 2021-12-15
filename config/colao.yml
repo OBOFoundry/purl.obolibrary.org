@@ -1,0 +1,30 @@
+# PURL configuration for http://purl.obolibrary.org/obo/colao
+
+idspace: COLAO
+base_url: /obo/colao
+
+products:
+- colao.owl: https://raw.githubusercontent.com/insect-morphology/colao/master/colao.owl
+- colao.obo: https://raw.githubusercontent.com/insect-morphology/colao/master/colao.obo
+
+term_browser: ontobee
+example_terms:
+- COLAO_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/insect-morphology/colao/v
+  tests:
+    - from: /releases/2021-12-14/
+      to: https://raw.githubusercontent.com/insect-morphology/colao/v2021-12-14/
+
+- prefix: /tracker/
+  replacement: https://github.com/insect-morphology/colao/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/COLAO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/insect-morphology/colao/master/

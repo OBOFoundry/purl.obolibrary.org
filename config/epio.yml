@@ -1,4 +1,4 @@
-idspace: EPSO
+idspace: EPIO
 base_url: /obo/epio
 
 products:
@@ -8,12 +8,12 @@ products:
 term_browser: ontobee
 
 example_terms:
-- EPSO_0000011
+- EPIO_0000011
 
 entries:
 
 - prefix: /releases/
-  replacement: https://github.com/SCAI-BIO/EpilepsyOntology/tree/main/release
+  replacement: https://raw.githubusercontent.com/SCAI-BIO/EpilepsyOntology/main/release
   
 
 - prefix: /tracker/
@@ -22,4 +22,4 @@ entries:
 
 ## generic fall-through, serve direct from github by default
 - prefix: /
-  replacement: https://github.com/SCAI-BIO/EpilepsyOntology/
+  replacement: https://raw.githubusercontent.com/SCAI-BIO/EpilepsyOntology/main/

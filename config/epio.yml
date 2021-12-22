@@ -2,7 +2,7 @@ idspace: EPIO
 base_url: /obo/epio
 
 products:
-- epso.owl: https://raw.githubusercontent.com/SCAI-BIO/EpilepsyOntology/main/release/EPIO_merged.owl
+- epio.owl: https://raw.githubusercontent.com/SCAI-BIO/EpilepsyOntology/main/release/EPIO_merged.owl
 
 
 term_browser: ontobee

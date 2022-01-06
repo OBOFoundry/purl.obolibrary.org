@@ -22,28 +22,28 @@ entries:
 ### Term Overrides
 
 - exact: /BFO_0000050
-  replacement: http://www.ontobee.org/browser/rdf.php?o=RO&iri=http://purl.obolibrary.org/obo/BFO_0000050
+  replacement: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/BFO_0000050
 
 - exact: /BFO_0000051
-  replacement: http://www.ontobee.org/browser/rdf.php?o=RO&iri=http://purl.obolibrary.org/obo/BFO_0000051
+  replacement: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/BFO_0000051
 
 - exact: /BFO_0000054
-  replacement: http://www.ontobee.org/browser/rdf.php?o=RO&iri=http://purl.obolibrary.org/obo/BFO_0000054
+  replacement: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/BFO_0000054
 
 - exact: /BFO_0000055
-  replacement: http://www.ontobee.org/browser/rdf.php?o=RO&iri=http://purl.obolibrary.org/obo/BFO_0000055
+  replacement: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/BFO_0000055
 
 - exact: /BFO_0000062
-  replacement: http://www.ontobee.org/browser/rdf.php?o=RO&iri=http://purl.obolibrary.org/obo/BFO_0000062
+  replacement: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/BFO_0000062
 
 - exact: /BFO_0000063
-  replacement: http://www.ontobee.org/browser/rdf.php?o=RO&iri=http://purl.obolibrary.org/obo/BFO_0000063
+  replacement: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/BFO_0000063
 
 - exact: /BFO_0000066
-  replacement: http://www.ontobee.org/browser/rdf.php?o=RO&iri=http://purl.obolibrary.org/obo/BFO_0000066
+  replacement: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/BFO_0000066
 
 - exact: /BFO_0000067
-  replacement: http://www.ontobee.org/browser/rdf.php?o=RO&iri=http://purl.obolibrary.org/obo/BFO_0000067
+  replacement: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/BFO_0000067
 
 
 ### Custom (non-Ontobee) term_browser redirects

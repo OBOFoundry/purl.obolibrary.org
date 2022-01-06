@@ -11,7 +11,7 @@ products:
 - ro.json: https://raw.githubusercontent.com/oborel/obo-relations/master/ro.json
 - ro.html: https://github.com/oborel/obo-relations
 
-term_browser: ontobee
+term_browser: custom
 example_terms:
 - RO_0001000
 
@@ -32,10 +32,10 @@ entries:
   replacement: https://oborel.github.io/obo-relations/
 
 - prefix: /about/
-  replacement: http://www.ontobee.org/browser/rdf.php?o=RO&iri=http://purl.obolibrary.org/obo/
+  replacement: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/
   tests:
   - from: /about/BFO_0000051
-    to: http://www.ontobee.org/browser/rdf.php?o=RO&iri=http://purl.obolibrary.org/obo/BFO_0000051
+    to: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/BFO_0000051
 
 - prefix: /
   replacement: https://raw.githubusercontent.com/oborel/obo-relations/master/

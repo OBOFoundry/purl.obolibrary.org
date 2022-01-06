@@ -22,28 +22,28 @@ entries:
 ### Term Overrides
 
 - exact: /BFO_0000050
-  replacement: http://www.ontobee.org/browser/rdf.php?o=RO&iri=http://purl.obolibrary.org/obo/BFO_0000050
+  replacement: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/BFO_0000050
 
 - exact: /BFO_0000051
-  replacement: http://www.ontobee.org/browser/rdf.php?o=RO&iri=http://purl.obolibrary.org/obo/BFO_0000051
+  replacement: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/BFO_0000051
 
 - exact: /BFO_0000054
-  replacement: http://www.ontobee.org/browser/rdf.php?o=RO&iri=http://purl.obolibrary.org/obo/BFO_0000054
+  replacement: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/BFO_0000054
 
 - exact: /BFO_0000055
-  replacement: http://www.ontobee.org/browser/rdf.php?o=RO&iri=http://purl.obolibrary.org/obo/BFO_0000055
+  replacement: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/BFO_0000055
 
 - exact: /BFO_0000062
-  replacement: http://www.ontobee.org/browser/rdf.php?o=RO&iri=http://purl.obolibrary.org/obo/BFO_0000062
+  replacement: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/BFO_0000062
 
 - exact: /BFO_0000063
-  replacement: http://www.ontobee.org/browser/rdf.php?o=RO&iri=http://purl.obolibrary.org/obo/BFO_0000063
+  replacement: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/BFO_0000063
 
 - exact: /BFO_0000066
-  replacement: http://www.ontobee.org/browser/rdf.php?o=RO&iri=http://purl.obolibrary.org/obo/BFO_0000066
+  replacement: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/BFO_0000066
 
 - exact: /BFO_0000067
-  replacement: http://www.ontobee.org/browser/rdf.php?o=RO&iri=http://purl.obolibrary.org/obo/BFO_0000067
+  replacement: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/BFO_0000067
 
 
 ### Custom (non-Ontobee) term_browser redirects
@@ -121,6 +121,17 @@ entries:
     to: https://proconsortium.org/cgi-bin/entry_pro?id=PR_A0A0E0NEP8
   - from: /PR_A0A0E0NEP8-37
     to: https://proconsortium.org/cgi-bin/entry_pro?id=PR_A0A0E0NEP8-37
+    
+# Term redirects for RO
+# Some RO terms have a local ID starting with an alphanumeric character, e.g RO_HOMnnnnn
+- regex: ^/obo/RO_([A-Z]*\d+)$
+  replacement: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/RO_$1
+  status: see other
+  tests:
+  - from: /RO_0002202
+    to: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/RO_0002202
+  - from: /RO_HOM0000001
+    to: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/RO_HOM0000001
  
 # Term redirects for GNO
 # Match digits or GlyTouCan ID

@@ -9,10 +9,16 @@ products:
 - oba.json: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/oba.json
 
 entries:
+- prefix: /tracker/
+  replacement: https://github.com/obophenotype/bio-attribute-ontology/issues
 - prefix: /subsets/
   replacement: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/subsets/
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/v
 - prefix: /imports/
-  replacement: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/imports/  
+  replacement: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/imports/
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/OBA?iri=http://purl.obolibrary.org/obo/
   
 term_browser: ontobee
 example_terms:

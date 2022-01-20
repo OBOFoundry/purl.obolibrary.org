@@ -1,21 +1,11 @@
 - hosts: all
-  user: ubuntu
   gather_facts: True
-
-  vars:
-    owner:      OBOFoundry
-    repo:       purl.obolibrary.org
-    repo_url:   "https://github.com/{{ owner }}/{{ repo }}.git"
-    image:      "{{ repo }}"
-    tag:        latest
-    creds:      ~/.s3cfg
-    stage_dir:  /home/ubuntu/
-    creds_dest: "{{ stage_dir }}/.s3cfg"
-    repo_dest:  "{{ stage_dir }}/{{ repo }}"
+  vars_files:
+     - vars.yaml
 
   tasks:
     - name: Clone the Git repo
-      git: repo={{ repo_url }} dest={{ repo }}
+      git: repo={{ repo_url }} dest={{ repo }} version={{ branch }}
     - name: Build docker image
       shell: "docker build -f {{ repo }}/docker/Dockerfile -t {{ image }}:{{ tag }} {{ repo_dest }}"
     - name: Copy S3 credentials

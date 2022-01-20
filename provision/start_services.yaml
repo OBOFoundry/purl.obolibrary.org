@@ -1,0 +1,20 @@
+- hosts: all
+  vars_files:
+  - vars.yaml
+
+  tasks:
+  - name: Create and start services
+    shell: nohup docker-compose -f {{ stage_dir }}/docker-compose.yaml up -d
+    register: output
+    args:
+      executable: /bin/bash
+
+  - name: Check status
+    shell: |
+           docker-compose -f {{ stage_dir }}/docker-compose.yaml ps
+    register: output 
+    args:
+      executable: /bin/bash
+    changed_when: False
+
+  - debug: msg={{ output.stdout.split('\n') }}

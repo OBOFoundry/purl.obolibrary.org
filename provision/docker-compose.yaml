@@ -1,8 +1,9 @@
-version: '3'
+version: '3.7'
 services:
   purl:
     container_name: purl 
     image: '{{ image }}:{{ tag }}'
+    init: true
     volumes:
       - {{ creds_dest}}:/opt/credentials/s3cfg
     ports:

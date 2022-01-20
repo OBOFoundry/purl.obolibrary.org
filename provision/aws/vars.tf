@@ -7,8 +7,13 @@ variable "region" {
   default = "us-east-1"
 }
 
-variable eip_alloc_id {
-  default = "eipalloc-06a756400951b4801"
+variable "ami" {
+  default = "ami-01e51d86b60c02297"
+}
+
+variable "disk_size" {
+  default = 100
+  description = "size of disk in Gigabytes"
 }
 
 variable "instance_type" {
@@ -32,5 +37,5 @@ variable "ssh_port" {
 variable "http_port" {
   type        = number
   default     = 80
-  description = "purl  server port"
+  description = "purl server port"
 }

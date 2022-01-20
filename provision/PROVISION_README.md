@@ -42,20 +42,7 @@ access_key = REPLACE_ME
 secret_key = REPLACE_ME
 ```
 
-#### Elastic Ip
-
-Create elastic ip (VPC) and use its allocation_id aws/vars.tf 
-
-Note: A default elastic ip has already been created for region us-east-1
-      It can be used if not associated to an instance. 
-
-```sh
-variable eip_alloc_id {
-  default = "REPLACE_ME"
-}
-```
-
-#### Create AWS instance: 
+#### Create AWS instance: with an Elstaic ip 
 
 Note: Terraform creates some folders and files to maintain the state. 
       Once terraform is applied, you can see them using <i>ls -a aws</i>
@@ -106,10 +93,14 @@ Note: The ansible script assumes the S3 bucket credentials are in ~/.s3cfg
 cd provision
 export HOST=`terraform -chdir=aws output -raw public_ip`
 export PRIVATE_KEY=`terraform -chdir=aws output -raw private_key_path`
-ansible-playbook -e "host=$HOST" --private-key $PRIVATE_KEY -u ubuntu -i "$HOST," stage.yaml
+ansible-playbook -e "host=$HOST" -u ubuntu --private-key $PRIVATE_KEY -i "$HOST," stage.yaml
+ansible-playbook -e "host=$HOST" -u ubuntu --private-key $PRIVATE_KEY -i "$HOST," start_services.yaml
+
+# down services
+ansible-playbook -e "host=$HOST" -u ubuntu --private-key $PRIVATE_KEY -i "$HOST," down_services.yaml
 ```
 
-#### Start Docker Instance: 
+#### Start Docker Instance Manually: 
 
 Start the instance and access it from browser use http://REPLACE_WITH_ELASTIC_IP/
 

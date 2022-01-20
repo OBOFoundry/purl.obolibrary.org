@@ -1,0 +1,13 @@
+- hosts: all
+  vars_files:
+  - vars.yaml
+
+  tasks:
+  - name: Tear down existing services
+    shell: docker-compose -f {{ stage_dir }}/docker-compose.yaml down 
+    register: output
+    args:
+      executable: /bin/bash
+
+  - debug: msg={{ output.stderr.split('\n') }}
+    when: output.stderr != "" 

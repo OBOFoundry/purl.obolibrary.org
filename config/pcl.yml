@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/pcl
 
-idspace: pcl
+idspace: PCL
 base_url: /obo/pcl
 
 products:
@@ -17,7 +17,7 @@ entries:
 - prefix: /releases/
   replacement: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/v
   tests:
-    - from: /releases/2022-01-24
+    - from: /releases/2022-01-24/
       to: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/v2022-01-24/
 
 - prefix: /tracker/

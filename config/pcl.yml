@@ -27,7 +27,7 @@ entries:
   replacement: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/v
   tests:
     - from: /releases/2022-01-24
-      to: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/v2022-01-25/
+      to: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/v2022-01-24/
 
 - prefix: /tracker/
   replacement: https://github.com/obophenotype/provisional_cell_ontology/issues

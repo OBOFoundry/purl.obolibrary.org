@@ -37,4 +37,4 @@ entries:
 
 ## generic fall-through, serve direct from github by default
 - prefix: /
-  replacement: https://raw.githubusercontent.com/insect-morphology/aism/master/
+  replacement: https://github.com/obophenotype/provisional_cell_ontology/master/

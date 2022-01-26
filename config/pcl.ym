@@ -1,0 +1,40 @@
+# PURL configuration for http://purl.obolibrary.org/obo/pcl
+
+idspace: pcl
+base_url: /obo/pcl
+
+products:
+- pcl.owl: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/master/pcl.owl
+- pcl.obo: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/master/pcl.obo
+- pcl.json: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/master/pcl.json
+- pcl-base.owl: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/master/pcl-base.owl
+- pcl-base.obo: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/master/pcl-base.obo
+- pcl-base.json: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/master/pcl-base.json
+- pcl-full.owl: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/master/pcl-full.owl
+- pcl-full.obo: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/master/pcl-full.obo
+- pcl-full.json: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/master/pcl-full.json
+- pcl-simple.owl: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/master/pcl-simple.owl
+- pcl-simple.obo: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/master/pcl-simple.obo
+- pcl-simple.json: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/master/pcl-simple.json
+
+term_browser: ontobee
+example_terms:
+- PCL_0011124
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/v
+  tests:
+    - from: /releases/2022-01-24
+      to: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/v2022-01-25/
+
+- prefix: /tracker/
+  replacement: https://github.com/obophenotype/provisional_cell_ontology/issues
+
+- prefix: /about/
+  replacement: https://github.com/obophenotype/provisional_cell_ontology#readme
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/insect-morphology/aism/master/

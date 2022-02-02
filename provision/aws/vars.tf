@@ -12,7 +12,7 @@ variable "ami" {
 }
 
 variable "disk_size" {
-  default = 100
+  default = 8 
   description = "size of disk in Gigabytes"
 }
 
@@ -22,10 +22,6 @@ variable "instance_type" {
 
 variable "public_key_path" {
   default = "~/.ssh/id_rsa.pub"
-}
-
-variable "private_key_path" {
-  default = "~/.ssh/id_rsa"
 }
 
 variable "ssh_port" {

@@ -12,3 +12,8 @@ www/obo
 .terraform.lock.hcl
 terraform.tfstate
 terraform.tfstate.backup
+s3cfg
+purl-ssh  
+purl-ssh.pub
+backend.tf
+

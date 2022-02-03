@@ -19,15 +19,11 @@ aws_access_key_id = XXXX
 aws_secret_access_key = XXXX
 ```
 #### SSH Credentials.
-- In aws/vars.tf the private key and the public keys are assumed to be in the standard location
+- In aws/vars.tf the public key is assumed to be in the standard location
 
 ```
 variable "public_key_path" {
   default = "~/.ssh/id_rsa.pub"
-}
-
-variable "private_key_path" {
-  default = "~/.ssh/id_rsa"
 }
 
 ```
@@ -75,7 +71,7 @@ terraform -chdir=aws show
 
 ```sh
 export HOST=`terraform -chdir=aws output -raw public_ip`
-export PRIVATE_KEY=`terraform -chdir=aws output -raw private_key_path`
+export PRIVATE_KEY=YOUR_PRIVATE_KEY_PATH
 
 ssh -o StrictHostKeyChecking=no -i $PRIVATE_KEY ubuntu@$HOST
 docker ps
@@ -92,7 +88,8 @@ Note: The ansible script assumes the S3 bucket credentials are in ~/.s3cfg
 ```sh
 cd provision
 export HOST=`terraform -chdir=aws output -raw public_ip`
-export PRIVATE_KEY=`terraform -chdir=aws output -raw private_key_path`
+export PRIVATE_KEY=YOUR_PRIVATE_KEY_PATH
+
 ansible-playbook -e "host=$HOST" -u ubuntu --private-key $PRIVATE_KEY -i "$HOST," stage.yaml
 ansible-playbook -e "host=$HOST" -u ubuntu --private-key $PRIVATE_KEY -i "$HOST," start_services.yaml
 

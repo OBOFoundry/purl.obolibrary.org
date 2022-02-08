@@ -1,4 +1,4 @@
-# Production Provisionning.
+# Production Provisionning
 
 #### Introduction
 
@@ -16,7 +16,7 @@ We use terraform workspaces and S3 backends to store terraform state.
 
 You need the following before you begin:
 
-- Terrafprm
+- Terraform
   - Terraform version v1.1.4 or higher
   - The aws credentials to access AWS account stored in ~/.aws/credentials.
     - see aws/provider.tf and note the default aws profile
@@ -32,12 +32,16 @@ Note you would need to create some files and modify them as stated below. These 
 and so git command will not list them.
 
 These 2 are needed to deploy a new aws instance using terraform.
-- backend.tf     # Points to terraform backend
-- purl-ssh.pub   # Public ssh key which will get added to the authorized keys of the new instance
+- backend.tf     
+  - Points to terraform backend
+- purl-ssh.pub   
+  - Public ssh key which will get added to the authorized keys of the new instance
 
 These 2 are needed to deploy the purl-server using ansible.
-- s3cfg          #  Needed by the purl-server to populate the s3 bucket for the logs
-- purl-ssh       #  Private ssh key for ansible to access the remote aws instance
+- s3cfg          
+  - Needed by the purl-server to populate the s3 bucket for the logs
+- purl-ssh       
+  - Private ssh key for ansible to access the remote aws instance
 
 ```sh
 git clone https://github.com/OBOFoundry/purl.obolibrary.org.git
@@ -45,7 +49,7 @@ cd provision
 cp production/backend.tf.sample aws/backend.tf # Now modify it with the name of the s3 bucket and the aws profile if it is not default
 cp production/s3cfg.sample production/s3cfg    # Now populate this with the correct access/secret keys
 cp "ssh keys to the production directory production/purl-ssh and production/purl-ssh.pub"
-terraform -chdir=aws init
+terraform -chdir=aws init                      # This is critical. The s3 backend must be configured correctly
 terraform -chdir=aws workspace show            # This should list the existing workspaces.
 chmod +x production/provision.sh
 ./production/provision.sh
@@ -57,12 +61,12 @@ chmod +x production/provision.sh
 
 #### Destroy The Old Stack
 
-First make sure purl's server DNS record is pointing to the elastic ip from the new stack.
+First make sure the purl server's DNS record is pointing to the elastic ip from the new stack you just deployed.
 
 - Note you would need the select the old workspace. 
 
 ```sh
-terraform -chdir=aws workspace select production-xx-xx-xx
+terraform -chdir=aws workspace select production-yy-yy-yy
 terraform -chdir=aws workspace show   # confirm this the workspace before calling destroy.
 terraform -chdir=aws show             # confirm this is the state you intend to destroy.
 terraform -chdir=aws output           # confirm this is the old ip address

@@ -4,10 +4,11 @@ idspace: XLMOD
 base_url: /obo/xlmod
 
 products:
-- xlmod.obo: https://raw.githubusercontent.com/HUPO-PSI/mzIdentML/master/cv/XLMOD.obo
+- xlmod.obo: https://raw.githubusercontent.com/HUPO-PSI/xlmod-CV/main/XLMOD.obo
+- xlmod.owl: https://raw.githubusercontent.com/HUPO-PSI/xlmod-CV/main/XLMOD.owl
 
 term_browser: ontobee
 
 entries:
 - exact: /tracker
-  replacement: https://github.com/HUPO-PSI/mzIdentML/issues
+  replacement: https://github.com/HUPO-PSI/xlmod-CV/issues

@@ -2,12 +2,12 @@
 
 #### Introduction
 
-You are here because you are planning on deploying a new purl-servwr and destroying the old purl-servwr.
+You are here because you are planning on deploying a new purl-server and destroying the old purl-server.
 
 - If you want to test an existing production purl server, refer to [this document](./PRODUCTION_TESTING_README.md).
 - If you want to get familiar with terraform, refer to [this document](../PROVISION_AWS_README.md).
 
-We use terraform workspaces and S3 backends to store terraform state. 
+We use terraform workspaces and S3 backend to store terraform state. 
 
 - https://www.terraform.io/language/state/workspaces
 - https://www.terraform.io/language/settings/backends/s3

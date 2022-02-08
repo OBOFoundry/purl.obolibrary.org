@@ -39,7 +39,7 @@ These 2 are needed to deploy a new aws instance using terraform.
 
 These 2 are needed to deploy the purl-server using ansible.
 - s3cfg          
-  - Needed by the purl-server to populate the s3 bucket for the logs
+  - Needed by the purl-server to populate the s3 bucket for the apache logs
 - purl-ssh       
   - Private ssh key for ansible to access the remote aws instance
 

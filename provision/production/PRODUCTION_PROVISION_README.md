@@ -58,10 +58,13 @@ cat production/purl-ssh.pub
 
 # Initialize using s3 backend
 terraform -chdir=aws init                      # This is critical. The s3 backend must be configured correctly
-terraform -chdir=aws workspace show            # This should list the existing workspaces.
+terraform -chdir=aws workspace list            # This should list the existing workspaces.
 
 # Create a workspace. Note how we append the date to the workspace name 
-terraform -chdir=aws workspace select production-mm-dd-yy
+terraform -chdir=aws workspace new production-mm-dd-yy
+terraform -chdir=aws workspace list            # confirm the new workspace is listed and is highlighted 
+terraform -chdir=aws workspace show            # confirm this is the new workspace
+terraform -chdir=aws show                      # should show nothing since nothing has been deployed in this new workspace
 
 # Provision
 chmod +x production/provision.sh
@@ -88,5 +91,6 @@ terraform -chdir=aws workspace select production-mm-dd-yy
 terraform -chdir=aws workspace show   # confirm this the workspace before calling destroy.
 terraform -chdir=aws show             # confirm this is the state you intend to destroy.
 terraform -chdir=aws output           # confirm this is the old ip address
-terraform -chdir=aws destroy          # you will be prompted one last time before destroying
+terraform -chdir=aws destroy          # you will be prompted one last time before destroying, enter yes
+terraform -chdir=aws show             # should show nothing
 ```

@@ -79,7 +79,7 @@ First make sure the purl server's DNS record is pointing to the elastic ip from 
 - Note you would need the select the old workspace. 
 
 ```sh
-terraform -chdir=aws workspace select production-yy-yy-yy
+terraform -chdir=aws workspace select production-mm-dd-yy
 terraform -chdir=aws workspace show   # confirm this the workspace before calling destroy.
 terraform -chdir=aws show             # confirm this is the state you intend to destroy.
 terraform -chdir=aws output           # confirm this is the old ip address

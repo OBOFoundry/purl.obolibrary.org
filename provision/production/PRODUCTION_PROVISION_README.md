@@ -49,9 +49,12 @@ cd provision
 cp production/backend.tf.sample aws/backend.tf # Now modify it with the name of the s3 bucket and the aws profile if it is not default
 cp production/s3cfg.sample production/s3cfg    # Now populate this with the correct access/secret keys
 
+cat aws/backend.tf
+cat production/s3cfg
+
 # Copy "ssh keys to the production directory production/purl-ssh and production/purl-ssh.pub"
-ls -l production/purl-ssh
-ls -l production/purl-ssh.pub
+cat production/purl-ssh
+cat production/purl-ssh.pub
 
 # Initialize using s3 backend
 terraform -chdir=aws init                      # This is critical. The s3 backend must be configured correctly

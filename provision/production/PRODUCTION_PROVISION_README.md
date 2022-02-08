@@ -48,12 +48,18 @@ git clone https://github.com/OBOFoundry/purl.obolibrary.org.git
 cd provision
 cp production/backend.tf.sample aws/backend.tf # Now modify it with the name of the s3 bucket and the aws profile if it is not default
 cp production/s3cfg.sample production/s3cfg    # Now populate this with the correct access/secret keys
-cp "ssh keys to the production directory production/purl-ssh and production/purl-ssh.pub"
+
+# Copy "ssh keys to the production directory production/purl-ssh and production/purl-ssh.pub"
+ls -l production/purl-ssh
+ls -l production/purl-ssh.pub
+
 # Initialize using s3 backend
 terraform -chdir=aws init                      # This is critical. The s3 backend must be configured correctly
 terraform -chdir=aws workspace show            # This should list the existing workspaces.
+
 # Create a workspace. Note how we append the date to the workspace name 
 terraform -chdir=aws workspace select production-mm-dd-yy
+
 # Provision
 chmod +x production/provision.sh
 ./production/provision.sh

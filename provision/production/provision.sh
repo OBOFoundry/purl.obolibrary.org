@@ -18,6 +18,8 @@ printf 'disk_size = 16\n' >> production/production-vars.tfvars
 printf 'public_key_path = "%s"\n' $PUBLIC_KEY >> production/production-vars.tfvars
 
 cat $PROVISION_DIR/production/production-vars.tfvars
+chmod 400 production/purl-ssh
+chmod 400 production/purl-ssh.pub
 
 terraform -chdir=aws apply -auto-approve -var-file=$PROVISION_DIR/production/production-vars.tfvars
 

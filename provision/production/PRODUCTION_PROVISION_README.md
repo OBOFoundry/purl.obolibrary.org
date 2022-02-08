@@ -74,6 +74,8 @@ chmod +x production/provision.sh
 terraform -chdir=aws output -raw public_ip       # shows elastic ip
 terraform -chdir=aws output                      # shows all output 
 terraform -chdir=aws show                        # shows what was deployed vpc, instance, ....
+
+# On aws you should see the new workspace listed under s3://bucket_name/env:/
 ```
 
 #### Test The New Stack

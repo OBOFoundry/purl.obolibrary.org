@@ -58,19 +58,28 @@ cat production/purl-ssh.pub
 
 # Initialize using s3 backend
 terraform -chdir=aws init                      # This is critical. The s3 backend must be configured correctly
-terraform -chdir=aws workspace show            # This should list the existing workspaces.
+terraform -chdir=aws workspace list            # This should list the existing workspaces.
 
 # Create a workspace. Note how we append the date to the workspace name 
-terraform -chdir=aws workspace select production-mm-dd-yy
+terraform -chdir=aws workspace new production-mm-dd-yy
+terraform -chdir=aws workspace list            # confirm the new workspace is listed and is highlighted 
+terraform -chdir=aws workspace show            # confirm this is the new workspace
+terraform -chdir=aws show                      # should show nothing since nothing has been deployed in this new workspace
 
 # Provision
 chmod +x production/provision.sh
+# You may want to change provision.sh          # for instance type, disk_size 
 ./production/provision.sh
 
+# Overriden terraform variables 
+cat production/production-vars.tfvars          # tags, disk_size, instance type
+
 # What just happened?
-terraform -chdir=aws output -raw public_ip       # shows elastic ip
-terraform -chdir=aws output                      # shows all output 
-terraform -chdir=aws show                        # shows what was deployed vpc, instance, ....
+terraform -chdir=aws output -raw public_ip     # shows elastic ip
+terraform -chdir=aws output                    # shows all output 
+terraform -chdir=aws show                      # shows what was deployed vpc, instance, ....
+
+# On aws you should see the new workspace listed under s3://bucket_name/env:/
 ```
 
 #### Test The New Stack
@@ -88,5 +97,6 @@ terraform -chdir=aws workspace select production-mm-dd-yy
 terraform -chdir=aws workspace show   # confirm this the workspace before calling destroy.
 terraform -chdir=aws show             # confirm this is the state you intend to destroy.
 terraform -chdir=aws output           # confirm this is the old ip address
-terraform -chdir=aws destroy          # you will be prompted one last time before destroying
+terraform -chdir=aws destroy          # you will be prompted one last time before destroying, enter yes
+terraform -chdir=aws show             # should show nothing
 ```

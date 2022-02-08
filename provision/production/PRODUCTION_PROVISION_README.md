@@ -68,7 +68,7 @@ chmod +x production/provision.sh
 ./production/provision.sh
 
 # What just happened?
-terraform -chdir=aws output -raw public_ip.      # shows elastic ip
+terraform -chdir=aws output -raw public_ip       # shows elastic ip
 terraform -chdir=aws output                      # shows all output 
 terraform -chdir=aws show                        # shows what was deployed vpc, instance, ....
 ```

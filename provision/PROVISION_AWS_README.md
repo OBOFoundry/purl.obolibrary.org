@@ -1,9 +1,9 @@
-# Provision AWS instance.
+# Provision AWS Instance
 
 ## Requirements 
 
 - The steps below were successfully tested using:
-    - Terraform (0.14.4)
+    - Terraform (v1.1.4)
     - Ansible   (2.10.7) Python (3.8.5)
 
 #### Install Terraform

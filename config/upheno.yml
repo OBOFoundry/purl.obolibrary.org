@@ -20,6 +20,9 @@ entries:
 - exact: /doid/mondo.owl
   replacement: https://raw.githubusercontent.com/monarch-initiative/monarch-disease-ontology/master/src/mondo/mondo.owl
 
+- exact: /v2/upheno.owl
+  replacement: https://bbop-ontologies.s3.amazonaws.com/upheno/current/upheno-release/all/upheno_all_with_relations.owl
+
 - exact: /zp.owl
   replacement: http://purl.obolibrary.org/obo/zp.owl
 
@@ -40,7 +43,7 @@ entries:
 - prefix: /imports/
   replacement: https://raw.githubusercontent.com/obophenotype/upheno/master/imports/
 - prefix: /v2/
-  replacement: https://data.monarchinitiative.org/upheno2/current/upheno-release/
+  replacement: https://bbop-ontologies.s3.amazonaws.com/upheno/current/upheno-release/all/
 - prefix: /
   replacement: https://raw.githubusercontent.com/obophenotype/upheno/master/
 

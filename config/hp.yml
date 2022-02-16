@@ -19,6 +19,12 @@ entries:
 - prefix: /tracker
   replacement: https://github.com/obophenotype/human-phenotype-ontology/issues
 
+- prefix: /releases/hpoa/
+  replacement: https://github.com/obophenotype/human-phenotype-ontology/releases/
+  tests:
+  - from: /releases/hpoa/2022-02-14/genes_to_phenotype.txt
+    to: https://github.com/obophenotype/human-phenotype-ontology/releases/download/v2022-02-14/genes_to_phenotype.txt
+
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=HP&iri=http://purl.obolibrary.org/obo/
   tests:
@@ -26,21 +32,11 @@ entries:
     to: http://www.ontobee.org/browser/rdf.php?o=HP&iri=http://purl.obolibrary.org/obo/HP_0000001
 
 # HPOA files
-- exact: /hpoa/phenotype_annotation.tab
-  replacement: https://ci.monarchinitiative.org/view/hpo/job/hpo.annotations/lastSuccessfulBuild/artifact/rare-diseases/misc/phenotype_annotation.tab
-
-- exact: /hpoa/phenotype_annotation_negated.tab
-  replacement: https://ci.monarchinitiative.org/view/hpo/job/hpo.annotations/lastSuccessfulBuild/artifact/rare-diseases/misc/phenotype_annotation_negated.tab
-
-- exact: /hpoa/genes_to_phenotype.txt
-  replacement: https://ci.monarchinitiative.org/view/hpo/job/hpo.annotations/lastSuccessfulBuild/artifact/rare-diseases/util/annotation/genes_to_phenotype.txt
-
-- exact: /hpoa/phenotype_to_genes.txt
-  replacement: https://ci.monarchinitiative.org/view/hpo/job/hpo.annotations/lastSuccessfulBuild/artifact/rare-diseases/util/annotation/phenotype_to_genes.txt
-
-- exact: /hpoa/phenotype.hpoa
-  replacement: https://ci.monarchinitiative.org/view/hpo/job/hpo.annotations.current/lastSuccessfulBuild/artifact/rare-diseases/current/phenotype.hpoa
-
+- prefix: /hpoa/
+  replacement: https://github.com/obophenotype/human-phenotype-ontology/releases/latest/download/
+  tests:
+  - from: /hpoa/genes_to_phenotype.txt
+    to: https://github.com/obophenotype/human-phenotype-ontology/releases/latest/download/genes_to_phenotype.txt
 
 # default
 - prefix: /

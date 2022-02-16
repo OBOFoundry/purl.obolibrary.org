@@ -13,17 +13,17 @@ products:
 term_browser: custom
 
 entries:
-- prefix: /releases/
-  replacement: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/v
-
-- prefix: /tracker
-  replacement: https://github.com/obophenotype/human-phenotype-ontology/issues
-
 - prefix: /releases/hpoa/
   replacement: https://github.com/obophenotype/human-phenotype-ontology/releases/download/v
   tests:
   - from: /releases/hpoa/2022-02-14/genes_to_phenotype.txt
     to: https://github.com/obophenotype/human-phenotype-ontology/releases/download/v2022-02-14/genes_to_phenotype.txt
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/v
+
+- prefix: /tracker
+  replacement: https://github.com/obophenotype/human-phenotype-ontology/issues
 
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=HP&iri=http://purl.obolibrary.org/obo/

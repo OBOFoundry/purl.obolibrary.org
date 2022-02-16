@@ -20,7 +20,7 @@ entries:
   replacement: https://github.com/obophenotype/human-phenotype-ontology/issues
 
 - prefix: /releases/hpoa/
-  replacement: https://github.com/obophenotype/human-phenotype-ontology/releases/
+  replacement: https://github.com/obophenotype/human-phenotype-ontology/releases/download/v
   tests:
   - from: /releases/hpoa/2022-02-14/genes_to_phenotype.txt
     to: https://github.com/obophenotype/human-phenotype-ontology/releases/download/v2022-02-14/genes_to_phenotype.txt

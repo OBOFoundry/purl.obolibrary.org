@@ -31,6 +31,9 @@ entries:
 - prefix: /docs/
   replacement: https://oborel.github.io/obo-relations/
 
+- prefix: /metamodel/
+  replacement: https://oborel.github.io/obo-relations/metamodel/
+
 - prefix: /about/
   replacement: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/
   tests:

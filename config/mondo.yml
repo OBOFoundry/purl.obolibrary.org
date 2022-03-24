@@ -17,6 +17,8 @@ entries:
   replacement: https://raw.githubusercontent.com/monarch-initiative/mondo/master/imports/
 - prefix: /components/
   replacement: https://raw.githubusercontent.com/monarch-initiative/mondo/master/components/
+- prefix: /mappings/
+  replacement: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/
 - prefix: /patterns/
   replacement: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/patterns/dosdp-patterns/
 - prefix: /sparql/

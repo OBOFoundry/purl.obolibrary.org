@@ -15,7 +15,6 @@ example_terms:
 - UBERON_0000000
 
 entries:
-
 - exact: /phenoscape-ext-simple.obo
   replacement: https://stars-app.renci.org/jenkins/job/Phenoscape/job/build-phenoscape-ext-simple/lastSuccessfulBuild/artifact/phenoscape-ext-simple.obo
 

@@ -15,8 +15,6 @@ example_terms:
 - UBERON_0000000
 
 entries:
-- prefix: /subsets/
-  replacement: https://github.com/obophenotype/uberon/releases/latest/download/
 
 - exact: /phenoscape-ext-simple.obo
   replacement: https://stars-app.renci.org/jenkins/job/Phenoscape/job/build-phenoscape-ext-simple/lastSuccessfulBuild/artifact/phenoscape-ext-simple.obo
@@ -38,6 +36,9 @@ entries:
 
 - exact: /experimental/ceph.owl
   replacement: http://purl.obolibrary.org/obo/ceph.owl
+
+- prefix: /subsets/
+  replacement: https://github.com/obophenotype/uberon/releases/latest/download/v
 
 - prefix: /references/
   replacement: https://raw.githubusercontent.com/obophenotype/uberon/master/reference/

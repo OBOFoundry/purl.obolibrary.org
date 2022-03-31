@@ -15,6 +15,9 @@ example_terms:
 - UBERON_0000000
 
 entries:
+- prefix: /subsets/
+  replacement: https://github.com/obophenotype/uberon/releases/latest/download/
+
 - exact: /phenoscape-ext-simple.obo
   replacement: https://stars-app.renci.org/jenkins/job/Phenoscape/job/build-phenoscape-ext-simple/lastSuccessfulBuild/artifact/phenoscape-ext-simple.obo
 
@@ -67,12 +70,92 @@ entries:
 
 - prefix: /releases/2020-09-16/
   replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2020-09-16/
+ 
+ - prefix: /releases/2022-02-21/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2022-02-21/
+  tests:
+    - from: /releases/2022-02-21/
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2022-02-21/
+    - from: /releases/2022-02-21/uberon.obo
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2022-02-21/uberon.obo
 
-- prefix: /releases/
-  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v
-  tests:  
+- prefix: /releases/2021-11-28/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2021-11-28/
+  tests:
+    - from: /releases/2021-11-28/
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-11-28/
+    - from: /releases/2021-11-28/uberon.obo
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-11-28/uberon.obo
+
+- prefix: /releases/2021-11-12/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2021-11-12/
+  tests:
+    - from: /releases/2021-11-12/
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-11-12/
+    - from: /releases/2021-11-12/uberon.obo
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-11-12/uberon.obo
+
+- prefix: /releases/2021-10-01/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2021-10-01/
+  tests:
+    - from: /releases/2021-10-01/
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-10-01/
+    - from: /releases/2021-10-01/uberon.obo
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-10-01/uberon.obo
+
+- prefix: /releases/2021-09-29/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2021-09-29/
+  tests:
+    - from: /releases/2021-09-29/
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-09-29/
+    - from: /releases/2021-09-29/uberon.obo
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-09-29/uberon.obo
+
+- prefix: /releases/2021-07-27/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2021-07-27/
+  tests:
+    - from: /releases/2021-07-27/
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-07-27/
+    - from: /releases/2021-07-27/uberon.obo
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-07-27/uberon.obo
+
+- prefix: /releases/2021-07-24/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2021-07-24/
+  tests:
+    - from: /releases/2021-07-24/
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-07-24/
+    - from: /releases/2021-07-24/uberon.obo
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-07-24/uberon.obo
+
+- prefix: /releases/2021-07-21/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2021-07-21/
+  tests:
+    - from: /releases/2021-07-21/
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-07-21/
+    - from: /releases/2021-07-21/uberon.obo
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-07-21/uberon.obo
+
+- prefix: /releases/2021-07-06/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2021-07-06/
+  tests:
+    - from: /releases/2021-07-06/
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-07-06/
+    - from: /releases/2021-07-06/uberon.obo
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-07-06/uberon.obo
+
+- prefix: /releases/2021-02-12/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2021-02-12/
+  tests:
+    - from: /releases/2021-02-12/
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-02-12/
     - from: /releases/2021-02-12/uberon.obo
       to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-02-12/uberon.obo
+
+- prefix: /releases/
+  replacement: https://github.com/monarch-initiative/mondo/releases/download/v
+  tests:  
+    - from: /releases/2022-03-31/uberon.obo
+      to: https://github.com/monarch-initiative/mondo/releases/download/v2022-03-31/uberon.obo
 
 - prefix: /tracker
   replacement: https://github.com/obophenotype/uberon/issues

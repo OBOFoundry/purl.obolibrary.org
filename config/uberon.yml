@@ -71,7 +71,7 @@ entries:
 - prefix: /releases/2020-09-16/
   replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2020-09-16/
  
- - prefix: /releases/2022-02-21/
+- prefix: /releases/2022-02-21/
   replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2022-02-21/
   tests:
     - from: /releases/2022-02-21/

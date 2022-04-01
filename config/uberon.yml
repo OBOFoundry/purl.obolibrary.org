@@ -37,7 +37,7 @@ entries:
   replacement: http://purl.obolibrary.org/obo/ceph.owl
 
 - prefix: /subsets/
-  replacement: https://github.com/obophenotype/uberon/releases/latest/download/v
+  replacement: https://github.com/obophenotype/uberon/releases/latest/download/
 
 - prefix: /references/
   replacement: https://raw.githubusercontent.com/obophenotype/uberon/master/reference/

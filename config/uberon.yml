@@ -170,5 +170,5 @@ entries:
   replacement: https://github.com/obophenotype/uberon/wiki
 
 - prefix: /
-  replacement: https://raw.githubusercontent.com/obophenotype/uberon/master/
+  replacement: https://github.com/obophenotype/uberon/releases/latest/download/
 

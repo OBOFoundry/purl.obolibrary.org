@@ -4,14 +4,35 @@ idspace: PROCO
 base_url: /obo/proco
 
 products:
-- proco.owl: https://raw.githubusercontent.com/proco-ontology/PROCO/v2022-04-11/proco.owl 
+- proco.owl: https://raw.githubusercontent.com/proco-ontology/proco/master/proco.owl 
 
 term_browser: ontobee
 example_terms:
 - PROCO_0000001
 
 entries:
-- exact: /v2022-04-11/proco.owl 
-  replacement: https://raw.githubusercontent.com/proco-ontology/PROCO/v2022-04-11/proco.owl 
+
+- prefix: /releases/ 
+  replacement: https://raw.githubusercontent.com/proco-ontology/proco/v
+  tests: 
+    - from: /releases/2022-04-14/
+      to: https://raw.githubusercontent.com/proco-ontology/proco/v2022-04-14/
+ 
+ - prefix: /tracker/
+  replacement: https://github.com/proco-ontology/proco/issues
+  
+  - prefix: /about/
+  replacement: http://www.ontobee.org/ontology/PROCO?iri=http://purl.obolibrary.org/obo/
+    
+  ## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/proco-ontology/proco/master/
+  
+  
+  
+      
+      
+      
+      
   
  

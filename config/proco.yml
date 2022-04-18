@@ -12,27 +12,18 @@ example_terms:
 
 entries:
 
-- prefix: /releases/ 
+- prefix: /releases/
   replacement: https://raw.githubusercontent.com/proco-ontology/proco/v
-  tests: 
-    - from: /releases/2022-04-14/
-      to: https://raw.githubusercontent.com/proco-ontology/proco/v2022-04-14/
+  tests:
+  - from: /releases/2022-04-14/
+    to: https://raw.githubusercontent.com/proco-ontology/proco/v2022-04-14/
  
- - prefix: /tracker/
+- prefix: /tracker/
   replacement: https://github.com/proco-ontology/proco/issues
   
-  - prefix: /about/
+- prefix: /about/
   replacement: http://www.ontobee.org/ontology/PROCO?iri=http://purl.obolibrary.org/obo/
-    
-  ## generic fall-through, serve direct from github by default
+
+## generic fall-through, serve direct from github by default
 - prefix: /
   replacement: https://raw.githubusercontent.com/proco-ontology/proco/master/
-  
-  
-  
-      
-      
-      
-      
-  
- 

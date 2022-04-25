@@ -1,0 +1,20 @@
+# PURL configuration for http://purl.obolibrary.org/obo/cdmo
+
+idspace: CDMO
+base_url: /obo/cdmo
+
+products:
+- cdmo.owl: https://raw.githubusercontent.com/CDMO-Ontology/cdmo/main/cdmo.owl
+
+term_browser: ontobee
+example_terms:
+- CDMO_0000000
+
+entries:
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/CDMO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/CDMO-Ontology/cdmo/main/

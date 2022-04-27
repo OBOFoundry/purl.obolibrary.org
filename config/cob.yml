@@ -16,4 +16,5 @@ entries:
   replacement: https://raw.githubusercontent.com/OBOFoundry/COB/
 - prefix: /
   replacement: https://raw.githubusercontent.com/OBOFoundry/COB/master/
-
+- exact: /cob-to-external.owl
+  replacement: https://raw.githubusercontent.com/OBOFoundry/COB/master/src/ontology/components/cob-to-external.owl

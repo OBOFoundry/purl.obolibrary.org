@@ -11,10 +11,9 @@ example_terms:
 - COB_0000001
 
 entries:
-
+- exact: /cob-to-external.owl
+  replacement: https://raw.githubusercontent.com/OBOFoundry/COB/master/src/ontology/components/cob-to-external.owl
 - prefix: /branch/
   replacement: https://raw.githubusercontent.com/OBOFoundry/COB/
 - prefix: /
   replacement: https://raw.githubusercontent.com/OBOFoundry/COB/master/
-- exact: /cob-to-external.owl
-  replacement: https://raw.githubusercontent.com/OBOFoundry/COB/master/src/ontology/components/cob-to-external.owl

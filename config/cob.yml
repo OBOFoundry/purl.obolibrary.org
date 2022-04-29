@@ -15,5 +15,7 @@ entries:
   replacement: https://raw.githubusercontent.com/OBOFoundry/COB/master/src/ontology/components/cob-to-external.owl
 - prefix: /branch/
   replacement: https://raw.githubusercontent.com/OBOFoundry/COB/
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/OBOFoundry/COB/v
 - prefix: /
   replacement: https://raw.githubusercontent.com/OBOFoundry/COB/master/

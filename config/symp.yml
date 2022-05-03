@@ -6,8 +6,8 @@ base_url: /obo/symp
 base_redirect: https://github.com/DiseaseOntology/SymptomOntology/blob/main/
 
 products:
-- symp.owl: https://raw.githubusercontent.com/DiseaseOntology/SymptomOntology/main/symp.owl
-- symp.obo: https://raw.githubusercontent.com/DiseaseOntology/SymptomOntology/main/symp.obo
+- symp.owl: https://raw.githubusercontent.com/DiseaseOntology/SymptomOntology/main/src/ontology/symp.owl
+- symp.obo: https://raw.githubusercontent.com/DiseaseOntology/SymptomOntology/main/src/ontology/symp.obo
 
 term_browser: ontobee
 example_terms:

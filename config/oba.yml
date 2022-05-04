@@ -19,6 +19,8 @@ entries:
   replacement: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/imports/
 - prefix: /about/
   replacement: http://www.ontobee.org/ontology/OBA?iri=http://purl.obolibrary.org/obo/
+- prefix: /
+  replacement: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/
   
 term_browser: ontobee
 example_terms:

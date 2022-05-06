@@ -13,8 +13,8 @@ example_terms:
 - MS_0000000
 
 entries:
-- prefix: /releases/
-  replacement: https://raw.githubusercontent.com/HUPO-PSI/psi-ms-CV/v
+- regex: /releases/v?(\d+\.\d+\.\d+)
+  replacement: https://github.com/HUPO-PSI/psi-ms-CV/releases/download/v$1/psi-ms.obo
 
 - exact: /tracker
   replacement: https://github.com/HUPO-PSI/psi-ms-CV/issues

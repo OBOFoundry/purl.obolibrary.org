@@ -152,10 +152,10 @@ entries:
       to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-02-12/uberon.obo
 
 - prefix: /releases/
-  replacement: https://github.com/monarch-initiative/mondo/releases/download/v
+  replacement: https://github.com/obophenotype/uberon/releases/download/v
   tests:  
     - from: /releases/2022-03-31/uberon.obo
-      to: https://github.com/monarch-initiative/mondo/releases/download/v2022-03-31/uberon.obo
+      to: https://github.com/obophenotype/uberon/releases/download/v2022-03-31/uberon.obo
 
 - prefix: /tracker
   replacement: https://github.com/obophenotype/uberon/issues

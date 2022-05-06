@@ -69,7 +69,7 @@ Each YAML configuration file contains the keyword `entries:` followed by a list 
 
 The `#` character indicates a comment, which is not considered part of the configuration.
 
-See the [`tools/examples/test2.yml`](tools/examples/test2.yml) and [`tools/examples/test2.htaccess`](tools/examples/test2.htaccess) for examples.
+See the [`tools/examples/test2/test2.yml`](tools/examples/test2/test2.yml) and [`tools/examples/test2/test2.htaccess`](tools/examples/test2/test2.htaccess) for examples.
 
 
 #### Exact

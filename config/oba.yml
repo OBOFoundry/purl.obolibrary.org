@@ -9,6 +9,10 @@ products:
 - oba.json: https://github.com/obophenotype/bio-attribute-ontology/releases/latest/download/oba.json
 
 entries:
+- exact: /subsets/oba-basic.owl
+  replacement: https://github.com/obophenotype/bio-attribute-ontology/releases/latest/download/oba-basic.owl
+- exact: /subsets/oba-basic.obo
+  replacement: https://github.com/obophenotype/bio-attribute-ontology/releases/latest/download/oba-basic.obo
 - prefix: /tracker/
   replacement: https://github.com/obophenotype/bio-attribute-ontology/issues
 - prefix: /subsets/

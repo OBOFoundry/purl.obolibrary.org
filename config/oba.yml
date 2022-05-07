@@ -17,6 +17,21 @@ entries:
   replacement: https://github.com/obophenotype/bio-attribute-ontology/issues
 - prefix: /subsets/
   replacement: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/subsets/
+- prefix: /releases/2022-01-19/
+  replacement: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/v2022-01-19/
+  tests:
+    - from: /releases/2022-01-19/oba.owl
+      to: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/v2022-01-19/oba.owl
+- prefix: /releases/2021-12-03/
+  replacement: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/v2021-12-03/
+  tests:
+    - from: /releases/2021-12-03/oba.owl
+      to: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/v2021-12-03/oba.owl
+- prefix: /releases/201
+  replacement: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/v201
+  tests:
+    - from: /releases/2017-01-16/oba.owl
+      to: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/v2017-01-16/oba.owl
 - prefix: /releases/
   replacement: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/v
 - prefix: /imports/

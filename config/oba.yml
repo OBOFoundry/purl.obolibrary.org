@@ -4,9 +4,9 @@ idspace: OBA
 base_url: /obo/oba
 
 products:
-- oba.owl: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/oba.owl
-- oba.obo: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/oba.obo
-- oba.json: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/oba.json
+- oba.owl: https://github.com/obophenotype/bio-attribute-ontology/releases/latest/download/oba.owl
+- oba.obo: https://github.com/obophenotype/bio-attribute-ontology/releases/latest/download/oba.obo
+- oba.json: https://github.com/obophenotype/bio-attribute-ontology/releases/latest/download/oba.json
 
 entries:
 - prefix: /tracker/
@@ -20,7 +20,7 @@ entries:
 - prefix: /about/
   replacement: http://www.ontobee.org/ontology/OBA?iri=http://purl.obolibrary.org/obo/
 - prefix: /
-  replacement: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/
+  replacement: https://github.com/obophenotype/bio-attribute-ontology/releases/latest/download/
   
 term_browser: ontobee
 example_terms:

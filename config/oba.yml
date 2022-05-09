@@ -33,7 +33,10 @@ entries:
     - from: /releases/2017-01-16/oba.owl
       to: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/v2017-01-16/oba.owl
 - prefix: /releases/
-  replacement: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/v
+  replacement: https://github.com/obophenotype/bio-attribute-ontology/releases/download/v
+  tests:  
+    - from: /releases/2022-05-06/oba.obo
+      to: https://github.com/obophenotype/bio-attribute-ontology/releases/download/v2022-05-06/oba.obo
 - prefix: /imports/
   replacement: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/imports/
 - prefix: /about/

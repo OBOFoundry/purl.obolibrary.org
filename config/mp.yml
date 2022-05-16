@@ -20,7 +20,10 @@ entries:
     to: http://www.ebi.ac.uk/ontology-lookup/browse.do?ontName=MP&termId=http://purl.obolibrary.org/obo/MP_0000001
 
 - prefix: /releases/
-  replacement: https://raw.githubusercontent.com/mgijax/mammalian-phenotype-ontology/v
+  replacement: https://github.com/mgijax/mammalian-phenotype-ontology/releases/download/v
+  tests:  
+    - from: /releases/2022-04-21/mp.obo
+      to: https://github.com/mgijax/mammalian-phenotype-ontology/releases/download/v2022-04-21/mp.obo
 
 - prefix: /tracker/
   replacement: https://github.com/mgijax/mammalian-phenotype-ontology/issues

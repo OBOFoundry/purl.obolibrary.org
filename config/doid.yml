@@ -10,7 +10,7 @@ products:
 - doid.obo: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/main/src/ontology/doid.obo
 - doid.json: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/main/src/ontology/doid.json
 
-term_browser: ontobee
+term_browser: custom
 example_terms:
 - DOID_4
 

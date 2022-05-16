@@ -152,6 +152,16 @@ entries:
   - from: /NCIT_C2916
     to: http://www.ontobee.org/ontology/NCIT?iri=http://purl.obolibrary.org/obo/NCIT_C2916
 
+# Term redirects for DOID
+- regex: ^/obo/DOID_(\d+)$
+  replacement: https://disease-ontology.org/?id=DOID:$1
+  status: see other
+  tests:
+  - from: /DOID_4
+    to: https://disease-ontology.org/?id=DOID:4
+  - from: /DOID_0014667
+    to: https://disease-ontology.org/?id=DOID:0014667
+
 ### OBO Format Specification
 - exact: /oboformat/
   replacement: http://owlcollab.github.io/oboformat/doc/obo-syntax.html

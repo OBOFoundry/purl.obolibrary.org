@@ -11,6 +11,13 @@ term_browser: ontobee
 entries:
 - exact: /omo.owl
   replacement: https://raw.githubusercontent.com/information-artifact-ontology/ontology-metadata/master/omo.owl
+  
+# version IRIs
+- exact: /2020-06-08/omo.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/ontology-metadata/v2020-06-08/omo.owl
+
+- exact: /2020-05-08/omo.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/ontology-metadata/v2020-05-08/omo.owl
 
 # development version
 - exact: /omo-edit.owl

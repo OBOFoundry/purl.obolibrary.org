@@ -25,6 +25,9 @@ entries:
 
 - prefix: /about/
   replacement: https://github.com/obophenotype/provisional_cell_ontology#readme
+  
+- prefix: /bds/kg/
+  replacement: http://ec2-3-143-113-50.us-east-2.compute.amazonaws.com:7472/browser
 
 ## generic fall-through, serve direct from github by default
 - prefix: /

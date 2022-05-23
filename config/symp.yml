@@ -3,7 +3,7 @@
 idspace: SYMP
 base_url: /obo/symp
 
-base_redirect: https://github.com/DiseaseOntology/SymptomOntology/blob/main/
+base_redirect: https://github.com/DiseaseOntology/SymptomOntology
 
 products:
 - symp.owl: https://raw.githubusercontent.com/DiseaseOntology/SymptomOntology/main/src/ontology/symp.owl

@@ -10,7 +10,7 @@ products:
 - symp.obo: https://raw.githubusercontent.com/DiseaseOntology/SymptomOntology/main/src/ontology/symp.obo
 - symp.json: https://raw.githubusercontent.com/DiseaseOntology/SymptomOntology/main/src/ontology/symp.json
 
-term_browser: ontobee
+term_browser: ols
 example_terms:
 - SYMP_0000000
 

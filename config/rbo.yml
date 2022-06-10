@@ -4,7 +4,7 @@ idspace: RBO
 base_url: /obo/rbo
 
 products:
-- rbo.owl: https://raw.githubusercontent.com/DanBerrios/RBO/master/rbo.owl
+- rbo.owl: https://raw.githubusercontent.com/Radiobiology-Informatics-Consortium/RBO/master/rbo.owl
 - rbo.obo: https://raw.githubusercontent.com/DanBerrios/RBO/master/rbo.obo
 
 term_browser: ontobee
@@ -14,14 +14,14 @@ example_terms:
 entries:
 
 - prefix: /releases/
-  replacement: https://raw.githubusercontent.com/DanBerrios/RBO/v
+  replacement: https://raw.githubusercontent.com/Radiobiology-Informatics-Consortium/RBO/v
 
 - prefix: /tracker/
-  replacement: https://github.com/DanBerrios/RBO/issues
+  replacement: https://github.com/Radiobiology-Informatics-Consortium/RBO/issues
 
 - prefix: /about/
   replacement: http://www.ontobee.org/ontology/RBO?iri=http://purl.obolibrary.org/obo/
 
 ## generic fall-through, serve direct from github by default
 - prefix: /
-  replacement: https://raw.githubusercontent.com/DanBerrios/RBO/master/
+  replacement: https://raw.githubusercontent.com/Radiobiology-Informatics-Consortium/RBO/master/

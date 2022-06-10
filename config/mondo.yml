@@ -21,9 +21,9 @@ entries:
   replacement: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/ontology/mappings/
 - prefix: /patterns/
   replacement: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/patterns/dosdp-patterns/
-- prefix: /sources/
-  replacement: https://github.com/monarch-initiative/mondo-ingest/releases/latest/download/
 - prefix: /sources/mappings/
+  replacement: https://github.com/monarch-initiative/mondo-ingest/releases/latest/download/
+- prefix: /sources/
   replacement: https://github.com/monarch-initiative/mondo-ingest/releases/latest/download/
 - prefix: /sources/releases/
   replacement: https://github.com/monarch-initiative/mondo-ingest/releases/download/v

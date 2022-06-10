@@ -23,13 +23,13 @@ entries:
   replacement: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/patterns/dosdp-patterns/
 - prefix: /sources/mappings/
   replacement: https://github.com/monarch-initiative/mondo-ingest/releases/latest/download/
-- prefix: /sources/
-  replacement: https://github.com/monarch-initiative/mondo-ingest/releases/latest/download/
 - prefix: /sources/releases/
   replacement: https://github.com/monarch-initiative/mondo-ingest/releases/download/v
   tests:
     - from: /sources/releases/2022-06-09/omim.owl
       to: https://github.com/monarch-initiative/mondo-ingest/releases/download/v2022-06-09/omim.owl
+- prefix: /sources/
+  replacement: https://github.com/monarch-initiative/mondo-ingest/releases/latest/download/
 - prefix: /sparql/
   replacement: https://raw.githubusercontent.com/monarch-initiative/mondo/master/src/sparql/
 - prefix: /reports/

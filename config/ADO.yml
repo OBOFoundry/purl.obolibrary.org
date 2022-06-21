@@ -11,11 +11,12 @@ example_terms:
 
 entries:
 
-- prefix: /releases/
-  replacement: https://raw.githubusercontent.com/Fraunhofer-SCAI-Applied-Semantics/ADO/main/Releases/2022-06-11/
-  
-- prefix: /tracker/
+- exact: /tracker
   replacement: https://github.com/Fraunhofer-SCAI-Applied-Semantics/ADO/issues
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/Fraunhofer-SCAI-Applied-Semantics/ADO/main/Releases/
+  
 
 ## generic fall-through, serve direct from github by default
 - prefix: /

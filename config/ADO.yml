@@ -6,14 +6,14 @@ products:
 
 
 term_browser: ontobee
-
+example_terms:
+- ADO_0000001
 
 entries:
 
 - prefix: /releases/
-  replacement: https://github.com/Fraunhofer-SCAI-Applied-Semantics/ADO/tree/main/Releases
+  replacement: https://raw.githubusercontent.com/Fraunhofer-SCAI-Applied-Semantics/ADO/main/Releases/2022-06-11/
   
-
 - prefix: /tracker/
   replacement: https://github.com/Fraunhofer-SCAI-Applied-Semantics/ADO/issues
 

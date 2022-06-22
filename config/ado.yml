@@ -1,0 +1,26 @@
+idspace: ADO
+base_url: /obo/ado
+
+products:
+- ado.owl: https://raw.githubusercontent.com/Fraunhofer-SCAI-Applied-Semantics/ADO/main/ado.owl
+
+
+term_browser: ontobee
+example_terms:
+- ADO_0000001
+
+entries:
+
+- exact: /tracker
+  replacement: https://github.com/Fraunhofer-SCAI-Applied-Semantics/ADO/issues
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/Fraunhofer-SCAI-Applied-Semantics/ADO/v
+  tests:
+  - from: /releases/2022-06-11/ado.owl
+    to: https://raw.githubusercontent.com/Fraunhofer-SCAI-Applied-Semantics/ADO/v2022-06-11/ado.owl
+
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://github.com/Fraunhofer-SCAI-Applied-Semantics/ADO/tree/main/

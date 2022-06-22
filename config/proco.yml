@@ -15,8 +15,8 @@ entries:
 - prefix: /releases/
   replacement: https://raw.githubusercontent.com/proco-ontology/proco/v
   tests:
-  - from: /releases/2022-04-14/
-    to: https://raw.githubusercontent.com/proco-ontology/proco/v2022-04-14/
+  - from: /releases/2022-04-14/proco.owl
+    to: https://raw.githubusercontent.com/proco-ontology/proco/v2022-04-14/proco.owl
  
 - prefix: /tracker/
   replacement: https://github.com/proco-ontology/proco/issues

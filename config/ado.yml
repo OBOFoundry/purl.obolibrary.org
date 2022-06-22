@@ -2,7 +2,7 @@ idspace: ADO
 base_url: /obo/ado
 
 products:
-- ado.owl: https://raw.githubusercontent.com/Fraunhofer-SCAI-Applied-Semantics/ADO/main/Releases/2.0.0/ADO.owl
+- ado.owl: https://raw.githubusercontent.com/Fraunhofer-SCAI-Applied-Semantics/ADO/main/ado.owl
 
 
 term_browser: ontobee
@@ -15,7 +15,7 @@ entries:
   replacement: https://github.com/Fraunhofer-SCAI-Applied-Semantics/ADO/issues
 
 - prefix: /releases/
-  replacement: https://raw.githubusercontent.com/Fraunhofer-SCAI-Applied-Semantics/ADO/main/Releases/
+  replacement: https://github.com/Fraunhofer-SCAI-Applied-Semantics/ADO/tree/main/Releases/
   
 
 ## generic fall-through, serve direct from github by default

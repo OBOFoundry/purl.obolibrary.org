@@ -8,7 +8,7 @@ products:
 - pcl.obo: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/master/pcl.obo
 - pcl.json: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/master/pcl.json
 
-term_browser: ontobee
+term_browser: ols
 example_terms:
 - PCL_0011124
 

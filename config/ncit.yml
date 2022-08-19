@@ -4,8 +4,8 @@ idspace: NCIT
 base_url: /obo/ncit
 
 products:
-- ncit.owl: https://stars.renci.org/var/NCIt/ncit.owl
-- ncit.obo: https://stars.renci.org/var/NCIt/ncit.obo
+- ncit.owl: https://github.com/NCI-Thesaurus/thesaurus-obo-edition/releases/latest/download/ncit.owl
+- ncit.obo: https://github.com/NCI-Thesaurus/thesaurus-obo-edition/releases/latest/download/ncit.obo
 
 term_browser: custom
 
@@ -43,10 +43,6 @@ entries:
     - from: /releases/2022-08-18/ncit.obo
       to: https://github.com/NCI-Thesaurus/thesaurus-obo-edition/releases/download/v2022-08-18/ncit.obo
 
-
-- prefix: /releases/
-  replacement: https://stars.renci.org/var/NCIt/releases/
-
 - prefix: /tracker/
   replacement: https://github.com/NCI-Thesaurus/thesaurus-obo-edition/issues
 
@@ -55,4 +51,4 @@ entries:
 
 ## generic fall-through, serve direct from stars by default
 - prefix: /
-  replacement: https://stars.renci.org/var/NCIt/
+  replacement: https://raw.githubusercontent.com/NCI-Thesaurus/thesaurus-obo-edition/master/

@@ -33,7 +33,7 @@ entries:
   replacement: https://stars.renci.org/var/NCIt/releases/2022-04-14/
   tests:
     - from: /releases/2022-04-14/
-      to: https://stars.renci.org/var/NCIt/releases/2022-04-14/2022-04-14/
+      to: https://stars.renci.org/var/NCIt/releases/2022-04-14/
     - from: /releases/2022-04-14/ncit.owl
       to: https://stars.renci.org/var/NCIt/releases/2022-04-14/ncit.owl
 

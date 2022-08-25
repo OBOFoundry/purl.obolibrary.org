@@ -4,9 +4,9 @@ idspace: FYPO
 base_url: /obo/fypo
 
 products:
-- fypo.owl: https://raw.githubusercontent.com/pombase/fypo/master/fypo.owl
-- fypo.obo: https://raw.githubusercontent.com/pombase/fypo/master/fypo.obo
-- fypo.json: https://raw.githubusercontent.com/pombase/fypo/master/fypo.json
+- fypo.owl: https://github.com/pombase/fypo/releases/latest/download/fypo.owl
+- fypo.obo: https://github.com/pombase/fypo/releases/latest/download/fypo.obo
+- fypo.json: https://github.com/pombase/fypo/releases/latest/download/fypo.json
 
 term_browser: ontobee
 example_terms:
@@ -24,4 +24,4 @@ entries:
   replacement: http://www.ontobee.org/ontology/FYPO?iri=http://purl.obolibrary.org/obo/
 
 - prefix: /
-  replacement: https://raw.githubusercontent.com/pombase/fypo/master/
+  replacement: https://github.com/pombase/fypo/releases/latest/download/

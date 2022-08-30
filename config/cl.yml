@@ -41,6 +41,18 @@ entries:
 - exact: /cl-basic.owl
   replacement: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/cl-basic.owl
 
+- exact: /cl-simple.owl
+  replacement: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/cl-simple.owl
+
+- exact: /cl-simple.obo
+  replacement: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/cl-simple.obo
+
+- exact: /cl-base.owl
+  replacement: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/cl-base.owl
+
+- exact: /cl-base.obo
+  replacement: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/cl-base.obo
+
 - prefix: /analysis/cl-immgen/
   replacement: https://cell-ontology.googlecode.com/svn/trunk/analysis/cl-immgen/
 

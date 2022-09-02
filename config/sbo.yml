@@ -4,8 +4,8 @@ idspace: SBO
 base_url: /obo/sbo
 
 products:
-- sbo.owl: http://www.ebi.ac.uk/sbo/exports/Main/SBO_OWL.owl
-- sbo.obo: http://www.ebi.ac.uk/sbo/exports/Main/SBO_OBO.obo
+- sbo.owl: https://raw.githubusercontent.com/EBI-BioModels/SBO/master/SBO_OWL.owl
+- sbo.obo: https://raw.githubusercontent.com/EBI-BioModels/SBO/master/SBO_OBO.obo
 
 term_browser: ontobee
 example_terms:

@@ -26,6 +26,18 @@ entries:
 
 - exact: /internal/chebi.owl
   replacement: http://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.owl
+ 
+- exact: /obophenotype/chebi_slim.owl
+  replacement: https://raw.githubusercontent.com/obophenotype/chebi_obo_slim/master/chebi_slim.owl
+
+- exact: /obophenotype/chebi_slim.obo
+  replacement: https://raw.githubusercontent.com/obophenotype/chebi_obo_slim/master/chebi_slim.obo
+
+- prefix: /obophenotype/releases/
+  replacement: https://raw.githubusercontent.com/obophenotype/chebi_obo_slim/v
+  tests:
+    - from: /obophenotype/releases/2022-09-03/chebi_slim.obo
+      to: https://raw.githubusercontent.com/obophenotype/chebi_obo_slim/v2022-09-03/chebi_slim.obo
 
 - prefix: /about/
   replacement: http://www.ebi.ac.uk/chebi/searchId.do?chebiId=

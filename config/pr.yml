@@ -151,17 +151,21 @@ entries:
 - exact: /downloads
   replacement: https://proconsortium.org/download/current
 
-- prefix: /wiki/
-  replacement: https://confluence.proteininformationresource.org/display/PROWIKI/
-  tests:
-  - from: /wiki/PRO+PURLs
-    to: https://confluence.proteininformationresource.org/display/PROWIKI/PRO+PURLs
+# NOTE: The PRO wiki page has been retired
+# - prefix: /wiki/
+#  replacement: https://confluence.proteininformationresource.org/display/PROWIKI/
+#  tests:
+#  - from: /wiki/PRO+PURLs
+#    to: https://confluence.proteininformationresource.org/display/PROWIKI/PRO+PURLs
 
 - exact: /wiki
-  replacement: https://confluence.proteininformationresource.org/display/PROWIKI
+  replacement: https://proteininformationresource.org/staff/nataled/wiki_retired.html
 
+- exact: /docs
+  replacement: https://proconsortium.org/pro_dcmtt.shtml
+  
 - exact: /purls
-  replacement: https://confluence.proteininformationresource.org/display/PROWIKI/PRO+PURLs
+  replacement: https://proconsortium.org/pro_comm_PURL.shtml
   
 - exact: /gpi
   replacement: https://proconsortium.org/download/more/pro.gpi

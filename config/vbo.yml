@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/vbo
 
-idspace: VBP
+idspace: VBO
 base_url: /obo/vbo
 
 products:

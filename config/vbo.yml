@@ -1,7 +1,7 @@
 # PURL configuration for http://purl.obolibrary.org/obo/vbo
 
 idspace: VBP
-base_url: /obo/oba
+base_url: /obo/vbo
 
 products:
 - vbo.owl: https://raw.githubusercontent.com/monarch-initiative/vertebrate-breed-ontology/master/vbo.owl

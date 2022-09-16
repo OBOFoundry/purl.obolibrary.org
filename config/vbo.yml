@@ -1,0 +1,28 @@
+# PURL configuration for http://purl.obolibrary.org/obo/vbo
+
+idspace: VBP
+base_url: /obo/oba
+
+products:
+- vbo.owl: https://raw.githubusercontent.com/monarch-initiative/vertebrate-breed-ontology/master/vbo.owl
+- vbo.obo: https://raw.githubusercontent.com/monarch-initiative/vertebrate-breed-ontology/master/vbo.obo
+- vbo.json: https://raw.githubusercontent.com/monarch-initiative/vertebrate-breed-ontology/master/vbo.json
+
+entries:
+- prefix: /tracker/
+  replacement: https://github.com/monarch-initiative/vertebrate-breed-ontology/issues
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/monarch-initiative/vertebrate-breed-ontology/v
+  tests:  
+    - from: /releases/2022-05-06/vbo.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/vertebrate-breed-ontology/v2022-05-06/vbo.obo
+- prefix: /imports/
+  replacement: https://raw.githubusercontent.com/monarch-initiative/vertebrate-breed-ontology/master/src/ontology/imports/
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/VBO?iri=http://purl.obolibrary.org/obo/
+- prefix: /
+  replacement: https://raw.githubusercontent.com/monarch-initiative/vertebrate-breed-ontology/master/
+  
+term_browser: ontobee
+example_terms:
+- VBO_0000001

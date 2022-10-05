@@ -1,0 +1,26 @@
+# PURL configuration for http://purl.obolibrary.org/obo/pato
+
+idspace: T4FS
+base_url: /obo/t4fs
+
+products:
+- t4fs.owl: https://github.com/terms4fairskills/FAIRterminology/raw/master/t4fs.owl
+- t4fs.obo: https://github.com/terms4fairskills/FAIRterminology/raw/master/t4fs.obo
+- t4fs.json: https://github.com/terms4fairskills/FAIRterminology/raw/master/t4fs.json
+
+term_browser: ontobee
+example_terms:
+- T4FS_0000012
+
+entries:
+- exact: /t4fs-community.owl
+  replacement: https://github.com/terms4fairskills/FAIRterminology/raw/master/t4fs-community.owl
+
+- exact: /t4fs-community.obo
+  replacement: https://github.com/terms4fairskills/FAIRterminology/raw/master/t4fs-community.obo
+
+- exact: /t4fs-community.json
+  replacement: https://github.com/terms4fairskills/FAIRterminology/raw/master/t4fs-community.json
+
+- exact: /tracker
+  replacement: https://github.com/terms4fairskills/FAIRterminology/issues

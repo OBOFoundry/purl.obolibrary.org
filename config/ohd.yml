@@ -15,13 +15,15 @@ example_terms:
 
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=OHD&iri=http://purl.obolibrary.org/obo/
-  tests:
-  - from: /about/OHD_0000019
-    to: http://www.ontobee.org/browser/rdf.php?o=OHD&iri=http://purl.obolibrary.org/obo/OHD_0000019
-
+  
 - prefix: /dev/
   replacement: https://github.com/oral-health-and-disease-ontologies/ohd-ontology/tree/master/src/ontology
 
 ## generic fall-through, serve direct from github by default
 - prefix: /
   replacement: https://github.com/oral-health-and-disease-ontologies/ohd-ontology/tree/master/
+
+# tests
+tests:
+  - from: /about/OHD_0000019
+    to: http://www.ontobee.org/browser/rdf.php?o=OHD&iri=http://purl.obolibrary.org/obo/OHD_0000019

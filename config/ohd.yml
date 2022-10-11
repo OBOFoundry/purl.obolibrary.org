@@ -3,24 +3,26 @@
 idspace: OHD
 base_url: /obo/ohd
 
-base_redirect: https://github.com/alanruttenberg/ohd-ontology
+base_redirect: https://github.com/oral-health-and-disease-ontologies/ohd-ontology
 
 products:
-- ohd.owl: https://raw.githubusercontent.com/alanruttenberg/ohd-ontology/master/src/ontology/ohd-2016-06-27-merged-inferred.owl
+- ohd.owl: https://raw.githubusercontent.com/oral-health-and-disease-ontologies/ohd-ontology/master/ohd.owl
+- ohd-base.owl: https://raw.githubusercontent.com/oral-health-and-disease-ontologies/ohd-ontology/master/ohd-base.owl
 
 term_browser: ontobee
 example_terms:
 - OHD_0000019
 
 entries:
-- exact: /2016-06-27/ohd.owl
-  replacement: https://raw.githubusercontent.com/alanruttenberg/ohd-ontology/master/src/ontology/ohd-2016-06-27-merged-inferred.owl
-
 - prefix: /about/
-  replacement: http://www.ontobee.org/browser/rdf.php?o=OHD&iri=http://purl.obolibrary.org/obo/
+  replacement: https://ontobee.org/ontology/OHD?iri=http://purl.obolibrary.org/obo/
   tests:
   - from: /about/OHD_0000019
-    to: http://www.ontobee.org/browser/rdf.php?o=OHD&iri=http://purl.obolibrary.org/obo/OHD_0000019
-
+    to: https://ontobee.org/ontology/OHD?iri=http://purl.obolibrary.org/obo/OHD_0000019
+  
 - prefix: /dev/
-  replacement: https://raw.githubusercontent.com/alanruttenberg/ohd-ontology/master/src/ontology/
+  replacement: https://github.com/oral-health-and-disease-ontologies/ohd-ontology/tree/master/src/ontology
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://github.com/oral-health-and-disease-ontologies/ohd-ontology/tree/master/

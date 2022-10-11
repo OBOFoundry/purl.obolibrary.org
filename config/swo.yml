@@ -7,7 +7,7 @@ products:
 - swo.owl: https://raw.githubusercontent.com/allysonlister/swo/master/swo.owl
 - swo.json: https://raw.githubusercontent.com/allysonlister/swo/master/swo.json
 
-term_browser: ontobee
+term_browser: ols
 example_terms:
 - SWO_0000000
 

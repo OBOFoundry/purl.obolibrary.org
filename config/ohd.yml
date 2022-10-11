@@ -7,13 +7,15 @@ base_redirect: https://github.com/oral-health-and-disease-ontologies/ohd-ontolog
 
 products:
 - ohd.owl: https://raw.githubusercontent.com/oral-health-and-disease-ontologies/ohd-ontology/master/ohd.owl
-- ohd-base.owl: https://raw.githubusercontent.com/oral-health-and-disease-ontologies/ohd-ontology/master/ohd-base.owl
 
 term_browser: ontobee
 example_terms:
 - OHD_0000019
 
 entries:
+- exact: /ohd-base.owl
+  replacement: https://raw.githubusercontent.com/oral-health-and-disease-ontologies/ohd-ontology/master/ohd-base.owl
+
 - prefix: /about/
   replacement: https://ontobee.org/ontology/OHD?iri=http://purl.obolibrary.org/obo/
   tests:

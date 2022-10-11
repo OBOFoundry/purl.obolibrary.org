@@ -11,14 +11,14 @@ products:
 
 term_browser: ontobee
 example_terms:
-- "OHD_0000019"
+- OHD_0000019
 
 entries:
 - prefix: /about/
   replacement: https://ontobee.org/ontology/OHD?iri=http://purl.obolibrary.org/obo/
-  #tests:
-  #- from: /about/OHD_0000019
-  #  to: https://ontobee.org/ontology/OHD?iri=http://purl.obolibrary.org/obo/OHD_0000019
+  tests:
+  - from: /about/OHD_0000019
+    to: https://ontobee.org/ontology/OHD?iri=http://purl.obolibrary.org/obo/OHD_0000019
   
 - prefix: /dev/
   replacement: https://github.com/oral-health-and-disease-ontologies/ohd-ontology/tree/master/src/ontology

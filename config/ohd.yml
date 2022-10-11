@@ -11,7 +11,7 @@ products:
 
 term_browser: ontobee
 example_terms:
-- OHD_0000019
+- "OHD_0000019"
 
 - prefix: /about/
   replacement: https://ontobee.org/ontology/OHD?iri=http://purl.obolibrary.org/obo/

@@ -18,9 +18,9 @@ entries:
 
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=OHD&iri=http://purl.obolibrary.org/obo/
-  tests:
-  - from: /about/OHD_0000019
-    to: http://www.ontobee.org/browser/rdf.php?o=OHD&iri=http://purl.obolibrary.org/obo/OHD_0000019
+  #tests:
+  #- from: /about/OHD_0000019
+  #  to: http://www.ontobee.org/browser/rdf.php?o=OHD&iri=http://purl.obolibrary.org/obo/OHD_0000019
 
 - prefix: /dev/
   replacement: https://raw.githubusercontent.com/alanruttenberg/ohd-ontology/master/src/ontology/

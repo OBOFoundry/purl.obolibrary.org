@@ -4,7 +4,8 @@ idspace: SWO
 base_url: /obo/swo
 
 products:
-- swo.owl: https://raw.githubusercontent.com/allysonlister/swo/master/release/swo-inferred.owl
+- swo.owl: https://raw.githubusercontent.com/allysonlister/swo/master/swo.owl
+- swo.json: https://raw.githubusercontent.com/allysonlister/swo/master/swo.json
 
 term_browser: ontobee
 example_terms:
@@ -13,7 +14,3 @@ example_terms:
 entries:
 - prefix: /tracker/
   replacement: https://github.com/allysonlister/swo/issues
-
-## generic fall-through, serve direct from github by default
-- prefix: /
-  replacement: https://github.com/allysonlister/swo/tree/master

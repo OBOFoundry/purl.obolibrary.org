@@ -14,3 +14,7 @@ example_terms:
 entries:
 - prefix: /tracker/
   replacement: https://github.com/allysonlister/swo/issues
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://github.com/allysonlister/swo/tree/master

@@ -4,9 +4,10 @@ idspace: SWO
 base_url: /obo/swo
 
 products:
-- swo.owl: https://raw.githubusercontent.com/allysonlister/swo/master/release/swo-inferred.owl
+- swo.owl: https://github.com/allysonlister/swo/raw/master/swo.owl
+- swo.json: https://github.com/allysonlister/swo/raw/master/swo.json
 
-term_browser: ontobee
+term_browser: ols
 example_terms:
 - SWO_0000000
 

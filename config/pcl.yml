@@ -25,10 +25,16 @@ entries:
 
 - prefix: /about/
   replacement: https://github.com/obophenotype/provisional_cell_ontology#readme
+
+- exact: /bds/kg
+  replacement: http://ec2-3-143-113-50.us-east-2.compute.amazonaws.com:7472/browser
   
 - prefix: /bds/kg/
   replacement: http://ec2-3-143-113-50.us-east-2.compute.amazonaws.com:7472/browser
-  
+
+- exact: /bds/api
+  replacement: http://ec2-3-143-113-50.us-east-2.compute.amazonaws.com:8484/bds/
+
 - prefix: /bds/api/
   replacement: http://ec2-3-143-113-50.us-east-2.compute.amazonaws.com:8484/bds/
 

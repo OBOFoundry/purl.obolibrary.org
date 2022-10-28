@@ -1,4 +1,4 @@
-# PURL configuration for http://purl.obolibrary.org/obo/pcl
+# PURL configuration for http://purl.obolibrary.org/obo/pcl 
 
 idspace: PCL
 base_url: /obo/pcl
@@ -25,13 +25,19 @@ entries:
 
 - prefix: /about/
   replacement: https://github.com/obophenotype/provisional_cell_ontology#readme
+
+- exact: /bds/kg
+  replacement: http://ec2-3-143-113-50.us-east-2.compute.amazonaws.com:7472/browser
   
 - prefix: /bds/kg/
   replacement: http://ec2-3-143-113-50.us-east-2.compute.amazonaws.com:7472/browser
-  
+
+- exact: /bds/api
+  replacement: http://ec2-3-143-113-50.us-east-2.compute.amazonaws.com:8484/bds/
+
 - prefix: /bds/api/
   replacement: http://ec2-3-143-113-50.us-east-2.compute.amazonaws.com:8484/bds/
 
-## generic fall-through, serve direct from github by default
+### generic fall-through, serve direct from github by default
 - prefix: /
   replacement: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/master/

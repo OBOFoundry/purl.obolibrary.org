@@ -10,7 +10,7 @@ base_url: /obo/iao
 base_redirect: https://github.com/information-artifact-ontology/IAO 
 
 products:
-- iao.owl: https://raw.githubusercontent.com/information-artifact-ontology/IAO/v2020-12-09/iao.owl
+- iao.owl: https://raw.githubusercontent.com/information-artifact-ontology/IAO/v2022-11-07/iao.owl
 - iao.obo: http://ontologies.berkeleybop.org/iao.obo
 
 term_browser: ontobee
@@ -78,6 +78,10 @@ entries:
   replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/master/src/ontology/iao-edit.owl 
 
 # IAO Versions
+# 2022-11-07
+- exact: /2022-11-07/iao.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/v2022-11-07/iao.owl
+
 # 2020-12-09
 - exact: /2020-12-09/iao.owl
   replacement: https://raw.githubusercontent.com/information-artifact-ontology/IAO/v2020-12-09/iao.owl

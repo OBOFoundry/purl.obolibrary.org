@@ -4,8 +4,8 @@ idspace: MI
 base_url: /obo/mi
 
 products:
-- mi.owl: http://ontologies.berkeleybop.org/mi.owl
-- mi.obo: http://ontologies.berkeleybop.org/mi.obo
+- mi.owl: https://raw.githubusercontent.com/HUPO-PSI/psi-mi-CV/master/psi-mi.owl
+- mi.obo: https://raw.githubusercontent.com/HUPO-PSI/psi-mi-CV/master/psi-mi.obo
 
 term_browser: ontobee
 example_terms:

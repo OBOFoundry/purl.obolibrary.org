@@ -3,7 +3,7 @@
 idspace: VBO
 base_url: /obo/vbo
 
-term_browser: ontobee
+term_browser: ols
 example_terms:
 - VBO_0000001
 
@@ -23,6 +23,6 @@ entries:
 - prefix: /imports/
   replacement: https://raw.githubusercontent.com/monarch-initiative/vertebrate-breed-ontology/master/src/ontology/imports/
 - prefix: /about/
-  replacement: http://www.ontobee.org/ontology/VBO?iri=http://purl.obolibrary.org/obo/
+  replacement: https://www.ebi.ac.uk/ols/ontologies/vbo/terms?iri=http://purl.obolibrary.org/obo/
 - prefix: /
   replacement: https://raw.githubusercontent.com/monarch-initiative/vertebrate-breed-ontology/master/

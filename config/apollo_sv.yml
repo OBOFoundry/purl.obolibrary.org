@@ -5,7 +5,7 @@ idspace: APOLLO_SV
 base_url: /obo/apollo_sv
 
 products:
-- apollo_sv.owl: https://raw.githubusercontent.com/ApolloDev/apollo-sv/master/src/ontology/apollo-sv.owl
+- apollo_sv.owl: https://raw.githubusercontent.com/ApolloDev/apollo-sv/master/apollo_sv.owl
 
 term_browser: ontobee
 example_terms:
@@ -26,6 +26,9 @@ entries:
   
 - exact: /v4.1.1/apollo_sv.owl
   replacement: https://raw.githubusercontent.com/ApolloDev/apollo-sv/v4.1.1/src/ontology/apollo-sv.owl
+  
+- exact: /v2022-11-25/apollo_sv.owl
+  replacement: https://github.com/ApolloDev/apollo-sv/releases/download/v2022-11-25/apollo_sv.owl
 
 # Misc
 

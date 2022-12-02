@@ -168,7 +168,7 @@ entries:
   replacement: https://proconsortium.org/pro_comm_PURL.shtml
   
 - exact: /gpi
-  replacement: https://proconsortium.org/download/more/pro.gpi
+  replacement: https://proconsortium.org/download/current/pro.gpi
 
 - exact: /browse
   replacement: http://www.ontobee.org/browser/index.php?o=pr

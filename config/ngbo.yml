@@ -1,0 +1,28 @@
+# PURL configuration for http://purl.obolibrary.org/obo/ngbo 
+
+idspace: ngbo
+base_url: /obo/ngbo
+
+base_redirect: https://raw.githubusercontent.com/Dalalghamdi/NGBO/master/ngbo.owl
+
+products:
+- pato.owl: https://raw.githubusercontent.com/Dalalghamdi/NGBO/master/ngbo.owl
+
+
+term_browser: ontobee
+example_terms:
+- ngbo_6000122
+
+entries:
+- exact: /tracker
+  replacement: https://github.com/Dalalghamdi/NGBO/issues
+
+- prefix: /releases/
+  replacement: https://github.com/Dalalghamdi/NGBO/blob/master/ngbo.owl
+  
+- prefix: /about/
+  replacement: https://github.com/Dalalghamdi/NGBO
+  tests:
+
+- prefix: /imports/
+  replacement: https://github.com/Dalalghamdi/NGBO/tree/master/imports

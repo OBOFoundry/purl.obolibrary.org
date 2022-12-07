@@ -6,8 +6,7 @@ base_url: /obo/ngbo
 base_redirect: https://raw.githubusercontent.com/Dalalghamdi/NGBO/master/ngbo.owl
 
 products:
-- pato.owl: https://raw.githubusercontent.com/Dalalghamdi/NGBO/master/ngbo.owl
-
+- ngbo.owl: https://raw.githubusercontent.com/Dalalghamdi/NGBO/master/ngbo.owl
 
 term_browser: ontobee
 example_terms:

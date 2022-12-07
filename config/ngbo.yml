@@ -22,7 +22,6 @@ entries:
   
 - prefix: /about/
   replacement: https://github.com/Dalalghamdi/NGBO
-  tests:
 
 - prefix: /imports/
   replacement: https://github.com/Dalalghamdi/NGBO/tree/master/imports

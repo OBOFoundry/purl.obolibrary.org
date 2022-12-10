@@ -32,37 +32,37 @@ entries:
   replacement: https://s3.amazonaws.com/drugontology/dev/dron-ingredient.owl
 
 - exact: /dev/dron.owl
-  replacement: https://bitbucket.org/uamsdbmi/dron/raw/development/dron-full.owl
+  replacement: https://github.com/ufbmi/dron/releases/latest/download/dron.owl
 
 - exact: /dev/dron-pro.owl
-  replacement: https://bitbucket.org/uamsdbmi/dron/raw/development/dron-pro.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/dron/main/src/ontology/imports/pr_import.owl
 
 - exact: /dev/dron-upper.owl
-  replacement: https://bitbucket.org/uamsdbmi/dron/raw/development/dron-upper.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/dron/main/src/ontology/dron-edit.owl
 
 - exact: /dev/dron-chebi.owl
-  replacement: https://bitbucket.org/uamsdbmi/dron/raw/development/dron-chebi.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/dron/main/src/ontology/imports/chebi_import.owl
 
 - exact: /dron-upper.owl
-  replacement: https://bitbucket.org/uamsdbmi/dron/raw/master/dron-upper.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/dron/main/src/ontology/dron-edit.owl
 
 - exact: /dron-lite.owl
-  replacement: https://bitbucket.org/uamsdbmi/dron/raw/master/dron-lite.owl
+  replacement: https://github.com/ufbmi/dron/releases/latest/download/dron-lite.owl
 
 - exact: /dron-pro.owl
-  replacement: https://bitbucket.org/uamsdbmi/dron/raw/master/dron-pro.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/dron/main/src/ontology/imports/pr_import.owl
 
 - exact: /dron-chebi.owl
-  replacement: https://bitbucket.org/uamsdbmi/dron/raw/master/dron-chebi.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/dron/main/src/ontology/imports/chebi_import.owl
 
 - exact: /dev/dron-lite.owl
-  replacement: https://bitbucket.org/uamsdbmi/dron/raw/development/dron-lite.owl
+  replacement: https://github.com/ufbmi/dron/releases/latest/download/dron-lite.owl
 
 - exact: /dev/dron-hand.owl
-  replacement: https://bitbucket.org/uamsdbmi/dron/raw/development/dron-hand.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/dron/main/src/ontology/dron-edit.owl
   
 - exact: /dron-hand.owl
-  replacement: https://bitbucket.org/uamsdbmi/dron/raw/master/dron-hand.owl
+  replacement: https://raw.githubusercontent.com/ufbmi/dron/main/src/ontology/dron-edit.owl
 
 - prefix: /releases/
   replacement: https://github.com/ufbmi/dron/releases/download/v

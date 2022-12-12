@@ -5,7 +5,7 @@ idspace: APOLLO_SV
 base_url: /obo/apollo_sv
 
 products:
-- apollo_sv.owl: https://raw.githubusercontent.com/ApolloDev/apollo-sv/master/apollo_sv.owl
+- apollo_sv.owl: https://raw.githubusercontent.com/ApolloDev/apollo-sv/main/apollo_sv.owl
 
 term_browser: ontobee
 example_terms:
@@ -33,7 +33,7 @@ entries:
 # Misc
 
 - exact: /dev/apollo_sv.owl 
-  replacement: https://raw.githubusercontent.com/ApolloDev/apollo-sv/master/src/ontology/apollo-sv.owl
+  replacement: https://raw.githubusercontent.com/ApolloDev/apollo-sv/main/src/ontology/apollo-sv.owl
 
 - exact: /bfo2/apollo_sv.owl 
   replacement: https://raw.githubusercontent.com/ApolloDev/apollo-sv/bfo2/src/ontology/apollo-sv.owl

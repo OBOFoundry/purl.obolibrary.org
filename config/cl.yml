@@ -55,7 +55,7 @@ entries:
 - exact: /cl-base.obo
   replacement: https://github.com/obophenotype/obophenotype/cell-ontology/releases/latest/download/cl-base.obo
 
-- exact: /cl-plus.owl: 
+- exact: /cl-plus.owl
   replacement: https://github.com/obophenotype/obophenotype/cell-ontology/releases/latest/download/cl-plus.owl
 
 - exact: /cl-plus.obo: 

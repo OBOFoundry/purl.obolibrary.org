@@ -58,7 +58,7 @@ entries:
 - exact: /cl-plus.owl
   replacement: https://github.com/obophenotype/obophenotype/cell-ontology/releases/latest/download/cl-plus.owl
 
-- exact: /cl-plus.obo: 
+- exact: /cl-plus.obo 
   replacement: https://github.com/obophenotype/obophenotype/cell-ontology/releases/latest/download/cl-plus.obo
 
 - prefix: /analysis/cl-immgen/

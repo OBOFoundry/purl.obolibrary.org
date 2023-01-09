@@ -106,4 +106,4 @@ entries:
 
 ## generic fall-through, serve direct from github by default
 - prefix: /
-  replacement: https://github.com/obophenotype/obophenotype/cell-ontology/releases/latest/download/
+  replacement: https://github.com/obophenotype/cell-ontology/releases/latest/download/

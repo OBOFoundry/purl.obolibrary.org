@@ -6,9 +6,9 @@ base_url: /obo/hp
 base_redirect: https://github.com/obophenotype/human-phenotype-ontology
 
 products:
-- hp.owl: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/hp.owl
-- hp.obo: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/hp.obo
-- hp.json: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/hp.json
+- hp.owl: https://github.com/obophenotype/human-phenotype-ontology/releases/latest/download/hp.owl
+- hp.obo: https://github.com/obophenotype/human-phenotype-ontology/releases/latest/download/hp.obo
+- hp.json: https://github.com/obophenotype/human-phenotype-ontology/releases/latest/download/hp.json
 
 term_browser: custom
 
@@ -19,8 +19,11 @@ entries:
   - from: /releases/hpoa/2022-02-14/genes_to_phenotype.txt
     to: https://github.com/obophenotype/human-phenotype-ontology/releases/download/v2022-02-14/genes_to_phenotype.txt
 
+- prefix: /imports/
+  replacement: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src/ontology/imports/
+
 - prefix: /releases/
-  replacement: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/v
+  replacement: https://github.com/obophenotype/human-phenotype-ontology/releases/download/v
 
 - prefix: /tracker
   replacement: https://github.com/obophenotype/human-phenotype-ontology/issues
@@ -31,6 +34,8 @@ entries:
   - from: /about/HP_0000001
     to: http://www.ontobee.org/browser/rdf.php?o=HP&iri=http://purl.obolibrary.org/obo/HP_0000001
 
+
+
 # HPOA files
 - prefix: /hpoa/
   replacement: https://github.com/obophenotype/human-phenotype-ontology/releases/latest/download/
@@ -40,4 +45,4 @@ entries:
 
 # default
 - prefix: /
-  replacement: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/
+  replacement: https://github.com/obophenotype/human-phenotype-ontology/releases/latest/download/

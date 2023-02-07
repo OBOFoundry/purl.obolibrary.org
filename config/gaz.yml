@@ -6,6 +6,7 @@ base_url: /obo/gaz
 products:
 - gaz.owl: http://ontologies.berkeleybop.org/gaz.owl
 - gaz.obo: http://ontologies.berkeleybop.org/gaz.obo
+- gaz-countries.owl: https://raw.githubusercontent.com/EnvironmentOntology/gaz/master/src/ontology/gaz_countries.owl
 
 term_browser: ontobee
 example_terms:

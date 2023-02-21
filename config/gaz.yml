@@ -7,6 +7,10 @@ products:
 - gaz.owl: http://ontologies.berkeleybop.org/gaz.owl
 - gaz.obo: http://ontologies.berkeleybop.org/gaz.obo
 
+entries:
+- exact: /gaz-countries.owl
+  replacement: https://raw.githubusercontent.com/EnvironmentOntology/gaz/master/src/ontology/gaz_countries.owl
+
 term_browser: ontobee
 example_terms:
 - GAZ_00002560

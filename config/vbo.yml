@@ -22,6 +22,8 @@ entries:
       to: https://raw.githubusercontent.com/monarch-initiative/vertebrate-breed-ontology/v2022-05-06/vbo.obo
 - prefix: /imports/
   replacement: https://raw.githubusercontent.com/monarch-initiative/vertebrate-breed-ontology/master/src/ontology/imports/
+- prefix: /components/
+  replacement: https://raw.githubusercontent.com/monarch-initiative/vertebrate-breed-ontology/master/src/ontology/components/
 - prefix: /about/
   replacement: https://www.ebi.ac.uk/ols/ontologies/vbo/terms?iri=http://purl.obolibrary.org/obo/
 - prefix: /

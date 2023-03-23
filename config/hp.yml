@@ -22,6 +22,9 @@ entries:
 - prefix: /imports/
   replacement: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src/ontology/imports/
 
+- prefix: /components/
+  replacement: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src/ontology/components/
+
 - prefix: /releases/
   replacement: https://github.com/obophenotype/human-phenotype-ontology/releases/download/v
 

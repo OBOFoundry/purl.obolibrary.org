@@ -27,16 +27,16 @@ entries:
   replacement: https://github.com/obophenotype/provisional_cell_ontology#readme
 
 - exact: /bds/kg
-  replacement: http://ec2-3-143-113-50.us-east-2.compute.amazonaws.com:7472/browser
+  replacement: https://knowledge-graph-ebi.brain.allentech.org/browser
   
 - prefix: /bds/kg/
-  replacement: http://ec2-3-143-113-50.us-east-2.compute.amazonaws.com:7472/browser
+  replacement: https://knowledge-graph-ebi.brain.allentech.org/browser
 
 - exact: /bds/api
-  replacement: http://ec2-3-143-113-50.us-east-2.compute.amazonaws.com:8484/bds/
+  replacement: https://bkp-cts-prod.aibs-bmp-prod.net/bds/
 
 - prefix: /bds/api/
-  replacement: http://ec2-3-143-113-50.us-east-2.compute.amazonaws.com:8484/bds/
+  replacement: https://bkp-cts-prod.aibs-bmp-prod.net/bds/
 
 ### generic fall-through, serve direct from github by default
 - prefix: /

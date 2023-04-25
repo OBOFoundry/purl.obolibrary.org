@@ -27,10 +27,10 @@ entries:
   replacement: https://github.com/obophenotype/provisional_cell_ontology#readme
 
 - exact: /bds/kg
-  replacement: https://knowledge-graph-ebi.brain.allentech.org/browser
+  replacement: https://knowledge-graph-ebi.brain.allentech.org/browser/
   
 - prefix: /bds/kg/
-  replacement: https://knowledge-graph-ebi.brain.allentech.org/browser
+  replacement: https://knowledge-graph-ebi.brain.allentech.org/browser/
 
 - exact: /bds/api
   replacement: https://bkp-cts-prod.aibs-bmp-prod.net/bds/

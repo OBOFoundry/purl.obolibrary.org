@@ -9,7 +9,7 @@ products:
 - cl-basic.owl: https://github.com/obophenotype/cell-ontology/releases/latest/download/cl-basic.owl
 - cl-basic.obo: https://github.com/obophenotype/cell-ontology/releases/latest/download/cl-basic.obo
 
-term_browser: ontobee
+term_browser: ols
 example_terms:
 - CL_0000000
 

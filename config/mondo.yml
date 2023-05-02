@@ -8,7 +8,7 @@ products:
 - mondo.obo: https://github.com/monarch-initiative/mondo/releases/latest/download/mondo.obo
 - mondo.json: https://github.com/monarch-initiative/mondo/releases/latest/download/mondo.json
 
-term_browser: ontobee
+term_browser: ols
 
 entries:
 - prefix: /subsets/

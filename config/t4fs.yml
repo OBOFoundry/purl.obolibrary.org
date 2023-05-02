@@ -8,7 +8,7 @@ products:
 - t4fs.obo: https://github.com/terms4fairskills/FAIRterminology/raw/master/t4fs.obo
 - t4fs.json: https://github.com/terms4fairskills/FAIRterminology/raw/master/t4fs.json
 
-term_browser: ontobee
+term_browser: ols
 example_terms:
 - T4FS_0000012
 

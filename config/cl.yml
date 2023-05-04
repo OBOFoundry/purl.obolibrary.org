@@ -96,7 +96,7 @@ entries:
     to: https://raw.githubusercontent.com/obophenotype/brain_data_standards_ontologies/Current/bdscratch-base.owl
 
 - prefix: /bds/browser/
-  replacement: http://ec2-3-143-113-50.us-east-2.compute.amazonaws.com:8080/ontologies/bds2/
+  replacement: https://www.ebi.ac.uk/ols4/ontologies/pcl
   
 - prefix: /bds/bds.owl
   replacement: https://raw.githubusercontent.com/obophenotype/brain_data_standards_ontologies/Current/bdscratch-full.owl

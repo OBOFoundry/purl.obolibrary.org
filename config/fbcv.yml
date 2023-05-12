@@ -6,9 +6,9 @@ base_url: /obo/fbcv
 base_redirect: https://github.com/FlyBase/flybase-controlled-vocabulary/wiki
 
 products:
-- fbcv.owl: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/fbcv.owl
-- fbcv.obo: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/fbcv.obo
-- fbcv.json: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/fbcv.json
+- fbcv.owl: https://github.com/FlyBase/flybase-controlled-vocabulary/releases/latest/download/fbcv.owl
+- fbcv.obo: https://github.com/FlyBase/flybase-controlled-vocabulary/releases/latest/download/fbcv.obo
+- fbcv.json: https://github.com/FlyBase/flybase-controlled-vocabulary/releases/latest/download/fbcv.json
 
 term_browser: ontobee
 example_terms:
@@ -22,7 +22,7 @@ entries:
   replacement: https://github.com/FlyBase/flybase-controlled-vocabulary/wiki
 
 - exact: /fbcv-flybase.obo
-  replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/fbcv-flybase.obo
+  replacement: https://github.com/FlyBase/flybase-controlled-vocabulary/releases/latest/download/flybase_controlled_vocabulary.obo
 
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=FBcv&iri=http://purl.obolibrary.org/obo/
@@ -70,7 +70,7 @@ entries:
   replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/releases/2018-01-03/
  
 - prefix: /releases/
-  replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/v
+  replacement: https://github.com/FlyBase/flybase-controlled-vocabulary/releases/download/v
 
 - prefix: /
-  replacement: https://raw.githubusercontent.com/FlyBase/flybase-controlled-vocabulary/master/
+  replacement: https://github.com/FlyBase/flybase-controlled-vocabulary/releases/latest/download/

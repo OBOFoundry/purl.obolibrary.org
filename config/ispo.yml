@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/ispo
+
+idspace: ISPO
+base_url: /obo/ispo
+
+base_redirect: https://github.com/HuaRui0420/ISPO
+
+products:
+- ispo.owl: https://raw.githubusercontent.com/HuaRui0420/ISPO/main/src/ispo.owl
+
+term_browser: custom
+example_terms:
+- ISPO_00007630
+
+entries:
+- exact: /tracker
+  replacement: https://github.com/HuaRui0420/ISPO/issues
+
+- exact: /browser
+  replacement: http://www.tcmkg.com/ISPO/ISPO:00007630
+
+# Terms for ISPO
+- regex: ^/obo/ISPO_(\d+)$
+  replacement: http://www.tcmkg.com/ISPO/ISPO:$1
+  tests:
+    -from: /ISPO_00007630
+     to: http://www.tcmkg.com/ISPO/ISPO:00007630

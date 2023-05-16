@@ -1,0 +1,29 @@
+# PURL configuration for http://purl.obolibrary.org/obo/mcro
+
+idspace: MCRO
+base_url: /obo/mcro
+
+products:
+- mcro.owl: https://raw.githubusercontent.com/UTHealth-Ontology/MCRO/main/mcro.owl
+
+term_browser: ontobee
+example_terms:
+- MCRO_0000001
+
+entries:
+
+- prefix: /releases/
+  replacement: https://github.com/UTHealth-Ontology/MCRO/releases/download/v
+  tests:
+    - from: /releases/2023-03-07/
+      to: https://github.com/UTHealth-Ontology/MCRO/releases/download/v2023-03-07/
+
+- prefix: /tracker/
+  replacement: https://github.com/UTHealth-Ontology/MCRO/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/MCRO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/UTHealth-Ontology/MCRO/main/

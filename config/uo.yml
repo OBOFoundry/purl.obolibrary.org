@@ -4,9 +4,21 @@ idspace: UO
 base_url: /obo/uo
 
 products:
-- uo.owl: https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/uo.owl
-- uo.obo: https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/unit.obo
+- uo.owl: https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/unit-ontology.owl
+- uo.obo: https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/unit-ontology.obo
+- unit-ontology.owl: https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/unit-ontology.owl
+- unit-ontology.obo: https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/unit-ontology.obo
 
 term_browser: ontobee
 example_terms:
 - UO_0000000
+
+entries:
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/v
+- prefix: /tracker/
+  replacement: https://github.com/bio-ontology-research-group/unit-ontology/issues
+- prefix: /about/
+  replacement: https://github.com/bio-ontology-research-group/unit-ontology
+- prefix: /
+  replacement: https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master

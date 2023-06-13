@@ -11,8 +11,8 @@ products:
 - prefix: /releases/
   replacement: https://raw.githubusercontent.com/ApolloDev/apollo-sv/v
   tests:
-    - from: /releases/2023-06-02/apollo_sv-full.json
-      to: https://github.com/ApolloDev/apollo-sv/releases/download/v
+    - from: /releases/2023-06-02/apollo_sv-base.owl
+      to: https://raw.githubusercontent.com/ApolloDev/apollo-sv/v2023-06-02/apollo_sv-base.owl
 
 term_browser: ontobee
 example_terms:

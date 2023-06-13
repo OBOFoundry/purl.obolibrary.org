@@ -34,11 +34,6 @@ entries:
 - exact: /v4.1.1/apollo_sv.owl
   replacement: https://raw.githubusercontent.com/ApolloDev/apollo-sv/v4.1.1/src/ontology/apollo-sv.owl
 
-- exact: /releases/v2022-11-25/apollo_sv.owl
-  replacement: https://github.com/ApolloDev/apollo-sv/releases/download/v2022-11-25/apollo_sv.owl
-
-- exact: /releases/v2023-01-10/apollo_sv.owl
-  replacement: https://github.com/ApolloDev/apollo-sv/releases/download/v2023-01-10/apollo_sv.owl
 
 # Misc
 

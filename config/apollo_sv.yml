@@ -8,18 +8,18 @@ products:
 - apollo_sv.owl: https://raw.githubusercontent.com/ApolloDev/apollo-sv/main/apollo_sv.owl
 - apollo_sv.obo: https://raw.githubusercontent.com/ApolloDev/apollo-sv/main/apollo_sv.obo
 
-- prefix: /releases/
-  replacement: https://raw.githubusercontent.com/ApolloDev/apollo-sv/v
-  tests:
-    - from: /releases/2023-06-02/apollo_sv-base.owl
-      to: https://raw.githubusercontent.com/ApolloDev/apollo-sv/v2023-06-02/apollo_sv-base.owl
-
 term_browser: ontobee
 example_terms:
 - APOLLO_SV_00000219
 
 entries:
 
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/ApolloDev/apollo-sv/v
+  tests:
+    - from: /releases/2023-06-02/apollo_sv-base.owl
+      to: https://raw.githubusercontent.com/ApolloDev/apollo-sv/v2023-06-02/apollo_sv-base.owl
+      
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=APOLLO_SV&iri=http://purl.obolibrary.org/obo/
   tests:

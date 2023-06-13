@@ -6,6 +6,14 @@ base_url: /obo/apollo_sv
 
 products:
 - apollo_sv.owl: https://raw.githubusercontent.com/ApolloDev/apollo-sv/main/apollo_sv.owl
+- apollo_sv.obo: https://raw.githubusercontent.com/ApolloDev/apollo-sv/main/apollo_sv.obo
+- apollo_sv.json: https://raw.githubusercontent.com/ApolloDev/apollo-sv/main/apollo_sv.json
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/ApolloDev/apollo-sv/v
+  tests:
+    - from: /releases/2023-06-02/apollo_sv-full.json
+      to: https://github.com/ApolloDev/apollo-sv/releases/download/v
 
 term_browser: ontobee
 example_terms:

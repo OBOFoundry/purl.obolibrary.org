@@ -68,8 +68,35 @@ entries:
 - prefix: /2011-12-13/
   replacement: https://cell-ontology.googlecode.com/svn/releases/2011-12-13/
 
+- prefix: /releases/201
+  replacement: https://raw.githubusercontent.com/obophenotype/cell-ontology/v201
+  tests:
+  - from: /releases/2015-08-08/cl.obo
+    to: https://raw.githubusercontent.com/obophenotype/cell-ontology/v2015-08-08/cl.obo
+
+- prefix: /releases/2020
+  replacement: https://raw.githubusercontent.com/obophenotype/cell-ontology/v2020
+  tests:
+  - from: /releases/2020-01-06/cl.obo
+    to: https://raw.githubusercontent.com/obophenotype/cell-ontology/v2020-01-06/cl.obo
+
+- prefix: /releases/2021
+  replacement: https://raw.githubusercontent.com/obophenotype/cell-ontology/v2021
+  tests:
+  - from: /releases/2021-01-22/cl.obo
+    to: https://raw.githubusercontent.com/obophenotype/cell-ontology/v2021-01-22/cl.obo
+
+- prefix: /releases/2022
+  replacement: https://raw.githubusercontent.com/obophenotype/cell-ontology/v2022
+  tests:
+  - from: /releases/2022-01-05/cl.obo
+    to: https://raw.githubusercontent.com/obophenotype/cell-ontology/v2022-01-05/cl.obo
+
 - prefix: /releases/
-  replacement: https://raw.githubusercontent.com/obophenotype/cell-ontology/v
+  replacement: https://github.com/obophenotype/cell-ontology/releases/download/v
+  tests:
+  - from: /releases/2023-01-09/cl.obo
+    to: https://github.com/obophenotype/cell-ontology/releases/download/v2023-01-09/cl.obo
 
 - prefix: /tracker/
   replacement: https://code.google.com/p/cell-ontology/issues/detail?id=
@@ -78,10 +105,10 @@ entries:
   replacement: https://cell-ontology.googlecode.com/svn/trunk/src/ontology/diffs/
 
 - prefix: /about/
-  replacement: http://www.ontobee.org/browser/rdf.php?o=CL&iri=http://purl.obolibrary.org/obo/
+  replacement: https://www.ebi.ac.uk/ols/ontologies/cl/terms?iri=http://purl.obolibrary.org/obo/
   tests:
   - from: /about/CL_0000000
-    to: http://www.ontobee.org/browser/rdf.php?o=CL&iri=http://purl.obolibrary.org/obo/CL_0000000
+    to: https://www.ebi.ac.uk/ols/ontologies/cl/terms?iri=http://purl.obolibrary.org/obo/CL_0000000
 
 - regex: ^/obo/cl/bds/releases/(.*)/bds\.owl$
   replacement: https://raw.githubusercontent.com/obophenotype/brain_data_standards_ontologies/$1/bdscratch-full.owl

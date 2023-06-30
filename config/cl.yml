@@ -105,7 +105,7 @@ entries:
   replacement: https://cell-ontology.googlecode.com/svn/trunk/src/ontology/diffs/
 
 - prefix: /about/
-  replacement: replacement: https://www.ebi.ac.uk/ols/ontologies/cl/terms?iri=http://purl.obolibrary.org/obo/
+  replacement: https://www.ebi.ac.uk/ols/ontologies/cl/terms?iri=http://purl.obolibrary.org/obo/
   tests:
   - from: /about/CL_0000000
     to: https://www.ebi.ac.uk/ols/ontologies/cl/terms?iri=http://purl.obolibrary.org/obo/CL_0000000

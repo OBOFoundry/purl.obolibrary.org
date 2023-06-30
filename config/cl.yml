@@ -68,26 +68,26 @@ entries:
 - prefix: /2011-12-13/
   replacement: https://cell-ontology.googlecode.com/svn/releases/2011-12-13/
 
-- regex: ^/releases/(201.*)$/
-  replacement: https://raw.githubusercontent.com/obophenotype/cell-ontology/v$1/
+- prefix: /releases/201
+  replacement: https://raw.githubusercontent.com/obophenotype/cell-ontology/v
   tests:
   - from: /releases/2015-08-08/cl.obo
     to: https://raw.githubusercontent.com/obophenotype/cell-ontology/v2015-08-08/cl.obo
 
-- regex: ^/releases/(2020.*)$/
-  replacement: https://raw.githubusercontent.com/obophenotype/cell-ontology/v$1
+- prefix: /releases/2020
+  replacement: https://raw.githubusercontent.com/obophenotype/cell-ontology/v
   tests:
   - from: /releases/2020-01-06/cl.obo
     to: https://raw.githubusercontent.com/obophenotype/cell-ontology/v2020-01-06/cl.obo
 
-- regex: ^/releases/(2021.*)$/
-  replacement: https://raw.githubusercontent.com/obophenotype/cell-ontology/v$1
+- prefix: /releases/2021
+  replacement: https://raw.githubusercontent.com/obophenotype/cell-ontology/v
   tests:
   - from: /releases/2021-01-22/cl.obo
     to: https://raw.githubusercontent.com/obophenotype/cell-ontology/v2021-01-22/cl.obo
 
-- regex: ^/releases/(2022.*)$/
-  replacement: https://raw.githubusercontent.com/obophenotype/cell-ontology/v$1
+- prefix: /releases/2022
+  replacement: https://raw.githubusercontent.com/obophenotype/cell-ontology/v
   tests:
   - from: /releases/2022-01-05/cl.obo
     to: https://raw.githubusercontent.com/obophenotype/cell-ontology/v2022-01-05/cl.obo

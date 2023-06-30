@@ -308,7 +308,7 @@ def append_products(products, idspace, outfile):
 
 
 ontobee = 'http://www.ontobee.org/browser/rdf.php?o=%s&iri=http://purl.obolibrary.org/obo/%s_$1'
-ols = 'https://www.ebi.ac.uk/ols4/ontologies/%s/terms/http%%253A%%252F%%252Fpurl.obolibrary.org%%252Fobo%%252F$1'
+ols = 'https://www.ebi.ac.uk/ols4/ontologies/%s/entities/http%%253A%%252F%%252Fpurl.obolibrary.org%%252Fobo%%252F$1'
 
 
 def translate_terms(yamldoc, idspace):

@@ -4,8 +4,8 @@ idspace: CMO
 base_url: /obo/cmo
 
 products:
-- cmo.owl: http://ontologies.berkeleybop.org/cmo.owl
-- cmo.obo: http://ontologies.berkeleybop.org/cmo.obo
+- cmo.owl: https://download.rgd.mcw.edu/ontology/clinical_measurement/clinical_measurement.owl
+- cmo.obo: https://download.rgd.mcw.edu/ontology/clinical_measurement/clinical_measurement.obo
 
 term_browser: ontobee
 example_terms:

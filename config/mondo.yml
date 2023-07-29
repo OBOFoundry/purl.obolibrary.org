@@ -38,4 +38,9 @@ entries:
   replacement: https://github.com/monarch-initiative/mondo/releases/download/v
 - prefix: /
   replacement: https://github.com/monarch-initiative/mondo/releases/latest/download/
+- prefix: #
+  replacement: https://www.ebi.ac.uk/ols4/ontologies/mondo/properties/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252Fmondo%2523
+  tests:
+    - from: #mondo_rare
+      to: https://www.ebi.ac.uk/ols4/ontologies/mondo/properties/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252Fmondo%2523mondo_rare
 

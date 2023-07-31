@@ -13,8 +13,8 @@ example_terms:
 entries:
 - exact: /hancestro.owl
   replacement: https://raw.githubusercontent.com/EBISPOT/hancestro/main/hancestro.owl
-- exact: /hancestro_base.owl
-  replacement: https://raw.githubusercontent.com/EBISPOT/hancestro/main/hancestro_base.owl
-- exact: /hancestro_full.owl
-  replacement: https://raw.githubusercontent.com/EBISPOT/hancestro/main/hancestro_full.owl
+- exact: /hancestro-base.owl
+  replacement: https://raw.githubusercontent.com/EBISPOT/hancestro/main/hancestro-base.owl
+- exact: /hancestro-full.owl
+  replacement: https://raw.githubusercontent.com/EBISPOT/hancestro/main/hancestro-full.owl
   

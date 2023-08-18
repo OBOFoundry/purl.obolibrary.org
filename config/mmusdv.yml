@@ -4,8 +4,8 @@ idspace: MmusDv
 base_url: /obo/mmusdv
 
 products:
-- mmusdv.owl: http://ontologies.berkeleybop.org/mmusdv.owl
-- mmusdv.obo: http://ontologies.berkeleybop.org/mmusdv.obo
+- mmusdv.owl: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/mmusdv/mmusdv.owl
+- mmusdv.obo: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/mmusdv/mmusdv.obo
 
 term_browser: ontobee
 example_terms:

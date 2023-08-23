@@ -4,8 +4,8 @@ idspace: XCO
 base_url: /obo/xco
 
 products:
-- xco.owl: http://ontologies.berkeleybop.org/xco.owl
-- xco.obo: http://ontologies.berkeleybop.org/xco.obo
+- xco.owl: https://download.rgd.mcw.edu/ontology/experimental_condition/experimental_condition.owl
+- xco.obo: https://download.rgd.mcw.edu/ontology/experimental_condition/experimental_condition.obo
 
 term_browser: ontobee
 example_terms:

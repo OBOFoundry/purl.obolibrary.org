@@ -4,8 +4,8 @@ idspace: SPD
 base_url: /obo/spd
 
 products:
-- spd.owl: http://ontologies.berkeleybop.org/spd.owl
-- spd.obo: http://ontologies.berkeleybop.org/spd.obo
+- spd.owl: https://raw.githubusercontent.com/obophenotype/spider-ontology/master/spider_comparative_biology.owl
+- spd.obo: https://raw.githubusercontent.com/obophenotype/spider-ontology/master/spider_comparative_biology.obo
 
 term_browser: ontobee
 example_terms:

@@ -21,18 +21,6 @@ entries:
 - exact: /phenoscape-ext.owl
   replacement: http://phenoscape.svn.sourceforge.net/svnroot/phenoscape/trunk/vocab/edit/phenoscape-ext.owl
 
-- exact: /releases/2021-10-01/composite-vertebrate.owl
-  replacement: https://github.com/obophenotype/uberon/releases/download/v2021-10-01/composite-vertebrate.owl
-
-- exact: /releases/2021-10-01/composite-vertebrate.obo
-  replacement: https://github.com/obophenotype/uberon/releases/download/v2021-10-01/composite-vertebrate.obo
-
-- exact: /releases/2021-10-01/composite-metazoan.owl
-  replacement: https://github.com/obophenotype/uberon/releases/download/v2021-10-01/composite-metazoan.owl
-
-- exact: /releases/2021-10-01/composite-metazoan.obo
-  replacement: https://github.com/obophenotype/uberon/releases/download/v2021-10-01/composite-metazoan.obo
-
 - exact: /ext.owl
   replacement: https://github.com/obophenotype/uberon/releases/latest/download/uberon.owl
 

@@ -22,16 +22,22 @@ entries:
   replacement: http://phenoscape.svn.sourceforge.net/svnroot/phenoscape/trunk/vocab/edit/phenoscape-ext.owl
 
 - exact: /composite-vertebrate.owl
-  replacement: https://github.com/obophenotype/uberon/releases/download/v2021-10-01/composite-vertebrate.owl
+  replacement: https://github.com/obophenotype/uberon/releases/latest/download/composite-vertebrate.owl
 
 - exact: /composite-vertebrate.obo
-  replacement: https://github.com/obophenotype/uberon/releases/download/v2021-10-01/composite-vertebrate.obo
+  replacement: https://github.com/obophenotype/uberon/releases/latest/download/composite-vertebrate.obo
 
 - exact: /composite-metazoan.owl
-  replacement: https://github.com/obophenotype/uberon/releases/download/v2021-10-01/composite-metazoan.owl
+  replacement: https://github.com/obophenotype/uberon/releases/latest/download/composite-metazoan.owl
 
 - exact: /composite-metazoan.obo
-  replacement: https://github.com/obophenotype/uberon/releases/download/v2021-10-01/composite-metazoan.obo
+  replacement: https://github.com/obophenotype/uberon/releases/latest/download/composite-metazoan.obo
+
+- exact: /ext.owl
+  replacement: https://github.com/obophenotype/uberon/releases/latest/download/uberon.owl
+
+- exact: /ext.obo
+  replacement: https://github.com/obophenotype/uberon/releases/latest/download/uberon.obo
 
 - exact: /experimental/ceph.owl
   replacement: http://purl.obolibrary.org/obo/ceph.owl

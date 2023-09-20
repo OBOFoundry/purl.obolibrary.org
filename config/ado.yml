@@ -17,8 +17,8 @@ entries:
 - prefix: /releases/
   replacement: https://raw.githubusercontent.com/Fraunhofer-SCAI-Applied-Semantics/ADO/v
   tests:
-  - from: /releases/2022-06-11/ado.owl
-    to: https://raw.githubusercontent.com/Fraunhofer-SCAI-Applied-Semantics/ADO/v2022-06-11/ado.owl
+  - from: /releases/2023-09-20/ado.owl
+    to: https://raw.githubusercontent.com/Fraunhofer-SCAI-Applied-Semantics/ADO/v2023-09-20/ado.owl
 
 
 ## generic fall-through, serve direct from github by default

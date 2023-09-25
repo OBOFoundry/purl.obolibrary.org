@@ -12,3 +12,11 @@ products:
 term_browser: ontobee
 example_terms:
 - TRANS_0000000
+
+- regex: ^/obo/trans/releases/([^\s/]+)/(\S+)$
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/PathogenTransmissionOntology/v$1/src/ontology/$2
+  tests:
+  - from: /releases/2022-10-10/trans.owl
+    to: https://raw.githubusercontent.com/DiseaseOntology/PathogenTransmissionOntology/v2022-10-10/src/ontology/trans.owl
+  - from: /releases/2022-10-10/trans.obo
+    to: https://raw.githubusercontent.com/DiseaseOntology/SymptomOntology/v2022-10-10/src/ontology/trans.obo

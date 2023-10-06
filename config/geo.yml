@@ -4,7 +4,7 @@ idspace: GEO
 base_url: /obo/geo
 
 products:
-- geo.owl: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/geo.owl
+- geo.owl: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/geo.owl
 
 term_browser: ontobee
 example_terms:
@@ -12,511 +12,511 @@ example_terms:
 
 entries:
 - exact: /nation-and-dependency-instances.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/nation-and-dependency-instances.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/nation-and-dependency-instances.owl
   
 - exact: /major-world-cities-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/major-world-cities-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/major-world-cities-geography.owl
   
 - exact: /nation-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/nation-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/nation-geography.owl
   
 - exact: /basic-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/basic-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/basic-geography.owl
   
 - exact: /nation-instances.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/nation-instances.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/nation-instances.owl
   
 - exact: /us-integral-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-integral-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-integral-geography.owl
   
 - exact: /us-all-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-all-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-all-geography.owl
   
 - exact: /geo-all.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/geo-all.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/geo-all.owl
   
 - exact: /us-mas-dependencies.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-mas-dependencies.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-mas-dependencies.owl
   
 - exact: /nation-and-dependency-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/nation-and-dependency-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/nation-and-dependency-geography.owl
   
 - exact: /us-basic-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/basic-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/basic-geography.owl
   
 - exact: /us-dependency-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-dependency-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-dependency-geography.owl
   
 - exact: /us-ak-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-ak-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-ak-county-geography.owl
   
 - exact: /us-al-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-al-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-al-county-geography.owl
   
 - exact: /us-ar-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-ar-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-ar-county-geography.owl
   
 - exact: /us-az-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-az-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-az-county-geography.owl
   
 - exact: /us-ca-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-ca-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-ca-county-geography.owl
   
 - exact: /us-co-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-co-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-co-county-geography.owl
   
 - exact: /us-ct-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-ct-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-ct-county-geography.owl
   
 - exact: /us-dc-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-dc-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-dc-county-geography.owl
   
 - exact: /us-de-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-de-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-de-county-geography.owl
   
 - exact: /us-fl-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-fl-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-fl-county-geography.owl
   
 - exact: /us-ga-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-ga-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-ga-county-geography.owl
   
 - exact: /us-hi-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-hi-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-hi-county-geography.owl
   
 - exact: /us-ia-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-ia-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-ia-county-geography.owl
   
 - exact: /us-id-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-id-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-id-county-geography.owl
   
 - exact: /us-il-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-il-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-il-county-geography.owl
   
 - exact: /us-in-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-in-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-in-county-geography.owl
   
 - exact: /us-ks-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-ks-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-ks-county-geography.owl
   
 - exact: /us-ky-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-ky-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-ky-county-geography.owl
   
 - exact: /us-la-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-la-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-la-county-geography.owl
   
 - exact: /us-ma-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-ma-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-ma-county-geography.owl
   
 - exact: /us-md-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-md-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-md-county-geography.owl
   
 - exact: /us-me-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-me-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-me-county-geography.owl
   
 - exact: /us-mi-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-mi-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-mi-county-geography.owl
   
 - exact: /us-mn-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-mn-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-mn-county-geography.owl
   
 - exact: /us-mo-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-mo-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-mo-county-geography.owl
   
 - exact: /us-ms-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-ms-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-ms-county-geography.owl
   
 - exact: /us-mt-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-mt-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-mt-county-geography.owl
   
 - exact: /us-nc-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-nc-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-nc-county-geography.owl
   
 - exact: /us-nd-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-nd-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-nd-county-geography.owl
   
 - exact: /us-ne-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-ne-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-ne-county-geography.owl
   
 - exact: /us-nh-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-nh-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-nh-county-geography.owl
   
 - exact: /us-nj-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-nj-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-nj-county-geography.owl
   
 - exact: /us-nm-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-nm-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-nm-county-geography.owl
   
 - exact: /us-nv-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-nv-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-nv-county-geography.owl
   
 - exact: /us-ny-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-ny-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-ny-county-geography.owl
   
 - exact: /us-oh-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-oh-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-oh-county-geography.owl
   
 - exact: /us-ok-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-ok-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-ok-county-geography.owl
   
 - exact: /us-or-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-or-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-or-county-geography.owl
   
 - exact: /us-pa-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-pa-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-pa-county-geography.owl
   
 - exact: /us-ri-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-ri-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-ri-county-geography.owl
   
 - exact: /us-sc-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-sc-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-sc-county-geography.owl
   
 - exact: /us-sd-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-sd-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-sd-county-geography.owl
   
 - exact: /us-tn-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-tn-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-tn-county-geography.owl
   
 - exact: /us-tx-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-tx-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-tx-county-geography.owl
   
 - exact: /us-ut-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-ut-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-ut-county-geography.owl
   
 - exact: /us-va-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-va-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-va-county-geography.owl
   
 - exact: /us-vt-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-vt-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-vt-county-geography.owl
   
 - exact: /us-wa-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-wa-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-wa-county-geography.owl
   
 - exact: /us-wi-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-wi-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-wi-county-geography.owl
   
 - exact: /us-wv-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-wv-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-wv-county-geography.owl
   
 - exact: /us-wy-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-wy-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-wy-county-geography.owl
 
 - exact: /dev/geo.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/geo.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/geo.owl
 
 - exact: /dev/nation-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/nation-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/nation-geography.owl
 
 - exact: /dev/basic-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/basic-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/basic-geography.owl
 
 - exact: /dev/us-integral-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-integral-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-integral-geography.owl
 
 - exact: /dev/us-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/0078520ccf860fa7e8b9be8ab9e0289c05009768/us-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/0078520ccf860fa7e8b9be8ab9e0289c05009768/us-geography.owl
 
 - exact: /dev/us-all-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-all-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-all-geography.owl
 
 - exact: /dev/nation-instances.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/nation-instances.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/nation-instances.owl
 
 - exact: /dev/geo-all.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/geo-all.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/geo-all.owl
 
 - exact: /dev/us-mas-dependencies.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-mas-dependencies.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-mas-dependencies.owl
 
 - exact: /dev/nation-and-dependency-instances.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/nation-and-dependency-instances.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/nation-and-dependency-instances.owl
 
 - exact: /dev/nation-and-dependency-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/nation-and-dependency-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/nation-and-dependency-geography.owl
 
 - exact: /bfo2/geo.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/bfo2/geo.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/bfo2/geo.owl
 
 - exact: /dev/us-basic-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-basic-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-basic-geography.owl
 
 - exact: /dev/us-dependency-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-dependency-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-dependency-geography.owl
   
 - exact: /dev/us-ak-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-ak-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-ak-county-geography.owl
   
 - exact: /dev/us-al-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-al-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-al-county-geography.owl
   
 - exact: /dev/us-ar-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-ar-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-ar-county-geography.owl
   
 - exact: /dev/us-az-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-az-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-az-county-geography.owl
   
 - exact: /dev/us-ca-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-ca-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-ca-county-geography.owl
   
 - exact: /dev/us-co-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-co-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-co-county-geography.owl
   
 - exact: /dev/us-ct-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-ct-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-ct-county-geography.owl
   
 - exact: /dev/us-dc-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-dc-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-dc-county-geography.owl
   
 - exact: /dev/us-de-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-de-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-de-county-geography.owl
   
 - exact: /dev/us-fl-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-fl-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-fl-county-geography.owl
   
 - exact: /dev/us-ga-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-ga-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-ga-county-geography.owl
   
 - exact: /dev/us-hi-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-hi-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-hi-county-geography.owl
   
 - exact: /dev/us-ia-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-ia-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-ia-county-geography.owl
   
 - exact: /dev/us-id-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-id-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-id-county-geography.owl
   
 - exact: /dev/us-il-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-il-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-il-county-geography.owl
   
 - exact: /dev/us-in-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-in-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-in-county-geography.owl
   
 - exact: /dev/us-ks-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-ks-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-ks-county-geography.owl
   
 - exact: /dev/us-ky-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-ky-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-ky-county-geography.owl
   
 - exact: /dev/us-ma-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-ma-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-ma-county-geography.owl
   
 - exact: /dev/us-md-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-md-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-md-county-geography.owl
   
 - exact: /dev/us-me-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-me-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-me-county-geography.owl
   
 - exact: /dev/us-mi-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-mi-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-mi-county-geography.owl
   
 - exact: /dev/us-mn-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-mn-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-mn-county-geography.owl
   
 - exact: /dev/us-mo-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-mo-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-mo-county-geography.owl
   
 - exact: /dev/us-ms-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-ms-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-ms-county-geography.owl
   
 - exact: /dev/us-mt-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-mt-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-mt-county-geography.owl
   
 - exact: /dev/us-nc-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-nc-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-nc-county-geography.owl
   
 - exact: /dev/us-nd-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-nd-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-nd-county-geography.owl
   
 - exact: /dev/us-ne-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-ne-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-ne-county-geography.owl
   
 - exact: /dev/us-nh-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-nh-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-nh-county-geography.owl
   
 - exact: /dev/us-nj-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-nj-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-nj-county-geography.owl
   
 - exact: /dev/us-nm-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-nm-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-nm-county-geography.owl
   
 - exact: /dev/us-nv-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-nv-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-nv-county-geography.owl
   
 - exact: /dev/us-ny-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-ny-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-ny-county-geography.owl
   
 - exact: /dev/us-oh-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-oh-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-oh-county-geography.owl
   
 - exact: /dev/us-ok-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-ok-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-ok-county-geography.owl
   
 - exact: /dev/us-or-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-or-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-or-county-geography.owl
   
 - exact: /dev/us-pa-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-pa-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-pa-county-geography.owl
   
 - exact: /dev/us-ri-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-ri-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-ri-county-geography.owl
   
 - exact: /dev/us-sc-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-sc-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-sc-county-geography.owl
   
 - exact: /dev/us-sd-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-sd-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-sd-county-geography.owl
   
 - exact: /dev/us-tn-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-tn-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-tn-county-geography.owl
   
 - exact: /dev/us-tx-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-tx-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-tx-county-geography.owl
   
 - exact: /dev/us-ut-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-ut-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-ut-county-geography.owl
   
 - exact: /dev/us-va-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-va-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-va-county-geography.owl
   
 - exact: /dev/us-vt-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-vt-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-vt-county-geography.owl
   
 - exact: /dev/us-wa-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-wa-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-wa-county-geography.owl
   
 - exact: /dev/us-wi-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-wi-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-wi-county-geography.owl
   
 - exact: /dev/us-wv-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-wv-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-wv-county-geography.owl
   
 - exact: /dev/us-wy-county-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-wy-county-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-wy-county-geography.owl
 
 - exact: /dev/us-hrsa-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/us-hrsa-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/us-hrsa-geography.owl
 
 - exact: /us-hrsa-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/master/us-hrsa-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/master/us-hrsa-geography.owl
 
 - exact: /dev/mx-admin-level-one.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/MX/MX-admin-level-1.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/MX/MX-admin-level-1.owl
 
 - exact: /dev/mx-admin-level-two.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/MX/MX-admin-level-2.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/MX/MX-admin-level-2.owl
   
 - exact: /dev/mx-admin-level-three.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/MX/MX-admin-level-3.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/MX/MX-admin-level-3.owl
   
 - exact: /dev/tz-admin-level-one.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/TZ/TZ-admin-level-1.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/TZ/TZ-admin-level-1.owl
   
 - exact: /dev/tz-admin-level-two.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/TZ/TZ-admin-level-2.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/TZ/TZ-admin-level-2.owl
   
 - exact: /dev/tz-admin-level-three.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/TZ/TZ-admin-level-3.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/TZ/TZ-admin-level-3.owl
   
 - exact: /dev/major-world-cities-geography.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/major-world-cities-geography.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/major-world-cities-geography.owl
   
 - exact: /dev/gb-admin-level-one.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/GB/gb-admin-level-1.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/GB/gb-admin-level-1.owl
   
 - exact: /dev/gb-admin-level-two.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/GB/gb-admin-level-2.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/GB/gb-admin-level-2.owl
   
 - exact: /dev/gb-admin-level-three.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/GB/gb-admin-level-3.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/GB/gb-admin-level-3.owl
   
 - exact: /dev/gb-admin-level-four.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/GB/gb-admin-level-4.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/GB/gb-admin-level-4.owl
 
 - exact: /dev/cn-admin-level-one.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/CN/CN-admin-level-1.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/CN/CN-admin-level-1.owl
   
 - exact: /dev/cn-admin-level-two.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/CN/CN-admin-level-2.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/CN/CN-admin-level-2.owl
   
 - exact: /dev/cn-admin-level-three.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/CN/CN-admin-level-3.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/CN/CN-admin-level-3.owl
   
 - exact: /dev/cn-admin-level-four.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/CN/CN-admin-level-4.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/CN/CN-admin-level-4.owl
   
 - exact: /dev/ca-admin-level-one.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/CA/CA-admin-level-1.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/CA/CA-admin-level-1.owl
   
 - exact: /dev/ca-admin-level-two.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/CA/CA-admin-level-2.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/CA/CA-admin-level-2.owl
   
 - exact: /dev/ca-admin-level-three.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/CA/CA-admin-level-3.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/CA/CA-admin-level-3.owl
   
 - exact: /dev/ca-admin-level-four.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/CA/CA-admin-level-4.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/CA/CA-admin-level-4.owl
 
 - exact: /dev/gn-admin-level-one.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/GN/GN-admin-level-1.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/GN/GN-admin-level-1.owl
   
 - exact: /dev/gn-admin-level-two.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/GN/GN-admin-level-2.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/GN/GN-admin-level-2.owl
   
 - exact: /dev/gn-admin-level-three.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/GN/GN-admin-level-3.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/GN/GN-admin-level-3.owl
   
 - exact: /dev/gn-admin-level-four.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/GN/GN-admin-level-4.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/GN/GN-admin-level-4.owl
   
 - exact: /dev/lr-admin-level-one.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/LR/LR-admin-level-1.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/LR/LR-admin-level-1.owl
 
 - exact: /dev/lr-admin-level-two.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/LR/LR-admin-level-2.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/LR/LR-admin-level-2.owl
   
 - exact: /dev/lr-admin-level-three.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/LR/LR-admin-level-3.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/LR/LR-admin-level-3.owl
   
 - exact: /dev/ml-admin-level-one.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/ML/ML-admin-level-1.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/ML/ML-admin-level-1.owl
   
 - exact: /dev/ml-admin-level-two.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/ML/ML-admin-level-2.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/ML/ML-admin-level-2.owl
   
 - exact: /dev/ml-admin-level-three.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/ML/ML-admin-level-3.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/ML/ML-admin-level-3.owl
   
 - exact: /dev/ml-admin-level-four.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/ML/ML-admin-level-4.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/ML/ML-admin-level-4.owl
   
 - exact: /dev/ng-admin-level-one.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/NG/NG-admin-level-1.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/NG/NG-admin-level-1.owl
   
 - exact: /dev/ng-admin-level-two.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/NG/NG-admin-level-2.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/NG/NG-admin-level-2.owl
   
 - exact: /dev/ng-admin-level-three.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/NG/NG-admin-level-3.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/NG/NG-admin-level-3.owl
   
 - exact: /dev/sl-admin-level-one.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/SL/SL-admin-level-1.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/SL/SL-admin-level-1.owl
   
 - exact: /dev/sl-admin-level-two.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/SL/SL-admin-level-2.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/SL/SL-admin-level-2.owl
 
 - exact: /dev/sl-admin-level-three.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/SL/SL-admin-level-3.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/SL/SL-admin-level-3.owl
 
 - exact: /dev/sl-admin-level-four.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/SL/SL-admin-level-4.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/SL/SL-admin-level-4.owl
 
 - exact: /dev/sn-admin-level-one.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/SN/SN-admin-level-1.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/SN/SN-admin-level-1.owl
 
 - exact: /dev/sn-admin-level-two.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/SN/SN-admin-level-2.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/SN/SN-admin-level-2.owl
 
 - exact: /dev/sn-admin-level-three.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/SN/SN-admin-level-3.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/SN/SN-admin-level-3.owl
 
 - exact: /dev/sn-admin-level-four.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/geographical-entity-ontology/development/country-geography/SN/SN-admin-level-4.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/geographical-entity-ontology/development/country-geography/SN/SN-admin-level-4.owl

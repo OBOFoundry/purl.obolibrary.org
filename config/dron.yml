@@ -4,9 +4,9 @@ idspace: DRON
 base_url: /obo/dron
 
 products:
-- dron.owl: https://github.com/ufbmi/dron/releases/latest/download/dron.owl
-- dron.obo: https://github.com/ufbmi/dron/releases/latest/download/dron.obo
-- dron.json: https://github.com/ufbmi/dron/releases/latest/download/dron.json
+- dron.owl: https://github.com/mcwdsi/dron/releases/latest/download/dron.owl
+- dron.obo: https://github.com/mcwdsi/dron/releases/latest/download/dron.obo
+- dron.json: https://github.com/mcwdsi/dron/releases/latest/download/dron.json
 
 term_browser: ontobee
 example_terms:
@@ -32,47 +32,47 @@ entries:
   replacement: https://s3.amazonaws.com/drugontology/dev/dron-ingredient.owl
 
 - exact: /dev/dron.owl
-  replacement: https://github.com/ufbmi/dron/releases/latest/download/dron.owl
+  replacement: https://github.com/mcwdsi/dron/releases/latest/download/dron.owl
 
 - exact: /dev/dron-pro.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/dron/main/src/ontology/imports/pr_import.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/dron/main/src/ontology/imports/pr_import.owl
 
 - exact: /dev/dron-upper.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/dron/main/src/ontology/dron-edit.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/dron/main/src/ontology/dron-edit.owl
 
 - exact: /dev/dron-chebi.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/dron/main/src/ontology/imports/chebi_import.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/dron/main/src/ontology/imports/chebi_import.owl
 
 - exact: /dron-upper.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/dron/main/src/ontology/dron-edit.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/dron/main/src/ontology/dron-edit.owl
 
 - exact: /dron-lite.owl
-  replacement: https://github.com/ufbmi/dron/releases/latest/download/dron-lite.owl
+  replacement: https://github.com/mcwdsi/dron/releases/latest/download/dron-lite.owl
 
 - exact: /dron-pro.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/dron/main/src/ontology/imports/pr_import.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/dron/main/src/ontology/imports/pr_import.owl
 
 - exact: /dron-chebi.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/dron/main/src/ontology/imports/chebi_import.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/dron/main/src/ontology/imports/chebi_import.owl
 
 - exact: /dev/dron-lite.owl
-  replacement: https://github.com/ufbmi/dron/releases/latest/download/dron-lite.owl
+  replacement: https://github.com/mcwdsi/dron/releases/latest/download/dron-lite.owl
 
 - exact: /dev/dron-hand.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/dron/main/src/ontology/dron-edit.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/dron/main/src/ontology/dron-edit.owl
   
 - exact: /dron-hand.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/dron/main/src/ontology/dron-edit.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/dron/main/src/ontology/dron-edit.owl
 
 - prefix: /releases/
-  replacement: https://github.com/ufbmi/dron/releases/download/v
+  replacement: https://github.com/mcwdsi/dron/releases/download/v
   tests:  
     - from: /releases/2021-08-12/dron-base.obo
-      to: https://github.com/ufbmi/dron/releases/download/v2021-08-12/dron-base.obo
+      to: https://github.com/mcwdsi/dron/releases/download/v2021-08-12/dron-base.obo
 
 - prefix: /
-  replacement: https://github.com/ufbmi/dron/releases/latest/download/
+  replacement: https://github.com/mcwdsi/dron/releases/latest/download/
   tests:  
     - from: /dron-base.json
-      to: https://github.com/ufbmi/dron/releases/latest/download/dron-base.json
+      to: https://github.com/mcwdsi/dron/releases/latest/download/dron-base.json
 

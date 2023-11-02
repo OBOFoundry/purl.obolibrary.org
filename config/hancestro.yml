@@ -21,5 +21,7 @@ entries:
   replacement: https://raw.githubusercontent.com/EBISPOT/hancestro/main/hancestro.owl
 - exact: /hancestro_bfo.owl
   replacement: https://raw.githubusercontent.com/EBISPOT/hancestro/main/hancestro-full.owl
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/EBISPOT/hancestro/v
   
   

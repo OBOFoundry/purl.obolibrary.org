@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/pko
+
+idspace: PKO
+base_url: /obo/pko
+
+products:
+- pko.owl: https://raw.githubusercontent.com/Crispae/pkonto/main/pko.owl
+- pko.obo: https://raw.githubusercontent.com/Crispae/pkonto/main/pko.obo
+
+term_browser: ontobee
+example_terms:
+- PKO_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/Crispae/pkonto/v
+
+- prefix: /tracker/
+  replacement: https://github.com/Crispae/pkonto/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/PKO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/Crispae/pkonto/main/

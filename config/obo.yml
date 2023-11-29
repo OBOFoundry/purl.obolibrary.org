@@ -151,3 +151,11 @@ entries:
 
 - exact: /oboformat/spec.html
   replacement: http://owlcollab.github.io/oboformat/doc/obo-syntax.html
+
+# Term redirects for R74N
+- regex: ^/obo/R74N_R([\dA-F]{5})$
+  replacement: https://r74n.com/multiplane/?code=$1
+  status: see other
+  tests:
+  - from: /R74N_R12345
+    to: https://r74n.com/multiplane/?code=R12345

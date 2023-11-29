@@ -1,0 +1,17 @@
+idspace: R74N
+base_url: /obo/r74n
+
+term_browser: custom
+example_terms:
+- R74N_RR00303
+- R74N_R131B4
+
+entries:
+- exact: /browse
+  replacement: https://r74n.com/multiplane/
+- exact: /planes
+  replacement: https://r74n.com/multiplane/?planes
+- exact: /unions
+  replacement: https://r74n.com/multiplane/?unions
+- exact: /searcy
+  replacement: https://r74n.com/multiplane/?search

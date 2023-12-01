@@ -33,6 +33,12 @@ entries:
 - exact: /composite-metazoan.obo
   replacement: https://github.com/obophenotype/uberon/releases/latest/download/composite-metazoan.obo
 
+- exact: /collected-metazoan.owl
+  replacement: https://github.com/obophenotype/uberon/releases/latest/download/collected-metazoan.owl
+
+- exact: /collected-metazoan.obo
+  replacement: https://github.com/obophenotype/uberon/releases/latest/download/collected-metazoan.obo
+
 - exact: /ext.owl
   replacement: https://github.com/obophenotype/uberon/releases/latest/download/uberon.owl
 

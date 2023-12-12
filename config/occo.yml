@@ -1,0 +1,30 @@
+# PURL configuration for http://purl.obolibrary.org/obo/ooco
+
+idspace: OCCO
+base_url: /obo/occo
+
+base_redirect: https://github.com/Occupation-Ontology/OccO
+
+products:
+- occo.owl: https://raw.githubusercontent.com/Occupation-Ontology/OccO/main/occo.owl
+
+term_browser: ontobee
+example_terms:
+- OCCO_00000001
+
+entries:
+
+- exact: /tracker
+  replacement: https://github.com/Occupation-Ontology/OccO/issues
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/Occupation-Ontology/OccO/v
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/browser/rdf.php?o=OCCO&iri=http://purl.obolibrary.org/obo/
+  tests:
+  - from: /about/OCCO_00000001
+    to: http://www.ontobee.org/browser/rdf.php?o=OCCO&iri=http://purl.obolibrary.org/obo/OCCO_00000001
+    
+- prefix: /
+  replacement: https://raw.githubusercontent.com/Occupation-Ontology/OccO/master/

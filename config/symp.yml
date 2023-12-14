@@ -19,8 +19,14 @@ entries:
 - regex: ^/obo/symp/releases/([^\s/]+)/(\S+)$
   replacement: https://raw.githubusercontent.com/DiseaseOntology/SymptomOntology/v$1/src/ontology/$2
   tests:
-# need to actually create a release for testing
   - from: /releases/2022-05-26/symp.owl
     to: https://raw.githubusercontent.com/DiseaseOntology/SymptomOntology/v2022-05-26/src/ontology/symp.owl
   - from: /releases/2022-05-26/symp.obo
     to: https://raw.githubusercontent.com/DiseaseOntology/SymptomOntology/v2022-05-26/src/ontology/symp.obo
+
+# generic fall-back (rules processed in order = keep at bottom)
+- prefix: /
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/SymptomOntology/main/src/ontology/
+  tests:
+  - from: /symp.json
+    to: https://raw.githubusercontent.com/DiseaseOntology/SymptomOntology/main/src/ontology/symp.json

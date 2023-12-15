@@ -151,8 +151,8 @@ You'll have to install these three tools on your host machine:
 
 All of these tools are free for you to use. If you're using macOS with [Homebrew](http://brew.sh), then you can install the three tools like this:
 
-    brew cask install Caskroom/cask/vagrant
-    brew cask install Caskroom/cask/virtualbox
+    brew install --cask Caskroom/cask/vagrant
+    brew install --cask Caskroom/cask/virtualbox
     brew install ansible
 
 Once the three tools are installed, check out a copy of this repository and start the VM:

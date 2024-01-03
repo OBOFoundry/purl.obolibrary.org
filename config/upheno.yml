@@ -21,7 +21,7 @@ entries:
   replacement: https://raw.githubusercontent.com/monarch-initiative/monarch-disease-ontology/master/src/mondo/mondo.owl
 
 - exact: /v2/upheno.owl
-  replacement: https://bbop-ontologies.s3.amazonaws.com/upheno/current/upheno-release/all/upheno_all_with_relations.owl
+  replacement: https://github.com/obophenotype/upheno-dev/releases/latest/download/upheno_all.owl
 
 - exact: /zp.owl
   replacement: http://purl.obolibrary.org/obo/zp.owl

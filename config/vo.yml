@@ -19,7 +19,10 @@ entries:
 
 - prefix: /releases/
   replacement: https://raw.githubusercontent.com/vaccineontology/VO/v
-  
+
+- exact: /cvo.owl
+  replacement: https://raw.githubusercontent.com/vaccineontology/VO/master/CVO/cvo.owl
+
 - exact: /2009-11-30/vo.owl
   replacement: http://www.violinet.org/vo/2009-11-30/VO.owl
 

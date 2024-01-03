@@ -3,10 +3,10 @@
 idspace: VO
 base_url: /obo/vo
 
-base_redirect: http://www.violinet.org/vaccineontology
+base_redirect: https://github.com/vaccineontology/VO
 
 products:
-- vo.owl: https://raw.githubusercontent.com/vaccineontology/VO/master/src/VO_merged.owl
+- vo.owl: https://raw.githubusercontent.com/vaccineontology/VO/master/vo.owl
 
 term_browser: ontobee
 example_terms:
@@ -14,6 +14,15 @@ example_terms:
 - VO_0000002
 
 entries:
+- exact: /tracker
+  replacement: https://github.com/vaccineontology/VO/issues
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/vaccineontology/VO/v
+
+- exact: /cvo.owl
+  replacement: https://raw.githubusercontent.com/vaccineontology/VO/master/CVO/cvo.owl
+
 - exact: /2009-11-30/vo.owl
   replacement: http://www.violinet.org/vo/2009-11-30/VO.owl
 

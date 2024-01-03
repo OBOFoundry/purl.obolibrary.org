@@ -7,7 +7,6 @@ base_redirect: https://github.com/vaccineontology/VO
 
 products:
 - vo.owl: https://raw.githubusercontent.com/vaccineontology/VO/master/vo.owl
-- cvo.owl: https://raw.githubusercontent.com/vaccineontology/VO/master/CVO/cvo.owl
 
 term_browser: ontobee
 example_terms:

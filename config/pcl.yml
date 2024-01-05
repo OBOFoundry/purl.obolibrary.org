@@ -4,9 +4,8 @@ idspace: PCL
 base_url: /obo/pcl
 
 products:
-- pcl.owl: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/master/pcl.owl
-- pcl.obo: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/master/pcl.obo
-- pcl.json: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/master/pcl.json
+- pcl.owl: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/master/pcl-base.owl
+- pcl.obo: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/master/pcl-base.obo
 
 term_browser: ols
 example_terms:
@@ -14,11 +13,12 @@ example_terms:
 
 entries:
 
+# purl.obolibrary.org/obo/pcl/releases/2024-01-05/pcl-base.obo
 - prefix: /releases/
   replacement: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/v
   tests:
-    - from: /releases/2022-01-24/
-      to: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/v2022-01-24/
+    - from: /releases/2024-01-05/
+      to: https://raw.githubusercontent.com/obophenotype/provisional_cell_ontology/v2024-01-05/
 
 - prefix: /tracker/
   replacement: https://github.com/obophenotype/provisional_cell_ontology/issues

@@ -6,8 +6,6 @@ base_url: /obo/pcl
 products:
 - pcl.owl: https://github.com/obophenotype/provisional_cell_ontology/releases/latest/download/pcl.owl
 - pcl.obo: https://github.com/obophenotype/provisional_cell_ontology/releases/latest/download/pcl.obo
-- pcl-base.owl: https://github.com/obophenotype/provisional_cell_ontology/releases/latest/download/pcl-base.owl
-- pcl-base.obo: https://github.com/obophenotype/provisional_cell_ontology/releases/latest/download/pcl-base.obo
 
 term_browser: ols
 example_terms:

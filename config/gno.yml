@@ -54,3 +54,42 @@ entries:
     
   - exact: /2021-07-28/gno.owl
     replacement: https://github.com/glygen-glycan-data/GNOme/releases/download/V1.8.0/GNOme.owl
+
+  - exact: /2021-08-13/gno.owl
+    replacement: https://github.com/glygen-glycan-data/GNOme/releases/download/V1.9.0/GNOme.owl
+
+  - exact: /2022-02-23/gno.owl
+    replacement: https://github.com/glygen-glycan-data/GNOme/releases/download/V1.10.0/GNOme.owl
+
+  - exact: /2022-12-20/gno.owl
+    replacement: https://github.com/glygen-glycan-data/GNOme/releases/download/V1.11.0/GNOme.owl
+
+  - exact: /2023-05-08/gno.owl
+    replacement: https://github.com/glygen-glycan-data/GNOme/releases/download/v1.11.1/GNOme.owl
+
+  - exact: /2023-05-08/gno.owl
+    replacement: https://github.com/glygen-glycan-data/GNOme/releases/download/v1.11.1/GNOme.owl
+
+  - exact: /2023-07-28/gno.owl
+    replacement: https://github.com/glygen-glycan-data/GNOme/releases/download/V1.12.0/GNOme.owl
+
+  - exact: /2023-07-28/gno.owl
+    replacement: https://github.com/glygen-glycan-data/GNOme/releases/download/V1.12.0/GNOme.owl
+
+  - exact: /2023-08-08/gno.owl
+    replacement: https://github.com/glygen-glycan-data/GNOme/releases/download/V1.12.1/GNOme.owl
+
+  - exact: /2023-08-09/gno.owl
+    replacement: https://github.com/glygen-glycan-data/GNOme/releases/download/V1.12.2/GNOme.owl
+
+  - exact: /2023-11-02/gno.owl
+    replacement: https://github.com/glygen-glycan-data/GNOme/releases/download/V1.13.0/GNOme.owl
+
+  - exact: /2023-11-09/gno.owl
+    replacement: https://github.com/glygen-glycan-data/GNOme/releases/download/V1.13.1/GNOme.owl
+
+  - exact: /2023-12-09/gno.owl
+    replacement: https://github.com/glygen-glycan-data/GNOme/releases/download/V1.13.2/GNOme.owl
+
+  - exact: /2023-12-11/gno.owl
+    replacement: https://github.com/glygen-glycan-data/GNOme/releases/download/V1.13.3/GNOme.owl

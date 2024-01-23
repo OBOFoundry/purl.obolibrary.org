@@ -2,6 +2,7 @@
 
 idspace: GNO
 base_url: /obo/gno
+base_redirect: https://gnome.glyomics.org/
 
 products:
 - gno.owl: https://github.com/glygen-glycan-data/GNOme/releases/latest/download/GNOme.owl

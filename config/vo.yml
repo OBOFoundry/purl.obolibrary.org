@@ -44,3 +44,8 @@ entries:
 - prefix: /page/
   replacement: http://www.ontobee.org/browser/about.php?o=VO&iri=http://purl.obolibrary.org/obo/
 
+### Dated VO Releases
+
+- exact: /2024-01-03/vo.owl
+  replacement: https://raw.githubusercontent.com/vaccineontology/VO/v2024-01-03/vo.owl
+

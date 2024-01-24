@@ -28,3 +28,8 @@ entries:
     
 - prefix: /
   replacement: https://raw.githubusercontent.com/Occupation-Ontology/OccO/master/
+
+### Dated OCCO Releases
+
+- exact: /2023-12-09/occo.owl
+  replacement: https://raw.githubusercontent.com/Occupation-Ontology/OccO/v2023-12-12/occo.owl

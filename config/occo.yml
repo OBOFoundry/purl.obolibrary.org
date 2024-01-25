@@ -13,18 +13,24 @@ example_terms:
 - OCCO_00000001
 
 entries:
-
-- exact: /tracker
-  replacement: https://github.com/Occupation-Ontology/OccO/issues
+### Dated OCCO Releases
+- exact: /2023-12-09/occo.owl
+  replacement: https://raw.githubusercontent.com/Occupation-Ontology/OccO/v2023-12-12/occo.owl
 
 - prefix: /releases/
   replacement: https://raw.githubusercontent.com/Occupation-Ontology/OccO/v
+
+### Documentation Pages
+- exact: /tracker
+  replacement: https://github.com/Occupation-Ontology/OccO/issues
 
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=OCCO&iri=http://purl.obolibrary.org/obo/
   tests:
   - from: /about/OCCO_00000001
     to: http://www.ontobee.org/browser/rdf.php?o=OCCO&iri=http://purl.obolibrary.org/obo/OCCO_00000001
-    
+
+# WARN: This entry matches everything under /obo/occo/*! It must be last on the list.
 - prefix: /
   replacement: https://raw.githubusercontent.com/Occupation-Ontology/OccO/master/
+

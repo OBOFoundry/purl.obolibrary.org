@@ -23,15 +23,6 @@ entries:
 - exact: /cvo.owl
   replacement: https://raw.githubusercontent.com/vaccineontology/VO/master/CVO/cvo.owl
 
-- exact: /2009-11-30/vo.owl
-  replacement: http://www.violinet.org/vo/2009-11-30/VO.owl
-
-- exact: /
-  replacement: http://www.violinet.org/vaccineontology/
-
-- prefix: /2009-11-30/external/
-  replacement: http://www.violinet.org/vo/2009-11-30/external/
-
 - prefix: /external/
   replacement: https://raw.githubusercontent.com/vaccineontology/VO/master/src/
 
@@ -44,8 +35,12 @@ entries:
 - prefix: /page/
   replacement: http://www.ontobee.org/browser/about.php?o=VO&iri=http://purl.obolibrary.org/obo/
 
-### Dated VO Releases
+- exact: /
+  replacement: http://www.violinet.org/vaccineontology/
 
+### Dated VO Releases
 - exact: /2024-01-03/vo.owl
   replacement: https://raw.githubusercontent.com/vaccineontology/VO/v2024-01-03/vo.owl
+
+
 

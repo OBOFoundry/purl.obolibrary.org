@@ -48,6 +48,14 @@ entries:
 - exact: /experimental/ceph.owl
   replacement: http://purl.obolibrary.org/obo/ceph.owl
 
+# The Uberon bridge to the "NIF Gross Anatomy" is deprecated but is still
+# imported by some old ontologies.
+- exact: /bridge/uberon-bridge-to-nifstd.obo
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2023-10-27/src/ontology/bridge/uberon-bridge-to-nifstd.obo
+
+- exact: /bridge/uberon-bridge-to-nifstd.owl
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2023-10-27/src/ontology/bridge/uberon-bridge-to-nifstd.owl
+
 - prefix: /subsets/
   replacement: https://github.com/obophenotype/uberon/releases/latest/download/
 

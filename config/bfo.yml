@@ -171,7 +171,7 @@ entries:
 - exact: /2020/bfo-core.ttl
   replacement: https://raw.githubusercontent.com/BFO-ontology/BFO-2020/release-2024-01-29/src/owl/bfo-core.ttl
 
-  - prefix: /2010-05-25/
+- prefix: /2010-05-25/
   replacement: https://raw.githubusercontent.com/BFO-ontology/BFO/releases/owl-ruttenberg-2010-05-25/  
 
 - prefix: /axiom/

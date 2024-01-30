@@ -151,14 +151,26 @@ entries:
   replacement: https://raw.githubusercontent.com/BFO-ontology/BFO/v2019-08-26/bfo_classes_only.obo
 
 - exact: /iso/2020/bfo.owl
-  replacement: https://raw.githubusercontent.com/BFO-ontology/BFO-2020/master/21838-2/owl/bfo-2020.owl
+  replacement: https://raw.githubusercontent.com/BFO-ontology/BFO-2020/release-2024-01-29/src/owl/profiles/temporal%20extensions/temporalized%20relations/owl/bfo-temporalized-relations.owl
   
 - exact: /2020/bfo.owl
-  replacement: https://raw.githubusercontent.com/BFO-ontology/BFO-2020/master/21838-2/owl/bfo-2020.owl
+  replacement: https://raw.githubusercontent.com/BFO-ontology/BFO-2020/release-2024-01-29/src/owl/profiles/temporal%20extensions/temporalized%20relations/owl/bfo-temporalized-relations.owl
+
+- exact: /2020/bfo.ttl
+  replacement: https://raw.githubusercontent.com/BFO-ontology/BFO-2020/release-2024-01-29/src/owl/profiles/temporal%20extensions/temporalized%20relations/owl/bfo-temporalized-relations.ttl
 
 - exact: /2020/notime/bfo.owl
-  replacement: https://raw.githubusercontent.com/BFO-ontology/BFO-2020/master/21838-2/owl/bfo-2020-without-some-all-times.owl
+  replacement: https://raw.githubusercontent.com/BFO-ontology/BFO-2020/release-2024-01-29/src/owl/profiles/atemporal/bfo-2020-without-some-all-times.owl
+
+- exact: /2020/notime/bfo.ttl
+  replacement: https://raw.githubusercontent.com/BFO-ontology/BFO-2020/release-2024-01-29/src/owl/profiles/atemporal/bfo-2020-without-some-all-times.ttl
   
+- exact: /2020/bfo-core.owl
+  replacement: https://raw.githubusercontent.com/BFO-ontology/BFO-2020/release-2024-01-29/src/owl/bfo-core.owl
+  
+- exact: /2020/bfo-core.ttl
+  replacement: https://raw.githubusercontent.com/BFO-ontology/BFO-2020/release-2024-01-29/src/owl/bfo-core.ttl
+
 - prefix: /2010-05-25/
   replacement: https://raw.githubusercontent.com/BFO-ontology/BFO/releases/owl-ruttenberg-2010-05-25/  
 

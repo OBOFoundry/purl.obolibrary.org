@@ -1,0 +1,61 @@
+# PURL configuration for http://purl.obolibrary.org/obo/pcl 
+
+idspace: PCL
+base_url: /obo/pcl
+
+products:
+- pcl.owl: https://github.com/obophenotype/provisional_cell_ontology/releases/latest/download/pcl.owl
+- pcl.obo: https://github.com/obophenotype/provisional_cell_ontology/releases/latest/download/pcl.obo
+
+term_browser: ols
+example_terms:
+- PCL_0011124
+
+entries:
+
+- exact: /pcl-base.obo
+  replacement: https://github.com/obophenotype/provisional_cell_ontology/releases/latest/download/pcl-base.obo
+
+- exact: /pcl-base.owl
+  replacement: https://github.com/obophenotype/provisional_cell_ontology/releases/latest/download/pcl-base.owl
+
+- exact: /pcl-simple.owl
+  replacement: https://github.com/obophenotype/provisional_cell_ontology/releases/latest/download/pcl-simple.owl
+
+- exact: /pcl-simple.obo
+  replacement: https://github.com/obophenotype/provisional_cell_ontology/releases/latest/download/pcl-simple.obo
+
+- exact: /pcl-cl-full.owl
+  replacement: https://github.com/obophenotype/provisional_cell_ontology/releases/latest/download/pcl-cl-full.owl
+
+- exact: /pcl-cl-full.obo
+  replacement: https://github.com/obophenotype/provisional_cell_ontology/releases/latest/download/pcl-cl-full.obo
+
+# http://purl.obolibrary.org/obo/pcl/releases/2024-01-05/pcl-base.obo
+- prefix: /releases/
+  replacement: https://github.com/obophenotype/provisional_cell_ontology/releases/download/v
+  tests:
+  - from: /releases/2024-01-05/pcl-base.obo
+    to: https://github.com/obophenotype/provisional_cell_ontology/releases/download/v2024-01-05/pcl-base.obo
+
+- prefix: /tracker/
+  replacement: https://github.com/obophenotype/provisional_cell_ontology/issues
+
+- prefix: /about/
+  replacement: https://github.com/obophenotype/provisional_cell_ontology#readme
+
+- exact: /bds/kg
+  replacement: https://knowledge-graph-ebi.brain.allentech.org/browser/
+  
+- prefix: /bds/kg/
+  replacement: https://knowledge-graph-ebi.brain.allentech.org/browser/
+
+- exact: /bds/api
+  replacement: https://bkp-cts-prod.aibs-bmp-prod.net/bds/
+
+- prefix: /bds/api/
+  replacement: https://bkp-cts-prod.aibs-bmp-prod.net/bds/
+  
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://github.com/obophenotype/provisional_cell_ontology/releases/latest/download/

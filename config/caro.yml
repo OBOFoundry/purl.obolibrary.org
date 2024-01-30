@@ -4,7 +4,9 @@ idspace: CARO
 base_url: /obo/caro
 
 products:
-- caro.owl: https://raw.githubusercontent.com/obophenotype/caro/master/src/ontology/caro.owl
+- caro.owl: https://raw.githubusercontent.com/obophenotype/caro/master/caro.owl
+- caro.obo: https://raw.githubusercontent.com/obophenotype/caro/master/caro.obo
+- caro.json: https://raw.githubusercontent.com/obophenotype/caro/master/caro.json
 
 term_browser: ontobee
 example_terms:
@@ -12,5 +14,5 @@ example_terms:
 
 entries:
 - prefix: /
-  replacement: https://raw.githubusercontent.com/obophenotype/caro/master/src/ontology/
+  replacement: https://raw.githubusercontent.com/obophenotype/caro/master/
 

@@ -6,15 +6,33 @@ base_url: /obo/hp
 base_redirect: https://github.com/obophenotype/human-phenotype-ontology
 
 products:
-- hp.owl: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/hp.owl
-- hp.obo: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/hp.obo
-- hp.json: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/hp.json
+- hp.owl: https://github.com/obophenotype/human-phenotype-ontology/releases/latest/download/hp.owl
+- hp.obo: https://github.com/obophenotype/human-phenotype-ontology/releases/latest/download/hp.obo
+- hp.json: https://github.com/obophenotype/human-phenotype-ontology/releases/latest/download/hp.json
 
 term_browser: custom
 
 entries:
+- prefix: /releases/hpoa/
+  replacement: https://github.com/obophenotype/human-phenotype-ontology/releases/download/v
+  tests:
+  - from: /releases/hpoa/2022-02-14/genes_to_phenotype.txt
+    to: https://github.com/obophenotype/human-phenotype-ontology/releases/download/v2022-02-14/genes_to_phenotype.txt
+
+- prefix: /imports/
+  replacement: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src/ontology/imports/
+
+- prefix: /components/
+  replacement: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src/ontology/components/
+
+- prefix: /translations/
+  replacement: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src/ontology/translations/
+  tests:
+  - from: /translations/hp-cs.babelon.tsv
+    to: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src/ontology/translations/hp-cs.babelon.tsv
+
 - prefix: /releases/
-  replacement: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/v
+  replacement: https://github.com/obophenotype/human-phenotype-ontology/releases/download/v
 
 - prefix: /tracker
   replacement: https://github.com/obophenotype/human-phenotype-ontology/issues
@@ -25,23 +43,15 @@ entries:
   - from: /about/HP_0000001
     to: http://www.ontobee.org/browser/rdf.php?o=HP&iri=http://purl.obolibrary.org/obo/HP_0000001
 
+
+
 # HPOA files
-- exact: /hpoa/phenotype_annotation.tab
-  replacement: https://ci.monarchinitiative.org/view/hpo/job/hpo.annotations/lastSuccessfulBuild/artifact/rare-diseases/misc/phenotype_annotation.tab
-
-- exact: /hpoa/phenotype_annotation_negated.tab
-  replacement: https://ci.monarchinitiative.org/view/hpo/job/hpo.annotations/lastSuccessfulBuild/artifact/rare-diseases/misc/phenotype_annotation_negated.tab
-
-- exact: /hpoa/genes_to_phenotype.txt
-  replacement: https://ci.monarchinitiative.org/view/hpo/job/hpo.annotations/lastSuccessfulBuild/artifact/rare-diseases/util/annotation/genes_to_phenotype.txt
-
-- exact: /hpoa/phenotype_to_genes.txt
-  replacement: https://ci.monarchinitiative.org/view/hpo/job/hpo.annotations/lastSuccessfulBuild/artifact/rare-diseases/util/annotation/phenotype_to_genes.txt
-
-- exact: /hpoa/phenotype.hpoa
-  replacement: https://ci.monarchinitiative.org/view/hpo/job/hpo.annotations.current/lastSuccessfulBuild/artifact/rare-diseases/current/phenotype.hpoa
-
+- prefix: /hpoa/
+  replacement: https://github.com/obophenotype/human-phenotype-ontology/releases/latest/download/
+  tests:
+  - from: /hpoa/genes_to_phenotype.txt
+    to: https://github.com/obophenotype/human-phenotype-ontology/releases/latest/download/genes_to_phenotype.txt
 
 # default
 - prefix: /
-  replacement: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/
+  replacement: https://github.com/obophenotype/human-phenotype-ontology/releases/latest/download/

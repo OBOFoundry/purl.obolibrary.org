@@ -176,8 +176,7 @@ def process_product(i, product):
 
 
 ontobee = 'http://www.ontobee.org/browser/rdf.php?o=%s&iri=http://purl.obolibrary.org/obo/'
-ols = 'https://www.ebi.ac.uk/ols/ontologies/%s/terms?iri=http%%3A%%2F%%2Fpurl.obolibrary.org%%2Fobo%%2F'
-
+ols = 'https://www.ebi.ac.uk/ols4/ontologies/%s/entities/http%%253A%%252F%%252Fpurl.obolibrary.org%%252Fobo%%252F'
 
 def process_ontobee(idspace, i, example_term):
   """Given an ontology IDSPACE, an index, and an example term ID,

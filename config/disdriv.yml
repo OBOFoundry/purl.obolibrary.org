@@ -1,0 +1,26 @@
+# PURL configuration for http://purl.obolibrary.org/obo/disdriv
+
+idspace: DISDRIV
+base_url: /obo/disdriv
+
+products:
+- disdriv.owl: https://raw.githubusercontent.com/DiseaseOntology/DiseaseDriversOntology/main/src/ontology/disdriv.owl
+
+term_browser: ontobee
+example_terms:
+- DISDRIV_0000002
+
+entries:
+
+- regex: ^/obo/disdriv/releases/([^\s/]+)/(\S+)$
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/DiseaseDriversOntology/v$1/src/ontology/$2
+  tests:
+  - from: /releases/2023-12-15/disdriv.owl
+    to: https://raw.githubusercontent.com/DiseaseOntology/DiseaseDriversOntology/v2023-12-15/src/ontology/disdriv.owl
+
+# generic fall-back (rules processed in order = keep at bottom)
+- prefix: /
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/DiseaseDriversOntology/main/src/ontology/
+  tests:
+  - from: /disdriv.owl
+    to: https://raw.githubusercontent.com/DiseaseOntology/DiseaseDriversOntology/main/src/ontology/disdriv.owl

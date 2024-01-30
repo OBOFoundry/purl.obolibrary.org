@@ -4,13 +4,19 @@ idspace: OPL
 base_url: /obo/opl
 
 products:
-- opl.owl: https://raw.githubusercontent.com/OPL-ontology/OPL/v2021-01-28/opl.owl
+- opl.owl: https://raw.githubusercontent.com/OPL-ontology/OPL/v2023-08-28/opl.owl
 
 term_browser: ontobee
 example_terms:
 - OPL_0000232
 
 entries:
+- exact: /2023-08-28/opl.owl
+  replacement: https://raw.githubusercontent.com/OPL-ontology/OPL/v2023-08-28/opl.owl
+  
+- exact: /2023-06-23/opl.owl
+  replacement: https://raw.githubusercontent.com/OPL-ontology/OPL/v2023-06-23/opl.owl
+  
 - exact: /2021-01-28/opl.owl
   replacement: https://raw.githubusercontent.com/OPL-ontology/OPL/v2021-01-28/opl.owl
 

@@ -3,10 +3,10 @@
 idspace: VO
 base_url: /obo/vo
 
-base_redirect: http://www.violinet.org/vaccineontology
+base_redirect: https://github.com/vaccineontology/VO
 
 products:
-- vo.owl: https://raw.githubusercontent.com/vaccineontology/VO/master/src/VO_merged.owl
+- vo.owl: https://raw.githubusercontent.com/vaccineontology/VO/master/vo.owl
 
 term_browser: ontobee
 example_terms:
@@ -14,14 +14,14 @@ example_terms:
 - VO_0000002
 
 entries:
-- exact: /2009-11-30/vo.owl
-  replacement: http://www.violinet.org/vo/2009-11-30/VO.owl
+- exact: /tracker
+  replacement: https://github.com/vaccineontology/VO/issues
 
-- exact: /
-  replacement: http://www.violinet.org/vaccineontology/
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/vaccineontology/VO/v
 
-- prefix: /2009-11-30/external/
-  replacement: http://www.violinet.org/vo/2009-11-30/external/
+- exact: /cvo.owl
+  replacement: https://raw.githubusercontent.com/vaccineontology/VO/master/CVO/cvo.owl
 
 - prefix: /external/
   replacement: https://raw.githubusercontent.com/vaccineontology/VO/master/src/
@@ -34,4 +34,13 @@ entries:
 
 - prefix: /page/
   replacement: http://www.ontobee.org/browser/about.php?o=VO&iri=http://purl.obolibrary.org/obo/
+
+- exact: /
+  replacement: http://www.violinet.org/vaccineontology/
+
+### Dated VO Releases
+- exact: /2024-01-03/vo.owl
+  replacement: https://raw.githubusercontent.com/vaccineontology/VO/v2024-01-03/vo.owl
+
+
 

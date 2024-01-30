@@ -1,0 +1,10 @@
+owner:      OBOFoundry
+repo:       purl.obolibrary.org
+repo_url:   "https://github.com/{{ owner }}/{{ repo }}.git"
+branch:     master
+image:      "{{ repo }}"
+tag:        latest
+creds:      ~/.s3cfg
+stage_dir:  /home/ubuntu/
+creds_dest: "{{ stage_dir }}/.s3cfg"
+repo_dest:  "{{ stage_dir }}/{{ repo }}"

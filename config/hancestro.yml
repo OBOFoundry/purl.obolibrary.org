@@ -4,7 +4,7 @@ idspace: HANCESTRO
 base_url: /obo/hancestro
 
 products:
-- hancestro.owl: https://raw.githubusercontent.com/EBISPOT/ancestro/master/hancestro_inferred.owl
+- hancestro.owl: https://raw.githubusercontent.com/EBISPOT/hancestro/main/hancestro.owl
 
 term_browser: ontobee
 example_terms:
@@ -12,8 +12,16 @@ example_terms:
 
 entries:
 - exact: /hancestro.owl
-  replacement: https://raw.githubusercontent.com/EBISPOT/ancestro/master/hancestro.owl
+  replacement: https://raw.githubusercontent.com/EBISPOT/hancestro/main/hancestro.owl
+- exact: /hancestro-base.owl
+  replacement: https://raw.githubusercontent.com/EBISPOT/hancestro/main/hancestro-base.owl
+- exact: /hancestro-full.owl
+  replacement: https://raw.githubusercontent.com/EBISPOT/hancestro/main/hancestro-full.owl
 - exact: /hancestro_inferred.owl
-  replacement: https://raw.githubusercontent.com/EBISPOT/ancestro/master/hancestro_inferred.owl
+  replacement: https://raw.githubusercontent.com/EBISPOT/hancestro/main/hancestro.owl
 - exact: /hancestro_bfo.owl
-  replacement: https://raw.githubusercontent.com/EBISPOT/ancestro/master/hancestro_bfo.owl
+  replacement: https://raw.githubusercontent.com/EBISPOT/hancestro/main/hancestro-full.owl
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/EBISPOT/hancestro/v
+  
+  

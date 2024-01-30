@@ -4,8 +4,8 @@ idspace: HsapDv
 base_url: /obo/hsapdv
 
 products:
-- hsapdv.owl: http://ontologies.berkeleybop.org/hsapdv.owl
-- hsapdv.obo: http://ontologies.berkeleybop.org/hsapdv.obo
+- hsapdv.owl: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/hsapdv/hsapdv.owl
+- hsapdv.obo: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/hsapdv/hsapdv.obo
 
 term_browser: ontobee
 example_terms:

@@ -4,21 +4,26 @@ idspace: OMO
 base_url: /obo/omo
 
 products:
-- omo.owl: https://raw.githubusercontent.com/information-artifact-ontology/ontology-metadata/v2020-06-08/omo.owl
+- omo.owl: https://raw.githubusercontent.com/information-artifact-ontology/ontology-metadata/master/omo.owl
 
 term_browser: ontobee
 
 entries:
 - exact: /omo.owl
-  replacement: https://raw.githubusercontent.com/information-artifact-ontology/ontology-metadata/v2020-06-08/omo.owl
-
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/ontology-metadata/master/omo.owl
+  
 # version IRIs
-- exact: /2020-05-08/omo.owl
-  replacement: https://raw.githubusercontent.com/information-artifact-ontology/ontology-metadata/v2020-05-08/omo.owl
-
 - exact: /2020-06-08/omo.owl
   replacement: https://raw.githubusercontent.com/information-artifact-ontology/ontology-metadata/v2020-06-08/omo.owl
+
+- exact: /2020-05-08/omo.owl
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/ontology-metadata/v2020-05-08/omo.owl
 
 # development version
 - exact: /omo-edit.owl
   replacement: https://raw.githubusercontent.com/information-artifact-ontology/ontology-metadata/master/src/ontology/omo-edit.owl
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/ontology-metadata/v
+- prefix: /
+  replacement: https://raw.githubusercontent.com/information-artifact-ontology/ontology-metadata/master/

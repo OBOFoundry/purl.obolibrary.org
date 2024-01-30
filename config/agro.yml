@@ -19,7 +19,7 @@ entries:
   replacement: http://purl.obolibrary.org/obo/agro/mappings/spire-mapping.tsv
 
 - prefix: /releases/
-  replacement: https://raw.githubusercontent.com/AgriculturalSemantics/agro/master/v
+  replacement: https://raw.githubusercontent.com/AgriculturalSemantics/agro/v
 
 - prefix: /mappings/
   replacement: https://raw.githubusercontent.com/AgriculturalSemantics/agro/master/mappings/

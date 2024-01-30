@@ -6,6 +6,7 @@ base_url: /obo/bspo
 products:
 - bspo.owl: https://raw.githubusercontent.com/obophenotype/biological-spatial-ontology/master/bspo.owl
 - bspo.obo: https://raw.githubusercontent.com/obophenotype/biological-spatial-ontology/master/bspo.obo
+- bspo.json: https://raw.githubusercontent.com/obophenotype/biological-spatial-ontology/master/bspo.json
 
 term_browser: ontobee
 example_terms:
@@ -14,3 +15,15 @@ example_terms:
 entries:
 - prefix: /releases/
   replacement: https://raw.githubusercontent.com/obophenotype/biological-spatial-ontology/v
+
+- prefix: /tracker
+  replacement: https://github.com/obophenotype/biological-spatial-ontology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/browser/rdf.php?o=BSPO&iri=http://purl.obolibrary.org/obo/
+  tests:
+  - from: /about/BSPO_0000001
+    to: http://www.ontobee.org/browser/rdf.php?o=BSPO&iri=http://purl.obolibrary.org/obo/BSPO_0000001
+
+- prefix: /
+  replacement: https://raw.githubusercontent.com/obophenotype/biological-spatial-ontology/master/

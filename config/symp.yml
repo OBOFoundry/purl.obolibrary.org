@@ -3,12 +3,30 @@
 idspace: SYMP
 base_url: /obo/symp
 
-base_redirect: https://github.com/DiseaseOntology/SymptomOntology/blob/main/
+base_redirect: https://github.com/DiseaseOntology/SymptomOntology
 
 products:
-- symp.owl: https://raw.githubusercontent.com/DiseaseOntology/SymptomOntology/main/symp.owl
-- symp.obo: https://raw.githubusercontent.com/DiseaseOntology/SymptomOntology/main/symp.obo
+- symp.owl: https://raw.githubusercontent.com/DiseaseOntology/SymptomOntology/main/src/ontology/symp.owl
+- symp.obo: https://raw.githubusercontent.com/DiseaseOntology/SymptomOntology/main/src/ontology/symp.obo
+- symp.json: https://raw.githubusercontent.com/DiseaseOntology/SymptomOntology/main/src/ontology/symp.json
 
-term_browser: ontobee
+term_browser: ols
 example_terms:
 - SYMP_0000000
+
+entries:
+
+- regex: ^/obo/symp/releases/([^\s/]+)/(\S+)$
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/SymptomOntology/v$1/src/ontology/$2
+  tests:
+  - from: /releases/2022-05-26/symp.owl
+    to: https://raw.githubusercontent.com/DiseaseOntology/SymptomOntology/v2022-05-26/src/ontology/symp.owl
+  - from: /releases/2022-05-26/symp.obo
+    to: https://raw.githubusercontent.com/DiseaseOntology/SymptomOntology/v2022-05-26/src/ontology/symp.obo
+
+# generic fall-back (rules processed in order = keep at bottom)
+- prefix: /
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/SymptomOntology/main/src/ontology/
+  tests:
+  - from: /symp.json
+    to: https://raw.githubusercontent.com/DiseaseOntology/SymptomOntology/main/src/ontology/symp.json

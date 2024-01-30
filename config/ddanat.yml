@@ -4,8 +4,8 @@ idspace: DDANAT
 base_url: /obo/ddanat
 
 products:
-- ddanat.owl: http://ontologies.berkeleybop.org/ddanat.owl
-- ddanat.obo: http://ontologies.berkeleybop.org/ddanat.obo
+- ddanat.owl: https://raw.githubusercontent.com/dictyBase/migration-data/master/ontologies/dicty_anatomy.owl
+- ddanat.obo: https://raw.githubusercontent.com/dictyBase/migration-data/master/ontologies/dicty_anatomy.obo
 
 term_browser: ontobee
 example_terms:

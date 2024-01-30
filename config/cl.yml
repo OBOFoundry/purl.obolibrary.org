@@ -4,12 +4,12 @@ idspace: CL
 base_url: /obo/cl
 
 products:
-- cl.owl: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/cl.owl
-- cl.obo: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/cl.obo
-- cl-basic.owl: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/cl-basic.owl
-- cl-basic.obo: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/cl-basic.obo
+- cl.owl: https://github.com/obophenotype/cell-ontology/releases/latest/download/cl.owl
+- cl.obo: https://github.com/obophenotype/cell-ontology/releases/latest/download/cl.obo
+- cl-basic.owl: https://github.com/obophenotype/cell-ontology/releases/latest/download/cl-basic.owl
+- cl-basic.obo: https://github.com/obophenotype/cell-ontology/releases/latest/download/cl-basic.obo
 
-term_browser: ontobee
+term_browser: ols
 example_terms:
 - CL_0000000
 
@@ -36,10 +36,28 @@ entries:
   replacement: https://github.com/obophenotype/cell-ontology/issues
 
 - exact: /cl-basic.obo
-  replacement: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/cl-basic.obo
+  replacement: https://github.com/obophenotype/cell-ontology/releases/latest/download/cl-basic.obo
 
 - exact: /cl-basic.owl
-  replacement: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/cl-basic.owl
+  replacement: https://github.com/obophenotype/cell-ontology/releases/latest/download/cl-basic.owl
+
+- exact: /cl-simple.owl
+  replacement: https://github.com/obophenotype/cell-ontology/releases/latest/download/cl-simple.owl
+
+- exact: /cl-simple.obo
+  replacement: https://github.com/obophenotype/cell-ontology/releases/latest/download/cl-simple.obo
+
+- exact: /cl-base.owl
+  replacement: https://github.com/obophenotype/cell-ontology/releases/latest/download/cl-base.owl
+
+- exact: /cl-base.obo
+  replacement: https://github.com/obophenotype/cell-ontology/releases/latest/download/cl-base.obo
+
+- exact: /cl-plus.owl
+  replacement: https://github.com/obophenotype/cell-ontology/releases/latest/download/cl-plus.owl
+
+- exact: /cl-plus.obo 
+  replacement: https://github.com/obophenotype/cell-ontology/releases/latest/download/cl-plus.obo
 
 - prefix: /analysis/cl-immgen/
   replacement: https://cell-ontology.googlecode.com/svn/trunk/analysis/cl-immgen/
@@ -50,8 +68,35 @@ entries:
 - prefix: /2011-12-13/
   replacement: https://cell-ontology.googlecode.com/svn/releases/2011-12-13/
 
+- prefix: /releases/201
+  replacement: https://raw.githubusercontent.com/obophenotype/cell-ontology/v201
+  tests:
+  - from: /releases/2015-08-08/cl.obo
+    to: https://raw.githubusercontent.com/obophenotype/cell-ontology/v2015-08-08/cl.obo
+
+- prefix: /releases/2020
+  replacement: https://raw.githubusercontent.com/obophenotype/cell-ontology/v2020
+  tests:
+  - from: /releases/2020-01-06/cl.obo
+    to: https://raw.githubusercontent.com/obophenotype/cell-ontology/v2020-01-06/cl.obo
+
+- prefix: /releases/2021
+  replacement: https://raw.githubusercontent.com/obophenotype/cell-ontology/v2021
+  tests:
+  - from: /releases/2021-01-22/cl.obo
+    to: https://raw.githubusercontent.com/obophenotype/cell-ontology/v2021-01-22/cl.obo
+
+- prefix: /releases/2022
+  replacement: https://raw.githubusercontent.com/obophenotype/cell-ontology/v2022
+  tests:
+  - from: /releases/2022-01-05/cl.obo
+    to: https://raw.githubusercontent.com/obophenotype/cell-ontology/v2022-01-05/cl.obo
+
 - prefix: /releases/
-  replacement: https://raw.githubusercontent.com/obophenotype/cell-ontology/v
+  replacement: https://github.com/obophenotype/cell-ontology/releases/download/v
+  tests:
+  - from: /releases/2023-01-09/cl.obo
+    to: https://github.com/obophenotype/cell-ontology/releases/download/v2023-01-09/cl.obo
 
 - prefix: /tracker/
   replacement: https://code.google.com/p/cell-ontology/issues/detail?id=
@@ -60,11 +105,32 @@ entries:
   replacement: https://cell-ontology.googlecode.com/svn/trunk/src/ontology/diffs/
 
 - prefix: /about/
-  replacement: http://www.ontobee.org/browser/rdf.php?o=CL&iri=http://purl.obolibrary.org/obo/
+  replacement: https://www.ebi.ac.uk/ols/ontologies/cl/terms?iri=http://purl.obolibrary.org/obo/
   tests:
   - from: /about/CL_0000000
-    to: http://www.ontobee.org/browser/rdf.php?o=CL&iri=http://purl.obolibrary.org/obo/CL_0000000
+    to: https://www.ebi.ac.uk/ols/ontologies/cl/terms?iri=http://purl.obolibrary.org/obo/CL_0000000
+
+- regex: ^/obo/cl/bds/releases/(.*)/bds\.owl$
+  replacement: https://raw.githubusercontent.com/obophenotype/brain_data_standards_ontologies/$1/bdscratch-full.owl
+  tests:
+  - from: /bds/releases/2021-06-29/bds.owl
+    to: https://raw.githubusercontent.com/obophenotype/brain_data_standards_ontologies/2021-06-29/bdscratch-full.owl
+    
+- regex: ^/obo/cl/bds/releases/(.*)/bds-(.*)\.owl$
+  replacement: https://raw.githubusercontent.com/obophenotype/brain_data_standards_ontologies/$1/bdscratch-$2.owl
+  tests:
+  - from: /bds/releases/Current/bds-base.owl
+    to: https://raw.githubusercontent.com/obophenotype/brain_data_standards_ontologies/Current/bdscratch-base.owl
+
+- prefix: /bds/browser/
+  replacement: https://www.ebi.ac.uk/ols4/ontologies/pcl
+  
+- prefix: /bds/bds.owl
+  replacement: https://raw.githubusercontent.com/obophenotype/brain_data_standards_ontologies/Current/bdscratch-full.owl
+
+- prefix: /bds/
+  replacement: https://github.com/obophenotype/brain_data_standards_ontologies/
 
 ## generic fall-through, serve direct from github by default
 - prefix: /
-  replacement: https://raw.githubusercontent.com/obophenotype/cell-ontology/master/
+  replacement: https://github.com/obophenotype/cell-ontology/releases/latest/download/

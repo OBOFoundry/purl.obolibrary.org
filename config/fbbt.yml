@@ -6,10 +6,9 @@ base_url: /obo/fbbt
 base_redirect:  https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/wiki
 
 products:
-- fbbt.owl: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt.owl
-- fbbt.obo: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt.obo
-- FBbt_RO.owl: http://purl.obolibrary.org/obo/fbbt/2011-09-06/FBbt_helper_relations.owl
-- fbbt.json: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/fbbt.json
+- fbbt.owl: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/releases/latest/download/fbbt.owl
+- fbbt.obo: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/releases/latest/download/fbbt.obo
+- fbbt.json: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/releases/latest/download/fbbt.json
 
 
 term_browser: ontobee
@@ -18,7 +17,7 @@ example_terms:
 
 entries:
 - prefix: /releases/
-  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/v
+  replacement: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/releases/download/v
 
 - exact: /vfb/demo/owled2014_demo.owl.
   replacement: https://raw.githubusercontent.com/VirtualFlyBrain/VFB_papers/master/owl/owled2014_demo.owl
@@ -174,5 +173,5 @@ entries:
   replacement: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/wiki
 
 - prefix: /
-  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-anatomy-developmental-ontology/master/
+  replacement: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/releases/latest/download/
 

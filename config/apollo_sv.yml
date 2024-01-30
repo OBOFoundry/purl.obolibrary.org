@@ -5,7 +5,8 @@ idspace: APOLLO_SV
 base_url: /obo/apollo_sv
 
 products:
-- apollo_sv.owl: https://raw.githubusercontent.com/ApolloDev/apollo-sv/master/src/ontology/apollo-sv.owl
+- apollo_sv.owl: https://raw.githubusercontent.com/ApolloDev/apollo-sv/main/apollo_sv.owl
+- apollo_sv.obo: https://raw.githubusercontent.com/ApolloDev/apollo-sv/main/apollo_sv.obo
 
 term_browser: ontobee
 example_terms:
@@ -13,6 +14,12 @@ example_terms:
 
 entries:
 
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/ApolloDev/apollo-sv/v
+  tests:
+    - from: /releases/2023-06-02/apollo_sv-base.owl
+      to: https://raw.githubusercontent.com/ApolloDev/apollo-sv/v2023-06-02/apollo_sv-base.owl
+      
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=APOLLO_SV&iri=http://purl.obolibrary.org/obo/
   tests:
@@ -24,10 +31,14 @@ entries:
 - exact: /3.0.1/apollo_sv.owl 
   replacement: https://raw.githubusercontent.com/ApolloDev/apollo-sv/v3.0.1/src/ontology/apollo-sv.owl
 
+- exact: /v4.1.1/apollo_sv.owl
+  replacement: https://raw.githubusercontent.com/ApolloDev/apollo-sv/v4.1.1/src/ontology/apollo-sv.owl
+
+
 # Misc
 
 - exact: /dev/apollo_sv.owl 
-  replacement: https://raw.githubusercontent.com/ApolloDev/apollo-sv/master/src/ontology/apollo-sv.owl
+  replacement: https://raw.githubusercontent.com/ApolloDev/apollo-sv/main/src/ontology/apollo-sv.owl
 
 - exact: /bfo2/apollo_sv.owl 
   replacement: https://raw.githubusercontent.com/ApolloDev/apollo-sv/bfo2/src/ontology/apollo-sv.owl

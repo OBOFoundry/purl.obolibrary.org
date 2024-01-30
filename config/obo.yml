@@ -22,36 +22,31 @@ entries:
 ### Term Overrides
 
 - exact: /BFO_0000050
-  replacement: http://www.ontobee.org/browser/rdf.php?o=RO&iri=http://purl.obolibrary.org/obo/BFO_0000050
+  replacement: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/BFO_0000050
 
 - exact: /BFO_0000051
-  replacement: http://www.ontobee.org/browser/rdf.php?o=RO&iri=http://purl.obolibrary.org/obo/BFO_0000051
+  replacement: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/BFO_0000051
 
-- exact: /BFO_0000066
-  replacement: http://www.ontobee.org/browser/rdf.php?o=RO&iri=http://purl.obolibrary.org/obo/BFO_0000066
+- exact: /BFO_0000054
+  replacement: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/BFO_0000054
+
+- exact: /BFO_0000055
+  replacement: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/BFO_0000055
 
 - exact: /BFO_0000062
-  replacement: http://www.ontobee.org/browser/rdf.php?o=RO&iri=http://purl.obolibrary.org/obo/BFO_0000062
+  replacement: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/BFO_0000062
+
+- exact: /BFO_0000063
+  replacement: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/BFO_0000063
+
+- exact: /BFO_0000066
+  replacement: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/BFO_0000066
+
+- exact: /BFO_0000067
+  replacement: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/BFO_0000067
 
 
 ### Custom (non-Ontobee) term_browser redirects
-
-# Term redirects for DUO
-- regex: ^/obo/DUO_(\d+)$
-  replacement: https://www.ebi.ac.uk/ols/ontologies/duo/terms?iri=http://purl.obolibrary.org/obo/DUO_$1
-  status: see other
-  tests:
-  - from: /DUO_0000005
-    to: https://www.ebi.ac.uk/ols/ontologies/duo/terms?iri=http://purl.obolibrary.org/obo/DUO_0000005
-
-# Term redirects for MONDO
-- regex: ^/obo/MONDO_(\d+)$
-  replacement: https://www.ebi.ac.uk/ols/ontologies/mondo/terms?iri=http://purl.obolibrary.org/obo/MONDO_$1
-  status: see other
-  tests:
-  - from: /MONDO_0003847
-    to: https://www.ebi.ac.uk/ols/ontologies/mondo/terms?iri=http://purl.obolibrary.org/obo/MONDO_0003847
-    
 
 # Term redirects for CHEBI
 - regex: ^/obo/CHEBI_(\d+)$
@@ -60,6 +55,14 @@ entries:
   tests:
   - from: /CHEBI_15377
     to: http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15377
+
+# Term redirects for GO
+- regex: ^/obo/GO_(\d+)$
+  replacement: http://amigo.geneontology.org/amigo/term/GO:$1
+  status: see other
+  tests:
+  - from: /GO_0032571
+    to: http://amigo.geneontology.org/amigo/term/GO:0032571
 
 # Term redirects for HP
 - regex: ^/obo/HP_(\d+)$
@@ -101,6 +104,17 @@ entries:
     to: https://proconsortium.org/cgi-bin/entry_pro?id=PR_A0A0E0NEP8
   - from: /PR_A0A0E0NEP8-37
     to: https://proconsortium.org/cgi-bin/entry_pro?id=PR_A0A0E0NEP8-37
+    
+# Term redirects for RO
+# Some RO terms have a local ID starting with an alphanumeric character, e.g RO_HOMnnnnn
+- regex: ^/obo/RO_([A-Z]*\d+)$
+  replacement: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/RO_$1
+  status: see other
+  tests:
+  - from: /RO_0002202
+    to: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/RO_0002202
+  - from: /RO_HOM0000001
+    to: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/RO_HOM0000001
  
 # Term redirects for GNO
 # Match digits or GlyTouCan ID
@@ -120,6 +134,16 @@ entries:
   tests:
   - from: /NCIT_C2916
     to: http://www.ontobee.org/ontology/NCIT?iri=http://purl.obolibrary.org/obo/NCIT_C2916
+
+# Term redirects for DOID
+- regex: ^/obo/DOID_(\d+)$
+  replacement: https://disease-ontology.org/?id=DOID:$1
+  status: see other
+  tests:
+  - from: /DOID_4
+    to: https://disease-ontology.org/?id=DOID:4
+  - from: /DOID_0014667
+    to: https://disease-ontology.org/?id=DOID:0014667
 
 ### OBO Format Specification
 - exact: /oboformat/

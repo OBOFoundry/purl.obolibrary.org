@@ -4,9 +4,29 @@ idspace: MS
 base_url: /obo/ms
 
 products:
-- ms.owl: http://ontologies.berkeleybop.org/ms.owl
-- ms.obo: http://ontologies.berkeleybop.org/ms.obo
+- ms.owl: https://github.com/HUPO-PSI/psi-ms-CV/releases/latest/download/psi-ms.owl
+- ms.obo: https://github.com/HUPO-PSI/psi-ms-CV/releases/latest/download/psi-ms.obo
 
 term_browser: ontobee
+
 example_terms:
 - MS_0000000
+
+entries:
+- prefix: /releases/
+  replacement: https://github.com/HUPO-PSI/psi-ms-CV/releases/download/v
+  tests:  
+    - from: /releases/4.1.86/psi-ms.owl
+      to: https://github.com/HUPO-PSI/psi-ms-CV/releases/download/v4.1.86/psi-ms.owl
+    - from: /releases/4.1.86/psi-ms.obo
+      to: https://github.com/HUPO-PSI/psi-ms-CV/releases/download/v4.1.86/psi-ms.obo
+
+- exact: /tracker
+  replacement: https://github.com/HUPO-PSI/psi-ms-CV/issues
+
+- prefix: /about/
+  replacement: https://psidev.info/groups/controlled-vocabularies
+
+- prefix: /
+  replacement: https://raw.githubusercontent.com/HUPO-PSI/psi-ms-CV/master/
+

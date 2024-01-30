@@ -6,9 +6,9 @@ base_url: /obo/fbdv
 base_redirect: https://github.com/FlyBase/drosophila-anatomy-developmental-ontology/wiki
 
 products:
-- fbdv.owl: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/fbdv.owl
-- fbdv.obo: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/fbdv.obo
-- fbdv.json: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/fbdv.json
+- fbdv.owl: https://github.com/FlyBase/drosophila-developmental-ontology/releases/latest/download/fbdv.owl
+- fbdv.obo: https://github.com/FlyBase/drosophila-developmental-ontology/releases/latest/download/fbdv.obo
+- fbdv.json: https://github.com/FlyBase/drosophila-developmental-ontology/releases/latest/download/fbdv.json
 
 term_browser: ontobee
 example_terms:
@@ -16,7 +16,7 @@ example_terms:
 
 entries:
 - prefix: /releases/
-  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/v
+  replacement: https://github.com/FlyBase/drosophila-developmental-ontology/releases/download/v
 
 - exact: /tracker
   replacement: https://github.com/FlyBase/drosophila-developmental-ontology/issues
@@ -28,5 +28,5 @@ entries:
   replacement: http://www.ontobee.org/browser/rdf.php?o=FBdv&iri=http://purl.obolibrary.org/obo/
 
 - prefix: /
-  replacement: https://raw.githubusercontent.com/FlyBase/drosophila-developmental-ontology/master/
+  replacement: https://github.com/FlyBase/drosophila-developmental-ontology/releases/latest/download/
 

@@ -1,0 +1,61 @@
+name: Purl GitHub Actions
+
+on:
+  push:
+    branches:
+      - master 
+  pull_request:
+    branches:
+      - master 
+  workflow_dispatch:
+
+jobs:
+  DockertTest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
+      
+      - name: Prepare
+        id: prep
+        run: |
+          TAG=latest
+          IMAGE="purl"
+          echo ::set-output name=tagged_image::${IMAGE}:${TAG}
+          echo ::set-output name=tag::${TAG}
+      - name: Set up Docker Buildx
+        id: buildx
+        uses: docker/setup-buildx-action@master
+
+      # Registry login step intentionally missing
+      - name: Cache Docker layers
+        uses: actions/cache@v2
+        with:
+          path: /tmp/.buildx-cache
+          key: ${{ runner.os }}-single-buildx-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-single-buildx
+
+      - name: Build image
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          builder: ${{ steps.buildx.outputs.name }}
+          file: docker/Dockerfile
+          push: false 
+          load: true
+          tags: ${{ steps.prep.outputs.tagged_image }}
+          cache-from: type=local,src=/tmp/.buildx-cache
+          cache-to: type=local,dest=/tmp/.buildx-cache-new
+
+      - name: Move cache
+        run: |
+          rm -rf /tmp/.buildx-cache
+          mv /tmp/.buildx-cache-new /tmp/.buildx-cache
+
+      - name: Run Tests 
+        run: |
+          docker run -w /var/www/purl.obolibrary.org -v ${{ github.workspace }}:/var/www/purl.obolibrary.org -t purl:latest sudo make all test
+

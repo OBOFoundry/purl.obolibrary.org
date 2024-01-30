@@ -1,0 +1,21 @@
+- hosts: all
+  gather_facts: True
+  vars_files:
+     - vars.yaml
+
+  tasks:
+    - name: Clone the Git repo
+      git: repo={{ repo_url }} dest={{ repo_dest }} version={{ branch }}
+
+    - name: Build docker image
+      shell: "docker build -f {{ repo_dest }}/docker/Dockerfile -t {{ image }}:{{ tag }} {{ repo_dest }}"
+
+    - name: Copy S3 credentials
+      copy:
+        src: "{{ creds }}"
+        dest: "{{ creds_dest }}"
+
+    - name: Copy docker compose template.
+      template:
+        src: docker-compose.yaml
+        dest: "{{ stage_dir }}/docker-compose.yaml"

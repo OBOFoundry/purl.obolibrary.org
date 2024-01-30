@@ -4,8 +4,8 @@ idspace: RS
 base_url: /obo/rs
 
 products:
-- rs.owl: http://ontologies.berkeleybop.org/rs.owl
-- rs.obo: ftp://ftp.rgd.mcw.edu/pub/ontology/rat_strain/rat_strain.obo
+- rs.owl: https://download.rgd.mcw.edu/ontology/rat_strain/rat_strain.owl
+- rs.obo: https://download.rgd.mcw.edu/ontology/rat_strain/rat_strain.obo
 
 term_browser: ontobee
 example_terms:

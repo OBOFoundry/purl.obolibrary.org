@@ -4,9 +4,9 @@ idspace: OMRSE
 base_url: /obo/omrse
 
 products:
-- omrse.owl: https://raw.githubusercontent.com/ufbmi/OMRSE/master/omrse.owl
-- omrse.obo: https://raw.githubusercontent.com/ufbmi/OMRSE/master/omrse.obo
-- omrse.json: https://raw.githubusercontent.com/ufbmi/OMRSE/master/omrse.json
+- omrse.owl: https://raw.githubusercontent.com/mcwdsi/OMRSE/main/omrse.owl
+- omrse.obo: https://raw.githubusercontent.com/mcwdsi/OMRSE/main/omrse.obo
+- omrse.json: https://raw.githubusercontent.com/mcwdsi/OMRSE/main/omrse.json
 
 term_browser: ontobee
 example_terms:
@@ -15,38 +15,38 @@ example_terms:
 entries:
 
 - exact: /dev/omrse.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/OMRSE/devel/omrse/omrse.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/OMRSE/devel/omrse/omrse.owl
   
 - exact: /dev/omrse-core.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/OMRSE/devel/omrse/omrse-core.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/OMRSE/devel/omrse/omrse-core.owl
 
 - exact: /dao.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/demo-app-ontology/master/DAO.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/demo-app-ontology/master/DAO.owl
 
 - exact: /dev/language.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/OMRSE/devel/omrse/language/omrse-language.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/OMRSE/devel/omrse/language/omrse-language.owl
 
 - exact: /language.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/OMRSE/master/omrse/language/omrse-language.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/OMRSE/main/omrse/language/omrse-language.owl
   
 - exact: /language-individuals.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/OMRSE/master/omrse/language/language-individuals.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/OMRSE/main/omrse/language/language-individuals.owl
 
 - exact: /dev/language-individuals.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/OMRSE/devel/omrse/language/language-individuals.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/OMRSE/devel/omrse/language/language-individuals.owl
 
 - exact: /dev/education.owl
-  replacement: https://raw.githubusercontent.com/ufbmi/OMRSE/devel/omrse/education/omrse-education.owl
+  replacement: https://raw.githubusercontent.com/mcwdsi/OMRSE/devel/omrse/education/omrse-education.owl
   
 - prefix: /releases/
-  replacement: https://raw.githubusercontent.com/ufbmi/OMRSE/v
+  replacement: https://raw.githubusercontent.com/mcwdsi/OMRSE/v
 
 - prefix: /tracker/
-  replacement: https://github.com/ufbmi/OMRSE/issues
+  replacement: https://github.com/mcwdsi/OMRSE/issues
 
 - prefix: /about/
   replacement: http://www.ontobee.org/ontology/OMRSE?iri=http://purl.obolibrary.org/obo/
 
 ## generic fall-through, serve direct from github by default
 - prefix: /
-  replacement: https://raw.githubusercontent.com/ufbmi/OMRSE/master/
+  replacement: https://raw.githubusercontent.com/mcwdsi/OMRSE/main/

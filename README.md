@@ -1,7 +1,5 @@
 # OBO PURLs
 
-[![Build Status](https://travis-ci.com/OBOFoundry/purl.obolibrary.org.svg?branch=master)](https://travis-ci.com/OBOFoundry/purl.obolibrary.org)
-
 This repository provides tools for managing OBO Foundry Permanent URLs (PURLs). Like <https://github.com/perma-id/w3id.org> we use per-directory Apache configuration files (`.htaccess` files), each of which uses `RedirectMatch` directives to redirect PURL requests to their proper targets. Unlike w3id.org, we do not edit the Apache configuration files by hand. Instead we have a simple YAML configuration format, and scripts to translate the YAML configuration into Apache configuration. The YAML files are easier to read and write, and allow us to validate and test PURLs automatically.
 
 
@@ -71,7 +69,7 @@ Each YAML configuration file contains the keyword `entries:` followed by a list 
 
 The `#` character indicates a comment, which is not considered part of the configuration.
 
-See the [`tools/examples/test2.yml`](tools/examples/test2.yml) and [`tools/examples/test2.htaccess`](tools/examples/test2.htaccess) for examples.
+See the [`tools/examples/test2/test2.yml`](tools/examples/test2/test2.yml) and [`tools/examples/test2/test2.htaccess`](tools/examples/test2/test2.htaccess) for examples.
 
 
 #### Exact
@@ -153,8 +151,8 @@ You'll have to install these three tools on your host machine:
 
 All of these tools are free for you to use. If you're using macOS with [Homebrew](http://brew.sh), then you can install the three tools like this:
 
-    brew cask install Caskroom/cask/vagrant
-    brew cask install Caskroom/cask/virtualbox
+    brew install --cask Caskroom/cask/vagrant
+    brew install --cask Caskroom/cask/virtualbox
     brew install ansible
 
 Once the three tools are installed, check out a copy of this repository and start the VM:

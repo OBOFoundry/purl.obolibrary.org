@@ -6,9 +6,9 @@ base_url: /obo/uberon
 base_redirect: http://uberon.org
 
 products:
-- uberon.owl: https://raw.githubusercontent.com/obophenotype/uberon/master/uberon.owl
-- uberon.obo: https://raw.githubusercontent.com/obophenotype/uberon/master/uberon.obo
-- uberon.json: https://raw.githubusercontent.com/obophenotype/uberon/master/uberon.json
+- uberon.owl: https://github.com/obophenotype/uberon/releases/latest/download/uberon.owl
+- uberon.obo: https://github.com/obophenotype/uberon/releases/latest/download/uberon.obo
+- uberon.json: https://github.com/obophenotype/uberon/releases/latest/download/uberon.json
 
 term_browser: ols
 example_terms:
@@ -20,27 +20,53 @@ entries:
 
 - exact: /phenoscape-ext.owl
   replacement: http://phenoscape.svn.sourceforge.net/svnroot/phenoscape/trunk/vocab/edit/phenoscape-ext.owl
-  
+
 - exact: /composite-vertebrate.owl
   replacement: https://github.com/obophenotype/uberon/releases/latest/download/composite-vertebrate.owl
-  
+
 - exact: /composite-vertebrate.obo
   replacement: https://github.com/obophenotype/uberon/releases/latest/download/composite-vertebrate.obo
 
 - exact: /composite-metazoan.owl
   replacement: https://github.com/obophenotype/uberon/releases/latest/download/composite-metazoan.owl
-  
+
 - exact: /composite-metazoan.obo
   replacement: https://github.com/obophenotype/uberon/releases/latest/download/composite-metazoan.obo
 
+- exact: /collected-metazoan.owl
+  replacement: https://github.com/obophenotype/uberon/releases/latest/download/collected-metazoan.owl
+
+- exact: /collected-metazoan.obo
+  replacement: https://github.com/obophenotype/uberon/releases/latest/download/collected-metazoan.obo
+
+- exact: /ext.owl
+  replacement: https://github.com/obophenotype/uberon/releases/latest/download/uberon.owl
+
+- exact: /ext.obo
+  replacement: https://github.com/obophenotype/uberon/releases/latest/download/uberon.obo
+
 - exact: /experimental/ceph.owl
   replacement: http://purl.obolibrary.org/obo/ceph.owl
+
+# The Uberon bridge to the "NIF Gross Anatomy" is deprecated but is still
+# imported by some old ontologies.
+- exact: /bridge/uberon-bridge-to-nifstd.obo
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2023-10-27/src/ontology/bridge/uberon-bridge-to-nifstd.obo
+
+- exact: /bridge/uberon-bridge-to-nifstd.owl
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2023-10-27/src/ontology/bridge/uberon-bridge-to-nifstd.owl
+
+- prefix: /subsets/
+  replacement: https://github.com/obophenotype/uberon/releases/latest/download/
 
 - prefix: /references/
   replacement: https://raw.githubusercontent.com/obophenotype/uberon/master/reference/
 
 - prefix: /homology/
   replacement: https://phenoscape.svn.sourceforge.net/svnroot/phenoscape/trunk/vocab/homology/
+
+- prefix: /bridge/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/master/src/ontology/bridge/
 
 # Previously Uberon was releaseon on svn.code.sf.net. The following redirect essentially redirects any release pre-2020 (2019, 2018 etc) to that svn.
 - prefix: /releases/201
@@ -64,12 +90,92 @@ entries:
 
 - prefix: /releases/2020-09-16/
   replacement: http://svn.code.sf.net/p/obo/svn/uberon/releases/2020-09-16/
+ 
+- prefix: /releases/2022-02-21/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2022-02-21/
+  tests:
+    - from: /releases/2022-02-21/
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2022-02-21/
+    - from: /releases/2022-02-21/uberon.obo
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2022-02-21/uberon.obo
 
-- prefix: /releases/
-  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v
-  tests:  
+- prefix: /releases/2021-11-28/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2021-11-28/
+  tests:
+    - from: /releases/2021-11-28/
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-11-28/
+    - from: /releases/2021-11-28/uberon.obo
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-11-28/uberon.obo
+
+- prefix: /releases/2021-11-12/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2021-11-12/
+  tests:
+    - from: /releases/2021-11-12/
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-11-12/
+    - from: /releases/2021-11-12/uberon.obo
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-11-12/uberon.obo
+
+- prefix: /releases/2021-10-01/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2021-10-01/
+  tests:
+    - from: /releases/2021-10-01/
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-10-01/
+    - from: /releases/2021-10-01/uberon.obo
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-10-01/uberon.obo
+
+- prefix: /releases/2021-09-29/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2021-09-29/
+  tests:
+    - from: /releases/2021-09-29/
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-09-29/
+    - from: /releases/2021-09-29/uberon.obo
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-09-29/uberon.obo
+
+- prefix: /releases/2021-07-27/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2021-07-27/
+  tests:
+    - from: /releases/2021-07-27/
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-07-27/
+    - from: /releases/2021-07-27/uberon.obo
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-07-27/uberon.obo
+
+- prefix: /releases/2021-07-24/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2021-07-24/
+  tests:
+    - from: /releases/2021-07-24/
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-07-24/
+    - from: /releases/2021-07-24/uberon.obo
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-07-24/uberon.obo
+
+- prefix: /releases/2021-07-21/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2021-07-21/
+  tests:
+    - from: /releases/2021-07-21/
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-07-21/
+    - from: /releases/2021-07-21/uberon.obo
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-07-21/uberon.obo
+
+- prefix: /releases/2021-07-06/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2021-07-06/
+  tests:
+    - from: /releases/2021-07-06/
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-07-06/
+    - from: /releases/2021-07-06/uberon.obo
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-07-06/uberon.obo
+
+- prefix: /releases/2021-02-12/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2021-02-12/
+  tests:
+    - from: /releases/2021-02-12/
+      to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-02-12/
     - from: /releases/2021-02-12/uberon.obo
       to: https://raw.githubusercontent.com/obophenotype/uberon/v2021-02-12/uberon.obo
+
+- prefix: /releases/
+  replacement: https://github.com/obophenotype/uberon/releases/download/v
+  tests:  
+    - from: /releases/2022-03-31/uberon.obo
+      to: https://github.com/obophenotype/uberon/releases/download/v2022-03-31/uberon.obo
 
 - prefix: /tracker
   replacement: https://github.com/obophenotype/uberon/issues
@@ -84,5 +190,5 @@ entries:
   replacement: https://github.com/obophenotype/uberon/wiki
 
 - prefix: /
-  replacement: https://raw.githubusercontent.com/obophenotype/uberon/master/
+  replacement: https://github.com/obophenotype/uberon/releases/latest/download/
 

@@ -4,8 +4,8 @@ idspace: XPO
 base_url: /obo/xpo
 
 products:
-- xpo.owl: https://raw.githubusercontent.com/obophenotype/xenopus-phenotype-ontology/master/xpo.owl
-- xpo.obo: https://raw.githubusercontent.com/obophenotype/xenopus-phenotype-ontology/master/xpo.obo
+- xpo.owl: https://github.com/obophenotype/xenopus-phenotype-ontology/releases/latest/download/xpo.owl
+- xpo.obo: https://github.com/obophenotype/xenopus-phenotype-ontology/releases/latest/download/xpo.obo
 
 term_browser: ontobee
 example_terms:
@@ -14,7 +14,7 @@ example_terms:
 entries:
 
 - prefix: /releases/
-  replacement: https://raw.githubusercontent.com/obophenotype/xenopus-phenotype-ontology/v
+  replacement: https://github.com/obophenotype/xenopus-phenotype-ontology/releases/download/v
 
 - prefix: /tracker/
   replacement: https://github.com/obophenotype/xenopus-phenotype-ontology/issues
@@ -24,4 +24,4 @@ entries:
 
 ## generic fall-through, serve direct from github by default
 - prefix: /
-  replacement: https://raw.githubusercontent.com/obophenotype/xenopus-phenotype-ontology/master/
+  replacement: https://github.com/obophenotype/xenopus-phenotype-ontology/releases/latest/download/

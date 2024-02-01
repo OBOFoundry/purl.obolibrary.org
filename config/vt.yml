@@ -20,3 +20,9 @@ entries:
   tests:
   - from: /about/VT_0000001
     to: http://www.ontobee.org/browser/rdf.php?o=OBA&iri=http://purl.obolibrary.org/obo/VT_0000001
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/AnimalGenome/vertebrate-trait-ontology/master/releases/
+  tests:
+  - from: /releases/2024-01-17/vt.owl
+    to: https://raw.githubusercontent.com/AnimalGenome/vertebrate-trait-ontology/master/releases/2024-01-17/vt.owl

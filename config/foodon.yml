@@ -16,4 +16,5 @@ example_terms:
 entries:
 - prefix: /imports/
   replacement: https://raw.githubusercontent.com/FoodOntology/foodon/master/imports/
-  
+- prefix: /releases/
+  replacement: https://github.com/FoodOntology/foodon/releases/download/v

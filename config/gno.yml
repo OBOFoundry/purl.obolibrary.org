@@ -94,3 +94,6 @@ entries:
 
   - exact: /2023-12-11/gno.owl
     replacement: https://github.com/glygen-glycan-data/GNOme/releases/download/V1.13.3/GNOme.owl
+
+  - exact: /2024-02-02/gno.owl
+    replacement: https://github.com/glygen-glycan-data/GNOme/releases/download/V1.14.0/GNOme.owl

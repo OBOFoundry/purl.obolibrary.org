@@ -13,3 +13,5 @@ example_terms:
 entries:
 - prefix: /imports/
   replacement: https://raw.githubusercontent.com/GenEpiO/genepio/master/imports/
+- prefix: /releases/
+  replacement: https://github.com/GenEpiO/genepio/releases/download/v

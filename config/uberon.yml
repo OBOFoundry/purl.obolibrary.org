@@ -45,6 +45,15 @@ entries:
 - exact: /ext.obo
   replacement: https://github.com/obophenotype/uberon/releases/latest/download/uberon.obo
 
+- exact: /basic.owl
+  replacement: https://github.com/obophenotype/uberon/releases/latest/download/uberon-basic.owl
+
+- exact: /basic.obo
+  replacement: https://github.com/obophenotype/uberon/releases/latest/download/uberon-basic.obo
+
+- exact: /basic.json
+  replacement: https://github.com/obophenotype/uberon/releases/latest/download/uberon-basic.json
+
 - exact: /experimental/ceph.owl
   replacement: http://purl.obolibrary.org/obo/ceph.owl
 

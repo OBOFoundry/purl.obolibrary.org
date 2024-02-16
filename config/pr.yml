@@ -132,6 +132,9 @@ entries:
   - from: /about/PR_000000001
     to: https://proconsortium.org/cgi-bin/entry_pro?id=PR_000000001
 
+# replacement: https://proconsortium.org/cgi-bin/entry_pro?id= (the original and current version)
+# replacement: https://proconsortium.org/app/entry/ (the dB version)
+
 - exact: /pr-asserted.obo
   replacement: https://proconsortium.org/download/current/pro_nonreasoned.obo
   

@@ -90,7 +90,7 @@ entries:
   replacement: http://www.ontobee.org/browser/index.php?o=IDO
 
 - exact: /brucellosis.owl
-  replacement: http://svn.code.sf.net/p/idobru/code/trunk/src/ontology/brucellosis.owl
+  replacement: https://raw.githubusercontent.com/biomedontology/idobru/master/src/brucellosis_merged.owl
 
 - exact: /2014-08-01/ido.owl
   replacement: https://raw.githubusercontent.com/infectious-disease-ontology/infectious-disease-ontology-retired/master/releases/2014-08-01/ido_merged.owl
@@ -114,7 +114,7 @@ entries:
   replacement: https://raw.githubusercontent.com/awqbi/ido-staph/master/applications/narsa/narsa-isolates.owl
 
 - prefix: /brucellosis/
-  replacement: http://svn.code.sf.net/p/idobru/code/trunk/src/ontology/
+  replacement: https://raw.githubusercontent.com/biomedontology/idobru/master/src/
 
 - prefix: /about/
   replacement: http://www.ontobee.org/browser/rdf.php?o=IDO&iri=http://purl.obolibrary.org/obo/

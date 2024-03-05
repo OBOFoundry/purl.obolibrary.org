@@ -26,10 +26,10 @@ entries:
   replacement: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src/ontology/components/
 
 - prefix: /translations/
-  replacement: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src/ontology/translations/
+  replacement: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src/translations/
   tests:
   - from: /translations/hp-cs.babelon.tsv
-    to: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src/ontology/translations/hp-cs.babelon.tsv
+    to: https://raw.githubusercontent.com/obophenotype/human-phenotype-ontology/master/src/translations/hp-cs.babelon.tsv
 
 - prefix: /releases/
   replacement: https://github.com/obophenotype/human-phenotype-ontology/releases/download/v

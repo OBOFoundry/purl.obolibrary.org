@@ -21,7 +21,7 @@ entries:
   replacement: https://raw.githubusercontent.com/adeans/gallont/v
 
 - prefix: /about/
-  replacement: http://www.ontobee.org/ontology/GALLONT?iri=http://purl.obolibrary.org/obo/
+  replacement: http://www.ontobee.org/browser/rdf.php?o=GALLONT&iri=http://purl.obolibrary.org/obo/
   tests:
   - from: /about/GALLONT_0000001
     to: http://www.ontobee.org/browser/rdf.php?o=GALLONT&iri=http://purl.obolibrary.org/obo/GALLONT_0000001

@@ -1,0 +1,36 @@
+# PURL configuration for http://purl.obolibrary.org/obo/gallont
+
+idspace: GALLONT
+base_url: /obo/gallont
+
+base_redirect: https://github.com/adeans/gallont
+
+products:
+- gallont.owl: https://raw.githubusercontent.com/adeans/gallont/main/gallont.owl
+- gallont.obo: https://raw.githubusercontent.com/adeans/gallont/main/gallont.obo
+
+term_browser: ontobee
+example_terms:
+- GALLONT_0000001
+
+entries:
+- exact: /browse
+  replacement: http://www.ontobee.org/browser/index.php?o=GALLONT
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/adeans/gallont/v
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/browser/rdf.php?o=GALLONT&iri=http://purl.obolibrary.org/obo/
+  tests:
+  - from: /about/GALLONT_0000001
+    to: http://www.ontobee.org/browser/rdf.php?o=GALLONT&iri=http://purl.obolibrary.org/obo/GALLONT_0000001
+
+- prefix: /imports/
+  replacement: https://raw.githubusercontent.com/adeans/gallont/master/imports/
+
+- prefix: /tracker/
+  replacement: https://github.com/adeans/gallont/issues
+
+- prefix: /
+  replacement: https://raw.githubusercontent.com/adeans/gallont/master/

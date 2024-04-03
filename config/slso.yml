@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/slso
+
+idspace: SLSO
+base_url: /obo/slso
+
+products:
+- rbo.owl: https://raw.githubusercontent.com/nasa/LSDAO/master/slso.owl
+- rbo.obo: https://raw.githubusercontent.com/nasa/LSDAO/master/slso.obo
+
+term_browser: ontobee
+example_terms:
+- SLSO_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/nasa/LSDAO/v
+
+- prefix: /tracker/
+  replacement: https://github.com/nasa/LSDAO/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/SLSO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/nasa/LSDAO/master/

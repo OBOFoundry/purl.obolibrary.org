@@ -1,0 +1,17 @@
+# PURL configuration for http://purl.obolibrary.org/obo/dpbo
+
+idspace: DPBO
+base_url: /obo/dpbo
+
+products:
+- dpbo.owl: https://raw.githubusercontent.com/nfdi4plants/nfdi4plants_ontology/main/DPBO.owl
+- dpbo.obo: https://raw.githubusercontent.com/nfdi4plants/nfdi4plants_ontology/main/dpbo.obo
+
+term_browser: custom
+
+example_terms:
+- DPBO_1000110
+
+entries:
+- exact: /wiki
+  replacement: https://github.com/nfdi4plants/nfdi4plants_ontology/tree/main

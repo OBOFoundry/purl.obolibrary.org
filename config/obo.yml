@@ -145,6 +145,14 @@ entries:
   - from: /DOID_0014667
     to: https://disease-ontology.org/?id=DOID:0014667
 
+# Term redirects for DPBO
+- regex: ^/obo/DPBO_(\d+)$
+  replacement: https://terminology.tib.eu/ts/ontologies/dpbo/terms?iri=http://purl.obolibrary.org/obo/DPBO_$1
+  status: see other
+  tests:
+  - from: /DPBO_1000110
+    to: https://terminology.tib.eu/ts/ontologies/dpbo/terms?iri=http://purl.obolibrary.org/obo/DPBO_1000110
+
 ### OBO Format Specification
 - exact: /oboformat/
   replacement: http://owlcollab.github.io/oboformat/doc/obo-syntax.html

@@ -108,13 +108,16 @@ entries:
 # Term redirects for RO
 # Some RO terms have a local ID starting with an alphanumeric character, e.g RO_HOMnnnnn
 - regex: ^/obo/RO_([A-Z]*\d+)$
-  replacement: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/RO_$1
+  replacement: https://www.ebi.ac.uk/ols/ontologies/ro/terms?iri=http://purl.obolibrary.org/obo/RO_$1
   status: see other
   tests:
   - from: /RO_0002202
-    to: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/RO_0002202
+    to: https://www.ebi.ac.uk/ols/ontologies/ro/terms?iri=http://purl.obolibrary.org/obo/RO_0002202
   - from: /RO_HOM0000001
-    to: https://www.ebi.ac.uk/ols/ontologies/ro/properties?iri=http://purl.obolibrary.org/obo/RO_HOM0000001
+    to: https://www.ebi.ac.uk/ols/ontologies/ro/terms?iri=http://purl.obolibrary.org/obo/RO_HOM0000001
+  - from: /RO_0002533
+    to: https://www.ebi.ac.uk/ols/ontologies/ro/terms?iri=http://purl.obolibrary.org/obo/RO_0002533
+    
  
 # Term redirects for GNO
 # Match digits or GlyTouCan ID

@@ -70,14 +70,12 @@ entries:
   # Terms for GO REFs
 # http://purl.obolibrary.org/obo/go/references/0000001
 # should point to
-# https://github.com/geneontology/go-site/blob/master/metadata/gorefs/goref-0000001.md
-
-
+# https://geneontology.org/GO_REF/0000001
 - regex: ^/obo/go/references/(\d+)$
-  replacement: https://github.com/geneontology/go-site/blob/master/metadata/gorefs/goref-$1.md
+  replacement: https://geneontology.org/GO_REF/$1
   tests:
   - from: /references/0000001
-    to: https://github.com/geneontology/go-site/blob/master/metadata/gorefs/goref-0000001.md
+    to: https://geneontology.org/GO_REF/0000001
 
 # Keep this as last entry as the rules are matched in order
 - prefix: /

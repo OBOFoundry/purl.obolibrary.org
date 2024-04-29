@@ -8,7 +8,7 @@ products:
 
 term_browser: ols
 example_terms:
-- AfPO:0000440
+- AfPO_0000440
 
 entries:
 - exact: /afpo.owl

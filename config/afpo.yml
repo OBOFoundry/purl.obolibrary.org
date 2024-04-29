@@ -1,0 +1,24 @@
+# PURL configuration for http://purl.obolibrary.org/obo/afpo
+
+idspace: AfPO
+base_url: /obo/afpo
+
+products:
+- afpo.owl: https://raw.githubusercontent.com/h3abionet/afpo/main/afpo.owl
+
+term_browser: ols
+example_terms:
+- AfPO_0000440
+
+entries:
+- exact: /afpo.owl
+  replacement: https://raw.githubusercontent.com/h3abionet/afpo/main/afpo.owl
+- exact: /afpo-base.owl
+  replacement: https://raw.githubusercontent.com/h3abionet/afpo/main/afpo-base.owl
+- exact: /afpo-full.owl
+  replacement: https://raw.githubusercontent.com/h3abionet/afpo/main/afpo-full.owl
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/h3abionet/afpo/v
+  tests:
+  - from: /releases/2024-03-21/afpo.owl
+    to: https://raw.githubusercontent.com/h3abionet/afpo/v2024-03-21/afpo.owl

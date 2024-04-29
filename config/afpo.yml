@@ -4,7 +4,7 @@ idspace: AfPO
 base_url: /obo/afpo
 
 products:
-- hancestro.owl: https://raw.githubusercontent.com/h3abionet/afpo/main/afpo.owl
+- afpo.owl: https://raw.githubusercontent.com/h3abionet/afpo/main/afpo.owl
 
 term_browser: ols
 example_terms:
@@ -18,5 +18,7 @@ entries:
 - exact: /afpo-full.owl
   replacement: https://raw.githubusercontent.com/h3abionet/afpo/main/afpo-full.owl
 - prefix: /releases/
-  replacement: https://raw.githubusercontent.com/h3abionet/afpo/main/afpo/v
-  
+  replacement: https://raw.githubusercontent.com/h3abionet/afpo/v
+  tests:
+  - from: /releases/2024-03-21/afpo.owl
+    to: https://raw.githubusercontent.com/h3abionet/afpo/v2024-03-21/afpo.owl

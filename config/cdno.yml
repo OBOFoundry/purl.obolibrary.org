@@ -4,8 +4,8 @@ idspace: CDNO
 base_url: /obo/cdno
 
 products:
-- cdno.owl: https://raw.githubusercontent.com/Southern-Cross-Plant-Science/cdno/master/cdno.owl
-- cdno.obo: https://raw.githubusercontent.com/Southern-Cross-Plant-Science/cdno/master/cdno.obo
+- cdno.owl: https://raw.githubusercontent.com/CompositionalDietaryNutritionOntology/cdno/master/cdno.owl
+- cdno.obo: https://raw.githubusercontent.com/CompositionalDietaryNutritionOntology/cdno/master/cdno.obo
 
 term_browser: ontobee
 example_terms:
@@ -14,14 +14,14 @@ example_terms:
 entries:
 
 - prefix: /releases/
-  replacement: https://raw.githubusercontent.com/Southern-Cross-Plant-Science/cdno/v
+  replacement: https://raw.githubusercontent.com/CompositionalDietaryNutritionOntology/cdno/v
 
 - prefix: /tracker/
-  replacement: https://github.com/Southern-Cross-Plant-Science/cdno/issues
+  replacement: https://github.com/CompositionalDietaryNutritionOntology/cdno/issues
 
 - prefix: /about/
   replacement: http://www.ontobee.org/ontology/CDNO?iri=http://purl.obolibrary.org/obo/
 
 ## generic fall-through, serve direct from github by default
 - prefix: /
-  replacement: https://raw.githubusercontent.com/Southern-Cross-Plant-Science/cdno/master/
+  replacement: https://raw.githubusercontent.com/CompositionalDietaryNutritionOntology/cdno/master/

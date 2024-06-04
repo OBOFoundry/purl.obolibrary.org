@@ -23,6 +23,9 @@ entries:
 - exact: /cvo.owl
   replacement: https://raw.githubusercontent.com/vaccineontology/VO/master/CVO/cvo.owl
 
+- exact: /cvx-vo.owl
+  replacement: https://raw.githubusercontent.com/vaccineontology/VO/master/CVX-VO/cvx-vo.owl
+  
 - prefix: /external/
   replacement: https://raw.githubusercontent.com/vaccineontology/VO/master/src/
 

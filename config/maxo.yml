@@ -14,14 +14,6 @@ example_terms:
 
 entries:
 
-- prefix: /releases/2024-05-24/
-  replacement: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2024-05-24/
-  tests:
-    - from: /releases/2024-05-24/
-      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2024-05-24/
-    - from: /releases/2024-05-24/maxo.obo
-      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2024-05-24/maxo.obo
-
 - prefix: /releases/2024-02-05/
   replacement: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2024-02-05/
   tests:

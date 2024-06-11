@@ -12,6 +12,9 @@ example_terms:
 
 entries:
 
+- exact: /bfo-mireot.owl
+  replacement: https://raw.githubusercontent.com/monarch-initiative/SEPIO-ontology/master/src/ontology/mireots/bfo-mireot.owl
+
 - prefix: /releases/
   replacement: https://raw.githubusercontent.com/monarch-initiative/SEPIO-ontology/v
 

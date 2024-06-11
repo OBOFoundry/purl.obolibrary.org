@@ -222,7 +222,6 @@ entries:
     - from: /releases/2021-03-22/uberon.obo
       to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2021-03-22/maxo.obo
 
-2021-02-23
 - prefix: /releases/2021-02-09/
   replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2021-02-09/
   tests:

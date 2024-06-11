@@ -4,9 +4,9 @@ idspace: MAXO
 base_url: /obo/maxo
 
 products:
-- maxo.owl: https://raw.githubusercontent.com/monarch-initiative/MAxO/master/maxo.owl
-- maxo.obo: https://raw.githubusercontent.com/monarch-initiative/MAxO/master/maxo.obo
-- maxo.json: https://raw.githubusercontent.com/monarch-initiative/MAxO/master/maxo.json
+- maxo.owl: https://github.com/monarch-initiative/MAxO/releases/latest/download/maxo.owl
+- maxo.obo: https://github.com/monarch-initiative/MAxO/releases/latest/download/maxo.obo
+- maxo.json: https://github.com/monarch-initiative/MAxO/releases/latest/download/maxo.json
 
 term_browser: ontobee
 example_terms:
@@ -14,8 +14,330 @@ example_terms:
 
 entries:
 
+- prefix: /releases/2024-05-24/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2024-05-24/
+  tests:
+    - from: /releases/2024-05-24/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2024-05-24/
+    - from: /releases/2024-05-24/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2024-05-24/maxo.obo
+
+- prefix: /releases/2024-02-05/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2024-02-05/
+  tests:
+    - from: /releases/2024-02-05/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2024-02-05/
+    - from: /releases/2024-02-05/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2024-02-05/maxo.obo
+
+- prefix: /releases/2023-12-01/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2023-12-01/
+  tests:
+    - from: /releases/2023-12-01/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2023-12-01/
+    - from: /releases/2023-12-01/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2023-12-01/maxo.obo
+
+- prefix: /releases/2023-10-03/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2023-10-03/
+  tests:
+    - from: /releases/2023-10-03/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2023-10-03/
+    - from: /releases/2023-10-03/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2023-10-03/maxo.obo
+
+- prefix: /releases/2023-06-06/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2023-06-06/
+  tests:
+    - from: /releases/2023-06-06/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2023-06-06/
+    - from: /releases/2023-06-06/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2023-06-06/maxo.obo
+
+- prefix: /releases/2023-05-17/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2023-05-17/
+  tests:
+    - from: /releases/2023-05-17/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2023-05-17/
+    - from: /releases/2023-05-17/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2023-05-17/maxo.obo
+
+- prefix: /releases/2023-05-16/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2023-05-16/
+  tests:
+    - from: /releases/2023-05-16/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2023-05-16/
+    - from: /releases/2023-05-16/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2023-05-16/maxo.obo
+
+- prefix: /releases/2023-05-02/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2023-05-02/
+  tests:
+    - from: /releases/2023-05-02/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2023-05-02/
+    - from: /releases/2023-05-02/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2023-05-02/maxo.obo
+
+- prefix: /releases/2023-04-18/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2023-04-18/
+  tests:
+    - from: /releases/2023-04-18/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2023-04-18/
+    - from: /releases/2023-04-18/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2023-04-18/maxo.obo
+
+- prefix: /releases/2023-04-13/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2023-04-13/
+  tests:
+    - from: /releases/2023-04-13/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2023-04-13/
+    - from: /releases/2023-04-13/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2023-04-13/maxo.obo
+
+- prefix: /releases/2023-03-09/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2023-03-09/
+  tests:
+    - from: /releases/2023-03-09/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2023-03-09/
+    - from: /releases/2023-03-09/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2023-03-09/maxo.obo
+
+- prefix: /releases/2023-02-20/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2023-02-20/
+  tests:
+    - from: /releases/2023-02-20/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2023-02-20/
+    - from: /releases/2023-02-20/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2023-02-20/maxo.obo
+
+- prefix: /releases/2023-02-19/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2023-02-19/
+  tests:
+    - from: /releases/2023-02-19/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2023-02-19/
+    - from: /releases/2023-02-19/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2023-02-19/maxo.obo
+
+- prefix: /releases/2023-02-17/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2023-02-17/
+  tests:
+    - from: /releases/2023-02-17/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2023-02-17/
+    - from: /releases/2023-02-17/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2023-02-17/maxo.obo
+
+- prefix: /releases/2022-12-19/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2022-12-19/
+  tests:
+    - from: /releases/2022-12-19/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2022-12-19/
+    - from: /releases/2022-12-19/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2022-12-19/maxo.obo
+
+- prefix: /releases/2022-12-09/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2022-12-09/
+  tests:
+    - from: /releases/2022-12-09/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2022-12-09/
+    - from: /releases/2022-12-09/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2022-12-09/maxo.obo
+
+- prefix: /releases/2022-11-22/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2022-11-22/
+  tests:
+    - from: /releases/2022-11-22/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2022-11-22/
+    - from: /releases/2022-11-22/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2022-11-22/maxo.obo
+
+- prefix: /releases/2022-11-14/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2022-11-14/
+  tests:
+    - from: /releases/2022-11-14/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2022-11-14/
+    - from: /releases/2022-11-14/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2022-11-14/maxo.obo
+
+- prefix: /releases/2022-08-31/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2022-08-31/
+  tests:
+    - from: /releases/2022-08-31/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2022-08-31/
+    - from: /releases/2022-08-31/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2022-08-31/maxo.obo
+
+- prefix: /releases/2022-06-24/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2022-06-24/
+  tests:
+    - from: /releases/2022-06-24/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2022-06-24/
+    - from: /releases/2022-06-24/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2022-06-24/maxo.obo
+
+- prefix: /releases/2022-05-03/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2022-05-03/
+  tests:
+    - from: /releases/2022-05-03/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2022-05-03/
+    - from: /releases/2022-05-03/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2022-05-03/maxo.obo
+
+- prefix: /releases/2022-03-31/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2022-03-31/
+  tests:
+    - from: /releases/2022-03-31/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2022-03-31/
+    - from: /releases/2022-03-31/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2022-03-31/maxo.obo
+
+- prefix: /releases/2021-09-03/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2021-09-03/
+  tests:
+    - from: /releases/2021-09-03/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2021-09-03/
+    - from: /releases/2021-09-03/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2021-09-03/maxo.obo
+
+- prefix: /releases/2021-08-16/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2021-08-16/
+  tests:
+    - from: /releases/2021-08-16/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2021-08-16/
+    - from: /releases/2021-08-16/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2021-08-16/maxo.obo
+
+- prefix: /releases/2021-06-28/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2021-06-28/
+  tests:
+    - from: /releases/2021-06-28/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2021-06-28/
+    - from: /releases/2021-06-28/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2021-06-28/maxo.obo
+
+- prefix: /releases/2021-03-22/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2021-03-22/
+  tests:
+    - from: /releases/2021-03-22/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2021-03-22/
+    - from: /releases/2021-03-22/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2021-03-22/maxo.obo
+
+2021-02-23
+- prefix: /releases/2021-02-09/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2021-02-09/
+  tests:
+    - from: /releases/2021-02-09/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2021-02-09/
+    - from: /releases/2021-02-09/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2021-02-09/maxo.obo
+
+- prefix: /releases/2020-12-10/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2020-12-10/
+  tests:
+    - from: /releases/2020-12-10/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2020-12-10/
+    - from: /releases/2020-12-10/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2020-12-10/maxo.obo
+
+- prefix: /releases/2020-12-07/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2020-12-07/
+  tests:
+    - from: /releases/2020-12-07/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2020-12-07/
+    - from: /releases/2020-12-07/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2020-12-07/maxo.obo
+
+- prefix: /releases/2020-11-16/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2020-11-16/
+  tests:
+    - from: /releases/2020-11-16/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2020-11-16/
+    - from: /releases/2020-11-16/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2020-11-16/maxo.obo
+
+- prefix: /releases/2020-07-14/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2020-07-14/
+  tests:
+    - from: /releases/2020-07-14/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2020-07-14/
+    - from: /releases/2020-07-14/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2020-07-14/maxo.obo
+
+- prefix: /releases/2020-06-25/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2020-06-25/
+  tests:
+    - from: /releases/2020-06-25/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2020-06-25/
+    - from: /releases/2020-06-25/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2020-06-25/maxo.obo
+
+- prefix: /releases/2020-06-12/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2020-06-12/
+  tests:
+    - from: /releases/2020-06-12/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2020-06-12/
+    - from: /releases/2020-06-12/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2020-06-12/maxo.obo
+
+- prefix: /releases/2020-05-13/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2020-05-13/
+  tests:
+    - from: /releases/2020-05-13/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2020-05-13/
+    - from: /releases/2020-05-13/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2020-05-13/maxo.obo
+
+- prefix: /releases/2020-04-14/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2020-04-14/
+  tests:
+    - from: /releases/2020-04-14/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2020-04-14/
+    - from: /releases/2020-04-14/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2020-04-14/maxo.obo
+
+- prefix: /releases/2020-02-10/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2020-02-10/
+  tests:
+    - from: /releases/2020-02-10/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2020-02-10/
+    - from: /releases/2020-02-10/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2020-02-10/maxo.obo
+
+- prefix: /releases/2020-01-29/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2020-01-29/
+  tests:
+    - from: /releases/2020-01-29/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2020-01-29/
+    - from: /releases/2020-01-29/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2020-01-29/maxo.obo
+
+- prefix: /releases/2020-01-16/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2020-01-16/
+  tests:
+    - from: /releases/2020-01-16/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2020-01-16/
+    - from: /releases/2020-01-16/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2020-01-16/maxo.obo
+
+- prefix: /releases/2019-11-22/
+  replacement: https://raw.githubusercontent.com/obophenotype/uberon/v2019-11-22/
+  tests:
+    - from: /releases/2019-11-22/
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2019-11-22/
+    - from: /releases/2019-11-22/uberon.obo
+      to: https://raw.githubusercontent.com/monarch-initiative/MAxO/v2019-11-22/maxo.obo
+
 - prefix: /releases/
-  replacement: https://raw.githubusercontent.com/monarch-initiative/MAxO/v
+  replacement: https://github.com/monarch-initiative/MAxO/releases/download/v
+  tests:  
+    - from: /releases/2024-05-24/maxo.obo
+      to: https://github.com/monarch-initiative/MAxO/releases/download/v2024-05-24/maxo.obo
+
+- prefix: /imports/
+  replacement: https://raw.githubusercontent.com/monarch-initiative/MAxO/master/src/ontology/imports/
+
+- prefix: /components/
+  replacement: https://raw.githubusercontent.com/monarch-initiative/MAxO/master/src/ontology/components/
 
 - prefix: /tracker/
   replacement: https://github.com/monarch-initiative/MAxO/issues
@@ -25,4 +347,4 @@ entries:
 
 ## generic fall-through, serve direct from github by default
 - prefix: /
-  replacement: https://raw.githubusercontent.com/monarch-initiative/MAxO/master/
+  replacement: https://github.com/monarch-initiative/MAxO/releases/latest/download/

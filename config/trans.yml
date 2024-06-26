@@ -3,7 +3,7 @@
 idspace: TRANS
 base_url: /obo/trans
 
-base_redirect: https://github.com/DiseaseOntology/PathogenTransmissionOntology/tree/main/src/ontology
+base_redirect: https://github.com/DiseaseOntology/PathogenTransmissionOntology
 
 products:
 - trans.owl: https://raw.githubusercontent.com/DiseaseOntology/PathogenTransmissionOntology/main/src/ontology/trans.owl

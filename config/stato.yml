@@ -5,6 +5,8 @@ base_url: /obo/stato
 
 products:
 - stato.owl: https://raw.githubusercontent.com/ISA-tools/stato/dev/releases/latest_release/stato.owl
+- stato.rdf: https://raw.githubusercontent.com/ISA-tools/stato/dev/releases/latest_release/stato.rdf
+- stato.obo: https://raw.githubusercontent.com/ISA-tools/stato/dev/releases/latest_release/stato.obo
 
 term_browser: ontobee
 example_terms:

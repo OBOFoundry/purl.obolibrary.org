@@ -11,6 +11,12 @@ products:
 term_browser: ols
 
 entries:
+- exact: /mondo-with-equivalents.json
+  replacement: https://github.com/monarch-initiative/mondo/releases/latest/download/mondo.json
+- exact: /mondo-with-equivalents.owl
+  replacement: https://github.com/monarch-initiative/mondo/releases/latest/download/mondo.owl
+- exact: /mondo-with-equivalents.obo
+  replacement: https://github.com/monarch-initiative/mondo/releases/latest/download/mondo.obo
 - prefix: /subsets/
   replacement: https://github.com/monarch-initiative/mondo/releases/latest/download/
 - prefix: /imports/

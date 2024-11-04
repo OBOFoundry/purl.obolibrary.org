@@ -4,8 +4,8 @@ idspace: OBI
 base_url: /obo/obi
 
 products:
-- obi.owl: https://raw.githubusercontent.com/obi-ontology/obi/v2024-10-03/obi.owl
-- obi.obo: https://raw.githubusercontent.com/obi-ontology/obi/v2024-10-03/views/obi.obo
+- obi.owl: https://raw.githubusercontent.com/obi-ontology/obi/v2024-10-25/obi.owl
+- obi.obo: https://raw.githubusercontent.com/obi-ontology/obi/v2024-10-25/views/obi.obo
 
 term_browser: ontobee
 example_terms:
@@ -16,22 +16,22 @@ entries:
 ### Current Releases
 
 - exact: /obi-base.owl
-  replacement: https://raw.githubusercontent.com/obi-ontology/obi/v2024-10-03/views/obi-base.owl
+  replacement: https://raw.githubusercontent.com/obi-ontology/obi/v2024-10-25/views/obi-base.owl
 
 - exact: /obi_core.owl
-  replacement: https://raw.githubusercontent.com/obi-ontology/obi/v2024-10-03/views/obi_core.owl
+  replacement: https://raw.githubusercontent.com/obi-ontology/obi/v2024-10-25/views/obi_core.owl
 
 - exact: /obi_IEDBview.owl
   replacement: https://raw.githubusercontent.com/obi-ontology/obi/v2017-02-22/obi_iedb.owl
 
 - exact: /release-notes.html
-  replacement: https://raw.githubusercontent.com/obi-ontology/obi/v2024-10-03/README.md
+  replacement: https://raw.githubusercontent.com/obi-ontology/obi/v2024-10-25/README.md
 
 - exact: /webService.owl
   replacement: https://raw.githubusercontent.com/obi-webservice/OBIws/master/ontology/release/v1.1/webService.owl
 
 - exact: /NIAID-GSC-BRC.owl
-  replacement: https://raw.githubusercontent.com/obi-ontology/obi/v2024-10-03/views/NIAID-GSC-BRC.owl
+  replacement: https://raw.githubusercontent.com/obi-ontology/obi/v2024-10-25/views/NIAID-GSC-BRC.owl
 
 - exact: /obi_FGED.owl
   replacement: http://svn.code.sf.net/p/obi/code/releases/2013-10-25/obi_FGED.owl
@@ -301,6 +301,12 @@ entries:
 
 - exact: /2024-10-03/obi.obo
   replacement: https://raw.githubusercontent.com/obi-ontology/obi/v2024-10-03/views/obi.obo
+
+- exact: /2024-10-25/obi.owl
+  replacement: https://raw.githubusercontent.com/obi-ontology/obi/v2024-10-25/obi.owl
+
+- exact: /2024-10-25/obi.obo
+  replacement: https://raw.githubusercontent.com/obi-ontology/obi/v2024-10-25/views/obi.obo
 
 ### Web Service Releases
 

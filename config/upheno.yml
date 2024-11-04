@@ -4,7 +4,7 @@ idspace: UPHENO
 base_url: /obo/upheno
 
 products:
-- upheno.owl: https://raw.githubusercontent.com/obophenotype/upheno/master/upheno.owl
+- upheno.owl: https://github.com/obophenotype/upheno-dev/releases/latest/download/upheno.owl
 
 term_browser: ontobee
 example_terms:

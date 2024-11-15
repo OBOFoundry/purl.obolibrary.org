@@ -98,6 +98,9 @@ entries:
   - from: /releases/2023-01-09/cl.obo
     to: https://github.com/obophenotype/cell-ontology/releases/download/v2023-01-09/cl.obo
 
+- prefix: /images/
+  replacement: https://github.com/obophenotype/cell-ontology/tree/master/images/
+
 - prefix: /tracker/
   replacement: https://code.google.com/p/cell-ontology/issues/detail?id=
 

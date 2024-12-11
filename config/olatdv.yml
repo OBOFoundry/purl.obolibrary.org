@@ -4,8 +4,8 @@ idspace: OlatDv
 base_url: /obo/olatdv
 
 products:
-- olatdv.owl: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/olatdv/olatdv.owl
-- olatdv.obo: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/olatdv/olatdv.obo
+- olatdv.owl: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/ontology/components/olatdv.owl
+- olatdv.obo: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/ontology/components/olatdv.obo
 
 term_browser: ontobee
 example_terms:

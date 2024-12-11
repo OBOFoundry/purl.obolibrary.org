@@ -4,8 +4,9 @@ idspace: HsapDv
 base_url: /obo/hsapdv
 
 products:
-- hsapdv.owl: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/hsapdv/hsapdv.owl
-- hsapdv.obo: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/hsapdv/hsapdv.obo
+- hsapdv.owl: https://github.com/obophenotype/developmental-stage-ontologies/releases/latest/download/hsapdv.owl
+- hsapdv.obo: https://github.com/obophenotype/developmental-stage-ontologies/releases/latest/download/hsapdv.obo
+- hsapdv.json: https://github.com/obophenotype/developmental-stage-ontologies/releases/latest/download/hsapdv.json
 
 term_browser: ontobee
 example_terms:

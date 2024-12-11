@@ -4,8 +4,8 @@ idspace: PdumDv
 base_url: /obo/pdumdv
 
 products:
-- pdumdv.owl: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/pdumdv/pdumdv.owl
-- pdumdv.obo: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/pdumdv/pdumdv.obo
+- pdumdv.owl: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/ontology/components/pdumdv.owl
+- pdumdv.obo: https://raw.githubusercontent.com/obophenotype/developmental-stage-ontologies/master/src/ontology/components/pdumdv.obo
 
 term_browser: ontobee
 example_terms:

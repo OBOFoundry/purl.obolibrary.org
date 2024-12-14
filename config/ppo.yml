@@ -2,12 +2,13 @@ idspace: PPO
 base_url: /obo/ppo
 
 products:
-- ppo.owl: https://raw.githubusercontent.com/PlantPhenoOntology/ppo/master/releases/2018-10-26/ppo.owl
+- ppo.owl: https://raw.githubusercontent.com/PlantPhenoOntology/ppo/refs/heads/main/ppo.owl
 
 term_browser: ontobee
 
 example_terms:
-- PPO_0000001
+- PPO_0002000 #plant phenological trait
+- PPO_000100 #new shoot system
 
 entries:
 - exact: /wiki

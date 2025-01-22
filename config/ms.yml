@@ -5,7 +5,6 @@ base_url: /obo/ms
 
 products:
 - ms.owl: https://github.com/HUPO-PSI/psi-ms-CV/releases/latest/download/ms.owl
-- psi-ms.owl: https://github.com/HUPO-PSI/psi-ms-CV/releases/latest/download/psi-ms.owl
 - ms.obo: https://github.com/HUPO-PSI/psi-ms-CV/releases/latest/download/psi-ms.obo
 
 term_browser: ontobee
@@ -17,12 +16,6 @@ entries:
 - exact: /tracker
   replacement: https://github.com/HUPO-PSI/psi-ms-CV/issues
 
-- prefix: /about/
-  replacement: https://psidev.info/groups/controlled-vocabularies
-
-- prefix: /home
-  replacement: https://github.com/HUPO-PSI/psi-ms-CV
-
 # intercept exact matches before version prefix blindly grabs everything
 - exact: /ms.owl
   replacement: https://github.com/HUPO-PSI/psi-ms-CV/releases/latest/download/ms.owl
@@ -33,14 +26,27 @@ entries:
 - exact: /psi-ms.obo
   replacement: https://github.com/HUPO-PSI/psi-ms-CV/releases/latest/download/psi-ms.obo
 
-  
+
+- prefix: /about/
+  replacement: https://psidev.info/groups/controlled-vocabularies
+
+- prefix: /home
+  replacement: https://github.com/HUPO-PSI/psi-ms-CV
+
 # support directly resolving versioned IRIs
 - prefix: /
   replacement: https://github.com/HUPO-PSI/psi-ms-CV/releases/download/v
-  tests:  
+  tests:
+    - from: /4.1.186/ms.owl
+      to: https://github.com/HUPO-PSI/psi-ms-CV/releases/download/v4.1.186/ms.owl
+    - from: /4.1.86/psi-ms.obo
+      to: https://github.com/HUPO-PSI/psi-ms-CV/releases/download/v4.1.186/psi-ms.obo
+
+# preserve prior PURLs
+- prefix: /releases/
+  replacement: https://github.com/HUPO-PSI/psi-ms-CV/releases/download/v
+  tests:
     - from: /4.1.186/ms.owl
       to: https://github.com/HUPO-PSI/psi-ms-CV/releases/download/v4.1.86/ms.owl
     - from: /4.1.86/psi-ms.obo
       to: https://github.com/HUPO-PSI/psi-ms-CV/releases/download/v4.1.86/psi-ms.obo
-
-

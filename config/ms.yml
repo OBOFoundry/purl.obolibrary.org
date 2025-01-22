@@ -39,7 +39,7 @@ entries:
   tests:
     - from: /4.1.186/ms.owl
       to: https://github.com/HUPO-PSI/psi-ms-CV/releases/download/v4.1.186/ms.owl
-    - from: /4.1.86/psi-ms.obo
+    - from: /4.1.186/psi-ms.obo
       to: https://github.com/HUPO-PSI/psi-ms-CV/releases/download/v4.1.186/psi-ms.obo
 
 # support directly resolving versioned IRIs
@@ -48,5 +48,5 @@ entries:
   tests:
     - from: /4.1.186/ms.owl
       to: https://github.com/HUPO-PSI/psi-ms-CV/releases/download/v4.1.186/ms.owl
-    - from: /4.1.86/psi-ms.obo
+    - from: /4.1.186/psi-ms.obo
       to: https://github.com/HUPO-PSI/psi-ms-CV/releases/download/v4.1.186/psi-ms.obo

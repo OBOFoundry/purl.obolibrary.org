@@ -33,15 +33,6 @@ entries:
 - prefix: /home
   replacement: https://github.com/HUPO-PSI/psi-ms-CV
 
-# support directly resolving versioned IRIs
-- prefix: /
-  replacement: https://github.com/HUPO-PSI/psi-ms-CV/releases/download/v
-  tests:
-    - from: /4.1.186/ms.owl
-      to: https://github.com/HUPO-PSI/psi-ms-CV/releases/download/v4.1.186/ms.owl
-    - from: /4.1.86/psi-ms.obo
-      to: https://github.com/HUPO-PSI/psi-ms-CV/releases/download/v4.1.186/psi-ms.obo
-
 # preserve prior PURLs
 - prefix: /releases/
   replacement: https://github.com/HUPO-PSI/psi-ms-CV/releases/download/v
@@ -50,3 +41,12 @@ entries:
       to: https://github.com/HUPO-PSI/psi-ms-CV/releases/download/v4.1.86/ms.owl
     - from: /4.1.86/psi-ms.obo
       to: https://github.com/HUPO-PSI/psi-ms-CV/releases/download/v4.1.86/psi-ms.obo
+
+# support directly resolving versioned IRIs
+- prefix: /
+  replacement: https://github.com/HUPO-PSI/psi-ms-CV/releases/download/v
+  tests:
+    - from: /4.1.186/ms.owl
+      to: https://github.com/HUPO-PSI/psi-ms-CV/releases/download/v4.1.186/ms.owl
+    - from: /4.1.86/psi-ms.obo
+      to: https://github.com/HUPO-PSI/psi-ms-CV/releases/download/v4.1.186/psi-ms.obo

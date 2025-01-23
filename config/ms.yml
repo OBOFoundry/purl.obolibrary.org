@@ -4,7 +4,7 @@ idspace: MS
 base_url: /obo/ms
 
 products:
-- ms.owl: https://github.com/HUPO-PSI/psi-ms-CV/releases/latest/download/psi-ms.owl
+- ms.owl: https://github.com/HUPO-PSI/psi-ms-CV/releases/latest/download/ms.owl
 - ms.obo: https://github.com/HUPO-PSI/psi-ms-CV/releases/latest/download/psi-ms.obo
 
 term_browser: ontobee
@@ -13,20 +13,40 @@ example_terms:
 - MS_0000000
 
 entries:
-- prefix: /releases/
-  replacement: https://github.com/HUPO-PSI/psi-ms-CV/releases/download/v
-  tests:  
-    - from: /releases/4.1.86/psi-ms.owl
-      to: https://github.com/HUPO-PSI/psi-ms-CV/releases/download/v4.1.86/psi-ms.owl
-    - from: /releases/4.1.86/psi-ms.obo
-      to: https://github.com/HUPO-PSI/psi-ms-CV/releases/download/v4.1.86/psi-ms.obo
-
 - exact: /tracker
   replacement: https://github.com/HUPO-PSI/psi-ms-CV/issues
+
+# intercept exact matches before version prefix blindly grabs everything
+- exact: /ms.owl
+  replacement: https://github.com/HUPO-PSI/psi-ms-CV/releases/latest/download/ms.owl
+- exact: /psi-ms.owl
+  replacement: https://github.com/HUPO-PSI/psi-ms-CV/releases/latest/download/psi-ms.owl
+- exact: /ms.obo
+  replacement: https://github.com/HUPO-PSI/psi-ms-CV/releases/latest/download/psi-ms.obo
+- exact: /psi-ms.obo
+  replacement: https://github.com/HUPO-PSI/psi-ms-CV/releases/latest/download/psi-ms.obo
+
 
 - prefix: /about/
   replacement: https://psidev.info/groups/controlled-vocabularies
 
-- prefix: /
-  replacement: https://raw.githubusercontent.com/HUPO-PSI/psi-ms-CV/master/
+- prefix: /home
+  replacement: https://github.com/HUPO-PSI/psi-ms-CV
 
+# preserve prior PURLs
+- prefix: /releases/
+  replacement: https://github.com/HUPO-PSI/psi-ms-CV/releases/download/v
+  tests:
+    - from: /4.1.186/ms.owl
+      to: https://github.com/HUPO-PSI/psi-ms-CV/releases/download/v4.1.186/ms.owl
+    - from: /4.1.186/psi-ms.obo
+      to: https://github.com/HUPO-PSI/psi-ms-CV/releases/download/v4.1.186/psi-ms.obo
+
+# support directly resolving versioned IRIs
+- prefix: /
+  replacement: https://github.com/HUPO-PSI/psi-ms-CV/releases/download/v
+  tests:
+    - from: /4.1.186/ms.owl
+      to: https://github.com/HUPO-PSI/psi-ms-CV/releases/download/v4.1.186/ms.owl
+    - from: /4.1.186/psi-ms.obo
+      to: https://github.com/HUPO-PSI/psi-ms-CV/releases/download/v4.1.186/psi-ms.obo

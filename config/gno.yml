@@ -106,3 +106,12 @@ entries:
 
   - exact: /2024-05-16/gno.owl
     replacement: https://github.com/glygen-glycan-data/GNOme/releases/download/V2.1.0/GNOme.owl
+
+  - exact: /2024-05-21/gno.owl
+    replacement: https://github.com/glygen-glycan-data/GNOme/releases/download/V2.2.0/GNOme.owl
+    
+  - exact: /2024-09-26/gno.owl
+    replacement: https://github.com/glygen-glycan-data/GNOme/releases/download/V2.3.0/GNOme.owl
+    
+  - exact: /2025-01-28/gno.owl
+    replacement: https://github.com/glygen-glycan-data/GNOme/releases/download/V2.4.0/GNOme.owl

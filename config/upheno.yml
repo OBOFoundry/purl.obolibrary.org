@@ -26,6 +26,9 @@ entries:
 - exact: /zp.owl
   replacement: http://purl.obolibrary.org/obo/zp.owl
 
+- exact: /chebi_slim.owl
+  replacement: https://raw.githubusercontent.com/obophenotype/chebi_obo_slim/main/chebi_slim.owl
+
 - exact: /mp-hp-view.owl
   replacement: http://build-artifacts.berkeleybop.org/build-mp-hp-view/latest/mp-hp-view.owl
 

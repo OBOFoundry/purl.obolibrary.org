@@ -148,6 +148,17 @@ entries:
   - from: /DOID_0014667
     to: https://disease-ontology.org/?id=DOID:0014667
 
+# Term redirects for OBA
+# Some OBA IDs start with VT_, because they were originally sourced from VT
+- regex: ^/obo/OBA_([VT]?[VT]?\d+)$
+  replacement: https://www.ebi.ac.uk/ols4/ontologies/oba/entities/?iri=http://purl.obolibrary.org/obo/OBA_$1
+  status: see other
+  tests:
+  - from: /OBA_0000001
+    to: https://www.ebi.ac.uk/ols4/ontologies/oba/entities/?iri=http://purl.obolibrary.org/obo/OBA_0000001
+  - from: /OBA_VT0000002
+    to: https://www.ebi.ac.uk/ols4/ontologies/oba/entities/?iri=http://purl.obolibrary.org/obo/OBA_VT0000002
+
 ### OBO Format Specification
 - exact: /oboformat/
   replacement: http://owlcollab.github.io/oboformat/doc/obo-syntax.html

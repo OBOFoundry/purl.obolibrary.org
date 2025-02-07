@@ -44,6 +44,6 @@ entries:
 - prefix: /
   replacement: https://github.com/obophenotype/bio-attribute-ontology/releases/latest/download/
   
-term_browser: ontobee
+term_browser: ols
 example_terms:
 - OBA_0000001

@@ -4,9 +4,9 @@ idspace: GO
 base_url: /obo/go
 
 products:
-- go.owl: http://current.geneontology.org/ontology/go.owl
-- go.obo: http://current.geneontology.org/ontology/go.obo
-- go.json: http://current.geneontology.org/ontology/go.json
+- go.owl: https://current.geneontology.org/ontology/go.owl
+- go.obo: https://current.geneontology.org/ontology/go.obo
+- go.json: https://current.geneontology.org/ontology/go.json
 
 term_browser: custom
 example_terms:
@@ -15,16 +15,16 @@ example_terms:
 entries:
 
 - exact: /go.obo
-  replacement: http://current.geneontology.org/ontology/go.obo
+  replacement: https://current.geneontology.org/ontology/go.obo
 
 - exact: /go.owl
-  replacement: http://current.geneontology.org/ontology/go.owl
+  replacement: https://current.geneontology.org/ontology/go.owl
 
 ## User and group metadata for GO-CAM model metadata resolution.
 - exact: /metadata/users.ttl
-  replacement: http://experimental.geneontology.io/metadata/users.ttl
+  replacement: https://experimental.geneontology.io/metadata/users.ttl
 - exact: /metadata/groups.ttl
-  replacement: http://experimental.geneontology.io/metadata/groups.ttl
+  replacement: https://experimental.geneontology.io/metadata/groups.ttl
 
 - exact: /tracker
   replacement: https://github.com/geneontology/go-ontology/issues
@@ -36,7 +36,7 @@ entries:
     to: https://raw.githubusercontent.com/geneontology/go-ontology/master/src/design_patterns/regulation.yaml
 
 - prefix: /experimental/
-  replacement: http://geneontology.org/experimental/
+  replacement: https://geneontology.org/experimental/
 
 ## the noctua ontology does not fit in the main GO SVN space, use a Jenkins artefact for now
 ## see https://github.com/geneontology/neo/issues/5
@@ -47,25 +47,25 @@ entries:
   replacement: http://build-artifacts.berkeleybop.org/build-noctua-obo-ontology/latest/
 
 - prefix: /snapshot/
-  replacement: http://snapshot.geneontology.org/ontology/
+  replacement: https://snapshot.geneontology.org/ontology/
 
 - prefix: /about/
-  replacement: http://www.ontobee.org/browser/rdf.php?o=GO&iri=http://purl.obolibrary.org/obo/
+  replacement: https://www.ontobee.org/browser/rdf.php?o=GO&iri=http://purl.obolibrary.org/obo/
 
 # These release IRIs were published with incorrect dates due to a timezone issue in Docker
 - prefix: /releases/2019-03-19/
-  replacement: http://release.geneontology.org/2019-03-18/ontology/
+  replacement: https://release.geneontology.org/2019-03-18/ontology/
   
 - prefix: /releases/2019-06-10/
-  replacement: http://release.geneontology.org/2019-06-09/ontology/
+  replacement: https://release.geneontology.org/2019-06-09/ontology/
 
 - regex: ^/obo/go/releases/([^\s/]+)/(\S+)$
-  replacement: http://release.geneontology.org/$1/ontology/$2
+  replacement: https://release.geneontology.org/$1/ontology/$2
   tests:
   - from: /releases/2019-01-01/go.owl
-    to: http://release.geneontology.org/2019-01-01/ontology/go.owl
+    to: https://release.geneontology.org/2019-01-01/ontology/go.owl
   - from: /releases/2019-01-01/extensions/go-plus.owl
-    to: http://release.geneontology.org/2019-01-01/ontology/extensions/go-plus.owl
+    to: https://release.geneontology.org/2019-01-01/ontology/extensions/go-plus.owl
 
   # Terms for GO REFs
 # http://purl.obolibrary.org/obo/go/references/0000001
@@ -79,5 +79,5 @@ entries:
 
 # Keep this as last entry as the rules are matched in order
 - prefix: /
-  replacement: http://current.geneontology.org/ontology/
+  replacement: https://current.geneontology.org/ontology/
   

@@ -1,4 +1,4 @@
-# PURL configuration for http://purl.obolibrary.org/obo/pato
+# PURL configuration for http://purl.obolibrary.org/obo/t4fs
 
 idspace: T4FS
 base_url: /obo/t4fs
@@ -24,3 +24,9 @@ entries:
 
 - exact: /tracker
   replacement: https://github.com/terms4fairskills/FAIRterminology/issues
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/terms4fairskills/FAIRterminology/v
+  tests:
+    - from: /releases/2025-02-09/t4fs.owl
+      to: https://raw.githubusercontent.com/terms4fairskills/FAIRterminology/v2025-02-09/t4fs.owl

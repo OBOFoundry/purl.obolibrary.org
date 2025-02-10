@@ -26,4 +26,4 @@ entries:
   replacement: https://github.com/terms4fairskills/FAIRterminology/issues
   
 - prefix: /releases/
-  replacement: https://github.com/terms4fairskills/FAIRterminology/blob/v
+  replacement: https://github.com/terms4fairskills/FAIRterminology/raw/v

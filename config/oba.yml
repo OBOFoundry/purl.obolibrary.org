@@ -8,6 +8,10 @@ products:
 - oba.obo: https://github.com/obophenotype/bio-attribute-ontology/releases/latest/download/oba.obo
 - oba.json: https://github.com/obophenotype/bio-attribute-ontology/releases/latest/download/oba.json
 
+term_browser: custom
+example_terms:
+- OBA_0000001
+
 entries:
 - exact: /subsets/oba-basic.owl
   replacement: https://github.com/obophenotype/bio-attribute-ontology/releases/latest/download/oba-basic.owl
@@ -40,10 +44,6 @@ entries:
 - prefix: /imports/
   replacement: https://raw.githubusercontent.com/obophenotype/bio-attribute-ontology/master/imports/
 - prefix: /about/
-  replacement: http://www.ontobee.org/ontology/OBA?iri=http://purl.obolibrary.org/obo/
+  replacement: https://www.ebi.ac.uk/ols4/ontologies/oba/entities/http://purl.obolibrary.org/obo/
 - prefix: /
   replacement: https://github.com/obophenotype/bio-attribute-ontology/releases/latest/download/
-  
-term_browser: ols
-example_terms:
-- OBA_0000001

@@ -24,6 +24,9 @@ entries:
 
 - exact: /tracker
   replacement: https://github.com/terms4fairskills/FAIRterminology/issues
-  
+
 - prefix: /releases/
-  replacement: https://github.com/terms4fairskills/FAIRterminology/raw/v
+  replacement: https://raw.githubusercontent.com/terms4fairskills/FAIRterminology/v
+  tests:
+    - from: /releases/2025-02-09/t4fs.owl
+      to: https://raw.githubusercontent.com/terms4fairskills/FAIRterminology/v2025-02-09/t4fs.owl

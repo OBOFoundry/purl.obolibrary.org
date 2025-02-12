@@ -8,9 +8,7 @@ products:
 - envo.json: https://raw.githubusercontent.com/EnvironmentOntology/envo/master/envo.json
 - envo.obo: https://raw.githubusercontent.com/EnvironmentOntology/envo/master/envo.obo
 
-term_browser: ontobee
-example_terms:
-- ENVO_00003096
+term_browser: ols
 
 entries:
 - exact: /mappings/spire-mapping.ttxt

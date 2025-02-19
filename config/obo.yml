@@ -150,14 +150,15 @@ entries:
 
 # Term redirects for OBA
 # Some OBA IDs start with VT, because they were originally sourced from VT
+# We need an extra (ugly) layer of %-quoting here to get the right result.
 - regex: ^/obo/OBA_((VT)?\d+)$
-  replacement: https://www.ebi.ac.uk/ols4/ontologies/oba/entities/http://purl.obolibrary.org/obo/OBA_$1
+  replacement: https://www.ebi.ac.uk/ols4/ontologies/oba/entities/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FOBA_$1
   status: see other
   tests:
   - from: /OBA_0000001
-    to: https://www.ebi.ac.uk/ols4/ontologies/oba/entities/http://purl.obolibrary.org/obo/OBA_0000001
+    to: https://www.ebi.ac.uk/ols4/ontologies/oba/entities/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FOBA_0000001
   - from: /OBA_VT0000002
-    to: https://www.ebi.ac.uk/ols4/ontologies/oba/entities/http://purl.obolibrary.org/obo/OBA_VT0000002
+    to: https://www.ebi.ac.uk/ols4/ontologies/oba/entities/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FOBA_VT0000002
 
 ### OBO Format Specification
 - exact: /oboformat/

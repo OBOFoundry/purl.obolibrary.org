@@ -9,6 +9,15 @@ products:
 - stato.obo: https://raw.githubusercontent.com/ISA-tools/stato/dev/releases/latest_release/stato.obo
 
 
-term_browser: ontobee
+term_browser: ols
+
+entries:
+- exact: /tracker
+  replacement: https://github.com/ISA-tools/stato/issues
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/ISA-tools/stato/v
+
+
 example_terms:
 - STATO_0000001

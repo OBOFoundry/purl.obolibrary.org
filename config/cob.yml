@@ -12,7 +12,7 @@ example_terms:
 
 entries:
 - exact: /cob-to-external.owl
-  replacement: https://raw.githubusercontent.com/OBOFoundry/COB/master/src/ontology/components/cob-to-external.owl
+  replacement: https://raw.githubusercontent.com/OBOFoundry/COB/master/cob.owl
 - prefix: /branch/
   replacement: https://raw.githubusercontent.com/OBOFoundry/COB/
 - prefix: /releases/

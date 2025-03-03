@@ -7,6 +7,4 @@ products:
 - exo.owl: https://github.com/CTDbase/exposure-ontology/raw/master/exo.owl
 - exo.obo: https://github.com/CTDbase/exposure-ontology/raw/master/exo.obo
 
-term_browser: ontobee
-example_terms:
-- ExO_0000000
+term_browser: ols

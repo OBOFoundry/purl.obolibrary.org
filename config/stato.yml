@@ -8,16 +8,16 @@ products:
 - stato.owx: https://raw.githubusercontent.com/ISA-tools/stato/dev/releases/latest_release/stato.owx
 - stato.obo: https://raw.githubusercontent.com/ISA-tools/stato/dev/releases/latest_release/stato.obo
 
-
 term_browser: ols
+example_terms:
+- STATO_0000001
 
 entries:
 - exact: /tracker
   replacement: https://github.com/ISA-tools/stato/issues
 
 - prefix: /releases/
-  replacement: https://raw.githubusercontent.com/ISA-tools/stato/v
-
-
-example_terms:
-- STATO_0000001
+  replacement: https://raw.githubusercontent.com/ISA-tools/stato/dev/releases/
+  tests:
+  - from: /releases/2025-02-23/stato.owl
+    to: https://raw.githubusercontent.com/ISA-tools/stato/dev/releases/2025-02-23/stato.owl

@@ -160,6 +160,15 @@ entries:
   - from: /OBA_VT0000002
     to: https://www.ebi.ac.uk/ols4/ontologies/oba/entities/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FOBA_VT0000002
 
+# Term redirects for ExO
+# ExO URLs dont resolve presumable because ontobee cant handle mixed case
+- regex: ^/obo/ExO_(\d+)$
+  replacement: https://www.ebi.ac.uk/ols4/ontologies/exo/entities/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FExO_$1
+  status: see other
+  tests:
+  - from: /ExO_0000001
+    to: https://www.ebi.ac.uk/ols4/ontologies/exo/entities/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FExO_0000001
+
 ### OBO Format Specification
 - exact: /oboformat/
   replacement: http://owlcollab.github.io/oboformat/doc/obo-syntax.html

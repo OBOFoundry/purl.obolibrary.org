@@ -9,3 +9,10 @@ products:
 term_browser: ontobee
 example_terms:
 - ICO_0000001 
+
+entries:
+- exact: /tracker
+  replacement: https://github.com/ICO-ontology/ICO/issues
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/ICO-ontology/ICO/v

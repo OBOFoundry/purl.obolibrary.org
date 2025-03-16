@@ -4,7 +4,7 @@ idspace: ONTONEO
 base_url: /obo/ontoneo
 
 products:
-- ontoneo.owl: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/ontoneo.owl
+- ontoneo.owl: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/refs/heads/master/ontoneo.owl
 
 term_browser: ontobee
 example_terms:
@@ -19,13 +19,11 @@ entries:
 - exact: /tracker
   replacement: https://github.com/ontoneo-project/Ontoneo/issues
 
-### Imported ontologies current release
-- prefix: /import/
-  replacement: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/import/
-  tests:
-  - from: /import/ro_import.owl
-    to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/import/ro_import.owl
+### Current Releases
 
+- exact: /ontoneo.owl
+  replacement: https://github.com/ontoneo-project/Ontoneo/blob/master/releases/2025-03-14/ontoneo.owl
+  
 ### Previous release
 
 - prefix: /releases/
@@ -38,4 +36,4 @@ entries:
   
 ### Documentation Pages and Redirects
 - exact: /homepage
-  replacement: http://ontoneo.com
+  replacement: https://ontoneo.com

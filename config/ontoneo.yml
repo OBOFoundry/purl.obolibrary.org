@@ -17,7 +17,7 @@ entries:
 - prefix: /import/
   replacement: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/2021-02-24/import/bfo_import.owl
   tests:
-  - from: releases/2021-02-24/import/bfo_import.owl
+  - from: /releases/2021-02-24/import/bfo_import.owl
     to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/import/uberon_import.owl
 
 ### Project Page and Tracker

@@ -12,20 +12,21 @@ example_terms:
 
 entries:
 
+### Imported ontologies for archived releases
+
+- prefix: /import/
+  replacement: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/2021-02-24/import/
+  tests:
+  - from: /import/bfo_import.owl
+    to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/2021-02-24/import/bfo_import.owl
+
 ### Project Page and Tracker
 - exact: /project
   replacement: https://github.com/ontoneo-project/Ontoneo
  
 - exact: /tracker
   replacement: https://github.com/ontoneo-project/Ontoneo/issues
-
-### Imported ontologies current release
-- prefix: /import/
-  replacement: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/import/
-  tests:
-  - from: /import/ro_import.owl
-    to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/import/ro_import.owl
-
+  
 ### Previous release
 
 - prefix: /releases/
@@ -33,9 +34,22 @@ entries:
   tests:
   - from: /releases/2021-02-24/ontoneo.owl
     to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/2021-02-24/ontoneo.owl
+  - from: /releases/2016-11-07/ontoneo.owl
+    to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/2016-11-07/ontoneo.owl
+  - from: /releases/2016-11-07/import/bfo_import.owl
+    to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/2016-11-07/import/bfo_import.owl
   - from: /releases/2016-12-14/import/bfo_import.owl
     to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/2016-12-14/import/bfo_import.owl
-  
+  - from: /releases/2016-12-26/ontoneo.owl
+    to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/2016-12-26/ontoneo.owl
+  - from: /releases/2017-03-04/ontoneo.owl
+    to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/2017-03-04/ontoneo.owl
+  - from: /releases/2021-02-24/ontoneo.owl
+    to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/2021-02-24/ontoneo.owl
+  - from: /releases/2021-04-29/ontoneo.owl
+    to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/2021-04-29/ontoneo.owl
+
 ### Documentation Pages and Redirects
+
 - exact: /homepage
-  replacement: http://ontoneo.com
+  replacement: https://ontoneo.com

@@ -1,0 +1,18 @@
+# PURL configuration for http://purl.obolibrary.org/obo/bmont
+
+idspace: BMONT
+base_url: /obo/bmont
+
+products:
+- bmont.owl: https://raw.githubusercontent.com/SCAI-BIO/BiomarkerOntology/main/BMONT-merged.owl
+
+term_browser: ontobee
+example_terms:
+- BMONT_0000006
+
+entries:
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/bmont-ontology/bmont/v
+
+- exact: /tracker
+  replacement: https://github.com/SCAI-BIO/BiomarkerOntology/issues

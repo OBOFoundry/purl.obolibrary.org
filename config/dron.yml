@@ -7,6 +7,9 @@ products:
 - dron.owl: https://github.com/mcwdsi/dron/releases/latest/download/dron.owl
 - dron.obo: https://github.com/mcwdsi/dron/releases/latest/download/dron.obo
 - dron.json: https://github.com/mcwdsi/dron/releases/latest/download/dron.json
+- dron.owl.gz: https://github.com/mcwdsi/dron/releases/latest/download/dron.owl.gz
+- dron.obo.gz: https://github.com/mcwdsi/dron/releases/latest/download/dron.obo.gz
+- dron.json.gz: https://github.com/mcwdsi/dron/releases/latest/download/dron.json.gz
 
 term_browser: ontobee
 example_terms:

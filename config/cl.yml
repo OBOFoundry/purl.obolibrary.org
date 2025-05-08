@@ -6,8 +6,10 @@ base_url: /obo/cl
 products:
 - cl.owl: https://github.com/obophenotype/cell-ontology/releases/latest/download/cl.owl
 - cl.obo: https://github.com/obophenotype/cell-ontology/releases/latest/download/cl.obo
+- cl.json: https://github.com/obophenotype/cell-ontology/releases/latest/download/cl.json
 - cl-basic.owl: https://github.com/obophenotype/cell-ontology/releases/latest/download/cl-basic.owl
 - cl-basic.obo: https://github.com/obophenotype/cell-ontology/releases/latest/download/cl-basic.obo
+- cl-basic.json: https://github.com/obophenotype/cell-ontology/releases/latest/download/cl-basic.json
 
 term_browser: ols
 example_terms:

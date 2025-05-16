@@ -136,6 +136,20 @@ entries:
 - prefix: /bds/
   replacement: https://github.com/obophenotype/brain_data_standards_ontologies/
 
+# For files that are imported from the -edit file (imports, components,
+# pattern-derived definitions), we cannot point to the latest release
+# download folder as we do below in the "generic" fall-through, because
+# those files are _not_ release artefacts and are therefore absent from
+# that folder. Instead, we point to the current master branch.
+- prefix: /imports/
+  replacement: https://github.com/obophenotype/cell-ontology/raw/refs/heads/master/src/ontology/imports/
+
+- prefix: /components/
+  replacement: https://github.com/obophenotype/cell-ontology/raw/refs/heads/master/src/ontology/components/
+
+- prefix: /patterns/
+  replacement: https://github.com/obophenotype/cell-ontology/raw/refs/heads/master/src/patterns/
+
 ## generic fall-through, serve direct from github by default
 - prefix: /
   replacement: https://github.com/obophenotype/cell-ontology/releases/latest/download/

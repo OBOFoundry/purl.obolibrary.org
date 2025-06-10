@@ -6,7 +6,20 @@ base_url: /obo/chmo
 products:
 - chmo.owl: https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/master/chmo.owl
 - chmo.obo: https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/master/chmo.obo
-
-term_browser: ontobee
+- chmo.json: https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/master/chmo.json
+- chmo-base.owl: https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/master/chmo-base.owl
+- chmo-base.obo: https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/master/chmo-base.obo
+- chmo-base.json: https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/master/chmo-base.json
+- chmo-full.owl: https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/master/chmo-full.owl
+- chmo-full.obo: https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/master/chmo-full.obo
+- chmo-full.json: https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/master/chmo-full.json
+  
+entries:
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/v
+- prefix: /tracker/
+  replacement: https://github.com/rsc-ontologies/rsc-cmo/issues
+  
+term_browser: ols
 example_terms:
 - CHMO_0002748

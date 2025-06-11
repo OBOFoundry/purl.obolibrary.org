@@ -25,7 +25,11 @@ entries:
   replacement: https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/v
 - prefix: /tracker/
   replacement: https://github.com/rsc-ontologies/rsc-cmo/issues
-  
+
+tests:
+  - from: /releases/2025-01-22/chmo.owl
+    to: https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/v2025-01-22/chmo.owl
+    
 term_browser: ols
 example_terms:
 - CHMO_0002748

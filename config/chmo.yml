@@ -6,7 +6,29 @@ base_url: /obo/chmo
 products:
 - chmo.owl: https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/master/chmo.owl
 - chmo.obo: https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/master/chmo.obo
+- chmo.json: https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/master/chmo.json
 
-term_browser: ontobee
+entries:
+- exact: /chmo-base.owl
+  replacement: https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/master/chmo-base.owl
+- exact: /chmo-base.obo
+  replacement: https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/master/chmo-base.obo
+- exact: /chmo-base.json
+  replacement: https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/master/chmo-base.json
+- exact: /chmo-full.owl
+  replacement: https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/master/chmo-full.owl
+- exact: /chmo-full.obo
+  replacement: https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/master/chmo-full.obo
+- exact: /chmo-full.json
+  replacement: https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/master/chmo-full.json
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/v
+  tests:
+    - from: /releases/2025-01-22/chmo.owl
+      to: https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/v2025-01-22/chmo.owl
+- prefix: /tracker/
+  replacement: https://github.com/rsc-ontologies/rsc-cmo/issues
+    
+term_browser: ols
 example_terms:
 - CHMO_0002748

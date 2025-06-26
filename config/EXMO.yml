@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/exmo
+
+idspace: EXMO
+base_url: /obo/exmo
+
+base_redirect: https://github.com/Exercise-Medicine-Ontology/EXMO
+
+products:
+- pato.owl: https://github.com/Exercise-Medicine-Ontology/EXMO/blob/master/exmo.owl
+- pato.obo: https://github.com/Exercise-Medicine-Ontology/EXMO/blob/master/exmo.obo
+
+term_browser: ontobee
+example_terms:
+- EXMO_0000008
+
+entries:
+- exact: /tracker
+  replacement: https://github.com/Exercise-Medicine-Ontology/EXMO/issues
+
+- prefix: /releases/
+  replacement: https://github.com/Exercise-Medicine-Ontology/EXMO
+
+- prefix: /imports/
+  replacement: https://github.com/Exercise-Medicine-Ontology/EXMO/tree/master/src/import
+
+- prefix: /
+  replacement: https://github.com/Exercise-Medicine-Ontology/EXMO

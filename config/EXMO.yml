@@ -6,8 +6,8 @@ base_url: /obo/exmo
 base_redirect: https://github.com/Exercise-Medicine-Ontology/EXMO
 
 products:
-- pato.owl: https://github.com/Exercise-Medicine-Ontology/EXMO/blob/master/exmo.owl
-- pato.obo: https://github.com/Exercise-Medicine-Ontology/EXMO/blob/master/exmo.obo
+- exmo.owl: https://github.com/Exercise-Medicine-Ontology/EXMO/blob/master/exmo.owl
+- exmo.obo: https://github.com/Exercise-Medicine-Ontology/EXMO/blob/master/exmo.obo
 
 term_browser: ontobee
 example_terms:
@@ -18,7 +18,7 @@ entries:
   replacement: https://github.com/Exercise-Medicine-Ontology/EXMO/issues
 
 - prefix: /releases/
-  replacement: https://github.com/Exercise-Medicine-Ontology/EXMO
+  replacement: https://raw.githubusercontent.com/Exercise-Medicine-Ontology/EXMO/v
 
 - prefix: /imports/
   replacement: https://github.com/Exercise-Medicine-Ontology/EXMO/tree/master/src/import

@@ -4,7 +4,7 @@ idspace: BMONT
 base_url: /obo/bmont
 
 products:
-- bmont.owl: https://raw.githubusercontent.com/SCAI-BIO/BiomarkerOntology/main/BMONT-merged.owl
+- bmont.owl: https://raw.githubusercontent.com/SCAI-BIO/BiomarkerOntology/main/BMONT.owl
 
 term_browser: ontobee
 example_terms:

@@ -6,7 +6,7 @@ base_url: /obo/ohd
 base_redirect: https://github.com/oral-health-and-disease-ontologies/ohd-ontology
 
 products:
-- ohd.owl: https://raw.githubusercontent.com/oral-health-and-disease-ontologies/ohd-ontology/master/ohd.owl
+- ohd.owl: https://raw.githubusercontent.com/oral-health-and-disease-ontologies/ohd-ontology/main/ohd.owl
 
 term_browser: ontobee
 example_terms:
@@ -14,7 +14,7 @@ example_terms:
 
 entries:
 - exact: /ohd-base.owl
-  replacement: https://raw.githubusercontent.com/oral-health-and-disease-ontologies/ohd-ontology/master/ohd-base.owl
+  replacement: https://raw.githubusercontent.com/oral-health-and-disease-ontologies/ohd-ontology/main/ohd-base.owl
 
 - prefix: /about/
   replacement: https://ontobee.org/ontology/OHD?iri=http://purl.obolibrary.org/obo/
@@ -23,8 +23,8 @@ entries:
     to: https://ontobee.org/ontology/OHD?iri=http://purl.obolibrary.org/obo/OHD_0000019
   
 - prefix: /dev/
-  replacement: https://github.com/oral-health-and-disease-ontologies/ohd-ontology/tree/master/src/ontology
+  replacement: https://github.com/oral-health-and-disease-ontologies/ohd-ontology/tree/main/src/ontology
 
 ## generic fall-through, serve direct from github by default
 - prefix: /
-  replacement: https://github.com/oral-health-and-disease-ontologies/ohd-ontology/tree/master/
+  replacement: https://github.com/oral-health-and-disease-ontologies/ohd-ontology/tree/main/

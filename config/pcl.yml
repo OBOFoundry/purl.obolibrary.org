@@ -44,6 +44,9 @@ entries:
 - prefix: /about/
   replacement: https://github.com/obophenotype/provisional_cell_ontology#readme
 
+- exact: /bds/bds.owl
+  replacement: https://raw.githubusercontent.com/obophenotype/brain_data_standards_ontologies/master/bdso.owl
+  
 - exact: /bds/kg
   replacement: https://knowledge-graph-ebi.brain.allentech.org/browser/
   

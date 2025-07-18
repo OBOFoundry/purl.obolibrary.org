@@ -34,7 +34,7 @@ entries:
 - regex: ^/obo/doid/releases/([^\s/]+)/translations/(\S+)$
   replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v$1/src/ontology/releases/translations/$2
   tests:
-  - from: /releases/2020-01-31/translations/doid-international.owl
+  - from: /releases/2025-01-31/translations/doid-international.owl
     to: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2025-01-31/src/ontology/releases/translations/doid-international.owl
 
 - regex: ^/obo/doid/releases/([^\s/]+)/(\S+)$

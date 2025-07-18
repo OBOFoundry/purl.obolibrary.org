@@ -25,6 +25,18 @@ entries:
   - from: /imports/ro_import.owl
     to: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/main/src/ontology/imports/ro_import.owl
 
+- prefix: /translations/
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/main/src/ontology/releases/translations/
+  tests:
+  - from: /translations/doid-es.owl
+    to: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/main/src/ontology/releases/translations/doid-es.owl
+
+- regex: ^/obo/doid/releases/([^\s/]+)/translations/(\S+)$
+  replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v$1/src/ontology/releases/translations/$2
+  tests:
+  - from: /releases/2025-01-31/translations/doid-international.owl
+    to: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v2025-01-31/src/ontology/releases/translations/doid-international.owl
+
 - regex: ^/obo/doid/releases/([^\s/]+)/(\S+)$
   replacement: https://raw.githubusercontent.com/DiseaseOntology/HumanDiseaseOntology/v$1/src/ontology/$2
   tests:

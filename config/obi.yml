@@ -341,6 +341,9 @@ entries:
 - exact: /2025-07-28/obi.obo
   replacement: https://raw.githubusercontent.com/obi-ontology/obi/v2025-07-28/views/obi.obo
 
+- exact: /2025-07-28/obi-cob.owl
+  replacement: https://raw.githubusercontent.com/obi-ontology/obi/v2025-07-28/views/obi-cob.owl
+
 ### Web Service Releases
 
 - exact: /v1.1/webService.owl

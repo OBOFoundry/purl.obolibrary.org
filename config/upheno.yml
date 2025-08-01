@@ -26,6 +26,15 @@ entries:
 - exact: /zp.owl
   replacement: http://purl.obolibrary.org/obo/zp.owl
 
+- exact: /patterns/abnormalAnatomicalEntity.yaml
+  replacement: https://raw.githubusercontent.com/obophenotype/upheno/master/src/patterns/dosdp-dev/abnormalAnatomicalEntity.yaml
+
+- exact: /patterns/abnormalLevelOfChemicalEntity.yaml
+  replacement: https://raw.githubusercontent.com/obophenotype/upheno/master/src/patterns/dosdp-dev/abnormalLevelOfChemicalEntity.yaml
+
+- exact: /patterns/abnormalLevelOfChemicalEntityInLocation.yaml
+  replacement: https://raw.githubusercontent.com/obophenotype/upheno/master/src/patterns/dosdp-dev/abnormalLevelOfChemicalEntityInLocation.yaml
+
 - exact: /chebi_slim.owl
   replacement: https://raw.githubusercontent.com/obophenotype/chebi_obo_slim/main/chebi_slim.owl
 

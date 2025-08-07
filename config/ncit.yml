@@ -37,18 +37,36 @@ entries:
     - from: /releases/2022-04-14/ncit.owl
       to: https://stars.renci.org/var/NCIt/releases/2022-04-14/ncit.owl
 
+- prefix: /releases/2022-08-19/
+  replacement: https://github.com/NCI-Thesaurus/thesaurus-obo-edition/releases/download/v2022-08-19/
+  tests:
+    - from: /releases/2022-08-19/ncit.owl
+      to: https://github.com/NCI-Thesaurus/thesaurus-obo-edition/releases/download/v2022-08-19/ncit.owl
+
+- prefix: /releases/2023-10-19/
+  replacement: https://github.com/NCI-Thesaurus/thesaurus-obo-edition/releases/download/v2023-10-19/
+  tests:
+    - from: /releases/2023-10-19/ncit.owl
+      to: https://github.com/NCI-Thesaurus/thesaurus-obo-edition/releases/download/v2023-10-19/ncit.owl
+
+- prefix: /releases/2024-05-07/
+  replacement: https://github.com/NCI-Thesaurus/thesaurus-obo-edition/releases/download/v2024-05-07/
+  tests:
+    - from: /releases/2024-05-07/ncit.owl
+      to: https://github.com/NCI-Thesaurus/thesaurus-obo-edition/releases/download/v2024-05-07/ncit.owl
+
 - prefix: /releases/
-  replacement: https://github.com/NCI-Thesaurus/thesaurus-obo-edition/releases/download/v
+  replacement: https://github.com/ncit-obo-org/ncit-obo-edition/releases/download/v
   tests:  
-    - from: /releases/2022-08-18/ncit.obo
-      to: https://github.com/NCI-Thesaurus/thesaurus-obo-edition/releases/download/v2022-08-18/ncit.obo
+    - from: /releases/2025-08-06/ncit.obo
+      to: https://github.com/ncit-obo-org/ncit-obo-edition/releases/download/v2025-08-06/ncit.obo
 
 - prefix: /tracker/
-  replacement: https://github.com/NCI-Thesaurus/thesaurus-obo-edition/issues
+  replacement: https://github.com/ncit-obo-org/ncit-obo-edition/issues
 
 - prefix: /about/
   replacement: http://www.ontobee.org/ontology/NCIT?iri=http://purl.obolibrary.org/obo/
 
 ## generic fall-through, serve direct from stars by default
 - prefix: /
-  replacement: https://raw.githubusercontent.com/NCI-Thesaurus/thesaurus-obo-edition/master/
+  replacement: https://raw.githubusercontent.com/ncit-obo-org/ncit-obo-edition/master/

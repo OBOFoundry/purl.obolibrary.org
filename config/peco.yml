@@ -7,7 +7,7 @@ products:
 - peco.owl: https://raw.githubusercontent.com/Planteome/plant-experimental-conditions-ontology/master/peco.owl
 - peco.OBO: https://raw.githubusercontent.com/Planteome/plant-experimental-conditions-ontology/master/peco.obo
 
-term_browser: ontobee
+term_browser: custom
 example_terms:
 - PECO_0007359
 

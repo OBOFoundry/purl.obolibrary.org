@@ -7,7 +7,7 @@ products:
 - to.owl: https://raw.githubusercontent.com/Planteome/plant-trait-ontology/master/to.owl
 - to.obo: https://raw.githubusercontent.com/Planteome/plant-trait-ontology/master/to.obo
 
-term_browser: ontobee
+term_browser: custom
 example_terms:
 - TO_0000001
 

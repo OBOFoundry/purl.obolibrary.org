@@ -17,6 +17,6 @@ entries:
 - prefix: /releases/
   replacement: https://raw.githubusercontent.com/Planteome/plant-ontology/v
   
-term_browser: ontobee
+term_browser: custom
 example_terms:
 - PO_0009012

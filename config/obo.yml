@@ -160,6 +160,30 @@ entries:
   - from: /OBA_VT0000002
     to: https://www.ebi.ac.uk/ols4/ontologies/oba/entities/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FOBA_VT0000002
 
+# Term redirects for PO
+- regex: ^/obo/PO_(\d+)$
+  replacement: https://browser.planteome.org/amigo/term/PO:$1
+  status: see other
+  tests:
+  - from: /PO_0009012
+    to: https://browser.planteome.org/amigo/term/PO:0009012
+
+# Term redirects for TO
+- regex: ^/obo/TO_(\d+)$
+  replacement: https://browser.planteome.org/amigo/term/TO:$1
+  status: see other
+  tests:
+  - from: /TO_0000001
+    to: https://browser.planteome.org/amigo/term/TO:0000001
+
+# Term redirects for PECO
+- regex: ^/obo/PECO_(\d+)$
+  replacement: https://browser.planteome.org/amigo/term/PECO:$1
+  status: see other
+  tests:
+  - from: /PECO_0007359
+    to: https://browser.planteome.org/amigo/term/PECO:0007359
+
 ### OBO Format Specification
 - exact: /oboformat/
   replacement: http://owlcollab.github.io/oboformat/doc/obo-syntax.html

@@ -69,4 +69,4 @@ entries:
 
 ## generic fall-through, serve direct from stars by default
 - prefix: /
-  replacement: https://raw.githubusercontent.com/ncit-obo-org/ncit-obo-edition/master/
+  replacement: https://github.com/ncit-obo-org/ncit-obo-edition/releases/latest/download/

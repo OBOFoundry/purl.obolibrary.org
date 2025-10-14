@@ -6,8 +6,10 @@ base_url: /obo/chebi
 products:
 - chebi.owl: http://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.owl
 - chebi.obo: http://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.obo
+- chebi.json: http://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.json
 - chebi.owl.gz: http://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.owl.gz
 - chebi.obo.gz: http://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.obo.gz
+- chebi.json.gz : http://ftp.ebi.ac.uk/pub/databases/chebi/ontology/chebi.json.gz
 
 term_browser: custom
 
@@ -33,11 +35,21 @@ entries:
   - from: /about/CHEBI_15377
     to: http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI_15377
 
+# ChEBI Ontology from v100 to v244 has been moved to /chebi_legacy/archive/rel
+- regex: ^/obo/chebi/(1\d{2}|2[0-3]\d|24[0-4])/(.+)$
+  replacement: http://ftp.ebi.ac.uk/pub/databases/chebi/archive/chebi_legacy/archive/rel$1/ontology/$2
+  tests:
+  - from: /100/chebi.owl
+    to: http://ftp.ebi.ac.uk/pub/databases/chebi/archive/chebi_legacy/archive/rel100/ontology/chebi.owl
+  - from: /244/chebi.owl
+    to: http://ftp.ebi.ac.uk/pub/databases/chebi/archive/chebi_legacy/archive/rel244/ontology/chebi.owl
+
+# From ChEBI 245 this regex should keep working.
 - regex: ^/obo/chebi/(\d+)/(.+)$
   replacement: http://ftp.ebi.ac.uk/pub/databases/chebi/archive/rel$1/ontology/$2
   tests:
-  - from: /186/chebi.owl
-    to: http://ftp.ebi.ac.uk/pub/databases/chebi/archive/rel186/ontology/chebi.owl
+  - from: /245/chebi.owl
+    to: http://ftp.ebi.ac.uk/pub/databases/chebi/archive/rel245/ontology/chebi.owl
 
 ## generic fall-through, serve direct from github by default
 - prefix: /

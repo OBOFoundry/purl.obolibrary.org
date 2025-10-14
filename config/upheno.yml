@@ -38,7 +38,7 @@ entries:
   replacement: https://raw.githubusercontent.com/obophenotype/upheno/master/src/patterns/dosdp-dev/abnormalLevelOfChemicalEntityInLocation.yaml
 
 - exact: /chebi_slim.owl
-  replacement: https://raw.githubusercontent.com/obophenotype/chebi_obo_slim/main/chebi_slim.owl
+  replacement: https://github.com/obophenotype/chebi_obo_slim/releases/latest/download/chebi_slim.owl
 
 - exact: /mp-hp-view.owl
   replacement: http://build-artifacts.berkeleybop.org/build-mp-hp-view/latest/mp-hp-view.owl

@@ -11,7 +11,7 @@ products:
 - ncbitaxon.obo.gz: https://github.com/obophenotype/ncbitaxon/releases/latest/download/ncbitaxon.obo.gz
 - ncbitaxon.json.gz: https://github.com/obophenotype/ncbitaxon/releases/latest/download/ncbitaxon.json.gz
 
-term_browser: ontobee
+term_browser: custom
 example_terms:
 - NCBITaxon_1
 

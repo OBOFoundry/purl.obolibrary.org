@@ -139,107 +139,31 @@ Note that term redirect rules are case sensitive.
 Since these are `regex` entries, and could affect multiple projects, we prefer that OBO admins are the only ones to edit `obo.yml`. If you need a change to the term redirect entry for your project, please [create a new issue](https://github.com/OBOFoundry/purl.obolibrary.org/issues/new).
 
 
-## Development and Testing
+## Testing and Deployment
 
-The PURL system runs on Ubuntu Linux, but you can test your changes using a virtual machine (VM) that runs on Windows, Mac, or Linux. Your local development machine (Windows, Mac, or Linux) will be the "host" machine. The VM will be a copy of Ubuntu Linux that runs on your host, and can be thrown away when you're done testing.
+We use Docker to test the PURL system locally and deploy it. See the [docker/](https://github.com/OBOFoundry/purl.obolibrary.org/tree/master/docker) directory for code and documentation. Test the system locally like so:
 
-You'll have to install these three tools on your host machine:
+```console
+$ docker pull ubuntu:20.04
+$ docker build -f docker/Dockerfile -t purl:latest .
+$ docker run --rm -it -v "$(pwd)/config":/var/www/purl.obolibrary.org/config purl bash
+# sudo su
+# cd /var/www/purl.obolibrary.org
+# make clean all test
+```
 
-1. [VirtualBox](https://www.virtualbox.org) to run the VM
-2. [Vagrant](https://www.vagrantup.com) to setting up the VM
-3. [Ansible](https://) to provisioning the VM with the right software
+To check a single `config/foo.yml` configuration file, run one of these commands
 
-All of these tools are free for you to use. If you're using macOS with [Homebrew](http://brew.sh), then you can install the three tools like this:
-
-    brew install --cask Caskroom/cask/vagrant
-    brew install --cask Caskroom/cask/virtualbox
-    brew install ansible
-
-Once the three tools are installed, check out a copy of this repository and start the VM:
-
-    git clone https://github.com/OBOFoundry/purl.obolibrary.org.git
-    cd purl.obolibrary.org/tools
-    vagrant up
-
-This will:
-
-1. download an Ubuntu Linux virtual machine (using Vagrant and the `tools/Vagrantfile`)
-2. run it (using VirtualBox)
-3. configure it as a web server (using Ansible and the `tools/site.yml` file)
-
-If something goes wrong with step 3, the `vagrant provision` command will run Ansible again. Please [report any issues](https://github.com/OBOFoundry/purl.obolibrary.org/issues) that you run into.
-
-Use your favourite text editor on your host machine to make your changes to the files in the `purl.obolibrary.org` directory. That directory will be synchronized with the `/var/www/purl.obolibrary.org` directory inside the VM. When you're ready to test your changes, log in to the VM and rebuild the `.htaccess` files:
-
-    vagrant ssh
-    cd /var/www/purl.obolibrary.org
-    make clean all
-
-You can use the web browser on the host machine to see the results, using URLs starting with `http://172.16.100.10/obo/`, such as [`http://172.16.100.10/obo/OBI_0000070`](http://172.16.100.10/obo/OBI_0000070). You can also run an automated tests. To check a single `config/foo.yml` configuration file, run one of these commands
-
-    make clean validate-foo
-    make clean build-foo
-
-To update and test the whole system, run
-
-    make clean all test
+```console
+# make clean validate-foo
+# make clean build-foo
+```
 
 Detailed test results will be listed in `tests/development/*.tsv` files, with their expected and actual values. If you're making changes to the project tools, you can test them against the `tools/examples/` files with:
 
-    make clean test-examples
-
-Expert users who have to run more extensive tests can consider (temporarily) modifying their `hosts` file to redirect `purl.obolibrary.org` to the test server.
-
-When you're done with the VM, log out with `exit`. Then you can choose to suspend the VM with
-
-    vagrant suspend
-
-or delete the VM with
-
-    vagrant destroy
-
-You can test against the production PURL server using `make test-production`. We only make one request per second, to avoid abusing the server, so this can take along time.
-
-### Optional: Sync VirtualBox Guest Additions
-
-If you keep your development VM for any length of time you may be presented with this message upon starting your VM:
+```console
+# make clean test-examples
 ```
-==> default: A newer version of the box 'ubuntu/trusty64' is available! You currently
-==> default: have version '20190122.1.1'. The latest is version '20190206.0.0'. Run
-==> default: `vagrant box update` to update.
-```
-If you upgrade, then the next time you resume your box you may receive the warning:
-```
-[default] The guest additions on this VM do not match the install version of
-VirtualBox! This may cause things such as forwarded ports, shared
-folders, and more to not work properly. If any of those things fail on
-this machine, please update the guest additions and repackage the
-box.
-```
-
-To automatically sync with VirtualBox's Guest Additions at startup (and thus avoid this warning) you can install `vagrant-vbguest` like so:
-
-- `vagrant plugin install vagrant-vbguest` (in the tools directory on the host machine)
-
-Now, whenever you bring up your VM, it will check the version of the VM's guest additions and automatically bring them up to date whenever this is needed.
-
-
-## Deployment
-
-Deployment is automated using [Ansible](http://ansible.com), and targets a stock Ubuntu Linux server with Python installed. You should install on a **fresh** server, not one that's running other applications, unless you **really** know what you're doing.
-
-Install Ansible on your **local** machine, add the IP address or hostname of your **target** server to `tools/hosts`, then run:
-
-    cd tools
-    ansible-playbook -i hosts site.yml
-
-Ansible uses SSH to connect to the target server an execute the tasks defined in [`tools/site.yml`](tools/site.yml). If you have trouble connecting, you may have to adjust your SSH configuration to be more automatic, say by editing your `.ssh/config`.
-
-You can re-run Ansible as you make changes. Once the system is running, it will fetch changes from the master Git repository every 10 minutes. From your local machine, you can test all URLs against any target server, e.g.:
-
-    export PRODUCTION=url.ontodev.org; make clean test-production
-
-The `make safe-update` task will check [Travis-CI](https://travis-ci.org/OBOFoundry/purl.obolibrary.org) to ensure that the latest build on the master branch passed all automated tests, and that it is newer than the last time `safe-update` completed. Then it will pull from the Git repository and rebuild the site. This *should* be safe for a `cron` task to synchronize PURLs with the repository.
 
 
 ## Copyright

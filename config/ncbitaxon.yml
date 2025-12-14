@@ -6,7 +6,7 @@ base_url: /obo/ncbitaxon
 products:
 - ncbitaxon.owl: https://github.com/obophenotype/ncbitaxon/releases/latest/download/ncbitaxon.owl
 - ncbitaxon.obo: https://github.com/obophenotype/ncbitaxon/releases/latest/download/ncbitaxon.obo
-- ncbitaxon.json: https://github.com/obophenotype/ncbitaxon/releases/latest/download/ncbitaxon.json
+- ncbitaxon.json: https://zenodo.org/records/17901998/files/ncbitaxon.json?download=1
 - ncbitaxon.owl.gz: https://github.com/obophenotype/ncbitaxon/releases/latest/download/ncbitaxon.owl.gz
 - ncbitaxon.obo.gz: https://github.com/obophenotype/ncbitaxon/releases/latest/download/ncbitaxon.obo.gz
 - ncbitaxon.json.gz: https://github.com/obophenotype/ncbitaxon/releases/latest/download/ncbitaxon.json.gz
@@ -27,5 +27,7 @@ entries:
     to: http://www.ontobee.org/browser/rdf.php?o=NCBITaxon&iri=http://purl.obolibrary.org/obo/NCBITaxon_1
 - prefix: /
   replacement: https://github.com/obophenotype/ncbitaxon/releases/latest/download/
+- prefix: /2025-12-03/ncbitaxon.json
+  replacement: https://zenodo.org/records/17901998/files/ncbitaxon.json?download=1
 
 

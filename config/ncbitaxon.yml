@@ -18,6 +18,8 @@ example_terms:
 entries:
 - prefix: /subsets/
   replacement: https://github.com/obophenotype/ncbitaxon/releases/latest/download/
+- prefix: /2025-12-03/ncbitaxon.json
+  replacement: https://zenodo.org/records/17901998/files/ncbitaxon.json?download=1
 - prefix: /2
   replacement: https://github.com/obophenotype/ncbitaxon/releases/download/v2
 - prefix: /about/
@@ -27,7 +29,5 @@ entries:
     to: http://www.ontobee.org/browser/rdf.php?o=NCBITaxon&iri=http://purl.obolibrary.org/obo/NCBITaxon_1
 - prefix: /
   replacement: https://github.com/obophenotype/ncbitaxon/releases/latest/download/
-- prefix: /2025-12-03/ncbitaxon.json
-  replacement: https://zenodo.org/records/17901998/files/ncbitaxon.json?download=1
 
 

@@ -12,7 +12,9 @@ example_terms:
 - CEPH_0000000
 
 entries:
+- exact: /taxonomy.owl
+  replacement: https://raw.githubusercontent.com/obophenotype/cephalopod-ontology/refs/heads/master/src/ontology/taxonomy.owl
 - prefix: /releases/
   replacement: https://raw.githubusercontent.com/obophenotype/cephalopod-ontology/v
 - prefix: /
-  replacement: http://ontologies.berkeleybop.org/ceph/
+  replacement: https://raw.githubusercontent.com/obophenotype/cephalopod-ontology/refs/heads/master/

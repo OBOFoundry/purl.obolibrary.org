@@ -4,8 +4,8 @@ idspace: AEO
 base_url: /obo/aeo
 
 products:
-- aeo.owl: http://ontologies.berkeleybop.org/aeo.owl
-- aeo.obo: http://ontologies.berkeleybop.org/aeo.obo
+- aeo.owl: https://raw.githubusercontent.com/obophenotype/human-developmental-anatomy-ontology/refs/heads/master/src/ontology/aeo.owl
+- aeo.obo: https://raw.githubusercontent.com/obophenotype/human-developmental-anatomy-ontology/refs/heads/master/src/ontology/aeo.obo
 
 term_browser: ontobee
 example_terms:

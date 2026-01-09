@@ -4,8 +4,8 @@ idspace: MA
 base_url: /obo/ma
 
 products:
-- ma.owl: http://ontologies.berkeleybop.org/ma.owl
-- ma.obo: http://ontologies.berkeleybop.org/ma.obo
+- ma.owl: https://raw.githubusercontent.com/obophenotype/adult-mouse-anatomy-ontology/refs/heads/main/ma.owl
+- ma.obo: https://raw.githubusercontent.com/obophenotype/adult-mouse-anatomy-ontology/refs/heads/main/ma.obo
 
 term_browser: ontobee
 example_terms:

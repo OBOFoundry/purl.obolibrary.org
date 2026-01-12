@@ -4,7 +4,8 @@ idspace: EMAP
 base_url: /obo/emap
 
 products:
-- emap.owl: http://ontologies.berkeleybop.org/emap.owl
+- emap.owl: https://raw.githubusercontent.com/obophenotype/adult-mouse-anatomy-ontology/refs/heads/main/emap-archive/emap.owl
+- emap.obo: https://raw.githubusercontent.com/obophenotype/adult-mouse-anatomy-ontology/refs/heads/main/emap-archive/emap.obo
 
 term_browser: ontobee
 example_terms:

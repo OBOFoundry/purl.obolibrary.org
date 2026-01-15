@@ -5,7 +5,7 @@ base_url: /obo/gaz
 
 products:
 - gaz.owl: https://zenodo.org/records/18247183/files/gaz.owl?download=1
-- gaz.obo: http://ontologies.berkeleybop.org/gaz.obo
+- gaz.obo: https://zenodo.org/records/18247183/files/gaz.obo?download=1
 
 entries:
 - exact: /gaz-countries.owl

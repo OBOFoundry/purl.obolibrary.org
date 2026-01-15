@@ -4,8 +4,8 @@ idspace: EMAPA
 base_url: /obo/emapa
 
 products:
-- emapa.owl: https://raw.githubusercontent.com/obophenotype/mouse-anatomy-ontology/master/emapa.owl
-- emapa.obo: https://raw.githubusercontent.com/obophenotype/mouse-anatomy-ontology/master/emapa.obo
+- emapa.owl: https://raw.githubusercontent.com/obophenotype/developmental-mouse-anatomy-ontology/master/emapa.owl
+- emapa.obo: https://raw.githubusercontent.com/obophenotype/developmental-mouse-anatomy-ontology/master/emapa.obo
 
 term_browser: ontobee
 example_terms:
@@ -14,14 +14,14 @@ example_terms:
 entries:
 
 - prefix: /releases/
-  replacement: https://raw.githubusercontent.com/obophenotype/mouse-anatomy-ontology/v
+  replacement: https://raw.githubusercontent.com/obophenotype/developmental-mouse-anatomy-ontology/v
 
 - prefix: /tracker/
-  replacement: https://github.com/obophenotype/mouse-anatomy-ontology/issues
+  replacement: https://github.com/obophenotype/developmental-mouse-anatomy-ontology/issues
 
 - prefix: /about/
   replacement: http://www.ontobee.org/ontology/EMAPA?iri=http://purl.obolibrary.org/obo/
 
 ## generic fall-through, serve direct from github by default
 - prefix: /
-  replacement: https://raw.githubusercontent.com/obophenotype/mouse-anatomy-ontology/master/
+  replacement: https://raw.githubusercontent.com/obophenotype/developmental-mouse-anatomy-ontology/master/

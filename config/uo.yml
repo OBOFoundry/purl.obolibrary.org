@@ -6,6 +6,7 @@ base_url: /obo/uo
 products:
 - uo.owl: https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/uo.owl
 - uo.obo: https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/uo.obo
+- uo.json: https://raw.githubusercontent.com/bio-ontology-research-group/unit-ontology/master/uo.json
 
 term_browser: ontobee
 example_terms:

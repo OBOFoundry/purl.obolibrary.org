@@ -4,7 +4,7 @@ idspace: GAZ
 base_url: /obo/gaz
 
 products:
-- gaz.owl: http://ontologies.berkeleybop.org/gaz.owl
+- gaz.owl: https://zenodo.org/records/18247183/files/gaz.owl?download=1
 - gaz.obo: http://ontologies.berkeleybop.org/gaz.obo
 
 entries:

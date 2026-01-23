@@ -13,15 +13,16 @@ example_terms:
 
 entries:
 
+# Version previously maintained by "Imaging Semantics"
+- prefix: /releases/2020-11-06/
+  replacement: https://raw.githubusercontent.com/Imaging-semantics/fbbi/v2020-11-06/
+
+# All subsequent releases will come from "FoundingGIDE"
 - prefix: /releases/
   replacement: https://github.com/foundingGIDE/fbbi/releases/download/v
 
 - prefix: /tracker/
   replacement: https://github.com/foundingGIDE/fbbi/issues
-
-# Version previously maintained by "Imaging Semantics"
-- prefix: /releases/2020-11-06/
-  replacement: https://raw.githubusercontent.com/Imaging-semantics/fbbi/v2020-11-06/
 
 ## generic fall-through, serve from the latest release artefacts
 - prefix: /

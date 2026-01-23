@@ -4,9 +4,25 @@ idspace: FBbi
 base_url: /obo/fbbi
 
 products:
-- fbbi.owl: https://raw.githubusercontent.com/Imaging-semantics/fbbi/master/fbbi.owl
-- fbbi.obo: https://raw.githubusercontent.com/Imaging-semantics/fbbi/master/fbbi.obo
+- fbbi.owl: https://github.com/foundingGIDE/fbbi/releases/latest/download/fbbi.owl
+- fbbi.obo: https://github.com/foundingGIDE/fbbi/releases/latest/download/fbbi.obo
 
-term_browser: ontobee
+term_browser: ols
 example_terms:
-- FBbi_0000001
+- FBbi_00000031
+
+entries:
+
+- prefix: /releases/
+  replacement: https://github.com/foundingGIDE/fbbi/releases/download/v
+
+- prefix: /tracker/
+  replacement: https://github.com/foundingGIDE/fbbi/issues
+
+# Version previously maintained by "Imaging Semantics"
+- prefix: /releases/2020-11-06/
+  replacement: https://raw.githubusercontent.com/Imaging-semantics/fbbi/v2020-11-06/
+
+## generic fall-through, serve from the latest release artefacts
+- prefix: /
+  replacement: https://github.com/foundingGIDE/fbbi/releases/latest/download/

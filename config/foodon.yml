@@ -17,3 +17,5 @@ entries:
 - prefix: /imports/
   replacement: https://raw.githubusercontent.com/FoodOntology/foodon/master/imports/
   
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/FoodOntology/foodon/v

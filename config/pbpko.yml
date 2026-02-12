@@ -1,0 +1,31 @@
+# PURL configuration for http://purl.obolibrary.org/obo/pbpko
+
+idspace: PBPKO
+base_url: /obo/pbpko
+
+base_redirect: https://github.com/InSilicoVida-Research-Lab/pbpko
+
+products:
+- pbpko.owl: https://raw.githubusercontent.com/InSilicoVida-Research-Lab/pbpko/refs/heads/main/Robot/ontologies/pbpko.owl
+
+term_browser: ontobee
+example_terms:
+- PBPKO_10008
+
+entries:
+- exact: /tracker
+  replacement: https://github.com/InSilicoVida-Research-Lab/pbpko/issues
+
+- exact: /about
+  replacement: https://insilicovida-research-lab.github.io/pbpko/
+
+# Versioned release (latest)
+- exact: /releases/v1.3.1/pbpko.owl
+  replacement: https://github.com/InSilicoVida-Research-Lab/pbpko/releases/download/v1.3.1/pbpko_19_10_2025.owl
+
+# Generic versioned releases redirect
+- prefix: /releases/
+  replacement: https://github.com/InSilicoVida-Research-Lab/pbpko/releases/
+  tests:
+  - from: /releases/tag/v1.3.1
+    to: https://github.com/InSilicoVida-Research-Lab/pbpko/releases/tag/v1.3.1

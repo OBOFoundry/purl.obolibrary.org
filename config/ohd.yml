@@ -17,10 +17,10 @@ entries:
   replacement: https://raw.githubusercontent.com/oral-health-and-disease-ontologies/ohd-ontology/main/ohd-base.owl
 
 - prefix: /about/
-  replacement: https://www.ebi.ac.uk/ols4/ontologies/ohd
+  replacement: https://www.ebi.ac.uk/ols4/ontologies/ohd/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252F
   tests:
   - from: /about/OHD_0000019
-    to: https://www.ebi.ac.uk/ols4/ontologies/ohd/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FOHD_0000019
+    to: https://www.ebi.ac.uk/ols4/ontologies/ohd/terms/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FOHD_0000019
   
 ## generic fall-through, serve direct from github by default
 - prefix: /

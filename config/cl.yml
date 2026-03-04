@@ -37,6 +37,12 @@ entries:
 - exact: /tracker
   replacement: https://github.com/obophenotype/cell-ontology/issues
 
+- exact: /repo
+  replacement: https://github.com/obophenotype/cell-ontology
+
+- exact: /2026_paper_release
+  replacement: https://github.com/obophenotype/cell-ontology/releases/tag/v2025-12-17
+
 - exact: /cl-basic.obo
   replacement: https://github.com/obophenotype/cell-ontology/releases/latest/download/cl-basic.obo
 

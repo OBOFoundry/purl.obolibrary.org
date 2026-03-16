@@ -4,7 +4,7 @@ idspace: HOM
 base_url: /obo/hom
 
 products:
-- hom.owl: http://ontologies.berkeleybop.org/hom.owl
+- hom.owl: https://raw.githubusercontent.com/BgeeDB/homology-ontology/refs/heads/master/src/ontology/hom.owl
 
 term_browser: ontobee
 example_terms:

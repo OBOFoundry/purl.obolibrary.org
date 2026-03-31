@@ -3,10 +3,30 @@
 idspace: ZFS
 base_url: /obo/zfs
 
+## WARNING: ZFS is managed alongside ZFA. So all URLs and redirects are to the ZFA repo
 products:
-- zfs.owl: http://ontologies.berkeleybop.org/zfs.owl
-- zfs.obo: http://ontologies.berkeleybop.org/zfs.obo
+- zfs.owl: https://raw.githubusercontent.com/ZFIN/zebrafish-anatomical-ontology/master/zfs.owl
+- zfs.obo: https://raw.githubusercontent.com/ZFIN/zebrafish-anatomical-ontology/master/zfs.obo
+- zfs.json: https://raw.githubusercontent.com/ZFIN/zebrafish-anatomical-ontology/master/zfs.json
 
 term_browser: ontobee
 example_terms:
 - ZFS_0100000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/ZFIN/zebrafish-anatomical-ontology/v
+  tests:
+    - from: /releases/2021-12-09/
+      to: https://raw.githubusercontent.com/ZFIN/zebrafish-anatomical-ontology/v2021-12-09/
+
+- prefix: /tracker/
+  replacement: https://github.com/ZFIN/zebrafish-anatomical-ontology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/ZFS?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/ZFIN/zebrafish-anatomical-ontology/master/

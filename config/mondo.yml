@@ -11,6 +11,8 @@ products:
 term_browser: ols
 
 entries:
+- exact: /rare-disease-identification
+  replacement: https://monarch-initiative.github.io/rare-disease-identification/
 - exact: /mondo-with-equivalents.json
   replacement: https://github.com/monarch-initiative/mondo/releases/latest/download/mondo.json
 - exact: /mondo-with-equivalents.owl

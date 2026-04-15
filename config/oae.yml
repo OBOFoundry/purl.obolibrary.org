@@ -18,7 +18,7 @@ entries:
   - from: /about/OAE_0000001
     to: http://www.ontobee.org/browser/rdf.php?o=OAE&iri=http://purl.obolibrary.org/obo/OAE_0000001
 
-- exact: /tracker
+- prefix: /tracker
   replacement: https://github.com/OAE-ontology/OAE/issues
 
 - prefix: /releases/

@@ -4,7 +4,7 @@ idspace: OAE
 base_url: /obo/oae
 
 products:
-- oae.owl: https://raw.githubusercontent.com/OAE-ontology/OAE/master/src/oae_merged.owl
+- oae.owl: https://raw.githubusercontent.com/OAE-ontology/OAE/master/oae.owl
 
 term_browser: ontobee
 example_terms:
@@ -17,6 +17,17 @@ entries:
   - from: /about/OAE_0000001
     to: http://www.ontobee.org/browser/rdf.php?o=OAE&iri=http://purl.obolibrary.org/obo/OAE_0000001
 
-- prefix: /
-  replacement: http://svn.code.sf.net/p/oae/code/trunk/src/ontology/
+- exact: /tracker
+  replacement: https://github.com/OAE-ontology/OAE/issues
 
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/OAE-ontology/OAE/v
+  tests:
+  - from: /releases/2026-04-15/oae.owl
+    to: https://raw.githubusercontent.com/OAE-ontology/OAE/v2026-04-15/oae.owl
+
+- prefix: /
+  replacement: https://raw.githubusercontent.com/OAE-ontology/OAE/master/
+  tests:
+  - from: /oae-base.owl
+    to: https://raw.githubusercontent.com/OAE-ontology/OAE/master/oae-base.owl

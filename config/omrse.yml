@@ -4,9 +4,9 @@ idspace: OMRSE
 base_url: /obo/omrse
 
 products:
-- omrse.owl: https://raw.githubusercontent.com/mcwdsi/OMRSE/main/omrse.owl
-- omrse.obo: https://raw.githubusercontent.com/mcwdsi/OMRSE/main/omrse.obo
-- omrse.json: https://raw.githubusercontent.com/mcwdsi/OMRSE/main/omrse.json
+- omrse.owl: https://github.com/mcwdsi/OMRSE/releases/latest/download/omrse.owl
+- omrse.obo: https://github.com/mcwdsi/OMRSE/releases/latest/download/omrse.obo
+- omrse.json: https://github.com/mcwdsi/OMRSE/releases/latest/download/omrse.json
 
 term_browser: ontobee
 example_terms:
@@ -49,4 +49,4 @@ entries:
 
 ## generic fall-through, serve direct from github by default
 - prefix: /
-  replacement: https://raw.githubusercontent.com/mcwdsi/OMRSE/main/
+  replacement: https://github.com/mcwdsi/OMRSE/releases/latest/download/

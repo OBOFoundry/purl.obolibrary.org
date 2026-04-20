@@ -6,7 +6,7 @@ base_url: /obo/oostt
 products:
 - oostt.owl: https://raw.githubusercontent.com/OOSTT/OOSTT/master/oostt.owl
 
-term_browser: ontobee
+term_browser: ols
 example_terms:
 - OOSTT_00000029
 

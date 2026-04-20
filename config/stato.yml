@@ -21,3 +21,23 @@ entries:
   tests:
   - from: /releases/2025-02-23/stato.owl
     to: https://raw.githubusercontent.com/ISA-tools/stato/dev/releases/2025-02-23/stato.owl
+
+### Current Releases
+
+- exact: /releases/2025-02-23/stato.owl
+  replacement: https://raw.githubusercontent.com/ISA-tools/stato/dev/releases/2025-02-23/stato.owl
+
+- exact: /releases/2026-04-20/stato.owl
+  replacement: https://raw.githubusercontent.com/ISA-tools/stato/dev/releases/2026-04-20/stato.owl
+
+- exact: /releases/2026-04-20/stato.obo
+  replacement: https://raw.githubusercontent.com/ISA-tools/stato/dev/releases/2026-04-20/stato.obo
+
+
+### Documentation Pages and Redirects
+
+- exact: /homepage
+  replacement: http://stato-ontology.org/
+
+- exact: /repository
+  replacement: https://github.com/ISA-tools/stato

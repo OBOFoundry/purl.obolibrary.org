@@ -8,7 +8,7 @@ products:
 - omrse.obo: https://github.com/mcwdsi/OMRSE/releases/latest/download/omrse.obo
 - omrse.json: https://github.com/mcwdsi/OMRSE/releases/latest/download/omrse.json
 
-term_browser: ontobee
+term_browser: ols
 example_terms:
 - OMRSE_00000098
 

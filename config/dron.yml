@@ -11,7 +11,7 @@ products:
 - dron.obo.gz: https://github.com/mcwdsi/dron/releases/latest/download/dron.obo.gz
 - dron.json.gz: https://github.com/mcwdsi/dron/releases/latest/download/dron.json.gz
 
-term_browser: ontobee
+term_browser: ols
 example_terms:
 - DRON_00010000
 

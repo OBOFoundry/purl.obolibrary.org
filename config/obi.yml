@@ -7,7 +7,7 @@ products:
 - obi.owl: https://raw.githubusercontent.com/obi-ontology/obi/v2026-03-19/obi.owl
 - obi.obo: https://raw.githubusercontent.com/obi-ontology/obi/v2026-03-19/views/obi.obo
 
-term_browser: ontobee
+term_browser: ols
 example_terms:
 - OBI_0000070
 

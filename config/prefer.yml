@@ -1,0 +1,50 @@
+# PURL configuration for http://purl.obolibrary.org/obo/prefer
+
+idspace: prefer
+base_url: /obo/prefer
+
+products:
+- prefer.owl: https://github.com/Multiomics-Analytics-Group/prefer_ontology/releases/latest/download/prefer.owl
+- prefer.obo: https://github.com/Multiomics-Analytics-Group/prefer_ontology/releases/latest/download/prefer.obo
+- prefer.json: https://github.com/Multiomics-Analytics-Group/prefer_ontology/releases/latest/download/prefer.json
+
+term_browser: ols
+example_terms:
+- PREFER_0000003
+
+entries:
+- exact: /tracker
+  replacement: https://github.com/Multiomics-Analytics-Group/prefer_ontology/issues
+
+- exact: /prefer-base.owl
+  replacement: https://github.com/Multiomics-Analytics-Group/prefer_ontology/releases/latest/download/prefer-base.owl
+
+- exact: /prefer-base.obo
+  replacement: https://github.com/Multiomics-Analytics-Group/prefer_ontology/releases/latest/download/prefer-base.obo
+
+- prefix: /releases/
+  replacement: https://github.com/Multiomics-Analytics-Group/prefer_ontology/releases/download/v
+  test:
+  - from: /releases/2026-05-19/prefer.obo
+    to: https://github.com/Multiomics-Analytics-Group/prefer_ontology/releases/download/v2026-05-19/prefer.obo
+
+- prefix: /about/
+  replacement: https://www.ebi.ac.uk/ols/ontologies/cl/terms?iri=http://purl.obolibrary.org/obo/
+  tests:
+  - from: /about/PREFER_9000003
+    to: https://www.ebi.ac.uk/ols/ontologies/prefer/terms?iri=http://purl.obolibrary.org/obo/PREFER_9000003
+
+# For files that are imported from the -edit file (imports, components,
+# pattern-derived definitions), we cannot point to the latest release
+# download folder as we do below in the "generic" fall-through, because
+# those files are _not_ release artefacts and are therefore absent from
+# that folder. Instead, we point to the current master branch.
+- prefix: /imports/
+  replacement: https://github.com/Multiomics-Analytics-Group/prefer_ontology/raw/refs/heads/master/src/ontology/imports/
+
+- prefix: /components/
+  replacement: https://github.com/Multiomics-Analytics-Group/prefer_ontology/raw/refs/heads/master/src/ontology/components/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://github.com/Multiomics-Analytics-Group/prefer_ontology/releases/latest/download/

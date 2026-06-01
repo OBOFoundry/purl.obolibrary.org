@@ -1,6 +1,6 @@
 # PURL configuration for http://purl.obolibrary.org/obo/prefer
 
-idspace: prefer
+idspace: PREFER
 base_url: /obo/prefer
 
 products:

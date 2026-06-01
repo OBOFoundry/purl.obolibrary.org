@@ -29,7 +29,7 @@ entries:
     to: https://github.com/Multiomics-Analytics-Group/prefer_ontology/releases/download/v2026-05-19/prefer.obo
 
 - prefix: /about/
-  replacement: https://www.ebi.ac.uk/ols/ontologies/cl/terms?iri=http://purl.obolibrary.org/obo/
+  replacement: https://www.ebi.ac.uk/ols/ontologies/prefer/terms?iri=http://purl.obolibrary.org/obo/
   tests:
   - from: /about/PREFER_9000003
     to: https://www.ebi.ac.uk/ols/ontologies/prefer/terms?iri=http://purl.obolibrary.org/obo/PREFER_9000003

@@ -3,11 +3,21 @@
 idspace: CLO
 base_url: /obo/clo
 
+base_redirect: https://github.com/CLO-ontology/CLO
+
 products:
-- clo.owl: https://raw.githubusercontent.com/CLO-ontology/CLO/master/src/ontology/clo_merged.owl
+- clo.owl: https://raw.githubusercontent.com/CLO-ontology/CLO/master/clo.owl
 
 term_browser: ontobee
 example_terms:
 - CLO_0000001
 - CLO_0000031
 - CLO_0003684
+
+entries:
+- exact: /tracker
+  replacement: https://github.com/CLO-ontology/CLO/issues
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/CLO-ontology/CLO/v
+

@@ -4,9 +4,13 @@ idspace: OPMI
 base_url: /obo/opmi
 
 products:
-- opmi.owl: https://raw.githubusercontent.com/OPMI/opmi/master/src/ontology/opmi-merged.owl
+- opmi.owl: https://raw.githubusercontent.com/OPMI/opmi/master/opmi.owl
 
 term_browser: ontobee
 example_terms:
 - OPMI_0000001
 - OPMI_0000002
+
+entries:
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/OPMI/opmi/v

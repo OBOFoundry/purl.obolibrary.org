@@ -1,16 +1,25 @@
 idspace: EMRO
-base_url: /obo/emro/
+base_url: /obo/emro
+
+term_browser: ols
+example_terms:
+- EMRO_0000001
 
 products:
 - emro.owl: https://raw.githubusercontent.com/uflcod/emotion-response-ontology/master/emro.owl
 - emro.obo: https://raw.githubusercontent.com/uflcod/emotion-response-ontology/master/emro.obo
-- emro-non-classified.owl: https://raw.githubusercontent.com/uflcod/emotion-response-ontology/master/emro-non-classified.owl
-- emro-non-classified.obo: https://raw.githubusercontent.com/uflcod/emotion-response-ontology/master/emro-non-classified.obo
-- emro-base.owl: https://raw.githubusercontent.com/uflcod/emotion-response-ontology/master/emro-base.owl
-- emro-base.obo: https://raw.githubusercontent.com/uflcod/emotion-response-ontology/master/emro-base.obo
-- emro-simple.owl: https://raw.githubusercontent.com/uflcod/emotion-response-ontology/master/emro-simple.owl
-- emro-simple.obo: https://raw.githubusercontent.com/uflcod/emotion-response-ontology/master/emro-simple.obo
 
-term_browser: ols
-example_terms:
-- EMRO:0000001
+entries:
+- exact: /emro-non-classified.owl
+  replacement: https://raw.githubusercontent.com/uflcod/emotion-response-ontology/master/emro-non-classified.owl
+- exact: /emro-non-classified.obo
+  replacement: https://raw.githubusercontent.com/uflcod/emotion-response-ontology/master/emro-non-classified.obo
+- exact: /emro-base.owl
+  replacement: https://raw.githubusercontent.com/uflcod/emotion-response-ontology/master/emro-base.owl
+- exact: /emro-base.obo
+  replacement: https://raw.githubusercontent.com/uflcod/emotion-response-ontology/master/emro-base.obo
+- exact: /emro-simple.owl
+  replacement: https://raw.githubusercontent.com/uflcod/emotion-response-ontology/master/emro-simple.owl
+- exact: /emro-simple.obo
+  replacement: https://raw.githubusercontent.com/uflcod/emotion-response-ontology/master/emro-simple.obo
+

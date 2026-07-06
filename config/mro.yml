@@ -8,7 +8,7 @@ base_redirect: https://github.com/IEDB/MRO
 products:
 - mro.owl: https://github.com/IEDB/MRO/releases/latest/download/mro.owl
 
-term_browser: ontobee
+term_browser: ols
 example_terms:
 - MRO_0000012
 

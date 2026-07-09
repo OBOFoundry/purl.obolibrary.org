@@ -1,12 +1,14 @@
 # PURL configuration for http://purl.obolibrary.org/obo/pbpko
+#
+# Submit this file (or its contents) as a PR to:
+# https://github.com/OBOFoundry/purl.obolibrary.org
+# Target path in that repo: config/pbpko.yml
 
 idspace: PBPKO
 base_url: /obo/pbpko
 
-base_redirect: https://github.com/InSilicoVida-Research-Lab/pbpko
-
 products:
-- pbpko.owl: https://raw.githubusercontent.com/InSilicoVida-Research-Lab/pbpko/refs/heads/main/Robot/ontologies/pbpko.owl
+- pbpko.owl: https://raw.githubusercontent.com/InSilicoVida-Research-Lab/pbpko/main/Robot/ontologies/pbpko.owl
 
 term_browser: ontobee
 example_terms:
@@ -19,13 +21,31 @@ entries:
 - exact: /about
   replacement: https://insilicovida-research-lab.github.io/pbpko/
 
-# Versioned release (latest)
-- exact: /releases/v1.3.1/pbpko.owl
-  replacement: https://github.com/InSilicoVida-Research-Lab/pbpko/releases/download/v1.3.1/pbpko_19_10_2025.owl
-
-# Generic versioned releases redirect
+# Generic dated release redirect (STATO-style)
 - prefix: /releases/
-  replacement: https://github.com/InSilicoVida-Research-Lab/pbpko/releases/
+  replacement: https://raw.githubusercontent.com/InSilicoVida-Research-Lab/pbpko/releases/
   tests:
-  - from: /releases/tag/v1.3.1
-    to: https://github.com/InSilicoVida-Research-Lab/pbpko/releases/tag/v1.3.1
+  - from: /releases/2026-02-16/pbpko.owl
+    to: https://raw.githubusercontent.com/InSilicoVida-Research-Lab/pbpko/releases/2026-02-16/pbpko.owl
+
+# Explicit release entries (add one per official release)
+- exact: /releases/2024-07-15/pbpko.owl
+  replacement: https://raw.githubusercontent.com/InSilicoVida-Research-Lab/pbpko/releases/2024-07-15/pbpko.owl
+
+- exact: /releases/2024-10-09/pbpko.owl
+  replacement: https://raw.githubusercontent.com/InSilicoVida-Research-Lab/pbpko/releases/2024-10-09/pbpko.owl
+
+- exact: /releases/2025-02-04/pbpko.owl
+  replacement: https://raw.githubusercontent.com/InSilicoVida-Research-Lab/pbpko/releases/2025-02-04/pbpko.owl
+
+- exact: /releases/2025-05-22/pbpko.owl
+  replacement: https://raw.githubusercontent.com/InSilicoVida-Research-Lab/pbpko/releases/2025-05-22/pbpko.owl
+
+- exact: /releases/2025-09-12/pbpko.owl
+  replacement: https://raw.githubusercontent.com/InSilicoVida-Research-Lab/pbpko/releases/2025-09-12/pbpko.owl
+
+- exact: /releases/2025-10-19/pbpko.owl
+  replacement: https://raw.githubusercontent.com/InSilicoVida-Research-Lab/pbpko/releases/2025-10-19/pbpko.owl
+
+- exact: /releases/2026-02-16/pbpko.owl
+  replacement: https://raw.githubusercontent.com/InSilicoVida-Research-Lab/pbpko/releases/2026-02-16/pbpko.owl

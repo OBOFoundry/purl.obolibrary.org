@@ -39,7 +39,7 @@ entries:
   replacement: https://raw.githubusercontent.com/mcwdsi/OMRSE/devel/omrse/education/omrse-education.owl
   
 - prefix: /releases/
-  replacement: https://raw.githubusercontent.com/mcwdsi/OMRSE/v
+  replacement: https://github.com/mcwdsi/OMRSE/releases/download/v
 
 - prefix: /tracker/
   replacement: https://github.com/mcwdsi/OMRSE/issues

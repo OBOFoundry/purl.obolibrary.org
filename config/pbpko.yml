@@ -16,7 +16,7 @@ products:
 - pbpko.owl: https://raw.githubusercontent.com/InSilicoVida-Research-Lab/pbpko/main/pbpko.owl
 - pbpko.obo: https://raw.githubusercontent.com/InSilicoVida-Research-Lab/pbpko/main/pbpko.obo
 
-term_browser: ontobee
+term_browser: ols
 example_terms:
 - PBPKO_00002
 
@@ -37,7 +37,7 @@ entries:
 - prefix: /releases/
   replacement: https://raw.githubusercontent.com/InSilicoVida-Research-Lab/pbpko/v
   tests:
-  - from: /releases/2026-07-10/pbpko.owl
+  - from: /releases/v2026-07-13/pbpko.owl
     to: https://raw.githubusercontent.com/InSilicoVida-Research-Lab/pbpko/v2026-07-13/pbpko.owl
 
 - prefix: /tracker/

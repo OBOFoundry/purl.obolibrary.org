@@ -23,6 +23,10 @@ entries:
 - exact: /pbpko-full.obo
   replacement: https://raw.githubusercontent.com/InSilicoVida-Research-Lab/pbpko/main/pbpko-full.obo
 
+# This old PURL was published so it should be maintained.
+- exact: /releases/v1.3.1/pbpko.owl
+  replacement: https://github.com/InSilicoVida-Research-Lab/pbpko/releases/download/v1.3.1/pbpko_19_10_2025.owl
+
 # Dated releases resolve from git tags (vYYYY-MM-DD)
 # e.g. /releases/2026-07-10/pbpko.owl -> .../pbpko/v2026-07-10/pbpko.owl
 - prefix: /releases/

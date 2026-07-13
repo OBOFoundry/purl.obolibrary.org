@@ -1,13 +1,4 @@
 # PURL configuration for http://purl.obolibrary.org/obo/pbpko
-#
-# Submit this file (or its contents) as a PR to:
-# https://github.com/OBOFoundry/purl.obolibrary.org
-# Target path in that repo: config/pbpko.yml
-#
-# NOTE: `products` and the generic fall-through resolve from the `main` branch,
-# so the ODK release artefacts must be merged to `main` for these to work.
-# Dated releases resolve from git tags named `vYYYY-MM-DD` (created by
-# .github/workflows/release.yml).
 
 idspace: PBPKO
 base_url: /obo/pbpko
@@ -37,7 +28,7 @@ entries:
 - prefix: /releases/
   replacement: https://raw.githubusercontent.com/InSilicoVida-Research-Lab/pbpko/v
   tests:
-  - from: /releases/v2026-07-13/pbpko.owl
+  - from: /releases/2026-07-13/pbpko.owl
     to: https://raw.githubusercontent.com/InSilicoVida-Research-Lab/pbpko/v2026-07-13/pbpko.owl
 
 - prefix: /tracker/

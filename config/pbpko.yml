@@ -3,29 +3,44 @@
 idspace: PBPKO
 base_url: /obo/pbpko
 
-base_redirect: https://github.com/InSilicoVida-Research-Lab/pbpko
-
 products:
-- pbpko.owl: https://raw.githubusercontent.com/InSilicoVida-Research-Lab/pbpko/refs/heads/main/Robot/ontologies/pbpko.owl
+- pbpko.owl: https://raw.githubusercontent.com/InSilicoVida-Research-Lab/pbpko/main/pbpko.owl
+- pbpko.obo: https://raw.githubusercontent.com/InSilicoVida-Research-Lab/pbpko/main/pbpko.obo
 
-term_browser: ontobee
+term_browser: ols
 example_terms:
-- PBPKO_10008
+- PBPKO_00002
 
 entries:
-- exact: /tracker
-  replacement: https://github.com/InSilicoVida-Research-Lab/pbpko/issues
 
-- exact: /about
-  replacement: https://insilicovida-research-lab.github.io/pbpko/
+# Base and full artefacts
+- exact: /pbpko-base.owl
+  replacement: https://raw.githubusercontent.com/InSilicoVida-Research-Lab/pbpko/main/pbpko-base.owl
+- exact: /pbpko-base.obo
+  replacement: https://raw.githubusercontent.com/InSilicoVida-Research-Lab/pbpko/main/pbpko-base.obo
+- exact: /pbpko-full.owl
+  replacement: https://raw.githubusercontent.com/InSilicoVida-Research-Lab/pbpko/main/pbpko-full.owl
+- exact: /pbpko-full.obo
+  replacement: https://raw.githubusercontent.com/InSilicoVida-Research-Lab/pbpko/main/pbpko-full.obo
 
-# Versioned release (latest)
+# This old PURL was published so it should be maintained.
 - exact: /releases/v1.3.1/pbpko.owl
   replacement: https://github.com/InSilicoVida-Research-Lab/pbpko/releases/download/v1.3.1/pbpko_19_10_2025.owl
 
-# Generic versioned releases redirect
+# Dated releases resolve from git tags (vYYYY-MM-DD)
+# e.g. /releases/2026-07-10/pbpko.owl -> .../pbpko/v2026-07-10/pbpko.owl
 - prefix: /releases/
-  replacement: https://github.com/InSilicoVida-Research-Lab/pbpko/releases/
+  replacement: https://raw.githubusercontent.com/InSilicoVida-Research-Lab/pbpko/v
   tests:
-  - from: /releases/tag/v1.3.1
-    to: https://github.com/InSilicoVida-Research-Lab/pbpko/releases/tag/v1.3.1
+  - from: /releases/2026-07-13/pbpko.owl
+    to: https://raw.githubusercontent.com/InSilicoVida-Research-Lab/pbpko/v2026-07-13/pbpko.owl
+
+- prefix: /tracker/
+  replacement: https://github.com/InSilicoVida-Research-Lab/pbpko/issues
+
+- prefix: /about/
+  replacement: https://insilicovida-research-lab.github.io/pbpko/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/InSilicoVida-Research-Lab/pbpko/main/pbpko.owl

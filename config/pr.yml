@@ -162,7 +162,7 @@ entries:
 #    to: https://confluence.proteininformationresource.org/display/PROWIKI/PRO+PURLs
 
 - exact: /wiki
-  replacement: https://proteininformationresource.org/staff/nataled/wiki_retired.html
+  replacement: https://proconsortium.org/pro_wiki_retired.shtml
 
 - exact: /docs
   replacement: https://proconsortium.org/pro_dcmtt.shtml
@@ -174,7 +174,7 @@ entries:
   replacement: https://proconsortium.org/download/current/pro.gpi
 
 - exact: /browse
-  replacement: http://www.ontobee.org/browser/index.php?o=pr
+  replacement: https://ontobee.org/ontology/pr
 
 ### Development Pages and Redirects
 

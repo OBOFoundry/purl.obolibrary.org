@@ -168,7 +168,7 @@ entries:
   replacement: https://proconsortium.org/pro_dcmtt.shtml
   
 - exact: /purls
-  replacement: https://proconsortium.org/pro_comm_PURL.shtml
+  replacement: https://proconsortium.org/pro_dcmtt_linking.shtml
   
 - exact: /gpi
   replacement: https://proconsortium.org/download/current/pro.gpi

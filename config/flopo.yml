@@ -1,4 +1,4 @@
-# PURL configuration for http://purl.obolibrary.org/obo/fma
+# PURL configuration for http://purl.obolibrary.org/obo/flopo
 
 idspace: FLOPO
 base_url: /obo/flopo
@@ -7,3 +7,12 @@ products:
 - flopo.owl: https://github.com/flora-phenotype-ontology/flopoontology/raw/master/ontology/flopo.owl
 
 term_browser: custom
+
+entries:
+- prefix: /releases/
+  replacement: https://github.com/flora-phenotype-ontology/flopoontology/releases/download/v
+  tests:
+  - from: /releases/2026-07-15/flopo.owl
+    to: https://github.com/flora-phenotype-ontology/flopoontology/releases/download/v2026-07-15/flopo.owl
+  - from: /releases/2026-07-31/flopo.owl
+    to: https://github.com/flora-phenotype-ontology/flopoontology/releases/download/v2026-07-31/flopo.owl

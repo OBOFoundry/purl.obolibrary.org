@@ -1,0 +1,24 @@
+idspace: PAIN
+base_url: /obo/pain
+
+term_browser: ols
+example_terms:
+- PAIN_0000036
+
+products:
+- pain.owl: https://raw.githubusercontent.com/uflcod/pain-ontology/refs/heads/main/pain.owl
+- pain.json: https://raw.githubusercontent.com/uflcod/pain-ontology/refs/heads/main/pain.json
+
+entries:
+- exact: /pain-non-classified.owl
+  replacement: https://raw.githubusercontent.com/uflcod/pain-ontology/refs/heads/main/pain-non-classified.owl
+- exact: /pain-non-classified.json
+  replacement: https://raw.githubusercontent.com/uflcod/pain-ontology/refs/heads/main/pain-non-classified.json
+- exact: /pain-base.owl
+  replacement: https://raw.githubusercontent.com/uflcod/pain-ontology/refs/heads/main/pain-base.owl
+- exact: /pain-base.json
+  replacement: https://raw.githubusercontent.com/uflcod/pain-ontology/refs/heads/main/pain-base.json
+- exact: /pain-simple.owl
+  replacement: https://raw.githubusercontent.com/uflcod/pain-ontology/refs/heads/main/pain-simple.owl
+- exact: /pain-simple.json
+  replacement: https://raw.githubusercontent.com/uflcod/pain-ontology/refs/heads/main/pain-simple.json

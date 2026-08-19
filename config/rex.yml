@@ -4,7 +4,8 @@ idspace: REX
 base_url: /obo/rex
 
 products:
-- rex.owl: http://ontologies.berkeleybop.org/rex.owl
+- rex.owl: https://github.com/cmungall/rex/raw/refs/heads/main/rex.owl
+- rex.obo: https://github.com/cmungall/rex/raw/refs/heads/main/rex.obo
 
 term_browser: ontobee
 example_terms:

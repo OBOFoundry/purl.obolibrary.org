@@ -40,6 +40,9 @@ entries:
 - exact: /chebi_slim.owl
   replacement: https://github.com/obophenotype/chebi_obo_slim/releases/latest/download/chebi_slim.owl
 
+- exact: /pr_slim.owl
+  replacement: https://raw.githubusercontent.com/obophenotype/pro_obo_slim/refs/heads/master/pr_slim.owl
+
 - exact: /mp-hp-view.owl
   replacement: http://build-artifacts.berkeleybop.org/build-mp-hp-view/latest/mp-hp-view.owl
 

@@ -7,4 +7,4 @@ products:
 - fma.owl: http://purl.org/sig/ont/fma.owl
 - fma.obo: http://ontologies.berkeleybop.org/fma.obo
 
-term_browser: ols
+term_browser: custom

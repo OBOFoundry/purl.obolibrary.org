@@ -168,6 +168,16 @@ entries:
   - from: /OBA_VT0000002
     to: https://www.ebi.ac.uk/ols4/ontologies/oba/entities/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FOBA_VT0000002
 
+# Term redirects for FMA
+# We need a custom redirect here because the FMA long PURLs
+# are not OBO-style PURLs anymore, but the official FMA ones.
+- regex: ^/obo/FMA_(\d+)$
+  replacement: https://www.ebi.ac.uk/ols4/ontologies/fma/entities/http%253A%252F%252Fpurl.org%252Fsig%252Font%252Ffma%252Ffma$1
+  status: see other
+  tests:
+  - from: /FMA_62955
+    to: https://www.ebi.ac.uk/ols4/ontologies/fma/entities/http%253A%252F%252Fpurl.org%252Fsig%252Font%252Ffma%252Ffma62955
+
 # Term redirects for PO
 - regex: ^/obo/PO_(\d+)$
   replacement: https://browser.planteome.org/amigo/term/PO:$1

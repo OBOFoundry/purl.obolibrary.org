@@ -4,9 +4,7 @@ idspace: FMA
 base_url: /obo/fma
 
 products:
-- fma.owl: http://ontologies.berkeleybop.org/fma.owl
+- fma.owl: http://purl.org/sig/ont/fma.owl
 - fma.obo: http://ontologies.berkeleybop.org/fma.obo
 
-term_browser: ontobee
-example_terms:
-- FMA_62955
+term_browser: custom

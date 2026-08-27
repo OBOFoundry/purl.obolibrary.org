@@ -176,7 +176,7 @@ entries:
   status: see other
   tests:
   - from: /FMA_62955
-    to: https://www.ebi.ac.uk/ols4/ontologies/fma/entities/http%3A%2F%2Fpurl.org%2Fsig%2Font%2Ffma%2Ffma62955
+    to: https://www.ebi.ac.uk/ols4/ontologies/fma/entities/http%253A%252F%252Fpurl.org%252Fsig%252Font%252Ffma%252Ffma62955
 
 # Term redirects for PO
 - regex: ^/obo/PO_(\d+)$

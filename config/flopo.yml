@@ -9,6 +9,9 @@ products:
 term_browser: custom
 
 entries:
+- exact: /flopo-light.owl
+  replacement: https://github.com/flora-phenotype-ontology/flopoontology/raw/master/ontology/flopo-light.owl
+
 - prefix: /releases/
   replacement: https://github.com/flora-phenotype-ontology/flopoontology/releases/download/v
   tests:

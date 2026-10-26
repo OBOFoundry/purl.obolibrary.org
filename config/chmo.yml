@@ -4,30 +4,30 @@ idspace: CHMO
 base_url: /obo/chmo
 
 products:
-- chmo.owl: https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/master/chmo.owl
-- chmo.obo: https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/master/chmo.obo
-- chmo.json: https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/master/chmo.json
+- chmo.owl: https://github.com/rsc-ontology/rsc-cmo/releases/latest/download/chmo.owl
+- chmo.obo: https://github.com/rsc-ontology/rsc-cmo/releases/latest/download/chmo.obo
+- chmo.json: https://github.com/rsc-ontology/rsc-cmo/releases/latest/download/chmo.json
 
 entries:
 - exact: /chmo-base.owl
-  replacement: https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/master/chmo-base.owl
+  replacement: https://github.com/rsc-ontology/rsc-cmo/releases/latest/download/chmo-base.owl
 - exact: /chmo-base.obo
-  replacement: https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/master/chmo-base.obo
+  replacement: https://github.com/rsc-ontology/rsc-cmo/releases/latest/download/chmo-base.obo
 - exact: /chmo-base.json
-  replacement: https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/master/chmo-base.json
+  replacement: https://github.com/rsc-ontology/rsc-cmo/releases/latest/download/chmo-base.json
 - exact: /chmo-full.owl
-  replacement: https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/master/chmo-full.owl
+  replacement: https://github.com/rsc-ontology/rsc-cmo/releases/latest/download/chmo-full.owl
 - exact: /chmo-full.obo
-  replacement: https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/master/chmo-full.obo
+  replacement: https://github.com/rsc-ontology/rsc-cmo/releases/latest/download/chmo-full.obo
 - exact: /chmo-full.json
-  replacement: https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/master/chmo-full.json
+  replacement: https://github.com/rsc-ontology/rsc-cmo/releases/latest/download/chmo-full.json
 - prefix: /releases/
-  replacement: https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/v
+  replacement: https://raw.githubusercontent.com/rsc-ontology/rsc-cmo/v
   tests:
     - from: /releases/2025-01-22/chmo.owl
-      to: https://raw.githubusercontent.com/rsc-ontologies/rsc-cmo/v2025-01-22/chmo.owl
+      to: https://raw.githubusercontent.com/rsc-ontology/rsc-cmo/v2025-01-22/chmo.owl
 - prefix: /tracker/
-  replacement: https://github.com/rsc-ontologies/rsc-cmo/issues
+  replacement: https://github.com/rsc-ontology/rsc-cmo/issues
     
 term_browser: ols
 example_terms:

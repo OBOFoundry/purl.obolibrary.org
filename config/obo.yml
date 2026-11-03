@@ -90,11 +90,11 @@ entries:
 
 # Term redirects for NCBI Taxonomy
 - regex: ^/obo/NCBITaxon_(\d+)$
-  replacement: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=$1
+  replacement: https://www.ncbi.nlm.nih.gov/datasets/taxonomy/$1/
   status: see other
   tests:
   - from: /NCBITaxon_9606
-    to: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=9606
+    to: https://www.ncbi.nlm.nih.gov/datasets/taxonomy/9606/
 
 # Term redirects for PR
 # Match digits or UniProt ID, see http://www.uniprot.org/help/accession_numbers

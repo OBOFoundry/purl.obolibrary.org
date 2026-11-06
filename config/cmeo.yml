@@ -1,0 +1,31 @@
+# PURL configuration for http://purl.obolibrary.org/obo/cmeo
+
+idspace: CMEO
+base_url: /obo/cmeo
+
+base_redirect: https://github.com/komi786/cmeo
+
+products:
+- cmeo.owl: https://raw.githubusercontent.com/komi786/cmeo/main/cmeo.owl
+
+term_browser: ontobee
+example_terms:
+- CMEO_0000009
+
+entries:
+
+- exact: /tracker
+  replacement: https://github.com/komi786/cmeo/issues
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/komi786/cmeo/v
+
+- prefix: /imports/
+  replacement: https://raw.githubusercontent.com/komi786/cmeo/main/imports/
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/CMEO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/komi786/cmeo/main/

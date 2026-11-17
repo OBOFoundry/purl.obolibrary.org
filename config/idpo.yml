@@ -1,0 +1,29 @@
+# PURL configuration for http://purl.obolibrary.org/obo/idpo
+
+idspace: IDPO
+base_url: /obo/idpo
+
+products:
+- idpo.owl: https://github.com/BioComputingUP/idpo/releases/latest/download/idpo.owl
+- idpo.obo: https://github.com/BioComputingUP/idpo/releases/latest/download/idpo.obo
+- idpo.json: https://github.com/BioComputingUP/idpo/releases/latest/download/idpo.json
+
+term_browser: ols
+example_terms:
+- IDPO_0000002
+
+entries:
+
+- prefix: /releases/
+  replacement: https://github.com/BioComputingUP/idpo/releases/download/v
+
+- prefix: /tracker/
+  replacement: https://github.com/BioComputingUP/idpo/issues
+
+- prefix: /about/
+  replacement: https://www.ebi.ac.uk/ols/ontologies/idpo/terms?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://github.com/BioComputingUP/idpo/releases/latest/download/
+
